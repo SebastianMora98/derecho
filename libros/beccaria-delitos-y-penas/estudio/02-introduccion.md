@@ -35,20 +35,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. Introducción) "debiendo ser las leyes pactos considerados de hombres libres" — es la bisagra: ahí está el contraste entre lo que la ley debía ser y lo que fue.
-2. (cap. Introducción) "Y aun los gemidos de los infelices sacrificados a la cruel ignorancia" — es la enumeración de horrores que no reproduje, y su efecto depende de leerla completa.
-3. (cap. Introducción) "por tradición, no por examen" — es el pasaje que más fácil se malentiende: parece un adorno retórico y es la explicación de por qué el abuso duró siglos.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Leyes próvidas** — leyes previsoras, que anticipan el daño en vez de reaccionar a él (el autor usa el término sin definirlo).
 - **Procedimientos criminales** — las reglas sobre cómo se investiga y se juzga un delito, distintas de las que fijan las penas.
 - **La mayor felicidad en el mayor número** — el criterio para juzgar leyes: cuánto bien producen y entre cuántos se reparte.
 - **Guerra de industria** — la expresión de Beccaria para la competencia comercial pacífica entre naciones.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **El origen de una ley vs. su contenido** — Beccaria critica cómo nacieron las leyes penales, no solo qué dicen.
   - Se confunden porque: las dos críticas llevan a la misma conclusión práctica, que hay que reformarlas.
@@ -60,7 +54,7 @@ flowchart TD
   - Criterio para decidir: ¿la medida aumenta el bien total y llega a más gente, o satisface a un grupo a costa de otro?
   - Dónde se cae: se justifica un castigo cruel diciendo que la mayoría lo aprueba, que es lo que el criterio no habilita.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un gobierno propone endurecer una pena porque las encuestas muestran que la población lo pide. ¿Ese argumento satisface el criterio de Beccaria?
 2. Alguien afirma que el tratado es una aplicación de las ideas de Montesquieu al derecho penal. ¿Qué respalda el texto y qué contradice?

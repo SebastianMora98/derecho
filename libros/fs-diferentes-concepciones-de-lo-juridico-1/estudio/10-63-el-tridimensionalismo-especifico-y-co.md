@@ -39,13 +39,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 149) "ni el pensamiento del derecho es derecho, ni la conducta humana es derecho" — es la formulación más nítida de la tesis en todo el libro, y conviene tenerla textual.
-2. (p. 144) "expusimos en sus lineamientos básicos una posición coincidente, en lo fundamen…" — **la conversión rompió acá**: la frase se corta a mitad de palabra y sigue el texto de una nota, así que se perdió en qué coincidía. Hay que leerlo en el original.
-3. (pp. 145-146) La comparación con Reale y la observación de Sobrevilla — es donde están las tres diferencias que solo resumí, y la única parte del libro donde el autor se separa de su aliado más cercano.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Tridimensionalismo específico y concreto** — la versión dinámica: las tres dimensiones se integran en un proceso, frente a la genérica que las dejaba separadas.
 - **Integración dialéctica** — la fórmula de Reale: de la tensión entre hecho y valor surge la norma.
@@ -53,7 +47,7 @@ flowchart TD
 - **Persona colectiva** — el nombre que el autor prefiere para la persona jurídica, y su ejemplo de institución tridimensional.
 - **Visión macroscópica** — mirar el derecho como totalidad, como base para enfocar después cualquier área específica.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Tridimensionalismo genérico vs. específico y concreto** — el primero enumera tres elementos separables; el segundo afirma que se exigen entre sí en un proceso.
   - Se confunden porque: los dos se llaman tridimensionalismo y nombran los mismos tres elementos.
@@ -65,7 +59,7 @@ flowchart TD
   - Criterio para decidir: ¿qué dimensión queda privilegiada? En Reale la normativa; en el autor, la conducta como punto de partida.
   - Dónde se cae: se los cita como si sostuvieran lo mismo, y se pierde la única discusión interna del libro.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un manual explica la persona jurídica solo como un centro de imputación creado por la ley. Según este capítulo, ¿qué está haciendo y qué se pierde?
 2. El autor dice que el tridimensionalismo "disuelve falsas antinomias" de la dogmática. Usando el ejemplo de la persona jurídica, ¿cómo funcionaría esa disolución?

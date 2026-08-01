@@ -38,13 +38,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 17) "continuando siempre los efectos después de haber faltado sus causas" — es la tesis del capítulo y explica por qué el proceso conserva una forma que ya nada justifica.
-2. (cap. 17) El retrato del juez que pone lazos al encarcelado — resumí sus rasgos, pero el pasaje completo es el mejor argumento contra el proceso ofensivo.
-3. (cap. 18) La imagen final del dique contra la corriente del río — condensa la tesis del libro sobre las leyes que contrarían la naturaleza humana.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Fisco** — el erario que cobraba las penas pecuniarias; el capítulo lo llama un ente imaginario e inconcebible.
 - **Proceso ofensivo** — aquel en que se declara reo al acusado para obligarlo a probar su inocencia.
@@ -52,7 +46,7 @@ flowchart TD
 - **Confesión** — la admisión del propio delito; centro heredado de los ordenamientos criminales.
 - **Juramento del reo** — la promesa de decir verdad exigida a quien más interés tiene en callarla.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Proceso ofensivo vs. informativo** — el primero parte de la imputación; el segundo, de la averiguación del hecho.
   - Se confunden porque: los dos terminan en una sentencia y los dos recogen pruebas.
@@ -64,7 +58,7 @@ flowchart TD
   - Criterio para decidir: ¿en qué condiciones se habló? Beccaria señala que se prefiere justo la menos confiable.
   - Dónde se cae: se descarta lo dicho fuera del juicio por falta de garantías, sin notar que las garantías del juicio son las que producen el miedo.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Beccaria dice que la confesión sigue siendo el centro del proceso aunque su causa desapareció. ¿Qué tipo de crítica es esa?
 2. Si la confesión es tan valiosa, ¿por qué el sistema rechaza una declaración extrajudicial tranquila?

@@ -36,20 +36,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 136) "ambos elementos se integran, en unidad inescindible, en la conducta humana" — es la bisagra: la formulación exacta importa, porque Cossio no niega valores ni normas, los mete adentro de la conducta.
-2. (p. 137) "aunque esta actitud la lleve a propugnar una posición reductiva" — es el crédito y el límite en la misma oración, y conviene verlos juntos.
-3. (pp. 135-138, notas 9 a 13) — son las referencias a Husserl, Dilthey, Heidegger y a la bibliografía sobre Cossio, que solo mencioné; ahí está el detalle de las filiaciones filosóficas.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Egologismo** — el nombre corto de la escuela egológica: la teoría de Cossio que hace de la conducta el objeto del derecho.
 - **Fenomenología** — el método filosófico de Husserl, que parte de cómo las cosas se presentan a la experiencia; una de las dos raíces de la egológica.
 - **Visión ontológica del derecho** — la que se pregunta qué es el derecho en su ser, y no cómo se lo conoce ni cómo se lo aplica.
 - **Expresión fenoménica de la libertad** — la fórmula con que la egológica entiende la conducta: la libertad haciéndose visible en actos.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Negar los valores y las normas vs. integrarlos en la conducta** — Cossio hace lo segundo, y confundirlo con lo primero deforma toda su tesis.
   - Se confunden porque: el resultado es el mismo, una sola dimensión, así que suena a que los suprime.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿el fundamento es la observación de lo social o una filosofía sobre el ser del derecho? La egológica es lo segundo.
   - Dónde se cae: se las agrupa como "las escuelas sociológicas", cuando el autor dice que su sustento impide confundirlas.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un compañero dice que la egológica "elimina la norma del derecho". ¿Qué le corregirías?
 2. El autor explica la resistencia a Cossio por su carácter polémico y su afán proselitista. ¿Es una explicación satisfactoria de por qué una teoría no se acepta?

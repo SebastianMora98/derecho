@@ -36,20 +36,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 6) El párrafo de la escala de desórdenes — es el corazón del capítulo, y la formulación de los dos extremos conviene tenerla literal.
-2. (cap. 6) "el legislador hace como el hábil arquitecto" — explica en una imagen por qué la pena no combate la sensibilidad sino su dirección.
-3. (cap. 6) El pasaje sobre los nombres de vicio y virtud que cambian con los siglos — es historia y crítica a la vez, y su fuerza depende de la enumeración completa.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Proporción entre delitos y penas** — la correspondencia entre el daño social de la acción y la severidad del castigo.
 - **Escala de desórdenes** — la serie continua de delitos, del que destruye la sociedad al de la mínima injusticia particular.
 - **Estorbos políticos** — nombre que Beccaria da a las penas: impiden el efecto dañino sin destruir la sensibilidad que lo impulsa.
 - **Aritmética política** — el cálculo de probabilidades con que hay que gobernar, en reemplazo de la exactitud matemática.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Gravedad del delito vs. maldad del que lo comete** — la escala mide el daño a la sociedad, no la culpa moral del autor.
   - Se confunden porque: se supone que se castiga más al peor, y "peor" suena a moral.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿se está castigando un delito del primer grado con la pena del último? Ese es el error que hay que evitar; lo demás es aproximación.
   - Dónde se cae: se le atribuye una pretensión de exactitud matemática que el texto rechaza expresamente.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Dos delitos de daño muy distinto reciben la misma pena. Según el cierre del capítulo, ¿qué efecto práctico tiene?
 2. La proporción se mide por el daño y también por los estímulos que inducen al delito. ¿Por qué agrega esa segunda variable?

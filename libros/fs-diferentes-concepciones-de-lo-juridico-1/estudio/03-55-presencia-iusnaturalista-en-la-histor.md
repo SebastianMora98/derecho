@@ -34,13 +34,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 127) "Los valores son ingredientes de la estructura del derecho" — es la bisagra del capítulo: fija en qué sentido el valor pertenece al derecho y no solo a la moral.
-2. (p. 128) "un simple pedazo de hierro se hace útil" — son los dos ejemplos que no reproduje, y es donde se ve qué significa que el hombre inserte valores en las cosas.
-3. (p. 126) "no compartimos su pretensión de reducir el derecho" — es la única línea donde aparece la objeción, y conviene verla en su brevedad para medir cuánto la argumenta.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Derecho natural o iusnaturalismo** — la corriente que sostiene que hay principios jurídicos dados en la naturaleza humana, anteriores al derecho que dicta el Estado.
 - **Dimensión axiológica** — la cara del derecho que tiene que ver con los valores; axiología es el estudio de los valores.
@@ -48,7 +42,7 @@ flowchart TD
 - **Derecho positivo** — el derecho efectivamente puesto por la autoridad, en contraste con el natural.
 - **Derecho privado y público** — la distinción entre lo que regula relaciones entre particulares y lo que regula las relaciones con el poder; el autor la cuenta como aporte iusnaturalista.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Que los valores importen vs. que el derecho sea solo valores** — el autor sostiene lo primero con energía y rechaza lo segundo en una línea.
   - Se confunden porque: casi todo el capítulo defiende el papel de los valores, así que se lee como una adhesión al iusnaturalismo.
@@ -60,7 +54,7 @@ flowchart TD
   - Criterio para decidir: ¿el valor está siendo experimentado, o quedó puesto en algo exterior? El arado y la escultura son lo segundo.
   - Dónde se cae: se explica el ejemplo del hierro como si mostrara que los valores son subjetivos, cuando muestra cómo se objetivan.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un profesor dice que este capítulo es una defensa del iusnaturalismo. ¿Qué parte de esa lectura respalda el texto y qué parte contradice?
 2. Un juez sostiene que para resolver un caso difícil le basta con determinar qué es lo justo, sin atender a la conducta ni a la norma. ¿Qué le objetaría el autor?

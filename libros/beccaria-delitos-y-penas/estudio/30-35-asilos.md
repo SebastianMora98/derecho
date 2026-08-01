@@ -38,19 +38,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 35) "su poder debería seguir a todo ciudadano, como la sombra al cuerpo" — es la formulación de la tesis en una imagen.
-2. (cap. 35) La nota al pie intercalada, la del cap. 34 — contiene la retractación de Beccaria y merece leerse aparte, en su lugar correcto.
-3. (cap. 35) Las condiciones que pone para aceptar la extradición — muestran por qué no se pronuncia, y son más importantes que la respuesta que no da.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Asilo** — lugar dentro de un país donde el reo queda fuera del alcance de las leyes.
 - **Pequeña soberanía** — en lo que se convierte cada asilo, al permitir que se formen allí normas opuestas a las comunes.
 - **Entrega recíproca de reos** — el pacto de extradición entre naciones, que el capítulo deja sin resolver.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Asilo vs. impunidad** — Beccaria dice que se diferencian en poco, porque los dos quiebran la certeza de la pena.
   - Se confunden porque: el asilo tiene forma jurídica y la impunidad parece un fracaso del sistema, no una institución.
@@ -62,7 +56,7 @@ flowchart TD
   - Criterio para decidir: ¿ese Estado tiene penas suaves y jueces sin arbitrio? Sin eso, entregarle a alguien es colaborar con la tiranía.
   - Dónde se cae: se acepta el principio general sin mirar a qué sistema se entrega a la persona, que es la reserva que Beccaria pone.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué el daño del asilo no consiste en que unos pocos escapen?
 2. Beccaria dice que multiplicar los asilos es formar pequeñas soberanías. ¿Cómo ocurre eso?

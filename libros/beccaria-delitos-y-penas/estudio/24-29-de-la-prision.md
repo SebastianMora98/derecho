@@ -36,20 +36,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 29) La lista de indicios que autorizan la prisión — conviene tenerla completa, porque el punto del capítulo es que sea la ley y no el juez quien la fije.
-2. (cap. 29) "vengadoras de los pactos, no de la malicia intrínseca de las acciones" — es la clave de todo el argumento sobre jurisdicción.
-3. (cap. 29) Las cuatro causas de que el absuelto quede infamado — están enumeradas seguidas y cada una identifica un defecto distinto del sistema.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Prisión** — única pena que por necesidad precede a la declaración del delito, y que por eso exige indicios fijados por ley.
 - **Indicio suficiente** — el hecho que la ley señala como bastante para encarcelar: fama pública, fuga, confesión extrajudicial, cuerpo del delito.
 - **Lugar del delito** — el único lugar donde puede imponerse la pena, porque allí están los pactos violados.
 - **Remisión del ofendido** — el perdón de la víctima, que alcanza a su porción del derecho pero no a la de los demás.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Vengar pactos vs. vengar la malicia de las acciones** — los jueces hacen lo primero; lo segundo justificaría castigar cualquier crueldad en cualquier parte.
   - Se confunden porque: en el caso normal el hecho es malo y además rompe el pacto local, así que las dos razones coinciden.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿de quién es el derecho de hacer castigar? De todos los ciudadanos o del soberano.
   - Dónde se cae: se extingue la pena por acuerdo entre las partes, acto humano pero contrario al bien público según el capítulo.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué la moderación de las penas y la limpieza de las cárceles permitirían encarcelar con indicios menores?
 2. Beccaria niega que un crimen cometido en Constantinopla pueda castigarse en París. ¿Qué concepto de delito hay detrás?

@@ -36,13 +36,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 120) "El derecho resulta, así, una complejidad" — es la bisagra del capítulo y la formulación exacta importa: ahí están las tres dimensiones y las dos afirmaciones sobre ellas.
-2. (pp. 121-122, con las notas 1 y 2) "La historia de la iusfilosofía nos muestra" — es la enumeración de escuelas y autores que no reproduje; cada nombre reaparece en los capítulos siguientes.
-3. (p. 122) "El que la experiencia jurídica sea compleja" — es el pasaje que más fácil se malentiende: distingue un problema de conocimiento de una división real del derecho.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Experiencia jurídica** — el derecho tal como ocurre en la vida real; el autor la llama también "lo jurídico" (p. 120).
 - **Sujeto de derecho** — aquel a quien el ordenamiento puede atribuirle derechos y deberes.
@@ -50,7 +44,7 @@ flowchart TD
 - **Tridimensionalismo** — la teoría de que el derecho son siempre conducta, norma y valor a la vez.
 - **Proyecto de vida** — el plan que cada uno traza libremente para su vida y que el derecho debe hacer posible.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **El derecho vs. la ley** — la ley es una de las tres dimensiones; el derecho es las tres juntas.
   - Se confunden porque: en la facultad se estudia sobre todo el texto de las leyes.
@@ -62,7 +56,7 @@ flowchart TD
   - Criterio para decidir: ¿la separación está en cómo lo conozco o en cómo existe? Acá es epistemológica.
   - Dónde se cae: se responde que el derecho tiene partes autónomas, cuando lo autónomo es su vía de conocimiento.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un juez resuelve un desalojo citando solo el artículo aplicable, sin mirar la situación de las personas ni el fin que la norma protege. ¿Qué está haciendo y qué le falta?
 2. Alguien dice: "estudio primero todas las normas y después, si me da el tiempo, la parte social y de valores". ¿Qué error tiene ese plan y qué parte no es un error?

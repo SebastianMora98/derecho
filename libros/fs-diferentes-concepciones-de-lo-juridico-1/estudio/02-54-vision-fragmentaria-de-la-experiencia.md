@@ -35,20 +35,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 124) "Las diversas escuelas y corrientes de pensamiento" — es la enumeración de las cinco corrientes que no reproduje; cada una tiene capítulo propio más adelante.
-2. (p. 124) "por más elaboradas y coherentes que sean" — es el pasaje que más fácil se malentiende: distingue el rigor interno de la correspondencia con la realidad.
-3. (p. 125) "No obstante, y aunque sin pretenderlo" — es la bisagra del capítulo y la formulación exacta importa: ahí está la tesis de que nadie trabaja sin teoría.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Iusfilosofía** — filosofía del derecho: se pregunta qué es el derecho, en vez de aplicarlo.
 - **Dogmática jurídica** — el estudio ordenado del derecho vigente: interpretar y sistematizar los códigos.
 - **Visión fragmentaria** — explicación que capta una sola dimensión del derecho y la presenta como el todo.
 - **Visión totalizadora** — la que abarca las tres dimensiones juntas; su ausencia "limita la tarea del jurista" (p. 124).
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Ser coherente vs. ser verdadero** — una teoría puede razonar sin contradicciones y aun así no describir la realidad.
   - Se confunden porque: en la facultad se evalúa sobre todo la coherencia interna, así que se vuelve el criterio por defecto.
@@ -60,7 +54,7 @@ flowchart TD
   - Criterio para decidir: ¿sus decisiones suponen alguna idea sobre qué es el derecho? Si sí, hay una teoría operando.
   - Dónde se cae: se contesta que para el autor el jurista práctico trabaja sin filosofía, cuando dice lo contrario.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un abogado dice: "yo no me meto en teorías, resuelvo casos con el código en la mano". ¿Qué le respondería el autor?
 2. Alguien afirma que en este capítulo el autor refuta al positivismo. ¿Qué parte de esa lectura es correcta y qué parte no?

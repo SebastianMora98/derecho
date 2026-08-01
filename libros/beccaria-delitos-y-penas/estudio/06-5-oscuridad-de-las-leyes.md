@@ -35,19 +35,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 5) "forma de un libro público y solemne uno casi privado y doméstico" — es la definición del daño en una sola imagen, y conviene tenerla textual.
-2. (cap. 5) "la ignorancia y la incertidumbre de las penas ayudan la elocuencia de las pasiones" — une claridad y prevención en una frase; es el nexo con el cap. 6.
-3. (cap. 5) El párrafo final sobre la "antigua simplicidad y buena fe" — es una inversión histórica completa que resumí en dos líneas y que vale leer entera.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Oscuridad de las leyes** — que la ley sea inaccesible por su lengua o su redacción; para Beccaria, causa forzosa de la interpretación.
 - **Voluntad general** — la única que puede alterar las leyes, frente a los intereses particulares que las corrompen.
 - **Estable monumento del pacto social** — la ley escrita, entendida como la prueba permanente de lo que se pactó.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Ley oscura vs. ley injusta** — la oscuridad es un vicio de forma que produce injusticia aunque el contenido sea correcto.
   - Se confunden porque: las dos terminan en una condena que el ciudadano no esperaba.
@@ -59,7 +53,7 @@ flowchart TD
   - Criterio para decidir: ¿cuántos pueden leerla y entenderla? De ese número, dice Beccaria, depende la frecuencia de los delitos.
   - Dónde se cae: se da por publicada una ley que está en latín o en jerga, cuando para el capítulo eso es exactamente la lengua extraña.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un jurista defiende redactar la ley penal en lenguaje técnico para que sea precisa. ¿Cómo respondería este capítulo?
 2. Beccaria dice que a más gente que entienda las leyes, menos delitos. ¿Qué supone ese razonamiento sobre quien delinque?

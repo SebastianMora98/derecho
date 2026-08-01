@@ -34,13 +34,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (pp. 161-162) "son varios los sustanciales y novedosos aportes" — es la enumeración completa que no reproduje, y sirve de índice de los parágrafos que siguen.
-2. (p. 163) "la concepción personalista del derecho ha sido la base teórica indispensable" — es el pasaje que más fácil se malentiende: fija un orden de fundamentación que se suele invertir.
-3. (p. 164) "mantiene aún algunos rezagos de una concepción extremadamente individualista" — es la concesión del autor contra su propia tesis, y conviene leerla textual.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Personalismo humanista** — la concepción que pone a la persona, y no al individuo aislado ni al patrimonio, como finalidad del derecho.
 - **Daño al proyecto de vida** — el daño que frustra el plan de vida de alguien; el autor lo destaca "por su originalidad" (p. 162).
@@ -48,7 +42,7 @@ flowchart TD
 - **Organización de personas no inscripta** — la agrupación que actúa sin estar registrada; antes se la llamaba irregular o de hecho.
 - **Patrimonialismo** — la orientación que hace del patrimonio el centro de la protección jurídica.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Persona vs. individuo aislado** — el personalismo protege a la persona en su vida concreta; el individualismo protege a un sujeto abstracto y a sus bienes.
   - Se confunden porque: en el lenguaje corriente son sinónimos, y las dos posturas dicen defender al ser humano.
@@ -60,7 +54,7 @@ flowchart TD
   - Criterio para decidir: ¿cuál se presenta como "base teórica indispensable"? En la p. 163 es el personalismo.
   - Dónde se cae: se explica que deduce el personalismo del tridimensionalismo, invirtiendo la fundamentación que el texto afirma.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un legislador propone un código centrado en proteger la propiedad y la libertad contractual de cada individuo. ¿Es un código personalista? Justificá.
 2. Alguien afirma: "para el autor el gran aporte del código es haber incorporado el daño al proyecto de vida". ¿Qué parte contradice al texto?

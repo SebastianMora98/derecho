@@ -37,19 +37,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 129) "No existe 'lo jurídico' sin los valores, pero tampoco" — es la bisagra: la fórmula simétrica que sostiene todo el capítulo, y la formulación exacta importa.
-2. (p. 129) "una respuesta insuficiente, por fragmentaria" — es la calificación que da nombre al apartado entero; conviene tenerla textual.
-3. (p. 130) "un vano e infructuoso esfuerzo" — es el pasaje que más fácil se pasa por alto: ahí el autor critica a los críticos del iusnaturalismo con el mismo argumento.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Reduccionismo** — la operación de explicar algo complejo por uno solo de sus componentes; acá, tomar los valores por todo el derecho.
 - **Inescindible** — que no se puede separar; el autor lo usa para la unidad de las tres dimensiones.
 - **Redimensionar** — devolverle a una escuela su medida justa: conservar su aporte y quitarle la pretensión de ser la explicación total.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Insuficiente vs. falso** — el iusnaturalismo dice algo verdadero pero parcial; no se lo acusa de error.
   - Se confunden porque: en una discusión, rechazar una tesis suele significar negarla.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿la afirmación deja a los valores como una dimensión del derecho, o los saca? Si los saca, es la postura descomedida.
   - Dónde se cae: se agrupa al autor con los antiaxiológicos, cuando dedica el cierre del capítulo a llamarlos vanos e infructuosos.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un compañero resume el apartado así: "para el autor el iusnaturalismo estaba equivocado". ¿Qué palabra cambiarías y por qué?
 2. Un jurista propone construir la ciencia del derecho sin ninguna referencia a valores, para ganar rigor. Según este capítulo, ¿qué error comete y en qué se parece al del iusnaturalismo?

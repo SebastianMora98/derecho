@@ -36,13 +36,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 132) "en tanto es pura forma, vacía de contenido" — es la bisagra y el argumento más fuerte del capítulo: no es de alcance sino de naturaleza.
-2. (pp. 131-132) "extrañarlos o exiliarlos del derecho calificándolos de 'impuros'" — la formulación exacta importa, porque juega con el nombre de la teoría pura.
-3. (p. 131) "Los valores resultan ser, dentro del planteamiento kelseniano, elementos de naturaleza metajurídica" — es el pasaje que más fácil se malentiende: describe a Kelsen, no la posición del autor.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Formalismo jurídico** — la corriente que identifica el derecho con su forma normativa y deja afuera conducta y valores.
 - **Escuela de la exégesis** — la que sostenía que todo el derecho está en el texto de la ley, y que asimiló el derecho civil al Código Napoleón.
@@ -51,7 +45,7 @@ flowchart TD
 - **Metajurídico** — lo que queda fuera del derecho; es el lugar al que Kelsen manda los valores.
 - **Lógica jurídica** — la disciplina que estudia la norma como pensamiento; el autor le deja ese trabajo.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Que la teoría pura acierte vs. que alcance** — el autor le concede rigor sobre la dimensión formal y le niega la conclusión de que el derecho sea solo eso.
   - Se confunden porque: casi todo el capítulo elogia a Kelsen, así que el lector espera una adhesión.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿la norma tiene contenido por sí sola? Para el autor no: es pura forma, y su contenido viene de la conducta y el valor.
   - Dónde se cae: se contesta que el autor excluye a la norma del derecho, cuando la incluye como una de las tres dimensiones.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un profesor enseña derecho civil explicando artículo por artículo el código, sin salir del texto. ¿A qué escuela pertenece ese método y qué le objetaría el autor?
 2. Alguien afirma que en este capítulo el autor refuta a Kelsen. ¿Qué parte de esa lectura respalda el texto y qué parte contradice?

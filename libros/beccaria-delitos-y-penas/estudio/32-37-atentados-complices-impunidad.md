@@ -41,20 +41,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 37) El párrafo sobre el reparto del riesgo entre cómplices — es un razonamiento de incentivos poco habitual en el libro y conviene seguirlo entero.
-2. (cap. 37) El balance de ventajas e inconvenientes de la impunidad al delator — están enumerados en orden y cada uno vale por separado.
-3. (cap. 37) "en vano me atormento para destruir el remordimiento que siento" — es el único lugar donde Beccaria admite que su propia solución lo incomoda.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Atentado** — el delito comenzado por una acción que manifiesta la voluntad, sin llegar a consumarse.
 - **Ejecutor inmediato** — el cómplice que realiza materialmente el hecho, y que corre el mayor riesgo.
 - **Impunidad al delator** — la exención de pena ofrecida al cómplice que descubre a los demás.
 - **Delitos de valor y de vileza** — los primeros, menos fatales por raros; los segundos, comunes y contagiosos.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **No castigar la intención vs. castigar el atentado** — lo segundo requiere una acción que la manifieste.
   - Se confunden porque: el atentado se castiga por lo que revela del propósito, y parece que se pena la voluntad.
@@ -66,7 +60,7 @@ flowchart TD
   - Criterio para decidir: ¿el incentivo existe antes del delito o se negocia después? Solo el primero previene la asociación.
   - Dónde se cae: se ofrece impunidad puntual para resolver una causa, mostrando así que la ley necesita el socorro de quien la ofende.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué castigar menos el atentado no es indulgencia sino cálculo?
 2. Beccaria quiere que el ejecutor arriesgue más que los demás cómplices. ¿Qué busca con esa desigualdad?

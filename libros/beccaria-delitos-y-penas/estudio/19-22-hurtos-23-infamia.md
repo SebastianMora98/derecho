@@ -37,20 +37,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 22) "el derecho de propiedad (terrible, y acaso no necesario derecho)" — es la frase más audaz del libro y aparece entre paréntesis, sin desarrollo; conviene verla en su contexto.
-2. (cap. 22) La definición de la esclavitud temporal como resarcimiento — la formulación exacta importa, porque de ella depende toda la propuesta del cap. 28.
-3. (cap. 23) El párrafo sobre los delitos fundados en el orgullo — es un argumento propio y sutil que resumí en pocas líneas.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Hurto doloso** — el cometido sin violencia; para Beccaria, casi siempre hijo de la miseria.
 - **Esclavitud temporal** — la pena que propone para el hurto: la sociedad se hace señora de la persona y el trabajo del reo por cierto tiempo.
 - **Infamia** — señal de desaprobación pública que priva al reo de la confianza de la patria; pena de las injurias al honor.
 - **Delitos fundados en el orgullo** — aquellos en que el dolor de la pena da gloria al reo, y que por eso piden ridiculez.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Hurto violento vs. hurto doloso** — son de naturaleza distinta y confundirlos iguala una suma de dinero a la vida de un hombre.
   - Se confunden porque: en los dos se toma lo ajeno y la pérdida patrimonial puede ser idéntica.
@@ -62,7 +56,7 @@ flowchart TD
   - Criterio para decidir: ¿la sociedad ya desaprueba esa conducta? Si no, la ley pierde veneración en vez de ganarla.
   - Dónde se cae: se declara infame una acción indiferente, y el efecto es rebajar la infamia de las que sí lo son.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué rechaza Beccaria la pena pecuniaria para el hurto, si parece la más proporcionada?
 2. Llama al derecho de propiedad "terrible, y acaso no necesario". ¿Qué hace con esa idea en el resto del capítulo?

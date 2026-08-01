@@ -39,19 +39,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 38) "¿cuál interrogación más sugestiva que el dolor?" — es la frase que resume la primera contradicción y conviene tenerla textual.
-2. (cap. 38) El párrafo sobre las formalidades y sus tres razones — matiza la posición de Beccaria y suele citarse mal.
-3. (cap. 38) El pasaje sobre la muerte civil como abuso de la gramática — muestra cómo una metáfora jurídica puede costar vidas.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Interrogación sugestiva** — la que por su conexión inmediata con el hecho sugiere al reo la respuesta.
 - **Muerte civil** — la ficción por la cual el condenado pierde capacidad jurídica y su declaración se tiene por nula.
 - **Formalidad judicial** — la regla de forma que limita el arbitrio y da al pueblo la imagen de un juicio estable.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Formalidad útil vs. formalidad que daña la verdad** — la primera limita el arbitrio; la segunda impide corregir un error.
   - Se confunden porque: las dos se defienden con el mismo argumento de solemnidad y seguridad jurídica.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿las preguntas todavía sirven para algo? Si otras pruebas ya acreditan el hecho, la respuesta es inútil.
   - Dónde se cae: se castiga el silencio como si siempre entorpeciera, cuando Beccaria señala que negar es lo más ordinario.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Cómo demuestra Beccaria que prohibir la pregunta sugestiva y admitir la tortura es contradictorio?
 2. Dice que los hombres se gobiernan más por los nombres que por las cosas. ¿Qué explica con eso?

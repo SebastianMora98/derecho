@@ -38,19 +38,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 39) El primer párrafo entero — es la descripción de las hogueras, y su función en el capítulo depende de leerla completa.
-2. (cap. 39) La distinción entre las opiniones que se aclaran con el choque y las que deben vestirse de autoridad — es la tesis más sustantiva que enuncia.
-3. (cap. 39) La frase final sobre los pecados — fija el límite del libro entero y conviene tenerla textual.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Uniformidad de pensamientos** — la coincidencia de opiniones en un Estado, cuya necesidad Beccaria enuncia sin probarla.
 - **Opinión que se aclara con el choque** — la que mejora al debatirse, porque las falsas se sumergen y las verdaderas flotan.
 - **Imperio de la fuerza sobre los entendimientos** — la imposición de creencias, cuyas conquistas son el disimulo y el envilecimiento.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Delito vs. pecado, en cuanto a jurisdicción** — el libro trata lo que nace del pacto social; el pecado se rige por otros principios.
   - Se confunden porque: en el siglo XVIII la herejía era perseguida por tribunales que dictaban penas temporales.
@@ -62,7 +56,7 @@ flowchart TD
   - Criterio para decidir: ¿resiste por su propia constancia? Si sí, el choque la aclara; si no, hay que vestirla de fuerza.
   - Dónde se cae: se lee esa segunda categoría como un elogio de la censura, cuando la frase misma admite que sus conquistas son el disimulo y el envilecimiento.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué la descripción de las hogueras ocupa la mitad de un capítulo dedicado a no tratar el tema?
 2. Beccaria concede que el imperio de la fuerza sobre los entendimientos es necesario e indispensable. ¿Hay que leerlo literalmente?

@@ -40,13 +40,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 16) El dilema "o el delito es cierto o incierto" — son cinco líneas que contienen el argumento entero, y conviene tenerlas textuales.
-2. (cap. 16) El párrafo de la consecuencia extraña, sobre el inocente y el reo frente al tormento — es la demostración más precisa del capítulo y su lógica se pierde en un resumen.
-3. (cap. 16) El discurso imaginario del juez al robusto y al débil — muestra el absurdo del sistema mejor que cualquier argumento abstracto.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Tortura** — el tormento aplicado durante el proceso para obtener confesión, cómplices o purgar la infamia.
 - **Crisol de la verdad** — el nombre que la tradición daba al dolor como método de prueba; Beccaria lo llama infame.
@@ -54,7 +48,7 @@ flowchart TD
 - **Juicios de Dios** — las pruebas del fuego y del agua hirviendo, con las que Beccaria equipara la tortura.
 - **Cómplice** — el partícipe del delito; el capítulo niega que el tormento sirva para descubrirlo.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Confesión libre vs. arrancada** — la segunda no es un acto de voluntad, porque el dolor puede crecer hasta no dejar otra salida.
   - Se confunden porque: en las dos el reo pronuncia las mismas palabras y el acta las registra igual.
@@ -66,7 +60,7 @@ flowchart TD
   - Criterio para decidir: ¿qué variable cambia el resultado? La robustez del cuerpo, no la calidad de los hechos.
   - Dónde se cae: se atribuye valor probatorio a que el acusado "se quebró", que es exactamente el dato sin valor.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué dice Beccaria que la tortura deja al inocente en peor condición que al culpable?
 2. Una ley exige que la confesión bajo tormento se ratifique después, sin tormento, para valer. ¿Resuelve eso el problema?

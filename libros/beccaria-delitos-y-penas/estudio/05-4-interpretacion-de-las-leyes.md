@@ -36,20 +36,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 4) "el juez debe hacer un silogismo perfecto" — es la formulación más citada del capítulo y conviene tener las tres premisas exactas.
-2. (cap. 4) "de su buena o mala digestión" — es la enumeración de todo lo que contamina una interpretación, y su efecto depende de leerla completa.
-3. (cap. 4) "Esta es la física y real autoridad de las leyes" — es el pasaje que más fácil se pasa por alto: funda la obligatoriedad en la voluntad viva y no en la tradición.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Interpretación de la ley** — determinar qué dice la ley más allá de su letra; para Beccaria es facultad del soberano, no del juez.
 - **Silogismo perfecto** — el razonamiento en tres pasos al que se reduce el oficio del juez: ley, hecho, consecuencia.
 - **Espíritu de la ley** — la intención o el sentido que se le atribuye más allá del texto; Beccaria lo llama un dique roto.
 - **Voluntades reunidas de los súbditos vivientes** — el fundamento actual de la ley, frente al juramento de generaciones pasadas.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Interpretar la ley vs. subsumir el hecho** — lo primero fija qué dice la norma; lo segundo decide si un hecho encaja en ella.
   - Se confunden porque: las dos operaciones ocurren en la misma sentencia y las hace la misma persona.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿por qué me obliga a mí? Para Beccaria, porque las voluntades reunidas actuales lo sostienen, no porque lo juraran los antepasados.
   - Dónde se cae: se defiende una ley por tradición, y el capítulo llama a ese juramento nulo e inicuo.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un tribunal absuelve invocando el espíritu de la ley, en un caso donde la letra condenaba. Según este capítulo, ¿qué está mal aunque el resultado sea benigno?
 2. Beccaria observa que los mismos tribunales castigan igual delito de modo distinto en tiempos distintos. ¿Ese dato prueba su tesis o solo la ilustra?

@@ -36,19 +36,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 133) "asegurar la libertad de cada ser humano para liberarlo" — es la bisagra: la única definición de la finalidad propia del derecho en todo el apartado, y la formulación exacta importa.
-2. (p. 132) "no agota la explicación de lo que sea el derecho" — cierra el molde que el autor repitió con las tres escuelas; conviene verlo textual para reconocer el patrón.
-3. (p. 133) "próxima al sociologismo pero a partir de una fundamentación filosófica" — es el pasaje que más fácil se malentiende: ubica a la egológica sin confundirla con el sociologismo.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Sociologismo jurídico** — la corriente, de origen estadounidense, que toma la dimensión social como objeto de estudio del derecho.
 - **Realismo jurídico** — el nombre que la misma posición recibe en los países del norte de Europa.
 - **Dimensión social** — la cara del derecho que consiste en la vida humana de relación, y que estas escuelas toman por el todo.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **El derecho es una ciencia social vs. el derecho se reduce a lo social** — el autor afirma lo primero y niega lo segundo.
   - Se confunden porque: si el derecho es una ciencia social y estudia la vida social, parece seguirse que su objeto es lo social.
@@ -60,7 +54,7 @@ flowchart TD
   - Criterio para decidir: ¿el fundamento es la observación de lo social, o una filosofía sobre la conducta? La egológica es lo segundo.
   - Dónde se cae: se las trata como sinónimos; acá el autor solo ubica a la egológica y remite a un parágrafo posterior para explicarla.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un sociólogo y un juez estudian la misma huelga. Según el criterio del capítulo, ¿qué distingue lo que hace cada uno?
 2. Alguien afirma que el autor rechaza el sociologismo porque niega que la vida social importe en el derecho. ¿Qué tiene de incorrecto?

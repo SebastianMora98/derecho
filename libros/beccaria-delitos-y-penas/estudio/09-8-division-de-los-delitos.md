@@ -38,20 +38,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 8) El párrafo de las tres clases — es la clasificación completa y conviene tener la formulación exacta de cada una.
-2. (cap. 8) El pasaje del dogma político — resumí su efecto en dos líneas, pero el original desarrolla qué tipo de ciudadano produce, y eso es lo más citado del capítulo.
-3. (cap. 8) "la interpretación sofística, que es ordinariamente la filosofía de la esclavitud" — conecta este capítulo con el cap. 4 y explica cómo se estira la lesa majestad.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Lesa majestad** — nombre de los delitos que destruyen inmediatamente la sociedad o a quien la representa; Beccaria advierte contra extenderlo.
 - **Seguridad privada** — el derecho de cada ciudadano sobre su vida, sus bienes y su honor; fin primario de toda sociedad legítima.
 - **Dogma político** — que cada uno pueda hacer lo no prohibido sin temer más consecuencia que la de la acción misma.
 - **Interpretación sofística** — la que confunde esferas de daño distintas; el autor la llama filosofía de la esclavitud.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Ofender a la sociedad vs. destruirla inmediatamente** — todo delito hace lo primero; solo la primera clase hace lo segundo.
   - Se confunden porque: se razona que si todo delito daña al conjunto, todo delito atenta contra el Estado.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿hasta dónde llega la influencia del autor? La del magistrado destruye en los súbditos las ideas de justicia y obligación.
   - Dónde se cae: se trata el atropello oficial como cuestión de disciplina interna, cuando acá es uno de los mayores delitos.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un gobierno califica de lesa majestad un delito común para aplicarle la pena mayor. Según el capítulo, ¿cuál es el mecanismo del abuso?
 2. Beccaria dice que la seguridad forma "almas libres y vigorosas". ¿Por qué le importa el efecto psicológico de una garantía jurídica?

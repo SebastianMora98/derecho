@@ -36,20 +36,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 167) El tramo sobre Alterini y el art. 1738 del código argentino de 2014 — es la única evidencia de recepción con efecto normativo, no de opinión; conviene ver las fechas y los nombres.
-2. (pp. 165-166) Las citas de Rescigno — son las más extensas y las que detallan qué se considera novedoso; están textuales y con referencia, y el resumen no las reemplaza.
-3. (pp. 165-168) — Este tramo llegó con las comillas de cierre convertidas en `i` por el reconocimiento óptico (`italianoi`, `icomo`, `iCódigo`), así que conviene leerlo en el original para saber dónde empieza y termina cada cita.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Entes de hecho** — el nombre que Rescigno le da a la organización de personas no inscripta: la que actúa sin registro.
 - **Subjetividad jurídica** — la aptitud de ser sujeto de derecho; el código la extiende más allá de las personas físicas y jurídicas.
 - **Capacidad jurídica** — la vieja fórmula que el código reemplaza por la noción de sujeto de derecho.
 - **Codificación civil comparada** — el conjunto de los códigos civiles de distintos países tomados como término de comparación.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Elogio doctrinal vs. recepción normativa** — cuatro de los cinco testimonios son opiniones; el argentino es un artículo vigente.
   - Se confunden porque: el capítulo los presenta seguidos y con el mismo tono celebratorio.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿se pregunta quién es titular, o cuánto puede actuar? La capacidad gradúa; la subjetividad admite o no.
   - Dónde se cae: se dice que el código amplió la capacidad jurídica, cuando amplió quiénes son sujetos.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un compañero cita este capítulo como prueba de que el Código de 1984 influyó en la región. ¿Cuál de los cinco testimonios sostiene mejor esa afirmación y por qué?
 2. El autor dice haber escogido a los juristas "al azar". ¿Qué problema tiene esa afirmación y cómo afecta a lo que el capítulo puede probar?

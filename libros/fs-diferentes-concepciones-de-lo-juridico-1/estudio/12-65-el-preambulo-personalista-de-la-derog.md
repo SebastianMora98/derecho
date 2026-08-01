@@ -34,20 +34,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 160) La comparación literal entre el art. 1 de 1979 y el de 1993 — es la bisagra del capítulo y todo depende de las palabras exactas de cada texto.
-2. (p. 159) El art. 4 de la Constitución de 1979 — es la pieza técnica más útil del capítulo, y conviene ver cómo redacta la autorización de la analogía.
-3. (pp. 160-161) El Preámbulo de 1979 — son las declaraciones sobre familia, trabajo, justicia y solidaridad que solo enumeré.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Fin supremo de la sociedad y del Estado** — la fórmula del art. 1 de 1979: aquello a cuyo servicio están las instituciones.
 - **Preámbulo** — la declaración inicial de una constitución, que fija sus principios sin ser articulado exigible.
 - **Analogía** — aplicar a un caso no previsto la solución de uno semejante; el art. 4 la autoriza para proteger derechos de la persona.
 - **Derechos anteriores y superiores al Estado** — la fórmula del Preámbulo: derechos que el Estado reconoce, no que crea.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **La persona como fin vs. su defensa como fin** — es la diferencia entre las dos constituciones y no es una sutileza de redacción.
   - Se confunden porque: las dos fórmulas suenan protectoras y las dos nombran a la persona.
@@ -59,7 +53,7 @@ flowchart TD
   - Criterio para decidir: ¿el derecho invocado tiene que estar en el texto? Con la analogía no hace falta.
   - Dónde se cae: se lee el art. 4 como una declaración de principios, cuando es una regla operativa de interpretación.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Alguien reclama la protección de un interés que ninguna norma menciona, pero que se apoya en la dignidad. Bajo la Constitución de 1979, ¿qué herramienta tiene el juez?
 2. Un compañero dice que las Constituciones de 1979 y 1993 dicen lo mismo con otras palabras. ¿Qué le respondería el autor?

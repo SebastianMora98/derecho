@@ -37,19 +37,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 12) El párrafo entero — mide once líneas y contiene la definición del fin de las penas con sus tres condiciones; es el pasaje más citado del libro.
-2. (cap. 13) La nota al pie sobre *In atrocissimis leviores conjecturae sufficiunt* — la edición la partió a la mitad y la intercaló en el cuerpo; conviene leerla completa y aparte.
-3. (cap. 13) El párrafo sobre los delitos de palabra — resumí el argumento, pero la explicación de por qué las palabras no dejan rastro merece leerse entera.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Fin de las penas** — impedir que el reo cause nuevos daños y retraer a los demás de imitarlo; nunca afligir ni reparar el pasado.
 - **Credibilidad del testigo** — su graduación depende del interés que tenga en decir o no la verdad.
 - **Nota de infamia** — el descrédito legal del infame, incoherente como causa de exclusión cuando no hay interés en mentir.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Delito atroz vs. delito probable** — para Beccaria la atrocidad **baja** la credibilidad del testimonio en vez de subirla.
   - Se confunden porque: la gravedad del hecho parece exigir más severidad también en la prueba.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿queda algún rastro fuera del recuerdo? Si no, la calumnia es fácil y la defensa casi imposible.
   - Dónde se cae: se condena por lo dicho con el mismo estándar de prueba que por lo hecho, sin notar que el reo pierde sus medios de justificarse.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Si el fin de la pena es solo prevenir, ¿qué queda del argumento de que el delincuente "se lo merece"?
 2. La regla del cap. 12 pide máxima impresión sobre los ánimos y mínimo dolor sobre el cuerpo. ¿No son objetivos contrarios?

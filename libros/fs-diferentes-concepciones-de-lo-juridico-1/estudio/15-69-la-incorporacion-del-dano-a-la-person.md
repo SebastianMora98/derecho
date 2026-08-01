@@ -36,13 +36,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 171) "es aquel que tiene como consecuencia la frustración del proyecto de vida de la persona" — es la primera formulación de la figura en la doctrina, y la definición exacta importa.
-2. (pp. 172-173) La comparación con los códigos alemán de 1900, italiano de 1942 y portugués de 1967 — es donde el aporte deja de ser una afirmación y se vuelve verificable; conviene ver los artículos y sus límites.
-3. (pp. 169-174) El relato de la gestión ante la Comisión Revisora — es material que solo resumí, y es la única parte del libro donde el autor cuenta cómo se hace entrar una idea en un código.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Daño a la persona** — la categoría genérica del art. 1985: cualquier daño al ser humano, en su estructura psicosomática o en su libertad.
 - **Daño moral o pretium doloris** — el dolor o sufrimiento; para el autor es solo un daño psíquico-emocional, una parte pequeña del daño a la persona.
@@ -50,7 +44,7 @@ flowchart TD
 - **Lucro cesante** — la ganancia que se dejó de obtener por causa del daño.
 - **Libertad fenoménica** — la libertad hecha actos concretos en el mundo; es lo que el proyecto de vida realiza y lo que su frustración daña.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Daño moral vs. daño a la persona** — el moral es una especie mínima; el daño a la persona es el género que cubre cuerpo, psique y libertad.
   - Se confunden porque: por décadas el daño moral fue el único rótulo disponible para lo no patrimonial, así que quedó como sinónimo.
@@ -62,7 +56,7 @@ flowchart TD
   - Criterio para decidir: ¿la reparación está condicionada a una lista, a un delito previo o a la gravedad? Si sí, hay límite.
   - Dónde se cae: se dice que el Código de 1984 fue el primero en admitir el daño extrapatrimonial, cuando fue el primero en no restringirlo.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Una persona pierde la posibilidad de ejercer su oficio por una lesión, pero conserva su patrimonio y no sufre dolor físico. ¿Habría tenido reparación bajo el Código de 1936? ¿Y bajo el art. 1985?
 2. Un abogado sostiene que el Código de 1984 fue el primer código del mundo en reparar daños no patrimoniales. ¿Qué le corregirías con lo que dice este capítulo?

@@ -39,9 +39,9 @@ la distinción. Nada de frases célebres ni datos de color.
 
 ## investigacion
 
-Al final de «Qué releer del original», agregá una lista "Preguntas abiertas" con 3
-preguntas de investigación que se desprendan de este capítulo y que el texto no
-contesta.
+Al final de «Mapa», después del diagrama, agregá una lista "Preguntas abiertas"
+con 3 preguntas de investigación que se desprendan de este capítulo y que el texto
+no contesta.
 
 En «Lo esencial del capítulo», marcá en media cláusula, donde caiga, cada
 afirmación que necesitaría una fuente secundaria para poder citarse en un trabajo:
@@ -63,7 +63,7 @@ nodos.
 
 ## aplicacion-practica
 
-Agregá un bloque `## 8. Cómo lo uso` con 3 acciones concretas y verificables que se
+Agregá un bloque `## 7. Cómo lo uso` con 3 acciones concretas y verificables que se
 desprendan de este capítulo, cada una con la condición en la que aplica y con la
 referencia al pasaje que la respalda.
 

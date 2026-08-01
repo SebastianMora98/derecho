@@ -38,20 +38,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 32) El párrafo sobre las leyes inútiles que envilecen a las saludables — es un principio general del libro y aparece acá casi de paso.
-2. (cap. 32) Las cuatro razones por las que no se puede castigar al que emigra — están encadenadas y conviene ver cómo cada una cierra una salida distinta.
-3. (cap. 32) El tramo sobre el lujo y la relación entre población y territorio — es la parte más ajena al derecho penal y la que más resumí.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Pena personal** — la que recae solo sobre el autor; requisito que el castigo del suicidio no puede cumplir.
 - **Ley no armada** — la que las circunstancias vuelven inaplicable y que por eso no debe promulgarse.
 - **Bienestar relativo** — la felicidad de una nación comparada con la de sus vecinas; el verdadero freno a la emigración.
 - **Lujo de ostentación** — el que crece en Estados vastos y despoblados y favorece al despotismo, frente al lujo de comodidad.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Castigar la acción vs. castigar la intención** — impedir la salida antes de que ocurra es mandar en la voluntad.
   - Se confunden porque: la emigración se prepara, y los preparativos parecen actos punibles.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿la población crece más o menos que el territorio? De esa relación depende cuál de los dos predomina.
   - Dónde se cae: se condena el lujo en bloque, cuando para Beccaria es un remedio necesario a la desigualdad si hay seguridad y libertad.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué el castigo del suicidio viola el principio de personalidad de las penas?
 2. Beccaria sostiene que quien emigra daña más a la nación que quien se mata, y aun así no propone castigarlo. ¿Es coherente?

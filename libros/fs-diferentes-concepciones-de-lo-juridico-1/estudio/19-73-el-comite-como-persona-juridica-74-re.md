@@ -36,19 +36,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 188) "La única diferencia entre ambas organizaciones de personas" — es la bisagra del capítulo y de buena parte del libro; la formulación exacta importa.
-2. (p. 187) El art. 111 y la referencia al art. 122 del Código griego de 1944 — es donde se ve la fuente del aporte y el contraste con el Código italiano de 1942.
-3. (p. 189) El final del capítulo — el texto se interrumpe justo donde iba a explicar el régimen excepcional de la organización inscripta; hay que continuarlo en el original.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Comité** — organización de personas dedicada a la recaudación pública de aportes para una finalidad altruista (art. 111).
 - **Organización irregular o de hecho** — el nombre que recibía antes de 1984 la organización de personas no inscripta.
 - **Recaudación pública de aportes** — la actividad que caracteriza al comité y lo distingue de la asociación y de la fundación.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Organización inscripta vs. no inscripta** — la diferencia es solo el registro, pero cambia quién responde.
   - Se confunden porque: las dos son grupos de personas que realizan actos jurídicos de todo tipo, y desde afuera se comportan igual.
@@ -60,7 +54,7 @@ flowchart TD
   - Criterio para decidir: ¿se le reconoce personalidad jurídica al inscribirse? Solo el peruano lo hace.
   - Dónde se cae: se presenta la regulación del comité como el aporte, cuando el aporte es la categoría que se le asigna.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un grupo recauda fondos para una escuela y contrae una deuda, sin haberse inscripto. Si no alcanza lo recaudado, ¿quién responde y por qué?
 2. Un compañero afirma que el gran aporte del código fue regular el comité. ¿Qué le precisarías comparando con Italia?

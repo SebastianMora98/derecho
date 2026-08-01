@@ -36,20 +36,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 134) "Los tres elementos antes referidos están siempre presentes" — es la bisagra: ahí está la distinción entre interacción y yuxtaposición, con la definición intercalada entre guiones.
-2. (p. 134) "si bien ninguno de dichos tres elementos, por si sólo" — es el pasaje que más fácil se malentiende, porque son dos afirmaciones opuestas en la misma oración y hay que retener las dos.
-3. (p. 133, nota 8) "Cfr. Cossio, La teoría egológica del derecho" — es la única pista que el capítulo da sobre la escuela egológica, que nombra sin explicar.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Visión unidimensional** — la que centra el estudio en uno solo de los tres elementos del derecho (p. 134).
 - **Yuxtaposición** — el autor la define al pasar: "el estar un elemento al lado del otro" (p. 134); es lo que la teoría niega.
 - **Escuela egológica del derecho** — la otra formulación latinoamericana que el autor menciona; acá solo la nombra y remite a Cossio.
 - **Filosofía de la existencia** — la que parte de la vida concreta de las personas en vez de partir de conceptos abstractos.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Interacción vs. yuxtaposición** — yuxtaponer es poner los tres elementos uno al lado del otro; interactuar es que se afecten y formen una unidad.
   - Se confunden porque: las dos posiciones nombran los mismos tres elementos, así que suenan igual al resumirlas.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿la razón describe cómo es el derecho, o para qué conviene esta mirada? Si es lo segundo, es utilidad.
   - Dónde se cae: se responde que demuestra el tridimensionalismo mostrando las injusticias del mundo, que es una motivación y no una prueba.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un profesor define el tridimensionalismo como "la teoría que estudia el derecho desde tres puntos de vista: el social, el normativo y el valorativo". ¿Qué tiene de incorrecto?
 2. Alguien sostiene que el autor demuestra la verdad del tridimensionalismo señalando las injusticias del mundo contemporáneo. ¿Es una demostración?

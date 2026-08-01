@@ -42,20 +42,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 31) El párrafo final, sobre la pena que no es justa si la ley no procuró evitar el delito — es la conclusión más importante del capítulo y vale tenerla textual.
-2. (cap. 31) "como si un hombre pudiese ser semi-digno de castigo y semi-digno de absolución" — desmonta la categoría de semiprueba en una sola frase.
-3. (cap. 31) El pasaje sobre por qué las dificultades excitan la imaginación — es el fundamento psicológico de la regla sobre la pena como incentivo, y lo resumí en dos líneas.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Delito de prueba difícil** — aquel cuya acreditación es casi imposible por su naturaleza instantánea o privada.
 - **Semiprueba** — la prueba parcial admitida por la práctica para condenar a medias; Beccaria la considera un absurdo.
 - **Presunción tiránica** — la que da por acreditado lo que no se probó, usada sobre todo en estos delitos.
 - **Pena como incentivo** — el efecto por el cual castigar lo que casi nunca se descubre aumenta el atractivo de hacerlo.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Dificultad de la prueba vs. gravedad del delito** — la primera es una razón para exigir más, no para conformarse con menos.
   - Se confunden porque: la gravedad crea urgencia por condenar y la dificultad se vive como un obstáculo a vencer.
@@ -67,7 +61,7 @@ flowchart TD
   - Criterio para decidir: ¿hizo la ley lo posible por remover la causa? Si no, la pena no es necesaria y por eso no es justa.
   - Dónde se cae: se responde a un delito frecuente endureciendo la pena, sin tocar las condiciones que lo producen.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué "en todo delito que por su naturaleza debe las más veces quedar sin castigo, la pena es un incentivo"?
 2. Beccaria condiciona la justicia de la pena a que la ley haya intentado prevenir el delito. ¿Qué consecuencia tiene ese principio?

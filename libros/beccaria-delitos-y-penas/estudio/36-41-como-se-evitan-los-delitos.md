@@ -38,20 +38,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 41) "¿Queréis evitar los delitos? Haced que las leyes sean claras y simples…" — es el programa del libro en un párrafo, y conviene tener los tres imperativos textuales.
-2. (cap. 41) "la mayor parte de las leyes no son más que privilegios" — es el diagnóstico más severo del tratado y aparece casi al pasar.
-3. (cap. 41) La comparación entre esclavos y libres — resumí el contraste, pero el original explica por qué la incertidumbre produce ese carácter.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Prevención** — el fin principal de la legislación: evitar los delitos antes que castigarlos.
 - **Acción indiferente** — la que no daña y que las malas leyes convierten en delito, multiplicando los infractores.
 - **Temor de las leyes** — el saludable, frente al temor de hombre a hombre, que Beccaria llama fecundo de delitos.
 - **Privilegio** — el tributo que todos pagan a la comodidad de algunos; según el capítulo, lo que son casi todas las leyes.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Temor de las leyes vs. temor de hombre a hombre** — el primero previene; el segundo genera delitos.
   - Se confunden porque: los dos producen obediencia y desde afuera se ven igual.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿esa acción daña, o solo puede inducir a algo que daña? Prohibir lo segundo llevaría a privar del uso de los sentidos.
   - Dónde se cae: se responde a un delito prohibiendo su antesala, y se multiplican los reos sin tocar el delito.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué prohibir acciones indiferentes aumenta la cantidad de delitos en vez de reducirla?
 2. Beccaria dice que la mayor parte de las leyes son privilegios. ¿Cómo se conecta eso con el segundo imperativo?

@@ -34,20 +34,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 184) El texto del art. 80 — es la prueba del capítulo: las dos primeras dimensiones se leen literalmente en la definición legal de asociación.
-2. (p. 185) "la persona jurídica termina siendo una simple expresión lingüística" — es la formulación más fuerte del capítulo y conviene tenerla textual.
-3. (pp. 185-186) Las dos correcciones que el autor propone al art. 78 — son la única parte del libro donde critica el articulado que ayudó a preparar.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Centro ideal y unitario de imputación** — el punto al que se atribuyen los derechos y deberes de la organización; no existe en la realidad, solo en el registro.
 - **Existencia formal** — la que la persona jurídica adquiere al inscribirse, distinta de la existencia real de sus miembros.
 - **Asociación** — organización estable de personas que mediante una actividad común persigue un fin no lucrativo (art. 80).
 - **Fundación** — la persona jurídica regulada en el art. 99, junto al comité y las comunidades campesinas y nativas.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Existencia distinta vs. existencia real** — la persona jurídica existe formalmente, no como un ente separado de las personas que la componen.
   - Se confunden porque: el art. 78 dice "existencia distinta" sin agregar de qué tipo, que es justamente lo que el autor le reprocha.
@@ -59,7 +53,7 @@ flowchart TD
   - Criterio para decidir: ¿qué había antes del registro? Una organización de personas con fines valiosos, o sea dos de las tres dimensiones.
   - Dónde se cae: se contesta que sin inscripción no hay nada jurídicamente relevante, cuando el propio código reconoce a la organización no inscripta.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un acreedor no puede cobrarle a los socios de una asociación inscripta. Según el capítulo, ¿de qué depende esa protección y cómo debería presentarla el código?
 2. Un compañero sostiene que la persona jurídica es un sujeto de derecho que existe con independencia de sus miembros. ¿Qué le respondería el autor?

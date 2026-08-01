@@ -37,20 +37,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 33) "este delito nace de la ley misma" y lo que sigue — es la explicación causal completa y conviene ver cómo encadena gabela, utilidad y facilidad.
-2. (cap. 33) El ejemplo del faisán y el asesinato — muestra en una línea el daño de igualar penas para delitos incomparables.
-3. (cap. 33) El final sobre las ocupaciones del condenado — es la aplicación más concreta del principio de analogía de la pena en todo el libro.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Contrabando** — el fraude a los derechos de aduana; delito real pero que no produce infamia en la opinión.
 - **Gabela** — el impuesto sobre la mercadería, cuya cuantía determina la tentación de defraudarlo.
 - **Pena infamante** — la que suma al castigo el descrédito público; impropia cuando la opinión no reprueba el hecho.
 - **Servidumbre análoga** — la que emplea al condenado en el servicio de la misma renta que defraudó.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Delito real vs. delito infamante** — el contrabando es lo primero sin ser lo segundo.
   - Se confunden porque: se supone que si una conducta merece pena también merece descrédito.
@@ -62,7 +56,7 @@ flowchart TD
   - Criterio para decidir: ¿puede el ciudadano imaginar que le pase a él? Las consecuencias remotas hacen impresiones cortísimas.
   - Dónde se cae: se espera que la gente colabore en perseguir un delito del que percibe solo las ventajas presentes.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué la mejor medida contra el contrabando no es penal?
 2. Beccaria dice que el contrabando no infama aunque sea un hurto a la nación. ¿Qué principio general saca de ahí?

@@ -99,7 +99,7 @@ Cómo usar eso:
   bloque 2, donde de verdad cambie la comprensión, en una oración y con el número
   de sección. Máximo dos menciones en todo el documento.
 - Si arriba hay una lista de términos ya definidos, **no los vuelvas a definir en
-  el bloque 5**: el glosario del libro ya los tiene. Usalos con naturalidad en la
+  el bloque 4**: el glosario del libro ya los tiene. Usalos con naturalidad en la
   prosa, como si el lector ya los conociera.
 
 # ENTRADA
@@ -119,10 +119,9 @@ del capítulo: lo parte en dos.
 | 1 Idea principal | dentro del capítulo |
 | 2 Lo esencial del capítulo | dentro del capítulo |
 | 3 Mapa | dentro del capítulo |
-| 4 Qué releer del original | dentro del capítulo |
-| 5 Vocabulario clave | **glosario del libro**, junto al de los demás capítulos |
-| 6 Distinciones | **sección del libro** |
-| 7 Autoevaluación | **test del libro** |
+| 4 Vocabulario clave | **glosario del libro**, junto al de los demás capítulos |
+| 5 Distinciones | **sección del libro** |
+| 6 Autoevaluación | **test del libro** |
 | Flashcards | **mazo del libro** |
 
 Dos consecuencias que hay que respetar:
@@ -131,7 +130,7 @@ Dos consecuencias que hay que respetar:
   bloque 2", "el término que definimos arriba", "la primera de las distinciones".
   El lector va a ver esos bloques en otro lugar de la página, lejos y mezclados
   con los de otros capítulos.
-- **Los bloques 5 a 7 y las flashcards tienen que entenderse solos**, sin el
+- **Los bloques 4 a 6 y las flashcards tienen que entenderse solos**, sin el
   capítulo delante. Un término del glosario se lee sin contexto; una pregunta del
   test también.
 
@@ -143,15 +142,14 @@ de material tiene un bloque asignado y está prohibido en los otros:
 | Material | Va en | No va en |
 |---|---|---|
 | La afirmación central | 1 | ningún otro bloque la vuelve a enunciar |
-| El argumento del capítulo | 2, en prosa | 5, 6 |
+| El argumento del capítulo | 2, en prosa | 4, 5 |
 | Su esqueleto | 3, un diagrama sin material nuevo | ningún mapa en texto |
-| Los pasajes que hay que leer en el original | 4 | 2, que los señala pero no los reproduce |
-| Las palabras que necesito para leer el original | 5, una línea por término | 6, 7 |
-| Los pares que se confunden entre sí | 6, con el criterio que los separa | 5, que no lleva campo "se confunde con" |
-| **Todo lo que sea recordar un dato o una definición** | **Flashcards** | **7, que no pregunta definiciones** |
-| Exposición al estilo del examen, aplicación y crítica | 7 | Flashcards |
+| Las palabras que necesito para leer el original | 4, una línea por término | 5, 6 |
+| Los pares que se confunden entre sí | 5, con el criterio que los separa | 4, que no lleva campo "se confunde con" |
+| **Todo lo que sea recordar un dato o una definición** | **Flashcards** | **6, que no pregunta definiciones** |
+| Exposición al estilo del examen, aplicación y crítica | 6 | Flashcards |
 
-El reparto entre 7 y Flashcards es el más importante: **el test dejó de cubrir
+El reparto entre 6 y Flashcards es el más importante: **el test dejó de cubrir
 recall**. Antes las preguntas de hechos y las flashcards eran el mismo material en
 dos formatos, y un tercio del mazo repetía una pregunta del test. Si lo que ibas a
 preguntar se contesta con un dato o una definición, es una flashcard, no una
@@ -168,20 +166,20 @@ examen**; lo que solo sirva para reconocer un dato, sobra.
 
 Tres topes, y el que más importa es el tercero:
 
-- **El documento entero, flashcards incluidas, no pasa de 1.400 palabras.**
-- **Los bloques 1 a 4 juntos —lo único que se lee dentro del capítulo— no pasan
-  de 700.**
-- **El bloque 2 no pasa de 450.**
+- **El documento entero, flashcards incluidas, no pasa de 1.100 palabras.**
+- **Los bloques 1 a 3 juntos —lo único que se lee dentro del capítulo— no pasan
+  de 500.**
+- **El bloque 2 no pasa de 400.**
 
 Son topes, no objetivos: si el capítulo da para menos, mejor. El código Mermaid
 del bloque 3 no cuenta como palabras del documento; los encabezados tampoco.
 
 **El tope del bloque 2 no se cumple contándolo al final.** Está medido: en una
 tanda de 39 documentos seguidos se violó las 39 veces, siempre por el mismo
-margen —entre 460 y 500 palabras—, y hubo que recortar documento por documento en
-una segunda pasada. Escribir 500 palabras de prosa continua sale solo; el número
-solo se puede verificar cuando ya están escritas y para entonces recortar
-significa deshacer párrafos enteros.
+margen, y hubo que recortar documento por documento en una segunda pasada.
+Escribir de más en prosa continua sale solo; el número solo se puede verificar
+cuando ya está escrito, y para entonces recortar significa deshacer párrafos
+enteros.
 
 Por eso el bloque 2 tiene además un presupuesto **por párrafo**, que sí se puede
 respetar mientras se escribe. Está en su sección. Cumplilo ahí y el tope de
@@ -189,10 +187,12 @@ palabras se cumple solo; el recuento final pasa a ser una comprobación en vez d
 una corrección.
 
 El segundo es el que sostiene el diseño. Lo que se lee al abrir un capítulo son
-solo esos cuatro bloques: si se estiran, se pierde el "leer lo esencial y ya",
-que es para lo que existe. Los otros cuatro se publican repartidos por todo el
-libro, así que pesan menos en la lectura, pero igual entran en el tope general
-porque un documento largo deja de acompañar la lectura y empieza a reemplazarla.
+solo esos tres bloques —y el 3 es un diagrama—, así que en la práctica se lee una
+idea en una oración y dos o tres párrafos. Si eso se estira, se pierde el "leer lo
+esencial y ya", que es para lo que existe. Los otros tres se publican repartidos
+por todo el libro, así que pesan menos en la lectura, pero igual entran en el tope
+general porque un documento largo deja de acompañar la lectura y empieza a
+reemplazarla.
 
 Cuando algo no entre, recortá en este orden: primero el bloque 2, sacando matices
 y quedándote con el argumento; después el vocabulario, que tiende a incluir
@@ -237,25 +237,26 @@ conviene entenderla.
 El bloque que carga el peso, y el que se lee de verdad. **Prosa corrida, SIN
 subencabezados y sin listas.**
 
-**El presupuesto es por párrafo, no para el bloque entero.** El tope de 450
-palabras solo se puede verificar cuando ya escribiste; un presupuesto por párrafo
-se controla mientras escribís, que es cuando sirve:
+**2 párrafos, y 3 como máximo.** Nunca 4. El número lo decide el tamaño de la
+sección que te tocó, no las ganas de contar más:
 
-- **4 párrafos de unas 110 palabras cada uno.** Es la forma normal y da 440.
-- **5 de unas 90**, solo si el capítulo cambia de tema cuatro veces y los cortes
-  caen justo en esos cambios.
-- **3 de unas 145**, cuando el capítulo es corto y tiene un solo argumento. Es la
-  única forma en que menos párrafos significan párrafos más largos; en las otras
-  dos, menos párrafos significa que faltó cobertura.
+- **2 párrafos de unas 130 palabras** — la forma normal. Un capítulo con un solo
+  argumento entra acá y da unas 260.
+- **3 de unas 130** — solo si la sección es larga o junta dos capítulos del autor.
+  Da unas 390, que es el techo.
 
-Es un promedio, no un máximo: un párrafo puede irse a 140 si otro se queda en 80.
-Lo que no puede pasar es que **todos** midan 140, que es exactamente cómo se
-llega a 500 sin darse cuenta.
+Es un promedio, no un máximo por párrafo: uno puede irse a 160 si el otro se queda
+en 100. Lo que no puede pasar es que **los dos** midan 200.
+
+El presupuesto es por párrafo y no para el bloque entero porque el tope de 400
+palabras solo se puede verificar cuando ya escribiste; los párrafos se cuentan
+mientras escribís, que es cuando sirve.
 
 Si el material no entra, **no agregues un párrafo: sacá contenido.** Lo primero
 que sale son los matices y las salvedades; lo último, el argumento y las
-referencias. Un capítulo denso se acompaña mandando al original —"esto lo
-desarrolla en tres páginas, leelas"—, no estirando el bloque.
+referencias. Un capítulo denso se acompaña nombrando lo que no reproducís y
+mandando al original en media cláusula —"enumera cinco escuelas con sus autores
+(p. 121)"—, no estirando el bloque.
 
 Antes este bloque pedía numerar "pasos", uno por movimiento del autor. Se
 eliminó: partía la lectura en fichas, y obligaba a un andamiaje que se comía un
@@ -284,12 +285,15 @@ reemplazo de la lectura:
 
 - **Reproducir los ejemplos, los casos y las enumeraciones del autor.** Nombralos
   y mandame al original: "acá enumera cinco escuelas con sus autores; leelas en la
-  p. 121, no las repito".
+  p. 121, no las repito". Antes había un bloque aparte que juntaba los pasajes a
+  releer; se eliminó porque repetía lo que el bloque 2 ya señalaba. Ahora **este
+  es el único lugar donde se manda al original**, y se hace donde cae, en media
+  cláusula y con la referencia.
 - Seguir el orden oración por oración del texto.
 - Citas largas: menos de 15 palabras, entre comillas, con referencia, y solo
   cuando la formulación exacta del autor sea justamente lo que hay que entender.
 - Glosarios y definiciones formales: los términos se explican al pasar, entre
-  comas. La lista va en el bloque 5.
+  comas. La lista va en el bloque 4.
 
 **Honestidad, en media cláusula y dentro de la prosa.** Si algo queda flojo,
 decilo donde cae y seguí: "esto lo afirma sin demostrarlo", "acá usa la palabra en
@@ -325,26 +329,7 @@ qué. Sigue siendo un solo diagrama.
 Releé la sintaxis antes de entregarla: un error deja un recuadro vacío en el
 sitio, sin mensaje que lo explique.
 
-## 4. Qué releer del original
-
-**Exactamente 3 pasajes**, numerados, para leer con el libro abierto. Este bloque
-no explica nada: dice dónde ir y por qué, en una línea cada uno.
-
-Cada punto arranca con la referencia en el formato de {{FORMATO_CITAS}}, seguida
-del ancla —las primeras palabras del pasaje, entre comillas, menos de 15
-palabras— y cierra con una sola oración de justificación. Si el formato no es
-`paginas`, este bloque no menciona páginas.
-
-La justificación tiene que ser una de estas cuatro, y decí cuál:
-
-1. Es material que el bloque 2 señaló pero deliberadamente no reprodujo: los
-   ejemplos del autor, su enumeración, sus casos.
-2. Es la bisagra del argumento y la formulación exacta importa.
-3. Es el pasaje que más fácil se malentiende.
-4. Llegó ilegible o cortado por la conversión automática, así que hay que leerlo
-   en el original. Poné eso acá en vez de reconstruirlo a ojo.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 Va al **glosario del libro**, mezclado con los términos de los demás capítulos.
 Se lee sin el capítulo delante.
@@ -357,8 +342,8 @@ diccionario de la materia.
 
 No incluyas un término que el autor apenas menciona al pasar y no usa. Si el
 capítulo nombra cinco escuelas dentro de un paréntesis y no explica ninguna, no
-van cinco entradas: van al bloque 4, para leerlas en el original, o esperan al
-capítulo donde el autor las trate.
+van cinco entradas: se nombran al pasar en el bloque 2, con la referencia para
+leerlas en el original, o esperan al capítulo donde el autor las trate.
 
 Formato exacto, una línea por término, en una lista **sin líneas en blanco entre
 los ítems**:
@@ -373,9 +358,9 @@ los ítems**:
   final, de menos de 15 palabras, con referencia.
 - Nada de argumentos acá: si algo necesita dos oraciones para justificarse, es
   parte del bloque 2.
-- **No pongas un campo "se confunde con".** Toda la confusión va al bloque 6.
+- **No pongas un campo "se confunde con".** Toda la confusión va al bloque 5.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 Va a la **sección de distinciones del libro**. Los pares que un principiante
 mezcla y que en un examen se pagan caro. Este bloque no define nada —los términos
@@ -389,7 +374,7 @@ distinciones eran de relleno.
 
 Tres pruebas, y tiene que pasar las tres:
 
-1. **¿Se resuelve leyendo las dos definiciones del bloque 5?** Si sí, no va.
+1. **¿Se resuelve leyendo las dos definiciones del bloque 4?** Si sí, no va.
 2. **¿Alguien lo confundiría de verdad?** Un par que nadie mezcla no es una
    distinción, es una aclaración.
 3. **¿Ya lo dice otra distinción de este mismo capítulo con otras palabras?** Si
@@ -406,7 +391,7 @@ Formato exacto, lista pegada:
   - Dónde se cae: el error típico, y qué respuesta se da mal por culpa de él.
 ```
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 Va al **test del libro**. **Exactamente 2 preguntas.**
 
@@ -442,7 +427,7 @@ producir.
 - "Explicá con tus palabras…" y "Reformulá tal parte…" a secas, sin pedir
   implicaciones ni ubicación.
 - "¿Por qué es necesario…?" referido a una parte del propio documento.
-- Usar como pregunta el "Dónde se cae" de una distinción del bloque 6.
+- Usar como pregunta el "Dónde se cae" de una distinción del bloque 5.
 - Referirte al documento ("el paso 3", "lo que vimos arriba"): la pregunta se lee
   lejos del capítulo.
 
@@ -488,7 +473,7 @@ la siguiente:
    examen pide explícito.
 3. **La tesis con su autor**, cuando el capítulo discute posiciones: quién
    sostiene qué, en una línea.
-4. **El criterio de una distinción del bloque 6**, preguntado como "¿cómo
+4. **El criterio de una distinción del bloque 5**, preguntado como "¿cómo
    distingo A de B?".
 
 Lo que ya **no** va: los datos de color, las frases célebres que no fundan nada, y
@@ -533,8 +518,9 @@ texto sin procesar:
 - Reformulá con tus palabras en todo el resto; no parafrasees pegado al original.
 - El texto viene de una conversión automática o de un OCR: puede traer cortes
   raros, números de página sueltos, guiones de silabeo o palabras partidas.
-  Ignorá ese ruido. Si un pasaje quedó ilegible, marcalo en el paso del bloque 2
-  donde cae y anotalo en el bloque 6; nunca lo reconstruyas a ojo.
+  Ignorá ese ruido. Si un pasaje quedó ilegible, marcalo en media cláusula dentro
+  del bloque 2, donde cae, con la referencia para leerlo en el original; nunca lo
+  reconstruyas a ojo.
 - Si detectás que lo que pido reemplazaría la lectura en vez de guiarla, avisame
   en vez de cumplirlo.
 - Español neutro, prosa directa, sin relleno motivacional y sin emojis.

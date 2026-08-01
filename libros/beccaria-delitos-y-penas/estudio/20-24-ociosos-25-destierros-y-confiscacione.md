@@ -38,20 +38,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 25) "una injusticia útil no puede ser tolerada de un legislador" — es el límite que Beccaria pone a su propio utilitarismo y conviene tenerlo textual.
-2. (cap. 24) La definición completa del ocio político — resumí sus rasgos, pero el original los encadena en una sola frase larga que muestra por qué es dañino.
-3. (cap. 24) Las condiciones del destierro por gran probabilidad — son tres y están comprimidas en pocas líneas; es el pasaje más discutible del capítulo.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Ocio político** — el que no contribuye a la sociedad ni con trabajo ni con riquezas; el único punible.
 - **Destierro** — la exclusión del reo de la sociedad de que era miembro.
 - **Confiscación** — el perdimiento de los bienes del condenado en favor del príncipe.
 - **Injusticia útil** — la pena que produce algún bien sin ser necesaria; para Beccaria, intolerable.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Ocio político vs. ocio de las riquezas bien adquiridas** — el primero no aporta nada; el segundo sostiene a la industriosa pobreza.
   - Se confunden porque: en los dos casos hay alguien que vive sin trabajar.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿sin esta pena se derrumba la seguridad común? Si no, el bien que produzca no la legitima.
   - Dónde se cae: se defiende la confiscación porque frena venganzas privadas, que es el caso que el capítulo usa para trazar el límite.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué insiste Beccaria en que la ley, y no los censores, defina cuál ocio es punible?
 2. El cap. 25 rechaza una pena que produce un bien. ¿Contradice eso el utilitarismo del resto del libro?

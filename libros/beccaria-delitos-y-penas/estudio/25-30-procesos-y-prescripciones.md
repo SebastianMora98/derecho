@@ -41,20 +41,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 30) El párrafo que funda la división en dos clases — contiene la distinción entre derecho de naturaleza y de sociedad, que es la premisa de todo el capítulo.
-2. (cap. 30) "los peligros de la inocencia crecen con los defectos de la legislación" — es la respuesta a quien pide procesos más largos en nombre de la humanidad.
-3. (cap. 30) La regla sobre el absuelto por falta de pruebas — son cuatro líneas con consecuencias grandes, y conviene leerlas literales antes de juzgarlas.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Prescripción** — la caducidad de la persecución penal por el paso del tiempo.
 - **Tiempo del examen** — el plazo legal para producir las pruebas y la defensa.
 - **Derecho de naturaleza** — el que se tiene por ser hombre, como la seguridad de la vida.
 - **Derecho de sociedad** — el que nace de las convenciones, como la seguridad de los bienes.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Derecho de naturaleza vs. de sociedad** — la vida está protegida por un sentimiento de piedad; la propiedad, solo por convención.
   - Se confunden porque: las dos son garantías legales y las dos se violan con delitos.
@@ -66,7 +60,7 @@ flowchart TD
   - Criterio para decidir: ¿qué riesgo se está manejando, condenar a un inocente o dejar impune a un culpable? El examen atiende al primero; la prescripción, al segundo.
   - Dónde se cae: se alargan los dos plazos para los delitos graves, cuando el capítulo pide acortar uno y alargar el otro.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué un examen más corto protege al acusado de un delito atroz, en vez de perjudicarlo?
 2. Beccaria dice que la seguridad de la vida es un derecho de naturaleza y la de los bienes, de sociedad. ¿Para qué le sirve esa distinción acá?

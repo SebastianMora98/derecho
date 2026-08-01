@@ -35,20 +35,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 19) El párrafo sobre la cárcel — contiene las tres reglas de la prisión preventiva en pocas líneas y conviene tenerlas literales.
-2. (cap. 19) "la unión de las ideas es el cemento sobre que se forma toda la fábrica del entendimiento humano" — es la premisa filosófica del capítulo y de la que dependen sus conclusiones prácticas.
-3. (cap. 19) El pasaje sobre la pena dilatada como espectáculo — resumí su efecto, pero el original explica por qué el horror del delito se desvanece antes que llegue el castigo.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Prontitud de la pena** — su cercanía temporal al delito; para Beccaria, condición de su justicia y de su utilidad.
 - **Cárcel** — la simple custodia del ciudadano hasta que sea declarado reo, no una pena anticipada.
 - **Asociación de ideas** — la unión mental entre delito y pena que la cercanía en el tiempo produce.
 - **Analogía de la pena** — que se parezca a la naturaleza del delito, para reforzar esa unión.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Custodia vs. pena anticipada** — la prisión antes de la sentencia solo se justifica por la fuga o el ocultamiento de pruebas.
   - Se confunden porque: en las dos el ciudadano está encerrado y sufre lo mismo.
@@ -60,7 +54,7 @@ flowchart TD
   - Criterio para decidir: ¿qué se está reforzando, el dolor o el vínculo entre las dos ideas? Solo el segundo previene.
   - Dónde se cae: se compensa un proceso lento con una pena más dura, y el capítulo muestra que eso no repone la asociación perdida.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué una pena tardía "hace menos impresión como castigo que como espectáculo"?
 2. Beccaria dice que la prontitud importa sobre todo para los entendimientos vulgares. ¿Es un argumento clasista?

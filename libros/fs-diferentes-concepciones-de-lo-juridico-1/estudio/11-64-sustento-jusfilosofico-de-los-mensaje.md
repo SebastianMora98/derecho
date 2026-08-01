@@ -37,13 +37,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 153) "una unidad psicosomática sustentada en su libertad" — es la bisagra del capítulo: la definición del ser humano de la que cuelga todo lo demás.
-2. (p. 156) "el genérico e ineludible deber de no dañar" — es donde la filosofía se vuelve regla jurídica concreta, y la formulación exacta importa.
-3. (p. 158) "un limitado tiempo, tan fu-" — **la conversión rompió acá**: la palabra quedó partida y se coló un resto de cabecera. El pasaje sobre la temporalidad y el tiempo existencial hay que leerlo en el original.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Ser libertad** — la definición del ser humano que usa el autor: no un animal racional sino un ente constituido por su libertad.
 - **Coexistencialidad** — que la existencia humana solo es concebible con otros; por eso el derecho regula conductas intersubjetivas.
@@ -51,7 +45,7 @@ flowchart TD
 - **Tiempo existencial** — el tiempo vivido por la persona, en el que le da sentido a su vida, frente al tiempo medido del reloj.
 - **Deber genérico de no dañar** — la obligación que se sigue de ser libre entre otros libres: no lesionar el proyecto de vida ajeno.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Animal racional vs. ser libertad** — la definición clásica acierta en la unidad y omite la libertad, que es lo constitutivo.
   - Se confunden porque: las dos pretenden decir qué es el ser humano y las dos lo distinguen de los demás animales.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿el otro aparece como límite o como condición? En el personalismo la coexistencia es parte de lo que se protege.
   - Dónde se cae: se dice que el Código de 1984 es personalista porque refuerza los derechos individuales, cuando eso describe al de 1936.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un legislador sostiene que basta con proteger bien la propiedad para que las personas puedan realizarse. Según este capítulo, ¿qué concepción del ser humano está suponiendo?
 2. El autor argumenta que el derecho carecería de sentido si el hombre no fuera libre, y usa el ejemplo del robot. ¿Qué prueba exactamente ese argumento y qué no prueba?

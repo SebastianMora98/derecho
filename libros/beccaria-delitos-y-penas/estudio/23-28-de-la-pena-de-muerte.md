@@ -38,20 +38,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 28) "no es, pues, la pena de muerte derecho… es solo una guerra de la nación contra un ciudadano" — es la frase que define el capítulo y conviene tenerla textual.
-2. (cap. 28) El monólogo del ladrón — es la única vez que el libro cede la palabra a quien delinque, y su fuerza está en la extensión; lo resumí en tres líneas.
-3. (cap. 28) El pasaje sobre el desprecio al verdugo — es el argumento más sutil: usa un sentimiento popular como prueba de una tesis filosófica.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Pena de muerte** — para Beccaria no una pena de derecho, sino un acto de guerra de la nación contra un ciudadano.
 - **Esclavitud perpetua** — la pena que propone en su lugar: privación total y vitalicia de la libertad con trabajo para la sociedad.
 - **Extensión de la pena** — su duración y repetición en el tiempo, que impresiona más que su intensidad.
 - **Verdugo** — el ejecutor de la voluntad pública; el desprecio que se le tiene revela lo que los hombres creen sobre la vida.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Intensidad vs. extensión de la pena** — la primera se agota en un momento; la segunda actúa por repetición.
   - Se confunden porque: las dos se leen como "cuán grave" es el castigo y se comparan en una sola escala.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿estaba ese poder entre lo que se cedió al pactar? Si no, lo que quede será necesidad, nunca derecho.
   - Dónde se cae: se defiende la ejecución diciendo que el reo "perdió su derecho a la vida", cuando el punto es que la sociedad nunca lo adquirió.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué el argumento del suicidio refuerza la tesis contractual del capítulo?
 2. Beccaria dice que la pena de muerte sería "útil e inútil al mismo tiempo". ¿Cuál es la paradoja?

@@ -34,19 +34,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 3) "cuando se probase que la atrocidad de las penas… fuese a lo menos inútil" — es la bisagra del libro entero: baja el estándar de prueba contra la crueldad de dañina a inútil.
-2. (cap. 3) La nota al pie sobre la palabra "obligación" — la conversión la metió a mitad de la tercera consecuencia; conviene leerla aparte y ver dónde iba.
-3. (cap. 3) "puede únicamente formar leyes generales… pero no juzgar" — es la deducción de la que sale la figura del juez, y vale ver cómo la obtiene del pacto y no de la tradición.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Legislador** — quien representa a toda la sociedad unida por el contrato y el único que puede decretar penas.
 - **Magistrado** — el tercero que juzga si un hecho ocurrió; es parte de la sociedad y no puede fijar penas.
 - **Anarquía** — el estado que empieza a autorizarse cuando se viola un pacto útil al mayor número.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Pena excesiva vs. pena sin ley** — para Beccaria un juez que agrava aplica dos cosas: la pena justa y otra adicional que nadie decretó.
   - Se confunden porque: desde afuera se ve una sola sentencia, más dura.
@@ -58,7 +52,7 @@ flowchart TD
   - Criterio para decidir: ¿evita delitos? Si no, sobra, y lo que sobra no fue cedido en el pacto.
   - Dónde se cae: se defiende una pena severa diciendo que al menos no empeora nada, que es exactamente lo que este capítulo no acepta.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un juez, invocando el bien público, impone una pena mayor que la prevista por la ley. Según la primera consecuencia, ¿qué está haciendo exactamente?
 2. Un legislador defiende una pena severa diciendo que no está probado que cause daño. ¿Le alcanza según este capítulo?

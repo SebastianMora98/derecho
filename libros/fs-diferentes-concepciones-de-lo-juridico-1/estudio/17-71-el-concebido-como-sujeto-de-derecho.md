@@ -37,13 +37,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (pp. 183-184) "La condición a la que se refiere la citada expresión es, por tanto, la condición 'resolutoria'" — es la bisagra técnica del capítulo y donde el autor responde a sus críticos; la formulación exacta importa.
-2. (p. 182) El texto del artículo primero del Código de 1984 — conviene leerlo literal, porque toda la discusión gira sobre dos expresiones suyas.
-3. (p. 182) La explicación de la singamia y del código genético — es el fundamento científico que solo resumí, y es lo que sostiene la fecha de inicio de la vida.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Teoría de la ficción** — la que sostiene que el concebido es una nada jurídica y que sus derechos quedan en suspenso hasta el nacimiento.
 - **Singamia** — el instante en que culmina la fusión de los núcleos del óvulo y el espermatozoide; para el autor, el comienzo de la vida.
@@ -51,7 +45,7 @@ flowchart TD
 - **Condición resolutoria** — la que hace cesar un derecho que ya se tiene si ocurre el hecho previsto.
 - **Condición suspensiva** — la que impide que el derecho nazca hasta que ocurra el hecho previsto.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Condición resolutoria vs. suspensiva** — la resolutoria extingue un derecho actual; la suspensiva impide que nazca hasta que ocurra el hecho.
   - Se confunden porque: las dos aparecen en el mismo artículo atadas a "que nazca vivo", y el texto no dice cuál es.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿se le atribuye titularidad actual, o se lo trata *como si* fuera otra cosa? "Considerado nacido" es una ficción que sigue negando su existencia.
   - Dónde se cae: se cita la Constitución de 1979 como antecedente del artículo primero, cuando el autor la pone del lado de la teoría de la ficción.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un ordenamiento tiene al concebido por una ficción y a la vez castiga el aborto y le nombra representante. Según el autor, ¿qué problema tiene esa combinación?
 2. Un profesor enseña que los derechos del concebido están en suspenso hasta que nazca vivo. ¿Por qué el autor diría que eso destruye la categoría de sujeto de derecho?

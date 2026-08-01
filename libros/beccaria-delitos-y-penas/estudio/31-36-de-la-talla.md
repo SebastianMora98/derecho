@@ -39,19 +39,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 36) El párrafo de las contradicciones, desde "ahora las leyes convidan a la traición" — son tres pares encadenados y su efecto depende de leerlos seguidos.
-2. (cap. 36) "reparos instantáneos de un edificio ruinoso" — resume el diagnóstico sobre las naciones que recurren a la talla.
-3. (cap. 36) El cierre sobre la convergencia entre moral y política — es la parte más general del capítulo y la resumí en pocas líneas.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Talla** — el precio ofrecido públicamente por la cabeza de un hombre declarado reo.
 - **Usurpación de autoridad** — lo que comete el soberano que persigue a alguien en dominios ajenos.
 - **Guerra clandestina** — el estado de sospecha recíproca que producen las leyes que premian la traición.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Premiar la delación vs. castigar la traición** — la talla hace las dos cosas y así vacía las dos.
   - Se confunden porque: en cada caso concreto parece claro quién traiciona a quién.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿por qué hizo falta? Quien tiene fuerza para defenderse no la busca.
   - Dónde se cae: se adoptan recursos extraordinarios como si fueran política, cuando son reparos instantáneos de un edificio ruinoso.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué la talla contra un reo que está fuera del país es un problema entre naciones y no solo interno?
 2. Beccaria dice que la talla "en vez de evitar un delito, hace nacer ciento". ¿Cómo llega a esa cuenta?

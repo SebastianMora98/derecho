@@ -39,20 +39,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 20) "el insecto imperceptible que las carcome" — cierra el capítulo con la mejor imagen del libro sobre cómo la tiranía entra en un régimen libre.
-2. (cap. 21) El párrafo del pacto imaginario, desde "quien fuere más industrioso tenga mayores honores" — es la fundamentación de la igualdad penal y conviene tenerla literal.
-3. (cap. 21) Las tres respuestas a la objeción de la sensibilidad — están comprimidas en pocas líneas y cada una es un argumento distinto.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Pena corporal** — la que recae sobre el cuerpo; obligatoria, según el cap. 20, para los atentados contra la persona.
 - **Satisfacer por precio** — pagar en dinero un atentado personal; para Beccaria, convertir al hombre en cosa.
 - **Poder intermedio** — la función que se atribuye a la nobleza entre el soberano y el pueblo; el capítulo no la discute.
 - **Igualdad anterior** — la sujeción de todos a las leyes, sin la cual ninguna distinción de honores o riquezas es legítima.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Igualdad extrínseca vs. igualdad de sufrimiento** — la ley solo puede igualar la pena impuesta, no lo que cada uno padece.
   - Se confunden porque: parece injusto que la misma pena pese distinto según la persona.
@@ -64,7 +58,7 @@ flowchart TD
   - Criterio para decidir: ¿lo atacado fue la persona o su patrimonio? Poner precio a lo primero la convierte en cosa.
   - Dónde se cae: se acepta una compensación económica por una agresión física como si reparase, cuando el capítulo lo trata como alimento de la tiranía.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué prohíbe Beccaria la pena pecuniaria para los atentados contra la persona, si la multa puede ser altísima?
 2. Un noble alega que la misma pena lo daña más por su educación y por la infamia familiar. ¿Cómo responde el cap. 21?

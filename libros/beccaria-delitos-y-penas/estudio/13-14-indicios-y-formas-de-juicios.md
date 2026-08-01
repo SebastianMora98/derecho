@@ -38,13 +38,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 14) Los tres casos del teorema — están en las primeras diez líneas y la formulación exacta importa, porque el orden de los casos es el argumento.
-2. (cap. 14) "es más segura la ignorancia que juzga por dictamen que la ciencia que juzga por opinión" — es la frase que funda el jurado y la más provocadora del capítulo.
-3. (cap. 14) El párrafo final sobre la publicidad de los juicios — resumí su función, pero la razón que da sobre la opinión como cimiento de la sociedad merece leerse literal.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Indicio** — la prueba que apunta al hecho sin demostrarlo por sí sola; su fuerza depende de si es independiente de las otras.
 - **Certeza moral** — la probabilidad que todo hombre de buen sentido acepta por la necesidad de obrar; es la vara para condenar.
@@ -52,7 +46,7 @@ flowchart TD
 - **Prueba imperfecta** — la que no la excluye; hacen falta tantas como para formar una perfecta.
 - **Recusación** — la facultad del reo de excluir sin dar razones a cierto número de jueces sospechosos.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Pruebas independientes vs. dependientes** — las primeras suman probabilidad; las segundas la restan a medida que se acumulan.
   - Se confunden porque: en el expediente las dos aparecen como una lista de indicios que parece robustecerse.
@@ -64,7 +58,7 @@ flowchart TD
   - Criterio para decidir: ¿la operación produce el material o lo aprecia? Apreciarlo es lo que Beccaria confía a los iguales del reo.
   - Dónde se cae: se defiende el juicio por técnicos con el argumento de la complejidad probatoria, cuando el capítulo separa las dos etapas.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Una acusación reúne ocho indicios, todos derivados de un mismo testimonio. Según el teorema, ¿cuánta certeza aportan los ocho?
 2. Beccaria prefiere asesores sacados por suerte antes que por elección. ¿Cómo puede ser más segura la ignorancia que la ciencia?

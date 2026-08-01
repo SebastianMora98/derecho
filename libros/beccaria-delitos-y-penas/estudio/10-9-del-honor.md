@@ -36,20 +36,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 9) "nacido después de la formación de la sociedad, no pudo ser puesto en el depósito común" — es la tesis del capítulo y explica de un golpe la contradicción con las leyes civiles.
-2. (cap. 9) El pasaje de las necesidades "superiores a la providencia de las leyes e inferiores al actual poder de cada uno" — define la franja donde el honor se vuelve necesario, y es fácil pasarlo por alto.
-3. (cap. 9) La comparación con los objetos muy inmediatos a los ojos — resumí su conclusión, pero el desarrollo explica por qué la moral es más confusa que la astronomía.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Honor** — la consideración ajena buscada como necesaria; una idea compleja sin significado estable y nacida después del pacto.
 - **Despotismo físico** — el poder de hecho de cada hombre sobre los demás, que las primeras leyes vinieron a reparar.
 - **Despotismo de la opinión** — el poder que ejerce el juicio ajeno donde la ley no llega.
 - **Despotismo disminuido** — la monarquía, régimen intermedio donde el honor funciona como principio.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Honor vs. seguridad** — la seguridad entró en el depósito común al formarse la sociedad; el honor nació después y quedó afuera.
   - Se confunden porque: las dos se defienden como algo propio que otros pueden atacar.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿quién es el juez? Si lo es la opinión, basta con parecer; solo la ley puede juzgar el hecho.
   - Dónde se cae: se toma el prestigio social como prueba de mérito, que es exactamente el crédito que Beccaria denuncia.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué el honor no puede estar entre lo que los hombres cedieron en el pacto social?
 2. Beccaria dice que el honor desaparece tanto en la libertad extrema como en la dependencia extrema. ¿Qué prueba esa simetría?

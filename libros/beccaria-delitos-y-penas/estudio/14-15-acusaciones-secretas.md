@@ -38,13 +38,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 15) El primer párrafo, desde "semejante costumbre hace los hombres falsos" — es el retrato del daño colectivo y lo resumí en pocas líneas; su fuerza está en el desarrollo.
-2. (cap. 15) La serie de preguntas que refuta las cuatro justificaciones — conviene ver cómo cada una se responde en una sola frase.
-3. (cap. 15) "antes de autorizar esta costumbre me temblaría la mano" — es la declaración personal más fuerte del libro y muestra cómo mide su prudencia política.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Acusación secreta** — la denuncia cuyo autor permanece oculto al acusado; para Beccaria, un desorden consagrado por el uso.
 - **Delator** — quien acusa sin dar la cara; su existencia convierte a cada conciudadano en sospechoso.
@@ -52,7 +46,7 @@ flowchart TD
 - **Publicidad del ejemplo** — el fin único del juicio, que el secreto anula.
 - **Comisario** — funcionario que acusa en nombre público; el recurso que Montesquieu propone para las monarquías.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Proteger al acusador vs. ocultarlo** — la protección es una tarea de las leyes; el ocultamiento traslada el riesgo al acusado.
   - Se confunden porque: los dos se presentan como el modo de que la gente se anime a denunciar.
@@ -64,7 +58,7 @@ flowchart TD
   - Criterio para decidir: ¿el que acusa responde con algo si miente? Solo responde el que da la cara.
   - Dónde se cae: se admite la denuncia anónima para evitar la infamia del delator, sin ver que se está premiando la versión menos controlable.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un Estado admite denuncias anónimas para proteger a los denunciantes. Según el capítulo, ¿qué le pasa a la sociedad, no al proceso?
 2. Beccaria pregunta qué gobierno es aquel donde quien manda sospecha en cada súbdito un enemigo. ¿A quién está dirigido ese argumento?

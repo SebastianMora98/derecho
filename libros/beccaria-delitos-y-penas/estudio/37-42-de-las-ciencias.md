@@ -40,20 +40,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 42) La proporción inicial entre males, bienes y extensión del conocimiento — es la tesis del capítulo en dos líneas.
-2. (cap. 42) El pasaje sobre por qué el hombre iluminado ama los pactos públicos — explica cómo la ilustración produce obediencia y no desorden.
-3. (cap. 42) El retrato final del hombre iluminado — es el ideal de magistrado del libro entero y lo resumí bastante.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Luces** — la difusión del conocimiento en una nación; para Beccaria, el mejor medio de prevención.
 - **Saber mediano y confuso** — el peor estado: suma a los males de la ignorancia los del error de quien ve poco lejos.
 - **Autoridad desarmada de razones** — la que solo se sostiene por la fuerza y que la ilustración hace temblar.
 - **Hombre iluminado** — quien ve la verdad sin temerla; el depositario ideal de las leyes.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Autoridad sin razones vs. fuerza de las leyes** — la ilustración debilita la primera y deja intacta la segunda.
   - Se confunden porque: las dos mandan y las dos se resisten al examen público.
@@ -65,7 +59,7 @@ flowchart TD
   - Criterio para decidir: ¿la vista alcanza los confines de la verdad? Si no llega y cree llegar, agrega el error a la ignorancia.
   - Dónde se cae: se defiende una instrucción a medias como paso seguro hacia la ilustración, sin ver que es el tramo peligroso.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué el hombre iluminado ama las leyes en vez de resistirlas?
 2. Beccaria dice que los primeros errores religiosos hicieron un gran bien político. ¿Qué está afirmando y qué no?

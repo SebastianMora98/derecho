@@ -34,13 +34,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. Al lector) "Tres son los manantiales" — es la bisagra de todo el libro: sin esta distinción, nada de lo que sigue se entiende como movimiento deliberado.
-2. (cap. Al lector) "Sería, pues, un error atribuir" — son los tres errores que solo mencioné; cada uno desactiva una lectura hostil distinta.
-3. (cap. Al lector) "Algunos restos de leyes de un antiguo pueblo conquistador" — es la enumeración de intérpretes y fuentes que no reproduje, y fija el blanco polémico del libro.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Revelación** — lo que, según la fe, Dios comunica directamente a los hombres; inmutable y ajena a este libro.
 - **Ley natural** — los principios que se desprenderían de la naturaleza humana, accesibles por la razón sin fe.
@@ -48,7 +42,7 @@ flowchart TD
 - **Justicia política** — la relación entre una acción y el estado cambiante de la sociedad; por eso la llama "variable".
 - **Publicista** — quien escribe sobre asuntos públicos y su daño o provecho para la sociedad; el oficio que Beccaria se atribuye.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Justicia política vs. justicia natural** — la primera varía con el estado de la sociedad; la segunda es constante por esencia.
   - Se confunden porque: las dos se llaman "justicia" y las dos se invocan para decir que algo está mal.
@@ -60,7 +54,7 @@ flowchart TD
   - Criterio para decidir: ¿el autor afirma algo contra los otros dos planos, o simplemente no habla de ellos?
   - Dónde se cae: se sostiene que Beccaria es antirreligioso, que es exactamente la acusación que este capítulo desactiva.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un funcionario propone endurecer una pena porque el acto castigado es intrínsecamente inmoral. Según el reparto de oficios del capítulo, ¿cómo está razonando y qué tendría que mostrar?
 2. Beccaria pide que se lo refute mostrando que sus principios son inútiles o dañinos. ¿Es un criterio imparcial, o le da alguna ventaja?

@@ -38,20 +38,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 27) "basta que el mal de ella exceda al bien que nace del delito… todo lo demás es superfluo y, por tanto, tiránico" — es la fórmula que resume el libro entero.
-2. (cap. 27) El experimento de las dos naciones, la de la esclavitud perpetua y la de la rueda — conviene seguir el razonamiento completo, porque el argumento del deslizamiento es lo que lo cierra.
-3. (cap. 27) El párrafo final sobre los infelices empujados por la miseria — es la página más indignada del libro y la resumí en dos líneas.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Infalibilidad de la pena** — la certeza de que se aplicará; el verdadero freno del delito según este capítulo.
 - **Legislación suave** — la que acompaña necesariamente a la severidad inexorable del juez para que esta sea virtud útil.
 - **Pena superflua** — la que excede lo necesario para que el mal supere al bien del delito; Beccaria la llama tiránica.
 - **Habituación** — el endurecimiento de los ánimos frente a castigos repetidos, que anula el efecto de la severidad.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Infalibilidad vs. severidad** — la primera previene; la segunda se neutraliza con la esperanza de impunidad.
   - Se confunden porque: las dos se presentan como "mano dura" y suelen invocarse juntas.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿el tramo adicional agrega disuasión, contando ya la infalibilidad? Si no, es superfluo y por eso tiránico.
   - Dónde se cae: se agrava una pena "por las dudas", sin advertir que el mismo razonamiento no tiene punto de detención.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Cómo puede la atrocidad de las penas producir impunidad?
 2. Beccaria dice que se cometen muchos delitos para huir de la pena de uno solo. ¿Cómo funciona ese mecanismo?

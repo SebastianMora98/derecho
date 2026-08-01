@@ -40,20 +40,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 40) El pasaje sobre las leyes que prohíben las armas — es el ejemplo más desarrollado y conviene ver los tres argumentos en su orden.
-2. (cap. 40) La comparación entre el hombre salvaje y el sociable — es la frase más grave del capítulo y la resumí en una línea.
-3. (cap. 40) El párrafo final sobre el temor público — explica por qué el despotismo produce su propia oposición, y su lógica se pierde en un resumen.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Falsa idea de utilidad** — la que sacrifica ventajas reales por males imaginarios o confunde el bien público con un nombre.
 - **Ley medrosa** — la nacida de la impresión tumultuaria de hechos particulares, en vez de la meditación de un decreto universal.
 - **Motivos presentes** — los únicos que obran con eficacia sobre el mayor número, frente a los distantes.
 - **Cuerdo atrevido** — quien aprovecha el temor público extendido para volver a los hombres contra el poder que lo produjo.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Ley preventiva vs. ley medrosa** — la primera nace de una meditación general; la segunda, del sobresalto por un caso.
   - Se confunden porque: las dos se dictan invocando la seguridad y las dos prohíben algo antes de que ocurra el daño.
@@ -65,7 +59,7 @@ flowchart TD
   - Criterio para decidir: ¿alguien vive mejor por esa medida? Si no, el "bien público" es solo una palabra.
   - Dónde se cae: se justifica un daño cierto a personas reales por una ventaja colectiva que nadie puede identificar.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué sostiene Beccaria que prohibir las armas aumenta los homicidios en vez de reducirlos?
 2. Llama a esas normas "leyes medrosas" y no preventivas. ¿Qué distingue a unas de otras?

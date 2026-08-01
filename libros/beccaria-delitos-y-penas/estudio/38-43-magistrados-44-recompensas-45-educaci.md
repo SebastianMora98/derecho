@@ -34,19 +34,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 43) Las dos razones por las que un cuerpo numeroso es menos peligroso — están juntas en una sola frase y conviene separarlas al leer.
-2. (cap. 44) El capítulo entero: mide diez líneas y es la única propuesta positiva de premiar la virtud en todo el libro.
-3. (cap. 45) Las cuatro máximas de educación — resumí cada una en pocas palabras, y la formulación original es más precisa.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Cuerpo ejecutor de las leyes** — el conjunto de magistrados; cuanto más numeroso, menos expuesto a la venalidad.
 - **Moneda del honor** — el recurso simbólico con que el soberano puede premiar la virtud sin agotarlo.
 - **Educación por la necesidad** — la que aparta del mal mostrando sus consecuencias, frente a la que manda.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Temer al magistrado vs. temer a la ley** — el aparato y la pompa producen lo primero y debilitan lo segundo.
   - Se confunden porque: el magistrado aplica la ley, así que su autoridad parece la de ella.
@@ -58,7 +52,7 @@ flowchart TD
   - Criterio para decidir: ¿el joven entendió el inconveniente del acto, o solo la orden? Solo lo primero se sostiene sin el que manda.
   - Dónde se cae: se educa con castigos y se cree obtenida la virtud, cuando lo obtenido es el disimulo.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué un cuerpo de magistrados numeroso es menos peligroso que uno pequeño?
 2. Beccaria dice que ninguna legislación premia la virtud. ¿Por qué le parece un vacío grave?

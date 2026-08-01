@@ -110,8 +110,8 @@ Detalles que ya costaron una vuelta, por si hay que tocarlo:
 - Citas del original: menos de 15 palabras, entre comillas, con referencia.
   Nunca inventar números de página que la conversión no preservó.
 - El texto convertido puede traer ruido pese a la limpieza. Ignoralo; si un
-  pasaje quedó ilegible, marcalo en media cláusula dentro del bloque 2 y anotalo
-  en «Qué releer del original», en vez de reconstruirlo.
+  pasaje quedó ilegible, marcalo en media cláusula dentro del bloque 2, con la
+  referencia para leerlo en el original, en vez de reconstruirlo.
 - Los diagramas Mermaid tienen que compilar: etiquetas entre comillas dobles y
   sin paréntesis. Las etiquetas **sí llevan acentos**; lo que va sin acentos son
   los identificadores. Verificá el render con `ema.py web` y el navegador antes
@@ -121,36 +121,48 @@ Detalles que ya costaron una vuelta, por si hay que tocarlo:
 
 ## Estructura del documento de estudio
 
-Los 7 bloques de `prompts/estudio.md`, **y donde se publica cada uno**:
+Los 6 bloques de `prompts/estudio.md`, **y donde se publica cada uno**:
 
 | bloque | dónde se ve |
 |---|---|
 | 1 Idea principal | dentro del capítulo |
 | 2 Lo esencial del capítulo | dentro del capítulo |
 | 3 Mapa (un solo diagrama) | dentro del capítulo |
-| 4 Qué releer del original | dentro del capítulo |
-| 5 Vocabulario clave | glosario del libro |
-| 6 Distinciones que se confunden | sección del libro |
-| 7 Autoevaluación | test del libro |
+| 4 Vocabulario clave | glosario del libro |
+| 5 Distinciones que se confunden | sección del libro |
+| 6 Autoevaluación | test del libro |
 | Flashcards | mazo del libro |
 
 Los cuatro últimos **no se muestran dentro del capítulo**: el sitio los extrae y
 los publica una sola vez por libro, al final de la hoja. Repetir ese aparato en
 cada capítulo era lo que hacía los documentos largos y redundantes.
 
-Tres topes, y el que manda es el segundo: 1.400 palabras el documento entero,
-**700 los bloques 1 a 4 juntos** —lo único que se lee al abrir un capítulo— y 450
-el bloque 2. Se miden **excluyendo el código Mermaid y los encabezados**.
+**Se eliminó el bloque «Qué releer del original»**, que era el 4 y se veía dentro
+del capítulo. Repetía lo que el bloque 2 ya señalaba: el 2 tiene prohibido
+reproducir los ejemplos y enumeraciones del autor y debe mandar al original donde
+caen, así que juntarlos otra vez en una lista al final era decir dos veces lo
+mismo con distinto formato. Ahora el bloque 2 es **el único lugar que manda al
+original**, en media cláusula y con la referencia. La renumeración —5→4, 6→5,
+7→6— no rompió nada porque la extracción y el índice buscan **por título**, no por
+número, y los `id` de las anclas se derivan del título sin el número.
+
+Tres topes, y el que manda es el segundo: 1.100 palabras el documento entero,
+**500 los bloques 1 a 3 juntos** —lo único que se lee al abrir un capítulo, y el 3
+es un diagrama— y 400 el bloque 2. Se miden **excluyendo el código Mermaid y los
+encabezados**.
 
 **El tope del bloque 2 no se cumple contándolo al final, y está medido:** en la
 tanda de los 39 de Beccaria se violó las 39 veces, siempre entre 460 y 500, y hubo
 que recortar documento por documento en una segunda pasada. Escribir 500 palabras
 de prosa continua sale solo. Por eso el prompt ahora da además un **presupuesto
-por párrafo**, que sí se controla mientras se escribe: 4 párrafos de unas 110
-palabras, o 5 de unas 90, o 3 de unas 145 si el capítulo es corto y tiene un solo
-argumento. Es un promedio, no un máximo. Los 58 documentos actuales cumplen esa
-regla 58/58 —se calibró contra ellos, no al revés: la primera versión pedía «3
-párrafos de 5 o 6 oraciones» y solo la cumplían 3 de 58—.
+por párrafo**, que sí se controla mientras se escribe: **2 párrafos de unas 130
+palabras, y 3 como máximo** cuando la sección es larga o junta dos capítulos del
+autor. Nunca 4. Es un promedio, no un máximo por párrafo.
+
+Ojo con la calibración de esa clase de regla: la primera versión que escribí pedía
+«3 párrafos de 5 o 6 oraciones» y solo la cumplían 3 de 58 documentos. Un
+presupuesto en oraciones no describe estos textos; en párrafos y palabras, sí.
+Medir contra los documentos aprobados **antes** de dejar la regla en el prompt.
 
 **El bloque 2 no lleva pasos numerados.** La versión con pasos forzaba la
 cobertura, pero partía la lectura en fichas y obligaba a un andamiaje meta ("el
@@ -193,11 +205,20 @@ son **2 preguntas y 4 flashcards por capítulo**, con el foco cambiado:
 dirección contraria; ahora mantiene 2 y 4 y lo que hace es apretar el foco (las
 dos preguntas de exposición, respuestas de 5 a 7 oraciones).
 
-**Los 58 documentos ya escritos van con 4 y 8**, así que no cumplen esta regla: el
-cambio rige para lo que se genere de acá en adelante. Alinearlos es una pasada
-sobre los dos bloques finales de cada archivo —no toca la parte visible del
-capítulo— y hay que hacerla completa por libro, o el test y el mazo quedan
-mezclados, que es justo lo que se nota.
+### Qué falta alinear en los 58 documentos ya escritos
+
+Se les quitó «Qué releer del original» y se renumeraron —eso era mecánico y ya
+está hecho—, pero **siguen con la forma vieja en dos puntos**, y las dos
+diferencias son reescritura de contenido, no un `sed`:
+
+1. **El bloque 2 tiene 4 párrafos y unas 400-450 palabras**; la regla nueva pide 2
+   o 3 y hasta 400.
+2. **El test y el mazo van con 4 preguntas y 8 flashcards** por capítulo; la regla
+   nueva pide 2 y 4.
+
+Conviene hacer las dos en **una sola pasada por documento**, y completa por libro:
+un mazo mitad de 4 y mitad de 8, o un libro con capítulos de 2 y de 4 párrafos, se
+nota enseguida. Son 58 documentos —39 de Beccaria y 19 de FS—.
 
 Contratos con el código que no hay que romper:
 
@@ -331,7 +352,7 @@ preservó la paginación.
 
 **Está completo: las 39 secciones tienen documento de estudio.** El libro entero
 queda en 154 términos de glosario, 155 preguntas y 312 flashcards, y la hoja pesa
-451 KB crudos / 119 KB gzip —el doble que el otro libro, porque tiene el doble de
+420 KB crudos / 111 KB gzip —el doble que el otro libro, porque tiene el doble de
 capítulos—. Los 39 diagramas Mermaid compilan, verificado en el navegador
 abriendo la hoja entera. Todos los documentos entran en los tres topes (1.400
 palabras totales, 700 la parte visible, 450 el bloque 2), igual que los 19 de FS.
@@ -362,8 +383,7 @@ en `[[partes]]`; de ahí saca el sitio la jerarquía. Dividido con `--nivel 2` �
 
 **Está completo: los 19 capítulos tienen documento de estudio.** El libro entero
 queda en 81 términos de glosario, 76 preguntas y 152 flashcards, y la hoja pesa
-226 KB crudos / 56 KB gzip. Los documentos van de 1.111 a 1.406 palabras, y la
-parte visible de cada capítulo —lo único que se lee al abrirlo— de 440 a 616.
+212 KB crudos / 52 KB gzip.
 
 **Sin la variante `examen`, a propósito.** Pedía 12 flashcards y 5 preguntas por
 capítulo; con el mazo y el test consolidados por libro eso daba 228 tarjetas y 95

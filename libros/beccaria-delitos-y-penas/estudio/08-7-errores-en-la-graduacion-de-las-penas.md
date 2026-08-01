@@ -35,19 +35,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 7) "sería, pues, necesario formar no un solo código particular para cada ciudadano, sino una nueva ley para cada delito" — es la refutación de la intención en una frase.
-2. (cap. 7) El párrafo sobre las dos clases de relaciones — es el núcleo argumental del capítulo y donde se juega la separación entre delito y pecado.
-3. (cap. 7) "podrán los hombres en este caso castigar cuando Dios perdona" — el cierre condensa el argumento epistemológico y conviene tenerlo textual.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Daño hecho a la nación** — la única medida legítima del delito según este capítulo.
 - **Utilidad común** — la base de la justicia humana, nacida del choque de las pasiones entre iguales.
 - **Delito y pecado** — el primero se mide por el daño social; el segundo, por una malicia del corazón que no es accesible al juez.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Delito vs. pecado** — el delito es una ofensa medible al bien público; el pecado, una relación de dependencia con Dios cuya gravedad el hombre no puede conocer.
   - Se confunden porque: muchas acciones son las dos cosas a la vez y las dos se describen como culpa.
@@ -59,7 +53,7 @@ flowchart TD
   - Criterio para decidir: ¿quién es legislador y juez? En la primera, la sociedad; en la segunda, un Ser que se reservó los dos papeles.
   - Dónde se cae: se justifica el castigo civil como vindicación de Dios, y Beccaria responde que Dios se basta a sí mismo.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un tribunal agrava la pena porque el reo actuó con especial malicia interior. ¿Qué le objetaría este capítulo?
 2. Beccaria refuta la dignidad del ofendido con la comparación entre la irreverencia y el regicidio. ¿Por qué funciona ese argumento?

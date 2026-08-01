@@ -37,13 +37,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 10) El párrafo del remedio al duelo — son cuatro líneas que contienen toda la propuesta, y conviene tener la fórmula "teme solo las leyes, no los hombres".
-2. (cap. 11) "cada ciudadano debe saber cuándo es reo y cuándo es inocente" — es el axioma más citado de esta parte y Beccaria dice expresamente que no admite excepción.
-3. (cap. 11) El párrafo final con las cinco preguntas — funciona como índice del resto del libro y conviene leerlo antes de seguir.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Duelo privado** — el desafío entre particulares, nacido de la anarquía de las leyes y de la necesidad del favor ajeno.
 - **Agresor** — quien dio ocasión al duelo; para Beccaria, el único que debe ser castigado.
@@ -51,7 +45,7 @@ flowchart TD
 - **Policía** — el magistrado encargado de prevenir la fermentación de las pasiones populares.
 - **Leyes arbitrarias** — las no establecidas en un código que circule entre todos; puerta abierta a la tiranía.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Castigar al agresor vs. castigar al duelista** — la ley debe alcanzar a quien provocó, no a quien se vio obligado a responder.
   - Se confunden porque: los dos participaron en el mismo hecho y la ley solía castigar a ambos con la muerte.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿la medida evita que la situación se produzca, o castiga después? Solo la primera cabe en la policía.
   - Dónde se cae: se le dan al magistrado de policía facultades punitivas sin ley previa, que es la puerta a la tiranía que el capítulo señala.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un Estado decreta la muerte para quien acepte un duelo y la costumbre sigue. Según el cap. 10, ¿por qué falla la amenaza?
 2. Beccaria propone declarar inocente al que se batió sin haber provocado. ¿No es eso premiar la violencia privada?

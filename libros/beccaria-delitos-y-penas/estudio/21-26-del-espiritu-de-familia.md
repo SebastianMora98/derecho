@@ -37,20 +37,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 26) El cálculo de los cien mil hombres — es el argumento entero en cinco líneas y conviene tener los números exactos.
-2. (cap. 26) El párrafo de las contradicciones entre moral doméstica y pública — es una enumeración de oposiciones que pierde fuerza resumida.
-3. (cap. 26) "un ídolo vano que se llama bien de familia" — es la frase más dura del capítulo y explica por qué el interés familiar no equivale al de sus miembros.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Espíritu de familia** — modo de mirar limitado al detalle y a los hechos pequeños, que inspira sujeción y temor.
 - **Espíritu republicano** — el que maneja principios generales y distribuye los hechos según el bien de la mayor parte.
 - **Subordinación de contrato** — el vínculo familiar cuando los hijos adultos se sujetan por participar de las ventajas, no por mando.
 - **Repúblicas federativas** — la subdivisión con que una república muy vasta puede librarse del despotismo.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **República de familias vs. de hombres** — la primera cuenta a los cabezas; la segunda, a las personas.
   - Se confunden porque: las dos tienen leyes, asambleas y ciudadanos, y la diferencia no se ve en las instituciones públicas.
@@ -62,7 +56,7 @@ flowchart TD
   - Criterio para decidir: ¿alguien concreto vive mejor por ese sacrificio? Muchas veces, dice, no es el bien de ninguno.
   - Dónde se cae: se justifica la autoridad doméstica por el bien común de la casa, que es el mecanismo por el que el temor entra en la moral pública.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Cómo llega el espíritu monárquico a las leyes de una república, según este capítulo?
 2. Beccaria opone subordinación de mando a subordinación de contrato. ¿Qué cambia para el hijo adulto?

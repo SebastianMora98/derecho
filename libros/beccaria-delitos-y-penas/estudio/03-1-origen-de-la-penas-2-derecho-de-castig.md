@@ -36,13 +36,7 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 1) "El conjunto de todas estas porciones de libertad" — es la definición de soberanía de la que depende todo el libro, y la formulación exacta importa.
-2. (cap. 2) "todo acto de autoridad de hombre a hombre que no se derive de la absoluta necesidad, es tiránico" — la generalización de Montesquieu, que es la vara con que se mide cada institución del resto del tratado.
-3. (cap. 1) "Llámolos motivos sensibles porque" — es el pasaje que más fácil se pasa por alto: explica por qué el castigo tiene que impresionar y no solo persuadir.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Soberanía** — el conjunto de las porciones de libertad que cada uno sacrificó al bien común.
 - **Soberano** — quien administra ese depósito; el autor lo llama "administrador y legítimo depositario", no dueño.
@@ -50,7 +44,7 @@ flowchart TD
 - **Derecho de castigar** — la facultad de penar, fundada en la necesidad de defender el depósito de la salud pública.
 - **Tiránico** — todo acto de autoridad que no derive de la absoluta necesidad, según la fórmula generalizada de Montesquieu.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Ceder una porción vs. entregar la libertad** — el pacto sacrifica el mínimo indispensable, no el todo.
   - Se confunden porque: las dos se describen como someterse a la autoridad para vivir en sociedad.
@@ -62,7 +56,7 @@ flowchart TD
   - Criterio para decidir: ¿sin esta pena se derrumba el depósito? Si no, el exceso es tiránico aunque el delito sea grave.
   - Dónde se cae: se justifica agravar una pena por la gravedad del delito, cuando la vara es la necesidad de defender la seguridad común.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un gobierno agrava una pena argumentando que el delito indigna a la población. Según el cap. 2, ¿alcanza ese argumento?
 2. Alguien sostiene que para Beccaria los individuos entregaron su libertad al Estado a cambio de protección. ¿Qué le corregirías?

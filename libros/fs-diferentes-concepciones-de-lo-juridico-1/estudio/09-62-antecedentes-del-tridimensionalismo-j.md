@@ -36,20 +36,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 139) "situados, sin mayor conexión, uno al lado de otro" — es la bisagra del capítulo: define qué le faltaba a la etapa estática, y la formulación exacta importa.
-2. (pp. 140-142, con las notas 17 a 20) — es el catálogo completo de autores por país que solo mencioné; ahí están las referencias para ir a cada uno.
-3. (p. 139) El nombre de la segunda etapa llegó dañado por la conversión: dice "genérico y concreto" cuando por el contraste con la primera debería ser "específico y concreto". Conviene verificarlo en el original antes de citarlo.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Tridimensionalismo genérico y abstracto** — la etapa que reconoce los tres elementos pero los deja separables, sin relación esencial entre ellos.
 - **Integrativismo jurídico** — la posición de Hall (1947): toda investigación sobre el derecho debe ser tridimensional.
 - **Antinomia** — oposición entre dos principios que parecen ambos válidos; acá, entre el valor ahistórico y el hecho contingente.
 - **Perspectivas ineliminables** — la fórmula de Sauer: los tres elementos no son objetos separables sino puntos de vista que no se pueden quitar.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Ver tres elementos vs. integrarlos** — la etapa genérica hizo lo primero; el aporte que el autor reclama es lo segundo.
   - Se confunden porque: las dos posiciones enumeran los mismos tres elementos, así que suenan igual al resumirlas.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿la tesis es sobre cómo se organiza el trabajo académico, o sobre qué es el derecho? Bobbio hace lo primero.
   - Dónde se cae: se cuenta a Bobbio entre los tridimensionalistas en sentido fuerte, cuando su aporte no incide en la estructura de lo jurídico.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un compañero afirma que el aporte del autor es haber descubierto que el derecho tiene tres dimensiones. Según este capítulo, ¿qué tiene de incorrecto?
 2. Sauer dejó de ver los tres elementos como separables y aun así Reale lo objeta. ¿Qué le falta a su posición?

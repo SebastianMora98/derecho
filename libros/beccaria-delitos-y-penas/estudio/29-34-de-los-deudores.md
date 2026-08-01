@@ -38,20 +38,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 34) "aman las leyes crueles aunque estén sujetos a ellas mismas" — es una de las observaciones más agudas del libro sobre por qué el rigor tiene apoyo popular.
-2. (cap. 34) La escala de cuatro grados con sus consecuencias — está comprimida en pocas líneas y cada tramo tiene un efecto distinto.
-3. (cap. 34) El párrafo final sobre el registro y el banco público — es de las pocas propuestas positivas del libro y conviene verla entera.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Fallido fraudulento** — el deudor que quebró con dolo; equiparado al falsificador de moneda.
 - **Fallido inocente** — el que probó que perdió sus bienes por malicia ajena, desgracia o contratiempos inevitables.
 - **Registro público de contratos** — el archivo consultable con que Beccaria propone prevenir las quiebras culpables.
 - **Banco público** — fondo formado con tributos sobre el comercio próspero, destinado a socorrer al comerciante caído.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Fallido fraudulento vs. inocente** — el primero falsificó obligaciones; el segundo fue despojado por causas ajenas.
   - Se confunden porque: los dos dejan acreedores impagos y el resultado externo es idéntico.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿le sirve de algo al acreedor? Un deudor preso no produce; la privación le es inútil.
   - Dónde se cae: se defiende la prisión por deudas como protección del comercio, cuando destruye la única fuente de pago.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué equipara al fallido fraudulento con el falsificador de moneda?
 2. Beccaria dice que los hombres aman las leyes crueles aunque estén sujetos a ellas. ¿Cómo lo explica?

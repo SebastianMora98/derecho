@@ -37,19 +37,13 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (p. 175) "una diferencia de carácter eminentemente técnico" — es la bisagra del capítulo: define de qué tipo es la distinción, y de ahí depende cómo se la usa.
-2. (p. 176) "en vez de dos, cuatro sujetos de derecho" — el resultado enunciado como número, y conviene tenerlo textual porque es la forma más compacta del aporte.
-3. (pp. 175-176) La enumeración de los cuatro con sus nombres exactos — importa la precisión, porque "persona jurídica" y "organización de personas inscripta" nombran lo mismo y la no inscripta es el ente nuevo.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Situaciones jurídicas subjetivas** — los derechos y deberes que se imputan a un ente; tenerlos atribuibles es lo que lo vuelve sujeto de derecho.
 - **Nasciturus** — el ya concebido y todavía no nacido; el código lo llama también persona por nacer.
 - **Persona natural** — el ser humano ya nacido, uno de los cuatro sujetos de derecho del código.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Sujeto de derecho vs. persona** — el primero es el género y el segundo una de sus especies; sin separarlos no entran el concebido ni la organización no inscripta.
   - Se confunden porque: en el uso corriente y en los códigos anteriores eran lo mismo, y todavía se usan como sinónimos.
@@ -61,7 +55,7 @@ flowchart TD
   - Criterio para decidir: ¿completó la inscripción? Solo eso las separa, y ya no decide si es sujeto de derecho.
   - Dónde se cae: se responde que sin inscripción no hay sujeto de derecho, que es exactamente lo que este capítulo vino a corregir.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. Un grupo de vecinos recauda fondos y contrata servicios sin haberse inscripto nunca. Bajo la categorización del código, ¿qué es y por qué?
 2. Un compañero afirma que el código de 1984 declaró persona al concebido. ¿Qué le corregirías?

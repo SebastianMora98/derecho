@@ -38,20 +38,14 @@ flowchart TD
     classDef critico stroke-width:3px
 ```
 
-## 4. Qué releer del original
-
-1. (cap. 47) El teorema final — son dos líneas con los seis requisitos y hay que saberlos de memoria, en su orden.
-2. (cap. 46) "sean, pues, inexorables las leyes e inexorables sus ejecutores… pero sea suave, indulgente y humano el legislador" — condensa toda la doctrina del perdón.
-3. (cap. 47) La imagen del león y el rayo — es el fundamento de la relatividad histórica de las penas y conviene verla entera.
-
-## 5. Vocabulario clave
+## 4. Vocabulario clave
 
 - **Clemencia** — la benignidad que debe estar en el código y no en la sentencia; virtud del legislador.
 - **Perdón** — la gracia concedida en el caso particular; para Beccaria, un decreto público de impunidad.
 - **Teorema general** — la definición final: pena pública, pronta, necesaria, mínima, proporcionada y legal.
 - **Relatividad de la pena** — su gravedad debe ajustarse a la sensibilidad del pueblo en cada época.
 
-## 6. Distinciones que se confunden
+## 5. Distinciones que se confunden
 
 - **Clemencia del legislador vs. perdón del juez o del príncipe** — la primera se escribe en el código; el segundo se concede caso por caso.
   - Se confunden porque: las dos alivian al condenado y las dos se sienten como humanidad.
@@ -63,7 +57,7 @@ flowchart TD
   - Criterio para decidir: ¿quién hace el ajuste y con qué generalidad? Es el legislador, para toda la nación y por época, no el juez para un caso.
   - Dónde se cae: se invoca "las circunstancias" para agravar una pena concreta, que es el arbitrio del cap. 4.
 
-## 7. Autoevaluación
+## 6. Autoevaluación
 
 1. ¿Por qué el perdón deslegitima también a las penas que sí se aplicaron?
 2. Beccaria pide jueces inexorables y legisladores suaves. ¿No es una forma de dureza?
