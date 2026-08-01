@@ -2,7 +2,7 @@
 
 ## 1. Idea principal
 
-Las leyes deberían ser pactos acordados entre hombres libres y en la práctica fueron improvisaciones nacidas de urgencias, útiles a unos pocos, y el criterio para corregirlas es la mayor felicidad repartida entre el mayor número.
+Las leyes debían ser pactos entre hombres libres y fueron improvisaciones útiles a pocos; el criterio para corregirlas es la mayor felicidad repartida entre el mayor número.
 
 Esta introducción contesta por qué hace falta escribir el libro: no porque falten leyes, sino porque las que hay nacieron mal y nadie las examinó. A un principiante le conviene entenderla porque acá aparece la vara con la que Beccaria va a medir cada institución penal en los 47 capítulos siguientes. Además, sostiene una tesis incómoda sobre por qué el abuso duró siglos: la gente no razona sobre lo que recibe por tradición, y solo reacciona cuando el daño se hizo insoportable.
 

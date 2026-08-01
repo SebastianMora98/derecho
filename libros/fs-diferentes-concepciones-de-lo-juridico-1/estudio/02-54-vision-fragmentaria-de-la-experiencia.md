@@ -2,7 +2,7 @@
 
 ## 1. Idea principal
 
-Muchos juristas desconfían de la filosofía del derecho, y con motivo: cada escuela explicó bien una sola parte del fenómeno jurídico, y ninguna dio una respuesta completa que sirviera para resolver los problemas concretos del oficio.
+Muchos juristas desconfían de la filosofía del derecho, y con motivo: cada escuela explicó bien una sola parte, y ninguna sirvió para resolver los problemas del oficio.
 
 Este capítulo contesta una pregunta incómoda: ¿por qué tantos abogados en ejercicio consideran que la teoría del derecho no les sirve para nada? A un principiante le conviene entenderla porque explica de dónde viene el prejuicio que probablemente va a escuchar en la facultad. Además, el autor sostiene algo más filoso: quien cree que trabaja sin teoría en realidad está aplicando una sin saberlo, y por eso comete errores.
 

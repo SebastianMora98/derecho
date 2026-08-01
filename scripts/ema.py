@@ -247,6 +247,7 @@ def cmd_dividir(args: argparse.Namespace) -> None:
         indice.append(f"- `{nombre}` — {s['titulo']} ({len(s['cuerpo']):,} car.)")
 
     (destino / "indice.md").write_text("\n".join(indice) + "\n", encoding="utf-8")
+    escribir_manifiesto(libro, secciones)
 
     fusionadas = [s for s in secciones if len(s["capitulos"]) > 1]
     if fusionadas:
@@ -331,6 +332,38 @@ def descartar_paratexto(bloques: list[dict], patrones: list[str]) -> list[dict]:
     if descartados:
         print(f"  descartados por `omitir` ({len(descartados)}): {', '.join(descartados)}")
     return salida
+
+
+def escribir_manifiesto(libro: Path, secciones: list[dict]) -> None:
+    """Deja la lista de capítulos del libro en un archivo que sí va a git.
+
+    El sitio necesita conocer TODOS los capítulos para mostrar el libro
+    completo, incluidos los que todavía no tienen documento de estudio. Pero
+    `secciones/` está fuera de git —ahí está el texto del original— y el sitio
+    solo puede leer lo que está versionado. Este manifiesto es el puente: lo
+    escribe `dividir` y lo lee `sitio.py`. No editarlo a mano.
+    """
+    lineas = [
+        "# Generado por `ema.py dividir`. No editar a mano: se reescribe.",
+        "# El sitio lo usa para mostrar todos los capítulos del libro, tengan o",
+        "# no documento de estudio todavía.",
+        "",
+    ]
+    for i, s in enumerate(secciones, 1):
+        lineas += [
+            "[[capitulos]]",
+            f'numero = "{i:02d}"',
+            f"titulo = {cadena_toml(s['titulo'])}",
+            f"caracteres = {len(s['cuerpo'])}",
+            "",
+        ]
+    (libro / "capitulos.toml").write_text("\n".join(lineas), encoding="utf-8")
+
+
+def cadena_toml(texto: str) -> str:
+    """Cita un valor para TOML. Los títulos del OCR traen comillas dobles."""
+    escapado = texto.replace("\\", "\\\\").replace('"', '\\"')
+    return f'"{escapado}"'
 
 
 def bloque_partes(secciones: list[dict]) -> str:

@@ -28,6 +28,8 @@ libros/<slug>/
   original/           copia del archivo fuente (fuera de git)
   secciones/          NN-titulo.md + indice.md (fuera de git)
   prompts/            prompts ya rellenados (fuera de git)
+  capitulos.toml      lista de capítulos que escribe `dividir` — en git, la
+                      usa el sitio para mostrar también los pendientes
   estudio/            NN-titulo.md — los documentos de estudio, en git
   artefactos/         páginas HTML sueltas
 ```
@@ -124,9 +126,12 @@ Explicación paso a paso · **3** Mapa (un solo diagrama) · **4** Vocabulario
 clave · **5** Distinciones que se confunden · **6** Qué releer del original ·
 **7** Autoevaluación · **Flashcards**.
 
-Está pensada para preparar un examen siendo principiante, y su regla central es
-el **reparto del material**: cada tipo de contenido tiene un bloque asignado y
-está prohibido en los otros. La plantilla vieja de 12 bloques hacía aparecer los
+Está pensada para preparar un examen siendo principiante, con un **tope de 1.800
+palabras** por documento: más que eso deja de acompañar la lectura y empieza a
+reemplazarla, y como todos los capítulos viven en una sola hoja, cada uno que se
+estira encarece la página entera. Su regla central es el **reparto del
+material**: cada tipo de contenido tiene un bloque asignado y está prohibido en
+los otros. La plantilla vieja de 12 bloques hacía aparecer los
 mismos 7 conceptos cuatro veces (tarjeta, nodo del diagrama, pregunta del test y
 flashcard); si al ejecutar el prompt notás que estás repitiendo, es que el
 reparto se está violando.
@@ -138,9 +143,12 @@ Cuatro contratos con el código que no hay que romper:
   que hereda la corrida siguiente. Se busca por el título del bloque, no por su
   número (`comun.py: idea_principal`), así que renumerar no rompe el sitio, pero
   renombrar el bloque sí.
-- **7. Autoevaluación** — todo lo que sigue a `--- No mires esto hasta responder
-  ---` se pliega en un `<details>`. Tiene que ser lo último antes de las
-  flashcards: lo que venga después del siguiente `##` se reinyecta en el cuerpo.
+- **7. Autoevaluación** — lo que sigue a `--- No mires esto hasta responder ---`
+  son las respuestas, y el sitio **las empareja por posición con las preguntas**
+  para mostrar cada una debajo de la suya. Por eso tiene que haber exactamente
+  una respuesta por pregunta y en el mismo orden: si las cantidades no coinciden
+  no se empareja nada y caen todas juntas al final, con aviso en consola. Tiene
+  que ser lo último antes de las flashcards.
 - **Flashcards** — al final del archivo, una por línea, `Pregunta | Respuesta`,
   sin markdown adentro (el sitio escapa el texto). Ya no dependen de la variante
   `examen`; esa variante solo fija la cantidad en 20.
@@ -165,6 +173,13 @@ completa del original con la idea principal de cada capítulo, y cada capítulo
 plegado en un `<details>` que se abre ahí mismo. No hay una página por capítulo:
 el enlace profundo a un capítulo es `index.html#sNN`, y a un bloque suyo
 `index.html#sNN-vocabulario-clave`.
+
+La hoja muestra **todos** los capítulos del libro, no solo los procesados: los
+que todavía no tienen documento salen atenuados y con borde punteado. La lista
+sale de `libros/<slug>/capitulos.toml`, que escribe `dividir` y que **sí va a
+git** — `secciones/` no, porque ahí está el texto del original. Si se re-divide
+un libro hay que volver a correr `web`, o la hoja queda con capítulos que ya no
+existen (el sitio avisa cuando un documento no está en el manifiesto).
 
 Detalles del diseño que no son obvios y ya costaron una vuelta:
 

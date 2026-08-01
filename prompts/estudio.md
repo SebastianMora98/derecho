@@ -121,6 +121,26 @@ repetición espaciada, así que reformulan material de los bloques 2, 4 y 5.
 Reformulan, no copian. Ninguna flashcard puede coincidir con una pregunta del
 bloque 7.
 
+# LARGO
+
+**El documento entero, flashcards incluidas, no pasa de 1.800 palabras.** Es un
+tope, no un objetivo: si el capítulo da para menos, mejor.
+
+Sirve para dos cosas. Un documento de tres mil palabras deja de acompañar la
+lectura y empieza a reemplazarla, que es lo que este taller evita. Y como todos
+los capítulos viven en una sola página, cada uno que se estira encarece la hoja
+entera.
+
+Cuando algo no entre, recortá en este orden: primero el bloque 2, sacando
+matices y quedándote con el movimiento del autor; después el vocabulario, que
+tiende a incluir términos que no hacen falta para este capítulo; después las
+distinciones, dejando solo las que se pagan caro en un examen. **No recortes
+citando menos el original ni bajando la cantidad de flashcards**: eso es lo que
+hace al documento útil.
+
+Antes de entregar, contá las palabras. Si te pasaste, recortá; no entregues de
+más avisando que te pasaste.
+
 # LO QUE DEBES PRODUCIR
 
 Un documento en Markdown con EXACTAMENTE estos encabezados, en este orden, con
@@ -139,14 +159,16 @@ capítulo en el índice del libro. Por lo tanto:
 
 - Escribí ahí la idea misma, no una frase que hable sobre la idea. Nada de "la
   tesis central es que", "en este capítulo el autor sostiene".
-- Una o dos oraciones, entre 25 y 55 palabras, en prosa. Sin viñetas, sin
-  negritas, sin encabezados, sin corchetes.
+- **Una sola oración, entre 20 y 35 palabras.** Es lo que se lee de corrido en
+  el índice del libro, uno abajo del otro: si se estira, deja de servir para
+  repasar de una pasada. Sin viñetas, sin negritas, sin encabezados, sin
+  corchetes.
 - En una sola línea, sin cortes de línea en medio.
 - Cero notas al redactor. Nunca escribas ahí una instrucción ni un comentario
   tuyo: se publica sin filtro, y ya pasó una vez que se colaron las palabras de
   la instrucción y salieron como resumen del libro.
 
-Después, una línea en blanco y un segundo párrafo de 2 a 4 oraciones: qué
+Después, una línea en blanco y un segundo párrafo de **2 o 3 oraciones**: qué
 pregunta del derecho viene a contestar este capítulo y por qué a un principiante
 le conviene entenderla. Si el autor sostiene una segunda idea igual de
 importante, va acá, empezando con "Además,". Nunca más de dos ideas.
@@ -158,13 +180,13 @@ Es el bloque más largo y el que carga el peso: tiene que explicar el capítulo
 produce un reemplazo de la lectura, que es exactamente lo que este documento no
 debe ser.
 
-Partí el capítulo en los movimientos que el autor realmente hace, entre 3 y 7, y
-dale a cada uno su propio subencabezado con tres almohadillas:
+Partí el capítulo en los movimientos que el autor realmente hace, **entre 3 y 5**,
+y dale a cada uno su propio subencabezado con tres almohadillas:
 
 `### Paso 1 — <qué hace el autor en este tramo>`
 
-Dentro de cada paso, en prosa corrida (sin viñetas), 120 a 200 palabras, en este
-orden:
+Dentro de cada paso, en prosa corrida (sin viñetas), **70 a 110 palabras**, en
+este orden:
 
 1. **Dónde estoy.** La referencia en el formato de {{FORMATO_CITAS}}, más un
    ancla: las primeras palabras del pasaje entre comillas, menos de 15 palabras,
@@ -225,9 +247,10 @@ sitio, sin mensaje que lo explique.
 
 ## 4. Vocabulario clave
 
-El glosario que necesito al lado para poder leer el original. Entre 6 y 10
-términos: la jerga, los latinismos, los nombres de escuelas y las palabras que
-el autor usa con un sentido propio.
+El glosario que necesito al lado para poder leer el original. **Entre 5 y 8
+términos**: la jerga, los latinismos, los nombres de escuelas y las palabras que
+el autor usa con un sentido propio. Solo los que hagan falta para leer ESTE
+capítulo; no es un diccionario de la materia.
 
 Formato exacto, una línea por término, en una lista **sin líneas en blanco entre
 los ítems** (con líneas en blanco el sitio pierde el color del término):
@@ -237,7 +260,7 @@ los ítems** (con líneas en blanco el sitio pierde el color del término):
 - **Otro término** — qué significa; el autor lo llama "cita corta" (p. 120).
 ```
 
-- Máximo 40 palabras por línea. Sin sublistas y sin párrafos.
+- **Máximo 25 palabras por línea.** Sin sublistas y sin párrafos.
 - La cita del autor va solo si de verdad define el término en este capítulo, al
   final, de menos de 15 palabras, con referencia.
 - Si el original usa un término sin definirlo, incluilo igual con la nota "(el
@@ -256,7 +279,7 @@ Prueba para saber si una distinción va acá: si se resuelve leyendo las dos
 definiciones del bloque 4, no va. Solo entra si hace falta un criterio adicional
 para decidir en un caso concreto.
 
-Entre 3 y 5 distinciones. Al menos uno de los dos miembros del par tiene que
+**Entre 3 y 4 distinciones.** Al menos uno de los dos miembros del par tiene que
 aparecer en este capítulo; el otro puede venir de antes o ser la confusión que
 trae cualquiera de la vida cotidiana. Formato exacto, lista pegada:
 
@@ -274,8 +297,8 @@ distinciones reales que cinco inventadas.
 
 ## 6. Qué releer del original
 
-Entre 3 y 5 pasajes, numerados, para leer con el libro abierto. Este bloque no
-explica nada: dice dónde ir y por qué.
+**Entre 3 y 4 pasajes**, numerados, para leer con el libro abierto. Este bloque
+no explica nada: dice dónde ir y por qué, en una línea cada uno.
 
 Cada punto arranca con la referencia en el formato de {{FORMATO_CITAS}}, seguida
 del ancla —las primeras palabras del pasaje, entre comillas, menos de 15
@@ -315,9 +338,12 @@ carácter por carácter**, sola en su renglón:
 --- No mires esto hasta responder ---
 ```
 
-Debajo, las diez respuestas de referencia, numeradas, de 2 a 4 oraciones, cada
-una con la referencia donde se verifica. No pongas un encabezado como
-"Respuestas de referencia": el sitio ya pone ese rótulo. Si una respuesta es
+Debajo, las diez respuestas de referencia, numeradas, de **1 a 3 oraciones**,
+cada una con la referencia donde se verifica. **Exactamente una respuesta por
+pregunta y en el mismo orden**: el sitio las empareja por posición para mostrar
+cada respuesta debajo de su propia pregunta, y si las cantidades no coinciden no
+empareja nada y quedan todas juntas al final. No pongas un encabezado como
+"Respuestas de referencia": el sitio ya pone su rótulo. Si una respuesta es
 discutible, decilo en la respuesta. Es lo último antes de las flashcards.
 
 ## Flashcards

@@ -2,7 +2,7 @@
 
 ## 1. Idea principal
 
-Frente a las escuelas que tomaban un solo elemento como objeto del derecho, aparece la teoría tridimensional: el derecho es la interacción de conducta, valor y norma, tres elementos que no están simplemente uno al lado del otro sino actuando entre sí.
+Frente a las escuelas que tomaban un solo elemento, aparece la teoría tridimensional: conducta, valor y norma no están uno al lado del otro, sino actuando entre sí.
 
 Estos dos capítulos contestan qué es lo que estudia realmente la ciencia jurídica, y de dónde salió la respuesta. A un principiante le conviene entenderlos porque acá se nombra por primera vez la teoría que da título a toda esta parte del libro. Además, el autor sostiene que esa respuesta nació en América Latina y no es una importación, y que sirve para enfrentar un mundo con injusticias y desigualdades concretas.
 

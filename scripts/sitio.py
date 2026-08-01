@@ -21,6 +21,7 @@ import html
 import re
 import shutil
 import sys
+import tomllib
 from pathlib import Path
 
 from markdown_it import MarkdownIt
@@ -74,8 +75,49 @@ def recolectar(libros_dir: Path, leer_config) -> list[dict]:
             )
         if not secciones:
             continue
+        secciones = completar_con_pendientes(carpeta, secciones)
         libros.append({"slug": carpeta.name, "cfg": cfg, "secciones": secciones})
     return libros
+
+
+def completar_con_pendientes(carpeta: Path, secciones: list[dict]) -> list[dict]:
+    """Agrega los capítulos del libro que todavía no tienen documento.
+
+    Así la hoja muestra el libro completo y no solo lo ya procesado: se ve la
+    obra entera y qué falta. La lista sale de `capitulos.toml`, que escribe
+    `ema.py dividir` justamente porque `secciones/` no va a git.
+    """
+    manifiesto = carpeta / "capitulos.toml"
+    if not manifiesto.exists():
+        return secciones
+    with manifiesto.open("rb") as fh:
+        capitulos = tomllib.load(fh).get("capitulos", [])
+    if not capitulos:
+        return secciones
+
+    hechos = {s["numero"]: s for s in secciones}
+    completas = []
+    for cap in capitulos:
+        numero = str(cap.get("numero", "")).strip()
+        if numero in hechos:
+            completas.append(hechos.pop(numero))
+        else:
+            completas.append(
+                {
+                    "numero": numero,
+                    "ancla": f"s{numero}",
+                    "titulo": cap.get("titulo", numero),
+                    "tesis": "",
+                    "texto": "",
+                    "pendiente": True,
+                }
+            )
+    # Un documento cuyo número no está en el manifiesto quedó huérfano: el libro
+    # se volvió a dividir con otro criterio y nadie borró el documento viejo.
+    for numero, s in sorted(hechos.items()):
+        print(f"aviso: la sección {numero} tiene documento pero ya no existe en capitulos.toml")
+        completas.append(s)
+    return completas
 
 
 def titulo_de(texto: str, respaldo: str) -> str:
@@ -93,17 +135,28 @@ def tesis_de(texto: str) -> str:
 # --------------------------------------------------------------------------- #
 
 
+# Un marcador de texto plano y no un comentario HTML: el render escapa el HTML
+# crudo, así que un comentario saldría visible y no se podría reemplazar.
+MARCADOR_AUTOEVALUACION = "AUTOEVALUACIONEMAAQUI"
+
+
 def render_documento(texto: str, prefijo: str = "") -> tuple[str, list[tuple[str, str]]]:
     """Devuelve el HTML del documento y las anclas para su índice interno."""
     cuerpo, flashcards = separar_flashcards(texto)
     cuerpo = re.sub(r"^# +.+\n", "", cuerpo, count=1)  # el título va en la cabecera
     cuerpo, respuestas = separar_respuestas(cuerpo)
+    cuerpo, autoevaluacion = emparejar_autoevaluacion(cuerpo, respuestas)
 
-    # Solo se anclan los encabezados del cuerpo: los del bloque de respuestas
-    # viven dentro de un <details> cerrado y no deben entrar al índice.
     cuerpo_html, anclas = anclar(transformar(md.render(cuerpo)), prefijo)
+    if autoevaluacion:
+        # El marcador quedó envuelto en su propio párrafo al renderizar.
+        cuerpo_html = re.sub(
+            rf"<p>\s*{MARCADOR_AUTOEVALUACION}\s*</p>", autoevaluacion, cuerpo_html, count=1
+        )
     partes = [cuerpo_html]
-    if respuestas:
+    if respuestas and not autoevaluacion:
+        # Respaldo: si las preguntas y las respuestas no se pudieron emparejar,
+        # las respuestas van juntas al final antes que perderse.
         partes.append(
             '<details class="respuestas"><summary>Respuestas de referencia — no mires hasta responder</summary>'
             + transformar(md.render(respuestas))
@@ -113,6 +166,66 @@ def render_documento(texto: str, prefijo: str = "") -> tuple[str, list[tuple[str
         partes.append(render_flashcards(flashcards, prefijo))
         anclas.append((f"{prefijo}flashcards", "Flashcards"))
     return "\n".join(partes), anclas
+
+
+def items_numerados(texto: str) -> list[str]:
+    """Parte una lista numerada de markdown en sus ítems, sin el número."""
+    marcas = list(re.finditer(r"^\s*(\d{1,2})\.[ \t]+", texto, re.MULTILINE))
+    items = []
+    for i, m in enumerate(marcas):
+        fin = marcas[i + 1].start() if i + 1 < len(marcas) else len(texto)
+        items.append(texto[m.end() : fin].strip())
+    return items
+
+
+def emparejar_autoevaluacion(cuerpo: str, respuestas: str) -> tuple[str, str]:
+    """Pone cada respuesta debajo de su propia pregunta, en vez de todas juntas.
+
+    Antes las diez respuestas vivían en un solo desplegable al final: para
+    verificar una había que abrirlo entero y leerlas todas, que es justo lo que
+    arruina la autoevaluación. Ahora cada pregunta se despliega sola.
+
+    Se emparejan por posición, que es lo que el documento garantiza: la
+    pregunta N y la respuesta N son listas numeradas paralelas. Si las
+    cantidades no coinciden, no se empareja nada y el bloque queda como estaba
+    — mejor el formato viejo que respuestas cruzadas.
+    """
+    if not respuestas.strip():
+        return cuerpo, ""
+    # Hasta el próximo `##`, no hasta el final: una variante puede agregar un
+    # bloque después de la autoevaluación y no hay que tragárselo.
+    bloque = re.search(
+        r"(?m)^## +\d*\.?\s*Autoevaluaci[óo]n.*?$(.*?)(?=^## |\Z)",
+        cuerpo,
+        re.DOTALL | re.IGNORECASE,
+    )
+    if not bloque:
+        return cuerpo, ""
+
+    preguntas = items_numerados(bloque.group(1))
+    contestadas = items_numerados(respuestas)
+    if not preguntas or len(preguntas) != len(contestadas):
+        if preguntas:
+            print(f"aviso: {len(preguntas)} preguntas y {len(contestadas)} respuestas; no las emparejo")
+        return cuerpo, ""
+
+    filas = []
+    for i, (p, r) in enumerate(zip(preguntas, contestadas), 1):
+        filas.append(
+            f'<details class="pregunta">'
+            f'<summary><span class="numero">{i}</span>'
+            f'<span class="texto">{md.renderInline(p)}</span></summary>'
+            f'<div class="respuesta">{md.render(r)}</div>'
+            f"</details>"
+        )
+    ayuda = (
+        '<p class="ayuda">Contestá primero. Al hacer clic en una pregunta '
+        "aparece su respuesta debajo.</p>"
+    )
+    # La lista de preguntas se saca del markdown y se reemplaza por un marcador,
+    # porque el HTML se inyecta después de renderizar.
+    nuevo = cuerpo[: bloque.start(1)] + f"\n\n{MARCADOR_AUTOEVALUACION}\n\n" + cuerpo[bloque.end(1) :]
+    return nuevo, ayuda + f'<div class="autoevaluacion">{"".join(filas)}</div>'
 
 
 def anclar(html_render: str, prefijo: str = "") -> tuple[str, list[tuple[str, str]]]:
@@ -251,7 +364,8 @@ def render_indice(libros: list[dict]) -> str:
             f'<a class="libro" href="{libro["slug"]}/index.html">'
             f'<h2>{html.escape(cfg.get("titulo", libro["slug"]))}</h2>'
             f'<p class="autor">{html.escape(cfg.get("autor", ""))}</p>'
-            f'<p class="meta">{len(libro["secciones"])} secciones estudiadas</p>'
+            f'<p class="meta">{sum(1 for s in libro["secciones"] if not s.get("pendiente"))}'
+            f' de {len(libro["secciones"])} capítulos con documento</p>'
             f"</a>"
         )
     cuerpo = (
@@ -304,6 +418,19 @@ def render_capitulo(s: dict) -> str:
     conviven todos los capítulos, y sin prefijo habría tantas anclas
     `vocabulario-clave` como capítulos.
     """
+    # Un capítulo sin documento todavía se muestra igual, para que la hoja sea
+    # el libro entero y no solo lo ya procesado. Va como <div> y no como
+    # <details>: no hay nada que desplegar, y un desplegable vacío promete algo
+    # que no está.
+    if s.get("pendiente"):
+        return (
+            f'<div class="capitulo pendiente" id="{s["ancla"]}">'
+            f'<span class="numero">{s["numero"]}</span>'
+            f'<span class="cuerpo"><strong>{html.escape(s["titulo"])}</strong>'
+            f'<span class="tesis">Todavía sin documento de estudio.</span></span>'
+            f"</div>"
+        )
+
     prefijo = f'{s["ancla"]}-'
     documento, anclas = render_documento(s["texto"], prefijo)
     return (
@@ -329,7 +456,8 @@ def render_indice_libro(grupos: list[tuple[str | None, list[dict]]]) -> str:
         if titulo:
             partes.append(f'<span class="parte" title="{html.escape(titulo)}">{html.escape(titulo)}</span>')
         partes += [
-            f'<a href="#{s["ancla"]}"><span class="numero">{s["numero"]}</span>'
+            f'<a href="#{s["ancla"]}"{" class=pendiente" if s.get("pendiente") else ""}>'
+            f'<span class="numero">{s["numero"]}</span>'
             f'{html.escape(s["titulo"])}</a>'
             for s in secciones
         ]

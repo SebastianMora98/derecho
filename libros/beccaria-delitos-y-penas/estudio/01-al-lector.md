@@ -2,7 +2,7 @@
 
 ## 1. Idea principal
 
-Se puede criticar el sistema penal vigente examinándolo solo como un acuerdo entre seres humanos, sin tocar ni negar la religión ni la ley natural, y quien confunde esos tres planos queda incapacitado para razonar sobre asuntos públicos.
+Se puede criticar el sistema penal examinándolo solo como acuerdo humano, sin negar la religión ni la ley natural; quien confunde esos tres planos no puede razonar sobre asuntos públicos.
 
 Este capítulo viene a contestar una pregunta previa a todo el libro: ¿con qué derecho un particular se pone a juzgar las leyes penales de su tiempo? A un principiante le conviene entenderla porque acá Beccaria define el terreno en el que va a discutir durante 47 capítulos, y casi todos los malentendidos sobre su obra vienen de ignorar esta delimitación. Además, sostiene que criticar racionalmente el poder de castigar no debilita a la autoridad legítima: la refuerza.
 

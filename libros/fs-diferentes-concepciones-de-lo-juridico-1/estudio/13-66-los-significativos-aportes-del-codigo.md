@@ -2,7 +2,7 @@
 
 ## 1. Idea principal
 
-El aporte más duradero del Código Civil peruano de 1984 no es ninguna de sus figuras nuevas sino su inspiración personalista: pone a la persona en el centro, donde los códigos del siglo XIX ponían al individuo aislado y a su patrimonio.
+El aporte más duradero del Código Civil peruano de 1984 no son sus figuras nuevas sino su personalismo: pone a la persona donde los códigos del siglo XIX ponían el patrimonio.
 
 Estos dos capítulos contestan qué cambió ese código y por qué al autor le importa tanto. A un principiante le conviene entenderlos porque acá se conecta la teoría de los capítulos anteriores con una ley concreta: es el momento en que el tridimensionalismo deja de ser filosofía y se vuelve articulado. Además, el autor sostiene que la concepción personalista fue la condición para poder formular esa teoría, no su consecuencia.
 

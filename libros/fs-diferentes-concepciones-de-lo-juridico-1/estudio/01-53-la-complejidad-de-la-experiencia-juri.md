@@ -2,7 +2,7 @@
 
 ## 1. Idea principal
 
-El derecho no es solo el conjunto de las leyes escritas: es la interacción permanente de tres elementos inseparables —la conducta de las personas, la norma y los valores—, y ninguno de los tres, por sí solo, alcanza para entender qué es el derecho.
+El derecho no es solo las leyes escritas: es la interacción de tres elementos inseparables —conducta, norma y valor—, y ninguno por sí solo alcanza para entenderlo.
 
 Este capítulo viene a contestar una pregunta que parece obvia y no lo es: ¿qué es exactamente lo que estudia un jurista? A un principiante le conviene entenderla antes de seguir porque de acá sale la vara con la que el autor va a criticar, en los capítulos siguientes, a las escuelas que se quedaron con una sola de las tres partes. Además, el autor sostiene que estudiar cada elemento por separado es legítimo y hasta necesario, pero que hacerlo no autoriza a creer que el derecho *sea* solamente ese elemento.
 

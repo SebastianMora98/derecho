@@ -212,6 +212,28 @@ details.capitulo > summary::after {
 }
 details.capitulo[open] > summary::after { transform: rotate(45deg); margin-top: 0.35rem; }
 
+/* Capítulo del libro que todavía no tiene documento de estudio. Se muestra
+   igual para que la hoja sea el libro entero, atenuado y sin chevron. */
+.capitulo.pendiente {
+  display: flex;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  background: none;
+  border: 1px dashed var(--borde);
+  border-radius: 8px;
+  color: var(--tenue);
+  min-width: 0;
+}
+.capitulo.pendiente .cuerpo { display: grid; gap: 0.2rem; min-width: 0; }
+.capitulo.pendiente strong { font-weight: 500; }
+.capitulo.pendiente .tesis { font-size: 0.85rem; font-style: italic; }
+.capitulo.pendiente .numero {
+  flex: none;
+  font-family: ui-monospace, monospace;
+  font-size: 0.9rem;
+  padding-top: 0.15rem;
+}
+
 details.capitulo > .documento {
   padding: 0 1.1rem 1.6rem;
   border-top: 1px solid var(--borde);
@@ -379,6 +401,46 @@ details.respuestas summary {
   color: var(--acento);
 }
 details.respuestas[open] summary { margin-bottom: 0.75rem; }
+
+/* ---------- autoevaluación ---------- */
+
+/* Cada pregunta revela SU respuesta, en vez de un desplegable con las diez
+   juntas: para verificar una había que leerlas todas, que es justo lo que
+   arruina la autoevaluación. */
+.autoevaluacion { display: grid; gap: 0.45rem; margin: 1rem 0 1.5rem; }
+
+details.pregunta {
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  background: var(--fondo-alt);
+  min-width: 0;
+}
+details.pregunta[open] { border-color: color-mix(in srgb, var(--acento) 40%, var(--borde)); }
+details.pregunta > summary {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.7rem 0.95rem;
+  cursor: pointer;
+  list-style: none;
+}
+details.pregunta > summary::-webkit-details-marker { display: none; }
+details.pregunta > summary:hover { color: var(--acento); }
+details.pregunta > summary:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+details.pregunta > summary .numero {
+  flex: none;
+  font-family: ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: var(--tenue);
+  padding-top: 0.15rem;
+}
+details.pregunta > summary .texto { min-width: 0; }
+details.pregunta > .respuesta {
+  padding: 0 0.95rem 0.9rem 2.5rem;
+  color: var(--tenue);
+  font-size: 0.95rem;
+}
+details.pregunta > .respuesta > :first-child { margin-top: 0; }
+details.pregunta > .respuesta > :last-child { margin-bottom: 0; }
 
 /* ---------- flashcards ---------- */
 
