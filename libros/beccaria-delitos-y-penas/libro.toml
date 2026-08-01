@@ -16,8 +16,28 @@ nivel = "intermedio"
 # examen / investigacion / cultura-general / aplicacion-practica
 proposito = "examen"
 tiempo = "90 minutos"
-# paginas / parrafos / subtitulos
-formato_citas = "subtitulos"
+# paginas / capitulos / subtitulos / parrafos — ver la nota en
+# prompts/estudio.md para cuál corresponde según cómo esté marcado el texto.
+# Beccaria numera sus 47 capítulos, así que se cita por capítulo: la edición
+# no preservó la paginación del original.
+formato_citas = "capitulos"
+
+# Encabezados que la conversión dejó como `##` pero no son capítulos de
+# Beccaria: portadilla, ISBN, el índice y el catálogo de la editorial.
+# «8. Nota sobre la presente edición» es la nota del editor de 2015 —el «8.»
+# es un número de página que arrastró el índice—: explica de qué edición se
+# partió, pero no es texto de Beccaria y no tiene argumento que estudiar.
+# No se puede filtrar por heurística: mide 2.358 caracteres y su título calza
+# con el patrón de un capítulo numerado.
+omitir = [
+  "^Universidad carlos iii",
+  "^2015\\. Historia del derecho",
+  "^Índice$",
+  "^8\\. Nota sobre la presente edición$",
+  "^Fin\\.$",
+  "^Programa historia del derecho$",
+  "^Publicaciones$",
+]
 
 # Variantes de la plantilla a activar. Ver prompts/variantes.md
 # Opciones: examen, investigacion, tecnico, narrativo, aplicacion-practica

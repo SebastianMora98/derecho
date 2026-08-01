@@ -15,9 +15,13 @@ from __future__ import annotations
 import html
 import re
 import shutil
+import sys
 from pathlib import Path
 
 from markdown_it import MarkdownIt
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from comun import idea_principal, slugify  # noqa: E402
 
 MERMAID_CDN = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs"
 MARCA_RESPUESTAS = "--- No mires esto hasta responder ---"
@@ -39,16 +43,25 @@ def recolectar(libros_dir: Path, leer_config) -> list[dict]:
         cfg = leer_config(carpeta)
         secciones = []
         for ruta in estudios:
+            numero = ruta.name.split("-")[0]
+            if not numero.isdigit():
+                print(f"aviso: {ruta.name} no empieza con el número de sección; lo salteo")
+                continue
             texto = ruta.read_text(encoding="utf-8")
+            tesis = tesis_de(texto)
+            if not tesis:
+                print(f"aviso: {ruta.name} no tiene bloque de idea principal; va sin resumen en el índice")
             secciones.append(
                 {
-                    "numero": ruta.name.split("-")[0],
-                    "archivo": f"{ruta.name.split('-')[0]}.html",
+                    "numero": numero,
+                    "archivo": f"{numero}.html",
                     "titulo": titulo_de(texto, ruta.stem),
-                    "tesis": tesis_de(texto),
+                    "tesis": tesis,
                     "texto": texto,
                 }
             )
+        if not secciones:
+            continue
         libros.append({"slug": carpeta.name, "cfg": cfg, "secciones": secciones})
     return libros
 
@@ -59,9 +72,8 @@ def titulo_de(texto: str, respaldo: str) -> str:
 
 
 def tesis_de(texto: str) -> str:
-    """La primera frase de la sección 2 sirve de resumen en los índices."""
-    m = re.search(r"^## *2\..*?\n+(.+?)(?=\n\n|\n##)", texto, re.MULTILINE | re.DOTALL)
-    return " ".join(m.group(1).split()) if m else ""
+    """La idea principal del documento: es el resumen que va en los índices."""
+    return idea_principal(texto)
 
 
 # --------------------------------------------------------------------------- #
@@ -69,12 +81,16 @@ def tesis_de(texto: str) -> str:
 # --------------------------------------------------------------------------- #
 
 
-def render_documento(texto: str) -> str:
+def render_documento(texto: str) -> tuple[str, list[tuple[str, str]]]:
+    """Devuelve el HTML del documento y las anclas para su índice interno."""
     cuerpo, flashcards = separar_flashcards(texto)
     cuerpo = re.sub(r"^# +.+\n", "", cuerpo, count=1)  # el título va en la cabecera
     cuerpo, respuestas = separar_respuestas(cuerpo)
 
-    partes = [transformar(md.render(cuerpo))]
+    # Solo se anclan los encabezados del cuerpo: los del bloque de respuestas
+    # viven dentro de un <details> cerrado y no deben entrar al índice.
+    cuerpo_html, anclas = anclar(transformar(md.render(cuerpo)))
+    partes = [cuerpo_html]
     if respuestas:
         partes.append(
             '<details class="respuestas"><summary>Respuestas de referencia — no mires hasta responder</summary>'
@@ -83,7 +99,43 @@ def render_documento(texto: str) -> str:
         )
     if flashcards:
         partes.append(render_flashcards(flashcards))
-    return "\n".join(partes)
+        anclas.append(("flashcards", "Flashcards"))
+    return "\n".join(partes), anclas
+
+
+def anclar(html_render: str) -> tuple[str, list[tuple[str, str]]]:
+    """Pone un `id` en cada `<h2>` y devuelve las anclas del índice interno.
+
+    markdown-it no trae plugin de anclas y el documento no puede escribir HTML
+    crudo, así que los `id` se agregan acá, sobre el HTML ya renderizado. Solo
+    `h2`: los `h3` de los pasos harían un índice de doce enlaces que en un
+    teléfono ocupa media pantalla.
+    """
+    anclas: list[tuple[str, str]] = []
+    usadas = {"flashcards"}  # ya lo usa render_flashcards
+
+    def reemplazo(m: re.Match) -> str:
+        crudo = html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).strip()
+        # El número queda en el encabezado pero no en la etiqueta del enlace:
+        # «Vocabulario clave» se lee mejor que «4. Vocabulario clave».
+        etiqueta = re.sub(r"^\d+(\.\d+)*\.?\s*", "", crudo) or crudo
+        base = slugify(etiqueta, 40)
+        identificador, n = base, 2
+        while identificador in usadas:
+            identificador, n = f"{base}-{n}", n + 1
+        usadas.add(identificador)
+        anclas.append((identificador, etiqueta))
+        return f'<h2 id="{identificador}">{m.group(1)}</h2>'
+
+    return re.sub(r"<h2>(.*?)</h2>", reemplazo, html_render, flags=re.DOTALL), anclas
+
+
+def render_indice_interno(anclas: list[tuple[str, str]]) -> str:
+    """Los enlaces a los bloques del documento, para saltar sin scrollear."""
+    if len(anclas) < 3:
+        return ""
+    enlaces = "".join(f'<a href="#{i}">{html.escape(t)}</a>' for i, t in anclas)
+    return f'<nav class="indice-doc" aria-label="Bloques de este documento">{enlaces}</nav>'
 
 
 def separar_flashcards(texto: str) -> tuple[str, list[tuple[str, str]]]:
@@ -200,16 +252,48 @@ def render_indice(libros: list[dict]) -> str:
     return pagina("Documentos de estudio", "", cuerpo, 0)
 
 
+def agrupar_en_partes(secciones: list[dict], cfg: dict) -> list[tuple[str | None, list[dict]]]:
+    """Agrupa las secciones por apartado del libro, según `[[partes]]`.
+
+    Un libro de jerarquía plana no declara `partes`: devuelve un solo grupo sin
+    título y el índice sale como lista corrida, igual que antes.
+    """
+    partes = cfg.get("partes") or []
+    if not partes:
+        return [(None, secciones)]
+
+    grupos: list[tuple[str | None, list[dict]]] = []
+    sueltas = list(secciones)
+    for p in partes:
+        desde, hasta = int(p.get("desde", 1)), int(p.get("hasta", 10**6))
+        elegidas = [s for s in secciones if desde <= int(s["numero"]) <= hasta]
+        if not elegidas:
+            continue
+        for s in elegidas:
+            sueltas.remove(s)
+        grupos.append((p.get("titulo", ""), elegidas))
+    if sueltas:
+        print(f"aviso: {len(sueltas)} sección(es) fuera de todo [[partes]]: "
+              f"{', '.join(s['numero'] for s in sueltas)}")
+        grupos.append((None, sueltas))
+    return grupos
+
+
 def render_libro(libro: dict) -> str:
     cfg = libro["cfg"]
-    filas = []
-    for s in libro["secciones"]:
-        filas.append(
+    bloques = []
+    for titulo, secciones in agrupar_en_partes(libro["secciones"], cfg):
+        if titulo:
+            bloques.append(f'<h2 class="parte">{html.escape(titulo)}</h2>')
+        filas = "".join(
             f'<a class="seccion" href="{s["archivo"]}">'
             f'<span class="numero">{s["numero"]}</span>'
             f'<span class="cuerpo"><strong>{html.escape(s["titulo"])}</strong>'
             f'<span class="tesis">{html.escape(s["tesis"])}</span></span></a>'
+            for s in secciones
         )
+        bloques.append(f'<div class="secciones">{filas}</div>')
+
     ficha = " · ".join(
         html.escape(str(x))
         for x in [cfg.get("autor"), cfg.get("anio"), cfg.get("edicion")]
@@ -218,7 +302,9 @@ def render_libro(libro: dict) -> str:
     cuerpo = (
         f'<h1>{html.escape(cfg.get("titulo", libro["slug"]))}</h1>'
         f'<p class="ficha">{ficha}</p>'
-        f'<div class="secciones">{"".join(filas)}</div>'
+        '<p class="intro">La idea principal de cada capítulo, para repasar de una pasada. '
+        'Hacé clic en un capítulo para abrir su documento de estudio.</p>'
+        f'{"".join(bloques)}'
     )
     migas = f'<span>{html.escape(cfg.get("titulo", libro["slug"]))}</span>'
     return pagina(cfg.get("titulo", libro["slug"]), migas, cuerpo, 1)
@@ -235,10 +321,12 @@ def render_seccion(libro: dict, i: int) -> str:
     nav.append(f'<a href="{siguiente["archivo"]}">{html.escape(siguiente["titulo"])} →</a>' if siguiente else "<span></span>")
     nav.append("</nav>")
 
+    documento, anclas = render_documento(s["texto"])
     cuerpo = (
         f'<article class="documento">'
         f'<h1>{html.escape(s["titulo"])}</h1>'
-        f'{render_documento(s["texto"])}'
+        f'{render_indice_interno(anclas)}'
+        f'{documento}'
         f"</article>" + "".join(nav)
     )
     migas = (

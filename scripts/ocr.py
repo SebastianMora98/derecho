@@ -32,6 +32,7 @@ import statistics
 import subprocess
 import sys
 import tempfile
+from collections import Counter
 from pathlib import Path
 
 AQUI = Path(__file__).resolve().parent
@@ -49,6 +50,14 @@ TOLERANCIA_FILA = 0.008
 # El encabezado se separa del cuerpo por un blanco mayor que el interlineado
 # normal; este es el múltiplo a partir del cual se considera separación.
 SALTO_ENCABEZADO = 1.6
+# Cuántas filas puede ocupar el encabezado. Son dos y no una porque en un
+# escaneo torcido el folio y el título corriente caen a alturas distintas.
+MAX_FILAS_ENCABEZADO = 2
+# Un encabezado más largo que esto es texto del cuerpo, no una cabecera.
+MAX_LARGO_ENCABEZADO = 70
+# Cuántas veces tiene que repetirse un texto de cabecera para darlo por título
+# corriente y borrarlo del cuerpo. Una frase del autor no se repite tanto.
+MIN_REPETICIONES_CABECERA = 5
 
 
 # --------------------------------------------------------------------------- #
@@ -159,24 +168,41 @@ def agrupar_filas(renglones: list) -> list[list]:
     return filas
 
 
-def separar_encabezado(renglones: list) -> tuple[str | None, list]:
-    """Quita el título corriente y el folio, y devuelve el número de página.
+def separar_encabezado(renglones: list) -> tuple[str | None, list, str]:
+    """Quita el título corriente y el folio; devuelve (folio, cuerpo, encabezado).
 
     No usa una franja fija: identifica el encabezado por el blanco que lo
     separa del cuerpo, comparado con el interlineado de la propia página. Así
     funciona igual a cualquier dpi y con márgenes distintos.
+
+    El encabezado puede ocupar DOS filas y no una: si el escaneo está torcido,
+    el folio y el título corriente quedan a alturas distintas aunque en el papel
+    estén en el mismo renglón. Sin admitir ese caso, el folio se filtra al
+    cuerpo y el título corriente queda pegado al primer párrafo de la página.
     """
     filas = agrupar_filas(renglones)
     if len(filas) < 3:
-        return None, renglones
+        return None, renglones, ""
 
     alturas = [f[0][2] for f in filas]
     saltos = [alturas[i] - alturas[i + 1] for i in range(len(alturas) - 1)]
     interlineado = sorted(saltos)[len(saltos) // 2]
-    if interlineado <= 0 or saltos[0] <= interlineado * SALTO_ENCABEZADO:
-        return None, renglones  # no hay encabezado separado
+    if interlineado <= 0:
+        return None, renglones, ""
 
-    encabezado, cuerpo = filas[0], [r for f in filas[1:] for r in f]
+    corte = None
+    for k in range(min(MAX_FILAS_ENCABEZADO, len(filas) - 1)):
+        texto_junto = " ".join(r[3] for f in filas[: k + 1] for r in f).strip()
+        if len(texto_junto) > MAX_LARGO_ENCABEZADO:
+            break
+        if saltos[k] > interlineado * SALTO_ENCABEZADO:
+            corte = k + 1
+            break
+    if corte is None:
+        return None, renglones, ""  # no hay encabezado separado
+
+    encabezado = [r for f in filas[:corte] for r in f]
+    cuerpo = [r for f in filas[corte:] for r in f]
     pagina = None
     for _, _, _, texto in encabezado:
         limpio = texto.strip()
@@ -189,7 +215,12 @@ def separar_encabezado(renglones: list) -> tuple[str | None, list]:
         if m:
             pagina = m.group(1)
             break
-    return pagina, cuerpo
+
+    # El texto del encabezado sin el folio: es el título corriente, que sirve
+    # como red de seguridad para las páginas donde la geometría no alcance.
+    titulo = " ".join(r[3] for r in encabezado)
+    titulo = re.sub(r"\b\d{1,4}\b", " ", titulo)
+    return pagina, cuerpo, " ".join(titulo.split())
 
 
 def versalita(texto: str) -> bool:
@@ -305,6 +336,64 @@ def titular(texto: str) -> str:
     return texto[:1].upper() + texto[1:]
 
 
+RE_APARTADO = re.compile(r"^([A-Z])\)\s+(.+)$")
+
+
+def marcar_apartados(texto: str) -> str:
+    """Convierte los apartados del libro en encabezados `#` de nivel 1.
+
+    Un libro puede tener tres pisos: capítulo > apartado > parágrafo. Los
+    apartados vienen como párrafos enteros en mayúsculas que arrancan con
+    «A)», «B)»… y, cuando en la maqueta ocupaban dos o tres renglones, quedan
+    partidos en párrafos separados. Marcarlos permite que `dividir` sepa a qué
+    bloque pertenece cada parágrafo, y que el índice del sitio los agrupe.
+
+    Los parágrafos siguen en `##`, así que `dividir --nivel 2` no cambia.
+    """
+    parrafos = texto.split("\n\n")
+    salida, i = [], 0
+    while i < len(parrafos):
+        actual = " ".join(parrafos[i].split())
+        m = RE_APARTADO.match(actual)
+        if not (m and versalita(actual)):
+            salida.append(parrafos[i])
+            i += 1
+            continue
+        # El título puede seguir en los párrafos siguientes, también en
+        # mayúsculas. Se corta al toparse con otro apartado o con algo largo.
+        piezas, i = [m.group(2)], i + 1
+        while i < len(parrafos):
+            sig = " ".join(parrafos[i].split())
+            if not (versalita(sig) and 3 < len(sig) <= MAX_LARGO_ENCABEZADO and not RE_APARTADO.match(sig)):
+                break
+            piezas.append(sig)
+            i += 1
+        salida.append(f"# {m.group(1)}) {titular(' '.join(piezas))}")
+    return "\n\n".join(salida)
+
+
+def quitar_titulo_corriente(texto: str, encabezados: list[str]) -> str:
+    """Borra el título corriente que se le haya escapado a la geometría.
+
+    Red de seguridad: en las páginas donde `separar_encabezado` no reconoce la
+    cabecera, el título corriente queda pegado al arranque del párrafo. Se
+    borran solo los que aparecen repetidos en varias páginas, que es lo que
+    distingue una cabecera de una frase del autor.
+    """
+    frecuencia = Counter(e for e in encabezados if e)
+    repetidos = [e for e, n in frecuencia.items() if n >= MIN_REPETICIONES_CABECERA]
+    if not repetidos:
+        return texto
+    for cabecera in sorted(repetidos, key=len, reverse=True):
+        escapada = re.escape(cabecera)
+        # Como párrafo suelto, al principio de un párrafo, o detrás de una
+        # marca de folio.
+        texto = re.sub(rf"^{escapada}\s*$", "", texto, flags=re.MULTILINE)
+        texto = re.sub(rf"(?m)^{escapada}\s+(?=\S)", "", texto)
+        texto = re.sub(rf"(<!-- p\. [^>]*-->)\s*{escapada}\s+", r"\1 ", texto)
+    return texto
+
+
 def marcar_paragrafos(texto: str) -> str:
     """Convierte los parágrafos numerados del original en encabezados `##`.
 
@@ -342,13 +431,16 @@ def a_markdown(pdf: Path, mitades: int | None, dpi: int, desde: int, hasta: int 
         print(f"→ {len(imagenes)} páginas rasterizadas a {dpi} dpi", file=sys.stderr)
         paginas = reconocer(imagenes)
 
-    cuerpos, folios = [], []
+    cuerpos, folios, encabezados = [], [], []
     for renglones in paginas:
-        folio, cuerpo = separar_encabezado(renglones)
+        folio, cuerpo, encabezado = separar_encabezado(renglones)
         cuerpos.append(cuerpo)
         folios.append(folio)
+        encabezados.append(encabezado)
 
     texto = ensamblar(cuerpos, folios)
+    texto = quitar_titulo_corriente(texto, encabezados)
+    texto = marcar_apartados(texto)
     texto = marcar_paragrafos(texto)
     texto = re.sub(r"\n{3,}", "\n\n", texto)
     reconocidos = sum(1 for f in folios if f)

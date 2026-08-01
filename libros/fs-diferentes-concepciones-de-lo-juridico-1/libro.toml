@@ -20,3 +20,22 @@ variantes = ["examen"]
 
 # Plantilla base a usar en `preparar` (archivo dentro de prompts/)
 plantilla = "estudio.md"
+
+# Apartados del capítulo: el piso intermedio entre el capítulo y el parágrafo.
+# `desde`/`hasta` son números de sección; el índice del sitio agrupa por acá.
+# Lo imprime `ema.py dividir` listo para pegar. Un libro de jerarquía plana
+# (como Beccaria) simplemente no lleva esta tabla.
+[[partes]]
+titulo = "A) Visiones unidimensionales del derecho"
+desde = 1
+hasta = 6
+
+[[partes]]
+titulo = "B) La concepción tridimensional de lo jurídico"
+desde = 7
+hasta = 10
+
+[[partes]]
+titulo = "C) Personalismo, tridimensionalismo y otros aportes del código civil peruano de 1984 a la codificación civil comparada"
+desde = 11
+hasta = 18

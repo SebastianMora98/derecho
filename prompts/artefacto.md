@@ -21,18 +21,21 @@ título y el autor. No inventes contenido que no esté en esos documentos.
 
 Una página HTML autocontenida (sin recursos externos: CSS y JS en línea) con:
 
-1. **Cabecera** con obra, autor y secciones cubiertas.
-2. **Mapa de la obra**: las tesis centrales de cada sección en una línea,
-   navegables.
-3. **Tarjetas de conceptos**: una por concepto clave, que muestran el término
-   y revelan la definición reformulada al hacer clic. Marcá la "confusión
-   frecuente" con un color distinto.
-4. **Modo test**: las preguntas de la sección 9 de cada documento, una a la
-   vez, con botón para revelar la respuesta de referencia y un contador de
+Los números de bloque son los de `prompts/estudio.md`: 1 Idea principal ·
+2 Explicación paso a paso · 3 Mapa · 4 Vocabulario clave · 5 Distinciones que se
+confunden · 6 Qué releer del original · 7 Autoevaluación · Flashcards.
+
+1. **Cabecera** con obra, autor y capítulos cubiertos.
+2. **Mapa de la obra**: la idea principal de cada capítulo (bloque 1) en una
+   línea, navegables, agrupadas por apartado si `libro.toml` declara `[[partes]]`.
+3. **Tarjetas de vocabulario**: una por término del bloque 4, que muestran el
+   término y revelan la definición al hacer clic.
+4. **Modo test**: las preguntas del bloque 7 de cada documento, una a la vez,
+   con botón para revelar la respuesta de referencia y un contador de
    autoevaluación (acerté / fallé) que persiste en `localStorage`.
-5. **Preguntas socráticas** en una lista aparte, para leer antes de volver al
-   libro.
-6. **Qué releer**: los pasajes señalados, agrupados por sección.
+5. **Distinciones**: las del bloque 5, cada una con su criterio para decidir, en
+   un panel aparte y con el "dónde se cae" marcado en otro color.
+6. **Qué releer**: los pasajes del bloque 6, agrupados por capítulo.
 
 # REGLAS
 
