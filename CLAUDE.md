@@ -283,15 +283,30 @@ Beccaria (ed. UC3M 2015, CC BY-NC-ND). Jerarquía plana: 47 capítulos numerados
 por el autor, sin apartados ni capítulo contenedor, así que el sitio muestra la
 lista corrida. Dividido con `--nivel 2` → **39 secciones** («Al lector»,
 «Introducción» y los 47 capítulos, con 9 secciones que juntan capítulos cortos).
-Procesadas la 1 y la 2, regeneradas con la plantilla de prosa corrida. `formato_citas = "capitulos"`: el autor numera sus
-capítulos y esta edición no preservó la paginación.
+`formato_citas = "capitulos"`: el autor numera sus capítulos y esta edición no
+preservó la paginación.
+
+**Está completo: las 39 secciones tienen documento de estudio.** El libro entero
+queda en 154 términos de glosario, 155 preguntas y 312 flashcards, y la hoja pesa
+451 KB crudos / 119 KB gzip —el doble que el otro libro, porque tiene el doble de
+capítulos—. Los 39 diagramas Mermaid compilan, verificado en el navegador
+abriendo la hoja entera. Todos los documentos entran en los tres topes (1.400
+palabras totales, 700 la parte visible, 450 el bloque 2), igual que los 19 de FS.
+
+**Sin la variante `examen`**, por el mismo motivo que en el otro libro: pedía 12
+flashcards y 5 preguntas, y los documentos ya escritos iban con 8 y 4. La
+cantidad quedó pareja para los 39.
 
 La conversión está verificada byte a byte contra el PDF: 47/47 capítulos, y el
 delta de palabras por capítulo es exactamente la cantidad de números de página
 que cruza. Cero prosa perdida. Lo que sí quedaba mal era el formato, ya
 arreglado: 70 párrafos partidos en los saltos de página y 18 palabras con el
 guion colgado. Queda pendiente, a propósito, la reubicación de las 3 notas al pie
-que cortan una frase al medio (líneas con marcador numérico o `*`).
+que cortan una frase al medio (líneas con marcador numérico o `*`). Las tres
+están anotadas en el documento del capítulo donde caen, como pide el prompt: la
+del cap. 3, la del cap. 13 —que parte la frase sobre la atrocidad del delito— y
+la del cap. 34, que aparece a mitad del cap. 35 y contiene la retractación de
+Beccaria («me avergüenzo de haber escrito así»).
 
 **fs-diferentes-concepciones-de-lo-juridico-1** — *Derecho y persona*, Carlos
 Fernández Sessarego (5ª ed., Astrea, 2015). Es el capítulo "Diferentes

@@ -41,7 +41,11 @@ omitir = [
 
 # Variantes de la plantilla a activar. Ver prompts/variantes.md
 # Opciones: examen, investigacion, tecnico, narrativo, aplicacion-practica
-variantes = ["examen"]
+#
+# Sin variantes, por el mismo motivo que en el otro libro: `examen` pide 12
+# flashcards y 5 preguntas, el mazo y el test se consolidan por libro, y los
+# documentos ya escritos van con 8 y 4. Un mazo mezclado se nota.
+variantes = []
 
 # Plantilla base a usar en `preparar` (archivo dentro de prompts/)
 plantilla = "estudio.md"
