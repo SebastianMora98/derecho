@@ -82,14 +82,23 @@ def compilar_ocr() -> Path:
     return BINARIO
 
 
-def medir_pagina(pdf: Path) -> tuple[float, float, int]:
-    """Devuelve (ancho, alto, cantidad de páginas) en puntos."""
+def medir_pagina(pdf: Path, numero: int | None = None) -> tuple[float, float, int]:
+    """Devuelve (ancho, alto, cantidad de páginas) en puntos.
+
+    Sin `numero`, `pdfinfo` informa el tamaño de la página 1 nada más. Eso
+    alcanza para casi todos los PDF, pero no para un escaneo cuya portada
+    quedó apaisada (todo el pliego) mientras el cuerpo es retrato normal: ahí
+    hay que poder pedir el tamaño de una página interior específica.
+    """
     exigir("pdfinfo", "Instalá poppler: brew install poppler")
-    salida = subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True, check=True).stdout
+    orden = ["pdfinfo", str(pdf)]
+    if numero is not None:
+        orden += ["-f", str(numero), "-l", str(numero)]
+    salida = subprocess.run(orden, capture_output=True, text=True, check=True).stdout
     ancho = alto = 0.0
     paginas = 0
     for linea in salida.splitlines():
-        if linea.startswith("Page size:"):
+        if linea.startswith("Page size:") or re.match(r"Page\s+\d+ size:", linea):
             m = re.search(r"([\d.]+) x ([\d.]+)", linea)
             if m:
                 ancho, alto = float(m.group(1)), float(m.group(2))
@@ -103,6 +112,18 @@ def medir_pagina(pdf: Path) -> tuple[float, float, int]:
 def rasterizar(pdf: Path, carpeta: Path, mitades: int, dpi: int, desde: int, hasta: int) -> list[Path]:
     """Rasteriza el PDF a PNG. Con mitades=2 corta cada hoja en dos páginas."""
     exigir("pdftoppm", "Instalá poppler: brew install poppler")
+
+    if mitades == 1:
+        # Sin recorte: cada página se rasteriza a su propio tamaño nativo. Si
+        # se forzara igual un -W/-H fijo (medido de una sola página), un PDF
+        # con tamaños mezclados —una portada apaisada y el cuerpo en retrato,
+        # el caso real que hizo falta esto— recortaría o dejaría margen de
+        # más en las páginas que no midan lo mismo que la que se usó de
+        # referencia.
+        orden = ["pdftoppm", "-png", "-r", str(dpi), "-f", str(desde), "-l", str(hasta), str(pdf), str(carpeta / "m0")]
+        subprocess.run(orden, check=True, capture_output=True)
+        return sorted(carpeta.glob("m0*.png"))
+
     ancho_pt, alto_pt, _ = medir_pagina(pdf)
     ancho_px = round(ancho_pt * dpi / 72)
     alto_px = round(alto_pt * dpi / 72)
@@ -541,9 +562,26 @@ def a_markdown(pdf: Path, mitades: int | None, dpi: int, desde: int, hasta: int 
     ancho, alto, total = medir_pagina(pdf)
     hasta = hasta or total
     if mitades is None:
-        mitades = 2 if ancho / max(alto, 1) > PROPORCION_PLIEGO else 1
-        if mitades == 2:
-            print(f"→ hoja apaisada ({ancho:.0f}x{alto:.0f}): la parto en dos páginas", file=sys.stderr)
+        apaisada_p1 = ancho / max(alto, 1) > PROPORCION_PLIEGO
+        mitades = 1
+        if apaisada_p1:
+            # La página 1 sola puede engañar: una portada escaneada como el
+            # pliego entero mientras el cuerpo es retrato normal también da
+            # esta proporción, y ahí partir todo el libro al medio mezclaría
+            # el texto de páginas vecinas. Se confirma con una interior antes
+            # de aplicar el corte a las 173 páginas.
+            interior = min(max(total // 2, 1), total)
+            ancho_i, alto_i, _ = medir_pagina(pdf, numero=interior)
+            if ancho_i / max(alto_i, 1) > PROPORCION_PLIEGO:
+                mitades = 2
+                print(f"→ hoja apaisada ({ancho:.0f}x{alto:.0f}): la parto en dos páginas", file=sys.stderr)
+            else:
+                print(
+                    f"→ la página 1 es apaisada ({ancho:.0f}x{alto:.0f}) pero la página "
+                    f"{interior} no ({ancho_i:.0f}x{alto_i:.0f}): no es doble página por "
+                    "hoja, no parto nada",
+                    file=sys.stderr,
+                )
 
     with tempfile.TemporaryDirectory() as tmp:
         imagenes = rasterizar(pdf, Path(tmp), mitades, dpi, desde, hasta)

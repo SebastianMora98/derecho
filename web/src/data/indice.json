@@ -7,10 +7,24 @@
     "capitulos_con_documento": 39
   },
   {
+    "slug": "el-ojo-del-poder",
+    "titulo": "El ojo del poder",
+    "autor": "Michel Foucault",
+    "capitulos_totales": 1,
+    "capitulos_con_documento": 1
+  },
+  {
     "slug": "fs-diferentes-concepciones-de-lo-juridico-1",
     "titulo": "Derecho y persona",
     "autor": "Carlos Fernández Sessarego",
     "capitulos_totales": 19,
     "capitulos_con_documento": 19
+  },
+  {
+    "slug": "la-inteligencia-fracasada",
+    "titulo": "La inteligencia fracasada",
+    "autor": "José Antonio Marina",
+    "capitulos_totales": 9,
+    "capitulos_con_documento": 9
   }
 ]

@@ -1,0 +1,8 @@
+# Generado por `ema.py dividir`. No editar a mano: se reescribe.
+# El sitio lo usa para mostrar todos los capítulos del libro, tengan o
+# no documento de estudio todavía.
+
+[[capitulos]]
+numero = "01"
+titulo = "Documento completo"
+caracteres = 45362

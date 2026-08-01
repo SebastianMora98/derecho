@@ -1,0 +1,50 @@
+# Ficha del libro. Editá estos valores: alimentan la sección
+# CONFIGURACIÓN de los prompts generados por `ema.py preparar`.
+
+titulo = "La inteligencia fracasada"
+autor = "José Antonio Marina"
+# Escaneado, sin capa de texto: procesado con ocr.py, no con `convertir`. Los
+# encabezados de capítulo (romanos: "I. LA INTELIGENCIA MALOGRADA"...) no los
+# detectó el heurístico de ocr.py — no sigue el patrón `§ NN. TÍTULO` de otros
+# libros escaneados de este taller—, así que se insertaron los `##` a mano
+# buscando cada título contra el índice del propio libro (al final del
+# escaneo) y el folio más cercano. Los folios en general NO se preservaron
+# bien (Vision solo reconoció 6 de 173 como marca aparte; el resto quedó
+# como número suelto dentro del cuerpo): de ahí `formato_citas = "capitulos"`
+# en vez de "paginas", pese a ser un escaneo.
+# Derechos vigentes (Anagrama, 2004): libro.md y secciones/ quedan fuera de
+# git, y el documento de estudio cita corto, no reconstruye el texto.
+edicion = "Editorial Anagrama, Barcelona, 6ª ed., 2005"
+fuente = "LA_INTELIGENCIA_FRACASADA_JOSE A MARINA.pdf"
+
+# principiante / intermedio / avanzado
+nivel = "principiante"
+# examen / investigacion / cultura-general / aplicacion-practica
+proposito = "examen"
+tiempo = "90 minutos"
+# paginas / capitulos / subtitulos / parrafos — ver la nota en
+# prompts/estudio.md para cuál corresponde según cómo esté marcado el texto
+# El autor numera sus capítulos con romanos (I a VII, más Introducción y
+# Epílogo); se cita por ese número, no por página.
+formato_citas = "capitulos"
+
+# Encabezados que la conversión dejó como `##` pero no son capítulos del autor
+# (portadilla, índice, catálogo de la editorial). `dividir` los descarta.
+# Son expresiones regulares, sin distinguir mayúsculas.
+#
+# La bibliografía por capítulos y el índice del propio libro, que en esta
+# edición van pegados al final del Epílogo sin encabezado propio, se
+# recortaron a mano del libro.md antes de dividir: no eran secciones propias,
+# eran cola del último capítulo.
+omitir = []
+
+# Variantes de la plantilla a activar. Ver prompts/variantes.md
+# Opciones: examen, investigacion, tecnico, narrativo
+#
+# Sin variantes a propósito, mismo motivo que en los otros tres libros:
+# `examen` fija cantidades que no calzan con la regla vigente de "1 a 4
+# flashcards según lo que dé el capítulo".
+variantes = []
+
+# Plantilla base a usar en `preparar` (archivo dentro de prompts/)
+plantilla = "estudio.md"

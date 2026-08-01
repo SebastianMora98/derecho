@@ -1,0 +1,38 @@
+# Ficha del libro. Editá estos valores: alimentan la sección
+# CONFIGURACIÓN de los prompts generados por `ema.py preparar`.
+
+titulo = "El ojo del poder"
+autor = "Michel Foucault"
+# Entrevista con Jean-Pierre Barou y Michelle Perrot, publicada como prólogo a
+# Jeremías Bentham: "El Panóptico", Ed. La Piqueta, Barcelona, 1980. Traducción
+# de Julia Varela y Fernando Alvarez-Uría. Derechos vigentes de la traducción
+# (La Piqueta): igual que Derecho y persona, libro.md y secciones/ quedan
+# fuera de git y el documento de estudio cita corto, no reconstruye el texto.
+edicion = "Ed. La Piqueta, Barcelona, 1980"
+fuente = "El ojo del poder.pdf"
+
+# principiante / intermedio / avanzado
+nivel = "principiante"
+# examen / investigacion / cultura-general / aplicacion-practica
+proposito = "examen"
+tiempo = "90 minutos"
+# paginas / capitulos / subtitulos / parrafos — ver la nota en
+# prompts/estudio.md para cuál corresponde según cómo esté marcado el texto
+# Entrevista corrida, sin capítulos del autor ni paginación preservada.
+formato_citas = "parrafos"
+
+# Encabezados que la conversión dejó como `##` pero no son capítulos del autor
+# (portadilla, índice, catálogo de la editorial). `dividir` los descarta.
+# Son expresiones regulares, sin distinguir mayúsculas.
+omitir = []
+
+# Variantes de la plantilla a activar. Ver prompts/variantes.md
+# Opciones: examen, investigacion, tecnico, narrativo
+#
+# Sin variantes a propósito, mismo motivo que en Beccaria y FS: `examen` fija
+# cantidades (5 preguntas / 12 flashcards) que no calzan con la regla vigente
+# de "1 a 4 flashcards según lo que dé el capítulo".
+variantes = []
+
+# Plantilla base a usar en `preparar` (archivo dentro de prompts/)
+plantilla = "estudio.md"

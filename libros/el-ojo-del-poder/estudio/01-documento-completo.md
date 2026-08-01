@@ -1,0 +1,62 @@
+# El ojo del poder
+
+## 1. Idea principal
+
+El panóptico de Bentham reemplaza la violencia y el gasto del poder monárquico por una arquitectura que hace que cada vigilado termine vigilándose a sí mismo, sin necesidad de fuerza.
+
+Contesta cómo cambió la forma de ejercer el poder de castigar entre el Antiguo Régimen y las sociedades modernas, un giro que atraviesa el derecho penal y la teoría de las instituciones. Entender ese giro ayuda a ver por qué las normas actuales regulan tanto la vigilancia como el castigo mismo.
+
+## 2. Lo esencial del capítulo
+
+Foucault llega al panóptico investigando la arquitectura hospitalaria del siglo XVIII: buscaba entender cómo un edificio podía sostener una "mirada centralizada" que viera todo a la vez, un problema que ya aparecía antes que Bentham en la Escuela militar de París (celdas individuales con cristalera) y en las salinas de Ledoux (párrafo 8). El principio que describe es simple: una torre central rodeada de celdas periféricas iluminadas a contraluz, de modo que un solo vigilante vea sin ser visto (párrafo 7). Bentham no inventa la idea de la visibilidad total, pero sí la bautiza y la convierte en un programa general aplicable a cárceles, escuelas y hospitales por igual, lo que Foucault llama su "huevo de Colón" (párrafo 8).
+
+Lo que vuelve importante al panóptico no es el edificio sino el tipo de poder que hace posible: uno que actúa por la mirada y no por el castigo físico, y que por eso es barato. Foucault contrasta esto con el poder monárquico, que necesitaba el castigo espectacular y ejemplar precisamente porque llegaba a poca gente, y que por su propio gasto en violencia terminaba provocando rebeliones (párrafo 38). El panóptico funciona al revés: si cada uno siente la mirada sobre sí y termina vigilándose solo, no hace falta gastar en armas ni en violencia (párrafo 38). Foucault lo describe como el complemento oscuro del sueño de Rousseau de una sociedad transparente: Rousseau quería que cada uno viera a la sociedad entera, Bentham organiza esa transparencia alrededor de una mirada que domina y vigila (párrafo 25).
+
+Sobre el final, Foucault aclara los límites de su propio análisis. El panóptico es una utopía-programa, no una descripción exacta de lo que pasó: incluso en la época de Bentham el poder ya estaba desbordado por mecanismos más sutiles, y las técnicas de vigilancia tardaron en imponerse, encontrando resistencias reales de obreros y presos (párrafo 74). Foucault también evita atribuir el proyecto a la voluntad de un individuo: estas tácticas se inventaron para resolver urgencias concretas —el ejército, los hospitales, las fábricas— antes de que una estrategia de clase las organizara en conjunto (párrafo 52), y se encuentran, dice, tanto en el capitalismo como en el socialismo soviético (párrafo 57).
+
+## 3. Mapa
+
+```mermaid
+flowchart TD
+    O["Problema de origen: cómo lograr una mirada centralizada y total"]:::critico
+    A["Arquitectura del panóptico: torre central, celdas periféricas a contraluz"]
+    P["Poder monárquico: violento, ejemplar, caro"]
+    B["Poder panóptico: mirada interiorizada, barato"]
+    R["Complementa el sueño de transparencia de Rousseau"]
+    L["Límite: utopía-programa, no descripción exacta"]
+    O --> A
+    A -->|"se opone a"| P
+    A --> B
+    B --> R
+    B --> L
+    classDef critico stroke-width:3px
+```
+
+## 4. Vocabulario clave
+
+- **Panóptico** — arquitectura ideada por Bentham: una torre central rodeada de celdas iluminadas, para que un vigilante vea a todos sin ser visto por ninguno.
+- **Poder disciplinario** — el que actúa por la vigilancia continua y la interiorización de la mirada, no por la fuerza física.
+- **Poder monárquico** — el del Antiguo Régimen: se ejerce por castigo ejemplar y espectacular sobre pocos casos, porque no puede vigilar a todos.
+
+## 5. Distinciones que se confunden
+
+- **Poder monárquico vs. poder disciplinario** — el primero castiga con violencia visible y ejemplar; el segundo vigila de forma continua para que cada uno se controle solo.
+  - Se confunden porque: los dos buscan que la gente no cometa delitos, y en la entrevista ambos aparecen como respuestas al mismo problema.
+  - Criterio para decidir: ¿el efecto buscado depende de que se vea un castigo ejercido sobre otro, o de que cada uno sienta una mirada sobre sí mismo? Lo primero es poder monárquico; lo segundo, disciplinario.
+  - Dónde se cae: se describe el panóptico como "más castigo", cuando su punto es reemplazar el castigo por la vigilancia misma.
+
+## 6. Autoevaluación
+
+1. ¿Qué se entiende por poder disciplinario según esta entrevista, y en qué se diferencia del poder monárquico que reemplaza?
+2. Un municipio instala cámaras visibles en una plaza pública, sin vigilante permanente detrás de las pantallas. Usando el argumento de Foucault sobre el panóptico, explique por qué esto podría funcionar igual como forma de poder aunque nadie esté mirando todo el tiempo.
+
+--- No mires esto hasta responder ---
+
+1. El poder disciplinario es el que se ejerce mediante una vigilancia continua que cada individuo termina interiorizando, al punto de vigilarse a sí mismo sin que haga falta un vigilante presente todo el tiempo (párrafo 38). Se diferencia del poder monárquico en que este último actúa por castigos ejemplares y violentos sobre casos puntuales, precisamente porque no puede alcanzar ni vigilar a toda la población (párrafo 38). El poder disciplinario, en cambio, es barato: no necesita armas ni coacción física, porque la sola posibilidad de ser visto alcanza para regular la conducta.
+2. Funcionaría igual porque, según Foucault, lo decisivo del panóptico no es que alguien vigile de hecho sino que el vigilado no pueda saber si en ese momento lo miran o no, así que termina comportándose como si siempre lo estuvieran mirando (párrafo 38). Las cámaras visibles bastan para instalar esa incertidumbre y producir el mismo efecto de autovigilancia, aunque detrás no haya nadie mirando en tiempo real.
+
+## Flashcards
+
+Qué es el panóptico de Bentham | Una torre central rodeada de celdas periféricas iluminadas, para que un vigilante vea a todos sin ser visto
+En qué se diferencia el poder disciplinario del poder monárquico | El disciplinario vigila para que cada uno se controle solo; el monárquico castiga con violencia ejemplar sobre pocos casos
+Por qué el poder panóptico es más barato que el monárquico | Porque no necesita armas ni violencia física: basta con que el vigilado sienta la mirada y se autorregule

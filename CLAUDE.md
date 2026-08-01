@@ -115,6 +115,17 @@ Detalles que ya costaron una vuelta, por si hay que tocarlo:
 - Las fotocopias de libro vienen a doble página por hoja (hoja apaisada). Se
   detecta por la proporción y se parte al medio antes del OCR; sin eso el OCR
   entremezcla el texto de dos páginas distintas.
+- Esa detección mide la página **1**, y `pdfinfo` sin `-f`/`-l` solo informa el
+  tamaño de esa página. Si el libro tiene una portada escaneada como el pliego
+  entero (apaisada) pero el cuerpo es retrato normal —pasó con *La inteligencia
+  fracasada*, 852x611 vs. 460x599 en las páginas interiores—, la sola página 1
+  hace pensar que el libro entero es doble-página-por-hoja y partiría cada
+  página del cuerpo al medio, mezclando su texto igual que el problema que la
+  regla anterior evita. Por eso `a_markdown` confirma con una página interior
+  (la del medio del libro) antes de aplicar el corte a todo, y `rasterizar` con
+  `mitades=1` ya no fuerza un recorte `-W/-H` medido de una sola página: cada
+  página se rasteriza a su tamaño nativo, para no toparse con la misma mezcla
+  de tamaños de otra forma.
 - El margen de sangría se mide con la **mediana**, no con el mínimo: un solo
   renglón torcido corre el margen y parte párrafos por la mitad.
 - Vision parte a veces un renglón físico en dos cajas, así que hay que
@@ -497,6 +508,84 @@ Ojo con este libro: es material **con derechos vigentes** (Astrea 2015), a
 diferencia de Beccaria, que es CC. El `libro.md` y las `secciones/` quedan
 fuera de git, como corresponde, y los documentos de estudio no deben
 reconstruir el texto: citas cortas y con referencia, nada más.
+
+**el-ojo-del-poder** — *El ojo del poder*, entrevista a Michel Foucault sobre
+el Panóptico de Bentham (Jean-Pierre Barou y Michelle Perrot, en Bentham,
+Jeremías: *El Panóptico*, Ed. La Piqueta, Barcelona, 1980). No es un texto de
+Derecho, pero se usa en la misma materia que Beccaria y FS. Es una entrevista
+corrida sin capítulos del autor: **1 sola sección**, dividida con
+`--max-chars 60000` para que no se partiera a la mitad de un intercambio.
+`formato_citas = "parrafos"`.
+
+`markitdown` **arma mal el orden de las palabras** en este PDF concreto —un
+defecto distinto y peor que el de página/pie interrumpiendo una palabra: acá
+párrafos enteros salen con las palabras reordenadas, aunque el resultado se lea
+como prosa plausible—. `pdftotext -layout` extrae el mismo texto en el orden
+correcto, así que `libro.md` se reconstruyó desde ahí en vez de desde
+`markitdown`. Además había una cabecera corrida
+(`www.philosophia.cl / Escuela de Filosofía Universidad ARCIS.`) que
+`limpieza.py: detectar_cabeceras()` no detecta porque su heurística descarta
+líneas que terminan en `.,;:` —para no confundirlas con prosa normal—, y esta
+cabecera termina en punto. Se sacó a mano con una regex específica de esta
+conversión (no es un caso general, no se tocó `limpieza.py` por esto).
+
+**Está completo: la única sección tiene su documento de estudio.** 3 términos
+de glosario, 2 preguntas, 3 flashcards, y la hoja pesa 12 KB crudos / 3,7 KB
+gzip. El diagrama Mermaid compila, verificado en el navegador.
+
+**la-inteligencia-fracasada** — *La inteligencia fracasada*, José Antonio
+Marina (Anagrama, 6ª ed., 2005). **Escaneado**, procesado con `ocr.py`, no con
+`convertir` (sin capa de texto). Jerarquía plana: Introducción + capítulos I a
+VII + Epílogo, **9 secciones**, una por capítulo real.
+
+Dos problemas de conversión que no había hecho falta resolver antes:
+
+- **La detección de doble-página-por-hoja se dejaba engañar por la portada.**
+  Esta detección mide el tamaño de la página 1 (`pdfinfo` sin `-f`/`-l` informa
+  solo esa), y la portada de este escaneo quedó apaisada (852x611, el pliego
+  entero) mientras el cuerpo es retrato normal (460x599). Con la regla vieja,
+  `ocr.py` habría partido las 173 páginas del cuerpo al medio, mezclando texto
+  de renglones vecinos igual que el problema que esa regla existe para evitar
+  — la vio corriendo esta misma conversión y se frenó a tiempo. Corregido en
+  `ocr.py`: `a_markdown` ahora confirma con una página interior (la del medio
+  del libro) antes de aplicar el corte a todo, y `rasterizar` con `mitades=1`
+  ya no fuerza un recorte `-W/-H` medido de una sola página. Ver el detalle en
+  "PDF escaneados" arriba.
+- **Los encabezados de capítulo no los detectó el heurístico de `ocr.py`**,
+  que da por sentado el patrón `§ NN. TÍTULO` de FS. Los títulos de este libro
+  son romanos ("I. LA INTELIGENCIA MALOGRADA") y Vision los reconoció bien,
+  pero no como encabezado propio: quedaron como texto corrido pegado al
+  párrafo anterior. Se insertaron los 9 `##` a mano, ubicados cruzando el
+  índice del propio libro (al final del escaneo) contra el folio más cercano
+  a cada uno — los 9 se confirmaron con el texto real de la página, no a
+  ciegas. También se recortó a mano la bibliografía por capítulos y el índice
+  del libro, pegados sin encabezado propio al final del Epílogo.
+- **Los folios en general no se preservaron**: Vision solo reconoció 6 de 173
+  como marca aparte del cuerpo; el resto de los números de página quedaron
+  sueltos dentro del texto corrido. Por eso `formato_citas = "capitulos"` y no
+  `"paginas"`, pese a ser un escaneo — se cita por el número romano del
+  capítulo, no por folio.
+
+**Está completo: los 9 capítulos tienen documento de estudio.** El libro
+entero queda en 38 términos de glosario, 18 preguntas (2 por capítulo) y 36
+flashcards (todas los 9 capítulos dieron para las 4), y la hoja pesa 80 KB
+crudos / 21 KB gzip. Los 9 diagramas Mermaid compilan, verificado en el
+navegador (los nueve, no solo una muestra).
+
+**Sin la variante `examen`, mismo motivo que los otros tres libros.**
+
+Un bug real de la plantilla salió a la luz procesando este libro: en el bloque
+6, `prompts/estudio.md` tenía escrito literalmente `{{CONTEXTO_PREVIO}}` en
+medio de una oración ("Si `{{CONTEXTO_PREVIO}}` trae capítulos ya
+procesados..."), en vez de nombrar la sección "CONTEXTO DE CORRIDAS
+ANTERIORES". Como la sustitución de placeholders es un reemplazo literal, el
+prompt generado para cada sección quedaba con el bloque entero de contexto
+pegado en medio de esa frase, en vez de una referencia por nombre. Corregido:
+ahora dice "Si el CONTEXTO DE CORRIDAS ANTERIORES de arriba trae capítulos ya
+procesados...". De paso, el bloque 1 pedía "qué pregunta **del derecho** viene
+a contestar este capítulo" — específico de Derecho y ya no genérico ahora que
+el taller suma textos de otra disciplina usados en la misma materia. Se sacó
+"del derecho".
 
 ### Historia de la plantilla
 

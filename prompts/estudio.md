@@ -228,8 +228,8 @@ capítulo en el índice del libro. Por lo tanto:
   tuyo: se publica sin filtro, y ya pasó una vez que se colaron las palabras de
   la instrucción y salieron como resumen del libro.
 
-Después, una línea en blanco y un segundo párrafo de **2 oraciones**: qué pregunta
-del derecho viene a contestar este capítulo y por qué a un principiante le
+Después, una línea en blanco y un segundo párrafo de **2 oraciones**: qué
+pregunta viene a contestar este capítulo y por qué a un principiante le
 conviene entenderla.
 
 ## 2. Lo esencial del capítulo
@@ -416,10 +416,10 @@ Las 2 se reparten así, y el orden importa:
 
 **Conectá con lo anterior cuando se pueda.** Una pregunta de examen casi nunca cae
 dentro de un solo capítulo: «¿qué es la concepción tridimensional?» abarca varios.
-Si {{CONTEXTO_PREVIO}} trae capítulos ya procesados, formulá la pregunta de
-exposición de modo que obligue a traerlos —«explique X y en qué se diferencia de
-Y, visto antes»—. Es lo más parecido a la pregunta real que este bloque puede
-producir.
+Si el CONTEXTO DE CORRIDAS ANTERIORES de arriba trae capítulos ya procesados,
+formulá la pregunta de exposición de modo que obligue a traerlos —«explique X y
+en qué se diferencia de Y, visto antes»—. Es lo más parecido a la pregunta real
+que este bloque puede producir.
 
 **Prohibido**, porque se llenan solas y se contestan releyendo el bloque 2:
 

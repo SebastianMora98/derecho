@@ -1,0 +1,867 @@
+{
+  "slug": "la-inteligencia-fracasada",
+  "titulo": "La inteligencia fracasada",
+  "autor": "José Antonio Marina",
+  "anio": null,
+  "edicion": "Editorial Anagrama, Barcelona, 6ª ed., 2005",
+  "nivel": "principiante",
+  "formato_citas": "capitulos",
+  "contenedor": "",
+  "partes": [],
+  "capitulos": [
+    {
+      "numero": "01",
+      "ancla": "s01",
+      "titulo": "Introducción",
+      "pendiente": false,
+      "idea": {
+        "resumen": "La inteligencia fracasa cuando no logra ajustarse a la realidad ni resolver problemas afectivos o sociales, y ese fracaso ocurre tanto en personas individuales como en grupos y sociedades enteras.",
+        "contexto": "Este capítulo plantea la pregunta que organiza todo el libro: qué significa exactamente que la inteligencia falle, y por qué conviene estudiar ese fracaso con el mismo rigor que se estudia el éxito. A un principiante le sirve para no quedarse con \"estupidez\" como insulto, sino verla como un fenómeno que se puede investigar y, en parte, prevenir."
+      },
+      "esencial": [
+        "Marina explica por qué prefiere hablar de \"fracasos de la inteligencia\" en vez de estupidez: la palabra se volvió un insulto disperso, sin prestancia científica, y por eso retoma la literatura reciente sobre errores de conocimiento y de acción (Introducción). La inteligencia fracasa, dice, cuando no logra ajustarse a la realidad, cuando no comprende lo que pasa, cuando no resuelve problemas afectivos, sociales o políticos, cuando persigue metas disparatadas o medios ineficaces, desaprovecha ocasiones, o se despeña en la crueldad y la violencia (Introducción). Cita la definición de Carlo Cipolla —llama estúpido a quien perjudica a otro sin sacar provecho propio— pero la juzga insuficiente: faltan quienes se dañan solo a sí mismos, y quienes dañan a otros aunque sí obtengan beneficio (Introducción).",
+        "El fracaso no es solo individual: existe también una inteligencia colectiva que se empobrece en la interacción, un \"abaissement du niveau mental\" en el que personas brillantes por separado se empantanan juntas (Introducción). Las sociedades pueden ser inteligentes o estúpidas según sus instituciones, valores y metas, y Marina propone leer el nazismo y el régimen soviético en esa clave, como formas de obcecación colectiva (Introducción). Contrasta la idea de Musil de que \"la brutalidad es la praxis de la tontería\" con el razonamiento de Napoleón, para quien la fuerza es el único lenguaje que entienden las naciones, y deja abierta la pregunta de quién tiene razón (Introducción).",
+        "Distingue además la inteligencia dañada —la de quien arrastra un límite que no eligió, como un niño criado en el odio— de la simplemente fracasada, aunque admite que en la práctica ambas llegan a resultados igual de penosos, y pone a Kafka como ejemplo de alguien que vivió su propia existencia como un fracaso (Introducción). Desconfía de la moda posromántica de estetizar el hundimiento ajeno y recuerda la frase de George Steiner de que la cultura no vuelve mejores a las personas (Introducción). Cierra afirmando su optimismo de pedagogo: cree que la inteligencia puede triunfar, y que la finalidad del libro es reducir la vulnerabilidad humana (Introducción)."
+      ],
+      "mapa": "flowchart TD\n    A[\"Fracaso de la inteligencia\"]:::critico --> B[\"Fracaso individual\"]\n    A --> C[\"Fracaso colectivo y social\"]\n    B --> D[\"Inteligencia dañada vs. fracasada\"]\n    C --> E[\"Sociedades inteligentes o estúpidas\"]\n    D --> F[\"Objetivo: reducir la vulnerabilidad humana\"]\n    E --> F\n\n    classDef critico stroke-width:3px"
+    },
+    {
+      "numero": "02",
+      "ancla": "s02",
+      "titulo": "I. La inteligencia malograda",
+      "pendiente": false,
+      "idea": {
+        "resumen": "La inteligencia puede fallar no porque falte capacidad sino porque un módulo inadecuado domina la conducta por un fallo de la inteligencia ejecutiva encargada de dirigirlo.",
+        "contexto": "Este capítulo distingue la inteligencia dañada de la fracasada y explica por qué una persona brillante puede comportarse de manera estúpida. A un principiante le sirve para entender que el fracaso no es cuestión de capacidad, sino de cómo se dirige esa capacidad en la vida diaria."
+      },
+      "esencial": [
+        "El capítulo arranca con dos casos que plantean la paradoja central del libro: un juez neoyorquino muy respetado que arruinó su carrera acosando a una ex amante, y un alumno de altísimo coeficiente intelectual que terminó preso por decidir usar su inteligencia para mangonear a otros (I). De ahí Marina define la inteligencia como la capacidad de dirigir el comportamiento usando la información que uno mismo capta, aprende y elabora, y aclara que puede fallar en cualquiera de esos pasos (I). Distingue la inteligencia estructural o computacional —la capacidad básica que miden los tests— del uso que se hace de ella, y llama \"inteligencia dúplex\" a esa relación entre \"ser\" inteligente y \"comportarse\" inteligentemente (I). Retoma también la distinción, ya vista en la Introducción, entre inteligencia dañada e inteligencia fracasada, que es el objeto de este libro (I).",
+        "Sostiene que buena parte de la inteligencia computacional funciona de manera inconsciente, como módulos semiautónomos construidos por la evolución —el miedo, con sus tres respuestas posibles de huida, inmovilidad o ataque, es su ejemplo (I)—. Esos módulos entran a veces en colisión con la vida moderna, y ahí interviene la inteligencia ejecutiva, encargada de iniciar, dirigir y controlar esas maquinaciones; de ahí saca su primera conclusión, que el fracaso ocurre cuando un módulo inadecuado gana un protagonismo que no merece por un fallo de esa inteligencia ejecutiva (I). Discute además si basta con ser eficaz para ser inteligente —cita a Herbert Simon para mostrar que la razón es apenas instrumental— pero objeta que ese criterio es insuficiente, y lo ilustra con el ejemplo histórico de los \"niños de azotes\" (I).",
+        "Frente a la sola eficacia, propone el \"principio de la jerarquía de los marcos\": un pensamiento puede ser inteligente en sí mismo y resultar estúpido si el marco donde actúa es estúpido, como muestra —sin repetir aquí sus ejemplos— con la carga de la Brigada Ligera en Balaclava y con el terrorismo suicida (I). Llega así a un tercer principio: la inteligencia fracasa cuando se equivoca de marco, y el marco superior para cualquier persona es su propia felicidad (I). Cierra retomando el caso de Kafka —sus cartas a Felice y a Milena, la \"Carta al padre\"— como posible ejemplo de inteligencia dañada por vergüenza, y anuncia que el libro se organizará en cuatro apartados: fracasos cognitivos, afectivos, del lenguaje y de la voluntad (I)."
+      ],
+      "mapa": "flowchart TD\n    A[\"Inteligencia estructural: módulos automáticos\"] --> B[\"Inteligencia ejecutiva: dirige y controla\"]:::critico\n    B -->|\"si falla\"| C[\"Un módulo inadecuado toma el mando\"]\n    C --> D[\"Se elige un marco equivocado\"]\n    D --> E[\"Fracaso: se aleja de la felicidad\"]\n\n    classDef critico stroke-width:3px"
+    },
+    {
+      "numero": "03",
+      "ancla": "s03",
+      "titulo": "II. Los fracasos cognitivos",
+      "pendiente": false,
+      "idea": {
+        "resumen": "La inteligencia fracasa cognitivamente cuando una creencia —el prejuicio, la superstición, el dogmatismo o su combinación en el fanatismo— se vuelve invulnerable a la evidencia que la contradice.",
+        "contexto": "Este capítulo explica por qué una persona inteligente puede sostener creencias falsas con total seguridad, y qué mecanismo mental lo permite. A un principiante le sirve para reconocer ese blindaje en sí mismo, no solo para señalarlo en otros."
+      },
+      "esencial": [
+        "Marina arranca distinguiendo el error, que forma parte normal del conocimiento y hasta ayuda a aprender, del fracaso cognitivo propiamente dicho: este aparece cuando una creencia se vuelve invulnerable a la evidencia que la contradice (II). Estudia tres formas de esa invulnerabilidad —el prejuicio, que selecciona la información para confirmarse a sí mismo; la superstición, que sobrevive pese a estar desmentida; el dogmatismo, que acomoda cualquier fracaso de una predicción para no abandonar la creencia previa— y advierte que las tres comparten el mismo mecanismo de blindaje contra la crítica (II).",
+        "El fanatismo, sostiene, reúne todos esos fracasos y les suma dos rasgos peligrosos: creerse dueño de una verdad absoluta y pasar de esa certeza a la acción (II). Además de las creencias conscientes, señala que hay creencias implícitas que operan sin que el sujeto se dé cuenta —el pudor, el autoconcepto que el niño construye desde muy pequeño, los roles que una cultura asigna a mujeres y hombres, ilustrados con el contraste entre dos tribus estudiadas por Margaret Mead— y que también pueden ser disfuncionales, como muestran las creencias \"tóxicas\" que Aaron Beck asocia a la adicción (II).",
+        "Cierra con la credulidad, un mecanismo natural para formar creencias por repetición —recuerda el condicionamiento del perro de Pavlov— que la comunicación y el poder pueden explotar, y usa a Napoleón para mostrar cómo la propaganda moldeó su leyenda pública (II). De ahí distingue el uso racional de la inteligencia, que busca evidencias que cualquiera pueda compartir, del uso irracional, que se encierra en un mundo privado blindado a la crítica; ese tránsito hacia lo compartido, apoyado en Piaget, es lo que permite salir del egocentrismo infantil y resulta indispensable para convivir sin violencia (II)."
+      ],
+      "mapa": "flowchart TD\n    A[\"Creencia blindada contra la evidencia\"]:::critico --> B[\"Prejuicio, superstición, dogmatismo\"]\n    B --> C[\"Fanatismo: verdad absoluta + acción\"]\n    A --> D[\"Credulidad: mecanismo que la sostiene\"]\n    D --> E[\"Uso racional vs. irracional de la inteligencia\"]\n    C --> E\n\n    classDef critico stroke-width:3px"
+    },
+    {
+      "numero": "04",
+      "ancla": "s04",
+      "titulo": "III. Los fracasos afectivos",
+      "pendiente": false,
+      "idea": {
+        "resumen": "La inteligencia fracasa afectivamente cuando confunde un afecto con otro o cuando un estilo emocional como la envidia o el resentimiento termina dirigiendo la conducta entera de una persona.",
+        "contexto": "Este capítulo explica por qué razonar bien no basta para decidir bien, y por qué ciertos afectos, aprendidos con los años, pueden apoderarse de una vida entera sin que la persona lo note. A un principiante le sirve para distinguir, en su propia experiencia, qué siente de verdad de qué solo cree sentir."
+      },
+      "esencial": [
+        "Marina muestra, apoyado en los pacientes de Antonio Damasio con el lóbulo frontal desconectado del área límbica, que sin el empuje afectivo la razón puede quedar atrapada en una deliberación interminable, incapaz de decidir aunque razone perfectamente (III). De ahí rechaza que existan una inteligencia cognitiva y otra emocional separadas, y organiza la vida afectiva en tres niveles: los impulsos o deseos, los sentimientos que informan cómo van esos deseos frente a la realidad, y los apegos, vínculos duraderos con personas o hábitos que a veces persisten sin que el sujeto los reconozca (III).",
+        "El primer fracaso afectivo, sostiene, es confundir un afecto con otro: creer amor lo que en realidad es vanidad, lástima o el simple deseo de conquistar, y solo el dolor de la ausencia —como en el caso de Proust que cita— revela después cuál era el afecto verdadero (III). Estudia también estilos afectivos que terminan gobernando toda una vida, como la envidia y sobre todo el resentimiento, que Scheler describe como una intoxicación por reprimir sistemáticamente ciertas emociones; toma a Ricardo III de Shakespeare como su gran ejemplo de una inteligencia hábil pero enteramente malograda por el rencor (III).",
+        "Cierra proponiendo tres capas de la personalidad: la recibida, herencia genética con la que se empieza a jugar; la aprendida o carácter, formada por hábitos afectivos y cognitivos, entre ellos los estilos ya descritos; y la elegida, obra de la inteligencia ejecutiva, que decide cómo jugar esas cartas en cada situación concreta (III). Con la metáfora del póquer —no gana quien tiene mejor mano, sino quien mejor la juega— sostiene que los estilos afectivos, aunque muy estables, se aprendieron y por lo tanto se pueden reconstruir con paciencia, igual que se aprende un idioma nuevo (III)."
+      ],
+      "mapa": "flowchart TD\n    A[\"Deseos, sentimientos y apegos\"] --> B[\"Confundir un afecto con otro\"]\n    A --> C[\"Estilo afectivo fijo: envidia, resentimiento\"]:::critico\n    C --> D[\"Personalidad aprendida (carácter)\"]\n    D --> E[\"La inteligencia ejecutiva puede reconstruirlo\"]\n\n    classDef critico stroke-width:3px"
+    },
+    {
+      "numero": "05",
+      "ancla": "s05",
+      "titulo": "IV. Los lenguajes fracasados",
+      "pendiente": false,
+      "idea": {
+        "resumen": "El lenguaje, que debería servir para entenderse con uno mismo y con los demás, fracasa cuando se rigidiza en hábitos, voces o malentendidos que la inteligencia ejecutiva ya no logra dirigir.",
+        "contexto": "Este capítulo explora dos frentes distintos: el diálogo interior que nos permite pensar y decidir, y la conversación con otros, sobre todo en la pareja. A un principiante le sirve para reconocer cuándo una discusión doméstica dejó de ser una conversación y empezó a moverse sola."
+      },
+      "esencial": [
+        "Marina arranca con el matrimonio de ¿Quién teme a Virginia Woolf? como ejemplo de que el lenguaje, hecho para entender y para vivir, puede volverse un arma de demolición doméstica (IV). Distingue dos frentes de fracaso, hablar con uno mismo y hablar con los demás, y en el primero muestra que el habla interior es la herramienta con que la inteligencia ejecutiva se vuelve consciente de sí misma, apoyado en los pacientes con el cerebro dividido de su maestro Sperry, donde la \"personalidad\" que dirige la conducta resultó ser la del hemisferio que habla (IV). Retoma también a Freud para sostener que poner en palabras un afecto es lo que permite pasarlo de lo inconsciente a lo consciente, y distingue dos fracasos de esa introspección: su ausencia, que deja una inteligencia tosca e impulsiva, y su exceso, la rumia obsesiva que da vueltas sin avanzar (IV).",
+        "Señala que cada deseo o sentimiento puede convertirse en una voz interior, y que esas voces a veces se independizan hasta el punto de que el sujeto olvida que las produjo su propia mente, como en las alucinaciones que cita de Castilla del Pino; la voz de la conciencia —que Kant, Freud o Heidegger describieron de maneras distintas— corre el mismo riesgo si el criterio que aplica es equivocado (IV). En el frente de hablar con otros, distingue cuatro fracasos típicos de la conversación de pareja: el silencio que se instala cuando faltan las ocurrencias, el automatismo de un discurso que arrastra a los hablantes adonde no querían llegar, el malentendido hermenéutico, y la sumisión a expectativas de género distintas entre hombres y mujeres (IV).",
+        "Del automatismo del discurso da un ejemplo cotidiano: la misma queja sobre un jefe autoritario desencadena reconciliación o pelea según la primera respuesta de la pareja, sin que ninguno de los dos lo haya decidido de antemano (IV). Del malentendido, rechaza la metáfora de que hablar es \"entregar\" un contenido ya hecho, y usa un diálogo de pareja de Watzlawick —donde un elogio repetido termina sin significar nada— para mostrar que siempre interpretamos, nunca recibimos un significado puro (IV); sobre las expectativas de género remite al original, sin repetir aquí sus ejemplos (IV). Cierra con tres causas del fracaso lingüístico: malos hábitos de la inteligencia computacional, malos criterios de la inteligencia ejecutiva, o su incapacidad para dirigir a la primera (IV)."
+      ],
+      "mapa": "flowchart TD\n    A[\"Lenguaje: hablar con uno mismo y con otros\"] --> B[\"Habla interior hace consciente el afecto\"]\n    B --> C[\"Voces que se independizan: rumia, voz de la conciencia\"]\n    A --> D[\"Conversación con otros: silencio, automatismo, malentendido\"]\n    C --> E[\"La inteligencia ejecutiva no logra dirigir\"]:::critico\n    D --> E\n\n    classDef critico stroke-width:3px"
+    },
+    {
+      "numero": "06",
+      "ancla": "s06",
+      "titulo": "V. El fracaso de la voluntad",
+      "pendiente": false,
+      "idea": {
+        "resumen": "La voluntad —cuatro habilidades aprendidas, no una facultad innata— fracasa cuando un deseo, una adicción o un hábito le arrebatan el control a un yo ejecutivo demasiado rígido o demasiado laxo.",
+        "contexto": "Este capítulo inventaría los modos en que esa voluntad puede fallar en su tarea de controlar los impulsos, desde la apatía hasta la adicción y la tozudez. A un principiante le sirve para reconocer que la fuerza de voluntad no es una virtud única, sino varias habilidades distintas que pueden fallar por separado."
+      },
+      "esencial": [
+        "Marina retoma la voluntad, expulsada de la psicología, como cuatro habilidades aprendidas —inhibir el impulso, deliberar, decidir, mantener el esfuerzo— y la reduce a un \"yo ejecutivo\" que funciona como un aduanero: no genera ninguna ocurrencia propia, solo las deja pasar, las bloquea o las devuelve para que se mejoren, según sus criterios de evaluación (V). Ilustra ese proceso con anécdotas de creación artística —Valéry, García Márquez, Picasso, entre otros que no repito aquí— para mostrar que ni siquiera el genio se libra de esa doble tarea de generar y seleccionar (V). Aclara que en este capítulo estudia solo los fracasos estructurales de esa voluntad, y deja el \"uso fracasado\" para el capítulo siguiente (V).",
+        "Presenta una tipología de esos fracasos estructurales. Las deficiencias del deseo van desde la falta total de impulso, como en la depresión, hasta su volubilidad excesiva, o el deseo que nunca se articula en un proyecto real (V). La esclavitud de la voluntad aparece en las adicciones y en el miedo, cuando el sujeto siente que no puede dejar de actuar aunque quiera (V). Distingue además tres formas de perder el control del impulso —impulsividad, compulsión y automatismo—, según haya o no conciencia y lucha interna, e ilustra la impulsividad extrema con el crimen sin motivo aparente de A sangre fría (V).",
+        "Añade la procrastinación, un aplazamiento sistemático con tácticas propias que ilustra con un test de autodiagnóstico que no repito aquí; la indecisión, que en su forma patológica reaparece en los pacientes de Damasio ya vistos; la rutina, útil cuando automatiza lo simple pero peligrosa si se aplica sin vigilancia a un problema nuevo; y un par final, la inconstancia y su opuesto, la obcecación —ilustrada con el experimento del caramelo de Mischel y con la matanza de Verdún— (V). Cierra con la conclusión que reúne todo el capítulo: la voluntad fracasa siempre por una toma indebida de poder de un módulo sobre un yo ejecutivo demasiado rígido o demasiado laxo, y no existe un criterio único válido para todos los casos (V)."
+      ],
+      "mapa": "flowchart TD\n    A[\"Yo ejecutivo: aduanero de las ocurrencias\"]:::critico --> B[\"Deficiencias del deseo\"]\n    A --> C[\"Esclavitud: adicción y miedo\"]\n    A --> D[\"Impulsividad, compulsión, automatismo\"]\n    A --> E[\"Procrastinación e indecisión\"]\n    A --> F[\"Inconstancia vs. obcecación\"]\n\n    classDef critico stroke-width:3px"
+    },
+    {
+      "numero": "07",
+      "ancla": "s07",
+      "titulo": "VI. La elección de las metas",
+      "pendiente": false,
+      "idea": {
+        "resumen": "La inteligencia fracasa al elegir metas imposibles, contradictorias o mal coordinadas con otros, y ese fracaso se agrava cuando el uso privado de la inteligencia se impone al uso público que hace posible la convivencia.",
+        "contexto": "Este capítulo explica por qué elegir bien una meta es tan importante como perseguirla, y por qué una persona puede triunfar en su vida privada mientras arruina a los demás. A un principiante le sirve para distinguir cuándo un conflicto se resuelve con criterios propios y cuándo exige salir a un terreno compartido con otros."
+      },
+      "esencial": [
+        "Marina arranca de una carta de Kafka a Felice que confiesa la incompatibilidad entre escribir y una vida compartida, para mostrar que buena parte de nuestros fracasos vienen de elegir mal las metas, no de fallar en el camino hacia ellas (VI). Distingue metas imposibles en sí —como la frase perfecta que persigue el escritor de La peste, de Camus, hasta enloquecer— de metas posibles que resultan imposibles para una persona concreta, como el comandante de El motín del Caine, incapaz de distinguir lo importante de lo trivial (VI). Suma un tercer fracaso, las metas contradictorias que no se perciben como tales —ilustra con dobles vínculos como el de exigir \"sé más espontáneo\"—, y advierte que calibrar la propia capacidad frente a una meta es tan delicado como elegirla (VI).",
+        "Al coordinar metas con otras personas, distingue tres modelos de pareja o familia —sumisión de un plan al otro, negociación de dos planes privados, o subordinación de ambos a una meta común— y advierte que el modelo puramente contractual actual, al preparar a cada uno para un posible divorcio desde el principio, puede convertirse en una profecía que se cumple sola (VI). De ahí salta al individualismo, triunfo posible de la inteligencia privada y fracaso de la colectiva, y llega a distinguir un uso privado y un uso público de la inteligencia, cada uno con sus criterios (VI). Ilustra esa doble vara con Napoleón: una inteligencia estructural extraordinaria, bien usada en su despacho privado, pero puesta al servicio de una ambición que costó millones de vidas en el terreno público (VI).",
+        "Sostiene que el uso público de la inteligencia —del que nacen la ciencia, la ética y el derecho— es indispensable para evitar la tiranía y la \"tragedia de los bienes comunes\" que describió Garrett Hardin, porque lo que conviene a un individuo aislado puede perjudicar a la comunidad entera (VI). Repasa varias teorías que intentaron fundar un \"sujeto ético\" capaz de juzgar con objetividad —el espectador imparcial de Adam Smith, el imperativo categórico de Kant, el velo de la ignorancia de Rawls, el diálogo de Habermas— pero advierte que ninguna convence a quien decide no salir de su reducto privado (VI). Cierra sin resolver el dilema: qué jerarquía debe imponerse entre el uso público y el uso privado de la inteligencia, cuestión que deja planteada para el capítulo siguiente (VI)."
+      ],
+      "mapa": "flowchart TD\n    A[\"Elegir una meta\"] --> B[\"Meta imposible, inadecuada o contradictoria\"]\n    A --> C[\"Coordinar la meta con otras personas\"]\n    B --> D[\"Uso privado vs. uso público de la inteligencia\"]:::critico\n    C --> D\n    D --> E[\"Uso público: ciencia, ética y derecho\"]\n\n    classDef critico stroke-width:3px"
+    },
+    {
+      "numero": "08",
+      "ancla": "s08",
+      "titulo": "VII. Sociedades inteligentes y sociedades estúpidas",
+      "pendiente": false,
+      "idea": {
+        "resumen": "Una sociedad es inteligente cuando sus formas de vida serían aprobadas por un sujeto ilustrado y virtuoso que use públicamente su inteligencia, y fracasa con la intolerancia, la tiranía o metas contradictorias.",
+        "contexto": "Este capítulo extiende a las sociedades enteras los mismos fracasos ya vistos en el individuo: cognitivos, afectivos y operativos. A un principiante le sirve para entender que una sociedad puede ser tan estúpida como una persona, aunque esté compuesta por individuos brillantes."
+      },
+      "esencial": [
+        "Marina distingue la inteligencia personal —que puede usarse en privado o en público— de la inteligencia social propiamente dicha, que no es la suma de las inteligencias de un grupo sino algo que emerge de su interacción, como el lenguaje o las modas, que nadie inventa solo (VII). La resume en una fórmula: inteligencia social es igual a las inteligencias personales más los sistemas de interacción pública más la organización del poder (VII). Frente a la tentación de medir el éxito social por el consenso mayoritario, propone otro criterio: una sociedad acierta cuando sus formas de vida son las que aprobaría un sujeto ilustrado y virtuoso, en pleno uso público de su inteligencia, tras examinar críticamente la información disponible (VII).",
+        "Traslada a lo social la misma tríada de fracasos vista en capítulos anteriores. Los cognitivos son creencias blindadas —prejuicio, dogmatismo, fanatismo— que una cultura entera puede sostener, y los ilustra con el vaivén histórico de quien reclama tolerancia religiosa mientras es perseguido y la niega apenas llega al poder, de los cristianos primitivos a la Reforma (VII). Los afectivos son estilos que una sociedad entera fomenta, como el contraste que describió Margaret Mead entre los cooperadores arapesh y los hostiles mundugumor, o la falta social de compasión, respeto y admiración que señala Fukuyama (VII).",
+        "Los operativos aparecen cuando una sociedad elige metas contradictorias —la eficacia y la estatalización total de la economía soviética, por ejemplo— o cuando su sistema ejecutivo falla por exceso (tiranía) o por defecto (anarquía); distingue además terminar un conflicto de resolverlo, porque solo lo segundo deja a salvo la convivencia futura (VII). Cierra distinguiendo tres tipos de verdad —privada, privada colectiva y universal— para proponer un principio: cuando una verdad privada, como una creencia religiosa, entra en conflicto con una verdad universal en asuntos que afectan a otros, debe ceder ante esta última (VII). Termina con su fórmula más compacta: la justicia es la gran creación de la inteligencia, y la maldad su fracaso definitivo (VII)."
+      ],
+      "mapa": "flowchart TD\n    A[\"Inteligencia social: emerge de la interacción\"] --> B[\"Criterio: lo aprobaría un sujeto ilustrado y virtuoso\"]:::critico\n    B --> C[\"Fracasos cognitivos: prejuicio, fanatismo social\"]\n    B --> D[\"Fracasos afectivos: estilos culturales\"]\n    B --> E[\"Fracasos operativos: metas contradictorias, tiranía o anarquía\"]\n    C --> F[\"Justicia: la gran creación; la maldad: su fracaso\"]\n    D --> F\n    E --> F\n\n    classDef critico stroke-width:3px"
+    },
+    {
+      "numero": "09",
+      "ancla": "s09",
+      "titulo": "Epílogo: Elogio de la inteligencia triunfante",
+      "pendiente": false,
+      "idea": {
+        "resumen": "La inteligencia triunfante es la sabiduría, la capacidad de sostener a la vez el bienestar y la creación, en la vida privada y en la justicia.",
+        "contexto": "Este epílogo cierra el libro discutiendo la idea romántica de que solo el sufrimiento crea algo valioso, y propone en cambio la sabiduría como la meta de una inteligencia que triunfa. A un principiante le sirve para cerrar la lectura con una pregunta directa: ¿de verdad hace falta sufrir para ser creativo?"
+      },
+      "esencial": [
+        "El epílogo retoma la pregunta que cerraba la Introducción sobre Kafka —¿preferiríamos un Kafka feliz a las obras de un Kafka desdichado?— para desmontar la idea romántica de que solo el sufrimiento crea y de que la felicidad es boba o embrutecedora, una tradición que Marina rastrea desde Nietzsche hasta Heidegger y Sartre (Epílogo). Propone invertir esa tradición e imaginar a Nietzsche feliz, y denuncia que buena parte de esa glorificación del dolor descansa en confundir la felicidad con el simple placer, recordando la frase de Stuart Mill sobre \"una felicidad de cerdo\" (Epílogo).",
+        "Define la felicidad humana como la satisfacción armoniosa de dos aspiraciones que suelen tironear en direcciones distintas, el bienestar y la creación, y llama sabiduría a la inteligencia capaz de sostener ambas a la vez, tanto en la vida privada como en la política, es decir, en la justicia (Epílogo). Retoma el concepto griego de areté —la excelencia que un talento alcanza tras un trabajo minucioso, como la de un músico o un atleta— para sostener que los seres humanos alcanzan su areté básica precisamente en esa sabiduría (Epílogo).",
+        "Cierra pidiendo invertir también la manera en que se cuenta la historia: en vez de narrar una vez más la monótona sucesión de crueldades y torpezas, propone contar la historia triunfal de la inteligencia humana (Epílogo). Termina en un tono deliberadamente optimista, confiando en que la inteligencia triunfará salvo que la especie se degrade, y cierra el libro con un poema de Neruda y la fórmula \"que así sea\" (Epílogo)."
+      ],
+      "mapa": "flowchart TD\n    A[\"Idea romántica: solo el sufrimiento crea\"] --> B[\"Marina la rechaza: invertir el discurso\"]:::critico\n    B --> C[\"Felicidad = bienestar + creación\"]\n    C --> D[\"Sabiduría: inteligencia para ambas\"]\n    D --> E[\"Areté: la excelencia lograda con trabajo\"]\n\n    classDef critico stroke-width:3px"
+    }
+  ],
+  "glosario": [
+    {
+      "termino": "Abaissement du niveau mental",
+      "definicion": "empobrecimiento de la inteligencia de un grupo, aunque cada miembro sea brillante por separado.",
+      "caps": [
+        "01"
+      ]
+    },
+    {
+      "termino": "Abulia",
+      "definicion": "incapacidad de pasar del deseo a la acción, aunque el deseo esté presente (V).",
+      "caps": [
+        "06"
+      ]
+    },
+    {
+      "termino": "Alexitimia",
+      "definicion": "incapacidad de una persona para reconocer y expresar sus propios sentimientos (IV).",
+      "caps": [
+        "05"
+      ]
+    },
+    {
+      "termino": "Apego",
+      "definicion": "vínculo psicológico duradero con una persona, hábito o experiencia, que puede persistir sin que el sujeto lo note (III).",
+      "caps": [
+        "04"
+      ]
+    },
+    {
+      "termino": "Areté",
+      "definicion": "la excelencia que un talento alcanza tras un trabajo minucioso y sostenido, como la de un gran músico (Epílogo).",
+      "caps": [
+        "09"
+      ]
+    },
+    {
+      "termino": "Compulsión",
+      "definicion": "acción que el sujeto reconoce como absurda pero repite tras una lucha interna que pierde (V).",
+      "caps": [
+        "06"
+      ]
+    },
+    {
+      "termino": "Creación",
+      "definicion": "hacer que exista algo valioso que antes no existía; no hay creación mala, solo destrucción (Epílogo).",
+      "caps": [
+        "09"
+      ]
+    },
+    {
+      "termino": "Credulidad",
+      "definicion": "mecanismo natural para formar creencias por repetición, que el poder y la propaganda pueden explotar (II).",
+      "caps": [
+        "03"
+      ]
+    },
+    {
+      "termino": "Doble vínculo",
+      "definicion": "exigencia contradictoria que se anula a sí misma, como pedirle a alguien que \"sea más espontáneo\" (VI).",
+      "caps": [
+        "07"
+      ]
+    },
+    {
+      "termino": "Dogmatismo",
+      "definicion": "actitud que, ante una predicción fallida, ajusta los detalles para no abandonar la creencia de fondo (II).",
+      "caps": [
+        "03"
+      ]
+    },
+    {
+      "termino": "Equivocación hermenéutica",
+      "definicion": "malentendido que surge de creer que hablar es entregar un significado ya hecho, en vez de interpretarlo (IV).",
+      "caps": [
+        "05"
+      ]
+    },
+    {
+      "termino": "Esclavitud de la voluntad",
+      "definicion": "cuando una adicción o un miedo limita tanto las opciones que el sujeto siente que no puede dejar de actuar (V).",
+      "caps": [
+        "06"
+      ]
+    },
+    {
+      "termino": "Estilo afectivo",
+      "definicion": "patrón estable de sentir (depresivo, envidioso, optimista...) que una persona aprende y aplica una y otra vez ante la realidad (III).",
+      "caps": [
+        "04"
+      ]
+    },
+    {
+      "termino": "Fanatismo",
+      "definicion": "combinación de los fracasos cognitivos anteriores con la certeza de poseer la verdad absoluta y el llamado a actuar en su nombre (II).",
+      "caps": [
+        "03"
+      ]
+    },
+    {
+      "termino": "Fracaso de la inteligencia",
+      "definicion": "cuando la mente no se ajusta a la realidad, no resuelve problemas afectivos o sociales, o se despeña en la crueldad.",
+      "caps": [
+        "01"
+      ]
+    },
+    {
+      "termino": "Habla interior",
+      "definicion": "el diálogo con uno mismo que hace consciente el afecto y permite dirigir la propia conducta (IV).",
+      "caps": [
+        "05"
+      ]
+    },
+    {
+      "termino": "Impulsividad",
+      "definicion": "falta de control del impulso: se pasa directamente al acto, sin deliberación ni lucha interna (V).",
+      "caps": [
+        "06"
+      ]
+    },
+    {
+      "termino": "Inteligencia colectiva",
+      "definicion": "la capacidad de un grupo o sociedad de ajustarse a la realidad, distinta de la de sus miembros por separado.",
+      "caps": [
+        "01"
+      ]
+    },
+    {
+      "termino": "Inteligencia dañada",
+      "definicion": "límite que una persona arrastra sin haberlo elegido, como un niño criado en el odio.",
+      "caps": [
+        "01"
+      ]
+    },
+    {
+      "termino": "Inteligencia dúplex",
+      "definicion": "la idea de que una cosa es la capacidad intelectual y otra, distinta, el uso que se hace de ella (I).",
+      "caps": [
+        "02"
+      ]
+    },
+    {
+      "termino": "Inteligencia ejecutiva",
+      "definicion": "la que inicia, dirige y controla los mecanismos automáticos de la mente; su fallo causa el fracaso (I).",
+      "caps": [
+        "02"
+      ]
+    },
+    {
+      "termino": "Inteligencia estructural (o computacional)",
+      "definicion": "la capacidad básica y en gran parte inconsciente que miden los tests de inteligencia (I).",
+      "caps": [
+        "02"
+      ]
+    },
+    {
+      "termino": "Inteligencia social (o comunitaria)",
+      "definicion": "la que emerge de la interacción entre personas, como el lenguaje o las modas; no es la suma de sus inteligencias individuales (VII).",
+      "caps": [
+        "08"
+      ]
+    },
+    {
+      "termino": "Personalidad aprendida (carácter)",
+      "definicion": "el conjunto de hábitos afectivos y cognitivos construidos sobre la personalidad recibida (III).",
+      "caps": [
+        "04"
+      ]
+    },
+    {
+      "termino": "Personalidad elegida",
+      "definicion": "cómo una persona concreta decide jugar sus cartas en una situación dada; obra de la inteligencia ejecutiva (III).",
+      "caps": [
+        "04"
+      ]
+    },
+    {
+      "termino": "Personalidad recibida",
+      "definicion": "la matriz genética de partida: funciones intelectuales básicas, temperamento y sexo (III).",
+      "caps": [
+        "04"
+      ]
+    },
+    {
+      "termino": "Prejuicio",
+      "definicion": "creencia sostenida con total seguridad sin saber si es cierta, que selecciona solo la información que la confirma (II).",
+      "caps": [
+        "03"
+      ]
+    },
+    {
+      "termino": "Principio de la jerarquía de los marcos",
+      "definicion": "un pensamiento inteligente en sí puede resultar estúpido si el marco donde actúa es estúpido (I).",
+      "caps": [
+        "02"
+      ]
+    },
+    {
+      "termino": "Procrastinación",
+      "definicion": "aplazar sistemáticamente una tarea con tácticas dilatorias, no un simple posponer ocasional (V).",
+      "caps": [
+        "06"
+      ]
+    },
+    {
+      "termino": "Rumia",
+      "definicion": "repetición circular de una preocupación en la mente, que agota sin resolver nada (IV).",
+      "caps": [
+        "05"
+      ]
+    },
+    {
+      "termino": "Sabiduría",
+      "definicion": "la inteligencia capaz de sostener a la vez el bienestar y la creación, en la vida privada y en la política (Epílogo).",
+      "caps": [
+        "09"
+      ]
+    },
+    {
+      "termino": "Sujeto ético",
+      "definicion": "la posición imparcial que distintas teorías inventaron para juzgar con justicia, más allá del propio interés (VI).",
+      "caps": [
+        "07"
+      ]
+    },
+    {
+      "termino": "Superstición",
+      "definicion": "creencia ya desmentida que sigue influyendo aunque quien la sigue no la defienda del todo (II).",
+      "caps": [
+        "03"
+      ]
+    },
+    {
+      "termino": "Uso privado de la inteligencia",
+      "definicion": "el que persigue metas y criterios propios, sin necesidad de justificarse ante nadie más (VI).",
+      "caps": [
+        "07"
+      ]
+    },
+    {
+      "termino": "Uso público de la inteligencia",
+      "definicion": "el que se somete a criterios compartibles, como los de la ciencia, la ética o el derecho (VI).",
+      "caps": [
+        "07"
+      ]
+    },
+    {
+      "termino": "Verdad privada",
+      "definicion": "evidencia que solo vale para quien la vive, como la confianza en una persona, y no puede universalizarse (VII).",
+      "caps": [
+        "08"
+      ]
+    },
+    {
+      "termino": "Verdad privada colectiva",
+      "definicion": "creencia compartida por un grupo, como una fe religiosa, cuyo consenso no la vuelve universal (VII).",
+      "caps": [
+        "08"
+      ]
+    },
+    {
+      "termino": "Verdad universal",
+      "definicion": "evidencia corroborada por métodos rigurosos y en principio al alcance de cualquiera, como las de la ciencia (VII).",
+      "caps": [
+        "08"
+      ]
+    }
+  ],
+  "distinciones": [
+    {
+      "cap": "01",
+      "titulo_cap": "Introducción",
+      "items": [
+        {
+          "par": "Inteligencia dañada vs. inteligencia fracasada",
+          "texto": "la dañada es un límite impuesto desde afuera sin culpa del sujeto; la fracasada supone no ajustarse pudiendo hacerlo.",
+          "se_confunden": "ambas llegan a los mismos resultados penosos, y el propio Marina admite que distinguirlas en la práctica es difícil (Introducción).",
+          "criterio": "preguntarse si la persona pudo elegir o si fue moldeada por una circunstancia que no controló, como el odio inoculado en la infancia.",
+          "error": "tratar como responsabilidad del sujeto lo que en realidad es un daño sufrido, o al revés, excusar como daño lo que fue una elección."
+        }
+      ],
+      "raw": "- **Inteligencia dañada vs. inteligencia fracasada** — la dañada es un límite impuesto desde afuera sin culpa del sujeto; la fracasada supone no ajustarse pudiendo hacerlo.\n  - Se confunden porque: ambas llegan a los mismos resultados penosos, y el propio Marina admite que distinguirlas en la práctica es difícil (Introducción).\n  - Criterio para decidir: preguntarse si la persona pudo elegir o si fue moldeada por una circunstancia que no controló, como el odio inoculado en la infancia.\n  - Dónde se cae: tratar como responsabilidad del sujeto lo que en realidad es un daño sufrido, o al revés, excusar como daño lo que fue una elección."
+    },
+    {
+      "cap": "02",
+      "titulo_cap": "I. La inteligencia malograda",
+      "items": [
+        {
+          "par": "Inteligencia estructural vs. inteligencia ejecutiva",
+          "texto": "la estructural aporta la capacidad automática; la ejecutiva decide qué hacer con ella y responde por el fracaso.",
+          "se_confunden": "un puntaje alto en un test (estructural) hace pensar que el fracaso es imposible, y Marina insiste en que el problema suele estar en la otra (I).",
+          "criterio": "preguntarse si a la persona le faltó capacidad para resolver el problema, o si tenía la capacidad y falló en dirigirla.",
+          "error": "atribuir un fracaso a \"falta de inteligencia\" cuando el propio capítulo muestra personas con tests altísimos que fracasan igual."
+        }
+      ],
+      "raw": "- **Inteligencia estructural vs. inteligencia ejecutiva** — la estructural aporta la capacidad automática; la ejecutiva decide qué hacer con ella y responde por el fracaso.\n  - Se confunden porque: un puntaje alto en un test (estructural) hace pensar que el fracaso es imposible, y Marina insiste en que el problema suele estar en la otra (I).\n  - Criterio para decidir: preguntarse si a la persona le faltó capacidad para resolver el problema, o si tenía la capacidad y falló en dirigirla.\n  - Dónde se cae: atribuir un fracaso a \"falta de inteligencia\" cuando el propio capítulo muestra personas con tests altísimos que fracasan igual."
+    },
+    {
+      "cap": "03",
+      "titulo_cap": "II. Los fracasos cognitivos",
+      "items": [
+        {
+          "par": "Razonamiento vs. uso racional de la inteligencia",
+          "texto": "el razonamiento es solo la capacidad de hacer inferencias lógicas; el uso racional es aplicarla para buscar evidencias que cualquiera pueda compartir.",
+          "se_confunden": "hasta un fanático o alguien con una demencia razona con lógica interna impecable, y el capítulo advierte que eso no basta para llamarlo racional (II).",
+          "criterio": "preguntarse si las conclusiones buscan apoyarse en evidencias que cualquiera podría verificar, o si solo blindan una creencia privada.",
+          "error": "llamar \"racional\" a un razonamiento bien armado que en realidad protege un prejuicio o una superstición de toda crítica."
+        }
+      ],
+      "raw": "- **Razonamiento vs. uso racional de la inteligencia** — el razonamiento es solo la capacidad de hacer inferencias lógicas; el uso racional es aplicarla para buscar evidencias que cualquiera pueda compartir.\n  - Se confunden porque: hasta un fanático o alguien con una demencia razona con lógica interna impecable, y el capítulo advierte que eso no basta para llamarlo racional (II).\n  - Criterio para decidir: preguntarse si las conclusiones buscan apoyarse en evidencias que cualquiera podría verificar, o si solo blindan una creencia privada.\n  - Dónde se cae: llamar \"racional\" a un razonamiento bien armado que en realidad protege un prejuicio o una superstición de toda crítica."
+    },
+    {
+      "cap": "04",
+      "titulo_cap": "III. Los fracasos afectivos",
+      "items": [
+        {
+          "par": "Personalidad aprendida vs. personalidad elegida",
+          "texto": "la aprendida es el carácter ya formado por hábitos; la elegida es la decisión concreta de cómo actuar con ese carácter en cada situación.",
+          "se_confunden": "ambas se sienten como \"así soy yo\", y es difícil saber si un comportamiento viene del hábito o de una decisión tomada ahora mismo (III).",
+          "criterio": "preguntarse si, en esta situación puntual, había margen real para responder de otra manera dado el carácter que se tiene.",
+          "error": "usar \"es mi carácter\" para excusar una decisión evitable, o exigirse cambiar de golpe un hábito que en realidad pertenece a la personalidad aprendida."
+        }
+      ],
+      "raw": "- **Personalidad aprendida vs. personalidad elegida** — la aprendida es el carácter ya formado por hábitos; la elegida es la decisión concreta de cómo actuar con ese carácter en cada situación.\n  - Se confunden porque: ambas se sienten como \"así soy yo\", y es difícil saber si un comportamiento viene del hábito o de una decisión tomada ahora mismo (III).\n  - Criterio para decidir: preguntarse si, en esta situación puntual, había margen real para responder de otra manera dado el carácter que se tiene.\n  - Dónde se cae: usar \"es mi carácter\" para excusar una decisión evitable, o exigirse cambiar de golpe un hábito que en realidad pertenece a la personalidad aprendida."
+    },
+    {
+      "cap": "05",
+      "titulo_cap": "IV. Los lenguajes fracasados",
+      "items": [
+        {
+          "par": "Silencio como fracaso del lenguaje vs. silencio como serenidad",
+          "texto": "el primero es la falta de una palabra que se necesitaba o se esperaba; el segundo es una ausencia de habla elegida y en paz.",
+          "se_confunden": "el capítulo usa la misma palabra, \"silencio\", para dos situaciones casi opuestas, y solo el contexto afectivo permite distinguirlas (IV).",
+          "criterio": "preguntarse si alguien en esa situación deseaba o esperaba una palabra que no llegó, o si el silencio era una decisión serena y compartida.",
+          "error": "tratar cualquier silencio de pareja como síntoma de fracaso, sin advertir que a veces es sencillamente paz."
+        }
+      ],
+      "raw": "- **Silencio como fracaso del lenguaje vs. silencio como serenidad** — el primero es la falta de una palabra que se necesitaba o se esperaba; el segundo es una ausencia de habla elegida y en paz.\n  - Se confunden porque: el capítulo usa la misma palabra, \"silencio\", para dos situaciones casi opuestas, y solo el contexto afectivo permite distinguirlas (IV).\n  - Criterio para decidir: preguntarse si alguien en esa situación deseaba o esperaba una palabra que no llegó, o si el silencio era una decisión serena y compartida.\n  - Dónde se cae: tratar cualquier silencio de pareja como síntoma de fracaso, sin advertir que a veces es sencillamente paz."
+    },
+    {
+      "cap": "06",
+      "titulo_cap": "V. El fracaso de la voluntad",
+      "items": [
+        {
+          "par": "Impulsividad vs. compulsión",
+          "texto": "en la impulsividad se pasa al acto sin deliberar ni luchar contra el impulso; en la compulsión el sujeto lucha contra la acción y solo cede después de resistirse.",
+          "se_confunden": "ambas terminan en una conducta que el sujeto no controla del todo, y a simple vista parecen la misma pérdida de control (V).",
+          "criterio": "preguntarse si hubo lucha interna previa contra el impulso, o si se pasó directo a la acción sin deliberación.",
+          "error": "llamar \"impulsivo\" a alguien que en realidad lucha en secreto contra rituales que reconoce como absurdos, que es compulsión, no impulsividad."
+        }
+      ],
+      "raw": "- **Impulsividad vs. compulsión** — en la impulsividad se pasa al acto sin deliberar ni luchar contra el impulso; en la compulsión el sujeto lucha contra la acción y solo cede después de resistirse.\n  - Se confunden porque: ambas terminan en una conducta que el sujeto no controla del todo, y a simple vista parecen la misma pérdida de control (V).\n  - Criterio para decidir: preguntarse si hubo lucha interna previa contra el impulso, o si se pasó directo a la acción sin deliberación.\n  - Dónde se cae: llamar \"impulsivo\" a alguien que en realidad lucha en secreto contra rituales que reconoce como absurdos, que es compulsión, no impulsividad."
+    },
+    {
+      "cap": "07",
+      "titulo_cap": "VI. La elección de las metas",
+      "items": [
+        {
+          "par": "Uso privado vs. uso público de la inteligencia",
+          "texto": "el privado evalúa el éxito con metas propias; el público, con criterios que cualquiera podría aceptar, como la ciencia, la ética o el derecho.",
+          "se_confunden": "una persona puede triunfar rotundamente en el uso privado —como Napoleón en su despacho— y aun así fracasar, o hacer daño, en el uso público (VI).",
+          "criterio": "preguntarse si el criterio de éxito que se aplica solo vale para quien actúa, o si cualquier otro afectado lo aceptaría también.",
+          "error": "llamar \"inteligente\" sin más a alguien eficaz en lo privado, sin evaluar el costo que su éxito le impone a los demás."
+        }
+      ],
+      "raw": "- **Uso privado vs. uso público de la inteligencia** — el privado evalúa el éxito con metas propias; el público, con criterios que cualquiera podría aceptar, como la ciencia, la ética o el derecho.\n  - Se confunden porque: una persona puede triunfar rotundamente en el uso privado —como Napoleón en su despacho— y aun así fracasar, o hacer daño, en el uso público (VI).\n  - Criterio para decidir: preguntarse si el criterio de éxito que se aplica solo vale para quien actúa, o si cualquier otro afectado lo aceptaría también.\n  - Dónde se cae: llamar \"inteligente\" sin más a alguien eficaz en lo privado, sin evaluar el costo que su éxito le impone a los demás."
+    },
+    {
+      "cap": "08",
+      "titulo_cap": "VII. Sociedades inteligentes y sociedades estúpidas",
+      "items": [
+        {
+          "par": "Terminar un conflicto vs. resolverlo",
+          "texto": "terminar es que el conflicto deje de manifestarse, aunque sea por la fuerza; resolverlo es dejar a salvo los valores de la convivencia para que no vuelva a estallar.",
+          "se_confunden": "ambos hacen que el conflicto \"desaparezca\" de la vista por un tiempo, y solo se nota la diferencia cuando el problema retoña (VII).",
+          "criterio": "preguntarse si la solución dejó intactas las causas y los valores en juego, o si solo silenció a una de las partes.",
+          "error": "celebrar como \"solución\" la victoria de una parte sobre otra, cuando en realidad solo pospone el mismo conflicto."
+        }
+      ],
+      "raw": "- **Terminar un conflicto vs. resolverlo** — terminar es que el conflicto deje de manifestarse, aunque sea por la fuerza; resolverlo es dejar a salvo los valores de la convivencia para que no vuelva a estallar.\n  - Se confunden porque: ambos hacen que el conflicto \"desaparezca\" de la vista por un tiempo, y solo se nota la diferencia cuando el problema retoña (VII).\n  - Criterio para decidir: preguntarse si la solución dejó intactas las causas y los valores en juego, o si solo silenció a una de las partes.\n  - Dónde se cae: celebrar como \"solución\" la victoria de una parte sobre otra, cuando en realidad solo pospone el mismo conflicto."
+    },
+    {
+      "cap": "09",
+      "titulo_cap": "Epílogo: Elogio de la inteligencia triunfante",
+      "items": [
+        {
+          "par": "Sufrimiento vs. esfuerzo (entrenamiento)",
+          "texto": "el esfuerzo es un dolor elegido y con sentido, al servicio de un proyecto; el sufrimiento es un dolor sin elección y sin sentido.",
+          "se_confunden": "ambos duelen, y la tradición romántica que Marina critica los trata como si fueran la misma fuente de creación (Epílogo).",
+          "criterio": "preguntarse si ese dolor se eligió al servicio de una meta propia, o si simplemente se padece sin poder evitarlo ni encontrarle sentido.",
+          "error": "glorificar cualquier padecimiento como \"necesario para crear\", cuando en realidad solo el esfuerzo elegido cumple esa función."
+        }
+      ],
+      "raw": "- **Sufrimiento vs. esfuerzo (entrenamiento)** — el esfuerzo es un dolor elegido y con sentido, al servicio de un proyecto; el sufrimiento es un dolor sin elección y sin sentido.\n  - Se confunden porque: ambos duelen, y la tradición romántica que Marina critica los trata como si fueran la misma fuente de creación (Epílogo).\n  - Criterio para decidir: preguntarse si ese dolor se eligió al servicio de una meta propia, o si simplemente se padece sin poder evitarlo ni encontrarle sentido.\n  - Dónde se cae: glorificar cualquier padecimiento como \"necesario para crear\", cuando en realidad solo el esfuerzo elegido cumple esa función."
+    }
+  ],
+  "autoevaluacion": [
+    {
+      "cap": "01",
+      "titulo_cap": "Introducción",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué se entiende por \"fracaso de la inteligencia\" según Marina, y en qué se diferencia de la estupidez entendida como simple insulto?",
+          "respuesta": "El fracaso de la inteligencia es la incapacidad de ajustarse a la realidad, comprender lo que pasa, resolver problemas afectivos o sociales, o elegir metas y medios adecuados (Introducción). Incluye también despeñarse en la crueldad o la violencia, y puede darse en un individuo o en un grupo entero. Se diferencia de \"estupidez\" como insulto en que Marina la trata como objeto de estudio científico, no como una descalificación moral suelta. Por eso prefiere apoyarse en literatura reciente sobre errores de conocimiento y de acción en vez de usar la palabra a secas (Introducción)."
+        },
+        {
+          "pregunta": "Un gerente que es agudo y sereno en privado se vuelve errático en las reuniones de directorio, donde el grupo termina decidiendo peor que cualquiera de sus miembros por separado. ¿Qué concepto del capítulo explica este patrón y qué lo distingue de un simple error individual?",
+          "respuesta": "El patrón corresponde al \"abaissement du niveau mental\": una interacción grupal que empobrece la inteligencia disponible, aunque cada persona sea brillante sola (Introducción). Se distingue de un error individual porque el problema no está en ninguna persona en particular, sino en la dinámica que se genera entre ellas al reunirse."
+        }
+      ]
+    },
+    {
+      "cap": "02",
+      "titulo_cap": "I. La inteligencia malograda",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué se entiende por inteligencia según Marina, y por qué distingue entre inteligencia dañada e inteligencia fracasada, retomando lo visto en la Introducción?",
+          "respuesta": "La inteligencia es, para Marina, la capacidad de dirigir el comportamiento usando la información que un sujeto capta, aprende y elabora por sí mismo (I). Distingue la inteligencia dañada, que arrastra un límite de origen sin responsabilidad del sujeto, de la fracasada, que parte de una capacidad intacta pero pierde el rumbo (Introducción; I). Esta segunda es el objeto del libro, porque conserva un elemento trágico: las cosas podrían haber salido de otra manera. El fracaso, sostiene, no depende de la capacidad que miden los tests sino de cómo se la dirige en la vida diaria."
+        },
+        {
+          "pregunta": "Una persona con un coeficiente intelectual muy alto arruina su matrimonio por no advertir que actúa movida por celos irracionales que ningún test le midió nunca. ¿Qué nivel de la inteligencia falló aquí según el capítulo, y qué principio explica que su alta capacidad no haya evitado el fracaso?",
+          "respuesta": "Fallaría la inteligencia ejecutiva, que debía dirigir y controlar el módulo afectivo de los celos y no lo hizo (I). Según el principio de la jerarquía de los marcos, un comportamiento puede parecer hábil y aun así ser estúpido si el marco en que actúa —aquí, la vida afectiva— es el equivocado (I). La alta capacidad medida por un test no protege contra este fracaso, porque mide la inteligencia estructural, no su uso."
+        }
+      ]
+    },
+    {
+      "cap": "03",
+      "titulo_cap": "II. Los fracasos cognitivos",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué se entiende por un fracaso cognitivo de la inteligencia, y cómo se relaciona con la distinción entre inteligencia estructural e inteligencia ejecutiva vista en el capítulo I?",
+          "respuesta": "Un fracaso cognitivo ocurre cuando una creencia —un prejuicio, una superstición o un dogmatismo— se vuelve invulnerable a la evidencia que la contradice, a diferencia del error normal, que sí se corrige con nueva información (II). Ocurre, como ya se vio en el capítulo I, cuando un módulo mental queda encapsulado y la inteligencia ejecutiva no logra someterlo a revisión (II; I). El fanatismo es su forma más peligrosa, porque además de blindar la creencia empuja a actuar en su nombre. En todos los casos, lo que falla no es la capacidad de razonar sino el uso que se hace de ella."
+        },
+        {
+          "pregunta": "Una persona rechaza sistemáticamente cualquier evidencia médica que contradiga un remedio alternativo en el que confía, y reinterpreta cada fracaso del tratamiento como prueba de que \"no se siguió bien el método\". ¿Qué fenómeno del capítulo describe mejor esta actitud, y en qué se diferencia de un simple error?",
+          "respuesta": "Se trata de un caso de dogmatismo: la predicción fallida no lleva a abandonar la creencia, sino a introducir un ajuste que la protege de la refutación (II). Se diferencia de un error simple en que el error se corrige con la nueva evidencia, mientras que el dogmatismo la neutraliza para poder seguir creyendo lo mismo."
+        }
+      ]
+    },
+    {
+      "cap": "04",
+      "titulo_cap": "III. Los fracasos afectivos",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué se entiende por un fracaso afectivo de la inteligencia, y cómo se relaciona con la idea, vista en el capítulo I, de un módulo que toma el mando de la conducta?",
+          "respuesta": "Un fracaso afectivo ocurre cuando se confunde un afecto con otro, o cuando un estilo afectivo —como la envidia o el resentimiento— se apodera de la conducta entera de una persona (III). Se relaciona con la idea del capítulo I porque ese estilo funciona igual que un módulo encapsulado: gana un protagonismo que no merece y la inteligencia ejecutiva no logra someterlo a control (III; I). La diferencia es que aquí el módulo es afectivo, no cognitivo. En ambos casos, lo que falla es la dirección, no la capacidad de sentir o de pensar."
+        },
+        {
+          "pregunta": "Una persona insiste en que \"siempre fue así\" de celosa y que no puede evitarlo, aunque reconoce que sus celos empeoraron después de una infidelidad que sufrió hace años. Usando la distinción entre personalidad aprendida y personalidad elegida, ¿qué margen de cambio tiene según el capítulo?",
+          "respuesta": "Sus celos forman parte de su personalidad aprendida, un hábito afectivo consolidado por una experiencia biográfica concreta, y no de una matriz genética inmodificable (III). Precisamente por haberse aprendido, el capítulo sostiene que puede reconstruirse con paciencia, igual que se aprende un idioma nuevo. El margen de cambio existe, aunque exija tiempo, porque no se trata de un rasgo de la personalidad recibida."
+        }
+      ]
+    },
+    {
+      "cap": "05",
+      "titulo_cap": "IV. Los lenguajes fracasados",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué se entiende por un fracaso del lenguaje según Marina, y cómo se conecta con la idea, vista en el capítulo I, de que el fracaso ocurre cuando la inteligencia ejecutiva no logra dirigir un módulo?",
+          "respuesta": "Para Marina, el lenguaje fracasa cuando, siendo un medio de entendimiento, produce incomprensión: se vuelve rígido y mecaniza la forma en que se usa, se expresa o se interpreta (IV). Esto ocurre por tres vías: la inteligencia computacional adquiere malos hábitos, la inteligencia ejecutiva adopta malos criterios, o esta última es incapaz de dirigir a la primera (IV). Es la misma estructura vista en el capítulo I, donde el fracaso general de la inteligencia se explicaba por un módulo inadecuado que la inteligencia ejecutiva no lograba someter a control (IV; I). Aquí el módulo son los hábitos y automatismos del propio lenguaje."
+        },
+        {
+          "pregunta": "Una pareja discute todas las noches sobre el mismo tema sin haber decidido nunca hacerlo: basta con que uno mencione el trabajo para que la conversación escale sola hacia el reproche. ¿Qué tipo de fracaso lingüístico describe mejor esta situación, y qué lo distingue de un simple malentendido?",
+          "respuesta": "Es un caso de automatismo del discurso: la conversación sigue una dinámica que ninguno de los dos decidió, y que los arrastra a un desenlace no querido (IV). Se distingue del malentendido en que aquí no hay una interpretación equivocada de lo que el otro dijo, sino una escalada mecánica que se dispara sola apenas se toca el tema."
+        }
+      ]
+    },
+    {
+      "cap": "06",
+      "titulo_cap": "V. El fracaso de la voluntad",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué se entiende por voluntad según Marina, y cómo se relaciona ese \"yo ejecutivo\" con la inteligencia ejecutiva descripta desde el capítulo I?",
+          "respuesta": "La voluntad es, para Marina, la motivación dirigida inteligentemente: no una facultad innata sino cuatro habilidades aprendidas —inhibir el impulso, deliberar, decidir y mantener el esfuerzo— (V). El \"yo ejecutivo\" que la dirige funciona como un aduanero que no genera ninguna ocurrencia propia, sino que deja pasar, bloquea o devuelve las que le llegan de la inteligencia computacional, según sus criterios de control y evaluación (V). Es la misma inteligencia ejecutiva descripta desde el capítulo I, aplicada ahora a controlar el impulso y sostener el esfuerzo en el tiempo (V; I). Cuando falla, es porque le falta energía para controlar o porque sus criterios son inadecuados."
+        },
+        {
+          "pregunta": "Una persona revisa la cerradura de su puerta cuatro veces cada noche, reconoce que es absurdo, e intenta resistirse sin éxito antes de ceder. Otra persona, en cambio, grita y golpea una pared apenas se enoja, sin pensarlo un segundo. ¿Qué fracaso de la voluntad describe cada caso, y qué los distingue?",
+          "respuesta": "El primer caso es una compulsión: hay lucha interna contra un acto que el sujeto reconoce como absurdo, y cede solo después de resistirse (V). El segundo es impulsividad: se pasa directo a la acción, sin deliberación ni forcejeo previo con el impulso. La diferencia central es la presencia o ausencia de esa lucha interna antes de actuar."
+        }
+      ]
+    },
+    {
+      "cap": "07",
+      "titulo_cap": "VI. La elección de las metas",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué se entiende por uso privado y uso público de la inteligencia, y por qué Marina puede llamar a Napoleón inteligente y destructor a la vez?",
+          "respuesta": "El uso privado de la inteligencia evalúa el éxito con las metas y los criterios de quien actúa, sin necesidad de justificarse ante nadie más; el uso público se somete a criterios compartibles, los de la ciencia, la ética o el derecho (VI). Marina llama a Napoleón inteligente porque en su despacho privado organizó la información, decidió con rapidez y consiguió sus metas con una eficacia extraordinaria. Pero, considerado desde sus víctimas, fue un destructor, porque su ambición costó millones de vidas y frenó los avances de la Revolución Francesa. Ambas cosas son ciertas a la vez porque describen dos usos distintos de la misma inteligencia estructural."
+        },
+        {
+          "pregunta": "Un empresario tala ilegalmente un bosque comunal porque le resulta muy rentable a corto plazo, aunque eso perjudique a toda la comunidad que depende de ese bosque. ¿Qué concepto del capítulo describe este caso, y qué uso de la inteligencia elige el empresario?",
+          "respuesta": "Se trata de lo que el capítulo llama, siguiendo a Garrett Hardin, la tragedia de los bienes comunes: lo que conviene a un individuo aislado perjudica a la comunidad entera (VI). El empresario elige el uso privado de la inteligencia, que persigue su propio beneficio, en vez del uso público, que exigiría someterse a un criterio que los demás afectados también pudieran aceptar."
+        }
+      ]
+    },
+    {
+      "cap": "08",
+      "titulo_cap": "VII. Sociedades inteligentes y sociedades estúpidas",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué se entiende por inteligencia social según Marina, y cómo retoma la distinción entre uso privado y uso público de la inteligencia vista en el capítulo VI?",
+          "respuesta": "La inteligencia social es, para Marina, la que emerge de la interacción entre personas —como el lenguaje o las costumbres— y no la suma de sus inteligencias individuales (VII). Retoma la distinción del capítulo VI porque el uso público de la inteligencia personal es justamente lo que aumenta el capital intelectual de una comunidad: una sociedad de genios egoístas, encerrados en su uso privado, tampoco sería inteligente (VII; VI). El criterio para juzgar su éxito no es el consenso mayoritario, sino si un sujeto ilustrado y virtuoso, en pleno uso público de su inteligencia, aprobaría esas formas de vida. Una sociedad es inteligente cuando es justa, y estúpida cuando no lo es."
+        },
+        {
+          "pregunta": "Dos países en guerra firman un cese el fuego después de que uno de ellos arrasa las ciudades del otro y este deja de resistir. ¿Este desenlace cuenta como una solución del conflicto, según el criterio del capítulo? Justifique con el ejemplo de Amos Oz.",
+          "respuesta": "No, según el capítulo eso sería terminar el conflicto, no resolverlo: el sufrimiento cesa por la fuerza, pero las causas y los valores en juego quedan intactos (VII). Marina usa precisamente el argumento del halcón que cita Amos Oz —destrozar al enemigo para tener paz— para mostrar que esa lógica solo aplaza el mismo problema, que \"retoñará\" mientras no se resuelva dejando a salvo la convivencia."
+        }
+      ]
+    },
+    {
+      "cap": "09",
+      "titulo_cap": "Epílogo: Elogio de la inteligencia triunfante",
+      "preguntas": [
+        {
+          "pregunta": "¿Qué se entiende por sabiduría según Marina, y cómo responde a la pregunta sobre Kafka planteada desde la Introducción?",
+          "respuesta": "La sabiduría es, para Marina, la inteligencia capaz de sostener a la vez el bienestar y la creación, tanto en la vida privada como en la política, es decir, en la justicia (Epílogo). Responde a la pregunta sobre Kafka planteada desde la Introducción invirtiendo la premisa romántica: en vez de asumir que solo el sufrimiento produce una obra valiosa, propone imaginar a un creador feliz y preguntarse si esa felicidad sería realmente un obstáculo (Epílogo; Introducción). Su respuesta es que la idea de que la felicidad embrutece es una trampa conceptual, no un hecho comprobado. Lo que de verdad exige la creación es esfuerzo sostenido, no sufrimiento gratuito."
+        },
+        {
+          "pregunta": "Un joven artista cree que necesita hundirse en el alcohol y la angustia para producir su mejor obra, y rechaza cualquier época estable de su vida por considerarla \"poco creativa\". Usando la distinción entre sufrimiento y esfuerzo, ¿qué le respondería Marina?",
+          "respuesta": "Marina le diría que confunde el esfuerzo con el sufrimiento: el entrenamiento de un bailarín no es sufrimiento, sino un dolor elegido al servicio de un proyecto (Epílogo). El alcohol y la angustia que busca no tienen ese sentido ni esa elección, así que no cumplen la función creadora que él les atribuye. Su error es glorificar cualquier padecimiento como si fuera necesariamente fértil."
+        }
+      ]
+    }
+  ],
+  "mazo": [
+    {
+      "pregunta": "¿Qué es el \"abaissement du niveau mental\"?",
+      "respuesta": "El empobrecimiento de la inteligencia de un grupo por su propia interacción, aunque cada miembro sea brillante por separado.",
+      "cap": "01"
+    },
+    {
+      "pregunta": "¿Qué distingue la inteligencia dañada de la fracasada?",
+      "respuesta": "La dañada no es responsabilidad del sujeto, como un niño criado en el odio; la fracasada sí supone no ajustarse pudiendo hacerlo.",
+      "cap": "01"
+    },
+    {
+      "pregunta": "Según Marina, ¿por qué la definición de Cipolla sobre la estupidez es insuficiente?",
+      "respuesta": "Porque deja afuera a quien se perjudica solo a sí mismo y a quien perjudica a otros obteniendo igual un beneficio.",
+      "cap": "01"
+    },
+    {
+      "pregunta": "¿Cuál es la finalidad declarada del libro?",
+      "respuesta": "Reducir la vulnerabilidad humana, desde el optimismo de un pedagogo que cree que la inteligencia puede triunfar.",
+      "cap": "01"
+    },
+    {
+      "pregunta": "¿Qué distingue a la inteligencia estructural de la inteligencia ejecutiva?",
+      "respuesta": "La estructural es la capacidad automática que miden los tests; la ejecutiva dirige y controla su uso.",
+      "cap": "02"
+    },
+    {
+      "pregunta": "Según el principio de la jerarquía de los marcos, ¿cuándo puede ser estúpido un pensamiento inteligente?",
+      "respuesta": "Cuando el marco en el que actúa es en sí mismo estúpido, aunque el pensamiento sea correcto.",
+      "cap": "02"
+    },
+    {
+      "pregunta": "¿Cuál es, para Marina, el marco de jerarquía superior para evaluar la conducta de una persona?",
+      "respuesta": "Su propia felicidad; cuenta como fracaso todo lo que se la impida.",
+      "cap": "02"
+    },
+    {
+      "pregunta": "¿Qué causa el fracaso de la inteligencia según la conclusión de este capítulo?",
+      "respuesta": "Que un módulo inadecuado gane protagonismo por un fallo de la inteligencia ejecutiva.",
+      "cap": "02"
+    },
+    {
+      "pregunta": "¿Qué es un prejuicio, según la definición que retoma Marina de Gordon Allport?",
+      "respuesta": "Estar absolutamente seguro de algo que en realidad no se sabe.",
+      "cap": "03"
+    },
+    {
+      "pregunta": "¿Qué dos elementos añade el fanatismo a los demás fracasos cognitivos?",
+      "respuesta": "La certeza de poseer la verdad absoluta y el paso de esa certeza a la acción.",
+      "cap": "03"
+    },
+    {
+      "pregunta": "¿Qué distingue al dogmatismo de un simple error?",
+      "respuesta": "El dogmatismo ajusta la creencia para protegerla del fracaso de una predicción, en vez de abandonarla.",
+      "cap": "03"
+    },
+    {
+      "pregunta": "¿Qué mecanismo explota Napoleón para moldear su imagen pública, según el capítulo?",
+      "respuesta": "La credulidad, la tendencia a creer lo que se repite por distintos canales que se corroboran entre sí.",
+      "cap": "03"
+    },
+    {
+      "pregunta": "¿Qué mostró Damasio con los pacientes que tenían el lóbulo frontal desconectado del área límbica?",
+      "respuesta": "Razonaban bien y aprobaban los tests de inteligencia, pero no lograban tomar decisiones.",
+      "cap": "04"
+    },
+    {
+      "pregunta": "¿Cuáles son los tres niveles de la vida afectiva según Marina?",
+      "respuesta": "Los impulsos o deseos, los sentimientos que evalúan cómo van esos deseos, y los apegos.",
+      "cap": "04"
+    },
+    {
+      "pregunta": "¿Cuáles son las tres capas de la personalidad que distingue el capítulo?",
+      "respuesta": "La personalidad recibida, la aprendida o carácter, y la elegida por la inteligencia ejecutiva.",
+      "cap": "04"
+    },
+    {
+      "pregunta": "Según la metáfora del póquer, ¿qué determina si alguien tiene una vida inteligente?",
+      "respuesta": "No las cartas que le tocaron, sino qué tan bien las juega.",
+      "cap": "04"
+    },
+    {
+      "pregunta": "¿Qué mostraron los pacientes de Sperry con el cerebro dividido, respecto al lenguaje?",
+      "respuesta": "Que la inteligencia ejecutiva, la que dirige la conducta, residía en el hemisferio que hablaba.",
+      "cap": "05"
+    },
+    {
+      "pregunta": "¿Cuáles son los dos fracasos de la introspección que describe el capítulo?",
+      "respuesta": "La ausencia de habla interior, que da una inteligencia tosca, y su exceso, la rumia obsesiva.",
+      "cap": "05"
+    },
+    {
+      "pregunta": "¿Qué es la alexitimia?",
+      "respuesta": "La incapacidad de una persona para reconocer y expresar sus propios sentimientos.",
+      "cap": "05"
+    },
+    {
+      "pregunta": "¿Cuáles son las tres causas del fracaso del lenguaje según la conclusión del capítulo?",
+      "respuesta": "Malos hábitos computacionales, malos criterios ejecutivos, o que la ejecutiva no dirige a la computacional.",
+      "cap": "05"
+    },
+    {
+      "pregunta": "¿Cuáles son las cuatro habilidades que componen la \"nueva voluntad\" según Marina?",
+      "respuesta": "Inhibir el impulso, deliberar, decidir y mantener el esfuerzo.",
+      "cap": "06"
+    },
+    {
+      "pregunta": "¿Qué dos tareas cumple el \"yo ejecutivo\", comparado con un aduanero?",
+      "respuesta": "Controlar el tráfico de ocurrencias y evaluarlas según sus propios criterios.",
+      "cap": "06"
+    },
+    {
+      "pregunta": "¿Qué distingue a la abulia de la impulsividad?",
+      "respuesta": "En la abulia falta la capacidad de pasar del deseo a la acción; en la impulsividad falta la capacidad de frenarla.",
+      "cap": "06"
+    },
+    {
+      "pregunta": "Según la conclusión del capítulo, ¿de dónde vienen siempre los fracasos de la voluntad?",
+      "respuesta": "De una toma indebida de poder de un módulo sobre un yo ejecutivo demasiado rígido o demasiado laxo.",
+      "cap": "06"
+    },
+    {
+      "pregunta": "¿Qué es un doble vínculo, según el ejemplo que da el capítulo?",
+      "respuesta": "Una exigencia que se anula a sí misma, como pedirle a alguien que \"sea más espontáneo\".",
+      "cap": "07"
+    },
+    {
+      "pregunta": "¿Cuáles son los tres problemas básicos que enfrentamos al elegir una meta, según Marina?",
+      "respuesta": "No saber qué hacer, saber qué pero no cómo, y saber cómo pero no atreverse.",
+      "cap": "07"
+    },
+    {
+      "pregunta": "¿Qué diferencia el uso privado del uso público de la inteligencia?",
+      "respuesta": "El privado se evalúa con metas propias; el público, con criterios que cualquier afectado podría aceptar.",
+      "cap": "07"
+    },
+    {
+      "pregunta": "¿Qué idea usó Garrett Hardin para mostrar el límite del uso privado de la inteligencia?",
+      "respuesta": "La tragedia de los bienes comunes: lo que conviene a un individuo puede perjudicar a toda la comunidad.",
+      "cap": "07"
+    },
+    {
+      "pregunta": "¿Cuál es la fórmula que propone Marina para la inteligencia social?",
+      "respuesta": "Inteligencias personales más sistemas de interacción pública más organización del poder.",
+      "cap": "08"
+    },
+    {
+      "pregunta": "¿Qué criterio propone Marina para juzgar si una sociedad es inteligente, en vez del consenso mayoritario?",
+      "respuesta": "Si un sujeto ilustrado y virtuoso, en pleno uso público de su inteligencia, aprobaría esas formas de vida.",
+      "cap": "08"
+    },
+    {
+      "pregunta": "¿Qué diferencia una verdad privada colectiva de una verdad universal?",
+      "respuesta": "La privada colectiva solo la comparte un grupo, como una fe; la universal está corroborada por métodos al alcance de cualquiera.",
+      "cap": "08"
+    },
+    {
+      "pregunta": "Según Marina, ¿cuál es el triunfo de la inteligencia social, y cuál su fracaso definitivo?",
+      "respuesta": "La justicia es su triunfo; la maldad, su fracaso definitivo.",
+      "cap": "08"
+    },
+    {
+      "pregunta": "Según Marina, ¿cuáles son las dos aspiraciones cuya satisfacción armoniosa define la felicidad humana?",
+      "respuesta": "El bienestar y la creación.",
+      "cap": "09"
+    },
+    {
+      "pregunta": "¿Qué es la areté, tal como la retoma Marina de los griegos?",
+      "respuesta": "La excelencia que un talento alcanza tras un trabajo minucioso y sostenido.",
+      "cap": "09"
+    },
+    {
+      "pregunta": "¿Cómo define Marina la creación?",
+      "respuesta": "Hacer que exista algo valioso que antes no existía; no hay creación mala.",
+      "cap": "09"
+    },
+    {
+      "pregunta": "¿Qué distingue al esfuerzo del sufrimiento, según el epílogo?",
+      "respuesta": "El esfuerzo es un dolor elegido y con sentido; el sufrimiento no se elige ni tiene sentido.",
+      "cap": "09"
+    }
+  ],
+  "estadisticas": {
+    "capitulos_totales": 9,
+    "capitulos_con_documento": 9
+  }
+}

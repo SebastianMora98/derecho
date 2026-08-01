@@ -1,0 +1,48 @@
+# Generado por `ema.py dividir`. No editar a mano: se reescribe.
+# El sitio lo usa para mostrar todos los capítulos del libro, tengan o
+# no documento de estudio todavía.
+
+[[capitulos]]
+numero = "01"
+titulo = "Introducción"
+caracteres = 8118
+
+[[capitulos]]
+numero = "02"
+titulo = "I. La inteligencia malograda"
+caracteres = 29934
+
+[[capitulos]]
+numero = "03"
+titulo = "II. Los fracasos cognitivos"
+caracteres = 33540
+
+[[capitulos]]
+numero = "04"
+titulo = "III. Los fracasos afectivos"
+caracteres = 38943
+
+[[capitulos]]
+numero = "05"
+titulo = "IV. Los lenguajes fracasados"
+caracteres = 29687
+
+[[capitulos]]
+numero = "06"
+titulo = "V. El fracaso de la voluntad"
+caracteres = 34816
+
+[[capitulos]]
+numero = "07"
+titulo = "VI. La elección de las metas"
+caracteres = 30123
+
+[[capitulos]]
+numero = "08"
+titulo = "VII. Sociedades inteligentes y sociedades estúpidas"
+caracteres = 46759
+
+[[capitulos]]
+numero = "09"
+titulo = "Epílogo: Elogio de la inteligencia triunfante"
+caracteres = 9771
