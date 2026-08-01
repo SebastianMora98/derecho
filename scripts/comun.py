@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Utilidades compartidas por `ema.py` y `sitio.py`.
+"""Utilidades compartidas por `ema.py`, `contenido.py` y `datos.py`.
 
 Existe por un motivo concreto: la extracción de la idea principal de un
 documento de estudio estaba escrita dos veces, con dos expresiones regulares

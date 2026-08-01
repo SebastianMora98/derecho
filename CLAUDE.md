@@ -15,24 +15,70 @@ prompts/              plantillas editables (esto es lo que se afina)
   artefacto.md        instrucciones para un artefacto HTML suelto
 scripts/
   ema.py              CLI: convertir · dividir · preparar · web · estado
-  comun.py            slugify e idea_principal, compartidos por ema y sitio
+  comun.py            slugify e idea_principal, compartidos por ema y contenido
   limpieza.py         reparación del texto extraído de PDF
   ocr.py              OCR para PDF escaneados (sin capa de texto)
   ocr_vision.swift    helper de OCR con el framework Vision de macOS
-  sitio.py            generador del sitio estático
-estaticos/            estilo.css y tarjetas.js que copia el sitio
-sitio/                HTML generado — se commitea, es lo que Vercel publica
+  contenido.py        lee estudio/*.md y separa capítulo de consolidados — sin HTML
+  datos.py            arma el JSON estructurado a partir de contenido.py
+estaticos/            estilo.css y tarjetas.js — los copia el build de Astro
+web/                  sitio Astro: lee el JSON, arma el HTML (`npm run build`)
+  src/data/           <slug>.json por libro — lo escribe `datos.py`, en git
+  src/pages/          index.astro (lista de libros) y [slug]/index.astro (la hoja)
+  src/components/     Capitulo, Consolidados, IndiceLibro
+  src/lib/            md.ts (markdown-it, único renderizador) y consolidados.ts
+sitio/                HTML que arma Astro — fuera de git, lo reconstruye Vercel
 libros/<slug>/
   libro.toml          ficha editable: autor, nivel, propósito, variantes
   libro.md            conversión completa a Markdown (fuera de git)
+  libro.json          el mismo JSON de web/src/data/, al lado del contenido que describe — en git
   original/           copia del archivo fuente (fuera de git)
   secciones/          NN-titulo.md + indice.md (fuera de git)
   prompts/            prompts ya rellenados (fuera de git)
   capitulos.toml      lista de capítulos que escribe `dividir` — en git, la
-                      usa el sitio para mostrar también los pendientes
+                      usa el JSON para mostrar también los pendientes
   estudio/            NN-titulo.md — los documentos de estudio, en git
   artefactos/         páginas HTML sueltas
 ```
+
+### De HTML directo a JSON + Astro
+
+Hasta acá `scripts/sitio.py` leía `estudio/*.md` y armaba el HTML en las mismas
+funciones: el texto y las etiquetas quedaban soldados, y tocar el render de un
+bloque significaba tocar también su parseo. Se partió en tres capas:
+
+1. **`contenido.py`** (antes `sitio.py`) lee `estudio/*.md` y separa lo que se ve
+   dentro de un capítulo de lo que se consolida por libro. No sabe que existe un
+   HTML.
+2. **`datos.py`** toma esas estructuras, las afina (separa el bloque 2 en
+   párrafos, extrae el código Mermaid crudo, parte las distinciones en sus tres
+   campos) y escribe `libros/<slug>/libro.json` + `web/src/data/<slug>.json`.
+   **Los dos JSON son el mismo archivo por partida doble**: uno vive junto al
+   contenido que describe, el otro es lo que Astro importa en build time.
+3. **`web/`** (Astro, sin componentes de UI: HTML + CSS + `tarjetas.js`, igual
+   que antes) lee esos JSON y arma el HTML. `estilo.css` y `tarjetas.js` se
+   copiaron sin tocar a `web/public/`; el único renderizador de markdown que
+   queda es `web/src/lib/md.ts` (markdown-it, la versión JS de la misma
+   librería que usaba Python).
+
+`ema.py web` sigue siendo el único comando: corre `datos.py` y después
+`npm run build` dentro de `web/`. La primera vez instala `node_modules`.
+**Vercel no necesita Python**: su build es `npm install --prefix web && npm run
+build --prefix web`, y lee directo los JSON ya commiteados — por eso `sitio/`
+dejó de commitearse (lo reconstruye cada deploy) y `web/src/data/*.json` pasó a
+ser lo que antes era `sitio/`: el artefacto versionado que Vercel consume.
+
+**Un bug real salió a la luz al mover el render de las distinciones.** El bloque
+6 separa cada par con una línea en blanco para que sea legible al escribirlo,
+pero eso hace que CommonMark trate la lista como "loose" y envuelva cada ítem en
+un `<p>` (`<li><p><strong>…`). El CSS pinta el acento del par con el selector
+`li > strong`, así que con esa envoltura el color nunca se aplicaba —**en el
+sitio que estuvo en producción hasta este cambio, no solo en la versión
+nueva**. La corrección no fue tocar los 58 documentos: `datos.py` ya parsea cada
+distinción en sus campos (`par`, `texto`, `se_confunden`, `criterio`, `error`),
+así que el renderizador arma el `<ul><li>` a mano desde esos campos en vez de
+pasarle el markdown crudo a `md.render()`. No depende de si el original tiene
+líneas en blanco o no.
 
 ## Comandos
 
@@ -205,26 +251,22 @@ son **2 preguntas y 4 flashcards por capítulo**, con el foco cambiado:
 dirección contraria; ahora mantiene 2 y 4 y lo que hace es apretar el foco (las
 dos preguntas de exposición, respuestas de 5 a 7 oraciones).
 
-### Qué falta alinear en los 58 documentos ya escritos
+### Los 58 documentos ya están alineados a esta regla
 
-Se les quitó «Qué releer del original» y se renumeraron —eso era mecánico y ya
-está hecho—, pero **siguen con la forma vieja en dos puntos**, y las dos
-diferencias son reescritura de contenido, no un `sed`:
-
-1. **El bloque 2 tiene 4 párrafos y unas 400-450 palabras**; la regla nueva pide 2
-   o 3 y hasta 400.
-2. **El test y el mazo van con 4 preguntas y 8 flashcards** por capítulo; la regla
-   nueva pide 2 y 4.
-
-Conviene hacer las dos en **una sola pasada por documento**, y completa por libro:
-un mazo mitad de 4 y mitad de 8, o un libro con capítulos de 2 y de 4 párrafos, se
-nota enseguida. Son 58 documentos —39 de Beccaria y 19 de FS—.
+Se hizo en una tanda: 8 corridas en paralelo, cada una sobre un tramo de
+capítulos de un libro, todas con la misma especificación (recortar el bloque 2 a
+2 o 3 párrafos, bajar el test a 2 preguntas y el mazo a 4 flashcards, sin tocar
+título, idea principal, mapa, vocabulario ni distinciones). Verificado
+documento por documento contra `medir.py` y contra el conteo total: Beccaria
+cierra en 39×2 = 78 preguntas y 39×4 = 156 flashcards; FS en 19×2 = 38 y
+19×4 = 76. El build no emitió ningún aviso —ni término de glosario duplicado, ni
+par pregunta/respuesta descalzado, ni bloque faltante— en los 58.
 
 Contratos con el código que no hay que romper:
 
 - **Los cuatro títulos son claves de extracción.** Un `##` cuyo título contenga
   «vocabulario», «distinciones», «autoevaluacion» o «flashcards» sale del capítulo
-  y va al consolidado (`sitio.py: destino_del_bloque`). Es lista blanca de
+  y va al consolidado (`contenido.py: destino_del_bloque`). Es lista blanca de
   extracción, no de visibilidad: lo que no clasifica queda visible, así que
   renombrar un bloque lo hace reaparecer feo en el capítulo en vez de
   desaparecer callado.
@@ -239,27 +281,49 @@ Contratos con el código que no hay que romper:
   empareja nada y caen todas juntas al final, con aviso en consola.
 - **Flashcards** — al final del archivo, una por línea, `Pregunta | Respuesta`,
   sin markdown adentro (el sitio escapa el texto).
-- **6. Distinciones** — la lista va **pegada**, sin líneas en blanco entre ítems, o
-  se pierde el color de acento del par (`estilo.css`: el selector es
-  `li > strong`, y con líneas en blanco el markdown mete un `<p>` en medio). Este
-  contrato **era del vocabulario y se mudó acá**: el vocabulario ya no se
-  renderiza desde markdown crudo, el sitio lo parsea y lo re-arma como `<dl>`.
+- **6. Distinciones** — se escribe en forma de lista, un ítem por par con sus
+  tres subítems (`Se confunden porque` / `Criterio para decidir` / `Dónde se
+  cae`), pegada o con líneas en blanco entre pares: `datos.py: parsear_distinciones`
+  la separa en campos (`par`, `texto`, `se_confunden`, `criterio`, `error`) por
+  regex, y el sitio arma el `<ul><li>` a mano desde esos campos — no le pasa el
+  markdown crudo a un renderizador. Esto **corrigió un bug real**: con líneas en
+  blanco entre pares, CommonMark trataba la lista como "loose" y envolvía cada
+  ítem en un `<p>`, con lo que el selector CSS `li > strong` —el que pinta el
+  acento del par— nunca coincidía. Pasó inadvertido en el sitio HTML directo
+  porque nadie miró el color con la lupa puesta ahí. El vocabulario tiene el
+  mismo tratamiento: no se renderiza desde markdown crudo, se parsea y se
+  re-arma como `<dl>`.
 
 `ema.py preparar` le pasa al prompt, además de las ideas principales anteriores,
 **la lista de términos que el glosario ya tiene**, con la instrucción de no
 redefinirlos. Eso evita la duplicación en el origen; el deduplicado del sitio es
-solo la red. Con los seis documentos actuales el build no emite ningún aviso.
+solo la red. Con los 58 documentos actuales el build no emite ningún aviso.
 
-El documento no puede escribir HTML crudo ni anclas propias: los `id` los pone
-`sitio.py: anclar`, que además le saca el número al encabezado visible. Tampoco
-casillas `- [ ]`, notas al pie, callouts ni atributos `{.clase}`: no hay plugins
-de markdown instalados y se ven como caracteres sueltos.
+El documento no puede escribir HTML crudo ni anclas propias: dentro de un
+capítulo las únicas tres anclas posibles (`#sNN-idea-principal`,
+`#sNN-lo-esencial-del-capitulo`, `#sNN-mapa`) son fijas, porque los tres títulos
+visibles nunca cambian (`web/src/lib/anclas.ts`). Tampoco casillas `- [ ]`,
+notas al pie, callouts ni atributos `{.clase}`: no hay plugins de markdown
+instalados en `web/src/lib/md.ts` y se ven como caracteres sueltos.
 
 ## Sitio y despliegue
 
-`ema.py web` regenera `sitio/` completo desde `libros/*/estudio/*.md`. Es HTML
-plano: sin build y sin framework. `vercel.json` apunta a `sitio/` sin comando de
-build, así que Vercel solo sirve los archivos.
+`ema.py web` regenera todo desde `libros/*/estudio/*.md`: corre `datos.py`
+(escribe `libros/<slug>/libro.json` y `web/src/data/<slug>.json`) y después
+`npm run build` dentro de `web/` (Astro), que arma `sitio/`. Sigue sin haber
+framework de UI: el HTML final tiene la misma estructura que antes —capítulos
+en `<details>`, Mermaid diferido, flashcards con `<button>`— y usa el mismo
+`estilo.css` y `tarjetas.js`, sin tocar. Lo que cambió es de dónde sale el
+contenido: antes `sitio.py` leía el markdown y armaba el HTML en las mismas
+funciones; ahora `contenido.py` + `datos.py` lo dejan en JSON, y `web/` es lo
+único que sabe de HTML.
+
+`vercel.json` corre `npm install --prefix web && npm run build --prefix web` y
+sirve `sitio/`. **`sitio/` ya no se commitea** — Vercel lo reconstruye en cada
+deploy a partir de `web/src/data/*.json`, que sí está en git. Si se edita un
+documento de estudio hay que correr `ema.py web` igual que antes para que el
+JSON quede al día; lo que cambia es que ya no hay que revisar un diff de HTML
+gigante en cada push, porque el HTML no viaja por git.
 
 **Cada libro es UNA página**: `sitio/<libro>/index.html` trae la jerarquía
 completa del original con la idea principal de cada capítulo, y cada capítulo
@@ -293,13 +357,13 @@ Detalles del diseño que no son obvios y ya costaron una vuelta:
 - Los `id` van namespaceados con `sNN-`. En una sola hoja hay tantos
   `vocabulario-clave` y `flashcards` como capítulos, y sin prefijo las anclas
   colisionan. Por eso `recolectar` avisa si dos documentos repiten el número.
-- **Mermaid vive en `estaticos/tarjetas.js`, no en `sitio.py`**, y se carga con
-  `import()` dinámico cuando un diagrama se acerca a la pantalla
-  (`IntersectionObserver`). Arrancar treinta y nueve diagramas al cargar es
-  inaceptable, y uno dentro de un `<details>` cerrado mide cero de ancho, así que
-  Mermaid lo calcularía mal. El observador resuelve las dos cosas: un elemento en
-  `display:none` nunca intersecta, y avisa recién cuando el capítulo se abre, con
-  el ancho real.
+- **Mermaid vive en `estaticos/tarjetas.js`**, copiado sin tocar a
+  `web/public/tarjetas.js`, y se carga con `import()` dinámico cuando un
+  diagrama se acerca a la pantalla (`IntersectionObserver`). Arrancar treinta y
+  nueve diagramas al cargar es inaceptable, y uno dentro de un `<details>`
+  cerrado mide cero de ancho, así que Mermaid lo calcularía mal. El observador
+  resuelve las dos cosas: un elemento en `display:none` nunca intersecta, y
+  avisa recién cuando el capítulo se abre, con el ancho real.
 - El botón "Abrir todos los capítulos" existe porque el navegador **no busca
   dentro de un `<details>` cerrado**: con todo abierto, Cmd-F recorre el libro
   entero.
@@ -314,20 +378,21 @@ Detalles del diseño que no son obvios y ya costaron una vuelta:
 - Todo lo que puede ser destino de un ancla necesita `scroll-margin-top`, no solo
   los encabezados: la sección de flashcards también, o la barra fija la tapa.
 
-El sitio se commitea. Si cambia un documento de estudio y no se corre `web`,
-lo publicado queda desactualizado. Ojo con el diff: cada corrida reescribe la
-hoja entera de cada libro, así que agregar un capítulo cambia un archivo grande.
+`web/src/data/*.json` se commitea; `sitio/` no. Si cambia un documento de
+estudio y no se corre `web`, el JSON queda desactualizado y el próximo deploy
+publica lo viejo. Ojo con el diff del JSON: cada corrida reescribe el archivo
+del libro entero, así que agregar un capítulo cambia un archivo grande.
 
 Está publicado en https://derecho-five.vercel.app (proyecto `derecho` del team
 `sebastianmora98s-projects`, importado desde GitHub: cada push a `main`
 redespliega).
 
-**No volver a activar `cleanUrls` en `vercel.json`.** El motivo original —que
-rompía los enlaces relativos `02.html` del índice— ya no aplica, porque esos
-enlaces son anclas dentro de la misma hoja. Pero sigue siendo mala idea: los
-enlaces a `estilo.css` y `tarjetas.js` siguen siendo relativos, y `cleanUrls`
-sirve el índice del libro en `/<slug>` sin barra final, así que cualquier ruta
-relativa se resuelve contra la raíz.
+Los enlaces a `estilo.css`, `tarjetas.js` y entre libros son **absolutos**
+(`/estilo.css`, `/beccaria-delitos-y-penas/index.html`), no relativos: es lo que
+usa `web/src/layouts/Base.astro`. Con eso, activar `cleanUrls` no debería romper
+nada por el motivo viejo (rutas relativas resolviéndose contra la raíz cuando
+`/<slug>` se sirve sin barra final), pero no hay necesidad de activarlo — no
+está probado y no resuelve nada que haga falta.
 
 El repositorio es `SebastianMora98/derecho` y el remoto va **por SSH**: el
 `gh` CLI de esta máquina está autenticado con otra cuenta
@@ -350,16 +415,16 @@ lista corrida. Dividido con `--nivel 2` → **39 secciones** («Al lector»,
 `formato_citas = "capitulos"`: el autor numera sus capítulos y esta edición no
 preservó la paginación.
 
-**Está completo: las 39 secciones tienen documento de estudio.** El libro entero
-queda en 154 términos de glosario, 155 preguntas y 312 flashcards, y la hoja pesa
-420 KB crudos / 111 KB gzip —el doble que el otro libro, porque tiene el doble de
-capítulos—. Los 39 diagramas Mermaid compilan, verificado en el navegador
-abriendo la hoja entera. Todos los documentos entran en los tres topes (1.400
-palabras totales, 700 la parte visible, 450 el bloque 2), igual que los 19 de FS.
+**Está completo: las 39 secciones tienen documento de estudio, alineado a la
+plantilla condensada.** El libro entero queda en 154 términos de glosario, 78
+preguntas (2 por capítulo) y 156 flashcards (4 por capítulo), y la hoja pesa
+348 KB crudos / 95 KB gzip. Los 39 diagramas Mermaid compilan, verificado en el
+navegador abriendo la hoja entera. Todos los documentos entran en los tres topes
+(1.100 palabras totales, 500 la parte visible, 400 el bloque 2), igual que los
+19 de FS.
 
-**Sin la variante `examen`**, por el mismo motivo que en el otro libro: pedía 12
-flashcards y 5 preguntas, y los documentos ya escritos iban con 8 y 4. La
-cantidad quedó pareja para los 39.
+**Sin la variante `examen`**, por el mismo motivo que en el otro libro: mantiene
+2 preguntas y 4 flashcards, y solo aprieta el foco de la variante base.
 
 La conversión está verificada byte a byte contra el PDF: 47/47 capítulos, y el
 delta de palabras por capítulo es exactamente la cantidad de números de página
@@ -381,14 +446,13 @@ en `[[partes]]`; de ahí saca el sitio la jerarquía. Dividido con `--nivel 2` �
 **19 secciones** (§ 53 a § 74, con 3 que juntan parágrafos cortos).
 `formato_citas = "paginas"` porque el escaneo conservó los folios.
 
-**Está completo: los 19 capítulos tienen documento de estudio.** El libro entero
-queda en 81 términos de glosario, 76 preguntas y 152 flashcards, y la hoja pesa
-212 KB crudos / 52 KB gzip.
+**Está completo: los 19 capítulos tienen documento de estudio, alineado a la
+plantilla condensada.** El libro entero queda en 81 términos de glosario, 38
+preguntas (2 por capítulo) y 76 flashcards (4 por capítulo), y la hoja pesa
+176 KB crudos / 44 KB gzip.
 
-**Sin la variante `examen`, a propósito.** Pedía 12 flashcards y 5 preguntas por
-capítulo; con el mazo y el test consolidados por libro eso daba 228 tarjetas y 95
-preguntas, y los primeros documentos ya iban con 8 y 4. Un mazo mezclado se nota,
-así que la cantidad quedó pareja en 8 y 4 para los 19.
+**Sin la variante `examen`, a propósito**: mantiene 2 preguntas y 4 flashcards
+por capítulo, igual que la variante base.
 
 Dos cosas que aprendió esta tanda y conviene repetir:
 

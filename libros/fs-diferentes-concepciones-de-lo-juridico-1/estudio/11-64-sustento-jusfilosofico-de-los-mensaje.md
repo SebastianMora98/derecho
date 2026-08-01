@@ -8,13 +8,11 @@ Contesta de dónde sale el personalismo de ese código, y es el capítulo más f
 
 ## 2. Lo esencial del capítulo
 
-El Código Civil de 1984 representa un cambio radical frente a lo que imperaba en el Perú: una visión formalista que venía desde los albores de la República y se concretaba en la Constitución de 1933 y el Código de 1936, donde el derecho giraba en torno a la norma y "la más importante institución a proteger era la inviolable propiedad y no la persona humana" (p. 152). El autor la califica de ochocentista y positivista, con individualismo exacerbado y patrimonialismo, y sostiene que por eso quedaban postergados valores como el deber genérico de no dañar, la solidaridad y el bien común.
+El Código Civil de 1984 representa un cambio radical frente a lo que imperaba en el Perú: una visión formalista que venía desde los albores de la República y se concretaba en la Constitución de 1933 y el Código de 1936, donde el derecho giraba en torno a la norma y "la más importante institución a proteger era la inviolable propiedad y no la persona humana" (p. 152). El autor la califica de ochocentista y positivista, con individualismo exacerbado y patrimonialismo, y sostiene que por eso quedaban postergados el deber genérico de no dañar, la solidaridad y el bien común. El giro viene de afuera del derecho: la filosofía de la existencia es "una angustiada respuesta a los horrores" de las dos guerras mundiales, y de ahí nace el interés por conocer mejor al ser humano para protegerlo (pp. 152-153).
 
-El giro viene de afuera del derecho. La filosofía de la existencia es, entre otras cosas, "una angustiada respuesta a los horrores" de las dos guerras mundiales, y de ahí nace la preocupación por conocer mejor al ser humano para protegerlo. Los filósofos abandonan el interés por el ser de las cosas y se vuelcan a la persona (pp. 152-153). Lo que encuentran es una definición nueva: el ser humano ya no es un "animal racional" sino una unidad psicosomática sustentada en su libertad, cuya existencia solo es concebible dentro de la coexistencialidad y la temporalidad. Es un **ser libertad**, y esa libertad es lo que Scheler llama espíritu. El autor contrasta esto con la definición de Boecio del siglo VI —una sustancia indivisa de naturaleza racional—: acierta en la unidad, pero se queda corta porque no da cuenta de la libertad constitutiva.
+Lo que esa filosofía encuentra es una definición nueva: el ser humano ya no es un "animal racional" sino una unidad psicosomática sustentada en su libertad, cuya existencia solo es concebible dentro de la coexistencialidad y la temporalidad. Es un **ser libertad**, y esa libertad es lo que Scheler llama espíritu; frente a la definición de Boecio del siglo VI —una sustancia indivisa de naturaleza racional—, acierta en la unidad pero se queda corta porque no da cuenta de la libertad constitutiva. De ahí el argumento central, que tiene forma condicional: el derecho carecería de sentido si su destinatario no fuera libre, porque solo a quien puede decidir se le propone cumplir o incumplir un deber —a un robot no se le plantea esa dicotomía—; pero la libertad sola no alcanza, porque el derecho no se hizo para un hombre aislado y solo le interesan las conductas intersubjetivas.
 
-De ahí sale el argumento central, y tiene forma condicional: el derecho carecería de sentido si su destinatario no fuera libre, porque solo a quien puede decidir se le propone cumplir o incumplir un deber. A un robot no se le puede plantear esa dicotomía. Pero la libertad sola no alcanza: tampoco tendría sentido si la persona no fuera coexistencial, porque el derecho no se hizo para un hombre aislado y solo las conductas intersubjetivas le interesan. De las dos juntas sale su doble papel: proteger a la persona como ser libre e impedir que al ejercer esa libertad dañemos "el proyecto existencial del otro". Ser libre impone el deber genérico de no dañar.
-
-El tercer rasgo es la temporalidad: la vida coexistencial transcurre en un tiempo limitado, y en ese "tiempo existencial" la persona le da sentido a su vida mediante un proyecto según su vocación. Justo ahí la conversión rompió el texto —la palabra queda partida en "tan fu-" y sigue un resto de cabecera— así que ese pasaje conviene leerlo en el original (p. 158). El cierre es duro: quien ignora la consistencia de su propio ser podrá ser un experto operador del aparato normativo, pero nunca alcanzará el nivel del jurista.
+De las dos juntas sale su doble papel: proteger a la persona como ser libre e impedir que al ejercer esa libertad dañemos "el proyecto existencial del otro". Ser libre impone el deber genérico de no dañar. El tercer rasgo es la temporalidad: la vida coexistencial transcurre en un tiempo limitado, y en ese "tiempo existencial" la persona le da sentido a su vida mediante un proyecto según su vocación —justo ahí la conversión rompió el texto, con la palabra partida en "tan fu-" y un resto de cabecera, así que ese pasaje conviene leerlo en el original (p. 158)—. El cierre es duro: quien ignora la consistencia de su propio ser podrá ser un experto operador del aparato normativo, pero nunca alcanzará el nivel del jurista.
 
 ## 3. Mapa
 
@@ -59,25 +57,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un legislador sostiene que basta con proteger bien la propiedad para que las personas puedan realizarse. Según este capítulo, ¿qué concepción del ser humano está suponiendo?
-2. El autor argumenta que el derecho carecería de sentido si el hombre no fuera libre, y usa el ejemplo del robot. ¿Qué prueba exactamente ese argumento y qué no prueba?
-3. Dedica varias páginas a filosofía antes de hablar del código, y se anticipa a que un "desprevenido lector" lo crea impertinente. ¿Está justificado ese rodeo?
-4. Del ser libre deriva el deber genérico de no dañar. ¿Es una deducción o hace falta algo más para llegar de una a otro?
+1. Explique por qué el derecho carecería de sentido si la persona no fuera libre y coexistencial, y qué implicaciones tiene eso para lo que un código debe proteger.
+2. Un legislador sostiene que basta con proteger bien la propiedad para que las personas puedan realizarse. ¿Qué concepción del ser humano está suponiendo?
 
 --- No mires esto hasta responder ---
 
-1. Una individualista y patrimonialista: la del siglo XIX que el autor atribuye al Código de 1936, donde la institución central era la propiedad y no la persona (p. 152). Omite que la realización requiere coexistencia y que el derecho protege también al otro.
-2. Prueba que la estructura de mandar y prohibir presupone un destinatario capaz de elegir: sin libertad, la dicotomía permitido/prohibido no tiene a quién dirigirse. No prueba que el hombre sea efectivamente libre; eso lo toma de la filosofía de la existencia.
-3. Sí, porque su tesis es que la concepción del ser humano determina qué protege un código. Sin mostrar primero qué idea de persona trae la filosofía de la existencia, el personalismo del código quedaría como una preferencia y no como una consecuencia.
-4. Hace falta algo más. De ser libre se sigue que puedo dañar, no que no deba. El paso lo da la coexistencialidad: si mi libertad convive con la de otros, ejercerla sin límite destruye la del otro. El texto lo enuncia junto pero el eslabón es la coexistencia. Discutible: puede leerse como parte del mismo concepto de libertad situada.
+1. Porque la estructura misma del derecho —mandar, prohibir, permitir— presupone un destinatario capaz de decidir: solo a quien puede elegir se le propone cumplir o incumplir un deber, y a un robot no se le plantea esa dicotomía. Pero la libertad sola no alcanza: el derecho no se hizo para un hombre aislado y solo le interesan las conductas intersubjetivas, así que hace falta también la coexistencialidad. De las dos juntas sale su doble papel: proteger a la persona como ser libre e impedir que al ejercer esa libertad dañe "el proyecto existencial del otro" (pp. 152-153). La implicación para un código es que la institución central deja de ser la propiedad y pasa a ser la persona, con el deber genérico de no dañar, la solidaridad y el bien común.
+2. Una individualista y patrimonialista: la del siglo XIX que el autor atribuye al Código de 1936 y a la Constitución de 1933, donde la institución central era la inviolable propiedad y no la persona humana (p. 152). Omite que la realización requiere coexistencia, y que por eso el derecho protege también el proyecto de vida del otro.
 
 ## Flashcards
 
-Qué institución protegía sobre todo el Código Civil peruano de 1936 | La inviolable propiedad, no la persona humana
-De qué es respuesta la filosofía de la existencia según el autor | De los horrores de las dos guerras mundiales del siglo XX
 Cómo define al ser humano la filosofía de la existencia según este capítulo | Como una unidad psicosomática sustentada en su libertad, coexistencial y temporal
 Qué significa que el hombre sea un ser libertad | Que su libertad no es un atributo más sino lo que lo constituye
-Cómo llama Scheler a la libertad que distingue al hombre | Espíritu
 Por qué carecería de sentido el derecho si el hombre no fuera libre | Porque solo a quien puede elegir se le propone cumplir o incumplir un deber
-Qué le falta a la definición de Boecio del ser humano | La libertad: acierta en la unidad pero lo caracteriza solo como racional
-Qué deber se sigue de ser libre entre otros libres | El deber genérico de no dañar el proyecto existencial del otro
+Qué institución protegía sobre todo el Código Civil peruano de 1936 | La inviolable propiedad, no la persona humana

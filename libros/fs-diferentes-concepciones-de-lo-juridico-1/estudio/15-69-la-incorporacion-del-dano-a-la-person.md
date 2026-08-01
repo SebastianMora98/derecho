@@ -8,13 +8,11 @@ Contesta cómo el personalismo pasó de idea a artículo. Es el capítulo más c
 
 ## 2. Lo esencial del capítulo
 
-El Código de 1936 privilegiaba la responsabilidad civil por daños a las cosas, al patrimonio: los que generan perjuicios valuables en dinero (p. 172). El daño a la persona era irrelevante para el derecho. A lo más se tenía en cuenta el "daño moral" o *pretium doloris* —el dolor, el sufrimiento—, que el autor llama designación jurídicamente exótica y que en rigor es un daño psíquico, referido a un solo aspecto del ser humano. Bajo esa concepción solo se resarcía lo que derivaba en daño emergente o lucro cesante, y quedaban sin reparación los daños a la vida, a la libertad, al honor, a la identidad, a la intimidad. La fórmula con que lo resume es la más filosa: se privilegiaba "el haber sobre el ser".
+El Código de 1936 privilegiaba la responsabilidad civil por daños al patrimonio, o sea los perjuicios valuables en dinero (p. 172); el daño a la persona era irrelevante para el derecho. A lo más se tenía en cuenta el "daño moral" o *pretium doloris* —el dolor, el sufrimiento—, designación que el autor llama jurídicamente exótica y que en rigor cubre un daño psíquico, un solo aspecto del ser humano. Bajo esa concepción solo se resarcía lo que derivaba en daño emergente o lucro cesante, y quedaban sin reparación los daños a la vida, la libertad o el honor. La fórmula con que lo resume es la más filosa: se privilegiaba "el haber sobre el ser".
 
-El relato personal explica de dónde salió la figura. El autor vivió e investigó en Italia entre 1977 y 1983, donde vio nacer el daño a la persona y leyó a Alpa y Busnelli, que llegaron a cambiarle el nombre por "daño biológico" y "daño a la salud" para hacerlo aplicable con las normas que tenían. Al volver convenció a la Comisión Revisora de incorporarlo, y reconoce que no fue fácil: la figura no tenía antecedentes legislativos ni había llegado a la región. Lo llama "un acto de fe". En el Congreso Internacional de Lima de 1985 lo presentó y usó por primera vez la expresión "daño al proyecto de vida", definido como el daño cuya consecuencia es la frustración del proyecto de vida de la persona (p. 171).
+El relato es en primera persona: el autor vivió e investigó en Italia entre 1977 y 1983, donde vio nacer el daño a la persona y leyó a Alpa y Busnelli, y al volver convenció a la Comisión Revisora de incorporarlo, sin antecedentes legislativos en la región. Lo llama "un acto de fe". En el Congreso Internacional de Lima de 1985 usó por primera vez la expresión "daño al proyecto de vida", definido como el daño cuya consecuencia es la frustración del proyecto de vida de la persona (p. 171).
 
-El aporte se mide por comparación, y ahí está el argumento más verificable. Los códigos alemán de 1900 e italiano de 1942 ya establecían el deber de resarcir consecuencias extrapatrimoniales, pero con límites estrictos: el alemán enumeraba taxativamente los casos indemnizables y el italiano supeditaba la reparación a que antes se hubiera consumado un delito; el portugués de 1967 la restringía a los casos "graves". El art. 1985 peruano, en cambio, obliga a reparar **sin limitación alguna** las consecuencias patrimoniales y extrapatrimoniales de un daño a la persona, entendida como unidad psicosomática sustentada en su libertad (pp. 172-173).
-
-El cierre despliega qué entra en esa noción. Por un lado los daños a la libertad fenoménica, es decir al proyecto de vida, que en casos límite crean un vacío existencial capaz de llevar a la adicción o al suicidio. Por otro los daños a la estructura psicosomática —cuerpo, psique, salud—, llamados biológicos, que según su gravedad comprometen la calidad de vida: el daño al bienestar.
+El aporte se mide por comparación, y ahí está el argumento más verificable. Los códigos alemán de 1900 e italiano de 1942 ya establecían el deber de resarcir consecuencias extrapatrimoniales, pero con límites estrictos —una lista taxativa de casos indemnizables en el alemán, la exigencia de un delito previo en el italiano—, y el portugués de 1967 la restringía a los casos "graves". El art. 1985 peruano, en cambio, obliga a reparar **sin limitación alguna** las consecuencias patrimoniales y extrapatrimoniales de un daño a la persona, entendida como unidad psicosomática sustentada en su libertad (pp. 172-173). Esa noción cubre tanto los daños a la libertad fenoménica, o sea al proyecto de vida, como los daños biológicos a la estructura psicosomática.
 
 ## 3. Mapa
 
@@ -58,25 +56,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Una persona pierde la posibilidad de ejercer su oficio por una lesión, pero conserva su patrimonio y no sufre dolor físico. ¿Habría tenido reparación bajo el Código de 1936? ¿Y bajo el art. 1985?
-2. Un abogado sostiene que el Código de 1984 fue el primer código del mundo en reparar daños no patrimoniales. ¿Qué le corregirías con lo que dice este capítulo?
-3. El autor cuenta su propia gestión ante la Comisión Revisora y llama "acto de fe" a la decisión. ¿Eso refuerza o debilita su argumento sobre el valor de la figura?
-4. La noción de daño a la persona se define sin límites, y de ahí su ventaja. ¿Qué problema le crea eso a un juez?
+1. ¿Qué se entiende por daño a la persona? Explique en qué se distingue del daño moral y cuáles son las implicaciones de repararlo sin limitación alguna.
+2. Una persona pierde la posibilidad de ejercer su oficio por una lesión, pero conserva su patrimonio y no sufre dolor físico. ¿Habría tenido reparación bajo el Código de 1936? ¿Y bajo el art. 1985?
 
 --- No mires esto hasta responder ---
 
-1. Bajo el de 1936 muy probablemente no: no hay perjuicio valuable directamente en dinero ni dolor, y solo se resarcía daño emergente o lucro cesante, más excepcionalmente el daño moral. Bajo el art. 1985 sí: es un daño a la libertad fenoménica, o sea al proyecto de vida (pp. 172-174).
-2. Que los códigos alemán de 1900 e italiano de 1942 ya establecían el deber de resarcir consecuencias extrapatrimoniales. Lo primero fue reparar el daño a la persona **sin limitación alguna**, donde los otros lo ataban a una lista taxativa, a un delito previo o a la gravedad.
-3. Las dos cosas. Refuerza el relato histórico, porque es testimonio directo de cómo entró la figura. Lo debilita como evaluación, porque el autor es a la vez promotor y juez del aporte, y "acto de fe" admite que se decidió sin antecedentes ni evidencia.
-4. Le deja sin criterio de cuantificación: si cualquier daño al ser humano es reparable y no hay lista ni tope, hay que decidir caso por caso cuánto vale una frustración del proyecto de vida. El capítulo celebra la amplitud y no discute ese costo. Discutible: el autor diría que esa es tarea propia del juez y no del código.
+1. El daño a la persona es la categoría genérica que incorpora el art. 1985 del Código Civil peruano de 1984: cualquier daño al ser humano entendido como unidad psicosomática sustentada en su libertad, tanto en su estructura psicosomática —cuerpo, psique, salud— como en su libertad fenoménica, o sea su proyecto de vida (pp. 172-173). Se distingue del daño moral o *pretium doloris* porque este es solo el dolor o sufrimiento, un daño psíquico referido a un aspecto del ser humano, y era el único rótulo no patrimonial disponible bajo el Código de 1936, que privilegiaba "el haber sobre el ser" (p. 172). La implicación central es que la reparación no queda condicionada: donde el código alemán de 1900 enumeraba taxativamente los casos, el italiano de 1942 exigía un delito previo y el portugués de 1967 pedía gravedad, el art. 1985 obliga a reparar sin limitación alguna las consecuencias patrimoniales y extrapatrimoniales. La contrapartida es que deja al juez sin criterio de cuantificación, cosa que el capítulo no discute.
+2. Bajo el de 1936 muy probablemente no: no hay perjuicio valuable directamente en dinero ni dolor, y solo se resarcía daño emergente o lucro cesante, más excepcionalmente el daño moral. Bajo el art. 1985 sí: es un daño a la libertad fenoménica, o sea al proyecto de vida, y se repara sin limitación alguna (pp. 172-174).
 
 ## Flashcards
 
-Qué artículo del Código Civil peruano de 1984 incorporó el daño a la persona | El artículo 1985
-Qué se reparaba bajo el Código Civil de 1936 | Los daños valuables en dinero: daño emergente y lucro cesante
-Qué es el pretium doloris | El daño moral: el dolor o sufrimiento de la víctima
-Con qué fórmula resume el autor la concepción patrimonialista | Que privilegiaba el haber sobre el ser
-Dónde y cuándo vio nacer el autor la figura del daño a la persona | En Italia, entre 1977 y 1983, con Alpa y Busnelli
-Cuándo se usó por primera vez la expresión daño al proyecto de vida | En el Congreso Internacional de Lima de 1985
+Qué es el daño a la persona en el art. 1985 del Código peruano de 1984 | Cualquier daño al ser humano, en su estructura psicosomática o en su libertad
 Qué es el daño al proyecto de vida | El daño cuya consecuencia es la frustración del proyecto de vida de la persona
 Por qué el art. 1985 es distinto de los códigos alemán, italiano y portugués | Porque repara sin limitación alguna, sin lista taxativa, delito previo ni requisito de gravedad
+Cómo distingo el daño moral del daño a la persona | El moral es solo el dolor o sufrimiento; el daño a la persona es el género que cubre cuerpo, psique y libertad

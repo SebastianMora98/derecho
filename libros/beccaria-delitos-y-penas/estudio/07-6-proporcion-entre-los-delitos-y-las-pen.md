@@ -8,13 +8,9 @@ Contesta cómo se decide cuánto castigar. Es el capítulo que da la vara de med
 
 ## 2. Lo esencial del capítulo
 
-El interés común no es solo que no se cometan delitos, sino que sean menos frecuentes **en proporción al mal que causan** (cap. 6). De ahí la regla: los motivos que retraen del delito deben ser más fuertes a medida que la acción es más contraria al bien público y a medida de los estímulos que inducen a cometerla. Notar que la proporción tiene dos variables, no una: el daño y la tentación. Advierte enseguida que prevenir todos los desórdenes es imposible en el combate universal de las pasiones, así que "en la aritmética política" hay que sustituir la exactitud matemática por el cálculo de probabilidad.
+El interés común no es solo que no se cometan delitos, sino que sean menos frecuentes **en proporción al mal que causan** (cap. 6): los motivos que retraen del delito deben ser más fuertes a medida que la acción es más contraria al bien público y a medida de los estímulos que inducen a cometerla. La proporción tiene entonces dos variables y no una, el daño y la tentación. Como prevenir todos los desórdenes es imposible en el combate universal de las pasiones, "en la aritmética política" hay que sustituir la exactitud matemática por el cálculo de probabilidad. La imagen que sigue explica qué hace una pena: hay una fuerza semejante a un cuerpo grave que empuja hacia el bienestar propio y solo se detiene a medida de los estorbos que se le oponen, y las penas son esos **estorbos políticos**, que impiden el mal efecto sin destruir la causa impelente, la sensibilidad misma, inseparable del hombre.
 
-Sigue la imagen que explica qué hace una pena. Hay una fuerza semejante a un cuerpo grave que empuja hacia nuestro bienestar y que solo se detiene a medida de los estorbos que se le oponen; las penas son esos **estorbos políticos**: impiden el mal efecto sin destruir la causa impelente, que es la sensibilidad misma, inseparable del hombre. Por eso el legislador hace como el hábil arquitecto, que se opone a las direcciones ruinosas de la gravedad y mantiene las que sostienen el edificio. No se busca suprimir el interés propio, sino redirigirlo.
-
-De ahí sale la **escala de desórdenes**. Su primer grado son las acciones que destruyen inmediatamente la sociedad; el último, la más pequeña injusticia posible contra un miembro particular. Entre esos dos extremos caben todos los delitos, que van aminorándose "por grados insensibles". Si la geometría fuera adaptable a las acciones humanas debería haber una escala de penas exactamente correspondiente, pero basta con que el sabio legislador señale los puntos principales sin turbar el orden, es decir sin decretar contra los delitos del primer grado las penas del último. Y Beccaria agrega una consecuencia que va más allá del derecho penal: una escala exacta daría una medida común y probable de los grados de tiranía y de libertad de cada nación.
-
-El último tramo saca la conclusión negativa. Cualquier acción fuera de esos dos límites no puede llamarse delito salvo por quien encuentra su interés en darle ese nombre. La incertidumbre de los límites produjo una moral que contradice a la legislación y una multitud de normas que exponen al hombre de bien a penas rigurosas. Leyendo los códigos con ojos de filósofo se ve que los nombres de vicio y virtud cambian con los siglos según las pasiones y errores de los legisladores: las pasiones de un siglo son la base de la moral del siguiente. El cierre es el argumento práctico: si se destina una pena igual a dos delitos que ofenden desigualmente, los hombres no encontrarán estorbo para cometer el mayor cuando hallen en él mayor ventaja.
+De ahí sale la **escala de desórdenes**: su primer grado son las acciones que destruyen inmediatamente la sociedad y el último la más pequeña injusticia posible contra un miembro particular, y entre esos extremos caben todos los delitos, aminorándose "por grados insensibles" (cap. 6). No hace falta la correspondencia exacta que daría la geometría; basta con que el sabio legislador señale los puntos principales sin turbar el orden, es decir sin decretar contra los delitos del primer grado las penas del último. Beccaria agrega que una escala exacta daría además la medida común de los grados de tiranía y de libertad de cada nación, y que fuera de esos dos límites no hay delito salvo para quien encuentra su interés en darle ese nombre —de ahí que los nombres de vicio y virtud cambien con los siglos según las pasiones de los legisladores—. El cierre es el argumento práctico: si dos delitos que ofenden desigualmente reciben pena igual, los hombres no encontrarán estorbo para cometer el mayor cuando hallen en él mayor ventaja.
 
 ## 3. Mapa
 
@@ -57,25 +53,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Dos delitos de daño muy distinto reciben la misma pena. Según el cierre del capítulo, ¿qué efecto práctico tiene?
-2. La proporción se mide por el daño y también por los estímulos que inducen al delito. ¿Por qué agrega esa segunda variable?
-3. Beccaria dice que los nombres de vicio y virtud cambian con las revoluciones de los siglos. ¿Eso lo vuelve relativista?
-4. Sostiene que una escala exacta daría la medida de la tiranía y la libertad de una nación. ¿Qué está afirmando ahí?
+1. ¿Qué se entiende por proporción entre los delitos y las penas? Explique en qué consiste la escala de desórdenes y cuáles son sus implicaciones.
+2. Dos delitos de daño muy distinto reciben la misma pena. Según el cierre del capítulo, ¿qué efecto práctico tiene?
 
 --- No mires esto hasta responder ---
 
-1. Que los hombres no encontrarán un estorbo fuerte para cometer el mayor, si en él hallan unida mayor ventaja. La desproporción no solo es injusta: es contraproducente, porque iguala el precio de acciones de precio distinto (cap. 6).
-2. Porque la pena tiene que competir con el atractivo del delito. Un delito muy tentador necesita más estorbo para producir el mismo efecto disuasivo, aunque su daño sea igual al de otro menos tentador. La proporción es con el daño, pero calibrada por la resistencia que hay que vencer.
-3. No: es lo contrario. Denuncia esa variación como prueba de que los legisladores siguieron sus pasiones y no el interés común. Su vara —el daño a la sociedad, entre los dos límites de la escala— pretende ser justamente lo que no cambia con los siglos ni con los ríos y las montañas.
-4. Que el derecho penal de un país es un indicador medible de su régimen político. Si las penas siguen la escala del daño, hay libertad; si castigan lo inofensivo o igualan lo desigual, hay tiranía. Es lo que convierte al libro en crítica política y no solo técnica.
+1. La proporción es la correspondencia entre el daño que el delito hace a la sociedad y la fuerza de la pena: los motivos que retraen del delito deben ser más fuertes a medida que la acción es más contraria al bien público y a medida de los estímulos que inducen a cometerla, de modo que la vara tiene dos variables, el daño y la tentación (cap. 6). Su forma es una escala de desórdenes que va desde las acciones que destruyen inmediatamente la sociedad hasta la más pequeña injusticia posible contra un particular, con todos los delitos aminorándose entre esos dos límites por grados insensibles. No exige exactitud geométrica —en la aritmética política se sustituye la exactitud matemática por el cálculo de probabilidad—, sino que el legislador señale los puntos principales sin decretar contra los delitos del primer grado las penas del último. Sus implicaciones son tres: fuera de esos límites no hay delito sino interés en llamarlo así; una escala exacta daría la medida de la tiranía y la libertad de cada nación; y penas iguales para delitos desiguales invitan a cometer el mayor.
+2. Que los hombres no encontrarán un estorbo fuerte para cometer el mayor, si en él hallan unida mayor ventaja. La desproporción no solo es injusta: es contraproducente, porque iguala el precio de acciones de precio distinto (cap. 6). Es el argumento con que Beccaria muestra que la severidad indiscriminada trabaja contra su propio fin.
 
 ## Flashcards
 
 Cuáles son las dos variables de la proporción según el cap. 6 | El mal que el delito causa a la sociedad y los estímulos que inducen a cometerlo
-Qué hay que sustituir a la exactitud matemática en la aritmética política | El cálculo de la probabilidad
-Cómo llama Beccaria a las penas en la imagen de la fuerza y los estorbos | Estorbos políticos
-Qué no destruye la pena según esa imagen | La causa impelente, que es la sensibilidad misma inseparable del hombre
-A qué compara al legislador | Al hábil arquitecto que se opone a las direcciones ruinosas de la gravedad
-Cuál es el primer grado de la escala de desórdenes | Las acciones que destruyen inmediatamente la sociedad
-Cuál es el último grado | La más pequeña injusticia posible contra un miembro particular
+Cuáles son los dos extremos de la escala de desórdenes | Las acciones que destruyen inmediatamente la sociedad y la más pequeña injusticia posible contra un particular
+Cómo llama Beccaria a las penas en la imagen de la fuerza y los estorbos | Estorbos políticos, que impiden el mal efecto sin destruir la sensibilidad del hombre
 Qué pasa si dos delitos desiguales reciben pena igual | Los hombres cometerán el mayor si hallan en él mayor ventaja

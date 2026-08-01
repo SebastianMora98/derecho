@@ -8,13 +8,11 @@ Contesta qué es jurídicamente el ser ya concebido y no nacido. Es el capítulo
 
 ## 2. Lo esencial del capítulo
 
-Cuando en 1965 empezó el proyecto del código había dos concepciones. La primera, de raíz romana, negaba que el concebido fuera sujeto de derecho: lo tenía por una parte del cuerpo de la mujer, "como el páncreas o la vesícula", sin autonomía (p. 177). El autor la descarta con el estado actual del conocimiento: es un nuevo ser humano en su primera etapa, autónomo e independiente de la madre.
+Cuando en 1965 empezó el proyecto del código había dos concepciones. La primera, de raíz romana, tenía al concebido por una parte del cuerpo de la mujer, "como el páncreas o la vesícula", sin autonomía (p. 177), y el autor la descarta con el estado actual del conocimiento: es un nuevo ser humano en su primera etapa, independiente de la madre. La segunda es la teoría de la ficción, que ocupa casi todo el capítulo: el concebido es una nada jurídica, la vida empieza con el nacimiento y sus derechos quedan en suspenso hasta que nazca vivo. La acogieron la Constitución de 1979 y el Código de 1936.
 
-La segunda es la teoría de la ficción, y contra ella va casi todo el capítulo. Sostiene que el concebido es una nada jurídica y que la vida empieza con el nacimiento; los derechos que se le reservan quedan en suspenso hasta que nazca vivo. El autor le señala una paradoja con una frase que usa en clase: "el concebido no es cuando es y, cuando se considera que es, ya no es" (p. 178). Y le imputa una incoherencia: los mismos ordenamientos que lo tienen por inexistente regulan su representación y sancionan el aborto, con lo que quedan derechos sin sujeto. Ya en Roma se suspendía la ejecución de una condenada gestante. Esa teoría acogieron la Constitución de 1979 —"al que está por nacer se le considera nacido para todo lo que le favorece"— y el Código de 1936.
+Contra ella van dos objeciones. Una paradoja: "el concebido no es cuando es y, cuando se considera que es, ya no es" (p. 178). Y una incoherencia: los ordenamientos que lo tienen por inexistente regulan su representación y sancionan el aborto, con lo que quedan derechos sin sujeto. El Código de 1984 se aparta en solitario: su artículo primero, sin antecedentes en la codificación comparada, dice que la vida humana comienza con la concepción y que el concebido es sujeto de derecho, con fundamento biológico en la singamia (p. 181).
 
-El Código de 1984 se aparta en solitario: en su artículo primero, sin antecedentes en la codificación comparada, dice que el concebido es sujeto de derecho y que la vida humana comienza con la concepción (p. 181). El fundamento biológico es la singamia, el instante en que terminan de fusionarse los núcleos del óvulo y el espermatozoide; desde ahí hay un código genético propio, único e irrepetible, y un proceso de vida continuo hasta la muerte. De ahí la fórmula: todos los seres humanos son iguales, pero no hay dos idénticos, y en eso reside su dignidad.
-
-El tramo decisivo es de técnica jurídica. El artículo dice que los derechos personales le son inherentes y los patrimoniales están condicionados a que nazca vivo, y ahí está la discusión: **esa condición es resolutoria, no suspensiva**. El razonamiento es que sujeto de derecho es, por definición, aquel a quien se atribuyen derechos y deberes; si los suyos estuvieran en suspenso esperando el nacimiento no tendría ninguno, dejaría de ser sujeto de derecho y volvería a ser una ficción. El autor aclara que al redactar pensó en la resolutoria "y no en la suspensiva, como algunos autores equivocadamente suponen" (pp. 183-184), y desde 1991 propone dos correcciones: quitar "en todo lo que le favorece" y quitar la palabra "condición", que es la que genera la confusión.
+El tramo decisivo es de técnica jurídica. El artículo condiciona los derechos patrimoniales a que nazca vivo, y ahí está la discusión: **esa condición es resolutoria, no suspensiva**. Sujeto de derecho es, por definición, aquel a quien se atribuyen derechos y deberes, y si los suyos estuvieran en suspenso no tendría ninguno, dejaría de ser sujeto y volvería a ser una ficción. El autor aclara que al redactar pensó en la resolutoria "y no en la suspensiva, como algunos autores equivocadamente suponen" (pp. 183-184), y desde 1991 propone quitar del texto "en todo lo que le favorece" y la palabra "condición", que genera la confusión.
 
 ## 3. Mapa
 
@@ -59,25 +57,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un ordenamiento tiene al concebido por una ficción y a la vez castiga el aborto y le nombra representante. Según el autor, ¿qué problema tiene esa combinación?
-2. Un profesor enseña que los derechos del concebido están en suspenso hasta que nazca vivo. ¿Por qué el autor diría que eso destruye la categoría de sujeto de derecho?
-3. El autor propone quitar del artículo primero la palabra "condición" y la expresión "en todo lo que le favorece". ¿Qué revela que el propio redactor pida corregirlo?
-4. El fundamento del inicio de la vida es la singamia, un hecho biológico. ¿Alcanza un dato biológico para resolver una cuestión jurídica?
+1. ¿Qué se entiende por el concebido como sujeto de derecho? Explique la posición del Código Civil peruano de 1984 y sus implicaciones frente a la teoría de la ficción.
+2. El fundamento del inicio de la vida es la singamia, un hecho biológico. ¿Alcanza un dato biológico para resolver una cuestión jurídica?
 
 --- No mires esto hasta responder ---
 
-1. Que quedan derechos sin sujeto: se regula la representación y se sanciona el aborto de un ente declarado inexistente. El autor rastrea la incoherencia hasta Roma (pp. 178-179).
-2. Porque sujeto de derecho es, por definición, el ente al que se atribuyen derechos y deberes. Si todos sus derechos están en suspenso, no tiene ninguno, y entonces no es sujeto de derecho: vuelve a ser la ficción que el código quiso abandonar (pp. 183-184).
-3. Que el texto se escribió sin modelo previo y quedó ambiguo en el punto decisivo. El autor lo admite: es producto de la creatividad de sus redactores y por eso mejorable. Es honesto, y a la vez debilita al artículo como pieza técnica.
-4. No por sí solo: la singamia dice cuándo empieza un proceso biológico continuo con código genético propio, pero decidir que desde ahí hay un sujeto de derecho es una valoración. El capítulo trata el dato como si zanjara la cuestión. Discutible: el autor podría responder que la valoración ya está en el personalismo, y que el dato solo fija la fecha.
+1. El concebido es sujeto de derecho: el artículo primero del Código peruano de 1984, sin antecedentes en la codificación comparada, declara que la vida humana comienza con la concepción y que el concebido es sujeto de derecho, con fundamento biológico en la singamia y en el código genético propio, único e irrepetible, que existe desde ese instante (p. 181). Se opone a la teoría de la ficción, que lo tiene por una nada jurídica y deja sus derechos en suspenso hasta el nacimiento, y que el autor rechaza por una paradoja —"el concebido no es cuando es y, cuando se considera que es, ya no es"— y por una incoherencia, porque los ordenamientos que lo declaran inexistente regulan su representación y sancionan el aborto, dejando derechos sin sujeto (p. 178). La implicación técnica decisiva es que la condición de nacer vivo que el artículo pone a los derechos patrimoniales es resolutoria y no suspensiva: si estuvieran en suspenso el concebido no tendría ningún derecho y dejaría de ser sujeto (pp. 183-184). Por eso el propio autor propone desde 1991 quitar del artículo la palabra "condición" y la expresión "en todo lo que le favorece".
+2. No por sí solo: la singamia dice cuándo empieza un proceso biológico continuo con código genético propio, pero decidir que desde ahí hay un sujeto de derecho es una valoración, y el capítulo trata el dato como si zanjara la cuestión. Discutible: el autor podría responder que la valoración ya está en el personalismo, y que el dato solo fija la fecha.
 
 ## Flashcards
 
-Qué sostenía la tesis de raíz romana sobre el concebido | Que era parte del cuerpo de la mujer, sin autonomía ni independencia
-Qué sostiene la teoría de la ficción sobre el concebido | Que es una nada jurídica y que sus derechos quedan en suspenso hasta el nacimiento
-Con qué frase resume el autor la paradoja de la ficción | El concebido no es cuando es y, cuando se considera que es, ya no es
-Qué incoherencia le imputa a la teoría de la ficción | Que regula la representación y castiga el aborto de un ente que declara inexistente
 Qué dice el artículo primero del Código Civil peruano de 1984 | Que la vida humana comienza con la concepción y que el concebido es sujeto de derecho
-Qué es la singamia | El instante en que culmina la fusión de los núcleos del óvulo y el espermatozoide
+Qué sostiene la teoría de la ficción sobre el concebido | Que es una nada jurídica y que sus derechos quedan en suspenso hasta el nacimiento
+Por qué la condición del artículo primero es resolutoria y no suspensiva | Porque si los derechos estuvieran en suspenso el concebido no tendría ninguno y no sería sujeto de derecho
 Cómo distingo condición resolutoria de suspensiva | La resolutoria extingue un derecho que ya se tiene; la suspensiva impide que nazca
-Por qué la condición del artículo primero es resolutoria | Porque si los derechos estuvieran en suspenso el concebido no sería sujeto de derecho

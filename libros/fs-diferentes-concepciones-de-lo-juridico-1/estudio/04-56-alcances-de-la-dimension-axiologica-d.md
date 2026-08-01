@@ -8,13 +8,9 @@ Contesta hasta dónde llega la dimensión de los valores. Es el capítulo que fi
 
 ## 2. Lo esencial del capítulo
 
-Sin negar el papel imprescindible de los valores, no se puede aceptar que "lo jurídico" se identifique de manera plena y total con la dimensión axiológica (pp. 128-129). La razón es que la experiencia jurídica desborda esa dimensión: requiere además la vida humana que vivencia los valores y las normas que prescriben esa vivencia como obligatoria. Y la fórmula que cierra el argumento es simétrica: no existe lo jurídico sin los valores, pero tampoco hay experiencia jurídica sin conductas humanas intersubjetivas ni sin normas.
+Sin negar el papel imprescindible de los valores, no se puede aceptar que "lo jurídico" se identifique de manera plena y total con la dimensión axiológica (pp. 128-129), porque la experiencia jurídica la desborda: requiere además la vida humana que vivencia los valores y las normas que prescriben esa vivencia como obligatoria. La fórmula que cierra el argumento es simétrica: no existe lo jurídico sin los valores, pero tampoco hay experiencia jurídica sin conductas humanas intersubjetivas ni sin normas. De ahí la calificación que da título a toda esta parte del libro: el iusnaturalismo resulta "una respuesta insuficiente, por fragmentaria" (p. 129). El acento está en el "por": no se lo acusa de decir algo falso sino de responder solo una parte, y esa comprobación crítica le fue dando "su exacta dimensión" —una exigencia ineludible dentro de la comprensión del derecho, no su fundamento único—.
 
-De ahí sale la calificación que da título a toda esta parte del libro: el iusnaturalismo resulta "una respuesta insuficiente, por fragmentaria" (p. 129). El acento está en el "por": no se lo acusa de decir algo falso sino de responder solo una parte. Los valores no agotan la experiencia jurídica, y esa comprobación crítica hizo que la escuela fuera adquiriendo, paulatinamente, "su exacta dimensión" —la de una exigencia ineludible dentro de la comprensión del derecho, no la de su fundamento único—. Ese redimensionamiento obliga a dos cosas a la vez: no prescindir de la vertiente axiológica al aprehender lo jurídico, y no pretender reducir el derecho a una especulación valorativa. La limitación para dar una respuesta total contribuyó decisivamente a que el iusnaturalismo perdiera vigencia.
-
-El último tramo es el más interesante, porque el autor le pega también al bando contrario. Un sector de la doctrina, al enfrentar al derecho natural, "mostró una actitud del todo descomedida": hubo juristas que negaron sin fundamento el aporte del iusnaturalismo y llegaron al extremo de poner entre paréntesis la presencia valorativa en la experiencia jurídica (p. 130). Esa postura se califica de "vano e infructuoso esfuerzo", y la razón es la misma que se usó contra el iusnaturalismo, aplicada al revés: los valores se insertan en la estructura del derecho como una de sus dimensiones, en unidad "inescindible y dinámica" con la vida humana que los vivencia y las normas que los objetivan. Así que no cabe prescindir de ellos; lo único que cabe es redimensionar la pretensión unilateral del mensaje iusnaturalista.
-
-Conviene notar que el autor no identifica a ninguno de esos juristas descomedidos ni cita un texto suyo: la reacción antiaxiológica se describe pero no se documenta.
+El último tramo es el más interesante, porque el autor le pega también al bando contrario. Un sector de la doctrina, al enfrentar al derecho natural, "mostró una actitud del todo descomedida": negó sin fundamento el aporte iusnaturalista y llegó al extremo de poner entre paréntesis la presencia valorativa en la experiencia jurídica (p. 130). Eso se califica de "vano e infructuoso esfuerzo", con la misma razón usada contra el iusnaturalismo pero al revés: los valores se insertan en la estructura del derecho en unidad "inescindible y dinámica" con la vida que los vivencia y las normas que los objetivan. No cabe prescindir de ellos; lo único que cabe es redimensionar la pretensión unilateral. Conviene notar que no identifica a ninguno de esos juristas ni cita un texto suyo: la reacción antiaxiológica se describe pero no se documenta.
 
 ## 3. Mapa
 
@@ -57,25 +53,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un compañero resume el apartado así: "para el autor el iusnaturalismo estaba equivocado". ¿Qué palabra cambiarías y por qué?
-2. Un jurista propone construir la ciencia del derecho sin ninguna referencia a valores, para ganar rigor. Según este capítulo, ¿qué error comete y en qué se parece al del iusnaturalismo?
-3. El autor califica de "descomedida" la reacción antiaxiológica pero no identifica a ningún jurista ni cita un texto. ¿Cuánto pesa esa omisión?
-4. ¿Por qué le conviene al autor tratar al iusnaturalismo como insuficiente y no como falso? ¿Qué ganaría o perdería con la otra estrategia?
+1. Explique por qué el autor califica al iusnaturalismo de respuesta "insuficiente, por fragmentaria", y cuáles son las implicaciones de esa fórmula.
+2. Un jurista propone construir la ciencia del derecho sin ninguna referencia a valores, para ganar rigor. ¿Qué error comete y en qué se parece al del iusnaturalismo?
 
 --- No mires esto hasta responder ---
 
-1. Cambiaría "equivocado" por "insuficiente". El autor dice expresamente "insuficiente, por fragmentaria": le reconoce verdad parcial y le niega la pretensión de ser respuesta total (p. 129).
-2. Pone entre paréntesis una dimensión que integra la estructura del derecho. Es el mismo error de unilateralidad, con el signo invertido: el iusnaturalismo tomaba una parte por el todo, y este la suprime (p. 130).
-3. Pesa: convierte en afirmación no verificable un tramo entero del capítulo. Se sabe que existió una reacción, pero no quiénes ni con qué argumentos, así que el lector no puede evaluar si era tan descomedida. Discutible: puede que los nombres estén en otros capítulos de la obra.
-4. Le conviene porque su propia tesis necesita conservar los tres aportes para integrarlos: si declarara falso al iusnaturalismo, tendría que explicar de dónde viene la dimensión axiológica de su teoría. Con "insuficiente" se queda con el aporte y descarta solo la pretensión.
+1. Insuficiente por fragmentaria quiere decir que lo que afirma es verdadero pero parcial: no se lo acusa de error sino de responder una sola parte (p. 129). Los valores son imprescindibles, pero la experiencia jurídica los desborda, porque requiere además la vida humana que los vivencia y las normas que prescriben esa vivencia como obligatoria. La implicación es doble y hay que dar las dos: no se puede prescindir de la vertiente axiológica al aprehender lo jurídico, y no se puede reducir el derecho a una especulación valorativa. De ahí el criterio que el autor va a usar con todas las escuelas: redimensionar, no descartar.
+2. Pone entre paréntesis una dimensión que integra la estructura del derecho, en unidad inescindible con las otras dos. Es el mismo error de unilateralidad con el signo invertido: el iusnaturalismo tomaba una parte por el todo, y este la suprime. El autor llama a esa actitud descomedida y al esfuerzo, vano e infructuoso (p. 130).
 
 ## Flashcards
 
 Por qué es insuficiente el iusnaturalismo según el autor | Por fragmentario: dice algo verdadero pero parcial, no falso
 Qué le falta a la dimensión axiológica para dar cuenta del derecho | La vida humana que vivencia los valores y las normas que los objetivan
 Qué significa redimensionar una escuela | Conservarle el aporte y quitarle la pretensión de ser la explicación total
-Cómo califica el autor a los juristas que negaron la presencia valorativa | De actitud descomedida, y su esfuerzo de vano e infructuoso
-En qué se parecen el iusnaturalismo y sus críticos antiaxiológicos | Los dos son unilaterales: uno toma la parte por el todo, el otro la suprime
 Cómo distingo insuficiente de falso | Insuficiente es cierto pero incompleto; falso es incorrecto. El autor imputa lo primero
-Qué relación tienen las tres dimensiones entre sí, según este capítulo | Una unidad inescindible y dinámica: valores vivenciados en la vida y objetivados en la norma
-Identifica el autor a los juristas que critica al final del capítulo | No: describe la reacción antiaxiológica sin nombrar a nadie ni citar un texto

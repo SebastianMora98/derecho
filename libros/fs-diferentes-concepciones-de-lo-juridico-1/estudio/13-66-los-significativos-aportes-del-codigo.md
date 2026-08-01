@@ -8,13 +8,11 @@ Estos dos capítulos contestan qué cambió ese código y por qué al autor le i
 
 ## 2. Lo esencial del capítulo
 
-El primer parágrafo es un inventario y un anuncio: enumera los aportes del código y avisa que los siguientes los desarrollan (pp. 161-162). Los nombra sin explicarlos: el daño a la persona con su especie más original, el daño al proyecto de vida; la nueva categorización del sujeto de derecho con dos figuras nuevas, el concebido y la organización de personas no inscripta; y la incorporación del comité como persona jurídica. La lista completa está en el original, conviene leerla ahí porque cada ítem tiene su propio parágrafo más adelante.
+El § 66 es un inventario y un anuncio: enumera los aportes del código de 1984 y avisa que los parágrafos siguientes los desarrollan (pp. 161-162). Los nombra sin explicarlos —el daño a la persona, con su especie más original, el daño al proyecto de vida; la nueva categorización del sujeto de derecho, con el concebido y la organización de personas no inscripta; el comité como persona jurídica—, y la lista completa conviene leerla en el original. Ahí se mezclan, sin que el texto lo marque, dos tipos de aporte distintos: figuras que antes no existían en el código, como el comité, y cambios de categoría, o sea reclasificar algo que ya existía en la realidad pero que el derecho no reconocía como sujeto, que es el caso de la organización de personas no inscripta, antes llamada irregular o de hecho (p. 162). El segundo tipo es el que muestra la influencia de la teoría: cambiar quién cuenta como sujeto es una decisión filosófica antes que técnica.
 
-Hay que notar que ahí se mezclan dos tipos de aporte distintos, sin que el texto lo marque. Unos son figuras que antes no existían en el código, como el comité. Otros son cambios de categoría: reclasificar algo que ya existía en la realidad pero que el derecho no reconocía como sujeto, que es el caso de la organización de personas no inscripta, antes llamada irregular o de hecho (p. 162). Una cosa es inventar un tipo de vehículo y otra reconocer como vehículo a algo que ya circulaba sin registro. El segundo tipo es el que muestra la influencia de la teoría: cambiar quién cuenta como sujeto es una decisión filosófica antes que técnica.
+El § 67 reconoce esos aportes y enseguida los pone en segundo plano: "más allá de dichos aportes, lo más trascendente y valioso [...] es su inédita inspiración personalista" (pp. 162-163). Ese personalismo se define por contraste con lo que reemplaza: el intento de revertir la tendencia histórica que hacía de la tutela del individuo aisladamente considerado y del patrimonio la finalidad primordial del código. La diferencia entre "individuo aislado" y "persona" es toda la apuesta del libro. El autor participó de la redacción de ese código, dato que consigna en nota.
 
-El segundo parágrafo reconoce esos aportes y enseguida los pone en segundo plano, que es el movimiento central: "más allá de dichos aportes, lo más trascendente y valioso [...] es su inédita inspiración personalista" (pp. 162-163). Y define ese personalismo por contraste con lo que reemplaza: el intento de revertir la tendencia histórica que hacía de la tutela del individuo aisladamente considerado y del patrimonio la finalidad primordial del código. La diferencia entre "individuo aislado" y "persona" es toda la apuesta del libro. El autor participó de la redacción de ese código, dato que consigna en nota.
-
-Sigue la bisagra, lo más fácil de invertir al estudiarlo: la concepción personalista "ha sido la base teórica indispensable" para concebir que el objeto de estudio del derecho es la interacción de vida humana social, valores y normas (p. 163). No es que el tridimensionalismo llevara al personalismo, sino al revés: la premisa del edificio es una idea sobre el ser humano, no un método. Aprovecha para resumir qué reducía cada escuela rival —el formalismo a un conjunto de normas, el iusnaturalismo a la justicia, el sociologismo a lo social—. El cierre hace dos cosas: predice que los historiadores verán al código como producto de una transición entre una época individualista y otra personalista (p. 164), y admite que "mantiene aún algunos rezagos de una concepción extremadamente individualista y patrimonialista". Son predicciones sobre lo que dirán otros, apoyadas en "varias autorizadas voces" que no identifica.
+La afirmación más fácil de invertir al estudiarla es la que sigue: la concepción personalista "ha sido la base teórica indispensable" para concebir que el objeto de estudio del derecho es la interacción de vida humana social, valores y normas (p. 163). No es que el tridimensionalismo llevara al personalismo, sino al revés: la premisa del edificio es una idea sobre el ser humano, no un método. El cierre predice que los historiadores verán al código como producto de una transición entre una época individualista y otra personalista (p. 164), y admite que "mantiene aún algunos rezagos de una concepción extremadamente individualista y patrimonialista". Son predicciones sobre lo que dirán otros, apoyadas en "varias autorizadas voces" que no identifica.
 
 ## 3. Mapa
 
@@ -56,25 +54,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un legislador propone un código centrado en proteger la propiedad y la libertad contractual de cada individuo. ¿Es un código personalista? Justificá.
-2. Alguien afirma: "para el autor el gran aporte del código es haber incorporado el daño al proyecto de vida". ¿Qué parte contradice al texto?
-3. El autor predice cómo juzgarán los historiadores al código y dice apoyarse en "varias autorizadas voces". ¿Qué tan sostenida está esa afirmación acá?
-4. Sostiene que el código es personalista y a la vez admite que mantiene rezagos individualistas. ¿Se contradice?
+1. ¿Qué se entiende por el personalismo del Código Civil peruano de 1984? Explique a qué orientación se opone y qué relación guarda con la teoría tridimensional.
+2. El autor sostiene que el código es personalista y a la vez admite que mantiene rezagos individualistas. ¿Se contradice?
 
 --- No mires esto hasta responder ---
 
-1. No: proteger la propiedad y la libertad contractual de cada individuo es la finalidad individualista y patrimonialista que el autor dice que el código de 1984 vino a revertir.
-2. Es correcto que lo considera un aporte original y destacado. Contradice al texto llamarlo el gran aporte: dice expresamente que lo más trascendente está más allá de esos aportes y es la inspiración personalista (p. 162).
-3. Poco sostenida. Es un pronóstico sobre el futuro, no verificable hoy, y las "autorizadas voces" no se identifican; la nota al pie remite a otras obras del propio autor.
-4. No: sostiene que la inspiración dominante es personalista y que la transición está en curso, no consumada. Discutible: sin decir cuáles son esos rezagos ni cuánto pesan, la tesis se vuelve difícil de refutar.
+1. El personalismo del código de 1984 es la concepción que pone a la persona, en su vida concreta, como finalidad del ordenamiento, y no al individuo aisladamente considerado ni a su patrimonio. El autor lo considera lo más valioso del código, por encima de sus aportes técnicos: "más allá de dichos aportes, lo más trascendente y valioso [...] es su inédita inspiración personalista" (pp. 162-163). Se opone a la tendencia histórica de los códigos del siglo XIX, que hacían de la tutela del individuo aislado y del patrimonio su finalidad primordial. Con la teoría tridimensional guarda una relación de fundamento y no de consecuencia: la concepción personalista "ha sido la base teórica indispensable" para concebir el derecho como interacción de vida humana social, valores y normas (p. 163), y no al revés. El propio autor admite que el código conserva rezagos individualistas y patrimonialistas.
+2. No: sostiene que la inspiración dominante es personalista y que la transición entre una época y otra está en curso, no consumada (p. 164). Discutible: sin decir cuáles son esos rezagos ni cuánto pesan, la tesis se vuelve difícil de refutar, y el pronóstico sobre lo que dirán los historiadores se apoya en "varias autorizadas voces" que no identifica.
 
 ## Flashcards
 
-Cuál es lo más valioso del Código Civil peruano de 1984 según el autor | Su inspiración personalista, más allá de sus aportes técnicos
 Qué es el personalismo humanista en el derecho | La concepción que pone a la persona, no al individuo aislado ni al patrimonio, como finalidad
-Qué dos sujetos de derecho nuevos incorporó el código de 1984 | El concebido y la organización de personas no inscripta
+Cuál es lo más valioso del Código Civil peruano de 1984 según el autor | Su inédita inspiración personalista, más allá de sus aportes técnicos
 Qué aportes enumera el § 66 del Código de 1984 | El daño a la persona, dos nuevos sujetos de derecho y el comité como persona jurídica
-Cómo se llamaba antes la organización de personas no inscripta | Irregular o de hecho
-A qué reducía el derecho cada escuela rival según el autor | El formalismo a normas, el iusnaturalismo a la justicia, el sociologismo a lo social
 Qué relación afirma entre personalismo y tridimensionalismo | El personalismo es la base teórica indispensable de la teoría tridimensional
-Qué admite el autor sobre el propio código de 1984 | Que mantiene rezagos de una concepción extremadamente individualista y patrimonialista

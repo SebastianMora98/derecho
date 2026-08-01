@@ -1,0 +1,39 @@
+---
+// Un capítulo, plegado en un <details>. Equivalente a `sitio.py: render_capitulo`.
+import { inline, bloque } from "../lib/md";
+import { ANCLA_IDEA, ANCLA_ESENCIAL, ANCLA_MAPA } from "../lib/anclas";
+
+interface Props { cap: any }
+const { cap } = Astro.props;
+const prefijo = `${cap.ancla}-`;
+---
+{cap.pendiente ? (
+  <div class="capitulo pendiente" id={cap.ancla}>
+    <span class="numero">{cap.numero}</span>
+    <span class="cuerpo">
+      <strong>{cap.titulo}</strong>
+      <span class="tesis">Todavía sin documento de estudio.</span>
+    </span>
+  </div>
+) : (
+  <details class="capitulo" id={cap.ancla}>
+    <summary>
+      <span class="numero">{cap.numero}</span>
+      <span class="cuerpo">
+        <strong>{cap.titulo}</strong>
+        <span class="tesis">{cap.idea.resumen}</span>
+      </span>
+    </summary>
+    <div class="documento">
+      <h2 id={`${prefijo}${ANCLA_IDEA}`}>Idea principal</h2>
+      <p set:html={inline(cap.idea.resumen)} />
+      {cap.idea.contexto && <p set:html={inline(cap.idea.contexto)} />}
+
+      <h2 id={`${prefijo}${ANCLA_ESENCIAL}`}>Lo esencial del capítulo</h2>
+      {cap.esencial.map((p: string) => <p set:html={inline(p)} />)}
+
+      <h2 id={`${prefijo}${ANCLA_MAPA}`}>Mapa</h2>
+      <pre class="mermaid">{cap.mapa}</pre>
+    </div>
+  </details>
+)}

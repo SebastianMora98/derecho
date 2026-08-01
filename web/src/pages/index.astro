@@ -1,0 +1,28 @@
+---
+// Lista de libros. Equivalente a `sitio.py: render_indice`.
+import Base from "../layouts/Base.astro";
+
+const modulos = import.meta.glob("../data/*.json", { eager: true }) as Record<string, any>;
+const libros = Object.entries(modulos)
+  .filter(([ruta]) => !ruta.endsWith("indice.json"))
+  .map(([, mod]) => mod.default ?? mod)
+  .sort((a, b) => a.slug.localeCompare(b.slug));
+---
+<Base titulo="Documentos de estudio">
+  <h1>Documentos de estudio</h1>
+  <p class="intro">
+    Cada documento acompaña la lectura de una sección del original: mapa del
+    argumento, conceptos, preguntas y autoevaluación.
+  </p>
+  <div class="libros">
+    {libros.map((libro) => (
+      <a class="libro" href={`/${libro.slug}/index.html`}>
+        <h2>{libro.titulo}</h2>
+        <p class="autor">{libro.autor}</p>
+        <p class="meta">
+          {libro.estadisticas.capitulos_con_documento} de {libro.estadisticas.capitulos_totales} capítulos con documento
+        </p>
+      </a>
+    ))}
+  </div>
+</Base>

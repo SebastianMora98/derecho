@@ -8,15 +8,9 @@ Contesta si se puede encarcelar por deudas. Es el capítulo donde Beccaria propo
 
 ## 2. Lo esencial del capítulo
 
-La buena fe de los contratos y la seguridad del comercio exigen asegurar a los acreedores, pero la distinción decisiva es entre **fallido fraudulento** y **fallido inocente** (cap. 34). Al primero le corresponde la pena del monedero falso, por simetría: falsificar un pedazo de metal acuñado, que es prenda de las obligaciones de los ciudadanos, no es mayor delito que falsificar las obligaciones mismas. El segundo es quien probó ante sus jueces que la malicia ajena, la desgracia o contratiempos inevitables lo despojaron de sus bienes; encerrarlo lo priva de la libertad, "único y triste bien que solo le queda", y lo hace arrepentirse de la inocencia con que vivía bajo unas leyes que no estuvo en su mano ofender.
+La buena fe de los contratos y la seguridad del comercio exigen asegurar a los acreedores, pero la distinción decisiva es entre **fallido fraudulento** y **fallido inocente** (cap. 34). Al primero le corresponde la pena del monedero falso, por simetría: falsificar un pedazo de metal acuñado, que es prenda de las obligaciones de los ciudadanos, no es mayor delito que falsificar las obligaciones mismas. El segundo es quien probó ante sus jueces que la malicia ajena, la desgracia o contratiempos inevitables lo despojaron de sus bienes; encerrarlo lo priva de la libertad, "único y triste bien que solo le queda", con una privación que ni el comercio ni la propiedad justifican porque "les es inútil". Para él propone en cambio deudas inextinguibles hasta la paga total, prohibición de retirarse a otro país y apremio a emplear su trabajo y sus talentos; y refina después una escala de cuatro grados, del dolo a la inocencia, cuyos límites **debe fijar la ley ciega e imparcial** y no la prudencia arbitraria de los jueces, porque señalar límites es tan necesario en política como en matemática.
 
-Ahí aparece una observación política que conviene retener aparte. Esas leyes fueron dictadas por los poderosos por codicia y las sufren los flacos por esa esperanza que hace creer "que los acontecimientos adversos son para los demás y para nosotros los favorables". De ahí la frase más aguda del capítulo: los hombres **aman las leyes crueles aunque estén sujetos a ellas**, cuando sería interés de todos moderarlas, porque es mayor el temor de ser ofendido que el deseo de ofender.
-
-Para el fallido inocente propone medidas que no tocan su libertad: deudas inextinguibles hasta la paga total; imposibilidad de liberarse sin consentimiento de los interesados; prohibición de retirarse a otro país; y apremio a emplear su trabajo y sus talentos para volver a satisfacer a los acreedores. Lo que ni la seguridad del comercio ni la propiedad justifican es una privación de libertad "que les es inútil".
-
-Después refina la escala en cuatro grados: al dolo, las penas de la falsificación; a la culpa grave, penas menores con privación de libertad; a la leve, la pérdida de la facultad de elegir los medios de restablecerse, que pasa a los acreedores; y a la inocencia, la libre elección de esos medios. Pero insiste en el requisito de forma: las distinciones de grave y leve **debe fijarlas la ley ciega e imparcial**, no la prudencia arbitraria de los jueces, porque señalar límites es tan necesario en política como en matemática.
-
-El cierre propone prevención en vez de castigo. Un legislador próvido podría impedir gran parte de las quiebras culpables con un registro público de todos los contratos, y con un banco formado por tributos sobre el comercio próspero y destinado a socorrer al miembro infeliz. Beccaria lamenta que esas leyes "fáciles, simples, grandes", que solo esperan la voluntad del legislador, sean las menos conocidas o las menos queridas, porque ocupan el ánimo de quienes gobiernan un espíritu inquieto en pequeñeces y la aversión a toda novedad.
+Intercalada va la observación política más aguda: esas leyes las dictaron los poderosos por codicia y las sufren los flacos por esa esperanza que hace creer "que los acontecimientos adversos son para los demás y para nosotros los favorables", de modo que los hombres **aman las leyes crueles aunque estén sujetos a ellas**, cuando sería interés de todos moderarlas, porque es mayor el temor de ser ofendido que el deseo de ofender (cap. 34). El cierre propone prevención en vez de castigo: un legislador próvido impediría gran parte de las quiebras culpables con un registro público de todos los contratos y con un banco formado por tributos sobre el comercio próspero y destinado a socorrer al miembro infeliz. Beccaria lamenta que esas leyes "fáciles, simples, grandes", que solo esperan la voluntad del legislador, sean las menos conocidas o las menos queridas.
 
 ## 3. Mapa
 
@@ -59,25 +53,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. ¿Por qué equipara al fallido fraudulento con el falsificador de moneda?
-2. Beccaria dice que los hombres aman las leyes crueles aunque estén sujetos a ellas. ¿Cómo lo explica?
-3. Exige que los grados de culpa los fije la ley y no el juez. ¿Qué se perdería con la solución contraria?
-4. Propone un banco público para socorrer al comerciante caído. ¿Encaja eso en un libro sobre delitos y penas?
+1. ¿Qué se entiende por fallido fraudulento y por fallido inocente? Explique el tratamiento que corresponde a cada uno y las implicaciones de esa distinción.
+2. Beccaria propone un banco público para socorrer al comerciante caído. ¿Encaja eso en un libro sobre delitos y penas?
 
 --- No mires esto hasta responder ---
 
-1. Por simetría entre lo falsificado. La moneda es una prenda de las obligaciones de los ciudadanos, así que falsificar las obligaciones mismas no es menor delito que falsificar el metal que las representa. El daño en los dos casos es la confianza en los signos del intercambio (cap. 34).
-2. Por la esperanza: cada uno cree que los acontecimientos adversos son para los demás y los favorables para sí, así que apoya el rigor pensándose siempre del lado del ofendido. Beccaria replica con un cálculo: es mayor el temor de ser ofendido que el deseo de ofender, de modo que moderarlas conviene a todos.
-3. Se perdería la previsibilidad, que es lo que permite al ciudadano saber cuándo es reo. Dejar "grave" y "leve" al criterio del juez reintroduce el arbitrio que el cap. 4 le prohíbe, y en materia comercial además haría imposible calcular el riesgo de contratar. De ahí su comparación entre política y matemática: sin límites señalados no hay medida.
-4. Encaja por la tesis del cap. 31: una pena no es justa si la ley no intentó antes el mejor medio de evitar el delito. Si muchas quiebras culpables nacen de la falta de información y del desamparo del comerciante honesto, el registro y el banco son parte del argumento penal, no una digresión económica.
+1. El fallido fraudulento es el deudor que quebró con dolo; el inocente, el que probó ante sus jueces que la malicia ajena, la desgracia o contratiempos inevitables lo despojaron de sus bienes (cap. 34). Al primero le corresponde la pena del monedero falso, por simetría entre lo falsificado: la moneda es prenda de las obligaciones de los ciudadanos, de modo que falsificar las obligaciones mismas no es menor delito que falsificar el metal que las representa. Al segundo no le corresponde ninguna privación de libertad, porque le es inútil al acreedor y le quita el único bien que le queda; se lo asegura con deuda inextinguible hasta la paga total, prohibición de irse del país y apremio a emplear su trabajo y sus talentos. Entre los dos extremos hay cuatro grados —dolo, culpa grave, culpa leve e inocencia—, con penas decrecientes. La implicación de forma es la más exigente: esos límites los fija la ley ciega e imparcial y no la prudencia del juez, porque sin ellos el comerciante no puede calcular el riesgo de contratar ni el ciudadano saber cuándo es reo.
+2. Encaja por la tesis del cap. 31: una pena no es justa si la ley no intentó antes el mejor medio de evitar el delito. Si muchas quiebras culpables nacen de la falta de información y del desamparo del comerciante honesto, el registro público de contratos y el banco son parte del argumento penal y no una digresión económica (cap. 34). Es, además, el capítulo donde Beccaria pasa de corregir penas a proponer instituciones.
 
 ## Flashcards
 
 Cuál es la distinción central del cap. 34 | La del fallido fraudulento y el fallido inocente
-Qué pena corresponde al fallido fraudulento | La misma que al monedero falso
-Por qué esa equiparación | Porque falsificar las obligaciones no es menor delito que falsificar el metal que las representa
-Qué medidas propone para el fallido inocente | Deuda inextinguible, prohibición de irse y apremio a trabajar, sin privación de libertad
-Por qué es inútil encarcelar al fallido inocente | Porque no sirve a los acreedores y le quita el único bien que le queda
-Qué observa Beccaria sobre el apoyo popular a las leyes crueles | Que los hombres las aman aunque estén sujetos a ellas, creyendo que la desgracia será ajena
-Quién debe fijar los grados de culpa grave y leve | La ley ciega e imparcial, no la prudencia arbitraria de los jueces
+Qué pena corresponde al fallido fraudulento y por qué | La del monedero falso: falsificar las obligaciones no es menor delito que falsificar el metal que las representa
+Cuáles son los cuatro grados que distingue el cap. 34 | Dolo, culpa grave, culpa leve e inocencia, con penas decrecientes fijadas por la ley
 Qué dos instituciones propone para prevenir las quiebras | Un registro público de contratos y un banco público que socorra al comerciante infeliz

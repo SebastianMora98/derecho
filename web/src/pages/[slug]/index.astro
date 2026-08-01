@@ -1,0 +1,84 @@
+---
+// El libro entero en una sola hoja. Equivalente a `sitio.py: render_libro`.
+import Base from "../../layouts/Base.astro";
+import Capitulo from "../../components/Capitulo.astro";
+import Consolidados from "../../components/Consolidados.astro";
+import IndiceLibro from "../../components/IndiceLibro.astro";
+import { construirConsolidados } from "../../lib/consolidados";
+
+export async function getStaticPaths() {
+  const modulos = import.meta.glob("../../data/*.json", { eager: true }) as Record<string, any>;
+  return Object.entries(modulos)
+    .filter(([ruta]) => !ruta.endsWith("indice.json"))
+    .map(([, mod]) => {
+      const libro = mod.default ?? mod;
+      return { params: { slug: libro.slug }, props: { libro } };
+    });
+}
+
+const { libro } = Astro.props;
+
+// Agrupa los capítulos por apartado ([[partes]] en libro.toml). Un libro de
+// jerarquía plana no declara partes: un solo grupo sin título, y el índice
+// sale como lista corrida — igual que `sitio.py: agrupar_en_partes`.
+function agruparEnPartes(capitulos: any[], partes: any[]) {
+  if (!partes || !partes.length) return [{ titulo: null, capitulos }];
+  const grupos: { titulo: string | null; capitulos: any[] }[] = [];
+  const restantes = new Set(capitulos);
+  for (const p of partes) {
+    const desde = Number(p.desde ?? 1);
+    const hasta = Number(p.hasta ?? 10 ** 6);
+    const elegidos = capitulos.filter((c) => {
+      const n = Number(c.numero);
+      return n >= desde && n <= hasta;
+    });
+    if (!elegidos.length) continue;
+    elegidos.forEach((c) => restantes.delete(c));
+    grupos.push({ titulo: p.titulo || "", capitulos: elegidos });
+  }
+  if (restantes.size) {
+    grupos.push({
+      titulo: "Sin apartado declarado en libro.toml",
+      capitulos: capitulos.filter((c) => restantes.has(c)),
+    });
+  }
+  return grupos;
+}
+
+const grupos = agruparEnPartes(libro.capitulos, libro.partes);
+const consolidados = construirConsolidados(libro);
+const nivelParte = libro.contenedor ? "h3" : "h2";
+const ficha = [libro.autor, libro.anio, libro.edicion].filter(Boolean).join(" · ");
+const migas = `<span>${libro.titulo}</span>`;
+---
+<Base titulo={libro.titulo} migas={migas} claseMain="con-indice">
+  <IndiceLibro grupos={grupos} consolidados={consolidados} />
+  <div class="hoja">
+    <h1>{libro.titulo}</h1>
+    <p class="ficha">{ficha}</p>
+    <p class="intro">
+      La idea principal de cada capítulo, para repasar de una pasada. Desplegá
+      un capítulo para leer lo esencial; el vocabulario, el test y las
+      flashcards del libro entero están al final.
+    </p>
+    <div class="controles">
+      <button type="button" class="alternar-todo" aria-expanded="false">Abrir todo el libro</button>
+    </div>
+
+    {libro.contenedor && <h2 class="contenedor">{libro.contenedor}</h2>}
+    {grupos.map((g) => (
+      <>
+        {g.titulo && (
+          nivelParte === "h3"
+            ? <h3 class="parte">{g.titulo}</h3>
+            : <h2 class="parte">{g.titulo}</h2>
+        )}
+        <div class="capitulos">
+          {g.capitulos.map((cap: any) => <Capitulo cap={cap} />)}
+        </div>
+      </>
+    ))}
+
+    <Consolidados libro={libro} />
+  </div>
+</Base>

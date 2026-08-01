@@ -8,13 +8,11 @@ Estos dos capítulos contestan qué estudia la ciencia jurídica y de dónde sal
 
 ## 2. Lo esencial del capítulo
 
-La nueva corriente no se presenta como una ocurrencia sino como la salida a un problema ya diagnosticado: frente a la concepción insuficiente y fragmentaria de las tres escuelas anteriores, el objeto de estudio del derecho se encuentra en la interacción dinámica de conducta humana intersubjetiva, valores y normas jurídicas (p. 133). Se define primero por lo que rechaza: toda visión unidimensional, o sea la que centra el estudio en uno cualquiera de los tres elementos, y da lo mismo cuál (p. 134).
+La nueva corriente no se presenta como una ocurrencia sino como la salida a un problema ya diagnosticado: frente a la concepción insuficiente y fragmentaria de las tres escuelas anteriores, el objeto de estudio del derecho se encuentra en la interacción dinámica de conducta humana intersubjetiva, valores y normas jurídicas (p. 133). Se define primero por lo que rechaza —toda visión unidimensional, y da lo mismo cuál sea el elemento elegido (p. 134)—, y sigue con una formulación que hay que leer con cuidado porque son dos afirmaciones y no una: ninguno de los tres elementos por sí solo constituye el objeto de estudio, y a la vez no se puede prescindir de ninguno cuando se habla de derecho. Ninguna de las tres patas es el banco, y sacar cualquiera lo tira. Esa doble afirmación es la que separa al tridimensionalismo de un eclecticismo que simplemente sumara las tres escuelas.
 
-Enseguida viene la formulación que hay que leer con cuidado, porque son dos afirmaciones y no una: ninguno de los tres elementos, por sí solo, constituye el objeto de estudio del derecho, y a la vez no se puede prescindir de ninguno cuando se habla de derecho (p. 134). Ninguna de las tres patas es el banco, y sacar cualquiera lo tira. Esa doble afirmación es la que separa al tridimensionalismo de un eclecticismo que simplemente sumara las tres escuelas.
+El punto más fino, que el autor marca con una aclaración intercalada entre guiones, es que la vinculación entre los tres elementos no es "una simple yuxtaposición -el estar un elemento al lado del otro-", sino una interacción (p. 134). Los ingredientes de una torta apoyados en la mesa son una yuxtaposición; la torta horneada es una interacción, y ya no se pueden separar. Sin esa distinción, la teoría se leería como "hay que estudiar las tres cosas", que es justamente lo que no dice. Recién al final aparece el nombre: teoría tridimensional del derecho.
 
-El punto más fino, y el que el autor se detiene a marcar con una aclaración intercalada entre guiones, es que la vinculación entre los tres elementos no es "una simple yuxtaposición -el estar un elemento al lado del otro-", sino una interacción (p. 134). Los ingredientes de una torta apoyados en la mesa son una yuxtaposición; la torta horneada es una interacción, y ya no se pueden separar. Recién al final del párrafo aparece el nombre: teoría tridimensional del derecho. Sin esa distinción, la teoría se leería como "hay que estudiar las tres cosas", que es justamente lo que no dice.
-
-El segundo parágrafo cambia de registro y ubica la teoría. El pensamiento iusfilosófico latinoamericano, "de pujante potencialidad creadora", contribuye a la evolución del pensamiento jurídico contemporáneo, y se cubre de la objeción obvia con un "no existe exageración en lo expresado" (p. 134). Nombra dos formulaciones —la escuela egológica y el tridimensionalismo— y dice que las dos se aproximan a una filosofía de la existencia, es decir una que parte de la vida concreta de las personas en vez de partir de conceptos abstractos. Conviene notar que acá el autor es parte interesada: es uno de los creadores de la teoría que elogia, y la evidencia que da de esa influencia es escasa. El cierre es el más político: el jurista se enfrenta a un mundo "convulso y angustiado, ahíto de injusticias y desigualdades sustanciales" (p. 135), y es esa realidad la que obliga a despojar a la dogmática de las visiones unilaterales, porque en la totalidad del derecho "la persona adquiere un rol protagónico". Eso es una razón para preferir la teoría, no una prueba de que sea correcta.
+El segundo parágrafo cambia de registro y ubica la teoría. El pensamiento iusfilosófico latinoamericano, "de pujante potencialidad creadora", contribuye a la evolución del pensamiento jurídico contemporáneo, y se cubre de la objeción obvia con un "no existe exageración en lo expresado" (p. 134); nombra dos formulaciones, la escuela egológica y el tridimensionalismo, y dice que ambas se aproximan a una filosofía de la existencia. Conviene notar que el autor es parte interesada —es uno de los creadores de la teoría que elogia— y que la evidencia es escasa. El cierre es el más político: el jurista se enfrenta a un mundo "convulso y angustiado, ahíto de injusticias y desigualdades sustanciales" (p. 135), y es esa realidad la que obliga a despojar a la dogmática de las visiones unilaterales, porque en la totalidad del derecho "la persona adquiere un rol protagónico". Eso es una razón para preferir la teoría, no una prueba de que sea correcta.
 
 ## 3. Mapa
 
@@ -57,25 +55,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un profesor define el tridimensionalismo como "la teoría que estudia el derecho desde tres puntos de vista: el social, el normativo y el valorativo". ¿Qué tiene de incorrecto?
-2. Alguien sostiene que el autor demuestra la verdad del tridimensionalismo señalando las injusticias del mundo contemporáneo. ¿Es una demostración?
-3. El autor afirma que no hay exageración en decir que el pensamiento latinoamericano contribuye a la iusfilosofía contemporánea. ¿Qué evidencia da acá?
-4. El autor es uno de los creadores de la teoría que expone y elogia. ¿Eso invalida su argumento, lo debilita, o es irrelevante?
+1. ¿Qué se entiende por una concepción tridimensional del derecho? Explique qué comprende y en qué se diferencia de sumar las tres escuelas anteriores.
+2. Un profesor la define como "la teoría que estudia el derecho desde tres puntos de vista: el social, el normativo y el valorativo". ¿Qué tiene de incorrecto?
 
 --- No mires esto hasta responder ---
 
-1. Describe una yuxtaposición: tres puntos de vista separables sobre un mismo objeto. Para el autor el objeto de estudio es la interacción de los tres, no el derecho mirado tres veces (p. 134).
-2. No. El estado del mundo es una razón para preferir una concepción que ponga a la persona en el centro, pero no prueba que el derecho consista en esa interacción. Es un argumento de utilidad o de urgencia.
-3. Muy poca: menciona la existencia de dos formulaciones, las llama frescas y originales y remite en nota a Cossio. No compara con otras tradiciones ni muestra recepción externa.
-4. No lo invalida: una teoría se juzga por sus razones, no por quién la firma. Pero obliga a leer los elogios como parte interesada y a buscar la evidencia aparte. Discutible: en una obra de autor es esperable, y el texto lo deja ver al remitir a su propia tesis.
+1. Es la teoría según la cual el objeto de estudio del derecho está en la interacción dinámica de conducta humana intersubjetiva, valores y normas jurídicas (p. 133). Comprende dos afirmaciones que hay que dar juntas: ninguno de los tres elementos por sí solo constituye ese objeto, y no se puede prescindir de ninguno al hablar de derecho (p. 134). Se diferencia de un eclecticismo porque no suma las tres escuelas: lo decisivo es que la vinculación no es "una simple yuxtaposición -el estar un elemento al lado del otro-" sino una interacción, en la que los elementos se afectan y forman una unidad inseparable. Por eso rechaza toda visión unidimensional, cualquiera sea el elemento elegido.
+2. Describe una yuxtaposición: tres puntos de vista separables sobre un mismo objeto. Para el autor el objeto de estudio es la interacción de los tres, no el derecho mirado tres veces (p. 134). Es el error más común al resumir la teoría, porque las dos versiones nombran los mismos tres elementos.
 
 ## Flashcards
 
 En qué consiste la teoría tridimensional del derecho | En que el objeto de estudio es la interacción de conducta, valores y normas
-Qué es una visión unidimensional del derecho | La que centra el estudio en uno solo de los tres elementos
-Cómo define el autor la yuxtaposición | El estar un elemento al lado del otro
 Cuáles son las dos afirmaciones del autor sobre los tres elementos | Que ninguno por sí solo es el objeto, y que no se puede prescindir de ninguno
-Qué dos formulaciones latinoamericanas nombra | La escuela egológica del derecho y el tridimensionalismo jurídico
-Qué es una filosofía de la existencia | La que parte de la vida concreta de las personas en vez de conceptos abstractos
+Cómo define el autor la yuxtaposición | El estar un elemento al lado del otro
 Cómo distingo interacción de yuxtaposición | En la yuxtaposición los elementos son separables; en la interacción se afectan y forman unidad
-Qué rol le asigna el autor a la persona en la totalidad del derecho | Un rol protagónico

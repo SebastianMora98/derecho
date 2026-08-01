@@ -8,13 +8,9 @@ Contesta cómo una distinción técnica abre la puerta a proteger a quienes el d
 
 ## 2. Lo esencial del capítulo
 
-El aporte que el capítulo destaca es haber puesto el énfasis en la noción de sujeto de derecho, distinguiéndola del concepto de persona. Y el autor califica esa diferencia de manera precisa: es "de carácter eminentemente técnico" (p. 175). No es una tesis filosófica sino una herramienta, y su función es la que dice a continuación: facilitar que en el código se incorpore y se regule una categorización nueva.
+El aporte que el capítulo destaca es haber puesto el énfasis en la noción de sujeto de derecho, distinguiéndola del concepto de persona, y el autor califica esa diferencia de manera precisa: es "de carácter eminentemente técnico" (p. 175). No es una tesis filosófica sino una herramienta, y su función es facilitar que en el código se incorpore y se regule una categorización nueva. Lo que habilita es concreto: junto a las tradicionales personas naturales y jurídicas —siendo la persona jurídica una organización de personas inscripta— entran como sujetos de derecho dos entes más, el concebido, o persona por nacer, y la organización de personas **no** inscripta. El criterio que agrupa a los cuatro es el mismo: son entes a los que se imputan derechos y deberes, es decir situaciones jurídicas subjetivas.
 
-Lo que esa distinción habilita es concreto. Junto a las tradicionales personas naturales y jurídicas —siendo la persona jurídica una organización de personas inscripta— entran como sujetos de derecho dos entes más: el concebido, o persona por nacer, y la organización de personas **no** inscripta. El criterio que los agrupa a los cuatro es el mismo: son entes a los que se imputan derechos y deberes, es decir situaciones jurídicas subjetivas.
-
-El argumento que justifica incluir a los dos nuevos es de correspondencia con la realidad, y es breve. Los dos actúan efectivamente en la realidad, directamente o por medio de sus representantes, aunque no hayan recibido inscripción. O sea que el derecho venía ignorando a entes que ya operaban, y la solución "se ajusta a la realidad de la vida" (p. 176). Conviene notar que el paso decisivo está en separar la titularidad del reconocimiento formal: sujeto de derecho se es por actuar y por serle imputables derechos, no por estar registrado ni por haber nacido.
-
-El resultado se enuncia como un número: donde antes se reconocían dos sujetos de derecho, ahora se reconocen cuatro. El capítulo no desarrolla ninguno de los dos nuevos —eso lo hacen los parágrafos que siguen— así que su función es la de bisagra: instala la categoría que después se llena.
+El argumento que justifica incluir a los dos nuevos es de correspondencia con la realidad, y es breve: los dos actúan efectivamente, directamente o por medio de sus representantes, aunque no hayan recibido inscripción, de modo que el derecho venía ignorando a entes que ya operaban y la solución "se ajusta a la realidad de la vida" (p. 176). El paso decisivo está en separar la titularidad del reconocimiento formal: sujeto de derecho se es por actuar y por serle imputables derechos, no por estar registrado ni por haber nacido. El resultado se enuncia como un número: donde antes se reconocían dos sujetos de derecho, ahora se reconocen cuatro. Ninguno de los dos nuevos se desarrolla acá; eso lo hacen los parágrafos que siguen.
 
 ## 3. Mapa
 
@@ -57,25 +53,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un grupo de vecinos recauda fondos y contrata servicios sin haberse inscripto nunca. Bajo la categorización del código, ¿qué es y por qué?
-2. Un compañero afirma que el código de 1984 declaró persona al concebido. ¿Qué le corregirías?
-3. El autor llama a la distinción "eminentemente técnica". ¿Por qué le conviene presentarla así y no como una tesis filosófica?
-4. El capítulo justifica la ampliación diciendo que esos entes ya actúan en la realidad. ¿Alcanza ese argumento?
+1. ¿Qué se entiende por sujeto de derecho y en qué se distingue de la persona? Ubique dentro de esa categoría a los cuatro sujetos que reconoce el Código Civil peruano de 1984.
+2. Un grupo de vecinos recauda fondos y contrata servicios sin haberse inscripto nunca. Bajo la categorización del código, ¿qué es y por qué?
 
 --- No mires esto hasta responder ---
 
-1. Es una organización de personas no inscripta, y por lo tanto sujeto de derecho: se le imputan derechos y deberes y actúa en la realidad, directamente o por representantes, aunque no tenga registro (pp. 175-176).
-2. Que lo reconoció como sujeto de derecho, no como persona. Es la categoría más amplia, y justamente la distinción entre las dos es lo que permitió incluirlo sin tener que declararlo nacido.
-3. Porque una herramienta técnica no obliga a discutir de nuevo la filosofía: se justifica por lo que permite hacer. Presentarla así le deja el debate de fondo a los capítulos sobre el personalismo y vuelve la ampliación una cuestión de buena técnica legislativa.
-4. Es un buen argumento contra el formalismo, porque muestra un desajuste entre el derecho y los hechos. Pero no alcanza por sí solo: hay muchos entes que actúan y no son sujetos de derecho, así que hace falta además la valoración de que a estos conviene protegerlos. Esa parte está en los capítulos sobre el personalismo, no acá.
+1. Sujeto de derecho es el ente al que se imputan derechos y deberes, es decir situaciones jurídicas subjetivas. Se distingue de la persona en que esta es solo una de sus especies: para ser persona hay que además haber nacido o estar inscripto, y el autor califica la diferencia de "carácter eminentemente técnico", una herramienta que sirve para incorporar al código una categorización nueva (p. 175). Dentro de la categoría entran cuatro sujetos: la persona natural, la persona jurídica —organización de personas inscripta—, el concebido o persona por nacer, y la organización de personas no inscripta. Los dos últimos se incorporan porque actúan efectivamente en la realidad, directamente o por medio de representantes, aunque no hayan recibido inscripción, y así se pasa de dos sujetos de derecho a cuatro (p. 176).
+2. Es una organización de personas no inscripta, y por lo tanto sujeto de derecho: se le imputan derechos y deberes y actúa en la realidad, directamente o por representantes, aunque no tenga registro (pp. 175-176). No es persona jurídica, porque esa calidad exige la inscripción.
 
 ## Flashcards
 
-Cuántos sujetos de derecho reconoce el Código Civil peruano de 1984 | Cuatro, en vez de dos
-Cuáles son los cuatro sujetos de derecho del código | Persona natural, persona jurídica, concebido y organización de personas no inscripta
+Qué es un sujeto de derecho | El ente al que se imputan derechos y deberes, es decir situaciones jurídicas subjetivas
+Cuáles son los cuatro sujetos de derecho del Código peruano de 1984 | Persona natural, persona jurídica, concebido y organización de personas no inscripta
 De qué carácter es la distinción entre sujeto de derecho y persona, según el autor | Eminentemente técnico
-Qué son las situaciones jurídicas subjetivas | Los derechos y deberes que se imputan a un ente
-Qué es el nasciturus | El ya concebido y todavía no nacido, la persona por nacer
-Qué separa a la organización inscripta de la no inscripta | Solo la inscripción; las dos actúan y las dos son sujetos de derecho
-Cómo distingo sujeto de derecho de persona | Sujeto es el género: basta que se le imputen derechos y deberes
-Con qué argumento se justifica incluir a los dos nuevos sujetos | Que ya actúan en la realidad, directamente o por medio de representantes
+Cómo distingo sujeto de derecho de persona | Sujeto es el género: basta que se le imputen derechos y deberes; ser persona exige haber nacido o estar inscripto

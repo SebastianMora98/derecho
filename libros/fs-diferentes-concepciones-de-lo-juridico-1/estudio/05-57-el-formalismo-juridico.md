@@ -8,13 +8,9 @@ Contesta por qué la escuela que hoy sigue dominando la enseñanza tampoco alcan
 
 ## 2. Lo esencial del capítulo
 
-Mientras el derecho natural perdía influencia, se expandió de manera vertiginosa una visión puramente formalista, y el normativismo se afirma en el siglo XIX como la solución que los juristas esperaban (p. 130). El recorrido tiene tres escalones. Primero la escuela de la exégesis, para la cual lo jurídico estaba "totalmente contenido en su expresión normativa" y cuyo método se volvió el instrumento de la enseñanza y la interpretación; por décadas el derecho civil se asimiló sin más al Código Napoleón de 1804. De la exégesis deriva el positivismo, para el cual derecho es sinónimo de norma escrita (p. 131). Y el positivismo alcanza su punto más alto con Kelsen.
+Mientras el derecho natural perdía influencia se expandió de manera vertiginosa una visión puramente formalista, y el normativismo se afirma en el siglo XIX como la solución que los juristas esperaban (p. 130). El recorrido tiene tres escalones: primero la escuela de la exégesis, para la cual lo jurídico estaba "totalmente contenido en su expresión normativa" y cuyo método se volvió el instrumento de la enseñanza —por décadas el derecho civil se asimiló sin más al Código Napoleón de 1804—; de ella deriva el positivismo, para el cual derecho es sinónimo de norma escrita (p. 131); y el positivismo alcanza su punto más alto con Kelsen. Sobre la teoría pura el autor es generoso: dice que deslumbró por su coherencia, que su fuerza de convicción fue avasalladora y que los juristas se rindieron entusiastas. Después describe qué hace: el objeto de la ciencia jurídica se contrae al ordenamiento normativo, la vida humana queda relegada a contenido factual de las normas, y los valores resultan elementos "de naturaleza metajurídica".
 
-Sobre la teoría pura del derecho el autor es generoso, y conviene notar cuánto: dice que deslumbró por su coherencia y sus aciertos en el tratamiento de la dimensión formal-normativa, que su fuerza de convicción fue avasalladora, que la doctrina se impregnó de sus postulados y que los juristas se rindieron entusiastas. Reconoce que su validez es ampliamente admitida y que se alaba su rigor. Después describe qué hace exactamente esa teoría: para Kelsen el objeto de estudio de la ciencia jurídica se contrae solo al ordenamiento normativo, la vida humana queda relegada a ser el contenido factual de las normas, y los valores resultan elementos "de naturaleza metajurídica", o sea de fuera del derecho.
-
-Y ahí está el límite, con la misma estructura que en los capítulos anteriores: admitir la explicación de la dimensión formal no obliga a compartir su conclusión, la de reducir el derecho a esa sola dimensión. La vida humana y los valores no pueden marginarse de la experiencia jurídica, y la frase que lo cierra es la más filosa del capítulo: no cabe "extrañarlos o exiliarlos del derecho calificándolos de 'impuros'" (pp. 131-132). Trae después a Perlingieri, para quien el formalismo, sea exegético o científico, es "una interpretación unilateral de la juridicidad".
-
-El argumento final es distinto de los anteriores y merece atención, porque no es de alcance sino de naturaleza: la norma no puede constituirse en el objeto de estudio del derecho "en tanto es pura forma, vacía de contenido" (p. 132). No es solo que le falte algo: es que por sí sola no tiene qué estudiar. Y de ahí un reparto: el estudio de la norma como pensamiento es materia de la lógica jurídica, no de la ciencia del derecho.
+Ahí está el límite, con la misma estructura que en los capítulos anteriores: admitir la explicación de la dimensión formal no obliga a compartir la conclusión de reducir el derecho a esa sola dimensión. La vida humana y los valores no pueden marginarse, y la frase que lo cierra es la más filosa del capítulo: no cabe "extrañarlos o exiliarlos del derecho calificándolos de 'impuros'" (pp. 131-132). Trae después a Perlingieri, para quien el formalismo, sea exegético o científico, es "una interpretación unilateral de la juridicidad". Pero el argumento final es distinto de los anteriores y merece atención, porque no es de alcance sino de naturaleza: la norma no puede constituirse en objeto de estudio del derecho "en tanto es pura forma, vacía de contenido" (p. 132). No es solo que le falte algo; es que por sí sola no tiene qué estudiar. De ahí un reparto: estudiar la norma como pensamiento es materia de la lógica jurídica, no de la ciencia del derecho.
 
 ## 3. Mapa
 
@@ -59,25 +55,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un profesor enseña derecho civil explicando artículo por artículo el código, sin salir del texto. ¿A qué escuela pertenece ese método y qué le objetaría el autor?
-2. Alguien afirma que en este capítulo el autor refuta a Kelsen. ¿Qué parte de esa lectura respalda el texto y qué parte contradice?
-3. El argumento de que la norma es "pura forma, vacía de contenido" es distinto de los que usó contra el iusnaturalismo. ¿En qué se diferencia y por qué es más fuerte?
-4. El autor manda el estudio de la norma como pensamiento a la lógica jurídica. ¿Eso resuelve algo o solo mueve el problema de lugar?
+1. ¿Qué entender por el formalismo jurídico? ¿Cuáles son las implicaciones de una concepción solo formalista del derecho?
+2. Un profesor enseña derecho civil explicando artículo por artículo el código, sin salir del texto. ¿A qué escuela pertenece ese método y qué le objetaría el autor?
 
 --- No mires esto hasta responder ---
 
-1. A la escuela de la exégesis, para la cual lo jurídico está totalmente contenido en su expresión normativa. La objeción es que trabaja con pura forma: sin la conducta que la norma regula ni el valor que protege, no tiene contenido que enseñar (pp. 130-132).
-2. Respalda que rechaza su conclusión: reducir el derecho a la dimensión normativa. Contradice llamarlo refutación: le concede coherencia, rigor y acierto sobre la dimensión formal, y dice que su validez es ampliamente reconocida.
-3. Contra el iusnaturalismo el argumento era de alcance —los valores no agotan la experiencia—. Acá es de naturaleza: la norma no puede ser el objeto de estudio porque por sí sola no tiene qué estudiar. Es más fuerte porque no depende de comparar dimensiones.
-4. Resuelve algo: le da un lugar legítimo al análisis formal en vez de descartarlo, y así el autor puede quedarse con el aporte de Kelsen sin aceptar su conclusión. Discutible: no explica cómo se relacionan después la lógica jurídica y la ciencia del derecho.
+1. El formalismo es la corriente que identifica el derecho con su forma normativa: viene de la escuela de la exégesis, para la cual lo jurídico está "totalmente contenido en su expresión normativa", deriva en el positivismo —derecho como sinónimo de norma escrita— y culmina en la teoría pura de Kelsen (pp. 130-131). Sus implicaciones son tres y conviene darlas en orden: el objeto de la ciencia jurídica se contrae al ordenamiento normativo; la vida humana queda relegada a mero contenido factual de las normas; y los valores pasan a ser elementos metajurídicos, exiliados del derecho por "impuros". El autor le concede coherencia y acierto sobre la dimensión formal, pero rechaza esa conclusión, y agrega un argumento propio: la norma no puede ser el objeto de estudio del derecho porque es pura forma, vacía de contenido (p. 132).
+2. A la escuela de la exégesis, para la cual lo jurídico está totalmente contenido en su expresión normativa. La objeción es que trabaja con pura forma: sin la conducta que la norma regula ni el valor que protege, no tiene contenido que enseñar. Ese análisis formal es legítimo, pero es lógica jurídica y no ciencia del derecho.
 
 ## Flashcards
 
 Qué sostenía la escuela de la exégesis | Que lo jurídico estaba totalmente contenido en su expresión normativa
-A qué código se asimiló el derecho civil por décadas | Al Código Napoleón de 1804
-Qué es el positivismo jurídico según este capítulo | La corriente derivada de la exégesis para la cual derecho es sinónimo de norma escrita
-Qué es el objeto de estudio del derecho para Kelsen | Solo el ordenamiento normativo, con prescindencia de la vida humana
-Qué lugar les da Kelsen a los valores | El de elementos metajurídicos, o sea de fuera del derecho
-Qué le concede el autor a la teoría pura del derecho | Coherencia, rigor y acierto en el tratamiento de la dimensión formal-normativa
+Cuáles son los tres escalones del formalismo | Escuela de la exégesis, positivismo y teoría pura de Kelsen
+Qué lugar les da Kelsen a los valores y a la vida humana | Los valores son metajurídicos y la vida humana, contenido factual de las normas
 Por qué la norma no puede ser el objeto de estudio del derecho | Porque es pura forma, vacía de contenido
-A qué disciplina le deja el autor el estudio de la norma como pensamiento | A la lógica jurídica

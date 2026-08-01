@@ -8,13 +8,11 @@ Contestan qué hacer con dos clases de desorden que la ley no llegaba a tocar. C
 
 ## 2. Lo esencial del capítulo
 
-Los duelos privados nacieron de la necesidad del favor ajeno y tuvieron su origen "en la anarquía de las leyes" (cap. 10). Beccaria conjetura por qué los antiguos no los conocían: el duelo era el espectáculo que daban gladiadores esclavos y envilecidos, así que un hombre libre se desdeñaba de parecerse a ellos. Lo importante es el diagnóstico de por qué la amenaza de muerte fracasó: la costumbre se funda en algo que ciertos hombres temen más que a la muerte. Al hombre de honor, perder el favor ajeno lo expone a una vida solitaria —insufrible para un ser sociable— o a insultos y a una infamia que, por repetidos, exceden al peligro de la pena. Y el vulgo no se bate no solo por estar desarmado, sino porque necesita menos la consideración ajena que los nobles, que al estar más arriba se miran con más celos.
+Los duelos privados nacieron de la necesidad del favor ajeno y tuvieron su origen "en la anarquía de las leyes" (cap. 10). Lo decisivo es por qué la amenaza de muerte fracasó: la costumbre se funda en algo que ciertos hombres temen más que a la muerte, porque al hombre de honor perder el favor ajeno lo expone a la soledad o a una infamia que por repetida excede al peligro de la pena. De ahí el remedio, que Beccaria presenta como ajeno: castigar **al agresor**, quien dio ocasión al duelo, y declarar inocente a quien sin culpa suya se vio precisado a defender lo que las leyes no aseguran, para que el Estado muestre "que él teme solo las leyes, no los hombres".
 
-De ahí el remedio, que Beccaria presenta como ajeno y no como propio: castigar **al agresor**, es decir a quien dio ocasión al duelo, y declarar inocente a quien sin culpa suya se vio precisado a defender lo que las leyes no aseguran, que es la opinión. Si el honor quedó fuera del depósito común, la solución no es reprimir al que se defiende sino que el Estado muestre "que él teme solo las leyes, no los hombres".
+El cap. 11 pasa a la tercera clase de delitos, los que turban la tranquilidad pública: estrépitos en los caminos destinados al comercio y sermones fanáticos, que excitan a la muchedumbre y toman fuerza más del entusiasmo oscuro que de la razón clara, porque esta "nunca obra sobre una gran masa de hombres". Los medios que propone son de prevención y no de castigo —la noche iluminada a expensas públicas, las guardias por cuarteles, los discursos religiosos reservados al silencio de los templos—, y de eso debe cuidar el magistrado "que los franceses llaman Policía" (cap. 11).
 
-El cap. 11 pasa a la tercera clase de delitos, los que turban la tranquilidad pública: estrépitos en los caminos destinados al comercio y sermones fanáticos, que excitan a la muchedumbre y toman fuerza más del entusiasmo oscuro que de la razón clara, porque esta "nunca obra sobre una gran masa de hombres". Los medios que propone son de prevención y no de castigo: la noche iluminada a expensas públicas, las guardias por cuarteles, los discursos religiosos reservados al silencio de los templos. De eso debe cuidar el magistrado "que los franceses llaman Policía".
-
-Y ahí llega el límite que da valor al capítulo. Si ese magistrado obrara con leyes arbitrarias y no establecidas en un código que circule entre las manos de todos, se abre una puerta a la tiranía. Beccaria formula el axioma sin excepciones: **cada ciudadano debe saber cuándo es reo y cuándo es inocente**. Si hacen falta magistrados arbitrarios, eso nace de la flaqueza de la constitución. Y agrega una observación empírica fuerte: la incertidumbre de la propia suerte ha sacrificado más víctimas que la crueldad pública y solemne, porque el verdadero tirano empieza reinando sobre la opinión, que previene al coraje. El tramo final enumera las preguntas del resto del libro y cierra diciendo que le bastaría arrancar a una sola víctima de la angustia de la muerte.
+Ahí llega el límite que da valor al capítulo. Si ese magistrado obrara con leyes arbitrarias y no establecidas en un código que circule entre las manos de todos, se abre una puerta a la tiranía; el axioma, que Beccaria da sin excepciones, es que **cada ciudadano debe saber cuándo es reo y cuándo es inocente**, y si hacen falta magistrados arbitrarios eso nace de la flaqueza de la constitución (cap. 11). A eso suma una observación empírica fuerte: la incertidumbre de la propia suerte ha sacrificado más víctimas que la crueldad pública y solemne, porque el verdadero tirano empieza reinando sobre la opinión, que previene al coraje. El tramo final enumera las preguntas del resto del libro.
 
 ## 3. Mapa
 
@@ -59,25 +57,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un Estado decreta la muerte para quien acepte un duelo y la costumbre sigue. Según el cap. 10, ¿por qué falla la amenaza?
-2. Beccaria propone declarar inocente al que se batió sin haber provocado. ¿No es eso premiar la violencia privada?
-3. ¿Por qué dice que la incertidumbre de la propia suerte hizo más víctimas que la crueldad pública y solemne?
-4. Admite que en algunos gobiernos los magistrados arbitrarios son necesarios. ¿Debilita eso su axioma?
+1. ¿Qué se entiende por el axioma de que cada ciudadano debe saber cuándo es reo y cuándo es inocente? Explique sus implicaciones para el magistrado que guarda la tranquilidad pública.
+2. Un Estado decreta la muerte para quien acepte un duelo y la costumbre sigue. Según el cap. 10, ¿por qué falla la amenaza y qué remedio corresponde?
 
 --- No mires esto hasta responder ---
 
-1. Porque la costumbre se funda en lo que algunos temen más que a la muerte: quedar sin el favor ajeno, expuestos a la soledad o a una infamia que por repetida excede al peligro de la pena. Una amenaza solo disuade si supera al mal que evita (cap. 10).
-2. No, porque el remedio no deja el hecho sin consecuencia: la traslada al agresor, que es quien puso al otro en esa situación. Y el objetivo declarado es que el Estado muestre que teme solo a las leyes, es decir que se haga cargo de proteger la opinión en lugar de dejar el vacío que el duelo llena.
-3. Porque la crueldad conocida amotina los ánimos, pero no los envilece: se sabe qué esperar. La incertidumbre, en cambio, deja al ciudadano sin defensa y sin coraje, y el tirano empieza reinando sobre la opinión. Es la misma tesis del cap. 5 sobre la ley oscura, ahora aplicada a la policía.
-4. La matiza sin cederla. Dice que esa necesidad nace de la flaqueza de la constitución y no de la naturaleza de un gobierno bien organizado, así que la trata como un síntoma y no como una excepción legítima. Queda igual una tensión: reconoce que en la práctica existen, y el capítulo no dice cómo limitarlos mientras existan.
+1. Es la regla, que Beccaria da sin excepciones, de que cada ciudadano pueda conocer de antemano qué lo hace reo y qué lo deja inocente, y para eso las leyes tienen que estar establecidas en un código que circule entre las manos de todos (cap. 11). Su implicación inmediata es un límite al magistrado de policía: puede prevenir el desorden con la noche iluminada, las guardias por cuarteles y los discursos religiosos reservados a los templos, pero si obrase con leyes arbitrarias abriría una puerta a la tiranía. Cuando esos magistrados arbitrarios parecen necesarios, la necesidad nace de la flaqueza de la constitución y no de la naturaleza de un gobierno bien organizado. El fundamento último es empírico: la incertidumbre de la propia suerte ha sacrificado más víctimas que la crueldad pública y solemne, porque el verdadero tirano empieza reinando sobre la opinión, que previene al coraje.
+2. Falla porque la costumbre se funda en lo que algunos temen más que a la muerte: quedar sin el favor ajeno, expuestos a la soledad o a una infamia que por repetida excede al peligro de la pena, y una amenaza solo disuade si supera al mal que evita (cap. 10). El remedio es castigar al agresor que dio la ocasión y declarar inocente a quien se vio precisado a defender lo que las leyes no aseguran, que es la opinión. Como el honor quedó fuera del depósito común (cap. 9), la salida no es reprimir al que se defiende sino que el Estado muestre que teme solo las leyes, y se haga cargo del vacío que el duelo llena.
 
 ## Flashcards
 
-De dónde tuvieron origen los duelos privados según Beccaria | De la anarquía de las leyes y de la necesidad del favor ajeno
-Por qué fracasan los decretos de muerte contra el duelo | Porque la infamia y la soledad se temen más que la muerte
-Por qué el vulgo se bate menos que la nobleza | Porque necesita menos la consideración ajena, además de estar desarmado
-Cuál es el mejor método de precaver el duelo | Castigar al agresor que dio la ocasión y declarar inocente al que se vio precisado a defenderse
-Qué debe mostrar el Estado a sus ciudadanos según el cap. 10 | Que teme solo las leyes, no los hombres
-Qué delitos entran en la tranquilidad pública | Los estrépitos en los caminos y los sermones fanáticos que excitan a la muchedumbre
 Cuál es el axioma sin excepciones del cap. 11 | Que cada ciudadano debe saber cuándo es reo y cuándo es inocente
+Por qué fracasan los decretos de muerte contra el duelo | Porque la infamia y la soledad se temen más que la muerte
+Cuál es el mejor método de precaver el duelo | Castigar al agresor que dio la ocasión y declarar inocente al que se vio precisado a defenderse
 Qué ha sacrificado más víctimas que la crueldad pública y solemne | La incertidumbre de la propia suerte

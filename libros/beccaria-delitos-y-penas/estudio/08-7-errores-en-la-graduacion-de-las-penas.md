@@ -8,13 +8,9 @@ Contesta con qué **no** se mide un delito. Es el reverso del capítulo anterior
 
 ## 2. Lo esencial del capítulo
 
-El primer error es medir por la **intención**. Beccaria la descarta por una razón operativa antes que moral: la intención depende de la impresión actual de los objetos y de la disposición previa de la mente, y esas varían en todos los hombres y en cada uno con la velocísima sucesión de las ideas, las pasiones y las circunstancias. Si se la tomara como medida haría falta no ya un código particular para cada ciudadano sino "una nueva ley para cada delito" (cap. 7). Y agrega el argumento de resultado: a veces los hombres con la mejor intención causan el mayor mal, y con la peor voluntad hacen el mayor bien. Notar que no dice que la intención sea irrelevante para juzgar a una persona, sino que no puede fundar una escala general.
+La única medida del delito es el daño hecho a la nación, y el capítulo lo establece descartando tres varas. La primera es la **intención**, rechazada por una razón operativa antes que moral: depende de la impresión actual de los objetos y de la disposición previa de la mente, y esas varían en todos los hombres y en cada uno con la velocísima sucesión de las ideas, las pasiones y las circunstancias, de modo que tomarla como medida exigiría no ya un código particular para cada ciudadano sino "una nueva ley para cada delito" (cap. 7); a eso suma el argumento de resultado, porque a veces con la mejor intención se causa el mayor mal. No dice que la intención sea irrelevante para juzgar a una persona, sino que no puede fundar una escala general. La segunda vara es la **dignidad de la persona ofendida**, refutada por reducción al absurdo: si fuera esa, una irreverencia contra el Ser supremo pesaría más que el asesinato de un monarca.
 
-El segundo error es medir por la **dignidad de la persona ofendida** en vez de por la importancia del hecho respecto del bien público. Lo refuta con una reducción al absurdo: si esa fuera la medida, una irreverencia contra el Ser supremo debería castigarse más atrozmente que el asesinato de un monarca, porque la diferencia de naturaleza es infinita. El absurdo es lo que muestra que el criterio no escala.
-
-El tercer error, y al que dedica más espacio, es medir por la **gravedad del pecado**. Acá el argumento se apoya en distinguir dos tipos de relación. Las relaciones entre hombres son de igualdad, y de la necesidad, del choque de las pasiones y de la oposición de los intereses nació la idea de utilidad común, que es la base de la justicia humana. Las relaciones entre los hombres y Dios son de dependencia respecto de un Ser perfecto que "se ha reservado a sí solo el derecho de ser a un mismo tiempo legislador y juez", porque solo él puede serlo sin inconveniente. De ahí la pregunta retórica: si ya estableció penas eternas, quién será el necio que ose suplir a la divina justicia y vindicar a un Ser que se basta a sí mismo y que obra sin relación.
-
-El cierre es epistemológico y es la parte más filosa. La gravedad del pecado depende de "la impenetrable malicia del corazón", que unos seres limitados no pueden conocer sin revelación; tomarla por norma llevaría a que los hombres castiguen cuando Dios perdona y perdonen cuando castiga. Conviene ver la estrategia: Beccaria no niega el pecado ni discute teología, sino que separa jurisdicciones y muestra que el juez humano no tiene el dato que necesitaría. Es el mismo movimiento del cap. 4 —la incertidumbre del criterio descalifica al criterio— aplicado ahora a la moral religiosa.
+El tercer error, al que dedica más espacio, es medir por la **gravedad del pecado**, y ahí el argumento se apoya en distinguir dos tipos de relación. Entre hombres las relaciones son de igualdad, y del choque de las pasiones y la oposición de los intereses nació la idea de utilidad común, base de la justicia humana; con Dios son de dependencia respecto de un Ser perfecto que "se ha reservado a sí solo el derecho de ser a un mismo tiempo legislador y juez" (cap. 7), de manera que si ya estableció penas eternas nadie puede vindicar a quien se basta a sí mismo. El cierre es epistemológico y es la parte más filosa: la gravedad del pecado depende de "la impenetrable malicia del corazón", que unos seres limitados no pueden conocer sin revelación, y tomarla por norma llevaría a castigar cuando Dios perdona y a perdonar cuando castiga. Beccaria no niega el pecado ni discute teología: separa jurisdicciones y muestra que el juez humano no tiene el dato que necesitaría.
 
 ## 3. Mapa
 
@@ -55,25 +51,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un tribunal agrava la pena porque el reo actuó con especial malicia interior. ¿Qué le objetaría este capítulo?
-2. Beccaria refuta la dignidad del ofendido con la comparación entre la irreverencia y el regicidio. ¿Por qué funciona ese argumento?
-3. Su rechazo a medir por el pecado, ¿es una posición antirreligiosa?
-4. Descartar la intención parece llevar a castigar igual al que mata queriendo y al que mata por accidente. ¿Es esa la consecuencia?
+1. ¿Qué se entiende por la verdadera medida de los delitos? Explique con qué tres criterios se los ha querido graduar y por qué el capítulo los descarta.
+2. Descartar la intención parece llevar a castigar igual al que mata queriendo y al que mata por accidente. ¿Es esa la consecuencia?
 
 --- No mires esto hasta responder ---
 
-1. Que la gravedad del pecado depende de la impenetrable malicia del corazón, que unos seres limitados no pueden conocer sin revelación. El tribunal está usando como norma un dato que no tiene, y así puede castigar cuando Dios perdona (cap. 7).
-2. Porque toma el criterio del adversario y lo lleva hasta el final: si la medida es la superioridad del ofendido, la diferencia infinita entre Dios y un rey obliga a una conclusión que nadie sostiene. Un criterio que produce ese resultado no puede ser la medida.
-3. No, y está construido para no serlo. Reconoce las penas eternas y la jurisdicción divina; lo que niega es que el juez humano pueda suplirla. Separa competencias en vez de negar una de ellas, y eso le permite atacar el uso penal del pecado sin discutir teología.
-4. No exactamente. Lo que rechaza es que la intención sea la **medida** de la escala general de delitos, porque es inestable y exigiría una ley por caso. La conducta imprudente y la deliberada producen además daños sociales distintos —la segunda es más previsible y más disuadible—, así que la vara del daño no las iguala. Aun así, el capítulo no desarrolla ese punto y ahí queda flojo.
+1. La verdadera medida de los delitos es el daño hecho a la nación, y no la intención del autor, la dignidad del ofendido ni la gravedad del pecado (cap. 7). La intención no sirve porque depende de la impresión de los objetos y de la disposición de la mente, que varían en cada hombre y en cada momento, así que exigiría una nueva ley para cada delito, y porque a veces la mejor intención causa el mayor mal. La dignidad del ofendido tampoco, y lo muestra por reducción al absurdo: si la medida fuera la superioridad de quien recibe la ofensa, una irreverencia contra el Ser supremo debería castigarse más atrozmente que el asesinato de un monarca. Y la gravedad del pecado queda fuera por dos razones: las relaciones con Dios son de dependencia frente a un Ser que se reservó ser legislador y juez a la vez, y esa gravedad depende de la impenetrable malicia del corazón, que unos seres limitados no pueden conocer sin revelación. La implicación es que el juez humano solo puede medir lo que está a su alcance, el daño social del hecho.
+2. No exactamente. Lo que rechaza es que la intención sea la **medida** de la escala general de delitos, porque es inestable y exigiría una ley por caso. La conducta imprudente y la deliberada producen además daños sociales distintos —la segunda es más previsible y más disuadible—, así que la vara del daño no las iguala. Aun así, el capítulo no desarrolla ese punto y ahí queda flojo.
 
 ## Flashcards
 
 Cuál es la verdadera medida de los delitos según el cap. 7 | El daño hecho a la nación
-Por qué no sirve la intención como medida | Porque varía con las ideas, pasiones y circunstancias de cada hombre y momento
-Qué haría falta si se midiera por la intención | No un código para cada ciudadano, sino una nueva ley para cada delito
-Con qué ejemplo refuta medir por la dignidad del ofendido | Que la irreverencia contra el Ser supremo pesaría más que el asesinato de un monarca
-Cómo son las relaciones entre los hombres según este capítulo | De igualdad, con la utilidad común como base de la justicia humana
-Cómo son las relaciones entre los hombres y Dios | De dependencia de un Ser que se reservó ser legislador y juez a la vez
-De qué depende la gravedad del pecado | De la impenetrable malicia del corazón
-Qué riesgo hay en castigar según el pecado | Castigar cuando Dios perdona y perdonar cuando castiga
+Cuáles son los tres criterios que descarta para graduar la pena | La intención del autor, la dignidad del ofendido y la gravedad del pecado
+Por qué no sirve la intención como medida | Porque varía con las ideas, pasiones y circunstancias de cada hombre y momento, y exigiría una nueva ley para cada delito
+Cómo distingo el delito del pecado | El delito se mide por el daño social; el pecado, por una malicia del corazón que el juez no puede conocer

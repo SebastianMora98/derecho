@@ -8,13 +8,9 @@ Contesta por qué existían las injusticias de los capítulos anteriores. Es el 
 
 ## 2. Lo esencial del capítulo
 
-Las injusticias autorizadas —abre Beccaria, pensando sobre todo en la confiscación— fueron aprobadas incluso por hombres iluminados y practicadas en las repúblicas más libres por una razón de fondo: se consideró a la sociedad no como unión de hombres sino como **unión de familias**. La demostración es aritmética: cien mil personas, veinte mil familias de cinco, cada una con su cabeza. Si la sociedad se compone de familias, habrá veinte mil hombres y ochenta mil esclavos; si se compone de hombres, cien mil ciudadanos y ninguno. En el primer caso hay una república formada por veinte mil pequeñas monarquías; en el segundo, el espíritu republicano respira también "entre las paredes domésticas, donde se encierra gran parte de la felicidad o de la miseria de los hombres" (cap. 26).
+Las injusticias autorizadas —abre Beccaria, pensando sobre todo en la confiscación— fueron aprobadas incluso por hombres iluminados y practicadas en las repúblicas más libres por una razón de fondo: se consideró a la sociedad no como unión de hombres sino como unión de familias. La demostración es aritmética: en cien mil personas repartidas en veinte mil familias, si la sociedad se compone de familias habrá veinte mil hombres y ochenta mil esclavos; si se compone de hombres, cien mil ciudadanos y ninguno. La primera es una república formada por veinte mil pequeñas monarquías; en la segunda el espíritu republicano respira también "entre las paredes domésticas, donde se encierra gran parte de la felicidad o de la miseria de los hombres" (cap. 26). El contagio es lo importante: como las leyes y las costumbres son efecto de los sentimientos habituales de quienes componen la república, y esos son los cabezas de familia, el espíritu monárquico se introduce poco a poco en la legislación.
 
-El mecanismo de contagio es lo importante. Como las leyes y las costumbres son efecto de los sentimientos habituales de quienes componen la república —los cabezas de familia—, el espíritu monárquico se introduce poco a poco en ella. Contrapone además dos maneras de mirar: el espíritu de familia es "un espíritu de detalle y limitado a los hechos pequeños"; el regulador de las repúblicas, dueño de los principios generales, distribuye los hechos según el bien de la mayor parte.
-
-Después describe qué le pasa a la persona. En la república de familias los hijos permanecen bajo la potestad del padre mientras viva y deben esperar su muerte para tener una existencia que dependa solo de las leyes; acostumbrados a temer y rogar en la edad más vigorosa, no resistirán al vicio en la edad cansada. En la república de hombres la familia no es subordinación de mando sino **de contrato**: los hijos pasan a ser miembros libres de la ciudad y se sujetan al cabeza de familia por participar de sus ventajas. No queda otro vínculo que el socorro recíproco y la gratitud.
-
-El tramo final saca las consecuencias. La contradicción entre las leyes de familia y las de la república produce otra entre la moral doméstica y la pública: una inspira sujeción y temor, la otra valor y libertad; una limita la beneficencia a un corto número de personas no elegidas, la otra la dilata sobre toda clase de hombres; una manda sacrificarse a "un ídolo vano que se llama bien de familia", que muchas veces no es el bien de ninguno. Agrega que el sentimiento republicano se debilita a medida que la sociedad crece. Una república muy vasta solo se libra del despotismo subdividiéndose en repúblicas federativas, y su respuesta sobre cómo lograrlo —un dictador con el valor de Sila y tanto genio para edificar como él tuvo para destruir— es más un deseo que una propuesta.
+De ahí las consecuencias sobre la persona y sobre la moral. En la república de familias los hijos permanecen bajo la potestad del padre mientras viva y deben esperar su muerte para tener una existencia que dependa solo de las leyes; en la de hombres la familia no es subordinación de mando sino de contrato, y no queda otro vínculo que el socorro recíproco y la gratitud. La contradicción entre unas leyes y otras produce una moral doble: una inspira sujeción y temor, la otra valor y libertad; una manda sacrificarse a "un ídolo vano que se llama bien de familia", que muchas veces no es el bien de ninguno. El cierre agrega que el sentimiento republicano se debilita a medida que la sociedad crece, y que una república muy vasta solo se libra del despotismo subdividiéndose en repúblicas federativas —aunque confiar esa tarea a un dictador con el genio de Sila es más un deseo que una propuesta.
 
 ## 3. Mapa
 
@@ -58,25 +54,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. ¿Cómo llega el espíritu monárquico a las leyes de una república, según este capítulo?
-2. Beccaria opone subordinación de mando a subordinación de contrato. ¿Qué cambia para el hijo adulto?
-3. Dice que bajo el despotismo más fuerte las amistades son más durables y las virtudes de familia, las únicas. ¿Es un elogio?
-4. Propone que una república vasta se subdivida en federativas, y confía la tarea a un dictador. ¿Se sostiene esa salida?
+1. ¿Qué se entiende por espíritu de familia y cuáles son sus implicaciones para las leyes y la moral de una república?
+2. Beccaria propone que una república vasta se subdivida en federativas, y confía la tarea a un dictador con el genio de Sila. ¿Se sostiene esa salida?
 
 --- No mires esto hasta responder ---
 
-1. Porque las leyes y las costumbres son efecto de los sentimientos habituales de quienes componen la república. Si esos son los cabezas de familia —cada uno soberano en su casa—, el hábito de mandar y ser obedecido se traslada a la legislación, y lo único que contiene sus efectos son los intereses opuestos entre ellos, no un sentimiento de igualdad (cap. 26).
-2. Que deja de esperar la muerte del padre para tener una existencia que dependa solo de las leyes. En la subordinación de contrato es miembro libre de la ciudad y se sujeta por participar de las ventajas; el único vínculo restante es el socorro recíproco y la gratitud, que Beccaria dice destruida más por la sujeción legal que por la malicia.
-3. No: es un diagnóstico. A medida que se debilitan los sentimientos que nos unen a la nación se refuerzan los que nos atan a lo cercano, así que la intensidad de la vida privada es un síntoma de la ausencia de vida pública. Y aclara que esas virtudes son "siempre medianas".
-4. La primera mitad sí, y anticipa un argumento que tendría larga vida: la extensión favorece al despotismo porque cada miembro es una fracción menor del todo. La segunda es su punto más débil: confiar la fundación de la libertad a un dictador contradice todo el libro, que desconfía por sistema del poder sin ley. Beccaria mismo lo formula como aspiración, no como diseño.
+1. El espíritu de familia es, en la definición del capítulo, "un espíritu de detalle y limitado a los hechos pequeños", opuesto al espíritu regulador de las repúblicas, que maneja principios generales y distribuye los hechos según el bien de la mayor parte. Nace de concebir la sociedad como unión de familias y no de hombres: en cien mil personas repartidas en veinte mil familias eso da veinte mil ciudadanos y ochenta mil esclavos, es decir una república formada por veinte mil pequeñas monarquías. Sus implicaciones son dos. Sobre las leyes, que al ser efecto de los sentimientos habituales de los cabezas de familia se les cuela el espíritu monárquico. Sobre la moral, que se vuelve doble: una inspira sujeción y temor en la casa y otra valor y libertad en la plaza, y la primera manda sacrificarse a un ídolo vano que muchas veces no es el bien de ninguno (cap. 26).
+2. La primera mitad se sostiene y anticipa un argumento de larga vida: la extensión favorece al despotismo porque cada miembro es una fracción menor del todo. La segunda es el punto más débil del capítulo, porque confiar la fundación de la libertad a un poder sin ley contradice todo el libro. Beccaria mismo lo formula como aspiración y no como diseño institucional.
 
 ## Flashcards
 
-Cuántos ciudadanos y cuántos esclavos hay si la sociedad se compone de familias | Veinte mil hombres y ochenta mil esclavos, en el ejemplo de cien mil personas
-Qué es una república formada por familias según el cap. 26 | Una república compuesta de veinte mil pequeñas monarquías
-Cómo llega el espíritu monárquico a las leyes de una república | Porque las leyes son efecto de los sentimientos habituales de los cabezas de familia
 Cómo describe Beccaria el espíritu de familia | Como un espíritu de detalle, limitado a los hechos pequeños
-Qué hace en cambio el espíritu regulador de las repúblicas | Distribuye los hechos en las clases importantes al bien de la mayor parte
+Cuántos ciudadanos y cuántos esclavos hay si la sociedad se compone de familias | Veinte mil hombres y ochenta mil esclavos, en el ejemplo de cien mil personas
+Cómo llega el espíritu monárquico a las leyes de una república | Porque las leyes son efecto de los sentimientos habituales de los cabezas de familia
 Qué tipo de subordinación es la familia en una república de hombres | Una subordinación de contrato, no de mando
-Cómo llama al bien de familia | Un ídolo vano, que muchas veces no es el bien de ninguno de sus miembros
-Cómo puede una república muy vasta librarse del despotismo | Subdividiéndose y uniéndose en muchas repúblicas federativas

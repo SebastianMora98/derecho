@@ -1,0 +1,21 @@
+{
+  "name": "documentos-web",
+  "version": "1.0.0",
+  "description": "Sitio de estudio, generado por Astro desde web/src/data",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "astro": "7.1.6"
+  },
+  "dependencies": {
+    "markdown-it": "^15.0.0"
+  }
+}

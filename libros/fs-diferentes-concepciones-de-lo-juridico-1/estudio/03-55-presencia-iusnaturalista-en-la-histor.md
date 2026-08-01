@@ -8,13 +8,11 @@ Contesta qué le debemos a la escuela que dominó la formación de juristas en l
 
 ## 2. Lo esencial del capítulo
 
-La doctrina jurídica se apoyó por siglos en el derecho natural y, más recientemente, en el formalismo, cuyos postulados siguen gravitando con fuerza en la producción científica y en el trabajo de los operadores del derecho; un sector buscó sustento además en el sociologismo (pp. 125-126). El iusnaturalismo tuvo influencia decisiva en los siglos XVII y XVIII, se enseñó en las universidades europeas y "preparó el camino de la codificación civil" (p. 126); hoy su presencia se advierte todavía, sin ese peso.
+La doctrina jurídica se apoyó por siglos en el derecho natural y, más recientemente, en el formalismo, cuyos postulados siguen gravitando con fuerza (pp. 125-126). El iusnaturalismo tuvo influencia decisiva en los siglos XVII y XVIII, se enseñó en las universidades europeas y "preparó el camino de la codificación civil" (p. 126). Se le reconocen tres aportes: dos técnicos —haber formulado la distinción entre derecho privado y público, y haber extendido la regulación jurídica a las relaciones entre gobernados y gobernantes— y uno que el autor llama "su principal aporte", su acertada visión axiológica: haber mostrado la capacidad valorativa del ser humano al proclamar que los ideales jurídicos están dados en su naturaleza y que el derecho positivo debe recogerlos (pp. 126, 128).
 
-Se le reconocen tres aportes. Dos son técnicos: haber formulado la distinción entre derecho privado y público, y haber extendido la regulación jurídica a las relaciones entre gobernados y gobernantes. El tercero, que el autor llama "su principal aporte", es su acertada visión axiológica del derecho: haber mostrado la capacidad valorativa del ser humano al proclamar que los ideales jurídicos están dados en su naturaleza y que el derecho positivo debe recogerlos (pp. 126, 128).
+Sobre esa base viene el desarrollo más denso, que es una defensa de los valores antes de limitarlos. Los ideales éticos, religiosos y morales son "insustituibles puntos de referencia" en la tarea del jurista: los únicos con los que comprende las conductas e interpreta las normas (p. 127). Son ingredientes de la estructura del derecho, vivenciados en la vida de relación y objetivados en las normas; y —dejando aparte si son subjetivos u objetivos— se dan "en" y "para" la vida humana, porque el hombre es el único que los sensibiliza, y eso le da la dignidad de persona. De ahí la fórmula: **el hombre es un ser estimativo**. Sin esa capacidad, la libertad no podría trazar ni realizar un proyecto de vida. Agrega que además los inserta en las cosas, con dos ejemplos que no reproduzco —el hierro que se vuelve arado y el mármol que se vuelve escultura (p. 128)—.
 
-Sobre esa base viene el desarrollo más denso, y es una defensa de los valores antes de limitarlos. Los ideales éticos, religiosos y morales son "insustituibles puntos de referencia" en la tarea del jurista: los únicos con los que comprende las conductas y interpreta las normas (p. 127). Los valores son ingredientes de la estructura del derecho, vivenciados en la vida de relación y objetivados en las normas. Y —dejando aparte la discusión sobre si son subjetivos u objetivos— se dan "en" y "para" la vida humana: pertenecen a la estructura del ser humano, que es el único que los sensibiliza y los vivencia, y eso es lo que le da la dignidad de persona. De ahí la fórmula: el hombre es un ser estimativo. Sin esa capacidad, la libertad no podría trazar ni realizar un proyecto de vida.
-
-El autor agrega que la persona no solo vivencia valores sino que los inserta en las cosas, y ahí trae dos ejemplos —el hierro que se vuelve arado, cuchillo o tijera, y el mármol que se vuelve escultura— para mostrar cómo un objeto se hace valioso; leelos en la p. 128, no los repito. El límite llega solo al final y en una sola frase: no se comparte "su pretensión de reducir el derecho a una mera especulación sobre los ideales jurídicos, sobre los valores en tanto exigencias éticas" (p. 126). Notar el desequilibrio: el crédito ocupa casi todo el capítulo y la objeción una línea, así que la insuficiencia del iusnaturalismo queda enunciada más que argumentada.
+El límite llega solo al final y en una sola frase: no se comparte "su pretensión de reducir el derecho a una mera especulación sobre los ideales jurídicos, sobre los valores en tanto exigencias éticas" (p. 126). Notar el desequilibrio: el crédito ocupa casi todo el capítulo y la objeción una línea, así que la insuficiencia del iusnaturalismo queda enunciada más que argumentada.
 
 ## 3. Mapa
 
@@ -56,25 +54,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un profesor dice que este capítulo es una defensa del iusnaturalismo. ¿Qué parte de esa lectura respalda el texto y qué parte contradice?
+1. ¿Qué se entiende por iusnaturalismo? Explique qué aportó a la ciencia jurídica y cuáles son las implicaciones de una concepción solo iusnaturalista del derecho.
 2. Un juez sostiene que para resolver un caso difícil le basta con determinar qué es lo justo, sin atender a la conducta ni a la norma. ¿Qué le objetaría el autor?
-3. El autor rechaza reducir el derecho a una especulación sobre ideales, pero dedica casi todo el capítulo a defender el papel de los valores. ¿Cuánto argumenta esa objeción?
-4. Afirma que los valores se dan "en" y "para" la vida humana, dejando de lado si son subjetivos u objetivos. ¿Puede sostener su posición sin resolver eso?
 
 --- No mires esto hasta responder ---
 
-1. Respalda que le reconoce aportes importantes, sobre todo haber mostrado la capacidad valorativa del hombre. Contradice llamarlo defensa: rechaza expresamente su pretensión de reducir el derecho a los ideales jurídicos (p. 126).
-2. Que se queda en una sola dimensión. El valor es ingrediente del derecho, no su totalidad: se vivencia en la conducta y se objetiva en la norma, así que resolver sin las otras dos es la misma parcialidad que le imputa al iusnaturalismo.
-3. Casi nada: una sola frase, sin ejemplos ni desarrollo, contra varios párrafos de crédito. Es un reproche de alcance que queda enunciado y se apoya en lo dicho en los capítulos anteriores. Discutible: el capítulo es parte de una serie y la argumentación puede leerse como acumulativa.
-4. Sí, y a propósito. Le alcanza con que los valores pertenezcan a la estructura del ser humano y se objetiven en la norma; la disputa sobre su fundamento último es de axiología, y él la deja explícitamente aparte (p. 127).
+1. El iusnaturalismo sostiene que hay principios jurídicos dados en la naturaleza humana, anteriores al derecho que dicta el Estado, y que el derecho positivo debe recogerlos. Tuvo influencia decisiva en los siglos XVII y XVIII y preparó el camino de la codificación civil (p. 126). Sus aportes son dos técnicos —la distinción entre derecho privado y público, y extender la regulación a las relaciones entre gobernados y gobernantes— y uno principal: su visión axiológica, haber mostrado que el hombre es un ser estimativo, el único que vivencia valores. La implicación de quedarse solo ahí es la reducción del derecho "a una mera especulación sobre los ideales jurídicos": deja fuera la conducta y la norma, y con ellas la posibilidad de resolver casos.
+2. Que se queda en una sola dimensión. El valor es ingrediente del derecho, no su totalidad: se vivencia en la conducta y se objetiva en la norma, así que resolver sin las otras dos es la misma parcialidad que el autor le imputa al iusnaturalismo (p. 126).
 
 ## Flashcards
 
 Cuál es el principal aporte del iusnaturalismo según el autor | Su acertada visión axiológica: mostró la capacidad valorativa del ser humano
 Qué dos aportes técnicos le reconoce al iusnaturalismo | La distinción derecho privado/público y extender la regulación a gobernados y gobernantes
-En qué siglos tuvo el iusnaturalismo influencia decisiva | En los siglos XVII y XVIII
-Qué preparó el derecho natural según el capítulo | El camino de la codificación civil
 Qué le rechaza el autor al iusnaturalismo | Reducir el derecho a una mera especulación sobre los ideales jurídicos
 Qué significa que el hombre sea un ser estimativo | Que es el único que sensibiliza y vivencia valores, y eso le da la dignidad de persona
-Dónde se dan los valores según el autor | En y para la vida humana: pertenecen a la estructura del ser humano
-Cómo distingo vivenciar un valor de insertarlo en un objeto | Vivenciarlo es experimentarlo; insertarlo es la acción que vuelve valiosa una cosa

@@ -8,13 +8,9 @@ Contestan de dónde saca el Estado el derecho a castigar. Son los dos capítulos
 
 ## 2. Lo esencial del capítulo
 
-Las leyes son las condiciones con que hombres independientes y aislados se unieron en sociedad, cansados de un continuo estado de guerra y de una libertad que la incertidumbre volvía inútil (cap. 1). Cada uno sacrificó **una parte** de ella para gozar el resto en tranquilidad, y el conjunto de esas porciones sacrificadas forma la soberanía de una nación. Notar quién es el soberano en esta construcción: su "administrador y legítimo depositario", no su dueño. La libertad cedida está en depósito, y quien la administra responde por ella.
+Las leyes son las condiciones con que hombres independientes y aislados se unieron en sociedad, cansados de un continuo estado de guerra y de una libertad que la incertidumbre volvía inútil (cap. 1). Cada uno sacrificó **una parte** de ella para gozar el resto en tranquilidad, y el conjunto de esas porciones sacrificadas forma la soberanía de una nación, de la que el soberano es "administrador y legítimo depositario", no dueño. Formar el depósito no bastaba: había que defenderlo de las usurpaciones privadas, porque todos procuran no solo retirar su porción sino apoderarse de las ajenas, y para eso hacían falta "motivos sensibles", que son las penas. La razón del nombre es psicológica antes que jurídica: la multitud no adopta principios estables de conducta salvo con motivos que hieran inmediatamente los sentidos, porque ni la elocuencia ni las verdades sublimes sujetan las pasiones que excitan los objetos presentes. La pena no persuade, impresiona.
 
-Pero formar el depósito no bastaba: había que defenderlo de las usurpaciones privadas, porque todos procuran no solo retirar su porción sino apoderarse de las ajenas. Para eso hacían falta "motivos sensibles", y las penas son eso. El autor explica por qué los llama así y la razón es psicológica antes que jurídica: la experiencia muestra que la multitud no adopta principios estables de conducta salvo con motivos que hieran inmediatamente los sentidos, porque ni la elocuencia ni las verdades sublimes alcanzan para sujetar las pasiones que excitan los objetos presentes. La pena no persuade, impresiona.
-
-El segundo capítulo saca la consecuencia. Parte de una proposición de Montesquieu —toda pena que no se derive de la absoluta necesidad es tiránica— y la generaliza: **todo acto de autoridad de hombre a hombre** que no se derive de la absoluta necesidad es tiránico (cap. 2). Con eso el fundamento del derecho de castigar queda fijado y a la vez limitado: es la necesidad de defender el depósito de la salud pública de las usurpaciones particulares, y nada más. De ahí la fórmula que gobierna el resto del libro: las penas son tanto más justas cuanto más sagrada e inviolable sea la seguridad y mayor la libertad que el soberano conserva a los súbditos. Es decir que la justicia de una pena se mide por cuánta libertad deja en pie, no por cuánto castiga.
-
-El cierre agrega un criterio de eficacia. Hay que consultar el corazón humano, porque no puede esperarse ventaja durable de una política moral que no esté fundada en los sentimientos indelebles del hombre; cualquier ley que se aparte de ellos encontrará una resistencia que al fin la vence, como una fuerza pequeña pero continua vence a un impulso violento. Conviene ver que ahí se juntan dos argumentos distintos: uno de legitimidad —la pena excesiva es tiránica— y otro de eficacia —además no funciona—.
+El segundo capítulo parte de una proposición de Montesquieu —toda pena que no se derive de la absoluta necesidad es tiránica— y la generaliza: **todo acto de autoridad de hombre a hombre** que no se derive de la absoluta necesidad es tiránico (cap. 2). Con eso el fundamento del derecho de castigar queda fijado y a la vez limitado: es la necesidad de defender el depósito de la salud pública de las usurpaciones particulares, y nada más. De ahí la fórmula que gobierna el resto del libro: las penas son tanto más justas cuanto más sagrada e inviolable sea la seguridad y mayor la libertad que el soberano conserva a los súbditos, o sea que la justicia de una pena se mide por cuánta libertad deja en pie y no por cuánto castiga. El cierre agrega un criterio distinto, de eficacia: no puede esperarse ventaja durable de una política moral que no esté fundada en los sentimientos indelebles del hombre, y la ley que se aparte de ellos encontrará una resistencia que al fin la vence. Quedan así dos argumentos superpuestos, uno de legitimidad y otro de eficacia.
 
 ## 3. Mapa
 
@@ -58,25 +54,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un gobierno agrava una pena argumentando que el delito indigna a la población. Según el cap. 2, ¿alcanza ese argumento?
+1. ¿Cómo funda Beccaria el derecho de castigar? Explique de dónde lo hace nacer y cuáles son sus implicaciones para el límite de la pena.
 2. Alguien sostiene que para Beccaria los individuos entregaron su libertad al Estado a cambio de protección. ¿Qué le corregirías?
-3. Beccaria dice que la pena debe herir los sentidos porque las verdades sublimes no bastan. ¿Es un argumento sobre lo que la pena debe ser o sobre lo que la gente es?
-4. Al final del cap. 2 junta legitimidad y eficacia: la ley que se aparta de los sentimientos humanos es injusta y además fracasa. ¿Le conviene mezclarlas?
 
 --- No mires esto hasta responder ---
 
-1. No. La vara no es la indignación sino la absoluta necesidad de defender el depósito de la salud pública: todo acto de autoridad que no derive de ella es tiránico (cap. 2).
-2. Que cedieron solo una parte, la mínima para vivir seguros, y que el soberano no es dueño sino administrador y depositario de esa suma. El resto de la libertad nunca entró en el pacto (cap. 1).
-3. Sobre lo que la gente es: es una observación psicológica: la multitud no adopta principios estables salvo con motivos que hieran los sentidos. De ahí deriva cómo debe ser la pena, pero la premisa es descriptiva.
-4. Le conviene, porque le da dos frenos independientes: aunque alguien no acepte el argumento de legitimidad, queda el de eficacia. El riesgo es que si una pena cruel resultara eficaz, el segundo argumento no la detendría. Discutible: para Beccaria las dos van juntas porque la crueldad genera resistencia.
+1. El derecho de castigar nace del pacto social: hombres independientes y aislados, cansados de un continuo estado de guerra y de una libertad que la incertidumbre volvía inútil, sacrificaron cada uno una porción mínima de ella, y la suma de esas porciones forma la soberanía, de la que el soberano es administrador y legítimo depositario, no dueño (cap. 1). Como todos procuran retirar su porción y apoderarse de las ajenas, ese depósito hay que defenderlo, y las penas son los "motivos sensibles" que lo hacen. Su fundamento es entonces la necesidad de defender el depósito de la salud pública, y nada más: siguiendo y generalizando a Montesquieu, todo acto de autoridad de hombre a hombre que no derive de la absoluta necesidad es tiránico (cap. 2). La implicación es que el mismo fundamento sirve de límite: las penas son tanto más justas cuanto más sagrada sea la seguridad y mayor la libertad que el soberano conserva a los súbditos, de modo que se miden por cuánta libertad dejan en pie y no por cuánto castigan.
+2. Que cedieron solo una parte, la mínima para vivir seguros, y que el soberano no es dueño sino administrador y depositario de esa suma. El resto de la libertad nunca entró en el pacto, y por eso el mínimo cedido es justamente lo que limita el poder de castigar (cap. 1). Atribuirle una entrega total invierte la tesis: convierte en fuente de poder ilimitado lo que Beccaria construyó como freno.
 
 ## Flashcards
 
 Qué es la soberanía según Beccaria | El conjunto de las porciones de libertad que cada uno sacrificó al bien común
 Qué papel tiene el soberano respecto de esa soberanía | Es su administrador y legítimo depositario, no su dueño
-Por qué los hombres salieron del estado de guerra | Porque la libertad les era inútil en la incertidumbre de conservarla
-Qué son los motivos sensibles | Las penas, llamadas así porque deben herir los sentidos para contener las pasiones
-Por qué no bastan la elocuencia y las verdades sublimes | Porque no sujetan por mucho tiempo las pasiones que excitan los objetos presentes
-Cuál es la proposición de Montesquieu que Beccaria generaliza | Que toda pena que no derive de la absoluta necesidad es tiránica
-Cómo generaliza Beccaria esa proposición | Todo acto de autoridad de hombre a hombre sin absoluta necesidad es tiránico
-Cuándo son más justas las penas según el cap. 2 | Cuanto más sagrada sea la seguridad y mayor la libertad que el soberano conserva
+Qué son los motivos sensibles y por qué hacen falta | Las penas; porque la multitud no adopta principios estables salvo con motivos que hieran los sentidos
+Cómo generaliza Beccaria la proposición de Montesquieu | Todo acto de autoridad de hombre a hombre sin absoluta necesidad es tiránico

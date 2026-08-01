@@ -12,9 +12,7 @@ El primer aporte es haberle dado al comité la calidad de persona jurídica, sie
 
 El segundo aporte es haber regulado la organización de personas no inscripta, conocida hasta entonces como "irregular" o "de hecho". El argumento es de reparación de un olvido: esas organizaciones venían actuando en la vida comunitaria "por siglos", su presencia es inmemorial, y el Código de 1936 y la codificación comparada las ignoraban. No podía seguir desconociéndose su calidad de sujeto de derecho, o sea de entidad a la que se imputan derechos y deberes.
 
-El tramo decisivo es la comparación entre las dos, y conviene leerlo despacio porque de ahí sale todo. En sus versiones de asociación, fundación, comité o sociedad, la organización no inscripta está formada por un grupo de seres humanos que realiza actos jurídicos de todo tipo, igual que la inscripta. La única diferencia entre las dos es que una está en un registro público y la otra no (p. 188). Pero de esa única diferencia se sigue una consecuencia grande: en la no inscripta, por acción de un dispositivo legal, las situaciones jurídicas subjetivas se atribuyen **a cada uno de sus miembros, proporcionalmente**; en la inscripta se imputan a un ente ideal, inexistente en la realidad, conocido por su expresión lingüística.
-
-Ahí se cierra el arco del libro. Si la persona jurídica es una abstracción y lo único que la separa de la organización de hecho es un trámite, entonces la limitación de responsabilidad que trae la inscripción no es un atributo natural de la personalidad sino un privilegio que el ordenamiento concede, y por eso el autor insiste en llamarlo excepcional. El texto se corta justo cuando iba a desarrollarlo, así que ese cierre conviene leerlo en el original.
+El tramo decisivo es la comparación entre las dos, y conviene leerlo despacio porque de ahí sale todo. En sus versiones de asociación, fundación, comité o sociedad, la organización no inscripta está formada por un grupo de seres humanos que realiza actos jurídicos de todo tipo, igual que la inscripta, y la única diferencia entre las dos es que una está en un registro público y la otra no (p. 188). De esa única diferencia se sigue una consecuencia grande: en la no inscripta, por acción de un dispositivo legal, las situaciones jurídicas subjetivas se atribuyen **a cada uno de sus miembros, proporcionalmente**; en la inscripta se imputan a un ente ideal, inexistente en la realidad, conocido por su expresión lingüística. Si lo único que separa a la persona jurídica de la organización de hecho es un trámite, la limitación de responsabilidad no es un atributo natural de la personalidad sino un privilegio que el ordenamiento concede, y por eso el autor insiste en llamarlo excepcional. El texto se corta justo cuando iba a desarrollarlo, así que ese cierre conviene leerlo en el original.
 
 ## 3. Mapa
 
@@ -56,25 +54,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un grupo recauda fondos para una escuela y contrae una deuda, sin haberse inscripto. Si no alcanza lo recaudado, ¿quién responde y por qué?
-2. Un compañero afirma que el gran aporte del código fue regular el comité. ¿Qué le precisarías comparando con Italia?
-3. El autor dice que la única diferencia entre las dos organizaciones es el registro. ¿Qué consecuencia tiene eso para la idea de personalidad jurídica?
-4. Se justifica regular la organización de hecho porque "venía actuando por siglos". ¿Es un buen argumento jurídico?
+1. Ubique al comité y a la organización de personas no inscripta dentro de los sujetos de derecho del Código Civil peruano de 1984: ¿qué los distingue y qué consecuencia trae esa diferencia?
+2. Un grupo recauda fondos para una escuela y contrae una deuda, sin haberse inscripto. Si no alcanza lo recaudado, ¿quién responde y por qué?
 
 --- No mires esto hasta responder ---
 
-1. Responden los miembros, proporcionalmente. Al no estar inscripta, un dispositivo legal atribuye a cada uno las situaciones jurídicas subjetivas, en vez de imputarlas a un ente ideal (p. 188).
-2. Que el Código italiano de 1942 también regula el comité, pero como organización de personas no inscripta. El aporte peruano no es regularlo sino reconocerle la categoría de persona jurídica cuando se inscribe (p. 187).
-3. La desnaturaliza como atributo: si dos organizaciones idénticas se distinguen solo por un trámite, la personalidad no es algo que la organización tenga por sí misma sino un efecto que el registro produce. De ahí que la limitación de responsabilidad sea un privilegio concedido y no una consecuencia natural.
-4. Como argumento de política legislativa es fuerte: muestra un desajuste entre el derecho y una realidad persistente. Como argumento jurídico no basta por sí solo —la antigüedad de una práctica no la vuelve exigible—, y necesita apoyarse en la razón que da el capítulo anterior: que se le imputan derechos y deberes, o sea que ya funciona como sujeto.
+1. El comité es una organización de personas dedicada a la recaudación pública de aportes destinados a una finalidad valiosamente altruista (art. 111), y el código de 1984 le reconoce la calidad de persona jurídica siempre que se inscriba, cosa que ningún otro código vigente hace: el italiano de 1942 lo regula como organización no inscripta (p. 187). La organización de personas no inscripta —antes llamada irregular o de hecho— es también sujeto de derecho aunque no figure en registro alguno, porque actúa y se le imputan derechos y deberes. Lo único que las distingue es el registro: en sus versiones de asociación, fundación, comité o sociedad, ambas están formadas por seres humanos que realizan actos jurídicos de todo tipo (p. 188). La consecuencia sí es grande: en la no inscripta las situaciones jurídicas subjetivas se atribuyen a cada uno de sus miembros proporcionalmente, y en la inscripta se imputan a un ente ideal, inexistente en la realidad. Por eso la limitación de responsabilidad que trae la inscripción es un privilegio concedido y no un atributo natural de la personalidad.
+2. Responden los miembros, proporcionalmente. Al no estar inscripta, un dispositivo legal atribuye a cada uno las situaciones jurídicas subjetivas, en vez de imputarlas a un ente ideal (p. 188).
 
 ## Flashcards
 
-Qué categoría le dio el Código de 1984 al comité | La de persona jurídica, siempre que se inscriba en el registro
 Cómo define el art. 111 al comité | Organización de personas dedicada a la recaudación pública de aportes con fin altruista
-En qué se inspiró el código peruano para regular el comité | En el art. 122 del Código Civil griego de 1944
-Cómo trata el Código italiano de 1942 al comité | Como organización de personas no inscripta, sin personalidad jurídica
-Cómo se llamaba antes de 1984 la organización de personas no inscripta | Irregular o de hecho
+Qué categoría le dio el Código de 1984 al comité | La de persona jurídica, siempre que se inscriba en el registro
 Cuál es la única diferencia entre una organización inscripta y una no inscripta | Que una está inscripta en un registro público y la otra no
-A quién se imputan los derechos y deberes en la organización no inscripta | A cada uno de sus miembros, proporcionalmente
-A quién se imputan en la organización inscripta | A un ente ideal, inexistente en la realidad, conocido por su expresión lingüística
+A quién se imputan los derechos y deberes en cada una | En la no inscripta a cada miembro proporcionalmente; en la inscripta a un ente ideal

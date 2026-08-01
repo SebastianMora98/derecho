@@ -1,0 +1,35 @@
+---
+// Equivalente a `sitio.py: pagina()`. Rutas absolutas para CSS, JS y los
+// enlaces de las migas: con `build.format: "directory"` cada página vive en su
+// propia carpeta (`/slug/index.html`), y una ruta absoluta no depende de la
+// profundidad, a diferencia del `"../" * profundidad` que usaba la versión en
+// Python.
+interface Props {
+  titulo: string;
+  migas?: string;
+  claseMain?: string;
+}
+const { titulo, migas = "", claseMain = "" } = Astro.props;
+---
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{titulo}</title>
+<link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+<header class="barra">
+  <a class="marca" href="/index.html">Documentos de estudio</a>
+  <nav class="migas" set:html={migas}></nav>
+</header>
+<main class={claseMain || undefined}>
+  <slot />
+</main>
+<footer>
+  <p>Documentos de estudio generados para acompañar la lectura del original, no para reemplazarla.</p>
+</footer>
+<script src="/tarjetas.js" is:inline></script>
+</body>
+</html>

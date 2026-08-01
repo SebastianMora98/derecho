@@ -8,15 +8,11 @@ Contestan si el poder o el rango pueden alterar la pena. Son los dos capítulos 
 
 ## 2. Lo esencial del capítulo
 
-El cap. 20 parte de una división simple —delitos contra la persona y contra los bienes— y saca una regla tajante: los primeros deben castigarse infaliblemente con penas corporales, porque ni el grande ni el rico deben poder "satisfacer por precio" los atentados contra el débil (cap. 20). Si pudieran, las riquezas, que bajo la tutela de las leyes son el premio de la industria, se volverían alimento de la tiranía. El fundamento sigue enseguida: no hay libertad cuando las leyes permiten que en ciertos casos el hombre deje de ser persona y se repute como cosa. La objeción no es al monto de la multa sino a la conversión: admitir el precio ya trata a la víctima como valor patrimonial.
+El cap. 20 parte de la división entre delitos contra la persona y contra los bienes y saca una regla tajante: los primeros deben castigarse infaliblemente con penas corporales, porque ni el grande ni el rico deben poder "satisfacer por precio" los atentados contra el débil (cap. 20). Si pudieran, las riquezas, que bajo la tutela de las leyes son el premio de la industria, se volverían alimento de la tiranía. El fundamento es que no hay libertad cuando las leyes permiten que en ciertos casos el hombre deje de ser persona y se repute como cosa: la objeción no va al monto sino a la conversión. Advierte que en los gobiernos con apariencia de libertad la tiranía está escondida: se oponen compuertas a la descubierta, pero no se ve "el insecto imperceptible que las carcome".
 
-Sigue una advertencia sobre cómo opera el privilegio. El poderoso pone su industria en "hacer salir del tropel de combinaciones civiles" aquellas que la ley determina a su favor, y ese es el secreto mágico que cambia a los ciudadanos en animales de servicio. Por eso en gobiernos con apariencia de libertad la tiranía está escondida: los hombres oponen fuertes compuertas a la tiranía descubierta, pero no ven "el insecto imperceptible que las carcome".
+El cap. 21 empieza declarando lo que no va a discutir: si la distinción hereditaria entre nobles y plebeyos es útil o si forma un poder intermedio; deja abierta la posibilidad de que la desigualdad sea inevitable, aunque sugiere que debería estar en los estamentos y no en los individuos. Se limita a las penas, que deben ser las mismas para el primero que para el último ciudadano. El argumento es contractual: toda distinción, en honores o riquezas, supone para ser legítima una igualdad anterior fundada en las leyes, y pone en boca de los hombres el pacto de que el más respetado "espere más, y no tema menos que los otros" al violar los pactos que lo elevaron.
 
-El cap. 21 empieza declarando lo que no va a discutir: si la distinción hereditaria entre nobles y plebeyos es útil, si forma un poder intermedio o un estamento cerrado que corta la circulación del crédito. Deja abierta la posibilidad de que la desigualdad sea inevitable, aunque sugiere que debería estar en los estamentos y no en los individuos. Y se limita a las penas: deben ser **las mismas para el primero que para el último ciudadano**.
-
-El argumento es contractual. Toda distinción, en honores o riquezas, supone para ser legítima una igualdad anterior fundada en las leyes. Beccaria pone en boca de los hombres el pacto: que el más industrioso tenga mayores honores, pero que el más respetado "espere más, y no tema menos que los otros" al violar los pactos que lo elevaron. Y la regla no destruye las ventajas atribuidas a la nobleza: impide sus inconvenientes y hace formidables las leyes al cerrar todo camino a la impunidad.
-
-El cierre responde la objeción previsible —que la misma pena no es la misma para el noble— con tres respuestas. Que **la sensibilidad del reo no es la medida de las penas** sino el daño público, tanto mayor cuanto más favorecido esté quien lo causa. Que la igualdad de las penas solo puede ser extrínseca, porque realmente es diversa en cada individuo. Y que la infamia de una familia puede desvanecerla el soberano con demostraciones públicas de benevolencia, porque "las formalidades sensibles ocupan el lugar de las razones en el pueblo crédulo y admirador".
+El cierre responde la objeción previsible —que la misma pena no pesa igual sobre el noble— con tres respuestas: que la sensibilidad del reo no es la medida de las penas sino el daño público, tanto mayor cuanto más favorecido esté quien lo causa; que la igualdad de las penas solo puede ser extrínseca, porque realmente es diversa en cada individuo; y que la infamia de la familia inocente puede desvanecerla el soberano con demostraciones públicas de benevolencia, porque "las formalidades sensibles ocupan el lugar de las razones en el pueblo crédulo y admirador" (cap. 21).
 
 ## 3. Mapa
 
@@ -60,25 +56,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. ¿Por qué prohíbe Beccaria la pena pecuniaria para los atentados contra la persona, si la multa puede ser altísima?
+1. ¿Qué se entiende por igualdad ante la pena? Explique por qué, según Beccaria, toda distinción de honores o riquezas la presupone, y cuáles son sus implicaciones.
 2. Un noble alega que la misma pena lo daña más por su educación y por la infamia familiar. ¿Cómo responde el cap. 21?
-3. Beccaria evita pronunciarse sobre si la nobleza hereditaria es útil. ¿Le conviene esa abstención?
-4. Dice que la infamia de la familia puede desvanecerla el soberano con gestos públicos. ¿Es una solución seria?
 
 --- No mires esto hasta responder ---
 
-1. Porque el problema no es la cuantía sino la conversión: si el atentado puede satisfacerse por precio, el hombre deja de ser persona y se reputa como cosa, y las riquezas pasan de premio de la industria a alimento de la tiranía. Una multa altísima seguiría fijando un precio (cap. 20).
-2. Con tres argumentos: que la medida de las penas es el daño público y no la sensibilidad del reo; que la igualdad de las penas solo puede ser extrínseca, porque el sufrimiento real difiere en cada individuo; y que la infamia de la parentela inocente puede repararla el soberano. Además, el daño es mayor justamente por venir de quien está más favorecido.
-3. Sí, y es una decisión táctica visible. Discutir la nobleza en sí lo habría enfrentado a todo el orden político; limitarse a las penas le permite exigir la igualdad más incómoda —la penal— sin atacar los honores. Y deja dicho lo esencial: la distinción solo es legítima si descansa en una igualdad previa ante la ley.
-4. Es débil como reparación y él lo sabe: la sostiene admitiendo que "las formalidades sensibles ocupan el lugar de las razones en el pueblo crédulo". No demuestra que la infamia se borre; muestra que puede contrarrestarse con el mismo material del que está hecha, que es la opinión. Coherente con el cap. 9, aunque poco garantizador.
+1. Igualdad ante la pena significa que las penas deben ser las mismas para el primero que para el último ciudadano, cualquiera sea su rango (cap. 21). Beccaria la funda en un argumento contractual: toda distinción, en honores o en riquezas, supone para ser legítima una igualdad anterior fundada sobre las leyes, porque los hombres que consintieron que el más industrioso tuviera mayores honores pactaron también que el más respetado espere más y no tema menos que los otros al violar los pactos que lo elevaron. De ahí que la regla no destruya las ventajas de la nobleza: impide sus inconvenientes y hace formidables las leyes al cerrar todo camino a la impunidad. Su implicación más incómoda está en el cap. 20: los atentados contra la persona deben castigarse infaliblemente con penas corporales, porque si el grande o el rico pueden satisfacerlos por precio el hombre deja de ser persona y se reputa como cosa, y las riquezas pasan de premio de la industria a alimento de la tiranía. Y explica por qué el privilegio sobrevive en los gobiernos que parecen libres: se levantan compuertas contra la tiranía descubierta y no se ve el insecto imperceptible que las carcome.
+2. Con tres argumentos: que la medida de las penas es el daño público y no la sensibilidad del reo; que la igualdad de las penas solo puede ser extrínseca, porque el padecimiento real difiere en cada individuo; y que la infamia de la parentela inocente puede desvanecerla el soberano con demostraciones públicas de benevolencia. Además, el daño es mayor justamente por venir de quien está más favorecido. La tercera respuesta es la más débil, y él lo admite al apoyarla en que las formalidades sensibles ocupan el lugar de las razones en el pueblo crédulo.
 
 ## Flashcards
 
 Cómo deben castigarse los atentados contra la persona | Infaliblemente con penas corporales, nunca con dinero
-Qué pasa si el rico puede satisfacer por precio un atentado | Las riquezas dejan de ser premio de la industria y se vuelven alimento de la tiranía
 Cuándo dice Beccaria que no hay libertad | Cuando las leyes permiten que el hombre deje de ser persona y se repute como cosa
-Con qué imagen describe la tiranía en un gobierno aparentemente libre | Con el insecto imperceptible que carcome las compuertas
-Cuál debe ser la pena del noble | La misma que la del primero y el último ciudadano
 Qué supone toda distinción legítima en honores o riquezas | Una igualdad anterior fundada sobre las leyes
 Cuál es la medida de las penas y cuál no lo es | La medida es el daño público; no lo es la sensibilidad del reo
-Por qué la igualdad de las penas solo puede ser extrínseca | Porque el padecimiento real es diverso en cada individuo

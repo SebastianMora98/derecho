@@ -16,3 +16,12 @@ libros/*/prompts/
 # Binario del OCR: lo compila scripts/ocr.py al vuelo desde ocr_vision.swift
 scripts/.ocr_vision
 .playwright-mcp/
+
+# El JSON de cada libro (libros/<slug>/libro.json) SÍ se commitea: es el
+# contenido estructurado, análogo a lo que antes era sitio/. Lo que no se
+# commitea es lo derivado de él: las dependencias de Node y el HTML que arma
+# Astro, que Vercel reconstruye en cada deploy con `web/src/data/*.json`
+# (que también se commitea) como fuente.
+web/node_modules/
+sitio/
+web/.astro/

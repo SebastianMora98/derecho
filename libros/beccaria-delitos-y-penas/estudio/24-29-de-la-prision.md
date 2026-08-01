@@ -8,13 +8,9 @@ Contesta cuándo puede el Estado encerrar a alguien antes de juzgarlo, y hasta d
 
 ## 2. Lo esencial del capítulo
 
-El primer problema es el arbitrio. Dejar al magistrado la facultad de encarcelar le permite quitar la libertad a un enemigo con pretextos frívolos y dejar libre a un amigo pese a los indicios más fuertes (cap. 29). Beccaria reconoce el rasgo peculiar de esta pena: es la única que por necesidad precede a la declaración del delito. Pero eso no le quita lo esencial, que solo la ley determine los casos. Y da la lista de indicios suficientes: la fama pública, la fuga, la confesión extrajudicial, la de un cómplice, las amenazas y el cuerpo del delito. Lo decisivo es quién los fija: los decretos de los jueces "siempre se oponen a la libertad política" si no aplican una máxima general del código. Y agrega una relación que conviene ver: a medida que se moderen las penas y se quiten de las cárceles la suciedad y el hambre, la ley podrá pedir indicios menores.
+El primer problema es el arbitrio: dejar al magistrado la facultad de encarcelar le permite quitar la libertad a un enemigo con pretextos frívolos y dejar libre a un amigo pese a los indicios más fuertes (cap. 29). Beccaria reconoce el rasgo peculiar de esta pena —es la única que por necesidad precede a la declaración del delito—, pero eso no le quita lo esencial: que solo la ley determine los casos, con una lista previa de indicios suficientes que va de la fama pública al cuerpo del delito. Lo decisivo es quién los fija, porque los decretos de los jueces "siempre se oponen a la libertad política" si no aplican una máxima general del código; y a medida que se moderen las penas y se quiten de las cárceles la suciedad y el hambre, la ley podrá contentarse con indicios menores. De ahí que la infamia del absuelto no debería existir, y prueba que depende del modo y no de la cosa el que las prisiones militares no infamen como las judiciales.
 
-De ahí pasa a la infamia del absuelto, que no debería existir: cuántos romanos acusados de gravísimos delitos fueron después honrados con magistraturas. Da cuatro causas: prevalece la idea de la fuerza sobre la de la justicia; se arroja a acusados y convictos "confundidos en una misma caverna"; la prisión es más castigo que custodia; y la fuerza que defiende las leyes está separada de la que defiende el trono. Su prueba de que la infamia depende del modo y no de la cosa es que las prisiones militares no infaman como las judiciales.
-
-El segundo tema es la jurisdicción. Contra quienes sostienen que un delito puede castigarse en cualquier parte, responde que eso trata el carácter de súbdito como indeleble y peor que el de esclavo. Contra quienes creen que una crueldad cometida en Constantinopla puede castigarse en París, responde que los jueces no son vengadores de la sensibilidad de los hombres sino "de los pactos que los ligan entre sí". La regla queda: **el lugar de la pena es el lugar del delito**. Al malvado que no rompió los pactos de una sociedad de la que no era miembro se lo puede temer y excluir, pero no castigar.
-
-El cierre reúne dos observaciones. Una sobre los reos de delitos leves, castigados en la oscuridad de una prisión o en una esclavitud distante: la pena pública de una gran maldad se percibe como ajena e imposible, mientras que la de los delitos ligeros —a los que el ánimo está más vecino— impresiona y aparta también de los graves. La otra es sobre el perdón del ofendido: liberar de la pena por su remisión es humano pero contrario al bien público, porque **el derecho de hacer castigar no es de uno solo sino de todos**.
+El segundo tema es la jurisdicción. Contra quienes creen que una crueldad cometida en Constantinopla puede castigarse en París, responde que los jueces no son vengadores de la sensibilidad de los hombres sino "de los pactos que los ligan entre sí"; tratar el carácter de súbdito como indeleble sería peor que la esclavitud. La regla queda: el lugar de la pena es el lugar del delito, y al malvado que no rompió los pactos de una sociedad de la que no era miembro se lo puede temer y excluir, pero no castigar. El cierre reúne otras dos observaciones: castigar los delitos leves en la oscuridad de una prisión o en una esclavitud distante desperdicia el caso más útil, porque son los delitos vecinos al ánimo los que impresionan y apartan también de los graves; y liberar de la pena por la remisión del ofendido es humano pero contrario al bien público, porque el derecho de hacer castigar no es de uno solo sino de todos.
 
 ## 3. Mapa
 
@@ -57,25 +53,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. ¿Por qué la moderación de las penas y la limpieza de las cárceles permitirían encarcelar con indicios menores?
-2. Beccaria niega que un crimen cometido en Constantinopla pueda castigarse en París. ¿Qué concepto de delito hay detrás?
-3. ¿Por qué es contraproducente castigar los delitos leves en la oscuridad de la prisión o en una esclavitud lejana?
-4. El perdón del ofendido no extingue la pena. ¿Qué queda del papel de la víctima?
+1. Ubique la prisión dentro del sistema de penas del libro: ¿qué la distingue de todas las demás y qué exigencias le impone Beccaria por eso?
+2. Una víctima perdona a su agresor y pide que la causa se archive. ¿Qué contesta el cap. 29 y qué le queda a la víctima?
 
 --- No mires esto hasta responder ---
 
-1. Porque lo que hace grave un encarcelamiento erróneo es el mal que produce. Si la prisión es limpia, corta y no infamante, el costo de encerrar a quien luego resulta inocente baja, y la ley puede permitirse un umbral menor. Al revés, mientras la cárcel sea suciedad, hambre e infamia, el umbral tiene que ser alto (cap. 29).
-2. Uno enteramente contractual: el delito es la violación de un pacto, no una acción mala en sí. Por eso los jueces no son vengadores de la sensibilidad humana, y quien no era miembro de esa sociedad no rompió nada que ella pueda castigar. Puede temerlo y excluirlo por la fuerza, que es otra cosa.
-3. Porque la pena solo previene si el público la ve y la siente cercana. La pena pública de una gran maldad se percibe como ajena e imposible; la de un delito ligero, al que el ánimo está más vecino, impresiona y aparta también de los graves. Castigar en la oscuridad o a distancia desperdicia justamente el caso más útil.
-4. Le queda el resarcimiento, que sí puede perdonar, y la iniciativa de la acusación. Lo que no puede es disponer de la necesidad del ejemplo, que pertenece a todos. Beccaria reconoce que la remisión es conforme a la beneficencia, así que no la condena como impulso: la excluye como efecto jurídico.
+1. La prisión es la única pena que por necesidad precede a la declaración del delito: se aplica antes de saber si hay reo, y esa anomalía es lo que la define (cap. 29). De ahí la exigencia central, que solo la ley —nunca el juez— determine los casos en que se encarcela, con una lista previa de indicios suficientes: la fama pública, la fuga, la confesión extrajudicial, la de un cómplice, las amenazas y el cuerpo del delito. La razón es que los decretos de los jueces siempre se oponen a la libertad política si no aplican una máxima general del código, porque permiten encerrar a un enemigo con pretextos frívolos y soltar a un amigo pese a los indicios más fuertes. Beccaria agrega dos cosas: el umbral de indicios puede bajar a medida que se moderen las penas y se quiten de las cárceles la suciedad y el hambre, y el absuelto no debería conservar nota de infamia, como prueban las prisiones militares, que no infaman.
+2. Que la remisión no extingue la pena, aunque sea humana y conforme a la beneficencia: el derecho de hacer castigar no es de uno solo sino de todos los ciudadanos o del soberano, así que perdonar en nombre propio y disponer de la necesidad del ejemplo son cosas distintas. A la víctima le quedan la iniciativa de la acusación y el resarcimiento, que sí puede perdonar. Beccaria no condena el impulso: lo excluye como efecto jurídico.
 
 ## Flashcards
 
-Qué rasgo distingue a la prisión de las demás penas | Que por necesidad precede a la declaración del delito
-Quién debe fijar los indicios que autorizan encarcelar | La ley, nunca los jueces
+Qué rasgo distingue a la prisión de las demás penas, y quién debe fijar sus indicios | Que por necesidad precede a la declaración del delito, y por eso los fija la ley y nunca los jueces
 Qué indicios enumera el cap. 29 como suficientes | La fama pública, la fuga, la confesión extrajudicial, la de un cómplice, las amenazas y el cuerpo del delito
-Cuándo podrán las leyes contentarse con indicios menores | Cuando las penas se moderen y se quiten de las cárceles la suciedad y el hambre
-Por qué las prisiones militares infaman menos que las judiciales | Porque la infamia vulgar se fija más en el modo que en la cosa
-Dónde debe imponerse la pena de un delito | En el lugar del delito
-De qué son vengadores los jueces según Beccaria | De los pactos que ligan a los hombres, no de la malicia intrínseca de las acciones
+Dónde debe imponerse la pena de un delito, y con qué razón | En el lugar del delito: los jueces son vengadores de los pactos, no de la malicia de las acciones
 Por qué el perdón del ofendido no extingue la pena | Porque el derecho de hacer castigar es de todos los ciudadanos o del soberano

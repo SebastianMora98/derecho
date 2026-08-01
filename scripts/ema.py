@@ -341,7 +341,7 @@ def escribir_manifiesto(libro: Path, secciones: list[dict]) -> None:
     completo, incluidos los que todavía no tienen documento de estudio. Pero
     `secciones/` está fuera de git —ahí está el texto del original— y el sitio
     solo puede leer lo que está versionado. Este manifiesto es el puente: lo
-    escribe `dividir` y lo lee `sitio.py`. No editarlo a mano.
+    escribe `dividir` y lo lee `contenido.py`. No editarlo a mano.
     """
     lineas = [
         "# Generado por `ema.py dividir`. No editar a mano: se reescribe.",
@@ -568,16 +568,27 @@ def variantes_texto(variantes: list[str]) -> str:
 
 
 def cmd_web(args: argparse.Namespace) -> None:
-    from sitio import construir
+    import subprocess
 
-    # Comprobar ANTES de construir: `construir` empieza borrando sitio/ entero,
-    # así que fallar después dejaría el sitio publicado vacío — y cada push
-    # redespliega solo.
+    from datos import construir_datos
+
+    # Comprobar ANTES de construir: hasta hace poco `construir` empezaba
+    # borrando sitio/ entero, así que fallar después dejaba el sitio publicado
+    # vacío. El build de Astro no borra nada si falla a mitad de camino, pero
+    # el chequeo se mantiene porque sigue siendo la falla más común.
     if not any((p / "estudio").glob("*.md") for p in LIBROS.iterdir() if p.is_dir()):
         error("todavía no hay documentos de estudio. Generá al menos uno en libros/<slug>/estudio/")
 
-    libros, paginas = construir(LIBROS, SITIO, ESTATICOS, leer_config)
-    print(f"✓ {libros} libro(s), {paginas} páginas → {SITIO.relative_to(RAIZ)}/")
+    web = RAIZ / "web"
+    destino_datos = web / "src" / "data"
+    libros = construir_datos(LIBROS, leer_config, destino_datos)
+    print(f"✓ datos: {len(libros)} libro(s) → web/src/data/")
+
+    if not (web / "node_modules").exists():
+        print("  instalando dependencias de web/ (primera vez)...")
+        subprocess.run(["npm", "install"], cwd=web, check=True)
+    subprocess.run(["npm", "run", "build"], cwd=web, check=True)
+    print(f"✓ sitio → {SITIO.relative_to(RAIZ)}/")
     print("  ver en local: python3 -m http.server -d sitio 8000")
 
 

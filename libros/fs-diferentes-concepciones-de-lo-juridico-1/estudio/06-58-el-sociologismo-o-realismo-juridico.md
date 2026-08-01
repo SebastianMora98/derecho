@@ -8,13 +8,9 @@ Cierra el recorrido por las tres visiones parciales. Y es el capítulo donde por
 
 ## 2. Lo esencial del capítulo
 
-La insuficiencia de las respuestas del derecho natural y del formalismo, sumada a la presencia evidente y primaria de la vida humana social en lo jurídico, explica la aparición de una escuela llamada realista en los países del norte de Europa y sociológica en Estados Unidos (p. 132). Con distintos matices, esa corriente considera que la dimensión social es el objeto de estudio de la ciencia jurídica.
+La insuficiencia del derecho natural y del formalismo, sumada a la presencia evidente y primaria de la vida humana social en lo jurídico, explica la aparición de una escuela llamada realista en los países del norte de Europa y sociológica en Estados Unidos (p. 132), que considera que la dimensión social es el objeto de estudio de la ciencia jurídica. La concesión es la más rotunda de los tres capítulos: es una "indiscutible comprobación" que no se puede comprender el derecho fuera de la historia y del acontecer social. Pero eso no justifica la reducción: lo social, "no obstante el preponderante rol que asume en la experiencia jurídica, no agota la explicación de lo que sea el derecho". Acá el reproche vuelve a ser de alcance, como con el iusnaturalismo, y no de naturaleza como con la norma. Aparece además una posición vecina que conviene no confundir: la teoría egológica, "próxima al sociologismo pero a partir de una fundamentación filosófica", reduce el derecho a la conducta humana intersubjetiva, y para Carlos Cossio los valores y las normas se integran en ella (p. 133).
 
-La concesión es la más rotunda de los tres capítulos: es una "indiscutible comprobación" que no se puede comprender el derecho fuera de la historia y del acontecer social. Pero eso no justifica reducir lo jurídico a esa sola dimensión: lo social, "no obstante el preponderante rol que asume en la experiencia jurídica, no agota la explicación de lo que sea el derecho". Notar que acá el reproche vuelve a ser de alcance, como con el iusnaturalismo, y no de naturaleza como con la norma.
-
-Aparece después una posición vecina que conviene no confundir con el sociologismo: la teoría egológica, "próxima al sociologismo pero a partir de una fundamentación filosófica", reduce el derecho a la conducta humana intersubjetiva, y para Carlos Cossio tanto los valores como las normas se integran en la conducta (p. 133). El autor remite a un parágrafo posterior para desarrollarla, así que acá solo queda ubicada: comparte con el sociologismo el resultado —una sola dimensión— pero llega por otro camino.
-
-El tramo final es el más valioso y el que no estaba en los dos capítulos anteriores. La vida humana social la estudian varias ciencias, cada una con su objetivo. El derecho es una de las ciencias sociales pero no se confunde con ninguna, porque su objeto persigue una finalidad diferente: "asegurar la libertad de cada ser humano para liberarlo", de modo que pueda realizarse y cumplir con su personal proyecto de vida, en un contexto donde la vida social se organice en términos de justicia, seguridad, solidaridad, igualdad y los demás valores que el hombre vivencia. Ese criterio de distinción es funcional y no de objeto: el derecho y la sociología pueden mirar el mismo hecho, y lo que los separa es para qué lo miran.
+El tramo final es el más valioso y el que no estaba en los dos capítulos anteriores. La vida humana social la estudian varias ciencias, cada una con su objetivo, y el derecho es una de ellas pero no se confunde con ninguna, porque su objeto persigue una finalidad diferente: "asegurar la libertad de cada ser humano para liberarlo", de modo que pueda realizarse y cumplir con su personal proyecto de vida, en un contexto donde la vida social se organice en términos de justicia, seguridad, solidaridad e igualdad. Ese criterio de distinción es funcional y no de objeto: el derecho y la sociología pueden mirar el mismo hecho, y lo que los separa es para qué lo miran.
 
 ## 3. Mapa
 
@@ -56,25 +52,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un sociólogo y un juez estudian la misma huelga. Según el criterio del capítulo, ¿qué distingue lo que hace cada uno?
-2. Alguien afirma que el autor rechaza el sociologismo porque niega que la vida social importe en el derecho. ¿Qué tiene de incorrecto?
-3. Contra el formalismo el autor usó un argumento de naturaleza —la norma es forma vacía— y contra el sociologismo vuelve al de alcance. ¿Por qué no le sirve el mismo argumento?
-4. La finalidad que da como propia del derecho es "liberar" a la persona para que cumpla su proyecto de vida. ¿Alcanza eso para distinguirlo de la política o de la ética?
+1. Ubique al derecho entre las ciencias sociales: explique qué comparte con ellas y qué lo distingue.
+2. Un sociólogo y un juez estudian la misma huelga. Según el criterio del capítulo, ¿qué distingue lo que hace cada uno?
 
 --- No mires esto hasta responder ---
 
-1. No los distingue el hecho, que es el mismo, sino la finalidad con que lo miran. El derecho lo mira para asegurar la libertad de cada uno y organizar la convivencia en términos de justicia, seguridad y solidaridad; la sociología persigue otro objetivo de conocimiento (p. 133).
-2. Es al revés: el autor llama "indiscutible comprobación" que no se puede entender el derecho fuera de la historia y del acontecer social. Lo que rechaza es que esa dimensión, siendo preponderante, agote la explicación.
-3. Porque lo social no es forma vacía: tiene contenido propio y es la materia misma del derecho. El defecto del sociologismo no es que trabaje con nada, sino que toma una parte por el todo. Contra la norma el argumento podía ser más fuerte justamente porque la norma sola no tiene contenido.
-4. Es un criterio funcional y por eso discutible: la política y la ética también podrían reclamar esa finalidad. El capítulo no lo desarrolla; apenas afirma que el objeto del derecho "es peculiar". Discutible: la diferencia estaría en que el derecho la persigue con normas exigibles, pero eso el texto no lo dice acá.
+1. El derecho es una de las ciencias sociales, porque su materia es la vida humana de relación y es "indiscutible comprobación" que no puede comprenderse fuera de la historia y del acontecer social (p. 132). Lo comparte con la sociología, la economía y las demás, que estudian esa misma vida social cada una con su objetivo. Lo que lo distingue no es el hecho que mira sino la finalidad con que lo mira: asegurar la libertad de cada ser humano para liberarlo, de modo que pueda cumplir su personal proyecto de vida, en una convivencia organizada en términos de justicia, seguridad, solidaridad e igualdad (p. 133). Por eso no se confunde con ninguna de ellas ni se reduce a lo social, que es lo que pretende el sociologismo.
+2. No los distingue el hecho, que es el mismo, sino la finalidad con que lo miran. El derecho lo mira para asegurar la libertad de cada uno y organizar la convivencia en términos de justicia y solidaridad; la sociología persigue otro objetivo de conocimiento. Es un criterio funcional y no de objeto, y por eso discutible: el capítulo no explica por qué la política o la ética no podrían reclamar la misma finalidad.
 
 ## Flashcards
 
 Cómo se llama la escuela de la dimensión social en el norte de Europa y en Estados Unidos | Realista en el norte de Europa, sociológica en Estados Unidos
-Qué toma el sociologismo como objeto de estudio del derecho | La dimensión social
 Qué le concede el autor al sociologismo | Que es indiscutible que no se puede comprender el derecho fuera de la historia y lo social
-Por qué rechaza reducir el derecho a lo social | Porque lo social, aun siendo preponderante, no agota la explicación del derecho
-A qué reduce el derecho la teoría egológica | A la conducta humana intersubjetiva, con valores y normas integrados en ella
-En qué se diferencia la egológica del sociologismo | Llega a una sola dimensión pero desde una fundamentación filosófica, no de observación social
 Cuál es la finalidad propia del derecho según este capítulo | Asegurar la libertad de cada ser humano para que pueda cumplir su proyecto de vida
 Qué distingue al derecho de las otras ciencias sociales | No el hecho que estudia, sino la finalidad con que lo estudia

@@ -1,0 +1,32 @@
+---
+// Los cuatro consolidados del libro, ya construidos por `lib/consolidados.ts`
+// (compartido con `IndiceLibro` para que el riel y lo que se dibuja acá nunca
+// se desincronicen). Equivalente a `sitio.py: bloques_consolidados`.
+import { construirConsolidados } from "../lib/consolidados";
+
+interface Props { libro: any }
+const { libro } = Astro.props;
+
+const totales = libro.estadisticas.capitulos_totales;
+const conDocumento = libro.estadisticas.capitulos_con_documento;
+const deCuantos = `De los ${conDocumento} capítulos con documento, de ${totales}.`;
+const consolidados = construirConsolidados(libro);
+---
+{consolidados.length > 0 && (
+  <>
+    <h2 class="parte">Del libro entero</h2>
+    <div class="consolidados">
+      {consolidados.map((c) => (
+        <details class="consolidado" id={c.ancla}>
+          <summary>
+            <span class="cuerpo">
+              <strong>{c.titulo}</strong>
+              <span class="tesis">{deCuantos}</span>
+            </span>
+          </summary>
+          <div class="contenido" set:html={c.cuerpo} />
+        </details>
+      ))}
+    </div>
+  </>
+)}

@@ -8,13 +8,11 @@ Contesta si el tridimensionalismo es filosofía o se puede leer en la ley. Y es 
 
 ## 2. Lo esencial del capítulo
 
-El argumento es de lectura del articulado, y por eso es el más verificable del libro. El art. 80 describe a la asociación como una "organización estable de personas, naturales o jurídicas, o de ambas, que a través de una actividad común persigue un fin no lucrativo" (p. 184). Ahí están dos dimensiones a la vista: la sociológico-existencial en "organización de personas", y la axiológica en el fin no lucrativo que esos seres humanos determinan como valioso. Lo mismo ocurre en los arts. 99, 111 y 134, que regulan la fundación, el comité y las comunidades campesinas y nativas: en los cuatro casos se habla de organizaciones de personas que persiguen fines valiosos.
+El argumento es de lectura del articulado, y por eso es el más verificable del libro. El art. 80 describe a la asociación como una "organización estable de personas [...] que persigue un fin no lucrativo" (p. 184): ahí están dos dimensiones a la vista, la sociológico-existencial en "organización de personas" y la axiológica en el fin no lucrativo que esos seres humanos determinan como valioso. Lo mismo ocurre con la fundación, el comité y las comunidades campesinas y nativas, en los arts. 99, 111 y 134. La tercera dimensión, la formal, está en los arts. 77 y 78: se adquiere al inscribirse en el registro, y en ese instante la pluralidad de seres humanos que vivencian valores se reduce a un centro ideal y unitario, inexistente en la realidad, al que se atribuyen los derechos y deberes que contraen los representantes. Como ese ente se conoce por el nombre registrado, "la persona jurídica termina siendo una simple expresión lingüística" (p. 185).
 
-La tercera dimensión, la formal, está en los arts. 77 y 78 para todas las personas jurídicas. Según el primero, la persona jurídica adquiere esa dimensión al inscribirse en el registro, y lo que ocurre en ese instante el autor lo describe como una abstracción: la pluralidad de seres humanos que vivencian valores se reduce a un centro ideal y unitario —por lo tanto inexistente en la realidad— al que se le atribuyen los derechos y deberes que contraen los representantes. Ese ente ideal se conoce por el nombre que figura en el registro, así que "la persona jurídica termina siendo una simple expresión lingüística" (p. 185).
+De ahí sale la crítica. El art. 78 dice que "la persona jurídica tiene existencia distinta de sus miembros", y por eso ninguno tiene derecho a su patrimonio ni responde por sus deudas. El autor sostiene que esa existencia es **puramente formal** —un centro unitario e ideal de imputación, "un extraño sujeto de derecho sin personas humanas"— y que el artículo debió decirlo expresamente; lo propuso cuando se elaboraba el código y no prosperó. Su razón no es estética: si no se aclara, se puede creer que existe un sujeto sin las personas que lo constituyen, cuando "sin personas humanas no existen sujetos de derecho" (p. 186).
 
-De ahí sale la crítica. El art. 78 dice que "la persona jurídica tiene existencia distinta de sus miembros", y por eso ninguno de ellos tiene derecho a su patrimonio ni está obligado por sus deudas. El autor sostiene que esa existencia es **puramente formal** —un centro unitario e ideal de imputación, "un extraño sujeto de derecho sin personas humanas"— y que el artículo debió decirlo expresamente. Es una propuesta que hizo cuando se elaboraba el código y que no prosperó. Su razón no es estética: si no se aclara, se puede terminar creyendo que existe un sujeto sin las personas que lo constituyen, cuando "sin personas humanas no existen sujetos de derecho".
-
-La segunda corrección que propone es sobre el efecto práctico de la inscripción. Le parece que el ordenamiento debería dejar constancia expresa de que, por el simple hecho de inscribirse, a los miembros se les atribuye **de manera excepcional** el derecho a no responder personalmente por obligaciones que normalmente estarían a su cargo, y que de ellas responde un ente ideal conocido por una expresión lingüística. Conviene notar el adverbio: presentar la limitación de responsabilidad como una excepción, y no como una consecuencia natural de la personalidad jurídica, es una toma de posición sobre a quién protege el registro.
+La segunda corrección es sobre el efecto práctico de la inscripción: el ordenamiento debería decir expresamente que, por el simple hecho de inscribirse, a los miembros se les atribuye **de manera excepcional** el derecho a no responder personalmente por las obligaciones que asumen. Conviene notar el adverbio: presentarla como excepción, y no como consecuencia natural de la personalidad jurídica, es una toma de posición sobre a quién protege el registro (pp. 185-186).
 
 ## 3. Mapa
 
@@ -55,25 +53,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un acreedor no puede cobrarle a los socios de una asociación inscripta. Según el capítulo, ¿de qué depende esa protección y cómo debería presentarla el código?
-2. Un compañero sostiene que la persona jurídica es un sujeto de derecho que existe con independencia de sus miembros. ¿Qué le respondería el autor?
-3. El autor propuso una corrección al art. 78 mientras se elaboraba el código y no prosperó. ¿Qué agrega ese dato al capítulo?
-4. ¿Por qué le conviene al autor demostrar la tridimensionalidad leyendo artículos, en vez de argumentarla filosóficamente?
+1. ¿Qué se entiende por la visión tridimensional de la persona jurídica? Ubique las tres dimensiones en el articulado del Código Civil peruano y explique qué significa que su "existencia distinta" sea formal.
+2. Un acreedor no puede cobrarle a los socios de una asociación inscripta. Según el capítulo, ¿de qué depende esa protección y cómo debería presentarla el código?
 
 --- No mires esto hasta responder ---
 
-1. Depende del simple hecho de la inscripción en el registro, que constituye un centro ideal al que se imputan las obligaciones. El autor sostiene que el código debería decir expresamente que esa no responsabilidad personal es **excepcional**, y no una consecuencia natural (pp. 185-186).
-2. Que confunde una existencia formal con una real. El centro de imputación es ideal, o sea inexistente en la realidad, y quienes actúan y deciden son siempre personas humanas: "sin personas humanas no existen sujetos de derecho" (p. 186).
-3. Muestra que la crítica no es retrospectiva sino que se planteó a tiempo, lo que la vuelve más creíble. Y de paso relativiza la autoridad del código: ni siquiera sus redactores acordaron en un punto que el autor considera importante.
-4. Porque así la tesis deja de depender de aceptar su filosofía. Si las tres dimensiones se leen en la definición legal de asociación, el tridimensionalismo aparece como descripción de lo que el legislador ya hizo, no como una teoría que hay que adoptar antes. Discutible: los artículos se escribieron con esa teoría a la vista, así que el argumento se apoya en parte en sí mismo.
+1. La persona jurídica es tridimensional: una organización actuante de personas, una finalidad valiosa común y una calificación formal-normativa, y las tres se leen en el propio código. Las dos primeras están a la vista en el art. 80, que define a la asociación como "organización estable de personas [...] que a través de una actividad común persigue un fin no lucrativo", y se repiten en los arts. 99, 111 y 134 para la fundación, el comité y las comunidades campesinas y nativas (p. 184). La tercera está en los arts. 77 y 78: se adquiere con la inscripción en el registro, que reduce la pluralidad de seres humanos a un centro ideal y unitario de imputación, inexistente en la realidad y conocido por su nombre registrado, al punto de que "la persona jurídica termina siendo una simple expresión lingüística" (p. 185). Que su existencia distinta sea formal significa que no es un ente separado que actúe por sí mismo: quienes actúan y deciden son siempre personas humanas, y "sin personas humanas no existen sujetos de derecho". El autor le reprocha al art. 78 no haberlo dicho expresamente, corrección que propuso al elaborarse el código y que no prosperó.
+2. Depende del simple hecho de la inscripción en el registro, que constituye un centro ideal al que se imputan las obligaciones. El autor sostiene que el código debería decir expresamente que esa no responsabilidad personal de los miembros es **excepcional**, y no una consecuencia natural de la personalidad jurídica (pp. 185-186).
 
 ## Flashcards
 
 Qué dos dimensiones aparecen en el art. 80 del Código Civil peruano | La sociológico-existencial en organización de personas, y la axiológica en el fin no lucrativo
-Qué artículos dan la dimensión formal a las personas jurídicas | Los arts. 77 y 78
-Cuándo adquiere la persona jurídica su dimensión formal | En el momento de su inscripción en el registro público
-En qué se convierte la persona jurídica según la frase más fuerte del capítulo | En una simple expresión lingüística
-Qué dice el art. 78 sobre la persona jurídica | Que tiene existencia distinta de sus miembros
-Qué le reprocha el autor al art. 78 | No aclarar que esa existencia distinta es puramente formal
+Qué artículos dan la dimensión formal a las personas jurídicas | Los arts. 77 y 78, con la inscripción en el registro
+Por qué la existencia distinta del art. 78 es solo formal | Porque quienes actúan y deciden son siempre personas humanas: sin ellas no hay sujeto de derecho
 Qué propone el autor sobre la no responsabilidad de los miembros | Que el código diga expresamente que es excepcional, y no una consecuencia natural
-Por qué no puede haber persona jurídica sin personas humanas | Porque son ellas las que actúan y deciden; sin ellas no hay sujeto de derecho

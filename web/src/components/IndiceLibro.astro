@@ -1,0 +1,29 @@
+---
+// La columna fija de desktop. Equivalente a `sitio.py: render_indice_libro`.
+// Se oculta por CSS debajo de 68rem (ver estilo.css): ahí el cuerpo de la hoja
+// ya hace de índice.
+interface Grupo { titulo: string | null; capitulos: any[] }
+interface Props {
+  grupos: Grupo[];
+  consolidados: { ancla: string; titulo: string }[];
+}
+const { grupos, consolidados } = Astro.props;
+---
+<nav class="indice-libro" aria-label="Capítulos del libro">
+  {grupos.map((g) => (
+    <>
+      {g.titulo && <span class="parte" title={g.titulo}>{g.titulo}</span>}
+      {g.capitulos.map((cap) => (
+        <a href={`#${cap.ancla}`} class={cap.pendiente ? "pendiente" : undefined}>
+          <span class="numero">{cap.numero}</span>{cap.titulo}
+        </a>
+      ))}
+    </>
+  ))}
+  {consolidados.length > 0 && (
+    <>
+      <span class="parte">Del libro entero</span>
+      {consolidados.map((c) => <a href={`#${c.ancla}`}>{c.titulo}</a>)}
+    </>
+  )}
+</nav>

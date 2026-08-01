@@ -8,11 +8,9 @@ Contesta por qué la ley tiene que ser clara, escrita y accesible. Es el complem
 
 ## 2. Lo esencial del capítulo
 
-Si la interpretación es un mal, la oscuridad es otro, y peor, porque "arrastra consigo necesariamente la interpretación" (cap. 5). El caso extremo es la ley escrita en una lengua extraña para el pueblo: pone al ciudadano en la dependencia de unos pocos, ya que no puede juzgar por sí mismo cuál será la suerte de su libertad o de sus miembros. La imagen que resume el daño es que esa lengua "forma de un libro público y solemne uno casi privado y doméstico". Beccaria señala además que la costumbre estaba viva en buena parte de la Europa culta, lo que le sirve para mostrar que no discute una hipótesis. De ahí sale la regla positiva: cuantos más sean los que entiendan y tengan entre las manos el código de las leyes, menos frecuentes serán los delitos, porque la ignorancia y la incertidumbre de las penas "ayudan la elocuencia de las pasiones".
+Si la interpretación es un mal, la oscuridad es otro, y peor, porque "arrastra consigo necesariamente la interpretación" (cap. 5). El caso extremo es la ley escrita en una lengua extraña para el pueblo: pone al ciudadano en la dependencia de unos pocos, ya que no puede juzgar por sí mismo cuál será la suerte de su libertad o de sus miembros, y esa lengua "forma de un libro público y solemne uno casi privado y doméstico". Beccaria señala que la costumbre estaba viva en buena parte de la Europa culta, con lo que muestra que no discute una hipótesis. De ahí la regla positiva: cuantos más sean los que entiendan y tengan entre las manos el código de las leyes, menos frecuentes serán los delitos, porque la ignorancia y la incertidumbre de las penas "ayudan la elocuencia de las pasiones".
 
-La segunda parte deduce de eso la necesidad de la ley escrita. Sin leyes escritas una sociedad no tendrá jamás una forma estable de gobierno, donde la fuerza sea efecto del todo y no de las partes, y donde las leyes —inalterables salvo por la voluntad general— no se corrompan pasando por el tropel de los intereses particulares. El argumento es empírico: la experiencia y la razón muestran que la probabilidad y la certeza de las tradiciones humanas se disminuyen a medida que se apartan de su origen. Si no hay "un estable monumento del pacto social", la ley no resiste ni al tiempo ni a las pasiones. Notar que la escritura no aparece acá como una formalidad sino como la única prueba disponible de qué se pactó.
-
-El cierre es un elogio de la imprenta que vale leer como parte del argumento y no como adorno. La imprenta hizo depositario de las leyes al público y no a algunos particulares, y con eso disipó "aquel espíritu de astucia y de trama" que desaparece con la luz de las ciencias. A eso atribuye Beccaria que en Europa haya disminuido la atrocidad de los delitos. Y aprovecha para invertir un lugar común: la llamada antigua simplicidad y buena fe fue en realidad la época de la superstición, de la sangre en los depósitos del oro, de cada noble hecho un tirano de la plebe; las virtudes dulces —humanidad, beneficencia, tolerancia de los errores— nacieron en el siglo que algunos llaman corrupto. Es su respuesta al conservadurismo que idealiza el pasado.
+De eso deduce la necesidad de la ley escrita: sin ella una sociedad no tendrá jamás una forma estable de gobierno, donde la fuerza sea efecto del todo y no de las partes y donde las leyes, inalterables salvo por la voluntad general, no se corrompan pasando por el tropel de los intereses particulares (cap. 5). El argumento es empírico —la probabilidad y la certeza de las tradiciones humanas se disminuyen a medida que se apartan de su origen—, de modo que la escritura no es una formalidad sino la única prueba disponible de qué se pactó: "un estable monumento del pacto social". El cierre elogia a la imprenta como parte de ese argumento y no como adorno: hizo depositario de las leyes al público y no a algunos particulares, y con eso disipó "aquel espíritu de astucia y de trama", a lo que atribuye la disminución de la atrocidad de los delitos en Europa. Aprovecha además para invertir un lugar común, porque la llamada antigua simplicidad y buena fe fue la época de la superstición y de la sangre, y las virtudes dulces nacieron en el siglo que algunos llaman corrupto.
 
 ## 3. Mapa
 
@@ -55,25 +53,17 @@ flowchart TD
 
 ## 6. Autoevaluación
 
-1. Un jurista defiende redactar la ley penal en lenguaje técnico para que sea precisa. ¿Cómo respondería este capítulo?
-2. Beccaria dice que a más gente que entienda las leyes, menos delitos. ¿Qué supone ese razonamiento sobre quien delinque?
-3. ¿Por qué la ley escrita no es para él una formalidad sino una condición de la estabilidad del gobierno?
-4. Atribuye a la imprenta la disminución de la atrocidad de los delitos. ¿Es una explicación suficiente?
+1. ¿Qué se entiende por oscuridad de las leyes y cuáles son sus implicaciones? Explique por qué Beccaria exige además que la ley esté escrita y en manos de todos.
+2. Un jurista defiende redactar la ley penal en lenguaje técnico para que sea precisa. ¿Cómo respondería este capítulo?
 
 --- No mires esto hasta responder ---
 
-1. Que la precisión que nadie puede leer no sirve: la ley pasa a ser un libro privado y doméstico y el ciudadano queda en dependencia de unos pocos. La respuesta de Beccaria no es contra el rigor sino contra el rigor inaccesible (cap. 5).
-2. Que calcula. Si la ignorancia y la incertidumbre de las penas ayudan la elocuencia de las pasiones, entonces saber con exactitud qué le espera funciona como freno. Es el mismo supuesto de los motivos sensibles del cap. 1.
-3. Porque sin un estable monumento del pacto social las leyes se corrompen pasando por el tropel de los intereses particulares, y la certeza de las tradiciones se disminuye al apartarse de su origen. El texto es la prueba de qué se pactó.
-4. Es parcial y él mismo la ofrece como observación, no como demostración. La imprenta explica la difusión, pero no por sí sola el cambio de costumbres; el capítulo mezcla el argumento con una tesis más amplia sobre el progreso de las ciencias. Discutible: para Beccaria las dos cosas son la misma, porque la publicidad es lo que disipa la astucia.
+1. La oscuridad es que la ley resulte inaccesible por su lengua o su redacción, y su caso extremo es escribirla en una lengua extraña al pueblo (cap. 5). Su primera implicación es que arrastra consigo necesariamente la interpretación, es decir el mal que el capítulo anterior había prohibido; la segunda es política: pone al ciudadano en dependencia de unos pocos, porque no puede juzgar por sí mismo la suerte de su libertad, y convierte "un libro público y solemne" en uno casi privado y doméstico. De ahí la regla positiva: cuantos más entiendan y tengan entre las manos el código, menos frecuentes serán los delitos, porque la ignorancia y la incertidumbre de las penas ayudan la elocuencia de las pasiones. La escritura se exige por una razón distinta y complementaria: sin "un estable monumento del pacto social" no hay forma estable de gobierno, ya que la certeza de las tradiciones humanas se disminuye al apartarse de su origen y las leyes se corrompen pasando por el tropel de los intereses particulares. El texto escrito, entonces, no es una formalidad sino la prueba de qué se pactó, y la imprenta es lo que hizo depositario de esa prueba al público y no a algunos particulares.
+2. Que la precisión que nadie puede leer no sirve: la ley pasa a ser un libro privado y doméstico y el ciudadano queda en dependencia de unos pocos. La objeción no es contra el rigor sino contra el rigor inaccesible (cap. 5). Una jerga que el pueblo no entiende es, para este capítulo, exactamente la lengua extraña, aunque esté en el idioma del país.
 
 ## Flashcards
 
 Por qué la oscuridad de la ley es peor que la interpretación | Porque arrastra necesariamente consigo la interpretación
-Qué efecto tiene escribir la ley en lengua extraña al pueblo | Convierte un libro público y solemne en uno casi privado y doméstico
-Qué relación establece Beccaria entre comprensión de la ley y delitos | Cuantos más entiendan el código de las leyes, menos frecuentes serán los delitos
-Qué ayudan la ignorancia y la incertidumbre de las penas | La elocuencia de las pasiones
-Por qué hace falta que las leyes estén escritas | Porque sin un estable monumento del pacto social no hay forma estable de gobierno
-Qué se disminuye al apartarse de su origen según el cap. 5 | La probabilidad y certeza de las tradiciones humanas
-Qué utilidad le reconoce Beccaria a la imprenta | Hizo depositario de las leyes al público y no a algunos particulares
-Qué dice del elogio a la antigua simplicidad y buena fe | Que fue la época de la superstición y la sangre, no de las virtudes dulces
+Qué efecto tiene escribir la ley en lengua extraña al pueblo | Convierte un libro público y solemne en uno casi privado y doméstico, y lo pone en dependencia de unos pocos
+Por qué hace falta que las leyes estén escritas | Porque sin un estable monumento del pacto social no hay forma estable de gobierno, y la certeza de las tradiciones se pierde al apartarse de su origen
+Cómo distingo una ley publicada de una ley que el pueblo tiene entre las manos | Por cuántos pueden leerla y entenderla; de ese número, dice Beccaria, depende la frecuencia de los delitos
