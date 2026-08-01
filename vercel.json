@@ -3,7 +3,5 @@
   "framework": null,
   "buildCommand": null,
   "installCommand": null,
-  "outputDirectory": "sitio",
-  "cleanUrls": true,
-  "trailingSlash": false
+  "outputDirectory": "sitio"
 }

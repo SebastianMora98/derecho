@@ -96,6 +96,18 @@ plano: sin build, sin framework, Mermaid por CDN. `vercel.json` apunta a
 El sitio se commitea. Si cambia un documento de estudio y no se corre `web`,
 lo publicado queda desactualizado.
 
+Está publicado en https://derecho-five.vercel.app (proyecto `derecho` del team
+`sebastianmora98s-projects`, importado desde GitHub: cada push a `main`
+redespliega).
+
+**No volver a activar `cleanUrls` en `vercel.json`.** `sitio.py` genera enlaces
+relativos que calcan la estructura en disco (`02.html`, `../estilo.css`), y eso
+funciona igual servido y abierto como archivo local. Con `cleanUrls` el índice
+del libro se sirve en `/<slug>` sin barra final, así que `02.html` resuelve a
+`/02` y da 404. `trailingSlash: true` tampoco sirve: haría que `/<slug>/02`
+redirija a `/<slug>/02/` y rompería la navegación anterior/siguiente dentro de
+las secciones.
+
 El repositorio es `SebastianMora98/derecho` y el remoto va **por SSH**: el
 `gh` CLI de esta máquina está autenticado con otra cuenta
 (`jmoraautomatiza`), que no tiene permiso de escritura. Con HTTPS el push
