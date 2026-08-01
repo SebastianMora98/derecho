@@ -20,7 +20,12 @@ formato_citas = "paginas"
 
 # Variantes de la plantilla a activar. Ver prompts/variantes.md
 # Opciones: examen, investigacion, tecnico, narrativo
-variantes = ["examen"]
+#
+# Sin variantes a propósito. `examen` pide 12 flashcards y 5 preguntas por
+# capítulo; con el mazo y el test consolidados por libro eso da 228 tarjetas y
+# 95 preguntas, y los documentos ya escritos van con 8 y 4. Un mazo mezclado se
+# nota, así que la cantidad se deja pareja en 8 y 4 para los 19 capítulos.
+variantes = []
 
 # Plantilla base a usar en `preparar` (archivo dentro de prompts/)
 plantilla = "estudio.md"

@@ -79,7 +79,7 @@ flowchart TD
 Cuál es lo más valioso del Código Civil peruano de 1984 según el autor | Su inspiración personalista, más allá de sus aportes técnicos
 Qué es el personalismo humanista en el derecho | La concepción que pone a la persona, no al individuo aislado ni al patrimonio, como finalidad
 Qué dos sujetos de derecho nuevos incorporó el código de 1984 | El concebido y la organización de personas no inscripta
-Qué es el daño al proyecto de vida | El daño que frustra el plan de vida de una persona
+Qué aportes enumera el § 66 del Código de 1984 | El daño a la persona, dos nuevos sujetos de derecho y el comité como persona jurídica
 Cómo se llamaba antes la organización de personas no inscripta | Irregular o de hecho
 A qué reducía el derecho cada escuela rival según el autor | El formalismo a normas, el iusnaturalismo a la justicia, el sociologismo a lo social
 Qué relación afirma entre personalismo y tridimensionalismo | El personalismo es la base teórica indispensable de la teoría tridimensional

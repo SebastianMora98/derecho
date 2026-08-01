@@ -300,10 +300,28 @@ concepciones de lo jurídico", **escaneado**: se procesó con `ocr.py`, no con
 capítulo se declara en la clave `contenedor` de su `libro.toml` y los apartados
 en `[[partes]]`; de ahí saca el sitio la jerarquía. Dividido con `--nivel 2` →
 **19 secciones** (§ 53 a § 74, con 3 que juntan parágrafos cortos).
-`formato_citas = "paginas"` porque el escaneo conservó los folios; variante
-`examen` activa. Procesadas la 1, la 2, la 7 y la 13 —una por apartado, elegidas
-así a propósito para que la hoja mostrara los tres niveles con contenido real. Los cuatro se regeneraron con la plantilla de prosa
-corrida.
+`formato_citas = "paginas"` porque el escaneo conservó los folios.
+
+**Está completo: los 19 capítulos tienen documento de estudio.** El libro entero
+queda en 81 términos de glosario, 76 preguntas y 152 flashcards, y la hoja pesa
+226 KB crudos / 56 KB gzip. Los documentos van de 1.111 a 1.406 palabras, y la
+parte visible de cada capítulo —lo único que se lee al abrirlo— de 440 a 616.
+
+**Sin la variante `examen`, a propósito.** Pedía 12 flashcards y 5 preguntas por
+capítulo; con el mazo y el test consolidados por libro eso daba 228 tarjetas y 95
+preguntas, y los primeros documentos ya iban con 8 y 4. Un mazo mezclado se nota,
+así que la cantidad quedó pareja en 8 y 4 para los 19.
+
+Dos cosas que aprendió esta tanda y conviene repetir:
+
+- **Procesar en orden estricto.** `contexto_previo` le pasa al prompt los términos
+  que el glosario ya tiene, y esa lista se arma leyendo `estudio/*.md` en el
+  momento de `preparar`. Procesar salteado hace que un término se defina en el
+  capítulo equivocado: pasó con `nasciturus` y `situaciones jurídicas subjetivas`,
+  que son de § 70 y quedaron primero en § 71 por haber hecho las secciones largas
+  como lote.
+- **Medir excluyendo el diagrama.** Contar el código Mermaid como palabras del
+  documento infla unas 80 por archivo y hace perseguir un tope que ya se cumplía.
 
 `ema.py estado` da el detalle y avisa si quedó algún documento de `estudio/`
 cuya sección ya no existe.
