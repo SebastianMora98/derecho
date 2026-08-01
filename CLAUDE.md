@@ -96,6 +96,37 @@ plano: sin build, sin framework, Mermaid por CDN. `vercel.json` apunta a
 El sitio se commitea. Si cambia un documento de estudio y no se corre `web`,
 lo publicado queda desactualizado.
 
+El repositorio es `SebastianMora98/derecho` y el remoto va **por SSH**: el
+`gh` CLI de esta máquina está autenticado con otra cuenta
+(`jmoraautomatiza`), que no tiene permiso de escritura. Con HTTPS el push
+falla con 403; la clave SSH sí es la de `SebastianMora98`.
+
+Hay un servidor MCP de Vercel configurado (`https://mcp.vercel.com`, scope
+local). Sirve para consultar proyectos, despliegues y logs sin salir de la
+conversación — usalo para verificar que un build salió bien en vez de pedirle
+al usuario que mire el panel. Si sus herramientas no aparecen, es que se
+agregó después de arrancar la sesión: hay que reiniciar.
+
+## Estado del trabajo
+
+**beccaria-delitos-y-penas** — *Tratado de los delitos y de las penas*, Cesare
+Beccaria (ed. UC3M 2015, CC BY-NC-ND). Dividido con
+`--nivel 2 --objetivo 9000 --max-chars 16000` → 17 secciones. Procesadas la 1
+y la 2; faltan de la 3 a la 17. `ema.py estado` da el detalle.
+
+### Pendientes de la plantilla
+
+Detectados al ejecutar el prompt en las primeras dos secciones; conviene
+resolverlos antes de seguir en serie:
+
+- Las secciones 3 (mapa argumental en texto) y 4 (mapa visual) se solapan. Si
+  el diagrama cumple, la 3 debería reducirse a las referencias al original.
+- `formato_citas = "subtitulos"` no aplica a un texto sin subtítulos ni
+  paginación preservada; se terminó citando por capítulo. Falta admitir
+  `capitulos` como valor en `libro.toml`.
+- La sección 8 pide conectar con secciones anteriores aunque sea la primera
+  corrida. Debería condicionarse a `{{CONTEXTO_PREVIO}}`.
+
 ## Convenciones
 
 - Todo en español neutro.
