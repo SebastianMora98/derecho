@@ -216,10 +216,17 @@ def separar_encabezado(renglones: list) -> tuple[str | None, list, str]:
             pagina = m.group(1)
             break
 
+    junto = " ".join(r[3] for r in encabezado)
+    # Una cabecera siempre lleva folio. Si no hay ningún dígito, esto no era
+    # cabecera: era la primera línea de una página de apertura, que arranca
+    # mucho más abajo y por eso deja un blanco parecido. Sin esta guarda se
+    # perdían el «CAPÍTULO V» del libro y el autor de la portadilla.
+    if pagina is None and not re.search(r"\b\d{1,4}\b", junto):
+        return None, renglones, ""
+
     # El texto del encabezado sin el folio: es el título corriente, que sirve
     # como red de seguridad para las páginas donde la geometría no alcance.
-    titulo = " ".join(r[3] for r in encabezado)
-    titulo = re.sub(r"\b\d{1,4}\b", " ", titulo)
+    titulo = re.sub(r"\b\d{1,4}\b", " ", junto)
     return pagina, cuerpo, " ".join(titulo.split())
 
 
@@ -332,7 +339,16 @@ def titular(texto: str) -> str:
     letras = [c for c in texto if c.isalpha()]
     if letras and sum(c.isupper() for c in letras) / len(letras) > 0.7:
         texto = texto.lower()
-    texto = re.sub(r"\s+", " ", texto).strip(" .,;:-–—")
+    texto = re.sub(r"\s+", " ", texto)
+    # El título puede venir de dos renglones y quedar con el guion de corte
+    # adentro («sujeto de de- recho»). Acá sí se puede unir sin riesgo: un
+    # compuesto legítimo no lleva espacio después del guion.
+    texto = re.sub(r"(\w)-\s+(\w)", r"\1\2", texto)
+    # Si el título abre comillas y no las cierra —pasa cuando el OCR se come la
+    # de cierre— se quitan las dos: mejor sin comillas que a medias.
+    if texto.count('"') % 2:
+        texto = texto.replace('"', "")
+    texto = texto.strip(" .,;:-–—")
     return texto[:1].upper() + texto[1:]
 
 
@@ -369,6 +385,88 @@ def marcar_apartados(texto: str) -> str:
             piezas.append(sig)
             i += 1
         salida.append(f"# {m.group(1)}) {titular(' '.join(piezas))}")
+    return "\n\n".join(salida)
+
+
+def rescatar_folios(texto: str) -> str:
+    """Recupera los folios que quedaron al principio del cuerpo de la página.
+
+    Cuando el folio y el título corriente caen en filas distintas —pasa en las
+    páginas pares, que son la mitad más torcida del pliego—, la geometría no
+    los reconoce como cabecera y el número termina como primer párrafo de la
+    página. El número está ahí: se promueve a folio y se borra del texto.
+
+    Se exige que el número sea el párrafo COMPLETO y que valga exactamente el
+    folio siguiente al último conocido. Aceptar un simple prefijo alcanzaría
+    igual en este libro, pero se comería marcadores de nota al pie, artículos
+    («80° del Cód. Civil») o años en cualquier libro cuya paginación se solape
+    con esos números; acá no se solapa por casualidad.
+
+    Las marcas legítimas sin folio (portadilla, apertura de capítulo) quedan
+    intactas por construcción: son las primeras, todavía no hay folio conocido
+    y la regla no puede inventar un esperado.
+    """
+    # El número puede haber quedado inline detrás de la marca o como párrafo
+    # suelto debajo: son la misma cosa, según cómo cayó la sangría.
+    patron = re.compile(r"<!-- p\. \? -->[ \t]*\n{0,2}[ \t]*(\d{1,4})[ \t]*(?=\n\n|\n?$)")
+    ultimo: int | None = None
+    salida, pos = [], 0
+    for m in re.finditer(r"<!-- p\. ([\d?]+) -->", texto):
+        if m.group(1) != "?":
+            ultimo = int(m.group(1))
+            continue
+        if ultimo is None:
+            continue  # portadilla o apertura: no hay folio del cual deducir
+        candidato = patron.match(texto, m.start())
+        if not candidato or int(candidato.group(1)) != ultimo + 1:
+            continue
+        ultimo += 1
+        salida.append(texto[pos : m.start()])
+        salida.append(f"<!-- p. {ultimo} -->")
+        pos = candidato.end()
+    salida.append(texto[pos:])
+    return "".join(salida)
+
+
+RE_CAPITULO = re.compile(r"^CAP[IÍ]TULO\s+([IVXLCDM]+|\d{1,3})\W*$", re.IGNORECASE)
+
+
+def juntar_titulo_capitulo(texto: str) -> str:
+    """Junta el número y el título del capítulo en una sola línea.
+
+    En la página de apertura, el número (`CAPÍTULO V`) y el título van en
+    renglones separados y con sangrías distintas, así que salen como párrafos
+    sueltos. Se pegan en uno para que sea legible y se pueda copiar a la clave
+    `contenedor` de `libro.toml`.
+
+    A propósito NO se convierte en encabezado: el capítulo se declara a mano en
+    la ficha del libro. Agregar un tercer nivel de encabezado obligaría a que
+    `dividir` llevara dos ancestros por sección, y el único libro con este
+    nivel tiene un solo capítulo.
+    """
+    parrafos = texto.split("\n\n")
+    salida, i = [], 0
+    while i < len(parrafos):
+        actual = " ".join(parrafos[i].split())
+        if not RE_CAPITULO.match(actual):
+            salida.append(parrafos[i])
+            i += 1
+            continue
+        piezas, i = [actual.rstrip(". ")], i + 1
+        while i < len(parrafos):
+            sig = " ".join(parrafos[i].split())
+            # Corta en el apartado, en un parágrafo o en cualquier cosa que ya
+            # no parezca parte del título.
+            if not (
+                versalita(sig)
+                and 3 < len(sig) <= MAX_LARGO_ENCABEZADO
+                and not RE_APARTADO.match(sig)
+                and not sig.startswith("§")
+            ):
+                break
+            piezas.append(sig)
+            i += 1
+        salida.append(f"{piezas[0]}. {' '.join(piezas[1:])}".strip(". ") if len(piezas) > 1 else piezas[0])
     return "\n\n".join(salida)
 
 
@@ -415,7 +513,28 @@ def marcar_paragrafos(texto: str) -> str:
     def reemplazo(m: re.Match) -> str:
         return f"\n\n## § {m.group(1)}. {titular(m.group(2))}\n\n"
 
-    return patron.sub(reemplazo, texto)
+    texto = patron.sub(reemplazo, texto)
+
+    # Segunda pasada, para los parágrafos que no usan el guion separador y
+    # arrancan el cuerpo justo después del título: «§ 72. VISIÓN
+    # TRIDIMENSIONAL DE LA PERSONA JURÍDICA. En los arts...».
+    #
+    # Va DESPUÉS de la primera y no antes: hay títulos a los que el OCR les
+    # comió el punto y cerró con comilla (§ 63), y a esos solo los levanta la
+    # primera.
+    #
+    # Lo que evita los falsos positivos NO es el ancla de principio de línea:
+    # el autor usa «§ 25» como referencia cruzada y también queda en columna 0,
+    # porque el armado de párrafos corta al ver un «§». Lo que lo salva es
+    # exigir que el título esté en versalitas. No borrar esa guarda.
+    directo = re.compile(r"^§\W{0,3}\s*(\d{1,3})\s*\.\s*([^.\s][^.]{2,199}?)\s*\.\s+(?=\S)", re.MULTILINE)
+
+    def reemplazo_directo(m: re.Match) -> str:
+        if not versalita(m.group(2)):
+            return m.group(0)
+        return f"\n\n## § {m.group(1)}. {titular(m.group(2))}\n\n"
+
+    return directo.sub(reemplazo_directo, texto)
 
 
 def a_markdown(pdf: Path, mitades: int | None, dpi: int, desde: int, hasta: int | None) -> str:
@@ -439,11 +558,16 @@ def a_markdown(pdf: Path, mitades: int | None, dpi: int, desde: int, hasta: int 
         encabezados.append(encabezado)
 
     texto = ensamblar(cuerpos, folios)
+    # Antes de tocar la estructura: rescatar folios opera sobre las marcas y el
+    # texto crudo, y juntar el título del capítulo tiene que pasar antes de que
+    # `marcar_apartados` se coma los párrafos en versalitas que lo siguen.
+    texto = rescatar_folios(texto)
     texto = quitar_titulo_corriente(texto, encabezados)
+    texto = juntar_titulo_capitulo(texto)
     texto = marcar_apartados(texto)
     texto = marcar_paragrafos(texto)
     texto = re.sub(r"\n{3,}", "\n\n", texto)
-    reconocidos = sum(1 for f in folios if f)
+    reconocidos = len(re.findall(r"<!-- p\. \d+ -->", texto))
     print(f"→ folios reconocidos: {reconocidos}/{len(folios)}", file=sys.stderr)
     return texto.strip() + "\n"
 

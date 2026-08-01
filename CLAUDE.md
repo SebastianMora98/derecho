@@ -157,23 +157,55 @@ markdown instalados y se ven como caracteres sueltos.
 ## Sitio y despliegue
 
 `ema.py web` regenera `sitio/` completo desde `libros/*/estudio/*.md`. Es HTML
-plano: sin build, sin framework, Mermaid por CDN. `vercel.json` apunta a
-`sitio/` sin comando de build, así que Vercel solo sirve los archivos.
+plano: sin build y sin framework. `vercel.json` apunta a `sitio/` sin comando de
+build, así que Vercel solo sirve los archivos.
+
+**Cada libro es UNA página**: `sitio/<libro>/index.html` trae la jerarquía
+completa del original con la idea principal de cada capítulo, y cada capítulo
+plegado en un `<details>` que se abre ahí mismo. No hay una página por capítulo:
+el enlace profundo a un capítulo es `index.html#sNN`, y a un bloque suyo
+`index.html#sNN-vocabulario-clave`.
+
+Detalles del diseño que no son obvios y ya costaron una vuelta:
+
+- Los `id` van namespaceados con `sNN-`. En una sola hoja hay tantos
+  `vocabulario-clave` y `flashcards` como capítulos, y sin prefijo las anclas
+  colisionan. Por eso `recolectar` avisa si dos documentos repiten el número.
+- **Mermaid vive en `estaticos/tarjetas.js`, no en `sitio.py`**, y se carga con
+  `import()` dinámico cuando un diagrama se acerca a la pantalla
+  (`IntersectionObserver`). Arrancar treinta y nueve diagramas al cargar es
+  inaceptable, y uno dentro de un `<details>` cerrado mide cero de ancho, así que
+  Mermaid lo calcularía mal. El observador resuelve las dos cosas: un elemento en
+  `display:none` nunca intersecta, y avisa recién cuando el capítulo se abre, con
+  el ancho real.
+- El botón "Abrir todos los capítulos" existe porque el navegador **no busca
+  dentro de un `<details>` cerrado**: con todo abierto, Cmd-F recorre el libro
+  entero.
+- `details.capitulo` necesita `min-width: 0`. Es un ítem de grilla y hereda
+  `min-width: auto`, o sea su tamaño mínimo de contenido, que con la grilla de
+  flashcards adentro pasa de 800px y desborda la columna de lectura.
+- Un `<summary>` con `display: flex` **pierde el triángulo nativo**, así que el
+  chevron se dibuja con `::after`.
+- El marcador de posición del riel saltea los destinos sin `offsetParent`: los
+  que están dentro de un capítulo cerrado tienen rect en ceros y se leerían como
+  "estoy justo acá".
+- Todo lo que puede ser destino de un ancla necesita `scroll-margin-top`, no solo
+  los encabezados: la sección de flashcards también, o la barra fija la tapa.
 
 El sitio se commitea. Si cambia un documento de estudio y no se corre `web`,
-lo publicado queda desactualizado.
+lo publicado queda desactualizado. Ojo con el diff: cada corrida reescribe la
+hoja entera de cada libro, así que agregar un capítulo cambia un archivo grande.
 
 Está publicado en https://derecho-five.vercel.app (proyecto `derecho` del team
 `sebastianmora98s-projects`, importado desde GitHub: cada push a `main`
 redespliega).
 
-**No volver a activar `cleanUrls` en `vercel.json`.** `sitio.py` genera enlaces
-relativos que calcan la estructura en disco (`02.html`, `../estilo.css`), y eso
-funciona igual servido y abierto como archivo local. Con `cleanUrls` el índice
-del libro se sirve en `/<slug>` sin barra final, así que `02.html` resuelve a
-`/02` y da 404. `trailingSlash: true` tampoco sirve: haría que `/<slug>/02`
-redirija a `/<slug>/02/` y rompería la navegación anterior/siguiente dentro de
-las secciones.
+**No volver a activar `cleanUrls` en `vercel.json`.** El motivo original —que
+rompía los enlaces relativos `02.html` del índice— ya no aplica, porque esos
+enlaces son anclas dentro de la misma hoja. Pero sigue siendo mala idea: los
+enlaces a `estilo.css` y `tarjetas.js` siguen siendo relativos, y `cleanUrls`
+sirve el índice del libro en `/<slug>` sin barra final, así que cualquier ruta
+relativa se resuelve contra la raíz.
 
 El repositorio es `SebastianMora98/derecho` y el remoto va **por SSH**: el
 `gh` CLI de esta máquina está autenticado con otra cuenta
@@ -190,27 +222,49 @@ agregó después de arrancar la sesión: hay que reiniciar.
 
 **beccaria-delitos-y-penas** — *Tratado de los delitos y de las penas*, Cesare
 Beccaria (ed. UC3M 2015, CC BY-NC-ND). Jerarquía plana: 47 capítulos numerados
-por el autor, sin apartados. Dividido con `--nivel 2` → **39 secciones**
-(«Al lector», «Introducción» y los 47 capítulos, con 9 secciones que juntan
-capítulos cortos). Procesada la 1. `formato_citas = "capitulos"`: el autor
-numera sus capítulos y esta edición no preservó la paginación.
+por el autor, sin apartados ni capítulo contenedor, así que el sitio muestra la
+lista corrida. Dividido con `--nivel 2` → **39 secciones** («Al lector»,
+«Introducción» y los 47 capítulos, con 9 secciones que juntan capítulos cortos).
+Procesadas la 1 y la 2. `formato_citas = "capitulos"`: el autor numera sus
+capítulos y esta edición no preservó la paginación.
+
+La conversión está verificada byte a byte contra el PDF: 47/47 capítulos, y el
+delta de palabras por capítulo es exactamente la cantidad de números de página
+que cruza. Cero prosa perdida. Lo que sí quedaba mal era el formato, ya
+arreglado: 70 párrafos partidos en los saltos de página y 18 palabras con el
+guion colgado. Queda pendiente, a propósito, la reubicación de las 3 notas al pie
+que cortan una frase al medio (líneas con marcador numérico o `*`).
 
 **fs-diferentes-concepciones-de-lo-juridico-1** — *Derecho y persona*, Carlos
 Fernández Sessarego (5ª ed., Astrea, 2015). Es el capítulo "Diferentes
 concepciones de lo jurídico", **escaneado**: se procesó con `ocr.py`, no con
-`convertir`. Tiene tres pisos —capítulo > apartado A/B/C > parágrafo §— y los
-apartados están declarados en `[[partes]]` de su `libro.toml`, que es de donde
-el índice del sitio saca la agrupación. Dividido con `--nivel 2` → **18
-secciones** (§ 53 a § 74, con 3 que juntan parágrafos cortos). Procesada la 1.
+`convertir`. Tiene tres pisos —capítulo > apartado A/B/C > parágrafo §—. El
+capítulo se declara en la clave `contenedor` de su `libro.toml` y los apartados
+en `[[partes]]`; de ahí saca el sitio la jerarquía. Dividido con `--nivel 2` →
+**19 secciones** (§ 53 a § 74, con 3 que juntan parágrafos cortos).
 `formato_citas = "paginas"` porque el escaneo conservó los folios; variante
-`examen` activa.
+`examen` activa. Procesadas la 1, la 2, la 7 y la 13 —una por apartado, elegidas
+así a propósito para que la hoja mostrara los tres niveles con contenido real.
 
 `ema.py estado` da el detalle y avisa si quedó algún documento de `estudio/`
 cuya sección ya no existe.
 
-Un detalle conocido de este libro, cosmético: § 72 no se detecta como
-encabezado porque el original no usa el guión separador después del título; su
-texto está dentro de la sección 15, sin pérdida.
+**Auditoría de la conversión** (hecha a pedido, porque el sitio parecía
+incompleto): el texto está completo. Cubre pp. 119-189 sin huecos, 72 mitades
+con texto de las 76 del PDF —las otras 4 están realmente en blanco— y el volumen
+cierra al 0,3% contra lo esperable para el formato. Lo que hacía parecer
+incompleto al libro era que faltaban los documentos de estudio, no el texto.
+
+Defectos que quedan, todos cosméticos y ya medidos:
+
+- El título de § 63 dice `concrero` por `concreto`: es una mala lectura del OCR
+  sobre el escaneo, y no hay regla que la arregle sin un diccionario.
+- En la p. 158 la palabra `fugaz` quedó partida (`tan fu-` + `gaz`) porque el
+  párrafo arrancaba con el número de folio, así que el rearmado de guiones no
+  disparó. Va con un resto de cabecera cortada, `EL DERECH`.
+- Las notas al pie que siguen de una página a la otra se sueldan a mitad de una
+  frase del autor. Es el problema de orden de las notas; queda sin resolver a
+  propósito.
 
 Ojo con este libro: es material **con derechos vigentes** (Astrea 2015), a
 diferencia de Beccaria, que es CC. El `libro.md` y las `secciones/` quedan

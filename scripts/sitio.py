@@ -3,10 +3,15 @@
 Sale HTML plano en `sitio/`, sin build ni framework: Vercel lo sirve tal cual.
 
     sitio/index.html                      lista de libros
-    sitio/<libro>/index.html              secciones del libro
-    sitio/<libro>/<NN>.html               documento de estudio
+    sitio/<libro>/index.html              el libro entero, en una sola hoja
 
-Los bloques ```mermaid se convierten en diagramas, el test de comprensión
+Cada libro es UNA página: la jerarquía del original con la idea principal de
+cada capítulo, y cada capítulo plegado en un `<details>` que se abre ahí mismo.
+Así se ve el mapa completo de una pasada y, abriendo todo, se puede buscar en el
+libro entero con Cmd-F.
+
+Los bloques ```mermaid se convierten en diagramas —que dibuja `tarjetas.js` a
+medida que se abren los capítulos, no todos al cargar—, el test de comprensión
 esconde las respuestas, y las flashcards se revelan al hacer clic.
 """
 
@@ -23,7 +28,6 @@ from markdown_it import MarkdownIt
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from comun import idea_principal, slugify  # noqa: E402
 
-MERMAID_CDN = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs"
 MARCA_RESPUESTAS = "--- No mires esto hasta responder ---"
 
 md = MarkdownIt("commonmark", {"html": False, "linkify": True}).enable("table").enable("strikethrough")
@@ -42,11 +46,19 @@ def recolectar(libros_dir: Path, leer_config) -> list[dict]:
             continue
         cfg = leer_config(carpeta)
         secciones = []
+        vistos: set[str] = set()
         for ruta in estudios:
             numero = ruta.name.split("-")[0]
             if not numero.isdigit():
                 print(f"aviso: {ruta.name} no empieza con el número de sección; lo salteo")
                 continue
+            # Todos los `id` de la hoja se derivan del número, así que un número
+            # repetido genera anclas duplicadas y enlaces que van al capítulo
+            # equivocado. Antes esto pasaba callado.
+            if numero in vistos:
+                print(f"aviso: {ruta.name} repite el número {numero}; lo salteo para no duplicar anclas")
+                continue
+            vistos.add(numero)
             texto = ruta.read_text(encoding="utf-8")
             tesis = tesis_de(texto)
             if not tesis:
@@ -54,7 +66,7 @@ def recolectar(libros_dir: Path, leer_config) -> list[dict]:
             secciones.append(
                 {
                     "numero": numero,
-                    "archivo": f"{numero}.html",
+                    "ancla": f"s{numero}",
                     "titulo": titulo_de(texto, ruta.stem),
                     "tesis": tesis,
                     "texto": texto,
@@ -81,7 +93,7 @@ def tesis_de(texto: str) -> str:
 # --------------------------------------------------------------------------- #
 
 
-def render_documento(texto: str) -> tuple[str, list[tuple[str, str]]]:
+def render_documento(texto: str, prefijo: str = "") -> tuple[str, list[tuple[str, str]]]:
     """Devuelve el HTML del documento y las anclas para su índice interno."""
     cuerpo, flashcards = separar_flashcards(texto)
     cuerpo = re.sub(r"^# +.+\n", "", cuerpo, count=1)  # el título va en la cabecera
@@ -89,7 +101,7 @@ def render_documento(texto: str) -> tuple[str, list[tuple[str, str]]]:
 
     # Solo se anclan los encabezados del cuerpo: los del bloque de respuestas
     # viven dentro de un <details> cerrado y no deben entrar al índice.
-    cuerpo_html, anclas = anclar(transformar(md.render(cuerpo)))
+    cuerpo_html, anclas = anclar(transformar(md.render(cuerpo)), prefijo)
     partes = [cuerpo_html]
     if respuestas:
         partes.append(
@@ -98,18 +110,23 @@ def render_documento(texto: str) -> tuple[str, list[tuple[str, str]]]:
             + "</details>"
         )
     if flashcards:
-        partes.append(render_flashcards(flashcards))
-        anclas.append(("flashcards", "Flashcards"))
+        partes.append(render_flashcards(flashcards, prefijo))
+        anclas.append((f"{prefijo}flashcards", "Flashcards"))
     return "\n".join(partes), anclas
 
 
-def anclar(html_render: str) -> tuple[str, list[tuple[str, str]]]:
+def anclar(html_render: str, prefijo: str = "") -> tuple[str, list[tuple[str, str]]]:
     """Pone un `id` en cada `<h2>` y devuelve las anclas del índice interno.
 
     markdown-it no trae plugin de anclas y el documento no puede escribir HTML
     crudo, así que los `id` se agregan acá, sobre el HTML ya renderizado. Solo
     `h2`: los `h3` de los pasos harían un índice de doce enlaces que en un
     teléfono ocupa media pantalla.
+
+    El `prefijo` es obligatorio en la hoja del libro: los 39 documentos de una
+    página generarían 39 veces `vocabulario-clave`. El deduplicado se hace sobre
+    el slug SIN prefijo, así que la lógica de choque dentro de un documento no
+    cambia y el prefijo solo desambigua entre capítulos.
     """
     anclas: list[tuple[str, str]] = []
     usadas = {"flashcards"}  # ya lo usa render_flashcards
@@ -124,8 +141,8 @@ def anclar(html_render: str) -> tuple[str, list[tuple[str, str]]]:
         while identificador in usadas:
             identificador, n = f"{base}-{n}", n + 1
         usadas.add(identificador)
-        anclas.append((identificador, etiqueta))
-        return f'<h2 id="{identificador}">{m.group(1)}</h2>'
+        anclas.append((f"{prefijo}{identificador}", etiqueta))
+        return f'<h2 id="{prefijo}{identificador}">{m.group(1)}</h2>'
 
     return re.sub(r"<h2>(.*?)</h2>", reemplazo, html_render, flags=re.DOTALL), anclas
 
@@ -174,7 +191,7 @@ def transformar(html_render: str) -> str:
     )
 
 
-def render_flashcards(tarjetas: list[tuple[str, str]]) -> str:
+def render_flashcards(tarjetas: list[tuple[str, str]], prefijo: str = "") -> str:
     items = "\n".join(
         f'<button class="tarjeta" type="button">'
         f'<span class="pregunta">{html.escape(p)}</span>'
@@ -182,7 +199,7 @@ def render_flashcards(tarjetas: list[tuple[str, str]]) -> str:
         for p, r in tarjetas
     )
     return (
-        f'<section id="flashcards"><h2>Flashcards</h2>'
+        f'<section id="{prefijo}flashcards"><h2>Flashcards</h2>'
         f'<p class="ayuda">{len(tarjetas)} tarjetas. Hacé clic para revelar la respuesta.</p>'
         f'<div class="tarjetas">{items}</div></section>'
     )
@@ -198,21 +215,9 @@ def pagina(
     migas: str,
     contenido: str,
     profundidad: int,
-    con_mermaid: bool = False,
     clase_main: str = "",
 ) -> str:
     base = "../" * profundidad
-    script = (
-        f'<script type="module">'
-        f'import mermaid from "{MERMAID_CDN}";'
-        f'const oscuro = matchMedia("(prefers-color-scheme: dark)").matches;'
-        f'mermaid.initialize({{startOnLoad:true, theme: oscuro ? "dark" : "neutral", '
-        f'themeVariables:{{fontSize:"15px", fontFamily:"ui-sans-serif, system-ui, sans-serif"}}, '
-        f'flowchart:{{curve:"basis", useMaxWidth:true, nodeSpacing:45, rankSpacing:55}}}});'
-        f"</script>"
-        if con_mermaid
-        else ""
-    )
     return f"""<!doctype html>
 <html lang="es">
 <head>
@@ -233,7 +238,6 @@ def pagina(
   <p>Documentos de estudio generados para acompañar la lectura del original, no para reemplazarla.</p>
 </footer>
 <script src="{base}tarjetas.js"></script>
-{script}
 </body>
 </html>
 """
@@ -280,77 +284,99 @@ def agrupar_en_partes(secciones: list[dict], cfg: dict) -> list[tuple[str | None
             sueltas.remove(s)
         grupos.append((p.get("titulo", ""), elegidas))
     if sueltas:
+        # En una hoja única estas secciones quedan al final, fuera del orden del
+        # libro, y se leerían como si ese fuera su lugar. Mejor decirlo en la
+        # página además de en la consola.
         print(f"aviso: {len(sueltas)} sección(es) fuera de todo [[partes]]: "
-              f"{', '.join(s['numero'] for s in sueltas)}")
-        grupos.append((None, sueltas))
+              f"{', '.join(s['numero'] for s in sueltas)}. Revisá los rangos en libro.toml")
+        grupos.append(("Sin apartado declarado en libro.toml", sueltas))
     return grupos
 
 
-def render_libro(libro: dict) -> str:
-    cfg = libro["cfg"]
-    bloques = []
-    for titulo, secciones in agrupar_en_partes(libro["secciones"], cfg):
+def render_capitulo(s: dict) -> str:
+    """Un capítulo, plegado en un `<details>`.
+
+    El `<summary>` lleva número, título e idea principal: eso es lo que se ve sin
+    desplegar, y es lo que convierte la hoja en un mapa del libro. Adentro va el
+    documento de estudio completo.
+
+    Los `id` del documento van con el prefijo `sNN-` porque en una sola hoja
+    conviven todos los capítulos, y sin prefijo habría tantas anclas
+    `vocabulario-clave` como capítulos.
+    """
+    prefijo = f'{s["ancla"]}-'
+    documento, anclas = render_documento(s["texto"], prefijo)
+    return (
+        f'<details class="capitulo" id="{s["ancla"]}">'
+        f"<summary>"
+        f'<span class="numero">{s["numero"]}</span>'
+        f'<span class="cuerpo"><strong>{html.escape(s["titulo"])}</strong>'
+        f'<span class="tesis">{html.escape(s["tesis"])}</span></span>'
+        f"</summary>"
+        f'<div class="documento">{render_indice_interno(anclas)}{documento}</div>'
+        f"</details>"
+    )
+
+
+def render_indice_libro(grupos: list[tuple[str | None, list[dict]]]) -> str:
+    """El índice del libro para la columna fija de desktop.
+
+    Debajo de 68rem se oculta por CSS: ahí el cuerpo de la hoja ya es el índice,
+    y un segundo listado de treinta y nueve enlaces es scroll de más.
+    """
+    partes = []
+    for titulo, secciones in grupos:
         if titulo:
-            bloques.append(f'<h2 class="parte">{html.escape(titulo)}</h2>')
-        filas = "".join(
-            f'<a class="seccion" href="{s["archivo"]}">'
-            f'<span class="numero">{s["numero"]}</span>'
-            f'<span class="cuerpo"><strong>{html.escape(s["titulo"])}</strong>'
-            f'<span class="tesis">{html.escape(s["tesis"])}</span></span></a>'
+            partes.append(f'<span class="parte" title="{html.escape(titulo)}">{html.escape(titulo)}</span>')
+        partes += [
+            f'<a href="#{s["ancla"]}"><span class="numero">{s["numero"]}</span>'
+            f'{html.escape(s["titulo"])}</a>'
             for s in secciones
-        )
-        bloques.append(f'<div class="secciones">{filas}</div>')
+        ]
+    return f'<nav class="indice-libro" aria-label="Capítulos del libro">{"".join(partes)}</nav>'
+
+
+def render_libro(libro: dict) -> str:
+    """El libro entero en una sola hoja."""
+    cfg = libro["cfg"]
+    grupos = agrupar_en_partes(libro["secciones"], cfg)
+
+    bloques = []
+    if contenedor := cfg.get("contenedor"):
+        bloques.append(f'<h2 class="contenedor">{html.escape(contenedor)}</h2>')
+    # Si el libro declara un contenedor, los apartados bajan un nivel para no
+    # competir con él. El CSS los toma por clase, no por etiqueta, justamente
+    # para que el nivel pueda variar.
+    nivel_parte = 3 if cfg.get("contenedor") else 2
+    for titulo, secciones in grupos:
+        if titulo:
+            bloques.append(f'<h{nivel_parte} class="parte">{html.escape(titulo)}</h{nivel_parte}>')
+        capitulos = "".join(render_capitulo(s) for s in secciones)
+        bloques.append(f'<div class="capitulos">{capitulos}</div>')
 
     ficha = " · ".join(
         html.escape(str(x))
         for x in [cfg.get("autor"), cfg.get("anio"), cfg.get("edicion")]
         if x
     )
+    # El cuerpo va envuelto en `div.hoja` porque en desktop `main` es una grilla
+    # de dos columnas: con los hijos sueltos, la grilla los colocaría uno por
+    # celda y se desarmaría.
     cuerpo = (
+        f'{render_indice_libro(grupos)}'
+        f'<div class="hoja">'
         f'<h1>{html.escape(cfg.get("titulo", libro["slug"]))}</h1>'
         f'<p class="ficha">{ficha}</p>'
         '<p class="intro">La idea principal de cada capítulo, para repasar de una pasada. '
-        'Hacé clic en un capítulo para abrir su documento de estudio.</p>'
+        'Desplegá un capítulo para leer su documento de estudio completo.</p>'
+        '<div class="controles">'
+        '<button type="button" class="alternar-todo" aria-expanded="false">'
+        "Abrir todos los capítulos</button></div>"
         f'{"".join(bloques)}'
+        f"</div>"
     )
     migas = f'<span>{html.escape(cfg.get("titulo", libro["slug"]))}</span>'
-    return pagina(cfg.get("titulo", libro["slug"]), migas, cuerpo, 1)
-
-
-def render_seccion(libro: dict, i: int) -> str:
-    s = libro["secciones"][i]
-    cfg = libro["cfg"]
-    anterior = libro["secciones"][i - 1] if i > 0 else None
-    siguiente = libro["secciones"][i + 1] if i + 1 < len(libro["secciones"]) else None
-
-    nav = ['<nav class="paso">']
-    nav.append(f'<a href="{anterior["archivo"]}">← {html.escape(anterior["titulo"])}</a>' if anterior else "<span></span>")
-    nav.append(f'<a href="{siguiente["archivo"]}">{html.escape(siguiente["titulo"])} →</a>' if siguiente else "<span></span>")
-    nav.append("</nav>")
-
-    documento, anclas = render_documento(s["texto"])
-    indice = render_indice_interno(anclas)
-    # El índice va como hermano del artículo, no adentro: así en desktop se
-    # puede llevar a una columna propia a la izquierda, fija al scrollear.
-    cuerpo = (
-        f'{indice}'
-        f'<article class="documento">'
-        f'<h1>{html.escape(s["titulo"])}</h1>'
-        f'{documento}'
-        f"</article>" + "".join(nav)
-    )
-    migas = (
-        f'<a href="index.html">{html.escape(cfg.get("titulo", libro["slug"]))}</a>'
-        f'<span>{html.escape(s["titulo"])}</span>'
-    )
-    return pagina(
-        f'{s["titulo"]} — {cfg.get("titulo", "")}',
-        migas,
-        cuerpo,
-        1,
-        con_mermaid=True,
-        clase_main="con-indice" if indice else "",
-    )
+    return pagina(cfg.get("titulo", libro["slug"]), migas, cuerpo, 1, clase_main="con-indice")
 
 
 # --------------------------------------------------------------------------- #
@@ -366,13 +392,10 @@ def construir(libros_dir: Path, destino: Path, estaticos: Path, leer_config) -> 
         shutil.copy(archivo, destino / archivo.name)
 
     (destino / "index.html").write_text(render_indice(libros), encoding="utf-8")
-    paginas = 1
     for libro in libros:
         carpeta = destino / libro["slug"]
         carpeta.mkdir()
         (carpeta / "index.html").write_text(render_libro(libro), encoding="utf-8")
-        paginas += 1
-        for i, s in enumerate(libro["secciones"]):
-            (carpeta / s["archivo"]).write_text(render_seccion(libro, i), encoding="utf-8")
-            paginas += 1
-    return len(libros), paginas
+    # Una hoja por libro, más el índice general: ya no hay una página por
+    # capítulo. El enlace profundo a un capítulo es `index.html#sNN`.
+    return len(libros), len(libros) + 1

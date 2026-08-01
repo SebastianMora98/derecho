@@ -151,4 +151,45 @@ def reflujo(texto: str) -> str:
         if parrafo.strip():
             salida.append(parrafo.strip())
 
-    return "\n\n".join(salida).strip() + "\n"
+    return "\n\n".join(unir_cortados(salida)).strip() + "\n"
+
+
+# Con qué puede terminar un párrafo que de verdad terminó.
+CIERRE = (".", "!", "?", "»", '"', ":", "—", "…")
+# Una nota al pie arranca con su marcador: un número o un asterisco.
+RE_MARCADOR_NOTA = re.compile(r'^(?:\d{1,3}|\*)\s+\S')
+
+
+def unir_cortados(bloques: list[str]) -> list[str]:
+    """Une los párrafos que la extracción partió en el borde de una página.
+
+    La extracción deja una línea en blanco al final de cada página, así que la
+    continuación del párrafo queda como un párrafo nuevo. Se reconocen porque
+    empiezan en minúscula y el bloque anterior no había terminado.
+
+    La guarda de que el anterior no cierre con puntuación es la que evita
+    soldar una nota al pie dentro de una frase del autor: cuando una nota se
+    intercala a mitad de página, la nota sí termina en punto, así que la
+    continuación del cuerpo no se le pega. Esas frases quedan partidas —es el
+    problema del orden de las notas, aparte de este— pero al menos no se
+    mezclan.
+    """
+    salida: list[str] = []
+    for bloque in bloques:
+        anterior = salida[-1] if salida else ""
+        continua = (
+            anterior
+            and not anterior.startswith("#")
+            and not bloque.startswith("#")
+            and bloque[:1].islower()
+            and not RE_MARCADOR_NOTA.match(bloque)
+            and not RE_MARCADOR_NOTA.match(anterior)
+            and (anterior.endswith("-") or not anterior.endswith(CIERRE))
+        )
+        if not continua:
+            salida.append(bloque)
+        elif anterior.endswith("-"):
+            salida[-1] = anterior[:-1] + bloque
+        else:
+            salida[-1] = f"{anterior} {bloque}"
+    return salida

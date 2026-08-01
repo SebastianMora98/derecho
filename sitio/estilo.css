@@ -122,13 +122,15 @@ blockquote {
   letter-spacing: 0.05em;
 }
 
-/* ---------- índice de secciones ---------- */
+/* ---------- capítulos plegables ---------- */
 
-.secciones { display: grid; gap: 0.5rem; margin-top: 2rem; }
+.capitulos { display: grid; gap: 0.5rem; margin-top: 0.75rem; }
 
-/* Cabecera de apartado del libro (el piso entre libro y capítulo).
-   Hereda el border-top de h2, que acá funciona como separador. */
-h2.parte {
+/* Los dos pisos que están arriba del capítulo. Se estilan por clase y no por
+   etiqueta porque el nivel del encabezado depende de si el libro declara un
+   `contenedor`: con contenedor los apartados son h3, sin él son h2. */
+.contenedor,
+.parte {
   font-family: ui-sans-serif, system-ui, sans-serif;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -136,32 +138,108 @@ h2.parte {
   color: var(--tenue);
   margin: 2.75rem 0 0.25rem;
   padding-top: 0.8rem;
+  border-top: 1px solid var(--borde);
 }
-h2.parte + .secciones { margin-top: 0.75rem; }
+.contenedor { color: var(--texto); font-size: 0.95rem; letter-spacing: 0.04em; }
+.contenedor + .parte { border-top: 0; padding-top: 0; margin-top: 1.75rem; }
 
-.seccion {
-  display: flex;
-  gap: 1rem;
-  padding: 0.9rem 1.1rem;
+.controles { margin-top: 1.75rem; }
+.alternar-todo {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.82rem;
+  padding: 0.3rem 0.85rem;
+  color: var(--tenue);
+  background: var(--fondo-alt);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.alternar-todo:hover { color: var(--acento); border-color: var(--acento); }
+
+/* El combinador hijo es obligatorio en todo este bloque: adentro del capítulo
+   vive `details.respuestas` y sus reglas no se deben pisar. */
+details.capitulo {
   background: var(--fondo-alt);
   border: 1px solid var(--borde);
   border-radius: 8px;
-  text-decoration: none;
-  color: inherit;
+  /* `.capitulos` es una grilla, así que cada capítulo es un ítem y hereda
+     `min-width: auto`, o sea su tamaño mínimo de contenido. Con la grilla de
+     flashcards adentro ese mínimo pasa de 800px y el capítulo se sale de la
+     columna de lectura. Sin esta línea la hoja desborda en horizontal. */
+  min-width: 0;
 }
-.seccion:hover { border-color: var(--acento); }
-.seccion .numero {
+details.capitulo[open] { border-color: color-mix(in srgb, var(--acento) 40%, var(--borde)); }
+
+details.capitulo > summary {
+  display: flex;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  /* display:flex en un summary borra el triángulo nativo, porque el marcador es
+     parte de display:list-item. Se dibuja uno propio más abajo; sin eso no hay
+     ninguna señal de que la fila se abre. */
+  list-style: none;
+}
+details.capitulo > summary::-webkit-details-marker { display: none; }
+details.capitulo > summary:hover { color: var(--acento); }
+details.capitulo > summary:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+details.capitulo > summary .numero {
+  flex: none;
   font-family: ui-monospace, monospace;
   font-size: 0.9rem;
   color: var(--tenue);
   padding-top: 0.15rem;
 }
-.seccion .cuerpo { display: grid; gap: 0.2rem; min-width: 0; }
-.seccion .tesis { color: var(--tenue); font-size: 0.9rem; line-height: 1.5; }
+details.capitulo > summary .cuerpo { flex: 1; display: grid; gap: 0.2rem; min-width: 0; }
+details.capitulo > summary .tesis {
+  color: var(--tenue);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+details.capitulo > summary::after {
+  content: "";
+  flex: none;
+  align-self: start;
+  margin-top: 0.5rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 2px solid var(--tenue);
+  border-bottom: 2px solid var(--tenue);
+  transform: rotate(-45deg);
+  transition: transform 0.15s;
+}
+details.capitulo[open] > summary::after { transform: rotate(45deg); margin-top: 0.35rem; }
+
+details.capitulo > .documento {
+  padding: 0 1.1rem 1.6rem;
+  border-top: 1px solid var(--borde);
+  /* Con todos los capítulos en el DOM, esto es lo que evita pagar layout y
+     pintado por lo que está fuera de pantalla. Va acá y no en el <details>: si
+     estuviera en el details, el summary también quedaría contenido y el salto
+     por ancla podría caer mal. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 40rem;
+}
+/* El primer encabezado del documento traería su border-top y 2.75rem de margen,
+   que dentro de la tarjeta hacen una raya doble con el borde del summary. */
+details.capitulo > .documento > .indice-doc { margin-top: 1rem; }
+details.capitulo > .documento h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 1.5rem; }
+
+/* ---------- índice del libro (riel de desktop) ---------- */
+
+/* Debajo de 68rem no existe: ahí el cuerpo de la hoja ya es el índice, y un
+   segundo listado de todos los capítulos sería scroll de más. */
+.indice-libro { display: none; }
 
 /* ---------- documento ---------- */
 
-.documento h2 { scroll-margin-top: 4rem; }
+/* Todo lo que puede ser destino de un ancla necesita el margen, o la barra fija
+   lo tapa: los encabezados de bloque, la sección de flashcards y el capítulo. */
+.documento h2,
+.documento section[id],
+details.capitulo { scroll-margin-top: 4rem; }
 .documento h2:target { color: var(--acento); }
 
 .documento :is(ul, ol) > li > strong:first-child { color: var(--acento); }
@@ -207,14 +285,19 @@ h2.parte + .secciones { margin-top: 0.75rem; }
     column-gap: 2.5rem;
     max-width: calc(var(--ancho) + 14.5rem);
   }
-  main.con-indice .indice-doc {
+  /* El combinador hijo es obligatorio: ahora también hay un `.indice-doc`
+     ADENTRO de cada capítulo, y esos tienen que seguir siendo la fila de chips
+     de siempre, no volverse columnas fijas. */
+  main.con-indice > .indice-doc,
+  main.con-indice > .indice-libro {
+    display: flex;
     grid-column: 1;
     grid-row: 1;
     position: sticky;
     top: 5rem;
     align-self: start;
-    /* Si alguna vez hubiera más bloques que alto de pantalla, scrollea el
-       índice y no la página. */
+    /* Con muchos capítulos el riel puede pasar el alto de pantalla: scrollea el
+       riel y no la página. */
     max-height: calc(100vh - 7rem);
     overflow-y: auto;
     flex-direction: column;
@@ -227,22 +310,48 @@ h2.parte + .secciones { margin-top: 0.75rem; }
     border-left: 1px solid var(--borde);
     border-radius: 0;
   }
-  main.con-indice .indice-doc a {
+  main.con-indice > .indice-doc a,
+  main.con-indice > .indice-libro a {
     border: none;
     border-radius: 0;
-    padding: 0.32rem 0;
+    padding: 0.32rem 0 0.32rem 0.7rem;
     /* En una columna angosta las etiquetas largas tienen que poder cortarse. */
     white-space: normal;
     border-left: 2px solid transparent;
-    padding-left: 0.7rem;
     margin-left: -0.9rem;
+    /* El riel no hereda las reglas de `.indice-doc a`, así que sin esto sus
+       enlaces salen subrayados y en color de enlace. */
+    color: var(--tenue);
+    text-decoration: none;
   }
-  main.con-indice .indice-doc a[aria-current="true"] {
+  main.con-indice > .indice-libro a:hover,
+  main.con-indice > .indice-libro a:focus-visible { color: var(--acento); }
+  main.con-indice > .indice-doc a[aria-current="true"],
+  main.con-indice > .indice-libro a[aria-current="true"] {
     border-left-color: var(--acento);
     font-weight: 600;
   }
+  main.con-indice > .indice-libro .numero {
+    font-family: ui-monospace, monospace;
+    font-size: 0.85em;
+    color: var(--tenue);
+    margin-right: 0.4rem;
+  }
+  /* Los títulos de apartado son largos —el C) de Fernández Sessarego pasa los
+     cien caracteres—, así que en el riel se truncan y el texto completo queda
+     en el `title`. */
+  main.con-indice > .indice-libro .parte {
+    display: block;
+    margin: 0.9rem 0 0.25rem;
+    padding: 0;
+    border: 0;
+    font-size: 0.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  main.con-indice .hoja,
   main.con-indice .documento { grid-column: 2; grid-row: 1; }
-  main.con-indice .paso { grid-column: 2; grid-row: 2; }
 }
 
 pre.mermaid {
@@ -331,4 +440,16 @@ footer {
   main { padding-top: 1.75rem; }
   .indice-doc { font-size: 0.76rem; gap: 0.3rem 0.35rem; padding: 0.55rem 0.6rem; }
   .indice-doc a { padding: 0.1rem 0.45rem; }
+  details.capitulo > summary { padding: 0.75rem 0.85rem; gap: 0.7rem; }
+  details.capitulo > .documento { padding: 0 0.85rem 1.2rem; }
+  .contenedor, .parte { font-size: 0.78rem; }
+}
+
+/* Al imprimir sale lo que esté abierto: el CSS no puede abrir un <details>.
+   Al menos se saca lo que no aporta en papel. */
+@media print {
+  .indice-libro, .indice-doc, .controles { display: none; }
+  details.capitulo { border: 0; background: none; }
+  details.capitulo > summary::after { display: none; }
+  details.capitulo > .documento { content-visibility: visible; }
 }
