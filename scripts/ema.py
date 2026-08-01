@@ -21,7 +21,7 @@ import tomllib
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from comun import idea_principal, slugify  # noqa: E402
+from comun import bloques_h2, idea_principal, normalizar_titulo, slugify  # noqa: E402
 from limpieza import limpiar_pdf  # noqa: E402
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -513,16 +513,38 @@ def extraer_titulo(cuerpo: str) -> str | None:
 
 
 def contexto_previo(libro: Path, numero: str) -> str:
-    """Junta las ideas principales ya generadas, para encadenar capítulos."""
-    ideas = []
+    """Lo que ya se procesó del libro: ideas principales y vocabulario definido.
+
+    El vocabulario importa tanto como las ideas. El glosario se consolida por
+    libro, así que redefinir un término que ya definió otro capítulo genera dos
+    entradas para lo mismo; pasarle la lista es lo que evita la duplicación en el
+    origen, en vez de solo deduplicarla al publicar.
+    """
+    ideas, terminos = [], []
     for previo in sorted((libro / "estudio").glob("*.md")):
         if previo.name.split("-")[0] >= numero:
             continue
-        if idea := idea_principal(previo.read_text(encoding="utf-8")):
+        texto = previo.read_text(encoding="utf-8")
+        if idea := idea_principal(texto):
             ideas.append(f"- {previo.name.split('-')[0]}: {idea}")
-    if not ideas:
+        # Solo del bloque de vocabulario: las distinciones usan el mismo formato
+        # `- **X** —` y colarían pares enteros («A vs. B») en la lista de términos.
+        for titulo, cuerpo in bloques_h2(texto):
+            if "vocabulario" in normalizar_titulo(titulo):
+                terminos += re.findall(r"^\s*[-*]\s+\*\*(.+?)\*\*\s*[—–-]", cuerpo, re.MULTILINE)
+
+    if not ideas and not terminos:
         return "(esta es la primera sección procesada)"
-    return "Ya procesamos estas secciones y sus ideas principales:\n" + "\n".join(ideas)
+    partes = []
+    if ideas:
+        partes.append("Ya procesamos estas secciones y sus ideas principales:\n" + "\n".join(ideas))
+    if terminos:
+        unicos = sorted(dict.fromkeys(t.strip() for t in terminos), key=str.lower)
+        partes.append(
+            "Términos que el glosario del libro ya tiene definidos (no los redefinas):\n"
+            + ", ".join(unicos)
+        )
+    return "\n\n".join(partes)
 
 
 def variantes_texto(variantes: list[str]) -> str:

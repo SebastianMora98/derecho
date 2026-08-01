@@ -14,7 +14,8 @@ document.addEventListener("keydown", (evento) => {
 // capítulos plegables
 // --------------------------------------------------------------------------- //
 
-const capitulos = () => [...document.querySelectorAll("details.capitulo")];
+// Capítulos y consolidados: los dos se recuerdan y los dos los abre el botón.
+const plegables = () => [...document.querySelectorAll("details.capitulo, details.consolidado")];
 const CLAVE_ABIERTOS = "abiertos:" + location.pathname;
 
 // Se recuerda qué capítulos quedaron abiertos: volver y encontrarse la pared de
@@ -22,7 +23,7 @@ const CLAVE_ABIERTOS = "abiertos:" + location.pathname;
 // En file:// el origen es opaco y localStorage puede tirar, de ahí el try.
 function guardarAbiertos() {
   try {
-    const ids = capitulos().filter((d) => d.open).map((d) => d.id);
+    const ids = plegables().filter((d) => d.open).map((d) => d.id);
     if (ids.length) localStorage.setItem(CLAVE_ABIERTOS, ids.join(" "));
     else localStorage.removeItem(CLAVE_ABIERTOS);
   } catch {}
@@ -65,12 +66,13 @@ const alternarTodo = document.querySelector(".alternar-todo");
 if (alternarTodo) {
   // Con todo abierto, Cmd-F recorre el libro entero: el navegador no busca
   // dentro de un <details> cerrado, así que este botón convierte el costo de
-  // plegar en una capacidad que el sitio no tenía.
+  // plegar en una capacidad que el sitio no tenía. Tiene que abrir también los
+  // consolidados, o Cmd-F no encuentra un término que solo está en el glosario.
   alternarTodo.addEventListener("click", () => {
     const abrir = alternarTodo.getAttribute("aria-expanded") !== "true";
-    capitulos().forEach((d) => { d.open = abrir; });
+    plegables().forEach((d) => { d.open = abrir; });
     alternarTodo.setAttribute("aria-expanded", String(abrir));
-    alternarTodo.textContent = abrir ? "Cerrar todos los capítulos" : "Abrir todos los capítulos";
+    alternarTodo.textContent = abrir ? "Cerrar todo el libro" : "Abrir todo el libro";
   });
 }
 
@@ -186,7 +188,8 @@ addEventListener("hashchange", alScrollear);
 document.addEventListener(
   "toggle",
   (e) => {
-    if (e.target.classList && e.target.classList.contains("capitulo")) guardarAbiertos();
+    const c = e.target.classList;
+    if (c && (c.contains("capitulo") || c.contains("consolidado"))) guardarAbiertos();
     alScrollear(); // abrir un capítulo movió todas las posiciones
   },
   true,

@@ -21,21 +21,21 @@ título y el autor. No inventes contenido que no esté en esos documentos.
 
 Una página HTML autocontenida (sin recursos externos: CSS y JS en línea) con:
 
-Los números de bloque son los de `prompts/estudio.md`: 1 Idea principal ·
-2 Explicación paso a paso · 3 Mapa · 4 Vocabulario clave · 5 Distinciones que se
-confunden · 6 Qué releer del original · 7 Autoevaluación · Flashcards.
+Los bloques se citan por TÍTULO y no por número: los números de
+`prompts/estudio.md` ya se corrieron dos veces al reordenarla.
 
 1. **Cabecera** con obra, autor y capítulos cubiertos.
-2. **Mapa de la obra**: la idea principal de cada capítulo (bloque 1) en una
-   línea, navegables, agrupadas por apartado si `libro.toml` declara `[[partes]]`.
-3. **Tarjetas de vocabulario**: una por término del bloque 4, que muestran el
-   término y revelan la definición al hacer clic.
-4. **Modo test**: las preguntas del bloque 7 de cada documento, una a la vez,
-   con botón para revelar la respuesta de referencia y un contador de
+2. **Mapa de la obra**: la «Idea principal» de cada capítulo en una línea,
+   navegables, agrupadas por apartado si `libro.toml` declara `[[partes]]`.
+3. **Tarjetas de vocabulario**: una por término de «Vocabulario clave», que
+   muestran el término y revelan la definición al hacer clic. Deduplicá los
+   términos repetidos entre capítulos, como hace el glosario del sitio.
+4. **Modo test**: las preguntas de «Autoevaluación» de cada documento, una a la
+   vez, con botón para revelar la respuesta de referencia y un contador de
    autoevaluación (acerté / fallé) que persiste en `localStorage`.
-5. **Distinciones**: las del bloque 5, cada una con su criterio para decidir, en
-   un panel aparte y con el "dónde se cae" marcado en otro color.
-6. **Qué releer**: los pasajes del bloque 6, agrupados por capítulo.
+5. **Distinciones**: las de «Distinciones que se confunden», cada una con su
+   criterio para decidir, en un panel aparte y con el "dónde se cae" en otro color.
+6. **Qué releer**: los pasajes de «Qué releer del original», agrupados por capítulo.
 
 # REGLAS
 

@@ -110,8 +110,8 @@ Detalles que ya costaron una vuelta, por si hay que tocarlo:
 - Citas del original: menos de 15 palabras, entre comillas, con referencia.
   Nunca inventar números de página que la conversión no preservó.
 - El texto convertido puede traer ruido pese a la limpieza. Ignoralo; si un
-  pasaje quedó ilegible, marcalo en el paso del bloque 2 donde cae y anotalo en
-  el bloque 6, en vez de reconstruirlo.
+  pasaje quedó ilegible, marcalo en media cláusula dentro del bloque 2 y anotalo
+  en «Qué releer del original», en vez de reconstruirlo.
 - Los diagramas Mermaid tienen que compilar: etiquetas entre comillas dobles y
   sin paréntesis. Las etiquetas **sí llevan acentos**; lo que va sin acentos son
   los identificadores. Verificá el render con `ema.py web` y el navegador antes
@@ -121,46 +121,75 @@ Detalles que ya costaron una vuelta, por si hay que tocarlo:
 
 ## Estructura del documento de estudio
 
-Los 7 bloques de `prompts/estudio.md`, en orden: **1** Idea principal · **2**
-Explicación paso a paso · **3** Mapa (un solo diagrama) · **4** Vocabulario
-clave · **5** Distinciones que se confunden · **6** Qué releer del original ·
-**7** Autoevaluación · **Flashcards**.
+Los 7 bloques de `prompts/estudio.md`, **y donde se publica cada uno**:
 
-Está pensada para preparar un examen siendo principiante, con un **tope de 1.800
-palabras** por documento: más que eso deja de acompañar la lectura y empieza a
-reemplazarla, y como todos los capítulos viven en una sola hoja, cada uno que se
-estira encarece la página entera. Su regla central es el **reparto del
-material**: cada tipo de contenido tiene un bloque asignado y está prohibido en
-los otros. La plantilla vieja de 12 bloques hacía aparecer los
-mismos 7 conceptos cuatro veces (tarjeta, nodo del diagrama, pregunta del test y
-flashcard); si al ejecutar el prompt notás que estás repitiendo, es que el
-reparto se está violando.
+| bloque | dónde se ve |
+|---|---|
+| 1 Idea principal | dentro del capítulo |
+| 2 Lo esencial del capítulo | dentro del capítulo |
+| 3 Mapa (un solo diagrama) | dentro del capítulo |
+| 4 Qué releer del original | dentro del capítulo |
+| 5 Vocabulario clave | glosario del libro |
+| 6 Distinciones que se confunden | sección del libro |
+| 7 Autoevaluación | test del libro |
+| Flashcards | mazo del libro |
 
-Cuatro contratos con el código que no hay que romper:
+Los cuatro últimos **no se muestran dentro del capítulo**: el sitio los extrae y
+los publica una sola vez por libro, al final de la hoja. Repetir ese aparato en
+cada capítulo era lo que hacía los documentos largos y redundantes.
 
+Tres topes, y el que manda es el segundo: 1.400 palabras el documento entero,
+**700 los bloques 1 a 4 juntos** —lo único que se lee al abrir un capítulo— y 450
+el bloque 2. Los seis documentos actuales quedaron entre 547 y 601 de parte
+visible.
+
+**El bloque 2 no lleva pasos numerados.** Es prosa corrida de 3 o 4 párrafos, sin
+subencabezados. La versión con pasos forzaba la cobertura, pero partía la lectura
+en fichas y obligaba a un andamiaje meta ("el movimiento es", "importa porque")
+que se comía un tercio del espacio. La cobertura se pide ahora directo: el primer
+párrafo arranca donde arranca el capítulo, el último llega a su cierre, y cada
+párrafo lleva una referencia.
+
+Su regla central sigue siendo el **reparto del material**: cada tipo de contenido
+tiene un bloque asignado y está prohibido en los otros. Lo más importante del
+reparto nuevo: **el test dejó de cubrir recall**, que pasó a ser trabajo exclusivo
+de las flashcards. Antes eran el mismo material en dos formatos y el 32% del mazo
+repetía una pregunta del test.
+
+Contratos con el código que no hay que romper:
+
+- **Los cuatro títulos son claves de extracción.** Un `##` cuyo título contenga
+  «vocabulario», «distinciones», «autoevaluacion» o «flashcards» sale del capítulo
+  y va al consolidado (`sitio.py: destino_del_bloque`). Es lista blanca de
+  extracción, no de visibilidad: lo que no clasifica queda visible, así que
+  renombrar un bloque lo hace reaparecer feo en el capítulo en vez de
+  desaparecer callado.
 - **1. Idea principal** — su primer párrafo, en una sola línea y sin notas al
-  redactor, es el resumen que se publica en el índice del libro y el contexto
-  que hereda la corrida siguiente. Se busca por el título del bloque, no por su
-  número (`comun.py: idea_principal`), así que renumerar no rompe el sitio, pero
-  renombrar el bloque sí.
+  redactor, es el resumen que se publica en el índice del libro y el contexto que
+  hereda la corrida siguiente. Se busca por el título del bloque, no por su número
+  (`comun.py: idea_principal`), así que renumerar no rompe el sitio.
 - **7. Autoevaluación** — lo que sigue a `--- No mires esto hasta responder ---`
   son las respuestas, y el sitio **las empareja por posición con las preguntas**
-  para mostrar cada una debajo de la suya. Por eso tiene que haber exactamente
-  una respuesta por pregunta y en el mismo orden: si las cantidades no coinciden
-  no se empareja nada y caen todas juntas al final, con aviso en consola. Tiene
-  que ser lo último antes de las flashcards.
+  para mostrar cada una debajo de la suya. Tiene que haber exactamente una
+  respuesta por pregunta y en el mismo orden: si las cantidades no coinciden no se
+  empareja nada y caen todas juntas al final, con aviso en consola.
 - **Flashcards** — al final del archivo, una por línea, `Pregunta | Respuesta`,
-  sin markdown adentro (el sitio escapa el texto). Ya no dependen de la variante
-  `examen`; esa variante solo fija la cantidad en 20.
-- **4. Vocabulario clave** — la lista va **pegada**, sin líneas en blanco entre
-  ítems, o se pierde el color de acento del término (`estilo.css`: el selector
-  es `li > strong`, y con líneas en blanco el markdown mete un `<p>` en medio).
+  sin markdown adentro (el sitio escapa el texto).
+- **6. Distinciones** — la lista va **pegada**, sin líneas en blanco entre ítems, o
+  se pierde el color de acento del par (`estilo.css`: el selector es
+  `li > strong`, y con líneas en blanco el markdown mete un `<p>` en medio). Este
+  contrato **era del vocabulario y se mudó acá**: el vocabulario ya no se
+  renderiza desde markdown crudo, el sitio lo parsea y lo re-arma como `<dl>`.
 
-El sitio genera además un índice de bloques al principio de cada documento, con
-un `id` por cada `##`. Eso sale de `sitio.py: anclar`, no del markdown: el
-documento no puede escribir HTML crudo ni anclas propias. Tampoco casillas
-`- [ ]`, notas al pie, callouts ni atributos `{.clase}`: no hay plugins de
-markdown instalados y se ven como caracteres sueltos.
+`ema.py preparar` le pasa al prompt, además de las ideas principales anteriores,
+**la lista de términos que el glosario ya tiene**, con la instrucción de no
+redefinirlos. Eso evita la duplicación en el origen; el deduplicado del sitio es
+solo la red. Con los seis documentos actuales el build no emite ningún aviso.
+
+El documento no puede escribir HTML crudo ni anclas propias: los `id` los pone
+`sitio.py: anclar`, que además le saca el número al encabezado visible. Tampoco
+casillas `- [ ]`, notas al pie, callouts ni atributos `{.clase}`: no hay plugins
+de markdown instalados y se ven como caracteres sueltos.
 
 ## Sitio y despliegue
 
@@ -180,6 +209,20 @@ sale de `libros/<slug>/capitulos.toml`, que escribe `dividir` y que **sí va a
 git** — `secciones/` no, porque ahí está el texto del original. Si se re-divide
 un libro hay que volver a correr `web`, o la hoja queda con capítulos que ya no
 existen (el sitio avisa cuando un documento no está en el manifiesto).
+
+Al final de la hoja van los **cuatro consolidados del libro** —glosario,
+distinciones, autoevaluación y mazo de flashcards—, cada uno en su plegable y
+armados juntando los bloques de todos los capítulos. Sus anclas (`#glosario`,
+`#distinciones`, `#autoevaluacion`, `#flashcards`) van **en el `<details>` mismo
+y no en un encabezado interno**: el marcador del riel saltea los destinos sin
+`offsetParent`, y un `h2` dentro de un plegable cerrado tiene rect en ceros. Un
+consolidado sin contenido no se renderiza ni aparece en el riel.
+
+El glosario deduplica por término, gana la definición del primer capítulo y avisa
+en consola cuando dos capítulos lo definen distinto. **No unifica sinónimos**
+(`Tridimensionalismo` y `Teoría tridimensional del derecho` quedan como dos
+entradas): cualquier regla que los junte junta también términos distintos, y eso
+se arregla escribiendo mejor los documentos, no en el sitio.
 
 Detalles del diseño que no son obvios y ya costaron una vuelta:
 
@@ -240,7 +283,7 @@ Beccaria (ed. UC3M 2015, CC BY-NC-ND). Jerarquía plana: 47 capítulos numerados
 por el autor, sin apartados ni capítulo contenedor, así que el sitio muestra la
 lista corrida. Dividido con `--nivel 2` → **39 secciones** («Al lector»,
 «Introducción» y los 47 capítulos, con 9 secciones que juntan capítulos cortos).
-Procesadas la 1 y la 2. `formato_citas = "capitulos"`: el autor numera sus
+Procesadas la 1 y la 2, regeneradas con la plantilla de prosa corrida. `formato_citas = "capitulos"`: el autor numera sus
 capítulos y esta edición no preservó la paginación.
 
 La conversión está verificada byte a byte contra el PDF: 47/47 capítulos, y el
@@ -259,7 +302,8 @@ en `[[partes]]`; de ahí saca el sitio la jerarquía. Dividido con `--nivel 2` �
 **19 secciones** (§ 53 a § 74, con 3 que juntan parágrafos cortos).
 `formato_citas = "paginas"` porque el escaneo conservó los folios; variante
 `examen` activa. Procesadas la 1, la 2, la 7 y la 13 —una por apartado, elegidas
-así a propósito para que la hoja mostrara los tres niveles con contenido real.
+así a propósito para que la hoja mostrara los tres niveles con contenido real. Los cuatro se regeneraron con la plantilla de prosa
+corrida.
 
 `ema.py estado` da el detalle y avisa si quedó algún documento de `estudio/`
 cuya sección ya no existe.

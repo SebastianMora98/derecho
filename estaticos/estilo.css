@@ -170,7 +170,8 @@ details.capitulo {
 }
 details.capitulo[open] { border-color: color-mix(in srgb, var(--acento) 40%, var(--borde)); }
 
-details.capitulo > summary {
+details.capitulo > summary,
+details.consolidado > summary {
   display: flex;
   gap: 1rem;
   padding: 0.9rem 1.1rem;
@@ -181,9 +182,12 @@ details.capitulo > summary {
      ninguna señal de que la fila se abre. */
   list-style: none;
 }
-details.capitulo > summary::-webkit-details-marker { display: none; }
-details.capitulo > summary:hover { color: var(--acento); }
-details.capitulo > summary:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+details.capitulo > summary::-webkit-details-marker,
+details.consolidado > summary::-webkit-details-marker { display: none; }
+details.capitulo > summary:hover,
+details.consolidado > summary:hover { color: var(--acento); }
+details.capitulo > summary:focus-visible,
+details.consolidado > summary:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
 details.capitulo > summary .numero {
   flex: none;
   font-family: ui-monospace, monospace;
@@ -191,14 +195,17 @@ details.capitulo > summary .numero {
   color: var(--tenue);
   padding-top: 0.15rem;
 }
-details.capitulo > summary .cuerpo { flex: 1; display: grid; gap: 0.2rem; min-width: 0; }
-details.capitulo > summary .tesis {
+details.capitulo > summary .cuerpo,
+details.consolidado > summary .cuerpo { flex: 1; display: grid; gap: 0.2rem; min-width: 0; }
+details.capitulo > summary .tesis,
+details.consolidado > summary .tesis {
   color: var(--tenue);
   font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 400;
 }
-details.capitulo > summary::after {
+details.capitulo > summary::after,
+details.consolidado > summary::after {
   content: "";
   flex: none;
   align-self: start;
@@ -210,7 +217,8 @@ details.capitulo > summary::after {
   transform: rotate(-45deg);
   transition: transform 0.15s;
 }
-details.capitulo[open] > summary::after { transform: rotate(45deg); margin-top: 0.35rem; }
+details.capitulo[open] > summary::after,
+details.consolidado[open] > summary::after { transform: rotate(45deg); margin-top: 0.35rem; }
 
 /* Capítulo del libro que todavía no tiene documento de estudio. Se muestra
    igual para que la hoja sea el libro entero, atenuado y sin chevron. */
@@ -249,6 +257,56 @@ details.capitulo > .documento {
 details.capitulo > .documento > .indice-doc { margin-top: 1rem; }
 details.capitulo > .documento h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 1.5rem; }
 
+/* ---------- consolidado del libro ---------- */
+
+/* Vocabulario, distinciones, test y flashcards se muestran UNA vez por libro, al
+   final de la hoja, en vez de repetirse en cada capítulo. */
+.consolidados { display: grid; gap: 0.5rem; margin-top: 0.75rem; }
+
+details.consolidado {
+  background: var(--fondo-alt);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  scroll-margin-top: 4rem;
+  /* Misma trampa que en `details.capitulo`: es ítem de grilla y hereda
+     `min-width: auto`, y la grilla del mazo adentro desborda la hoja. */
+  min-width: 0;
+}
+details.consolidado[open] { border-color: color-mix(in srgb, var(--acento) 40%, var(--borde)); }
+details.consolidado > .contenido {
+  padding: 0 1.1rem 1.6rem;
+  border-top: 1px solid var(--borde);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 60rem;
+}
+details.consolidado > .contenido > :first-child { margin-top: 1rem; }
+.consolidado h3 { scroll-margin-top: 4rem; }
+.consolidado h3 a {
+  font-family: ui-monospace, monospace;
+  font-size: 0.85em;
+  color: var(--tenue);
+  text-decoration: none;
+  margin-right: 0.35rem;
+}
+
+/* Glosario: el término en color de acento y los capítulos donde aparece como
+   chips. Es un `dl` y no una lista con negritas, así que no depende de la regla
+   de "lista pegada" que sí rige para las distinciones. */
+dl.glosario { margin: 1rem 0 0; }
+dl.glosario dt { margin-top: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: baseline; }
+dl.glosario dt .termino { font-weight: 600; color: var(--acento); }
+dl.glosario dt .cap {
+  font-family: ui-monospace, monospace;
+  font-size: 0.72rem;
+  color: var(--tenue);
+  text-decoration: none;
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  padding: 0 0.4rem;
+}
+dl.glosario dt .cap:hover { color: var(--acento); border-color: var(--acento); }
+dl.glosario dd { margin: 0.15rem 0 0; color: var(--tenue); }
+
 /* ---------- índice del libro (riel de desktop) ---------- */
 
 /* Debajo de 68rem no existe: ahí el cuerpo de la hoja ya es el índice, y un
@@ -264,7 +322,9 @@ details.capitulo > .documento h2:first-of-type { border-top: 0; padding-top: 0; 
 details.capitulo { scroll-margin-top: 4rem; }
 .documento h2:target { color: var(--acento); }
 
-.documento :is(ul, ol) > li > strong:first-child { color: var(--acento); }
+/* Vale también en el consolidado: las distinciones se siguen renderizando desde
+   markdown crudo, así que ahí sigue rigiendo la regla de la lista pegada. */
+:is(.documento, .consolidado) :is(ul, ol) > li > strong:first-child { color: var(--acento); }
 
 /* Índice de bloques del documento. Los enlaces envuelven en varias filas en
    vez de scrollear en horizontal: con scroll, el último bloque
@@ -458,9 +518,21 @@ details.pregunta > .respuesta > :last-child { margin-bottom: 0; }
   border: 1px solid var(--borde);
   border-radius: 8px;
   cursor: pointer;
+  position: relative;
 }
 .tarjeta:hover { border-color: var(--acento); }
-.tarjeta .pregunta { font-weight: 600; }
+.tarjeta .pregunta { font-weight: 600; padding-right: 1.4rem; }
+/* El capítulo de donde sale la tarjeta. Va posicionado y no como una fila más de
+   la grilla, que empujaría el «mostrar» del ::after. Y va como <span>, no como
+   <a>: un enlace dentro de un <button> es HTML inválido. */
+.tarjeta .origen {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.7rem;
+  font-family: ui-monospace, monospace;
+  font-size: 0.7rem;
+  color: var(--tenue);
+}
 .tarjeta .respuesta { color: var(--tenue); font-size: 0.9rem; display: none; }
 .tarjeta.abierta .respuesta { display: block; }
 .tarjeta:not(.abierta)::after {
@@ -503,7 +575,8 @@ footer {
   .indice-doc { font-size: 0.76rem; gap: 0.3rem 0.35rem; padding: 0.55rem 0.6rem; }
   .indice-doc a { padding: 0.1rem 0.45rem; }
   details.capitulo > summary { padding: 0.75rem 0.85rem; gap: 0.7rem; }
-  details.capitulo > .documento { padding: 0 0.85rem 1.2rem; }
+  details.capitulo > .documento,
+  details.consolidado > .contenido { padding: 0 0.85rem 1.2rem; }
   .contenedor, .parte { font-size: 0.78rem; }
 }
 
@@ -512,6 +585,8 @@ footer {
 @media print {
   .indice-libro, .indice-doc, .controles { display: none; }
   details.capitulo { border: 0; background: none; }
-  details.capitulo > summary::after { display: none; }
-  details.capitulo > .documento { content-visibility: visible; }
+  details.capitulo > summary::after,
+  details.consolidado > summary::after { display: none; }
+  details.capitulo > .documento,
+  details.consolidado > .contenido { content-visibility: visible; }
 }
