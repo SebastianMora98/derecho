@@ -64,6 +64,5 @@ flowchart TD
 ## Flashcards
 
 Qué dos dimensiones aparecen en el art. 80 del Código Civil peruano | La sociológico-existencial en organización de personas, y la axiológica en el fin no lucrativo
-Qué artículos dan la dimensión formal a las personas jurídicas | Los arts. 77 y 78, con la inscripción en el registro
 Por qué la existencia distinta del art. 78 es solo formal | Porque quienes actúan y deciden son siempre personas humanas: sin ellas no hay sujeto de derecho
 Qué propone el autor sobre la no responsabilidad de los miembros | Que el código diga expresamente que es excepcional, y no una consecuencia natural

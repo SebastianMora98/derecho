@@ -68,4 +68,3 @@ flowchart TD
 Qué es una interrogación sugestiva según los doctores | La que pregunta de la especie debiendo preguntar del género y sugiere la respuesta
 Con qué frase muestra Beccaria la contradicción con la tortura | Preguntando cuál interrogación es más sugestiva que el dolor
 Con qué argumento se anula la deposición de un reo condenado | Con la metáfora de la muerte civil: un muerto no es capaz de acción alguna
-Cuáles son las tres funciones de las formalidades judiciales | Limitar el arbitrio, dar imagen de juicio estable e impresionar por la vía sensible

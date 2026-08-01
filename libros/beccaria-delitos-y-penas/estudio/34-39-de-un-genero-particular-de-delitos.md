@@ -65,6 +65,5 @@ flowchart TD
 ## Flashcards
 
 Qué género de delitos omite Beccaria en su tratado y con qué razón | La herejía, porque el lugar, el siglo y la materia no le permiten examinar su naturaleza
-Qué dos clases de opiniones distingue | Las que se aclaran con el choque y las que deben vestirse de autoridad y fuerza
 De qué habla el libro según el cierre del cap. 39 | Solo de los delitos que provienen de la naturaleza humana y del pacto social, no de los pecados
 Cuáles son las conquistas del imperio de la fuerza sobre los entendimientos | El disimulo y por consiguiente el envilecimiento

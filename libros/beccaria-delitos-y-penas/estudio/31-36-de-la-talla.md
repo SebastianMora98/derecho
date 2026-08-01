@@ -68,4 +68,3 @@ flowchart TD
 Qué es la talla en el cap. 36 | El precio ofrecido a quien entregue la cabeza de un hombre declarado reo
 Qué objeta Beccaria a la talla según el reo esté fuera o dentro del país | Fuera, el soberano usurpa autoridad ajena y expone a sus ciudadanos a un suplicio; dentro, confiesa su propia flaqueza
 Qué contradicción señala Beccaria en el edicto de talla | Que las leyes convidan a la traición y a la vez la castigan, y hacen nacer ciento delitos en vez de evitar uno
-Cómo distingo una medida eficaz de un reparo de edificio ruinoso | Preguntando por qué hizo falta: quien tiene fuerza para defenderse no la busca

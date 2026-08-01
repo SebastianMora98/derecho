@@ -68,5 +68,4 @@ flowchart TD
 
 Las tres dimensiones del derecho según Fernández Sessarego | Conducta humana intersubjetiva, norma jurídica y valor jurídico
 Qué tres fines persigue el derecho al regular, según el capítulo | Justicia, seguridad y solidaridad
-Dónde y cuándo surgió el tridimensionalismo | A la vez en Brasil con Miguel Reale en 1953 y en Perú con la tesis del autor de 1950
 Cómo distingo el derecho de la ley | La ley es una sola dimensión; el derecho son las tres actuando juntas

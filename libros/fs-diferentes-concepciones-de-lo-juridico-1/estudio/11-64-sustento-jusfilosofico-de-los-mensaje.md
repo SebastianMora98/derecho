@@ -68,6 +68,5 @@ flowchart TD
 ## Flashcards
 
 Cómo define al ser humano la filosofía de la existencia según este capítulo | Como una unidad psicosomática sustentada en su libertad, coexistencial y temporal
-Qué significa que el hombre sea un ser libertad | Que su libertad no es un atributo más sino lo que lo constituye
 Por qué carecería de sentido el derecho si el hombre no fuera libre | Porque solo a quien puede elegir se le propone cumplir o incumplir un deber
 Qué institución protegía sobre todo el Código Civil peruano de 1936 | La inviolable propiedad, no la persona humana

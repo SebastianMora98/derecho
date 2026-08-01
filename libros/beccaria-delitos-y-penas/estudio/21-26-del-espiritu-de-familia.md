@@ -67,4 +67,3 @@ flowchart TD
 Cómo describe Beccaria el espíritu de familia | Como un espíritu de detalle, limitado a los hechos pequeños
 Cuántos ciudadanos y cuántos esclavos hay si la sociedad se compone de familias | Veinte mil hombres y ochenta mil esclavos, en el ejemplo de cien mil personas
 Cómo llega el espíritu monárquico a las leyes de una república | Porque las leyes son efecto de los sentimientos habituales de los cabezas de familia
-Qué tipo de subordinación es la familia en una república de hombres | Una subordinación de contrato, no de mando

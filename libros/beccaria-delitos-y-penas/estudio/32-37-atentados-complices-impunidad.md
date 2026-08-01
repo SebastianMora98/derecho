@@ -71,4 +71,3 @@ flowchart TD
 Qué es el atentado y cómo debe castigarse | El delito comenzado por una acción que manifiesta la voluntad; con pena siempre menor que la consumación
 Qué se gana reservando la pena mayor para la consumación | Que el intervalo entre el atentado y la ejecución deje lugar al arrepentimiento
 Qué objetivo persigue Beccaria al graduar las penas de los cómplices | Dejar los menos motivos de acuerdo posibles entre quienes van a delinquir
-Cómo distingo la ley general de impunidad de la promesa caso por caso | Por el momento del incentivo: la general existe antes del delito y previene la asociación; la puntual se negocia después

@@ -66,4 +66,3 @@ flowchart TD
 Por qué no puede el juez interpretar las leyes penales | Por la misma razón por la que no puede dictarlas: no es legislador, y el intérprete legítimo es el depositario de las voluntades actuales
 De dónde viene la autoridad de las leyes según el cap. 4 | De las voluntades reunidas de los súbditos vivientes, no de un juramento antiguo
 Cuáles son las tres partes del silogismo perfecto del juez | La ley general, la acción conforme o no a la ley, y la libertad o la pena
-Cómo distingo interpretar la ley de subsumir el hecho | Interpretar fija qué dice la norma; subsumir decide si el hecho encaja. Solo lo segundo es tarea del juez

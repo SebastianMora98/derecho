@@ -72,4 +72,3 @@ flowchart TD
 Cuáles son las cuatro falsas ideas de utilidad | Anteponer lo particular al general, sacrificar mil ventajas por un mal imaginario, pedir a los hombres la simetría de lo inanimado y sacrificar la cosa al nombre
 A quiénes contienen las leyes que prohíben llevar armas y con qué efecto | Solo a los no inclinados a delinquir; empeoran la condición de los asaltados y mejoran la de los asaltadores
 Cómo distingo una ley preventiva de una ley medrosa | Por su origen: la preventiva medita un decreto universal, la medrosa reacciona a la impresión tumultuaria de hechos particulares
-Qué diferencia hay entre el daño del salvaje y el del hombre sociable | El salvaje daña solo para hacerse bien; al sociable las malas leyes lo mueven a ofender sin beneficio

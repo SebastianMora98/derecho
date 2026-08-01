@@ -67,5 +67,4 @@ flowchart TD
 
 Cuál es la proporción entre conocimiento, males y bienes | Los males son en razón inversa de la extensión del saber, y los bienes en la directa
 Qué tiembla cuando las luces se esparcen en una nación | La autoridad desarmada de razones, mientras la fuerza de las leyes queda inalterable
-Por qué ama el hombre iluminado los pactos públicos | Porque compara la poca libertad inútil que cedió con todas las que cedieron los demás
 Por qué es peor el saber mediano que la ignorancia ciega | Porque añade a los males de la ignorancia el error de quien ve menos lejos de lo que cree

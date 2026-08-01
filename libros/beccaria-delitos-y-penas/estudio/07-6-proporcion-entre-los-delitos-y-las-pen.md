@@ -65,5 +65,4 @@ flowchart TD
 
 Cuáles son las dos variables de la proporción según el cap. 6 | El mal que el delito causa a la sociedad y los estímulos que inducen a cometerlo
 Cuáles son los dos extremos de la escala de desórdenes | Las acciones que destruyen inmediatamente la sociedad y la más pequeña injusticia posible contra un particular
-Cómo llama Beccaria a las penas en la imagen de la fuerza y los estorbos | Estorbos políticos, que impiden el mal efecto sin destruir la sensibilidad del hombre
 Qué pasa si dos delitos desiguales reciben pena igual | Los hombres cometerán el mayor si hallan en él mayor ventaja

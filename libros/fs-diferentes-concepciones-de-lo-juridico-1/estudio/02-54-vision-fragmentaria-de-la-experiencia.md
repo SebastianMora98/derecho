@@ -64,5 +64,3 @@ flowchart TD
 
 Qué es una visión fragmentaria del derecho | Una explicación que capta una sola dimensión y la presenta como el todo
 Cuál es el reproche del autor a esas escuelas | Que no captan el fenómeno jurídico tal como discurre en la realidad de la vida
-Qué les concede a pesar de eso | Contribución indudable a la ciencia jurídica y aciertos en alguna dimensión
-Cuál es el giro del último párrafo del capítulo | Que los juristas aplicaban una visión fragmentaria igual, consciente o inconscientemente

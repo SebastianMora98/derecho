@@ -65,4 +65,3 @@ flowchart TD
 Por qué es más justa una pena pronta | Porque evita al reo los tormentos de la incertidumbre y acorta la prisión antes de la sentencia
 Por qué es más útil una pena pronta | Porque hace más fuerte y durable la asociación entre las ideas de delito y de pena
 Cuáles son las tres reglas de la cárcel preventiva | Es solo custodia hasta que se declare reo, dura el menor tiempo posible y su estrechez solo impide la fuga o el ocultamiento de pruebas
-En qué se convierte una pena muy dilatada | En espectáculo más que en castigo

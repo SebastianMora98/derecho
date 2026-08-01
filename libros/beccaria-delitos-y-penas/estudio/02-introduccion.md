@@ -65,4 +65,3 @@ flowchart TD
 Cuál es el criterio que propone la Introducción | La mayor felicidad colocada en el mayor número
 Qué debían ser las leyes y qué fueron según Beccaria | Debían ser pactos deliberados entre hombres libres; fueron partos casuales de una necesidad pasajera e instrumento de las pasiones de pocos
 Por qué desaparecen las verdades más palpables | Por su simplicidad: la gente recibe las impresiones por tradición y no por examen
-Cómo distingo el origen de una ley de su contenido | El origen es cómo se dictó; el contenido es qué manda. Beccaria critica primero el origen

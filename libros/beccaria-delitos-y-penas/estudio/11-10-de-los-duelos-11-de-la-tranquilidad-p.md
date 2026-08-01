@@ -70,4 +70,3 @@ flowchart TD
 Cuál es el axioma sin excepciones del cap. 11 | Que cada ciudadano debe saber cuándo es reo y cuándo es inocente
 Por qué fracasan los decretos de muerte contra el duelo | Porque la infamia y la soledad se temen más que la muerte
 Cuál es el mejor método de precaver el duelo | Castigar al agresor que dio la ocasión y declarar inocente al que se vio precisado a defenderse
-Qué ha sacrificado más víctimas que la crueldad pública y solemne | La incertidumbre de la propia suerte

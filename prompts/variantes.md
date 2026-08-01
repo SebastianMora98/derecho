@@ -32,10 +32,11 @@ Las respuestas de referencia pasan a ser **el molde completo de la respuesta**: 
 5 a 7 oraciones, abriendo con la definición o la tesis, siguiendo con lo que la
 sostiene y cerrando con la implicación que el examen suele pedir aparte.
 
-En Flashcards, las 4 se eligen todas por el mismo criterio: **lo que habría que
-tener en la punta de la lengua para abrir una respuesta**. Definición del término
-central, la enumeración que hay que recitar, la tesis con su autor, el criterio de
-la distinción. Nada de frases célebres ni datos de color.
+En Flashcards, hasta 4 —sigue sin ser una cifra fija—, elegidas por el mismo
+criterio: **lo que habría que tener en la punta de la lengua para abrir una
+respuesta**. Definición del término central, la enumeración que hay que recitar,
+la tesis con su autor, el criterio de la distinción. Nada de frases célebres ni
+datos de color, y nada que no pasaría el filtro de primer semestre.
 
 ## investigacion
 

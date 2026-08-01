@@ -66,4 +66,3 @@ flowchart TD
 Por qué el honor no está en el depósito común | Porque nació después de la formación de la sociedad, cuando las leyes ya no alcanzaban a cubrirlo todo
 Dónde nace el despotismo de la opinión | En las necesidades superiores a la providencia de las leyes e inferiores al poder de cada uno
 Qué es reclamar el honor según Beccaria | Una instantánea vuelta al estado natural y una sustracción momentánea a las leyes
-Cómo distingo el honor de la seguridad | La seguridad entró en el depósito común al pactar; el honor nació después y quedó fuera

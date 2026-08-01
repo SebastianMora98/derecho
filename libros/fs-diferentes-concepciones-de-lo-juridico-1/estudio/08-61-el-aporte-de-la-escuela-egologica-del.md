@@ -64,6 +64,5 @@ flowchart TD
 ## Flashcards
 
 Quién creó la escuela egológica del derecho y dónde | Carlos Cossio, en Argentina, a partir de los años cuarenta del siglo XX
-En qué dos corrientes filosóficas se enraíza el egologismo | La fenomenología de Husserl y la filosofía de la existencia
 Qué hace Cossio con los valores y las normas | No los niega: los integra en unidad inescindible dentro de la conducta
 Cuál es el objeto de estudio del derecho para Cossio | La conducta humana intersubjetiva

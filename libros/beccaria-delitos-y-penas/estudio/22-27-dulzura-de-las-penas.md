@@ -67,5 +67,4 @@ flowchart TD
 
 Cuál es el mayor freno de los delitos según el cap. 27 | La infalibilidad de las penas, no su crueldad
 Cuánto debe castigar una pena para obtener su efecto | Lo que baste para que su mal exceda al bien que nace del delito; lo demás es superfluo y por tanto tiránico
-Qué efecto perverso tiene la atrocidad de la pena | Que se cometan muchos delitos para huir de la pena de uno solo
 Por qué la atrocidad de los castigos produce impunidad | Porque una ley demasiado cruel no puede ser un sistema constante: o se muda o no se aplica

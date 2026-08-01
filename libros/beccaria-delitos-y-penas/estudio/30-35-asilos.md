@@ -67,4 +67,3 @@ flowchart TD
 Por qué invitan los asilos a los delitos | Porque la impresión de la pena depende más de la seguridad de recibirla que de su fuerza
 En qué se convierte cada asilo multiplicado | En una pequeña soberanía, con leyes opuestas a las comunes
 Por qué no decide sobre la entrega recíproca de reos | Porque antes hacen falta penas suaves y jueces sin arbitrio que salven a la inocencia oprimida
-De qué se retracta Beccaria en la nota al cap. 34 | De haber escrito que el fallido inocente sirviera como esclavo de sus acreedores

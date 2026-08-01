@@ -3094,11 +3094,6 @@
       "cap": "02"
     },
     {
-      "pregunta": "Cómo distingo el origen de una ley de su contenido",
-      "respuesta": "El origen es cómo se dictó; el contenido es qué manda. Beccaria critica primero el origen",
-      "cap": "02"
-    },
-    {
       "pregunta": "Qué es la soberanía según Beccaria",
       "respuesta": "El conjunto de las porciones de libertad que cada uno sacrificó al bien común",
       "cap": "03"
@@ -3154,11 +3149,6 @@
       "cap": "05"
     },
     {
-      "pregunta": "Cómo distingo interpretar la ley de subsumir el hecho",
-      "respuesta": "Interpretar fija qué dice la norma; subsumir decide si el hecho encaja. Solo lo segundo es tarea del juez",
-      "cap": "05"
-    },
-    {
       "pregunta": "Por qué la oscuridad de la ley es peor que la interpretación",
       "respuesta": "Porque arrastra necesariamente consigo la interpretación",
       "cap": "06"
@@ -3186,11 +3176,6 @@
     {
       "pregunta": "Cuáles son los dos extremos de la escala de desórdenes",
       "respuesta": "Las acciones que destruyen inmediatamente la sociedad y la más pequeña injusticia posible contra un particular",
-      "cap": "07"
-    },
-    {
-      "pregunta": "Cómo llama Beccaria a las penas en la imagen de la fuerza y los estorbos",
-      "respuesta": "Estorbos políticos, que impiden el mal efecto sin destruir la sensibilidad del hombre",
       "cap": "07"
     },
     {
@@ -3254,11 +3239,6 @@
       "cap": "10"
     },
     {
-      "pregunta": "Cómo distingo el honor de la seguridad",
-      "respuesta": "La seguridad entró en el depósito común al pactar; el honor nació después y quedó fuera",
-      "cap": "10"
-    },
-    {
       "pregunta": "Cuál es el axioma sin excepciones del cap. 11",
       "respuesta": "Que cada ciudadano debe saber cuándo es reo y cuándo es inocente",
       "cap": "11"
@@ -3271,11 +3251,6 @@
     {
       "pregunta": "Cuál es el mejor método de precaver el duelo",
       "respuesta": "Castigar al agresor que dio la ocasión y declarar inocente al que se vio precisado a defenderse",
-      "cap": "11"
-    },
-    {
-      "pregunta": "Qué ha sacrificado más víctimas que la crueldad pública y solemne",
-      "respuesta": "La incertidumbre de la propia suerte",
       "cap": "11"
     },
     {
@@ -3329,11 +3304,6 @@
       "cap": "14"
     },
     {
-      "pregunta": "Cuál es el fin único del juicio según el cap. 15",
-      "respuesta": "La publicidad del ejemplo",
-      "cap": "14"
-    },
-    {
       "pregunta": "Qué pena propone Beccaria para el calumniador",
       "respuesta": "La que le habría tocado al acusado",
       "cap": "14"
@@ -3369,11 +3339,6 @@
       "cap": "16"
     },
     {
-      "pregunta": "Qué prueba rechaza el sistema aunque sea más confiable",
-      "respuesta": "La deposición extrajudicial tranquila, hecha sin los temores del juicio",
-      "cap": "16"
-    },
-    {
       "pregunta": "Qué elección le deja al reo la ley que ordena jurar",
       "respuesta": "Ser mártir o mal cristiano",
       "cap": "16"
@@ -3394,18 +3359,8 @@
       "cap": "17"
     },
     {
-      "pregunta": "En qué se convierte una pena muy dilatada",
-      "respuesta": "En espectáculo más que en castigo",
-      "cap": "17"
-    },
-    {
       "pregunta": "Cómo deben castigarse los atentados contra la persona",
       "respuesta": "Infaliblemente con penas corporales, nunca con dinero",
-      "cap": "18"
-    },
-    {
-      "pregunta": "Cuándo dice Beccaria que no hay libertad",
-      "respuesta": "Cuando las leyes permiten que el hombre deje de ser persona y se repute como cosa",
       "cap": "18"
     },
     {
@@ -3474,11 +3429,6 @@
       "cap": "21"
     },
     {
-      "pregunta": "Qué tipo de subordinación es la familia en una república de hombres",
-      "respuesta": "Una subordinación de contrato, no de mando",
-      "cap": "21"
-    },
-    {
       "pregunta": "Cuál es el mayor freno de los delitos según el cap. 27",
       "respuesta": "La infalibilidad de las penas, no su crueldad",
       "cap": "22"
@@ -3486,11 +3436,6 @@
     {
       "pregunta": "Cuánto debe castigar una pena para obtener su efecto",
       "respuesta": "Lo que baste para que su mal exceda al bien que nace del delito; lo demás es superfluo y por tanto tiránico",
-      "cap": "22"
-    },
-    {
-      "pregunta": "Qué efecto perverso tiene la atrocidad de la pena",
-      "respuesta": "Que se cometan muchos delitos para huir de la pena de uno solo",
       "cap": "22"
     },
     {
@@ -3619,11 +3564,6 @@
       "cap": "28"
     },
     {
-      "pregunta": "Cuál es la distinción central del cap. 34",
-      "respuesta": "La del fallido fraudulento y el fallido inocente",
-      "cap": "29"
-    },
-    {
       "pregunta": "Qué pena corresponde al fallido fraudulento y por qué",
       "respuesta": "La del monedero falso: falsificar las obligaciones no es menor delito que falsificar el metal que las representa",
       "cap": "29"
@@ -3654,11 +3594,6 @@
       "cap": "30"
     },
     {
-      "pregunta": "De qué se retracta Beccaria en la nota al cap. 34",
-      "respuesta": "De haber escrito que el fallido inocente sirviera como esclavo de sus acreedores",
-      "cap": "30"
-    },
-    {
       "pregunta": "Qué es la talla en el cap. 36",
       "respuesta": "El precio ofrecido a quien entregue la cabeza de un hombre declarado reo",
       "cap": "31"
@@ -3671,11 +3606,6 @@
     {
       "pregunta": "Qué contradicción señala Beccaria en el edicto de talla",
       "respuesta": "Que las leyes convidan a la traición y a la vez la castigan, y hacen nacer ciento delitos en vez de evitar uno",
-      "cap": "31"
-    },
-    {
-      "pregunta": "Cómo distingo una medida eficaz de un reparo de edificio ruinoso",
-      "respuesta": "Preguntando por qué hizo falta: quien tiene fuerza para defenderse no la busca",
       "cap": "31"
     },
     {
@@ -3694,11 +3624,6 @@
       "cap": "32"
     },
     {
-      "pregunta": "Cómo distingo la ley general de impunidad de la promesa caso por caso",
-      "respuesta": "Por el momento del incentivo: la general existe antes del delito y previene la asociación; la puntual se negocia después",
-      "cap": "32"
-    },
-    {
       "pregunta": "Qué es una interrogación sugestiva según los doctores",
       "respuesta": "La que pregunta de la especie debiendo preguntar del género y sugiere la respuesta",
       "cap": "33"
@@ -3714,18 +3639,8 @@
       "cap": "33"
     },
     {
-      "pregunta": "Cuáles son las tres funciones de las formalidades judiciales",
-      "respuesta": "Limitar el arbitrio, dar imagen de juicio estable e impresionar por la vía sensible",
-      "cap": "33"
-    },
-    {
       "pregunta": "Qué género de delitos omite Beccaria en su tratado y con qué razón",
       "respuesta": "La herejía, porque el lugar, el siglo y la materia no le permiten examinar su naturaleza",
-      "cap": "34"
-    },
-    {
-      "pregunta": "Qué dos clases de opiniones distingue",
-      "respuesta": "Las que se aclaran con el choque y las que deben vestirse de autoridad y fuerza",
       "cap": "34"
     },
     {
@@ -3754,11 +3669,6 @@
       "cap": "35"
     },
     {
-      "pregunta": "Qué diferencia hay entre el daño del salvaje y el del hombre sociable",
-      "respuesta": "El salvaje daña solo para hacerse bien; al sociable las malas leyes lo mueven a ofender sin beneficio",
-      "cap": "35"
-    },
-    {
       "pregunta": "Cuál es el fin principal de toda buena legislación",
       "respuesta": "Evitar los delitos antes que castigarlos",
       "cap": "36"
@@ -3774,11 +3684,6 @@
       "cap": "36"
     },
     {
-      "pregunta": "Qué diferencia hay entre el temor de las leyes y el de hombre a hombre",
-      "respuesta": "El primero es saludable; el segundo es fatal y fecundo de delitos",
-      "cap": "36"
-    },
-    {
       "pregunta": "Cuál es la proporción entre conocimiento, males y bienes",
       "respuesta": "Los males son en razón inversa de la extensión del saber, y los bienes en la directa",
       "cap": "37"
@@ -3786,11 +3691,6 @@
     {
       "pregunta": "Qué tiembla cuando las luces se esparcen en una nación",
       "respuesta": "La autoridad desarmada de razones, mientras la fuerza de las leyes queda inalterable",
-      "cap": "37"
-    },
-    {
-      "pregunta": "Por qué ama el hombre iluminado los pactos públicos",
-      "respuesta": "Porque compara la poca libertad inútil que cedió con todas las que cedieron los demás",
       "cap": "37"
     },
     {

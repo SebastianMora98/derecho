@@ -65,5 +65,4 @@ flowchart TD
 
 Qué es un sujeto de derecho | El ente al que se imputan derechos y deberes, es decir situaciones jurídicas subjetivas
 Cuáles son los cuatro sujetos de derecho del Código peruano de 1984 | Persona natural, persona jurídica, concebido y organización de personas no inscripta
-De qué carácter es la distinción entre sujeto de derecho y persona, según el autor | Eminentemente técnico
 Cómo distingo sujeto de derecho de persona | Sujeto es el género: basta que se le imputen derechos y deberes; ser persona exige haber nacido o estar inscripto

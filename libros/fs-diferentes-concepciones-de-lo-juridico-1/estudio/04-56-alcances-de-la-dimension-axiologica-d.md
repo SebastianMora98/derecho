@@ -66,4 +66,3 @@ flowchart TD
 Por qué es insuficiente el iusnaturalismo según el autor | Por fragmentario: dice algo verdadero pero parcial, no falso
 Qué le falta a la dimensión axiológica para dar cuenta del derecho | La vida humana que vivencia los valores y las normas que los objetivan
 Qué significa redimensionar una escuela | Conservarle el aporte y quitarle la pretensión de ser la explicación total
-Cómo distingo insuficiente de falso | Insuficiente es cierto pero incompleto; falso es incorrecto. El autor imputa lo primero

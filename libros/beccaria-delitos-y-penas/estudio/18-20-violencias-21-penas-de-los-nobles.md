@@ -67,6 +67,5 @@ flowchart TD
 ## Flashcards
 
 Cómo deben castigarse los atentados contra la persona | Infaliblemente con penas corporales, nunca con dinero
-Cuándo dice Beccaria que no hay libertad | Cuando las leyes permiten que el hombre deje de ser persona y se repute como cosa
 Qué supone toda distinción legítima en honores o riquezas | Una igualdad anterior fundada sobre las leyes
 Cuál es la medida de las penas y cuál no lo es | La medida es el daño público; no lo es la sensibilidad del reo

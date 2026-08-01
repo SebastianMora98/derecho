@@ -68,4 +68,3 @@ flowchart TD
 Cuál es el fin principal de toda buena legislación | Evitar los delitos antes que castigarlos
 Cuáles son los tres imperativos para evitar los delitos | Leyes claras y simples, que favorezcan a los hombres y no a las clases, y que solo se tema a ellas
 Qué relación hay entre motivos y probabilidad de delito | La probabilidad es proporcional al número de motivos, así que ampliar lo prohibido la aumenta
-Qué diferencia hay entre el temor de las leyes y el de hombre a hombre | El primero es saludable; el segundo es fatal y fecundo de delitos

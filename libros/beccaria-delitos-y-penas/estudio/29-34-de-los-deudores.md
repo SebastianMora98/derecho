@@ -63,7 +63,6 @@ flowchart TD
 
 ## Flashcards
 
-Cuál es la distinción central del cap. 34 | La del fallido fraudulento y el fallido inocente
 Qué pena corresponde al fallido fraudulento y por qué | La del monedero falso: falsificar las obligaciones no es menor delito que falsificar el metal que las representa
 Cuáles son los cuatro grados que distingue el cap. 34 | Dolo, culpa grave, culpa leve e inocencia, con penas decrecientes fijadas por la ley
 Qué dos instituciones propone para prevenir las quiebras | Un registro público de contratos y un banco público que socorra al comerciante infeliz

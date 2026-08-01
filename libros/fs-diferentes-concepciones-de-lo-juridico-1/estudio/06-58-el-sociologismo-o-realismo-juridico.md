@@ -62,7 +62,6 @@ flowchart TD
 
 ## Flashcards
 
-Cómo se llama la escuela de la dimensión social en el norte de Europa y en Estados Unidos | Realista en el norte de Europa, sociológica en Estados Unidos
 Qué le concede el autor al sociologismo | Que es indiscutible que no se puede comprender el derecho fuera de la historia y lo social
 Cuál es la finalidad propia del derecho según este capítulo | Asegurar la libertad de cada ser humano para que pueda cumplir su proyecto de vida
 Qué distingue al derecho de las otras ciencias sociales | No el hecho que estudia, sino la finalidad con que lo estudia

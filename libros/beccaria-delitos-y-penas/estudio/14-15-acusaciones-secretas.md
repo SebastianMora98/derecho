@@ -68,5 +68,4 @@ flowchart TD
 
 Qué efecto tienen las acusaciones secretas sobre los hombres | Los hacen falsos y dobles, y les enseñan a esconder sus dictámenes hasta de sí mismos
 Cuáles son las cuatro justificaciones del secreto que refuta el cap. 15 | La salud pública, la indemnidad del acusador, la infamia del delator y la naturaleza del delito
-Cuál es el fin único del juicio según el cap. 15 | La publicidad del ejemplo
 Qué pena propone Beccaria para el calumniador | La que le habría tocado al acusado

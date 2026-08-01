@@ -64,4 +64,3 @@ flowchart TD
 Qué declara el art. 1 de la Constitución peruana de 1979 | Que la persona es el fin supremo de la sociedad y del Estado
 Cómo formula el fin supremo la Constitución de 1993 | Como la defensa de la persona humana y el respeto a su dignidad
 Qué autoriza el art. 4 de la Constitución de 1979 | Usar la analogía para proteger derechos de la persona no recogidos en el ordenamiento
-Cómo distingo la persona como fin de su defensa como fin | En la segunda el fin es una actividad y la persona pasa a ser su objeto

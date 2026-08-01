@@ -232,35 +232,43 @@ capítulos y piden desarrollar, no reconocer.
 
 Contra eso, 4 preguntas y 8 flashcards por capítulo daban **155 preguntas y 312
 tarjetas** en Beccaria: material que se genera fácil y no se repasa nunca. Ahora
-son **2 preguntas y 4 flashcards por capítulo**, con el foco cambiado:
+son **2 preguntas y hasta 4 flashcards por capítulo**, con el foco cambiado:
 
 - De las 2 preguntas, **una es de exposición** y se formula con el verbo del
   examen («¿qué se entiende por…?», «explique… y sus implicaciones», «ubique…»);
   la otra es de aplicación o crítica. Su respuesta de referencia es el molde de la
   respuesta del examen —3 a 5 oraciones que abren con la definición o la tesis—,
   no una pista.
-- Las 4 flashcards se eligen por prioridad —definición del término central,
-  enumeración que hay que recitar, tesis con su autor, criterio de una
-  distinción— y la prueba para dejar una es *¿la necesitaría para escribir el
-  párrafo de una respuesta?*
+- **Las flashcards son entre 1 y 4, nunca una cifra fija.** La primera versión
+  de esta regla decía «exactamente 4», y fue el mismo error que ya se había
+  corregido una vez con «exactamente 8»: una cantidad obligatoria fuerza a
+  completar con relleno cuando el capítulo no da para tanto. El criterio real es
+  doble, y los dos tienen que dar que sí: *¿la necesitaría para escribir el
+  párrafo de una respuesta?* y **¿esto se le preguntaría a un estudiante de
+  primer semestre en un examen?** Un matiz correcto pero de especialista, un
+  nombre propio secundario o una precisión histórica no pasa el segundo filtro
+  aunque pase el primero, y sale.
 - El prompt pide usar `{{CONTEXTO_PREVIO}}` para que la pregunta de exposición
   obligue a traer capítulos anteriores, porque las preguntas reales cruzan
   capítulos y ninguna pregunta por capítulo las imita sola.
 
 **La variante `examen` dejó de subir las cantidades.** Subía a 5 y 12, que es la
-dirección contraria; ahora mantiene 2 y 4 y lo que hace es apretar el foco (las
-dos preguntas de exposición, respuestas de 5 a 7 oraciones).
+dirección contraria; ahora mantiene 2 y hasta 4 y lo que hace es apretar el foco
+(las dos preguntas de exposición, respuestas de 5 a 7 oraciones).
 
 ### Los 58 documentos ya están alineados a esta regla
 
-Se hizo en una tanda: 8 corridas en paralelo, cada una sobre un tramo de
-capítulos de un libro, todas con la misma especificación (recortar el bloque 2 a
-2 o 3 párrafos, bajar el test a 2 preguntas y el mazo a 4 flashcards, sin tocar
-título, idea principal, mapa, vocabulario ni distinciones). Verificado
-documento por documento contra `medir.py` y contra el conteo total: Beccaria
-cierra en 39×2 = 78 preguntas y 39×4 = 156 flashcards; FS en 19×2 = 38 y
-19×4 = 76. El build no emitió ningún aviso —ni término de glosario duplicado, ni
-par pregunta/respuesta descalzado, ni bloque faltante— en los 58.
+Se hizo en dos tandas. La primera (8 corridas en paralelo) recortó el bloque 2
+a 2-3 párrafos, bajó el test a 2 preguntas y el mazo a 4 flashcards fijas por
+capítulo — y esa cifra fija resultó ser el mismo error que el «8» original.
+La segunda tanda (6 corridas en paralelo, una revisión y no una reescritura)
+releyó cada capítulo entero y aplicó el filtro real a sus 4 flashcards:
+cuántas pasan las dos pruebas —hace falta para exponer, y se lo preguntarían a
+un estudiante de primer semestre—, sin tocar ningún otro bloque. El resultado
+varía capítulo por capítulo, de 1 a 4 tarjetas; **Beccaria cierra en 136
+flashcards (antes 156) y FS en 60 (antes 76)**, con las preguntas del test sin
+tocar: 78 y 38. El build no emite ningún aviso —ni término de glosario
+duplicado, ni par pregunta/respuesta descalzado, ni bloque faltante— en los 58.
 
 Contratos con el código que no hay que romper:
 
@@ -417,11 +425,11 @@ preservó la paginación.
 
 **Está completo: las 39 secciones tienen documento de estudio, alineado a la
 plantilla condensada.** El libro entero queda en 154 términos de glosario, 78
-preguntas (2 por capítulo) y 156 flashcards (4 por capítulo), y la hoja pesa
-348 KB crudos / 95 KB gzip. Los 39 diagramas Mermaid compilan, verificado en el
-navegador abriendo la hoja entera. Todos los documentos entran en los tres topes
-(1.100 palabras totales, 500 la parte visible, 400 el bloque 2), igual que los
-19 de FS.
+preguntas (2 por capítulo) y 136 flashcards (entre 1 y 4 por capítulo, según lo
+que cada uno sostiene de verdad), y la hoja pesa 340 KB crudos / 94 KB gzip.
+Los 39 diagramas Mermaid compilan, verificado en el navegador abriendo la hoja
+entera. Todos los documentos entran en los tres topes (1.100 palabras totales,
+500 la parte visible, 400 el bloque 2), igual que los 19 de FS.
 
 **Sin la variante `examen`**, por el mismo motivo que en el otro libro: mantiene
 2 preguntas y 4 flashcards, y solo aprieta el foco de la variante base.
@@ -448,8 +456,8 @@ en `[[partes]]`; de ahí saca el sitio la jerarquía. Dividido con `--nivel 2` �
 
 **Está completo: los 19 capítulos tienen documento de estudio, alineado a la
 plantilla condensada.** El libro entero queda en 81 términos de glosario, 38
-preguntas (2 por capítulo) y 76 flashcards (4 por capítulo), y la hoja pesa
-176 KB crudos / 44 KB gzip.
+preguntas (2 por capítulo) y 60 flashcards (entre 1 y 4 por capítulo, según lo
+que cada uno sostiene de verdad), y la hoja pesa 172 KB crudos / 43 KB gzip.
 
 **Sin la variante `examen`, a propósito**: mantiene 2 preguntas y 4 flashcards
 por capítulo, igual que la variante base.

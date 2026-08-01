@@ -67,5 +67,4 @@ flowchart TD
 
 En qué consiste la teoría tridimensional del derecho | En que el objeto de estudio es la interacción de conducta, valores y normas
 Cuáles son las dos afirmaciones del autor sobre los tres elementos | Que ninguno por sí solo es el objeto, y que no se puede prescindir de ninguno
-Cómo define el autor la yuxtaposición | El estar un elemento al lado del otro
 Cómo distingo interacción de yuxtaposición | En la yuxtaposición los elementos son separables; en la interacción se afectan y forman unidad

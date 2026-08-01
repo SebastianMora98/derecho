@@ -458,13 +458,22 @@ Va al **mazo del libro**, mezcladas con las de los demás capítulos, así que c
 una tiene que entenderse sola. Encabezado exactamente `## Flashcards`, y es lo
 último del archivo.
 
-**Exactamente 4 tarjetas.** Eran 8, y con 39 capítulos daban un mazo de 312 que
-nadie repasa entero. Acá va el recall del capítulo, pero **solo el que hace falta
-para contestar una pregunta de examen**: no es un inventario del capítulo, es la
-materia prima de una exposición.
+**Entre 1 y 4 tarjetas — nunca una cifra fija.** Eran 8 siempre, y bajar a "4
+siempre" fue el mismo error con otro número: una cantidad obligatoria fuerza a
+completar con relleno cuando el capítulo no da para tanto. **4 es un techo, no
+un objetivo.** Un capítulo puede dar 1 sola tarjeta, o ninguna si de verdad no
+hay nada que valga la pena memorizar aparte; eso es correcto y no hay que
+disimularlo agregando algo débil para llegar a un número.
 
-Elegí las 4 con este orden de prioridad, y si el capítulo no da para alguna, subí
-la siguiente:
+El criterio de fondo, que manda sobre la lista de prioridad: **¿esto se le
+preguntaría a un estudiante de primer semestre de Derecho en un examen?** Si es
+un matiz que solo un especialista necesitaría, una precisión histórica, o un
+dato que no ayuda a construir una respuesta de examen, no es una tarjeta: es
+saturar a quien estudia con algo que no le sirve para aprobar. La materia prima
+de una exposición, no un inventario del capítulo.
+
+De esta lista, incluí solo lo que el capítulo sostenga con fuerza real —no
+completes las cuatro categorías por completar—:
 
 1. **La definición del término central** —el que aparecería en el enunciado de una
    pregunta de examen—, en la forma en que la escribirías al abrir la respuesta.
@@ -476,9 +485,12 @@ la siguiente:
 4. **El criterio de una distinción del bloque 5**, preguntado como "¿cómo
    distingo A de B?".
 
-Lo que ya **no** va: los datos de color, las frases célebres que no fundan nada, y
-las consecuencias secundarias. Si dudás de una tarjeta, la prueba es: *¿la
-necesitaría para escribir el párrafo de una respuesta?* Si no, fuera.
+Lo que ya **no** va: los datos de color, las frases célebres que no fundan nada,
+las consecuencias secundarias, y cualquier matiz que no pasaría el filtro de
+primer semestre de arriba. Si dudás de una tarjeta, dos pruebas y las dos
+tienen que dar que sí: *¿la necesitaría para escribir el párrafo de una
+respuesta?* y *¿esto es lo que un profesor de primer año esperaría que supieras?*
+Si alguna da que no, fuera.
 
 Una por línea, con este formato y nada más:
 

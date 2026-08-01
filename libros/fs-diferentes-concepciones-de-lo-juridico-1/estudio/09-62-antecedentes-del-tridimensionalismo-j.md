@@ -65,5 +65,3 @@ flowchart TD
 
 Cómo llama Reale a la primera etapa del tridimensionalismo | Genérico y abstracto
 Qué le faltaba al tridimensionalismo genérico y abstracto | Encontrar un tipo específico de relación esencial entre los tres elementos
-Por qué Reale llama meramente didáctica la posición de Bobbio | Porque reparte tareas entre disciplinas sin incidir en la estructura de lo jurídico
-Qué es el integrativismo jurídico y de quién es | De Hall, 1947: toda investigación sobre el derecho debe ser tridimensional

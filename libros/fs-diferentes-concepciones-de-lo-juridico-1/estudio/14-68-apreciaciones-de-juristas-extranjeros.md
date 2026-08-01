@@ -61,7 +61,4 @@ flowchart TD
 
 ## Flashcards
 
-Qué dos novedades destaca Rescigno del Libro del Derecho de las Personas | Extender las fronteras de la subjetividad y el tratamiento de los derechos de la persona
-Qué jurista argentino incorporó el aporte del art. 1985 a un proyecto de código | Atilio Alterini, en el proyecto de 1998
-Qué artículo del código argentino de 2014 recoge el daño al proyecto de vida | El artículo 1738
 Cómo distingo un elogio doctrinal de una recepción normativa | El elogio queda en doctrina; la recepción llega al articulado de un código

@@ -70,5 +70,4 @@ flowchart TD
 
 Por qué sigue la confesión en el centro del proceso | Porque continúan los efectos después de haber faltado sus causas
 Qué es un proceso ofensivo | Aquel en que hay que ser declarado reo antes de poder probar la inocencia
-Qué prueba rechaza el sistema aunque sea más confiable | La deposición extrajudicial tranquila, hecha sin los temores del juicio
 Qué elección le deja al reo la ley que ordena jurar | Ser mártir o mal cristiano
