@@ -140,21 +140,64 @@ cada capítulo era lo que hacía los documentos largos y redundantes.
 
 Tres topes, y el que manda es el segundo: 1.400 palabras el documento entero,
 **700 los bloques 1 a 4 juntos** —lo único que se lee al abrir un capítulo— y 450
-el bloque 2. Los seis documentos actuales quedaron entre 547 y 601 de parte
-visible.
+el bloque 2. Se miden **excluyendo el código Mermaid y los encabezados**.
 
-**El bloque 2 no lleva pasos numerados.** Es prosa corrida de 3 o 4 párrafos, sin
-subencabezados. La versión con pasos forzaba la cobertura, pero partía la lectura
-en fichas y obligaba a un andamiaje meta ("el movimiento es", "importa porque")
-que se comía un tercio del espacio. La cobertura se pide ahora directo: el primer
-párrafo arranca donde arranca el capítulo, el último llega a su cierre, y cada
-párrafo lleva una referencia.
+**El tope del bloque 2 no se cumple contándolo al final, y está medido:** en la
+tanda de los 39 de Beccaria se violó las 39 veces, siempre entre 460 y 500, y hubo
+que recortar documento por documento en una segunda pasada. Escribir 500 palabras
+de prosa continua sale solo. Por eso el prompt ahora da además un **presupuesto
+por párrafo**, que sí se controla mientras se escribe: 4 párrafos de unas 110
+palabras, o 5 de unas 90, o 3 de unas 145 si el capítulo es corto y tiene un solo
+argumento. Es un promedio, no un máximo. Los 58 documentos actuales cumplen esa
+regla 58/58 —se calibró contra ellos, no al revés: la primera versión pedía «3
+párrafos de 5 o 6 oraciones» y solo la cumplían 3 de 58—.
+
+**El bloque 2 no lleva pasos numerados.** La versión con pasos forzaba la
+cobertura, pero partía la lectura en fichas y obligaba a un andamiaje meta ("el
+movimiento es", "importa porque") que se comía un tercio del espacio. La cobertura
+se pide ahora directo: el primer párrafo arranca donde arranca el capítulo, el
+último llega a su cierre, y cada párrafo lleva una referencia.
 
 Su regla central sigue siendo el **reparto del material**: cada tipo de contenido
 tiene un bloque asignado y está prohibido en los otros. Lo más importante del
-reparto nuevo: **el test dejó de cubrir recall**, que pasó a ser trabajo exclusivo
-de las flashcards. Antes eran el mismo material en dos formatos y el 32% del mazo
-repetía una pregunta del test.
+reparto: **el test dejó de cubrir recall**, que pasó a ser trabajo exclusivo de las
+flashcards. Antes eran el mismo material en dos formatos y el 32% del mazo repetía
+una pregunta del test.
+
+### El test y el mazo se calibraron contra el examen real
+
+El usuario mostró el examen que prepara: **seis preguntas amplias y de
+exposición** —«¿cómo define usted el Derecho?», «¿qué entender por el formalismo
+jurídico y cuáles son sus implicaciones?», «ubique el Derecho Civil», «identifique
+dos derechos subjetivos y explique hasta dónde puede ejercerlos»—. Cruzan varios
+capítulos y piden desarrollar, no reconocer.
+
+Contra eso, 4 preguntas y 8 flashcards por capítulo daban **155 preguntas y 312
+tarjetas** en Beccaria: material que se genera fácil y no se repasa nunca. Ahora
+son **2 preguntas y 4 flashcards por capítulo**, con el foco cambiado:
+
+- De las 2 preguntas, **una es de exposición** y se formula con el verbo del
+  examen («¿qué se entiende por…?», «explique… y sus implicaciones», «ubique…»);
+  la otra es de aplicación o crítica. Su respuesta de referencia es el molde de la
+  respuesta del examen —3 a 5 oraciones que abren con la definición o la tesis—,
+  no una pista.
+- Las 4 flashcards se eligen por prioridad —definición del término central,
+  enumeración que hay que recitar, tesis con su autor, criterio de una
+  distinción— y la prueba para dejar una es *¿la necesitaría para escribir el
+  párrafo de una respuesta?*
+- El prompt pide usar `{{CONTEXTO_PREVIO}}` para que la pregunta de exposición
+  obligue a traer capítulos anteriores, porque las preguntas reales cruzan
+  capítulos y ninguna pregunta por capítulo las imita sola.
+
+**La variante `examen` dejó de subir las cantidades.** Subía a 5 y 12, que es la
+dirección contraria; ahora mantiene 2 y 4 y lo que hace es apretar el foco (las
+dos preguntas de exposición, respuestas de 5 a 7 oraciones).
+
+**Los 58 documentos ya escritos van con 4 y 8**, así que no cumplen esta regla: el
+cambio rige para lo que se genere de acá en adelante. Alinearlos es una pasada
+sobre los dos bloques finales de cada archivo —no toca la parte visible del
+capítulo— y hay que hacerla completa por libro, o el test y el mazo quedan
+mezclados, que es justo lo que se nota.
 
 Contratos con el código que no hay que romper:
 

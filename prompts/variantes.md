@@ -17,15 +17,25 @@ libro: solo se consolidan los cuatro cuyo título contiene «vocabulario»,
 
 ## examen
 
-En Flashcards, subí a 12 tarjetas en vez de 6 a 8, que es el mazo del libro y es
-donde vive todo el recall. Reparto: la mitad de los términos del vocabulario, unas
-3 de las distinciones (preguntadas como "¿cómo distingo A de B?") y el resto de
-las afirmaciones y consecuencias del capítulo. Nada de memorizar frases literales
-del autor, y ninguna que repita otra con otras palabras.
+**No cambia las cantidades: siguen siendo 2 preguntas y 4 flashcards.** Antes esta
+variante las subía a 5 y 12, y era el error que la hacía inservible: un examen se
+prepara con menos material y mejor elegido, no con más. Lo que hace es apretar el
+foco.
 
-En Autoevaluación, subí a 5 preguntas si el capítulo las da, manteniendo la regla
-de que ninguna se contesta con un dato o una definición: de las 5, al menos 3 de
-aplicación a un caso nuevo.
+En Autoevaluación, **las 2 preguntas son de exposición** —se pierde la de
+aplicación—, y las dos se formulan con el verbo del examen: «¿qué se entiende
+por…?», «explique… y sus implicaciones», «ubique… dentro de…», «identifique dos… y
+explique hasta dónde…». Al menos una tiene que obligar a traer un capítulo
+anterior de {{CONTEXTO_PREVIO}}, porque las preguntas reales cruzan capítulos.
+
+Las respuestas de referencia pasan a ser **el molde completo de la respuesta**: de
+5 a 7 oraciones, abriendo con la definición o la tesis, siguiendo con lo que la
+sostiene y cerrando con la implicación que el examen suele pedir aparte.
+
+En Flashcards, las 4 se eligen todas por el mismo criterio: **lo que habría que
+tener en la punta de la lengua para abrir una respuesta**. Definición del término
+central, la enumeración que hay que recitar, la tesis con su autor, el criterio de
+la distinción. Nada de frases célebres ni datos de color.
 
 ## investigacion
 

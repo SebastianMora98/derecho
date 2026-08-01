@@ -149,23 +149,44 @@ de material tiene un bloque asignado y está prohibido en los otros:
 | Las palabras que necesito para leer el original | 5, una línea por término | 6, 7 |
 | Los pares que se confunden entre sí | 6, con el criterio que los separa | 5, que no lleva campo "se confunde con" |
 | **Todo lo que sea recordar un dato o una definición** | **Flashcards** | **7, que no pregunta definiciones** |
-| Aplicación a un caso nuevo, y crítica | 7 | Flashcards |
+| Exposición al estilo del examen, aplicación y crítica | 7 | Flashcards |
 
-El reparto entre 7 y Flashcards es nuevo y es el más importante: **el test dejó de
-cubrir recall**. Antes las preguntas de hechos y las flashcards eran el mismo
-material en dos formatos, y un tercio del mazo repetía una pregunta del test. Si
-lo que ibas a preguntar se contesta con un dato o una definición, es una
-flashcard, no una pregunta.
+El reparto entre 7 y Flashcards es el más importante: **el test dejó de cubrir
+recall**. Antes las preguntas de hechos y las flashcards eran el mismo material en
+dos formatos, y un tercio del mazo repetía una pregunta del test. Si lo que ibas a
+preguntar se contesta con un dato o una definición, es una flashcard, no una
+pregunta.
+
+**Las cantidades por capítulo son pocas a propósito: 2 preguntas y 4 flashcards.**
+Se fijaron mirando el examen real, que es de seis preguntas amplias y de
+exposición. Con 4 y 8 por capítulo, un libro de 39 daba 155 preguntas y 312
+tarjetas: un material que se genera fácil y no se repasa nunca. La regla es que
+todo lo que entre en estos dos bloques sirva para **escribir una respuesta de
+examen**; lo que solo sirva para reconocer un dato, sobra.
 
 # LARGO
 
-Dos topes, y el que más importa es el segundo:
+Tres topes, y el que más importa es el tercero:
 
 - **El documento entero, flashcards incluidas, no pasa de 1.400 palabras.**
 - **Los bloques 1 a 4 juntos —lo único que se lee dentro del capítulo— no pasan
   de 700.**
+- **El bloque 2 no pasa de 450.**
 
-Son topes, no objetivos: si el capítulo da para menos, mejor.
+Son topes, no objetivos: si el capítulo da para menos, mejor. El código Mermaid
+del bloque 3 no cuenta como palabras del documento; los encabezados tampoco.
+
+**El tope del bloque 2 no se cumple contándolo al final.** Está medido: en una
+tanda de 39 documentos seguidos se violó las 39 veces, siempre por el mismo
+margen —entre 460 y 500 palabras—, y hubo que recortar documento por documento en
+una segunda pasada. Escribir 500 palabras de prosa continua sale solo; el número
+solo se puede verificar cuando ya están escritas y para entonces recortar
+significa deshacer párrafos enteros.
+
+Por eso el bloque 2 tiene además un presupuesto **por párrafo**, que sí se puede
+respetar mientras se escribe. Está en su sección. Cumplilo ahí y el tope de
+palabras se cumple solo; el recuento final pasa a ser una comprobación en vez de
+una corrección.
 
 El segundo es el que sostiene el diseño. Lo que se lee al abrir un capítulo son
 solo esos cuatro bloques: si se estiran, se pierde el "leer lo esencial y ya",
@@ -178,8 +199,8 @@ y quedándote con el argumento; después el vocabulario, que tiende a incluir
 términos que no hacen falta; después las distinciones, dejando solo las que se
 pagan caro en un examen. **No recortes citando menos el original.**
 
-Antes de entregar, contá las palabras. Si te pasaste, recortá; no entregues de
-más avisando que te pasaste.
+Antes de entregar, contá las palabras —sin el código Mermaid ni los encabezados—.
+Si te pasaste, recortá; no entregues de más avisando que te pasaste.
 
 # LO QUE DEBES PRODUCIR
 
@@ -213,8 +234,28 @@ conviene entenderla.
 
 ## 2. Lo esencial del capítulo
 
-El bloque que carga el peso, y el que se lee de verdad. **Prosa corrida: 3 o 4
-párrafos, 300 a 450 palabras, SIN subencabezados y sin listas.**
+El bloque que carga el peso, y el que se lee de verdad. **Prosa corrida, SIN
+subencabezados y sin listas.**
+
+**El presupuesto es por párrafo, no para el bloque entero.** El tope de 450
+palabras solo se puede verificar cuando ya escribiste; un presupuesto por párrafo
+se controla mientras escribís, que es cuando sirve:
+
+- **4 párrafos de unas 110 palabras cada uno.** Es la forma normal y da 440.
+- **5 de unas 90**, solo si el capítulo cambia de tema cuatro veces y los cortes
+  caen justo en esos cambios.
+- **3 de unas 145**, cuando el capítulo es corto y tiene un solo argumento. Es la
+  única forma en que menos párrafos significan párrafos más largos; en las otras
+  dos, menos párrafos significa que faltó cobertura.
+
+Es un promedio, no un máximo: un párrafo puede irse a 140 si otro se queda en 80.
+Lo que no puede pasar es que **todos** midan 140, que es exactamente cómo se
+llega a 500 sin darse cuenta.
+
+Si el material no entra, **no agregues un párrafo: sacá contenido.** Lo primero
+que sale son los matices y las salvedades; lo último, el argumento y las
+referencias. Un capítulo denso se acompaña mandando al original —"esto lo
+desarrolla en tres páginas, leelas"—, no estirando el bloque.
 
 Antes este bloque pedía numerar "pasos", uno por movimiento del autor. Se
 eliminó: partía la lectura en fichas, y obligaba a un andamiaje que se comía un
@@ -367,23 +408,40 @@ Formato exacto, lista pegada:
 
 ## 7. Autoevaluación
 
-Va al **test del libro**. **Entre 3 y 4 preguntas, y ninguna de recordar un dato o
-una definición**: eso es trabajo de las flashcards.
+Va al **test del libro**. **Exactamente 2 preguntas.**
 
-Solo estos dos tipos:
+**El examen real es de preguntas amplias y de exposición**, del tipo «¿cómo define
+usted el derecho?», «¿qué entender por el formalismo jurídico y cuáles son sus
+implicaciones?», «ubique el derecho civil y explique su objeto», «identifique dos
+derechos subjetivos y explique hasta dónde puede ejercerlos». Son pocas, cruzan
+varios capítulos y piden desarrollar, no reconocer. Este bloque existe para
+entrenar **esas**, y por eso son 2 y no 4: con 39 capítulos, cuatro por capítulo
+daban un test de 155 preguntas que nadie usa para preparar un examen de seis.
 
-- **Aplicación**: un caso concreto y nuevo, inventado por vos, que no esté en el
-  original ni en el resto del documento, donde haya que usar lo que dice el
-  capítulo para decidir algo. Es el tipo de pregunta que mejor funcionó y el que
-  conviene que sea mayoría.
-- **Crítica**: evaluar si el autor demuestra lo que afirma, detectar el supuesto
-  que no justificó, decidir si dos afirmaciones suyas se sostienen juntas.
+Las 2 se reparten así, y el orden importa:
+
+1. **Una de exposición, que es la que imita al examen.** Pide definir, explicar,
+   ubicar o exponer las implicaciones de lo central del capítulo, con el verbo del
+   examen: «¿qué se entiende por…?», «explique…», «¿cuáles son las implicaciones
+   de…?», «ubique… dentro de…». Tiene que poder contestarse de corrido en un
+   párrafo hablado, no con un dato.
+2. **Una de aplicación o de crítica.** Un caso concreto y nuevo, inventado por
+   vos, donde haya que usar el capítulo para decidir algo; o evaluar si el autor
+   demuestra lo que afirma. Es la que impide que el bloque se vuelva repetición.
+
+**Conectá con lo anterior cuando se pueda.** Una pregunta de examen casi nunca cae
+dentro de un solo capítulo: «¿qué es la concepción tridimensional?» abarca varios.
+Si {{CONTEXTO_PREVIO}} trae capítulos ya procesados, formulá la pregunta de
+exposición de modo que obligue a traerlos —«explique X y en qué se diferencia de
+Y, visto antes»—. Es lo más parecido a la pregunta real que este bloque puede
+producir.
 
 **Prohibido**, porque se llenan solas y se contestan releyendo el bloque 2:
 
-- "Explicá con tus palabras…" y "Reformulá tal parte…".
+- Preguntar por un dato, una fecha o una definición suelta: eso es una flashcard.
+- "Explicá con tus palabras…" y "Reformulá tal parte…" a secas, sin pedir
+  implicaciones ni ubicación.
 - "¿Por qué es necesario…?" referido a una parte del propio documento.
-- Cualquier pregunta cuya respuesta sea una definición o un dato del texto.
 - Usar como pregunta el "Dónde se cae" de una distinción del bloque 6.
 - Referirte al documento ("el paso 3", "lo que vimos arriba"): la pregunta se lee
   lejos del capítulo.
@@ -395,13 +453,19 @@ así, carácter por carácter**, sola en su renglón:
 --- No mires esto hasta responder ---
 ```
 
-Debajo, las respuestas de referencia, numeradas, de **1 a 3 oraciones**, cada una
-con la referencia donde se verifica. **Exactamente una respuesta por pregunta y en
-el mismo orden**: el sitio las empareja por posición para mostrar cada respuesta
-debajo de su propia pregunta, y si las cantidades no coinciden no empareja nada.
-No pongas un encabezado como "Respuestas de referencia": el sitio ya pone su
-rótulo. Si una respuesta es discutible, decilo en la respuesta. Es lo último antes
-de las flashcards.
+Debajo, las respuestas de referencia, numeradas, cada una con la referencia donde
+se verifica.
+
+- La de la pregunta de exposición es **la respuesta que darías en el examen, en
+  chico**: de 3 a 5 oraciones, que abran con la definición o la tesis y sigan con
+  lo que la sostiene. Tiene que servir de molde, no de pista.
+- La de aplicación o crítica, de 2 a 4 oraciones. Si es discutible, decilo ahí.
+
+**Exactamente una respuesta por pregunta y en el mismo orden**: el sitio las
+empareja por posición para mostrar cada respuesta debajo de su propia pregunta, y
+si las cantidades no coinciden no empareja nada. No pongas un encabezado como
+"Respuestas de referencia": el sitio ya pone su rótulo. Es lo último antes de las
+flashcards.
 
 ## Flashcards
 
@@ -409,10 +473,29 @@ Va al **mazo del libro**, mezcladas con las de los demás capítulos, así que c
 una tiene que entenderse sola. Encabezado exactamente `## Flashcards`, y es lo
 último del archivo.
 
-**Entre 6 y 8 tarjetas.** Acá va TODO el recall del capítulo: los términos del
-bloque 5, las distinciones del 6 preguntadas como "¿cómo distingo A de B?", y las
-afirmaciones y consecuencias del bloque 2. Una por línea, con este formato y nada
-más:
+**Exactamente 4 tarjetas.** Eran 8, y con 39 capítulos daban un mazo de 312 que
+nadie repasa entero. Acá va el recall del capítulo, pero **solo el que hace falta
+para contestar una pregunta de examen**: no es un inventario del capítulo, es la
+materia prima de una exposición.
+
+Elegí las 4 con este orden de prioridad, y si el capítulo no da para alguna, subí
+la siguiente:
+
+1. **La definición del término central** —el que aparecería en el enunciado de una
+   pregunta de examen—, en la forma en que la escribirías al abrir la respuesta.
+2. **La enumeración que hay que poder recitar**: las tres dimensiones, las tres
+   consecuencias, los cuatro requisitos. Es lo que más se pierde y lo que un
+   examen pide explícito.
+3. **La tesis con su autor**, cuando el capítulo discute posiciones: quién
+   sostiene qué, en una línea.
+4. **El criterio de una distinción del bloque 6**, preguntado como "¿cómo
+   distingo A de B?".
+
+Lo que ya **no** va: los datos de color, las frases célebres que no fundan nada, y
+las consecuencias secundarias. Si dudás de una tarjeta, la prueba es: *¿la
+necesitaría para escribir el párrafo de una respuesta?* Si no, fuera.
+
+Una por línea, con este formato y nada más:
 
 ```
 Pregunta | Respuesta
