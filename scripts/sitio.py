@@ -193,7 +193,14 @@ def render_flashcards(tarjetas: list[tuple[str, str]]) -> str:
 # --------------------------------------------------------------------------- #
 
 
-def pagina(titulo: str, migas: str, contenido: str, profundidad: int, con_mermaid: bool = False) -> str:
+def pagina(
+    titulo: str,
+    migas: str,
+    contenido: str,
+    profundidad: int,
+    con_mermaid: bool = False,
+    clase_main: str = "",
+) -> str:
     base = "../" * profundidad
     script = (
         f'<script type="module">'
@@ -219,7 +226,7 @@ def pagina(titulo: str, migas: str, contenido: str, profundidad: int, con_mermai
   <a class="marca" href="{base}index.html">Documentos de estudio</a>
   <nav class="migas">{migas}</nav>
 </header>
-<main>
+<main{f' class="{clase_main}"' if clase_main else ""}>
 {contenido}
 </main>
 <footer>
@@ -322,10 +329,13 @@ def render_seccion(libro: dict, i: int) -> str:
     nav.append("</nav>")
 
     documento, anclas = render_documento(s["texto"])
+    indice = render_indice_interno(anclas)
+    # El índice va como hermano del artículo, no adentro: así en desktop se
+    # puede llevar a una columna propia a la izquierda, fija al scrollear.
     cuerpo = (
+        f'{indice}'
         f'<article class="documento">'
         f'<h1>{html.escape(s["titulo"])}</h1>'
-        f'{render_indice_interno(anclas)}'
         f'{documento}'
         f"</article>" + "".join(nav)
     )
@@ -333,7 +343,14 @@ def render_seccion(libro: dict, i: int) -> str:
         f'<a href="index.html">{html.escape(cfg.get("titulo", libro["slug"]))}</a>'
         f'<span>{html.escape(s["titulo"])}</span>'
     )
-    return pagina(f'{s["titulo"]} — {cfg.get("titulo", "")}', migas, cuerpo, 1, con_mermaid=True)
+    return pagina(
+        f'{s["titulo"]} — {cfg.get("titulo", "")}',
+        migas,
+        cuerpo,
+        1,
+        con_mermaid=True,
+        clase_main="con-indice" if indice else "",
+    )
 
 
 # --------------------------------------------------------------------------- #

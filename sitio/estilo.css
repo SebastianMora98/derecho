@@ -193,6 +193,57 @@ h2.parte + .secciones { margin-top: 0.75rem; }
 }
 .indice-doc a:hover,
 .indice-doc a:focus-visible { color: var(--acento); border-color: var(--acento); }
+.indice-doc a[aria-current="true"] { color: var(--acento); border-color: var(--acento); }
+
+/* En pantalla ancha el índice deja de ser una fila arriba y pasa a una columna
+   propia a la izquierda, fija: al scrollear el documento, el índice se queda.
+   El ancho de la columna de lectura no cambia (sigue siendo --ancho), solo se
+   le agrega una canaleta a la izquierda. Debajo de este punto no hay lugar
+   para las dos columnas y vuelve a la fila de arriba. */
+@media (min-width: 68rem) {
+  main.con-indice {
+    display: grid;
+    grid-template-columns: 12rem minmax(0, var(--ancho));
+    column-gap: 2.5rem;
+    max-width: calc(var(--ancho) + 14.5rem);
+  }
+  main.con-indice .indice-doc {
+    grid-column: 1;
+    grid-row: 1;
+    position: sticky;
+    top: 5rem;
+    align-self: start;
+    /* Si alguna vez hubiera más bloques que alto de pantalla, scrollea el
+       índice y no la página. */
+    max-height: calc(100vh - 7rem);
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin: 0;
+    padding: 0.15rem 0 0.15rem 0.9rem;
+    background: none;
+    border: none;
+    border-left: 1px solid var(--borde);
+    border-radius: 0;
+  }
+  main.con-indice .indice-doc a {
+    border: none;
+    border-radius: 0;
+    padding: 0.32rem 0;
+    /* En una columna angosta las etiquetas largas tienen que poder cortarse. */
+    white-space: normal;
+    border-left: 2px solid transparent;
+    padding-left: 0.7rem;
+    margin-left: -0.9rem;
+  }
+  main.con-indice .indice-doc a[aria-current="true"] {
+    border-left-color: var(--acento);
+    font-weight: 600;
+  }
+  main.con-indice .documento { grid-column: 2; grid-row: 1; }
+  main.con-indice .paso { grid-column: 2; grid-row: 2; }
+}
 
 pre.mermaid {
   margin: 1.5rem 0;
