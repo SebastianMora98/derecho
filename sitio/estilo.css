@@ -1,0 +1,239 @@
+:root {
+  --fondo: #fbfaf7;
+  --fondo-alt: #ffffff;
+  --texto: #23201c;
+  --tenue: #6b6459;
+  --borde: #e2ddd3;
+  --acento: #8a3324;
+  --acento-suave: #f3e9e5;
+  --ancho: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #17161a;
+    --fondo-alt: #1f1e23;
+    --texto: #e8e5df;
+    --tenue: #a09a90;
+    --borde: #33313a;
+    --acento: #e0876f;
+    --acento-suave: #2a2229;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: var(--ancho);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+/* ---------- barra ---------- */
+
+.barra {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: baseline;
+  padding: 0.75rem 1.25rem;
+  background: color-mix(in srgb, var(--fondo) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--borde);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.85rem;
+}
+
+.marca { font-weight: 600; color: var(--texto); text-decoration: none; }
+.migas { display: flex; gap: 0.5rem; color: var(--tenue); min-width: 0; }
+.migas > * { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.migas > *::before { content: "/ "; color: var(--borde); }
+.migas a { color: var(--tenue); }
+
+/* ---------- tipografía ---------- */
+
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 0.75rem; }
+h2 {
+  font-size: 1.25rem;
+  margin: 2.75rem 0 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--borde);
+}
+h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; }
+p, ul, ol { margin: 0 0 1rem; }
+ul, ol { padding-left: 1.25rem; }
+li { margin-bottom: 0.35rem; }
+a { color: var(--acento); }
+strong { font-weight: 600; }
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+  background: var(--acento-suave);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+pre { overflow-x: auto; }
+blockquote {
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--borde);
+  color: var(--tenue);
+}
+
+.intro, .ficha, .ayuda { color: var(--tenue); font-size: 0.95rem; }
+.ficha { margin-top: -0.25rem; font-family: ui-sans-serif, system-ui, sans-serif; }
+
+/* ---------- índice de libros ---------- */
+
+.libros { display: grid; gap: 1rem; margin-top: 2rem; }
+
+.libro {
+  display: block;
+  padding: 1.25rem 1.4rem;
+  background: var(--fondo-alt);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.libro:hover { border-color: var(--acento); transform: translateY(-2px); }
+.libro h2 { margin: 0; border: 0; padding: 0; font-size: 1.2rem; }
+.libro .autor { margin: 0.15rem 0 0.5rem; color: var(--texto); }
+.libro .meta {
+  margin: 0;
+  color: var(--tenue);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- índice de secciones ---------- */
+
+.secciones { display: grid; gap: 0.5rem; margin-top: 2rem; }
+
+.seccion {
+  display: flex;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--fondo-alt);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+.seccion:hover { border-color: var(--acento); }
+.seccion .numero {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9rem;
+  color: var(--tenue);
+  padding-top: 0.15rem;
+}
+.seccion .cuerpo { display: grid; gap: 0.2rem; min-width: 0; }
+.seccion .tesis { color: var(--tenue); font-size: 0.9rem; line-height: 1.5; }
+
+/* ---------- documento ---------- */
+
+.documento h2 { scroll-margin-top: 4rem; }
+
+.documento :is(ul, ol) > li > strong:first-child { color: var(--acento); }
+
+pre.mermaid {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: var(--fondo-alt);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  text-align: center;
+  overflow-x: auto;
+}
+pre.mermaid svg { max-width: 100%; height: auto; }
+
+details.respuestas {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.1rem;
+  background: var(--fondo-alt);
+  border: 1px dashed var(--borde);
+  border-radius: 10px;
+}
+details.respuestas summary {
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: var(--acento);
+}
+details.respuestas[open] summary { margin-bottom: 0.75rem; }
+
+/* ---------- flashcards ---------- */
+
+.tarjetas { display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+
+.tarjeta {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.9rem 1rem;
+  text-align: left;
+  font: inherit;
+  font-size: 0.95rem;
+  color: inherit;
+  background: var(--fondo-alt);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.tarjeta:hover { border-color: var(--acento); }
+.tarjeta .pregunta { font-weight: 600; }
+.tarjeta .respuesta { color: var(--tenue); font-size: 0.9rem; display: none; }
+.tarjeta.abierta .respuesta { display: block; }
+.tarjeta:not(.abierta)::after {
+  content: "mostrar";
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--tenue);
+}
+
+/* ---------- navegación entre secciones ---------- */
+
+.paso {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: var(--ancho);
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+.paso a { text-decoration: none; }
+.paso a:hover { text-decoration: underline; }
+
+footer {
+  border-top: 1px solid var(--borde);
+  padding: 1.5rem 1.25rem 3rem;
+  color: var(--tenue);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (max-width: 40rem) {
+  body { font-size: 1rem; }
+  h1 { font-size: 1.5rem; }
+  main { padding-top: 1.75rem; }
+}

@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.DS_Store
+
+# Documentos crudos sin procesar
+entrada/*
+!entrada/.gitkeep
+
+# El original y su conversión no se publican: se regeneran con
+# `ema.py convertir` a partir del archivo fuente.
+libros/*/original/
+libros/*/libro.md
+libros/*/secciones/
+libros/*/prompts/

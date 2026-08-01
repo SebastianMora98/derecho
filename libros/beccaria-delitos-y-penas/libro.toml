@@ -1,0 +1,27 @@
+# Ficha del libro. Editá estos valores: alimentan la sección
+# CONFIGURACIÓN de los prompts generados por `ema.py preparar`.
+
+titulo = "Tratado de los delitos y de las penas"
+autor = "Cesare Beccaria"
+edicion = "Universidad Carlos III de Madrid, 2015 (Historia del derecho, 32)"
+fuente = "content.pdf"
+
+# Original de 1764. Esta edición se distribuye bajo
+# Creative Commons Atribución-NoComercial-SinDerivadas 3.0 España.
+anio = 1764
+licencia = "CC BY-NC-ND 3.0 ES"
+
+# principiante / intermedio / avanzado
+nivel = "intermedio"
+# examen / investigacion / cultura-general / aplicacion-practica
+proposito = "examen"
+tiempo = "90 minutos"
+# paginas / parrafos / subtitulos
+formato_citas = "subtitulos"
+
+# Variantes de la plantilla a activar. Ver prompts/variantes.md
+# Opciones: examen, investigacion, tecnico, narrativo, aplicacion-practica
+variantes = ["examen"]
+
+# Plantilla base a usar en `preparar` (archivo dentro de prompts/)
+plantilla = "estudio.md"
