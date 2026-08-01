@@ -12,3 +12,6 @@ libros/*/original/
 libros/*/libro.md
 libros/*/secciones/
 libros/*/prompts/
+
+# Binario del OCR: lo compila scripts/ocr.py al vuelo desde ocr_vision.swift
+scripts/.ocr_vision

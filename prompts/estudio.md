@@ -24,6 +24,16 @@ de rellenarlo con suposiciones.
 - Propósito: {{PROPOSITO}}
 - Tiempo que puedo dedicar a esta sección: {{TIEMPO}}
 - Formato de citas al texto original: {{FORMATO_CITAS}}
+  - `paginas`: el texto trae folios reales (marcas `<!-- p. N -->`); cita así:
+    "(p. 122)".
+  - `capitulos`: el texto se organiza en capítulos, parágrafos o apartados
+    numerados por el propio autor (`§ 54`, "Capítulo III"); cita con ese
+    número: "(§ 54)".
+  - `subtitulos`: no hay numeración propia del autor ni folios preservados;
+    cita por el subtítulo o encabezado más cercano en el original: "(bajo
+    'Visión fragmentaria de la experiencia jurídica')".
+  - `parrafos`: no hay nada de lo anterior; cita por posición aproximada:
+    "(párrafo 4 de esta sección)".
 
 # CONTEXTO DE CORRIDAS ANTERIORES
 
@@ -50,8 +60,14 @@ precede, qué la sigue, y qué problema o pregunta viene a responder.
 
 ## 2. Tesis central en una frase
 
-La idea principal de la sección en UNA sola oración, en lenguaje directo.
-Si el texto tiene más de una tesis, enumera hasta 3, no más.
+[Nota para quien redacta, no para el resultado: esto se usa como resumen de
+la sección en el índice del sitio, así que el texto que escribas acá tiene
+que ser la tesis misma —lo más importante que hay que llevarse de la
+sección—, no una frase que hable sobre la tesis.]
+
+La idea principal en UNA sola oración, en lenguaje directo, sin rodeos ni
+relleno. Si el texto tiene más de una tesis, enumera hasta 3, no más, y
+marcá cuál es la principal.
 
 ## 3. Mapa argumental
 

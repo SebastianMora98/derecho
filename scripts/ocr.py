@@ -1,0 +1,378 @@
+#!/usr/bin/env python3
+"""OCR de PDF escaneados (sin capa de texto) usando el framework Vision de macOS.
+
+`markitdown` solo extrae texto ya presente en el PDF. Un escaneo no tiene
+ninguno, así que devuelve un `libro.md` vacío. Este módulo cubre ese caso:
+
+    1. `pdftoppm` rasteriza cada página (poppler, ya instalado con brew).
+    2. `ocr_vision.swift` reconoce el texto con Vision — viene con el sistema,
+       no hay que instalar tesseract ni pagar una API.
+    3. Se reconstruyen los párrafos a partir de la sangría de cada renglón,
+       se rearman las palabras cortadas con guión y se conservan los números
+       de página del original en marcas `<!-- p. N -->`.
+
+Esas marcas son lo que permite citar por página real. La conversión de un PDF
+con capa de texto suele perderlas; un escaneo bien procesado no.
+
+Los libros escaneados a doble página (un pliego por hoja, típico de fotocopia)
+se detectan por la proporción de la hoja y se parten al medio antes del OCR:
+si no, el OCR mezcla las dos columnas de texto de páginas distintas.
+
+Uso directo:
+    uv run scripts/ocr.py entrada/libro.pdf            # imprime el markdown
+    uv run scripts/ocr.py entrada/libro.pdf -o libro.md
+"""
+
+from __future__ import annotations
+
+import argparse
+import re
+import shutil
+import statistics
+import subprocess
+import sys
+import tempfile
+from pathlib import Path
+
+AQUI = Path(__file__).resolve().parent
+FUENTE_SWIFT = AQUI / "ocr_vision.swift"
+BINARIO = AQUI / ".ocr_vision"  # compilado al vuelo, fuera de git
+
+DPI = 300
+# Una hoja más ancha que alta contiene, casi siempre, dos páginas de libro.
+PROPORCION_PLIEGO = 1.15
+# Cuánto más a la derecha tiene que empezar un renglón (en fracción del ancho
+# de la página) para considerarlo primera línea de un párrafo nuevo.
+SANGRIA = 0.022
+# Renglones cuyo centro vertical difiere menos que esto son la misma fila.
+TOLERANCIA_FILA = 0.008
+# El encabezado se separa del cuerpo por un blanco mayor que el interlineado
+# normal; este es el múltiplo a partir del cual se considera separación.
+SALTO_ENCABEZADO = 1.6
+
+
+# --------------------------------------------------------------------------- #
+# herramientas externas
+# --------------------------------------------------------------------------- #
+
+
+def exigir(programa: str, ayuda: str) -> str:
+    ruta = shutil.which(programa)
+    if not ruta:
+        raise SystemExit(f"error: falta '{programa}'. {ayuda}")
+    return ruta
+
+
+def compilar_ocr() -> Path:
+    """Compila el helper de Vision si hace falta. Tarda ~2s la primera vez."""
+    if BINARIO.exists() and BINARIO.stat().st_mtime >= FUENTE_SWIFT.stat().st_mtime:
+        return BINARIO
+    exigir("swiftc", "Instalá las herramientas de línea de comandos de Xcode: xcode-select --install")
+    print("→ compilando el OCR de Vision ...", file=sys.stderr, flush=True)
+    subprocess.run(["swiftc", "-O", "-o", str(BINARIO), str(FUENTE_SWIFT)], check=True)
+    return BINARIO
+
+
+def medir_pagina(pdf: Path) -> tuple[float, float, int]:
+    """Devuelve (ancho, alto, cantidad de páginas) en puntos."""
+    exigir("pdfinfo", "Instalá poppler: brew install poppler")
+    salida = subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True, check=True).stdout
+    ancho = alto = 0.0
+    paginas = 0
+    for linea in salida.splitlines():
+        if linea.startswith("Page size:"):
+            m = re.search(r"([\d.]+) x ([\d.]+)", linea)
+            if m:
+                ancho, alto = float(m.group(1)), float(m.group(2))
+        elif linea.startswith("Pages:"):
+            paginas = int(linea.split(":", 1)[1])
+    if not paginas:
+        raise SystemExit(f"error: no pude leer el PDF {pdf}")
+    return ancho, alto, paginas
+
+
+def rasterizar(pdf: Path, carpeta: Path, mitades: int, dpi: int, desde: int, hasta: int) -> list[Path]:
+    """Rasteriza el PDF a PNG. Con mitades=2 corta cada hoja en dos páginas."""
+    exigir("pdftoppm", "Instalá poppler: brew install poppler")
+    ancho_pt, alto_pt, _ = medir_pagina(pdf)
+    ancho_px = round(ancho_pt * dpi / 72)
+    alto_px = round(alto_pt * dpi / 72)
+
+    imagenes: list[Path] = []
+    for indice in range(mitades):
+        prefijo = carpeta / f"m{indice}"
+        orden = [
+            "pdftoppm", "-png", "-r", str(dpi),
+            "-f", str(desde), "-l", str(hasta),
+            "-W", str(ancho_px // mitades), "-H", str(alto_px),
+            "-x", str(indice * (ancho_px // mitades)), "-y", "0",
+            str(pdf), str(prefijo),
+        ]
+        subprocess.run(orden, check=True, capture_output=True)
+
+    # Intercalar: hoja 1 izquierda, hoja 1 derecha, hoja 2 izquierda, ...
+    por_hoja: dict[str, list[Path]] = {}
+    for img in sorted(carpeta.glob("m*.png")):
+        por_hoja.setdefault(img.stem.split("-", 1)[1], []).append(img)
+    for hoja in sorted(por_hoja):
+        imagenes += sorted(por_hoja[hoja], key=lambda p: p.stem)
+    return imagenes
+
+
+def reconocer(imagenes: list[Path], lote: int = 20) -> list[list[tuple[float, float, float, str]]]:
+    """Corre el OCR y devuelve, por imagen, la lista de renglones con geometría."""
+    binario = compilar_ocr()
+    paginas: list[list[tuple[float, float, float, str]]] = []
+    for inicio in range(0, len(imagenes), lote):
+        grupo = imagenes[inicio : inicio + lote]
+        print(f"  OCR {inicio + 1}-{inicio + len(grupo)} de {len(imagenes)} ...", file=sys.stderr, flush=True)
+        proceso = subprocess.run(
+            [str(binario), *map(str, grupo)], capture_output=True, text=True, check=True
+        )
+        for bruto in proceso.stdout.split("\f"):
+            renglones = []
+            for linea in bruto.splitlines():
+                partes = linea.split("\t", 3)
+                if len(partes) == 4:
+                    renglones.append((float(partes[0]), float(partes[1]), float(partes[2]), partes[3]))
+            paginas.append(renglones)
+    return paginas[: len(imagenes)]
+
+
+# --------------------------------------------------------------------------- #
+# reconstrucción del texto
+# --------------------------------------------------------------------------- #
+
+
+def agrupar_filas(renglones: list) -> list[list]:
+    """Agrupa en una sola fila los renglones que están a la misma altura.
+
+    El título corriente y el folio comparten fila, y hay que tratarlos juntos
+    para medir bien el blanco que los separa del cuerpo.
+    """
+    filas: list[list] = []
+    for r in renglones:
+        if filas and abs(filas[-1][0][2] - r[2]) <= TOLERANCIA_FILA:
+            filas[-1].append(r)
+        else:
+            filas.append([r])
+    return filas
+
+
+def separar_encabezado(renglones: list) -> tuple[str | None, list]:
+    """Quita el título corriente y el folio, y devuelve el número de página.
+
+    No usa una franja fija: identifica el encabezado por el blanco que lo
+    separa del cuerpo, comparado con el interlineado de la propia página. Así
+    funciona igual a cualquier dpi y con márgenes distintos.
+    """
+    filas = agrupar_filas(renglones)
+    if len(filas) < 3:
+        return None, renglones
+
+    alturas = [f[0][2] for f in filas]
+    saltos = [alturas[i] - alturas[i + 1] for i in range(len(alturas) - 1)]
+    interlineado = sorted(saltos)[len(saltos) // 2]
+    if interlineado <= 0 or saltos[0] <= interlineado * SALTO_ENCABEZADO:
+        return None, renglones  # no hay encabezado separado
+
+    encabezado, cuerpo = filas[0], [r for f in filas[1:] for r in f]
+    pagina = None
+    for _, _, _, texto in encabezado:
+        limpio = texto.strip()
+        # El folio puede venir solo o pegado al título corriente.
+        m = (
+            re.fullmatch(r"(\d{1,4})", limpio)
+            or re.match(r"^(\d{1,4})\b", limpio)
+            or re.search(r"\b(\d{1,4})$", limpio)
+        )
+        if m:
+            pagina = m.group(1)
+            break
+    return pagina, cuerpo
+
+
+def versalita(texto: str) -> bool:
+    letras = [c for c in texto if c.isalpha()]
+    return bool(letras) and sum(c.isupper() for c in letras) / len(letras) > 0.7
+
+
+def continua_palabra(izquierda: str, derecha: str) -> bool:
+    """¿El guión al final de `izquierda` es un corte de renglón?
+
+    Si la continuación empieza en minúscula, sí. Si empieza en mayúscula suele
+    ser un compuesto legítimo («sociológico-existencial»)... salvo en los
+    títulos en versalitas del original, donde todo va en mayúscula y el corte
+    es igual de real («JURÍ-» + «DICA»).
+    """
+    if not izquierda.endswith("-") or not derecha[:1].isalpha():
+        return False
+    if derecha[:1].islower():
+        return True
+    # En un título cortado, el renglón siguiente arrastra el final del título
+    # y el comienzo del cuerpo («DICA. - No es extraño...»): hay que mirar sólo
+    # la primera palabra, no el renglón entero.
+    primera = re.match(r"[^\W\d_]+", derecha)
+    return bool(primera) and versalita(izquierda) and versalita(primera.group(0))
+
+
+def unir(lineas: list[str]) -> str:
+    """Une renglones rearmando las palabras cortadas con guión al final."""
+    salida = ""
+    for linea in lineas:
+        linea = linea.strip()
+        if not linea:
+            continue
+        if not salida:
+            salida = linea
+        elif continua_palabra(salida, linea):
+            salida = salida[:-1] + linea
+        else:
+            salida += " " + linea
+    return salida
+
+
+def parrafos_de_pagina(renglones: list) -> list[tuple[bool, str]]:
+    """Agrupa los renglones en párrafos. Devuelve (empieza_parrafo, texto).
+
+    `empieza_parrafo` es False cuando el primer párrafo de la página continúa
+    el último de la página anterior: eso pasa siempre que el renglón de arriba
+    no viene sangrado.
+    """
+    if not renglones:
+        return []
+    # Vision parte a veces un mismo renglón físico en dos cajas. Tratarlas por
+    # separado desordena el texto y, como la segunda empieza muy a la derecha,
+    # la hace pasar por sangrada. Se agrupan por altura y se leen de izquierda
+    # a derecha.
+    lineas = []
+    for fila in agrupar_filas(renglones):
+        fila = sorted(fila, key=lambda r: r[0])
+        lineas.append((min(r[0] for r in fila), unir([r[3] for r in fila])))
+
+    # Mediana y no mínimo: un solo renglón torcido del escaneo (o una nota al
+    # pie que entra más a la izquierda) corre el margen y hace que las líneas
+    # normales pasen por sangradas, partiendo párrafos en mitades.
+    margen = statistics.median(minx for minx, _ in lineas)
+    grupos: list[tuple[bool, list[str]]] = []
+    for minx, texto in lineas:
+        nuevo = minx > margen + SANGRIA or texto.lstrip().startswith("§")
+        if not grupos or nuevo:
+            grupos.append((nuevo, [texto]))
+        else:
+            grupos[-1][1].append(texto)
+    parrafos = []
+    for nuevo, lineas in grupos:
+        texto = unir(lineas)
+        # El escaneo deja manchas que el OCR lee como puntuación suelta al
+        # principio del renglón. No es texto del original: se descarta.
+        texto = re.sub(r'^[.,;:·•*"\']+\s*', "", texto).strip()
+        if texto:
+            parrafos.append((nuevo, texto))
+    return parrafos
+
+
+def ensamblar(paginas: list[list], folios: list[str | None]) -> str:
+    """Pega las páginas en un solo texto, con marcas de folio y párrafos unidos."""
+    bloques: list[str] = []
+    for renglones, folio in zip(paginas, folios):
+        parrafos = parrafos_de_pagina(renglones)
+        marca = f"<!-- p. {folio} -->" if folio else "<!-- p. ? -->"
+        if not parrafos:
+            continue
+        primero_nuevo, primer_texto = parrafos[0]
+        if bloques and not primero_nuevo:
+            # La página arranca a media frase: la marca de folio va en el
+            # punto exacto del corte, dentro del párrafo.
+            anterior = bloques[-1]
+            if anterior.endswith("-") and primer_texto[:1].islower():
+                bloques[-1] = f"{anterior[:-1]}{primer_texto} {marca}"
+            else:
+                bloques[-1] = f"{anterior} {marca} {primer_texto}"
+        else:
+            bloques.append(marca)
+            bloques.append(primer_texto)
+        bloques += [t for _, t in parrafos[1:]]
+    return "\n\n".join(bloques)
+
+
+def titular(texto: str) -> str:
+    """Pasa un título en versalitas a algo legible como encabezado."""
+    letras = [c for c in texto if c.isalpha()]
+    if letras and sum(c.isupper() for c in letras) / len(letras) > 0.7:
+        texto = texto.lower()
+    texto = re.sub(r"\s+", " ", texto).strip(" .,;:-–—")
+    return texto[:1].upper() + texto[1:]
+
+
+def marcar_paragrafos(texto: str) -> str:
+    """Convierte los parágrafos numerados del original en encabezados `##`.
+
+    El libro numera sus divisiones como «§ 54. TÍTULO EN VERSALITAS. - Texto».
+    Ese es el corte natural para `ema.py dividir --nivel 2`, y el que permite
+    citar «§ 54» en lugar de inventar una referencia.
+    """
+    # El punto antes del guion a veces se pierde en el OCR, sobre todo cuando
+    # el título cierra con comillas («CONCRETO" - El...» en vez de
+    # «CONCRETO". - El...»): el punto se hace opcional. El espacio a los dos
+    # lados del guion, en cambio, es obligatorio: sin eso, un guion de corte
+    # de sílaba a mitad de palabra («DE-» + «RECHO») se confunde con el
+    # separador y trunca el título ahí.
+    patron = re.compile(
+        r'§\W{0,3}\s*(\d{1,3})\s*\.\s*(.{3,200}?)\s*"?\s*\.?\s+[-–—]\s+',
+        re.DOTALL,
+    )
+
+    def reemplazo(m: re.Match) -> str:
+        return f"\n\n## § {m.group(1)}. {titular(m.group(2))}\n\n"
+
+    return patron.sub(reemplazo, texto)
+
+
+def a_markdown(pdf: Path, mitades: int | None, dpi: int, desde: int, hasta: int | None) -> str:
+    ancho, alto, total = medir_pagina(pdf)
+    hasta = hasta or total
+    if mitades is None:
+        mitades = 2 if ancho / max(alto, 1) > PROPORCION_PLIEGO else 1
+        if mitades == 2:
+            print(f"→ hoja apaisada ({ancho:.0f}x{alto:.0f}): la parto en dos páginas", file=sys.stderr)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        imagenes = rasterizar(pdf, Path(tmp), mitades, dpi, desde, hasta)
+        print(f"→ {len(imagenes)} páginas rasterizadas a {dpi} dpi", file=sys.stderr)
+        paginas = reconocer(imagenes)
+
+    cuerpos, folios = [], []
+    for renglones in paginas:
+        folio, cuerpo = separar_encabezado(renglones)
+        cuerpos.append(cuerpo)
+        folios.append(folio)
+
+    texto = ensamblar(cuerpos, folios)
+    texto = marcar_paragrafos(texto)
+    texto = re.sub(r"\n{3,}", "\n\n", texto)
+    reconocidos = sum(1 for f in folios if f)
+    print(f"→ folios reconocidos: {reconocidos}/{len(folios)}", file=sys.stderr)
+    return texto.strip() + "\n"
+
+
+def main() -> None:
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("pdf", type=Path)
+    p.add_argument("-o", "--salida", type=Path, help="archivo destino (por defecto: stdout)")
+    p.add_argument("--dpi", type=int, default=DPI)
+    p.add_argument("--mitades", type=int, choices=[1, 2], help="páginas de libro por hoja (por defecto: automático)")
+    p.add_argument("--desde", type=int, default=1)
+    p.add_argument("--hasta", type=int)
+    args = p.parse_args()
+
+    texto = a_markdown(args.pdf, args.mitades, args.dpi, args.desde, args.hasta)
+    if args.salida:
+        args.salida.write_text(texto, encoding="utf-8")
+        print(f"✓ {len(texto):,} caracteres → {args.salida}", file=sys.stderr)
+    else:
+        sys.stdout.write(texto)
+
+
+if __name__ == "__main__":
+    main()

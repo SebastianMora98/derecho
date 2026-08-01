@@ -1,0 +1,22 @@
+# Ficha del libro. Editá estos valores: alimentan la sección
+# CONFIGURACIÓN de los prompts generados por `ema.py preparar`.
+
+titulo = "Derecho y persona"
+autor = "Carlos Fernández Sessarego"
+edicion = "5ª ed. actualizada y ampliada, Astrea, Buenos Aires - Bogotá, 2015. Prólogo de Ricardo D. Rabinovich-Berkman"
+fuente = "FS-Diferentes concepciones de lo juridico-1.pdf"
+
+# principiante / intermedio / avanzado
+nivel = "principiante"
+# examen / investigacion / cultura-general / aplicacion-practica
+proposito = "examen"
+tiempo = "90 minutos"
+# paginas / capitulos / subtitulos / parrafos — ver la nota en prompts/estudio.md
+formato_citas = "paginas"
+
+# Variantes de la plantilla a activar. Ver prompts/variantes.md
+# Opciones: examen, investigacion, tecnico, narrativo
+variantes = ["examen"]
+
+# Plantilla base a usar en `preparar` (archivo dentro de prompts/)
+plantilla = "estudio.md"

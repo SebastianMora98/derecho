@@ -95,7 +95,8 @@ nivel = "intermedio"
 # examen / investigacion / cultura-general / aplicacion-practica
 proposito = "cultura-general"
 tiempo = "90 minutos"
-# paginas / parrafos / subtitulos
+# paginas / capitulos / subtitulos / parrafos — ver la nota en
+# prompts/estudio.md para cuál corresponde según cómo esté marcado el texto
 formato_citas = "subtitulos"
 
 # Variantes de la plantilla a activar. Ver prompts/variantes.md

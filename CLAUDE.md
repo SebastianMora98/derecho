@@ -16,6 +16,8 @@ prompts/              plantillas editables (esto es lo que se afina)
 scripts/
   ema.py              CLI: convertir · dividir · preparar · web · estado
   limpieza.py         reparación del texto extraído de PDF
+  ocr.py              OCR para PDF escaneados (sin capa de texto)
+  ocr_vision.swift    helper de OCR con el framework Vision de macOS
   sitio.py            generador del sitio estático
 estaticos/            estilo.css y tarjetas.js que copia el sitio
 sitio/                HTML generado — se commitea, es lo que Vercel publica
@@ -40,6 +42,36 @@ uv run scripts/ema.py preparar mi-libro 3      # '3', '1-4', '2,5' o 'todas'
 uv run scripts/ema.py web                      # estudio/*.md → sitio/
 uv run scripts/ema.py estado
 ```
+
+## PDF escaneados
+
+Si `convertir` deja un `libro.md` de unos pocos caracteres, el PDF es un
+escaneo sin capa de texto y `markitdown` no tiene nada que extraer. Ahí va
+`ocr.py`, que no necesita instalar nada: rasteriza con `pdftoppm` y reconoce
+con el framework Vision de macOS.
+
+```bash
+uv run scripts/ocr.py entrada/libro.pdf -o libros/<slug>/libro.md
+```
+
+Reconstruye los párrafos por la sangría de cada renglón, rearma las palabras
+cortadas con guión, convierte los `§ NN. TÍTULO` del original en encabezados
+`##` (para poder `dividir --nivel 2`) y conserva los folios reales del
+original en marcas `<!-- p. N -->`. Esas marcas son lo que habilita
+`formato_citas = "paginas"`: un escaneo bien procesado preserva la paginación
+que la conversión de un PDF con texto suele perder.
+
+Detalles que ya costaron una vuelta, por si hay que tocarlo:
+
+- Las fotocopias de libro vienen a doble página por hoja (hoja apaisada). Se
+  detecta por la proporción y se parte al medio antes del OCR; sin eso el OCR
+  entremezcla el texto de dos páginas distintas.
+- El margen de sangría se mide con la **mediana**, no con el mínimo: un solo
+  renglón torcido corre el margen y parte párrafos por la mitad.
+- Vision parte a veces un renglón físico en dos cajas, así que hay que
+  agrupar por altura antes de leer de izquierda a derecha.
+- El encabezado se detecta por el blanco que lo separa del cuerpo, no por una
+  franja fija de la página.
 
 ## Flujo cuando el usuario pide procesar un libro
 
@@ -126,18 +158,42 @@ Beccaria (ed. UC3M 2015, CC BY-NC-ND). Dividido con
 `--nivel 2 --objetivo 9000 --max-chars 16000` → 17 secciones. Procesadas la 1
 y la 2; faltan de la 3 a la 17. `ema.py estado` da el detalle.
 
+**fs-diferentes-concepciones-de-lo-juridico-1** — *Derecho y persona*, Carlos
+Fernández Sessarego (5ª ed., Astrea, 2015). Es el capítulo "Diferentes
+concepciones de lo jurídico", **escaneado**: se procesó con `ocr.py`, no con
+`convertir`. Dividido con `--nivel 2` → 20 secciones (§ 53 a § 74).
+`formato_citas = "paginas"` porque el escaneo conservó los folios; variante
+`examen` activa. Procesada la 1; faltan de la 2 a la 20.
+
+Dos detalles conocidos de este libro, ambos cosméticos: el título de § 70
+quedó con el guión de corte adentro (`"sujeto de de- recho"`) y § 72 no se
+detectó como encabezado porque el original no usa el guión separador después
+del título — su texto está dentro de la sección 18, sin pérdida.
+
+Ojo con este libro: es material **con derechos vigentes** (Astrea 2015), a
+diferencia de Beccaria, que es CC. El `libro.md` y las `secciones/` quedan
+fuera de git, como corresponde, y los documentos de estudio no deben
+reconstruir el texto: citas cortas y con referencia, nada más.
+
 ### Pendientes de la plantilla
 
-Detectados al ejecutar el prompt en las primeras dos secciones; conviene
-resolverlos antes de seguir en serie:
+Detectados al ejecutar el prompt; conviene resolverlos antes de seguir en
+serie:
 
 - Las secciones 3 (mapa argumental en texto) y 4 (mapa visual) se solapan. Si
   el diagrama cumple, la 3 debería reducirse a las referencias al original.
-- `formato_citas = "subtitulos"` no aplica a un texto sin subtítulos ni
-  paginación preservada; se terminó citando por capítulo. Falta admitir
-  `capitulos` como valor en `libro.toml`.
 - La sección 8 pide conectar con secciones anteriores aunque sea la primera
   corrida. Debería condicionarse a `{{CONTEXTO_PREVIO}}`.
+- La sección 12 pide "en qué páginas detenerme" incluso cuando el texto no
+  preservó paginación. Debería seguir a `{{FORMATO_CITAS}}`.
+- La sección 11 (prueba Feynman) genera un espacio en blanco que en el sitio
+  se ve como un hueco sin explicación. Convendría que el HTML muestre ahí un
+  recuadro o una nota, o que la plantilla lo marque de otro modo.
+
+Ya resueltos: `formato_citas` ahora admite `capitulos` y explica los cuatro
+valores; la sección 2 aclara que lo que se escribe es la tesis misma, porque
+su primer párrafo se publica como resumen en el índice (se colaba la frase de
+instrucción en el resultado).
 
 ## Convenciones
 
