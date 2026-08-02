@@ -1,3 +1,35 @@
+// --------------------------------------------------------------------------- //
+// tema claro / oscuro
+// --------------------------------------------------------------------------- //
+
+// El `<head>` ya puso `data-tema` si había preferencia guardada, así que acá no
+// hay que tocar nada al cargar: solo atender el botón. Sin atributo manda el
+// sistema, que es el estado por defecto y también al que se vuelve.
+function temaOscuroActivo() {
+  const fijado = document.documentElement.dataset.tema;
+  if (fijado === "oscuro") return true;
+  if (fijado === "claro") return false;
+  return matchMedia("(prefers-color-scheme: dark)").matches;
+}
+
+const botonTema = document.querySelector(".tema");
+if (botonTema) {
+  botonTema.addEventListener("click", () => {
+    const oscuro = !temaOscuroActivo();
+    document.documentElement.dataset.tema = oscuro ? "oscuro" : "claro";
+    try {
+      localStorage.setItem("tema", oscuro ? "oscuro" : "claro");
+    } catch (e) {}
+    redibujarMermaid();
+  });
+}
+
+// Si el usuario nunca eligió, el sitio sigue al sistema en vivo: cambiar el
+// tema del SO con la página abierta también tiene que redibujar los diagramas.
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+  if (!document.documentElement.dataset.tema) redibujarMermaid();
+});
+
 // Flashcards: clic para revelar, y la tecla "r" para esconderlas todas de nuevo.
 document.addEventListener("click", (evento) => {
   const tarjeta = evento.target.closest(".tarjeta");
@@ -83,18 +115,19 @@ if (alternarTodo) {
 const MERMAID_CDN = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 let mermaidCargado = null;
 
+function configurarMermaid(mermaid) {
+  mermaid.initialize({
+    startOnLoad: false,
+    theme: temaOscuroActivo() ? "dark" : "neutral",
+    themeVariables: { fontSize: "15px", fontFamily: "ui-sans-serif, system-ui, sans-serif" },
+    flowchart: { curve: "basis", useMaxWidth: true, nodeSpacing: 45, rankSpacing: 55 },
+  });
+  return mermaid;
+}
+
 function cargarMermaid() {
   if (!mermaidCargado) {
-    mermaidCargado = import(MERMAID_CDN).then(({ default: mermaid }) => {
-      const oscuro = matchMedia("(prefers-color-scheme: dark)").matches;
-      mermaid.initialize({
-        startOnLoad: false,
-        theme: oscuro ? "dark" : "neutral",
-        themeVariables: { fontSize: "15px", fontFamily: "ui-sans-serif, system-ui, sans-serif" },
-        flowchart: { curve: "basis", useMaxWidth: true, nodeSpacing: 45, rankSpacing: 55 },
-      });
-      return mermaid;
-    });
+    mermaidCargado = import(MERMAID_CDN).then(({ default: mermaid }) => configurarMermaid(mermaid));
   }
   return mermaidCargado;
 }
@@ -110,7 +143,12 @@ const enEspera = new IntersectionObserver(
     for (const e of entradas) {
       if (!e.isIntersecting) continue;
       enEspera.unobserve(e.target);
-      if (!e.target.dataset.processed) nodos.push(e.target);
+      if (e.target.dataset.processed) continue;
+      // Mermaid reemplaza el contenido del <pre> por el SVG, así que el código
+      // fuente se pierde. Se guarda antes para poder volver a dibujar el
+      // diagrama cuando cambia el tema.
+      if (e.target.dataset.fuente === undefined) e.target.dataset.fuente = e.target.textContent;
+      nodos.push(e.target);
     }
     if (!nodos.length) return;
     cargarMermaid()
@@ -123,6 +161,24 @@ const enEspera = new IntersectionObserver(
 );
 
 document.querySelectorAll("pre.mermaid").forEach((n) => enEspera.observe(n));
+
+// Al cambiar de tema, los diagramas ya dibujados quedan con los colores del
+// tema anterior —texto claro sobre fondo claro, ilegible—, así que hay que
+// rehacerlos desde el código que se guardó en `data-fuente`. Los que todavía
+// no se dibujaron no se tocan: los va a tomar el observador con el tema nuevo.
+function redibujarMermaid() {
+  if (!mermaidCargado) return;
+  const nodos = [...document.querySelectorAll("pre.mermaid[data-processed]")];
+  if (!nodos.length) return;
+  for (const n of nodos) {
+    n.textContent = n.dataset.fuente;
+    delete n.dataset.processed;
+    n.removeAttribute("data-processed");
+  }
+  mermaidCargado
+    .then((mermaid) => configurarMermaid(mermaid).run({ nodes: nodos }))
+    .catch((err) => console.error("Mermaid:", err));
+}
 
 // --------------------------------------------------------------------------- //
 // marcador de posición en el índice del libro

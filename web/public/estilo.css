@@ -9,8 +9,12 @@
   --ancho: 46rem;
 }
 
+/* El tema sale del sistema salvo que el usuario lo haya fijado con el botón de
+   la barra, que escribe `data-tema` en el <html> y lo guarda en localStorage.
+   Por eso la regla del sistema excluye `[data-tema="claro"]`: si no, elegir
+   claro con el sistema en oscuro no tendría efecto. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-tema="claro"]) {
     --fondo: #17161a;
     --fondo-alt: #1f1e23;
     --texto: #e8e5df;
@@ -19,6 +23,16 @@
     --acento: #e0876f;
     --acento-suave: #2a2229;
   }
+}
+
+:root[data-tema="oscuro"] {
+  --fondo: #17161a;
+  --fondo-alt: #1f1e23;
+  --texto: #e8e5df;
+  --tenue: #a09a90;
+  --borde: #33313a;
+  --acento: #e0876f;
+  --acento-suave: #2a2229;
 }
 
 * { box-sizing: border-box; }
@@ -58,6 +72,41 @@ main {
 }
 
 .marca { font-weight: 600; color: var(--texto); text-decoration: none; }
+
+/* Empuja el botón de tema al extremo derecho de la barra, sin depender del
+   orden de los otros elementos ni romper el `flex-wrap`. */
+.tema {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  background: transparent;
+  color: var(--tenue);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.tema:hover { border-color: var(--acento); color: var(--texto); }
+.tema svg { width: 0.95em; height: 0.95em; fill: none; stroke: currentColor; stroke-width: 1.7; }
+/* Se ve el icono del tema al que se va a cambiar, no el actual. */
+.tema .a-oscuro { display: inline; }
+.tema .a-claro { display: none; }
+:root[data-tema="oscuro"] .tema .a-oscuro { display: none; }
+:root[data-tema="oscuro"] .tema .a-claro { display: inline; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) .tema .a-oscuro { display: none; }
+  :root:not([data-tema="claro"]) .tema .a-claro { display: inline; }
+}
+/* El texto del botón sobra en pantalla chica: queda solo el icono. */
+@media (max-width: 30rem) {
+  .tema .etiqueta { display: none; }
+  .tema { padding: 0.3rem 0.45rem; }
+}
+
 .migas { display: flex; gap: 0.5rem; color: var(--tenue); min-width: 0; }
 .migas > * { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .migas > *::before { content: "/ "; color: var(--borde); }

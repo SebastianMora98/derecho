@@ -18,11 +18,26 @@ const { titulo, migas = "", claseMain = "" } = Astro.props;
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{titulo}</title>
 <link rel="stylesheet" href="/estilo.css">
+{/* Va acá, inline y antes del CSS que lo usa, para que el atributo esté puesto
+    antes del primer pintado: si esperara a `tarjetas.js`, que va al final del
+    body, se vería un destello del tema del sistema antes de cambiar al
+    elegido. Sin preferencia guardada no escribe nada y manda el sistema. */}
+<script is:inline>
+  try {
+    var t = localStorage.getItem("tema");
+    if (t === "claro" || t === "oscuro") document.documentElement.dataset.tema = t;
+  } catch (e) {}
+</script>
 </head>
 <body>
 <header class="barra">
   <a class="marca" href="/index.html">Documentos de estudio</a>
   <nav class="migas" set:html={migas}></nav>
+  <button type="button" class="tema" aria-label="Cambiar entre tema claro y oscuro">
+    <svg class="a-oscuro" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" stroke-linejoin="round"/></svg>
+    <svg class="a-claro" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6" stroke-linecap="round"/></svg>
+    <span class="etiqueta">Tema</span>
+  </button>
 </header>
 <main class={claseMain || undefined}>
   <slot />

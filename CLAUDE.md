@@ -413,6 +413,29 @@ en consola cuando dos capítulos lo definen distinto. **No unifica sinónimos**
 entradas): cualquier regla que los junte junta también términos distintos, y eso
 se arregla escribiendo mejor los documentos, no en el sitio.
 
+**Tema claro / oscuro.** Por defecto manda el sistema, y el botón de la barra
+lo fija. Tres piezas que van juntas:
+
+- El CSS define los colores claros en `:root` y los oscuros en dos lugares:
+  `@media (prefers-color-scheme: dark) :root:not([data-tema="claro"])` y
+  `:root[data-tema="oscuro"]`. **El `:not()` es lo que hace que la elección
+  gane sobre el sistema**: sin él, elegir claro con el SO en oscuro no tendría
+  ningún efecto.
+- El atributo `data-tema` lo escribe un script **inline en el `<head>`** de
+  `Base.astro`, no `tarjetas.js`. Tiene que correr antes del primer pintado: si
+  esperara al script del final del `<body>`, se vería un destello del tema del
+  sistema antes de cambiar al elegido.
+- Al cambiar de tema hay que **redibujar los diagramas Mermaid ya dibujados**,
+  o quedan con los colores del tema anterior (texto claro sobre fondo claro,
+  ilegible). Mermaid reemplaza el contenido del `<pre>` por el SVG y se lleva
+  puesto el código fuente, así que el observador lo guarda antes en
+  `data-fuente` y `redibujarMermaid` lo restaura, borra `data-processed` y
+  vuelve a correr con el tema nuevo. Los diagramas que todavía no se dibujaron
+  no se tocan: los toma el observador con el tema que corresponda.
+
+Si nunca se eligió, el sitio sigue al sistema **en vivo**: cambiar el tema del
+SO con la página abierta también redibuja los diagramas.
+
 Detalles del diseño que no son obvios y ya costaron una vuelta:
 
 - Los `id` van namespaceados con `sNN-`. En una sola hoja hay tantos
