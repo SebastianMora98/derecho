@@ -460,7 +460,22 @@ claves se usan los de reseña. Hoy hay uno de cada tipo:
 
 - **Clase A** — una **reseña conjunta** que cruza a Beccaria con Foucault: el
   programa de reforma penal y su diagnóstico como cambio en la tecnología del
-  poder. Unas 1.000 palabras, dos páginas de Word en Arial 12.
+  poder. Está escrita siguiendo la [guía de reseña de LEO
+  (Uniandes)](https://leo.uniandes.edu.co/guia-para-la-elaboracion-de-una-resena/)
+  y con la voz de un primer semestre, no la de un crítico. De esa guía salen
+  las partes que tiene y el orden en que van, que es su **estructura lineal**:
+  párrafo de introducción (dice que es una reseña, da los datos
+  bibliográficos de las dos obras y la hoja de ruta), párrafos de exposición
+  —uno por texto—, párrafos de evaluación crítica, conclusión y referencias.
+  El eje es **un solo juicio crítico**, armado con la fórmula de la guía
+  `[criterio] + [adjetivo formal y preciso] + [justificación]`: *la
+  argumentación de Beccaria es **incompleta** porque explica el paso al
+  castigo moderado solo por su utilidad preventiva y no examina qué poder lo
+  hace posible*. Tres evidencias lo sostienen —el cálculo de eficacia dentro
+  del propio Beccaria, la economía del poder de Foucault, y el desacuerdo
+  sobre la opinión pública— y la conclusión declara los límites de la
+  valoración, como pide la guía. Unas 1.300 palabras; era de 1.000 antes de
+  sumarle intro, conclusión y referencias.
 - **Clase B** — el **taller resuelto**: las seis preguntas de la consigna, una
   respuesta por pregunta al nivel del primer semestre. La consigna manda leer
   solo las pp. 119-151, que es exactamente lo que quedó del libro después de
