@@ -123,6 +123,12 @@ blockquote {
 .resumen p { margin: 0 0 0.85rem; }
 .resumen p:last-child { margin-bottom: 0; }
 
+.fuente-enlace {
+  margin: 0.4rem 0 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.85rem;
+}
+
 /* ---------- índice de libros ---------- */
 
 .libros { display: grid; gap: 1rem; margin-top: 2rem; }

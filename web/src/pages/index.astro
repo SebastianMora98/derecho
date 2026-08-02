@@ -20,7 +20,9 @@ const libros = Object.entries(modulos)
         <h2>{libro.titulo}</h2>
         <p class="autor">{libro.autor}</p>
         <p class="meta">
-          {libro.estadisticas.capitulos_con_documento} de {libro.estadisticas.capitulos_totales} capítulos con documento
+          {libro.estadisticas.capitulos_totales === 0
+            ? "Solo resumen"
+            : `${libro.estadisticas.capitulos_con_documento} de ${libro.estadisticas.capitulos_totales} capítulos con documento`}
         </p>
       </a>
     ))}

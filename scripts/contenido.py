@@ -34,9 +34,15 @@ def recolectar(libros_dir: Path, leer_config) -> list[dict]:
     libros = []
     for carpeta in sorted(p for p in libros_dir.iterdir() if p.is_dir()):
         estudios = sorted((carpeta / "estudio").glob("*.md")) if (carpeta / "estudio").exists() else []
-        if not estudios:
-            continue
         cfg = leer_config(carpeta)
+        # Una entrada puede ser solo el resumen general, sin ningún documento de
+        # estudio: es el caso de una charla o un video, donde lo único que se
+        # publica es de qué trata. Sin `resumen` y sin documentos no hay nada
+        # que mostrar, y la carpeta se saltea.
+        if not estudios:
+            if str(cfg.get("resumen", "")).strip():
+                libros.append({"slug": carpeta.name, "cfg": cfg, "secciones": []})
+            continue
         secciones = []
         vistos: set[str] = set()
         for ruta in estudios:

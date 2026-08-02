@@ -221,6 +221,9 @@ def datos_de_libro(libro: dict) -> dict:
         # guarda partido en párrafos, igual que el bloque 2 de un capítulo: el
         # JSON no lleva HTML, y el sitio decide cómo mostrarlo.
         "resumen": parrafos_de(cfg.get("resumen", "")),
+        # Enlace a la fuente cuando está en línea (un video, una charla). Los
+        # libros no lo llevan: su fuente es el PDF, que no se publica.
+        "fuente_url": cfg.get("fuente_url", ""),
         "partes": cfg.get("partes", []),
         "capitulos": [datos_de_seccion(s) for s in secciones],
         "glosario": glosario_de(secciones),

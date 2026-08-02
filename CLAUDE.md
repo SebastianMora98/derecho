@@ -41,6 +41,10 @@ libros/<slug>/
   artefactos/         páginas HTML sueltas
 ```
 
+Una entrada que es **solo resumen** (una charla, un video) tiene nada más que
+`libro.toml` y su `libro.json`: sin `libro.md`, sin `secciones/`, sin
+`capitulos.toml` y sin `estudio/`. Ver "Sitio y despliegue".
+
 ### De HTML directo a JSON + Astro
 
 Hasta acá `scripts/sitio.py` leía `estudio/*.md` y armaba el HTML en las mismas
@@ -358,6 +362,27 @@ párrafos separados por una línea en blanco y markdown inline permitido
 (negrita, cursiva). `datos.py` lo guarda ya partido en párrafos, igual que el
 bloque 2 de un capítulo, así que el JSON sigue sin llevar HTML. Un libro sin
 esa clave simplemente no muestra el bloque.
+
+**Una entrada puede ser solo el resumen, sin ningún capítulo.** Es el caso de
+una charla o un video: la carpeta lleva únicamente `libro.toml` con `resumen`,
+sin `estudio/`, sin `capitulos.toml` y sin `libro.md`. `contenido.py:
+recolectar` la acepta —antes salteaba toda carpeta sin `estudio/*.md`— y la
+hoja se arma sin riel, sin la línea de ayuda, sin el botón de abrir todo y sin
+consolidados, que apuntarían a nada; en el índice de libros la tarjeta dice
+«Solo resumen» en vez de «0 de 0 capítulos». Si además tiene `fuente_url`, la
+hoja muestra un enlace a la fuente bajo la ficha (los libros no lo llevan:
+su fuente es un PDF que no se publica).
+
+Para sacar la transcripción de un video de YouTube, sin instalar nada:
+
+```bash
+uv run --with yt-dlp yt-dlp --skip-download --write-auto-subs \
+  --sub-langs es --sub-format json3 -o video "URL"
+```
+
+Eso deja un `video.es.json3`; el texto sale concatenando los `segs[].utf8` de
+cada evento. Es material ajeno igual que un libro con derechos: la
+transcripción se usa para escribir el resumen y **no se commitea**.
 
 La hoja muestra **todos** los capítulos del libro, no solo los procesados: los
 que todavía no tienen documento salen atenuados y con borde punteado. La lista
