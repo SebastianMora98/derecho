@@ -217,6 +217,10 @@ def datos_de_libro(libro: dict) -> dict:
         "nivel": cfg.get("nivel", ""),
         "formato_citas": cfg.get("formato_citas", ""),
         "contenedor": cfg.get("contenedor", ""),
+        # Resumen general del texto entero, escrito a mano en `libro.toml`. Se
+        # guarda partido en párrafos, igual que el bloque 2 de un capítulo: el
+        # JSON no lleva HTML, y el sitio decide cómo mostrarlo.
+        "resumen": parrafos_de(cfg.get("resumen", "")),
         "partes": cfg.get("partes", []),
         "capitulos": [datos_de_seccion(s) for s in secciones],
         "glosario": glosario_de(secciones),

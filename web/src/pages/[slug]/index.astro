@@ -5,6 +5,7 @@ import Capitulo from "../../components/Capitulo.astro";
 import Consolidados from "../../components/Consolidados.astro";
 import IndiceLibro from "../../components/IndiceLibro.astro";
 import { construirConsolidados } from "../../lib/consolidados";
+import { inline } from "../../lib/md";
 
 export async function getStaticPaths() {
   const modulos = import.meta.glob("../../data/*.json", { eager: true }) as Record<string, any>;
@@ -56,6 +57,12 @@ const migas = `<span>${libro.titulo}</span>`;
   <div class="hoja">
     <h1>{libro.titulo}</h1>
     <p class="ficha">{ficha}</p>
+    {libro.resumen && libro.resumen.length > 0 && (
+      <section class="resumen" id="resumen">
+        <h2>De qué trata el texto</h2>
+        {libro.resumen.map((p: string) => <p set:html={inline(p)} />)}
+      </section>
+    )}
     <p class="intro">
       La idea principal de cada capítulo, para repasar de una pasada. Desplegá
       un capítulo para leer lo esencial; el vocabulario, el test y las

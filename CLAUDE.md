@@ -29,7 +29,7 @@ web/                  sitio Astro: lee el JSON, arma el HTML (`npm run build`)
   src/lib/            md.ts (markdown-it, único renderizador) y consolidados.ts
 sitio/                HTML que arma Astro — fuera de git, lo reconstruye Vercel
 libros/<slug>/
-  libro.toml          ficha editable: autor, nivel, propósito, variantes
+  libro.toml          ficha editable: autor, nivel, propósito, variantes, resumen
   libro.md            conversión completa a Markdown (fuera de git)
   libro.json          el mismo JSON de web/src/data/, al lado del contenido que describe — en git
   original/           copia del archivo fuente (fuera de git)
@@ -349,6 +349,15 @@ completa del original con la idea principal de cada capítulo, y cada capítulo
 plegado en un `<details>` que se abre ahí mismo. No hay una página por capítulo:
 el enlace profundo a un capítulo es `index.html#sNN`, y a un bloque suyo
 `index.html#sNN-vocabulario-clave`.
+
+Arriba de todo, antes de la lista de capítulos, puede ir un **resumen general
+del texto entero** («De qué trata el texto»): de qué va el libro completo, para
+ubicarse antes de entrar a cualquier capítulo. Sale de la clave `resumen` de
+`libro.toml` —prosa escrita a mano, **no se genera con el prompt**—, con los
+párrafos separados por una línea en blanco y markdown inline permitido
+(negrita, cursiva). `datos.py` lo guarda ya partido en párrafos, igual que el
+bloque 2 de un capítulo, así que el JSON sigue sin llevar HTML. Un libro sin
+esa clave simplemente no muestra el bloque.
 
 La hoja muestra **todos** los capítulos del libro, no solo los procesados: los
 que todavía no tienen documento salen atenuados y con borde punteado. La lista

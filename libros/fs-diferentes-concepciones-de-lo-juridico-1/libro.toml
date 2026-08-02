@@ -10,6 +10,39 @@ contenedor = "Capítulo V — Diferentes concepciones de lo jurídico"
 edicion = "5ª ed. actualizada y ampliada, Astrea, Buenos Aires - Bogotá, 2015. Prólogo de Ricardo D. Rabinovich-Berkman"
 fuente = "FS-Diferentes concepciones de lo juridico-1.pdf"
 
+# Resumen general del texto entero. Se muestra arriba de todo en la hoja del
+# libro, antes de la lista de capítulos, para ubicarse antes de entrar a
+# cualquiera. Es prosa a mano, no se genera: párrafos separados por una línea
+# en blanco, markdown inline (negrita, cursiva) permitido.
+resumen = """
+El texto contesta una pregunta que parece obvia y no lo es: **qué estudia
+exactamente un jurista**. La respuesta que defiende Fernández Sessarego es que
+el derecho no son las leyes escritas, ni la sola conducta de la gente, ni los
+puros valores: es la **interacción de esos tres elementos** —conducta, norma y
+valor—, que no se pueden separar sin perder de vista qué es el derecho. Esa es
+la teoría tridimensional, y todo el capítulo se ordena alrededor de ella.
+
+La primera parte hace el diagnóstico. Cada gran escuela de la historia del
+derecho se quedó con **una sola** de las tres dimensiones: el iusnaturalismo
+con los valores, el formalismo con la norma, el sociologismo o realismo con el
+hecho social. El autor las trata a las tres con el mismo criterio, y conviene
+retenerlo porque es el método del texto entero: primero reconoce lo que cada
+una acertó, y recién después marca su límite. Ninguna es falsa; todas son
+**fragmentarias**, y por eso ninguna sirvió para resolver los problemas del
+oficio —de ahí la desconfianza de tantos abogados hacia la filosofía del
+derecho, que el texto explica y termina dando vuelta.
+
+La segunda parte construye la salida. Antes del autor ya hubo quienes contaron
+los tres elementos, pero los dejaron **uno al lado del otro**, sin decir cómo
+se relacionan: eso es el tridimensionalismo genérico y abstracto, que no
+alcanza. La escuela egológica de Cossio puso la vida humana en el centro,
+influencia que el autor reconoce como propia, pero terminó reduciendo las tres
+dimensiones a la conducta. El aporte que el autor reclama —formulado a la vez
+que Reale y sin conocerse— no es haber contado tres elementos sino sostener
+que **se exigen entre sí en un proceso dinámico**, y que ninguno de los tres,
+por sí solo, es derecho.
+"""
+
 # principiante / intermedio / avanzado
 nivel = "principiante"
 # examen / investigacion / cultura-general / aplicacion-practica

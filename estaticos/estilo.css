@@ -96,6 +96,33 @@ blockquote {
 .intro, .ficha, .ayuda { color: var(--tenue); font-size: 0.95rem; }
 .ficha { margin-top: -0.25rem; font-family: ui-sans-serif, system-ui, sans-serif; }
 
+/* ---------- resumen general del texto ---------- */
+
+/* Va arriba de todo, antes de la lista de capítulos: de qué trata el libro
+   entero, para ubicarse antes de entrar a cualquier capítulo. Es prosa a
+   tamaño de lectura, no la letra chica de `.intro`, porque se lee de verdad. */
+.resumen {
+  margin: 1.75rem 0 0;
+  padding: 1.25rem 1.4rem;
+  background: var(--fondo-alt);
+  border: 1px solid var(--borde);
+  border-left: 3px solid var(--acento);
+  border-radius: 10px;
+  scroll-margin-top: 4rem;
+}
+.resumen h2 {
+  margin: 0 0 0.6rem;
+  border: 0;
+  padding: 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--tenue);
+}
+.resumen p { margin: 0 0 0.85rem; }
+.resumen p:last-child { margin-bottom: 0; }
+
 /* ---------- índice de libros ---------- */
 
 .libros { display: grid; gap: 1rem; margin-top: 2rem; }
