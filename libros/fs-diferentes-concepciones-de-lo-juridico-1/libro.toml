@@ -3,6 +3,9 @@
 
 titulo = "Derecho y persona"
 autor = "Carlos Fernández Sessarego"
+# Las entradas con el mismo `grupo` salen juntas, bajo ese título, en el
+# índice de libros. Sin `grupo`, la entrada va suelta.
+grupo = "Carlos Fernández Sessarego"
 # Lo publicado es un capítulo de una obra mayor: este es el piso de arriba de la
 # jerarquía, el que agrupa a los apartados. Un libro de jerarquía plana (como
 # Beccaria) no lleva esta clave y el sitio no muestra ese nivel.

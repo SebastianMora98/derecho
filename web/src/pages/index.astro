@@ -7,6 +7,27 @@ const libros = Object.entries(modulos)
   .filter(([ruta]) => !ruta.endsWith("indice.json"))
   .map(([, mod]) => mod.default ?? mod)
   .sort((a, b) => a.slug.localeCompare(b.slug));
+
+// Agrupa las entradas que comparten `grupo` en libro.toml —por ejemplo las dos
+// de un mismo autor— y deja sueltas las demás. El grupo aparece en la posición
+// de su primer miembro, así el orden general por slug no se altera.
+function agrupar(entradas: any[]) {
+  const bloques: { titulo: string | null; libros: any[] }[] = [];
+  const vistos = new Set<string>();
+  for (const libro of entradas) {
+    const grupo = (libro.grupo || "").trim();
+    if (!grupo) {
+      bloques.push({ titulo: null, libros: [libro] });
+      continue;
+    }
+    if (vistos.has(grupo)) continue;
+    vistos.add(grupo);
+    bloques.push({ titulo: grupo, libros: entradas.filter((l) => (l.grupo || "").trim() === grupo) });
+  }
+  return bloques;
+}
+
+const bloques = agrupar(libros);
 ---
 <Base titulo="Documentos de estudio">
   <h1>Documentos de estudio</h1>
@@ -14,17 +35,23 @@ const libros = Object.entries(modulos)
     Cada documento acompaña la lectura de una sección del original: mapa del
     argumento, conceptos, preguntas y autoevaluación.
   </p>
-  <div class="libros">
-    {libros.map((libro) => (
-      <a class="libro" href={`/${libro.slug}/index.html`}>
-        <h2>{libro.titulo}</h2>
-        <p class="autor">{libro.autor}</p>
-        <p class="meta">
-          {libro.estadisticas.capitulos_totales === 0
-            ? "Solo resumen"
-            : `${libro.estadisticas.capitulos_con_documento} de ${libro.estadisticas.capitulos_totales} capítulos con documento`}
-        </p>
-      </a>
-    ))}
-  </div>
+  {bloques.map((bloque) => (
+    <>
+      {bloque.titulo && <h2 class="grupo">{bloque.titulo}</h2>}
+      <div class="libros">
+        {bloque.libros.map((libro: any) => (
+          <a class="libro" href={`/${libro.slug}/index.html`}>
+            <h2>{libro.titulo}</h2>
+            {/* El autor no se repite cuando el título del grupo ya es su nombre. */}
+            {libro.autor !== bloque.titulo && <p class="autor">{libro.autor}</p>}
+            <p class="meta">
+              {libro.estadisticas.capitulos_totales === 0
+                ? "Solo resumen"
+                : `${libro.estadisticas.capitulos_con_documento} de ${libro.estadisticas.capitulos_totales} capítulos con documento`}
+            </p>
+          </a>
+        ))}
+      </div>
+    </>
+  ))}
 </Base>

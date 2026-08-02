@@ -29,7 +29,7 @@ web/                  sitio Astro: lee el JSON, arma el HTML (`npm run build`)
   src/lib/            md.ts (markdown-it, único renderizador) y consolidados.ts
 sitio/                HTML que arma Astro — fuera de git, lo reconstruye Vercel
 libros/<slug>/
-  libro.toml          ficha editable: autor, nivel, propósito, variantes, resumen
+  libro.toml          ficha editable: autor, nivel, propósito, variantes, resumen, grupo
   libro.md            conversión completa a Markdown (fuera de git)
   libro.json          el mismo JSON de web/src/data/, al lado del contenido que describe — en git
   original/           copia del archivo fuente (fuera de git)
@@ -372,6 +372,14 @@ consolidados, que apuntarían a nada; en el índice de libros la tarjeta dice
 «Solo resumen» en vez de «0 de 0 capítulos». Si además tiene `fuente_url`, la
 hoja muestra un enlace a la fuente bajo la ficha (los libros no lo llevan:
 su fuente es un PDF que no se publica).
+
+**El índice de libros agrupa por la clave `grupo`** de `libro.toml`: las
+entradas que comparten ese valor salen juntas bajo ese título, y las que no lo
+declaran van sueltas. Hoy lo usan las dos de Fernández Sessarego —el libro y
+la charla en video—, para separarlas de los otros autores. El grupo aparece en
+la posición de su primer miembro, así que el orden general por slug no cambia,
+y **si el nombre del grupo es igual al del autor, la tarjeta no repite el
+autor**: lo dice el encabezado.
 
 Para sacar la transcripción de un video de YouTube, sin instalar nada:
 

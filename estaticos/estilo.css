@@ -133,6 +133,21 @@ blockquote {
 
 .libros { display: grid; gap: 1rem; margin-top: 2rem; }
 
+/* Título de un grupo del índice: varias entradas que van juntas, como las de
+   un mismo autor. Mismo tratamiento que los apartados dentro de un libro
+   (`.parte`), para que los dos niveles de agrupación se lean igual. */
+h2.grupo {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--tenue);
+  margin: 2.75rem 0 0;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--borde);
+}
+h2.grupo + .libros { margin-top: 0.75rem; }
+
 .libro {
   display: block;
   padding: 1.25rem 1.4rem;

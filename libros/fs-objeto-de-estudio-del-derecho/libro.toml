@@ -5,6 +5,9 @@
 
 titulo = "¿Cuál es el objeto de estudio del Derecho?"
 autor = "Carlos Fernández Sessarego"
+# Las entradas con el mismo `grupo` salen juntas, bajo ese título, en el
+# índice de libros. Sin `grupo`, la entrada va suelta.
+grupo = "Carlos Fernández Sessarego"
 edicion = "Charla en video, 2015 (10 min). Primera de una serie semanal"
 fuente = "https://www.youtube.com/watch?v=bOulFQks1KY"
 

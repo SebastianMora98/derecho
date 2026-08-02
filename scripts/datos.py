@@ -224,6 +224,10 @@ def datos_de_libro(libro: dict) -> dict:
         # Enlace a la fuente cuando está en línea (un video, una charla). Los
         # libros no lo llevan: su fuente es el PDF, que no se publica.
         "fuente_url": cfg.get("fuente_url", ""),
+        # Título de la sección bajo la que se agrupa esta entrada en el índice
+        # de libros. Varias entradas con el mismo `grupo` salen juntas; sin
+        # `grupo` la entrada va suelta.
+        "grupo": cfg.get("grupo", ""),
         "partes": cfg.get("partes", []),
         "capitulos": [datos_de_seccion(s) for s in secciones],
         "glosario": glosario_de(secciones),
@@ -265,6 +269,7 @@ def construir_datos(libros_dir: Path, leer_config, destino: Path | None = None) 
                 "slug": d["slug"],
                 "titulo": d["titulo"],
                 "autor": d["autor"],
+                "grupo": d["grupo"],
                 "capitulos_totales": d["estadisticas"]["capitulos_totales"],
                 "capitulos_con_documento": d["estadisticas"]["capitulos_con_documento"],
             }
