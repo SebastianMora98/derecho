@@ -386,11 +386,11 @@ contesta…»), que no se nota en uso normal pero suena a plantilla si alguien
 recorre las hojas seguidas. **La revisión de conjunto no se delega**, porque es
 justo lo que ningún agente puede ver desde adentro de su propio encargo.
 
-### La entrada destacada, arriba del resumen
+### La entrada destacada, en la tarjeta del índice
 
-Adentro del mismo bloque, antes del resumen, va la clave **`resumen_corto`**:
-**uno o dos párrafos, de 60 a 120 palabras**, en cuerpo mayor y separados del
-resto por una línea fina. La tienen las seis entradas.
+La clave **`resumen_corto`** de `libro.toml` —**uno o dos párrafos, de 60 a 120
+palabras**— se muestra en `index.astro`, **debajo del título de cada tarjeta**
+del índice de libros, no en la hoja del libro. La tienen las seis entradas.
 
 No es «el resumen pero más corto»: es **lo que hay que haber entendido del
 texto para rendir**. La prueba que pasa cada oración es *si en el examen le
@@ -398,23 +398,24 @@ preguntan por este texto y solo se acuerda de esto, ¿le alcanza para escribir
 una respuesta que apruebe?* De ahí que en los dos textos que no son de Derecho
 —la entrevista a Foucault y el libro de Marina— la entrada diga qué le aportan
 al Derecho y no de qué tratan en abstracto. El tope corto es lo que fuerza esa
-elección: si se estira, deja de ser una entrada y compite con el desarrollo que
-va debajo.
+elección: si se estira, compite con el resto de la tarjeta.
 
-En el CSS, la línea que separa los dos niveles va **sobre el primer párrafo del
-desarrollo** (`.destacado + p:not(.destacado)`) y no debajo del último
-destacado: `:last-of-type` mira la etiqueta y no la clase, así que con varios
-`<p>` seguidos nunca acertaría.
+En el CSS es `.libro .extracto`, un `<p>` por párrafo entre el `.titulo` y el
+`.pie` de la tarjeta (autor y estado), con `inline()` de `md.ts` para que la
+negrita se renderice. La hoja del propio libro (`[slug]/index.astro`) solo
+muestra `resumen` bajo «De qué trata el texto»; `resumen_corto` no aparece ahí
+— antes sí, las dos convivían en el mismo bloque, pero eso duplicaba lectura
+entre el índice y la hoja.
 
 Se escribieron con **seis agentes en paralelo, uno por lectura**, con su propia
 especificación. Lo que apareció en la revisión, y conviene buscar la próxima
-vez: **tres de las seis repetían frases enteras del resumen que iba justo
-debajo**. Un agente lo detectó solo y reescribió; los otros dos los corregí a
-mano. La causa es entendible —les pedí que no repitieran el resumen y varios
-compararon solo contra su arranque, no contra los párrafos 2 y 3—. Se detecta
-rápido midiendo secuencias de 6 palabras compartidas entre `resumen_corto` y
-`resumen`: el solapamiento que queda es solo terminología fija («vida humana,
-valores y normas», «uso público de la inteligencia»), que sí puede repetirse.
+vez: **tres de las seis repetían frases enteras del resumen largo**. Un agente
+lo detectó solo y reescribió; los otros dos los corregí a mano. La causa es
+entendible —les pedí que no repitieran el resumen y varios compararon solo
+contra su arranque, no contra los párrafos 2 y 3—. Se detecta rápido midiendo
+secuencias de 6 palabras compartidas entre `resumen_corto` y `resumen`: el
+solapamiento que queda es solo terminología fija («vida humana, valores y
+normas», «uso público de la inteligencia»), que sí puede repetirse.
 
 **Una entrada puede ser solo el resumen, sin ningún capítulo.** Es el caso de
 una charla o un video: la carpeta lleva únicamente `libro.toml` con `resumen`,

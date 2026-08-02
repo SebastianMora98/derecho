@@ -3,6 +3,9 @@
 
 titulo = "La inteligencia fracasada"
 autor = "José Antonio Marina"
+# Las entradas con el mismo `grupo` salen juntas, bajo ese título, en el
+# índice de libros. La sección se declara en libros/grupos.toml.
+grupo = "Preseminario"
 # Escaneado, sin capa de texto: procesado con ocr.py, no con `convertir`. Los
 # encabezados de capítulo (romanos: "I. LA INTELIGENCIA MALOGRADA"...) no los
 # detectó el heurístico de ocr.py — no sigue el patrón `§ NN. TÍTULO` de otros

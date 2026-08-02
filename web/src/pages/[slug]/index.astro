@@ -68,13 +68,12 @@ const soloResumen = !libro.capitulos.length;
         <a href={libro.fuente_url} target="_blank" rel="noopener">Ver la fuente original</a>
       </p>
     )}
-    {(libro.resumen_corto?.length || libro.resumen?.length) && (
+    {/* La entrada destacada (resumen_corto) se mudó a la tarjeta del índice,
+        debajo del título: acá solo queda el desarrollo largo. */}
+    {libro.resumen?.length > 0 && (
       <section class="resumen" id="resumen">
         <h2>De qué trata el texto</h2>
-        {/* La entrada destacada primero, y el desarrollo debajo: dos niveles de
-            detalle en el mismo bloque, sin rótulo que los separe. */}
-        {libro.resumen_corto?.map((p: string) => <p class="destacado" set:html={inline(p)} />)}
-        {libro.resumen?.map((p: string) => <p set:html={inline(p)} />)}
+        {libro.resumen.map((p: string) => <p set:html={inline(p)} />)}
       </section>
     )}
     {!soloResumen && (

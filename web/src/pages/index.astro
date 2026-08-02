@@ -2,6 +2,7 @@
 // Lista de libros. Equivalente a `sitio.py: render_indice`.
 import Base from "../layouts/Base.astro";
 import grupos from "../data/grupos.json";
+import { inline } from "../lib/md";
 
 const modulos = import.meta.glob("../data/*.json", { eager: true }) as Record<string, any>;
 const libros = Object.entries(modulos)
@@ -60,6 +61,9 @@ function meta(libro: any) {
         {bloque.libros.map((libro: any) => (
           <a class="libro" href={`/${libro.slug}/index.html`}>
             <span class="titulo">{libro.titulo}</span>
+            {/* La entrada destacada de cada lectura (resumen_corto), acá
+                debajo del título en vez de arriba de la hoja del libro. */}
+            {libro.resumen_corto?.map((p: string) => <p class="extracto" set:html={inline(p)} />)}
             <span class="pie">
               {/* No se repite el autor cuando el grupo ya lleva su nombre. */}
               {libro.autor !== bloque.grupo?.nombre && libro.autor && (

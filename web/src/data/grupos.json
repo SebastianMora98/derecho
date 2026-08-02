@@ -16,5 +16,14 @@
     "resena_titulo": "Respuestas del taller",
     "resena_bajada": "Las seis preguntas del taller contestadas con las lecturas de esta clase.",
     "resena_enlace": "Respuestas del taller de Clase B"
+  },
+  {
+    "nombre": "Preseminario",
+    "slug": "preseminario",
+    "orden": 3,
+    "resena": "",
+    "resena_titulo": "",
+    "resena_bajada": "",
+    "resena_enlace": ""
   }
 ]
