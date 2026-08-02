@@ -1,33 +1,51 @@
 ---
 // Lista de libros. Equivalente a `sitio.py: render_indice`.
 import Base from "../layouts/Base.astro";
+import grupos from "../data/grupos.json";
 
 const modulos = import.meta.glob("../data/*.json", { eager: true }) as Record<string, any>;
 const libros = Object.entries(modulos)
-  .filter(([ruta]) => !ruta.endsWith("indice.json"))
+  // `indice.json` y `grupos.json` no son libros.
+  .filter(([ruta]) => !ruta.endsWith("indice.json") && !ruta.endsWith("grupos.json"))
   .map(([, mod]) => mod.default ?? mod)
   .sort((a, b) => a.slug.localeCompare(b.slug));
 
-// Agrupa las entradas que comparten `grupo` en libro.toml —por ejemplo las dos
-// de un mismo autor— y deja sueltas las demás. El grupo aparece en la posición
-// de su primer miembro, así el orden general por slug no se altera.
-function agrupar(entradas: any[]) {
-  const bloques: { titulo: string | null; libros: any[] }[] = [];
+const porNombre = new Map((grupos as any[]).map((g) => [g.nombre, g]));
+
+// Arma los bloques del índice: cada grupo declarado con sus libros, y sueltas
+// las entradas que no declaran `grupo`. Un grupo aparece en la posición de su
+// primer miembro, salvo que traiga `orden`, que lo manda adelante.
+function bloquesDelIndice(entradas: any[]) {
+  const bloques: { grupo: any | null; libros: any[]; pos: number }[] = [];
   const vistos = new Set<string>();
-  for (const libro of entradas) {
-    const grupo = (libro.grupo || "").trim();
-    if (!grupo) {
-      bloques.push({ titulo: null, libros: [libro] });
-      continue;
+  entradas.forEach((libro, pos) => {
+    const nombre = (libro.grupo || "").trim();
+    if (!nombre) {
+      bloques.push({ grupo: null, libros: [libro], pos });
+      return;
     }
-    if (vistos.has(grupo)) continue;
-    vistos.add(grupo);
-    bloques.push({ titulo: grupo, libros: entradas.filter((l) => (l.grupo || "").trim() === grupo) });
-  }
-  return bloques;
+    if (vistos.has(nombre)) return;
+    vistos.add(nombre);
+    bloques.push({
+      grupo: porNombre.get(nombre) ?? { nombre, slug: "", resena: "", orden: null },
+      libros: entradas.filter((l) => (l.grupo || "").trim() === nombre),
+      pos,
+    });
+  });
+  const clave = (b: any) => (b.grupo && b.grupo.orden != null ? b.grupo.orden : Infinity);
+  return bloques
+    .map((b, i) => ({ ...b, i }))
+    .sort((a, b) => clave(a) - clave(b) || a.pos - b.pos || a.i - b.i);
 }
 
-const bloques = agrupar(libros);
+const bloques = bloquesDelIndice(libros);
+
+function meta(libro: any) {
+  const e = libro.estadisticas;
+  return e.capitulos_totales === 0
+    ? "Solo resumen"
+    : `${e.capitulos_con_documento} de ${e.capitulos_totales} capítulos`;
+}
 ---
 <Base titulo="Documentos de estudio">
   <h1>Documentos de estudio</h1>
@@ -37,21 +55,26 @@ const bloques = agrupar(libros);
   </p>
   {bloques.map((bloque) => (
     <>
-      {bloque.titulo && <h2 class="grupo">{bloque.titulo}</h2>}
+      {bloque.grupo && <h2 class="grupo">{bloque.grupo.nombre}</h2>}
       <div class="libros">
         {bloque.libros.map((libro: any) => (
           <a class="libro" href={`/${libro.slug}/index.html`}>
-            <h2>{libro.titulo}</h2>
-            {/* El autor no se repite cuando el título del grupo ya es su nombre. */}
-            {libro.autor !== bloque.titulo && <p class="autor">{libro.autor}</p>}
-            <p class="meta">
-              {libro.estadisticas.capitulos_totales === 0
-                ? "Solo resumen"
-                : `${libro.estadisticas.capitulos_con_documento} de ${libro.estadisticas.capitulos_totales} capítulos con documento`}
-            </p>
+            <span class="titulo">{libro.titulo}</span>
+            <span class="pie">
+              {/* No se repite el autor cuando el grupo ya lleva su nombre. */}
+              {libro.autor !== bloque.grupo?.nombre && libro.autor && (
+                <span class="autor">{libro.autor}</span>
+              )}
+              <span class="meta">{meta(libro)}</span>
+            </span>
           </a>
         ))}
       </div>
+      {bloque.grupo?.resena && (
+        <a class="enlace-resena" href={`/resena/${bloque.grupo.slug}/index.html`}>
+          Reseña conjunta de {bloque.libros.length === 2 ? "las dos lecturas" : `las ${bloque.libros.length} lecturas`} de {bloque.grupo.nombre}
+        </a>
+      )}
     </>
   ))}
 </Base>

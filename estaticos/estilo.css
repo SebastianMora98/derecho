@@ -178,6 +178,29 @@ blockquote {
   font-size: 0.85rem;
 }
 
+/* ---------- hoja de la reseña conjunta ---------- */
+
+.lecturas-resena {
+  margin: 1.25rem 0 2rem;
+  padding: 0.8rem 1rem 0.8rem 2rem;
+  background: var(--fondo-alt);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+.lecturas-resena li { margin: 0.2rem 0; }
+.lecturas-resena .autor { color: var(--tenue); }
+
+/* Los `##` de la reseña son subtítulos internos, no capítulos: sin el
+   tratamiento de encabezado de sección que llevan en la hoja de un libro. */
+.resena-texto h2 {
+  margin: 2rem 0 0.6rem;
+  border: 0;
+  padding: 0;
+  font-size: 1.15rem;
+}
+.resena-texto h2:first-child { margin-top: 0; }
+
 /* ---------- índice de libros ---------- */
 
 .libros { display: grid; gap: 1rem; margin-top: 2rem; }
@@ -197,26 +220,41 @@ h2.grupo {
 }
 h2.grupo + .libros { margin-top: 0.75rem; }
 
+/* Tarjeta compacta: dos renglones, título y una línea de pie con el autor y el
+   estado. Antes ocupaba tres renglones con más aire; con varias clases y
+   varios libros por clase, la lista dejaba de verse de una pasada. */
 .libro {
   display: block;
-  padding: 1.25rem 1.4rem;
+  padding: 0.7rem 0.95rem;
   background: var(--fondo-alt);
   border: 1px solid var(--borde);
-  border-radius: 10px;
+  border-radius: 8px;
   text-decoration: none;
   color: inherit;
   transition: border-color 0.15s, transform 0.15s;
 }
-.libro:hover { border-color: var(--acento); transform: translateY(-2px); }
-.libro h2 { margin: 0; border: 0; padding: 0; font-size: 1.2rem; }
-.libro .autor { margin: 0.15rem 0 0.5rem; color: var(--texto); }
-.libro .meta {
-  margin: 0;
-  color: var(--tenue);
+.libro:hover { border-color: var(--acento); transform: translateY(-1px); }
+.libro .titulo { display: block; font-weight: 600; line-height: 1.3; }
+.libro .pie {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.5rem;
+  margin-top: 0.15rem;
   font-family: ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 0.78rem;
+  color: var(--tenue);
+}
+/* El punto separador solo aparece si antes hubo autor. */
+.libro .autor + .meta::before { content: "· "; }
+.libro .meta { text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* Enlace a la reseña conjunta, debajo de los libros de su clase. */
+.enlace-resena {
+  display: inline-block;
+  margin: 0.6rem 0 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.82rem;
 }
 
 /* ---------- capítulos plegables ---------- */

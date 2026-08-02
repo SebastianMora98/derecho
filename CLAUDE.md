@@ -28,6 +28,9 @@ web/                  sitio Astro: lee el JSON, arma el HTML (`npm run build`)
   src/components/     Capitulo, Consolidados, IndiceLibro
   src/lib/            md.ts (markdown-it, único renderizador) y consolidados.ts
 sitio/                HTML que arma Astro — fuera de git, lo reconstruye Vercel
+libros/
+  grupos.toml         secciones del índice (las clases) y su reseña conjunta
+  resenas/            markdown de las reseñas conjuntas — en git
 libros/<slug>/
   libro.toml          ficha editable: autor, nivel, propósito, variantes, resumen, grupo
   libro.md            conversión completa a Markdown (fuera de git)
@@ -373,13 +376,38 @@ consolidados, que apuntarían a nada; en el índice de libros la tarjeta dice
 hoja muestra un enlace a la fuente bajo la ficha (los libros no lo llevan:
 su fuente es un PDF que no se publica).
 
-**El índice de libros agrupa por la clave `grupo`** de `libro.toml`: las
-entradas que comparten ese valor salen juntas bajo ese título, y las que no lo
-declaran van sueltas. Hoy lo usan las dos de Fernández Sessarego —el libro y
-la charla en video—, para separarlas de los otros autores. El grupo aparece en
-la posición de su primer miembro, así que el orden general por slug no cambia,
-y **si el nombre del grupo es igual al del autor, la tarjeta no repite el
-autor**: lo dice el encabezado.
+**El índice de libros agrupa en secciones.** Cada entrada declara a cuál
+pertenece con `grupo = "<nombre>"` en su `libro.toml`, y la sección en sí se
+declara en **`libros/grupos.toml`**. Hoy son las clases de la materia: «Clase
+A» (Beccaria y Foucault) y «Clase B» (los tres de Fernández Sessarego); lo que
+no declara `grupo` queda suelto, como *La inteligencia fracasada*. Los nombres
+son provisorios, a la espera de los reales de cada clase.
+
+`grupos.toml` acepta por sección:
+
+- `nombre` — tiene que coincidir **exacto** con el `grupo` de los libros. El
+  build avisa en las dos direcciones: un grupo usado y no declarado, y uno
+  declarado que no usa nadie.
+- `orden` — opcional. Las secciones con `orden` van primero, en ese orden; el
+  resto queda donde caía por el orden de slug.
+- `resena` — opcional, el nombre de un archivo dentro de `libros/resenas/`.
+
+El archivo suelto dentro de `libros/` no molesta porque `recolectar` recorre
+**solo carpetas**. Si el nombre del grupo coincide con el del autor, la tarjeta
+no repite el autor: ya lo dice el encabezado.
+
+**La reseña conjunta** es un texto que cubre *todas* las lecturas de una
+sección a la vez, no una por una: sale de un markdown en `libros/resenas/` y se
+publica en su propia hoja, `/resena/<slug-del-grupo>/`, con la lista de las
+lecturas que abarca arriba. El índice la enlaza debajo de las tarjetas de esa
+sección. La de «Clase A» cruza a Beccaria con Foucault —el programa de reforma
+penal y su diagnóstico como cambio en la tecnología del poder— y mide unas
+1.000 palabras, dos páginas de Word en Arial 12. El JSON guarda el markdown
+crudo; el HTML lo arma `md.ts`, igual que todo lo demás.
+
+Las tarjetas del índice son **compactas a propósito**: título y una sola línea
+de pie con el autor y el estado. Con varias clases y varios textos por clase,
+la versión anterior —tres renglones y más aire— dejaba de verse de una pasada.
 
 Para sacar la transcripción de un video de YouTube, sin instalar nada:
 

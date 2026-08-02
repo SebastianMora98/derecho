@@ -5,7 +5,7 @@ titulo = "Breves reflexiones sobre el objeto de estudio y la finalidad del Derec
 autor = "Carlos Fernández Sessarego"
 # Las entradas con el mismo `grupo` salen juntas, bajo ese título, en el
 # índice de libros. Sin `grupo`, la entrada va suelta.
-grupo = "Carlos Fernández Sessarego"
+grupo = "Clase B"
 edicion = "Artículo en la revista THEMIS, pp. 285-292 (9 pp.)"
 fuente = "Dialnet-ReflexionesSobreElObjetoDeEstudioYLaFinalidadDelDe-5110607 (5).pdf"
 

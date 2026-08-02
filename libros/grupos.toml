@@ -1,0 +1,21 @@
+# Secciones del índice de libros. Una entrada se suma a una sección poniendo
+# `grupo = "<nombre>"` en su `libro.toml`; acá se declara la sección en sí.
+#
+# `recolectar` recorre solo carpetas, así que este archivo suelto dentro de
+# `libros/` no lo confunde con un libro.
+#
+# - `nombre`  tiene que coincidir exacto con el `grupo` de cada libro.
+# - `orden`   opcional: las secciones con `orden` van primero, en ese orden.
+#             Lo que no lo declara queda después, en el orden de siempre.
+# - `resena`  opcional: archivo markdown dentro de `libros/resenas/` con una
+#             reseña que cubre TODAS las lecturas de la sección a la vez. Se
+#             publica en su propia hoja y el índice la enlaza bajo la sección.
+
+[[grupos]]
+nombre = "Clase A"
+orden = 1
+resena = "clase-a.md"
+
+[[grupos]]
+nombre = "Clase B"
+orden = 2

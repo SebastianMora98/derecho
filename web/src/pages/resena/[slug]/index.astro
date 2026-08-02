@@ -1,0 +1,49 @@
+---
+// La reseña conjunta de un grupo: un solo texto que cubre todas las lecturas
+// de esa clase. Sale de `libros/resenas/<archivo>.md`, declarado en
+// `libros/grupos.toml`; acá se renderiza el markdown con el mismo `md.ts` que
+// usa el resto del sitio.
+import Base from "../../../layouts/Base.astro";
+import { bloque } from "../../../lib/md";
+import grupos from "../../../data/grupos.json";
+
+export async function getStaticPaths() {
+  const modulos = import.meta.glob("../../../data/*.json", { eager: true }) as Record<string, any>;
+  const libros = Object.entries(modulos)
+    .filter(([ruta]) => !ruta.endsWith("indice.json") && !ruta.endsWith("grupos.json"))
+    .map(([, mod]) => mod.default ?? mod);
+  const declarados = (await import("../../../data/grupos.json")).default as any[];
+  // Solo los grupos que de verdad tienen reseña: uno sin ella no necesita hoja.
+  return declarados
+    .filter((g) => g.resena)
+    .map((g) => ({
+      params: { slug: g.slug },
+      props: {
+        grupo: g,
+        libros: libros
+          .filter((l: any) => (l.grupo || "").trim() === g.nombre)
+          .sort((a: any, b: any) => a.slug.localeCompare(b.slug)),
+      },
+    }));
+}
+
+const { grupo, libros } = Astro.props;
+// La barra ya trae el enlace a la portada en `.marca`; repetirlo acá lo
+// mostraría dos veces seguidas.
+const migas = `<span>Reseña · ${grupo.nombre}</span>`;
+---
+<Base titulo={`Reseña · ${grupo.nombre}`} migas={migas}>
+  <div class="hoja">
+    <h1>Reseña de {grupo.nombre}</h1>
+    <p class="ficha">Un solo texto sobre las {libros.length} lecturas de esta clase, leídas juntas.</p>
+    <ul class="lecturas-resena">
+      {libros.map((l: any) => (
+        <li>
+          <a href={`/${l.slug}/index.html`}>{l.titulo}</a>
+          {l.autor && <span class="autor"> · {l.autor}</span>}
+        </li>
+      ))}
+    </ul>
+    <article class="resena-texto" set:html={bloque(grupo.resena)} />
+  </div>
+</Base>

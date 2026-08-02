@@ -10,7 +10,9 @@ import { inline } from "../../lib/md";
 export async function getStaticPaths() {
   const modulos = import.meta.glob("../../data/*.json", { eager: true }) as Record<string, any>;
   return Object.entries(modulos)
-    .filter(([ruta]) => !ruta.endsWith("indice.json"))
+    // `indice.json` y `grupos.json` viven en la misma carpeta pero no son
+    // libros: sin este filtro, `getStaticPaths` intentaría armarles una hoja.
+    .filter(([ruta]) => !ruta.endsWith("indice.json") && !ruta.endsWith("grupos.json"))
     .map(([, mod]) => {
       const libro = mod.default ?? mod;
       return { params: { slug: libro.slug }, props: { libro } };

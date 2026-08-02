@@ -23,6 +23,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import tomllib
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -241,6 +242,47 @@ def datos_de_libro(libro: dict) -> dict:
     }
 
 
+def slug_de_grupo(nombre: str) -> str:
+    """`Clase A` → `clase-a`. Es la ruta de la hoja de su reseña."""
+    limpio = re.sub(r"[^\w\s-]", "", nombre, flags=re.UNICODE).strip().lower()
+    return re.sub(r"[\s_]+", "-", limpio)
+
+
+def grupos_de(libros_dir: Path) -> list[dict]:
+    """Las secciones del índice declaradas en `libros/grupos.toml`.
+
+    El markdown de la reseña se guarda crudo: igual que el resto del JSON, acá
+    no se arma HTML — eso lo hace el sitio con `md.ts`.
+    """
+    ruta = libros_dir / "grupos.toml"
+    if not ruta.exists():
+        return []
+    with ruta.open("rb") as fh:
+        declarados = tomllib.load(fh).get("grupos", [])
+    grupos = []
+    for g in declarados:
+        nombre = str(g.get("nombre", "")).strip()
+        if not nombre:
+            continue
+        resena = ""
+        archivo = str(g.get("resena", "")).strip()
+        if archivo:
+            md = libros_dir / "resenas" / archivo
+            if md.exists():
+                resena = md.read_text(encoding="utf-8").strip()
+            else:
+                print(f"aviso: el grupo {nombre} apunta a la reseña {archivo}, que no existe")
+        grupos.append(
+            {
+                "nombre": nombre,
+                "slug": slug_de_grupo(nombre),
+                "orden": g.get("orden"),
+                "resena": resena,
+            }
+        )
+    return grupos
+
+
 def construir_datos(libros_dir: Path, leer_config, destino: Path | None = None) -> list[dict]:
     """Genera el JSON de cada libro y opcionalmente lo escribe en disco.
 
@@ -277,6 +319,16 @@ def construir_datos(libros_dir: Path, leer_config, destino: Path | None = None) 
         ]
         (destino / "indice.json").write_text(
             json.dumps(indice, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        grupos = grupos_de(libros_dir)
+        usados = {d["grupo"] for d in salida if d["grupo"]}
+        declarados = {g["nombre"] for g in grupos}
+        for falta in sorted(usados - declarados):
+            print(f"aviso: el grupo {falta!r} lo usa algún libro pero no está en grupos.toml")
+        for sobra in sorted(declarados - usados):
+            print(f"aviso: el grupo {sobra!r} está declarado en grupos.toml pero no lo usa ningún libro")
+        (destino / "grupos.json").write_text(
+            json.dumps(grupos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
     return salida
 
