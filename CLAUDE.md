@@ -459,16 +459,25 @@ Beccaria («me avergüenzo de haber escrito así»).
 **fs-diferentes-concepciones-de-lo-juridico-1** — *Derecho y persona*, Carlos
 Fernández Sessarego (5ª ed., Astrea, 2015). Es el capítulo "Diferentes
 concepciones de lo jurídico", **escaneado**: se procesó con `ocr.py`, no con
-`convertir`. Tiene tres pisos —capítulo > apartado A/B/C > parágrafo §—. El
+`convertir`. Tiene tres pisos —capítulo > apartado A/B > parágrafo §—. El
 capítulo se declara en la clave `contenedor` de su `libro.toml` y los apartados
 en `[[partes]]`; de ahí saca el sitio la jerarquía. Dividido con `--nivel 2` →
-**19 secciones** (§ 53 a § 74, con 3 que juntan parágrafos cortos).
+**10 secciones** (§ 53 a § 63, con 1 que junta dos parágrafos cortos).
 `formato_citas = "paginas"` porque el escaneo conservó los folios.
 
-**Está completo: los 19 capítulos tienen documento de estudio, alineado a la
-plantilla condensada.** El libro entero queda en 81 términos de glosario, 38
-preguntas (2 por capítulo) y 60 flashcards (entre 1 y 4 por capítulo, según lo
-que cada uno sostiene de verdad), y la hoja pesa 172 KB crudos / 43 KB gzip.
+**Se sacó el apartado C entero** —«Personalismo, tridimensionalismo y otros
+aportes del código civil peruano de 1984 a la codificación civil comparada»,
+que eran los parágrafos § 64 a § 74 y las secciones 11 a 19—: es material
+sobre el código civil peruano que no entra en la materia. Se sacó con
+`omitir` en `libro.toml` (`'^§\s*(6[4-9]|7[0-4])\.'`) en vez de a mano, para
+que volver a dividir no los traiga de nuevo, y se borraron sus 9 documentos de
+estudio. El apartado C también salió de `[[partes]]`. Las secciones 1 a 10 no
+cambiaron de número ni de slug, así que ningún enlace profundo se rompió.
+
+**Está completo: los 10 capítulos tienen documento de estudio, alineado a la
+plantilla condensada.** El libro entero queda en 43 términos de glosario, 20
+preguntas (2 por capítulo) y 31 flashcards (entre 1 y 4 por capítulo, según lo
+que cada uno sostiene de verdad), y la hoja pesa 92 KB crudos / 23 KB gzip.
 
 **Sin la variante `examen`, a propósito**: mantiene 2 preguntas y 4 flashcards
 por capítulo, igual que la variante base.
@@ -480,7 +489,8 @@ Dos cosas que aprendió esta tanda y conviene repetir:
   momento de `preparar`. Procesar salteado hace que un término se defina en el
   capítulo equivocado: pasó con `nasciturus` y `situaciones jurídicas subjetivas`,
   que son de § 70 y quedaron primero en § 71 por haber hecho las secciones largas
-  como lote.
+  como lote. (Esos dos parágrafos ya no están en el libro —eran del apartado C—,
+  pero la lección vale igual para cualquier tanda.)
 - **Medir excluyendo el diagrama.** Contar el código Mermaid como palabras del
   documento infla unas 80 por archivo y hace perseguir un tope que ya se cumplía.
 

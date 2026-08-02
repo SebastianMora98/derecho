@@ -17,11 +17,6 @@
       "titulo": "B) La concepción tridimensional de lo jurídico",
       "desde": 7,
       "hasta": 10
-    },
-    {
-      "titulo": "C) Personalismo, tridimensionalismo y otros aportes del código civil peruano de 1984 a la codificación civil comparada",
-      "desde": 11,
-      "hasta": 19
     }
   ],
   "capitulos": [
@@ -178,157 +173,9 @@
         "La visión triádica sirve para dos cosas: supera las posiciones unilaterales y además \"disuelve numerosas falsas antinomias\" instaladas en la dogmática (p. 146). El ejemplo es la persona jurídica —que prefiere llamar \"colectiva\"—: una organización actuante de personas, una finalidad valiosa común y su calificación formal-normativa; reducirla a uno de esos aspectos es una mutilación, y de ahí salió \"una interminable y fatigosa polémica\" de siglos. La formulación más nítida es la que cita de su tesis de 1950: ni el pensamiento del derecho, ni la conducta, ni el valor son derecho; ninguno está fuera de él, pero \"ninguno, de por sí, es derecho\" (p. 149)."
       ],
       "mapa": "flowchart TD\n    D[\"No es construcción intelectual: es el derecho tal como se presenta\"]\n    T[\"Las tres dimensiones se exigen en un proceso\"]:::critico\n    R[\"Reale: de la tensión hecho-valor surge la norma\"]\n    F[\"El autor: la conducta es el punto de partida, con norma y valor en ella\"]\n    P[\"Diferencia: Reale privilegia lo normativo\"]\n    A[\"Disuelve falsas antinomias de la dogmática\"]\n    E[\"Ejemplo: la persona jurídica es las tres cosas a la vez\"]\n    D --> T\n    T --> R\n    T --> F\n    R --> P\n    F --> P\n    T --> A\n    A --> E\n    classDef critico stroke-width:3px"
-    },
-    {
-      "numero": "11",
-      "ancla": "s11",
-      "titulo": "§ 64. Sustento jusfilosófico de los mensajes principistas y doctrinales aportados a la codificación civil comparada por el código civil peruano de 1984",
-      "pendiente": false,
-      "idea": {
-        "resumen": "El derecho carecería de sentido si la persona no fuera libre y social a la vez: esa idea del ser humano, traída por la filosofía de la existencia, es lo que funda al Código de 1984.",
-        "contexto": "Contesta de dónde sale el personalismo de ese código, y es el capítulo más filosófico del libro. Explica por qué una concepción del ser humano cambia lo que un código protege."
-      },
-      "esencial": [
-        "El Código Civil de 1984 representa un cambio radical frente a lo que imperaba en el Perú: una visión formalista que venía desde los albores de la República y se concretaba en la Constitución de 1933 y el Código de 1936, donde el derecho giraba en torno a la norma y \"la más importante institución a proteger era la inviolable propiedad y no la persona humana\" (p. 152). El autor la califica de ochocentista y positivista, con individualismo exacerbado y patrimonialismo, y sostiene que por eso quedaban postergados el deber genérico de no dañar, la solidaridad y el bien común. El giro viene de afuera del derecho: la filosofía de la existencia es \"una angustiada respuesta a los horrores\" de las dos guerras mundiales, y de ahí nace el interés por conocer mejor al ser humano para protegerlo (pp. 152-153).",
-        "Lo que esa filosofía encuentra es una definición nueva: el ser humano ya no es un \"animal racional\" sino una unidad psicosomática sustentada en su libertad, cuya existencia solo es concebible dentro de la coexistencialidad y la temporalidad. Es un **ser libertad**, y esa libertad es lo que Scheler llama espíritu; frente a la definición de Boecio del siglo VI —una sustancia indivisa de naturaleza racional—, acierta en la unidad pero se queda corta porque no da cuenta de la libertad constitutiva. De ahí el argumento central, que tiene forma condicional: el derecho carecería de sentido si su destinatario no fuera libre, porque solo a quien puede decidir se le propone cumplir o incumplir un deber —a un robot no se le plantea esa dicotomía—; pero la libertad sola no alcanza, porque el derecho no se hizo para un hombre aislado y solo le interesan las conductas intersubjetivas.",
-        "De las dos juntas sale su doble papel: proteger a la persona como ser libre e impedir que al ejercer esa libertad dañemos \"el proyecto existencial del otro\". Ser libre impone el deber genérico de no dañar. El tercer rasgo es la temporalidad: la vida coexistencial transcurre en un tiempo limitado, y en ese \"tiempo existencial\" la persona le da sentido a su vida mediante un proyecto según su vocación —justo ahí la conversión rompió el texto, con la palabra partida en \"tan fu-\" y un resto de cabecera, así que ese pasaje conviene leerlo en el original (p. 158)—. El cierre es duro: quien ignora la consistencia de su propio ser podrá ser un experto operador del aparato normativo, pero nunca alcanzará el nivel del jurista."
-      ],
-      "mapa": "flowchart TD\n    V[\"Antes: Constitución de 1933 y Código de 1936, la propiedad en el centro\"]\n    G[\"Las dos guerras impulsan la filosofía de la existencia\"]\n    S[\"El ser humano es ser libertad, coexistencial y temporal\"]:::critico\n    L[\"Sin libertad, no tiene sentido mandar ni prohibir\"]\n    C[\"Sin coexistencia, no hay a quién regular\"]\n    D[\"Doble papel: proteger al libre y no dañar al otro\"]\n    P[\"Ese es el fundamento del Código de 1984\"]\n    V -->|\"se supera con\"| P\n    G --> S\n    S --> L\n    S --> C\n    L --> D\n    C --> D\n    D --> P\n    classDef critico stroke-width:3px"
-    },
-    {
-      "numero": "12",
-      "ancla": "s12",
-      "titulo": "§ 65. El preámbulo personalista de la derogada constitución peruana de 1979",
-      "pendiente": false,
-      "idea": {
-        "resumen": "La Constitución de 1979 decía que la persona es el fin supremo de la sociedad y del Estado; la de 1993 pone en ese lugar su defensa, que es un medio y no un fin.",
-        "contexto": "Contesta si el personalismo fue solo del Código Civil o llegó también al nivel constitucional. Y muestra cómo un cambio de redacción aparentemente menor desplaza el centro de un ordenamiento."
-      },
-      "esencial": [
-        "El personalismo aparece también en la Constitución de 1979, elaborada después de que se publicara parcialmente el proyecto del código que se promulgaría en 1984 (p. 159). Su artículo 1 declara que **la persona es el fin supremo de la sociedad y del Estado**, y de ahí deriva la obligación de todos de respetarla y protegerla. El segundo apoyo es más técnico: el artículo 4 establece el deber de tutelar cualquier interés o derecho natural sustentado en la dignidad del ser humano, y autoriza explícitamente a usar la analogía para proteger derechos de la persona que el ordenamiento positivo no recoge. Es la solución al problema de que ninguna lista de derechos alcanza: en vez de enumerar más, habilita a extender la protección a lo no previsto.",
-        "El contraste con la Constitución de 1993 descansa en una diferencia de redacción que conviene leer despacio. La de 1979 pone como fin supremo a la persona en sí misma; la de 1993 dice que el fin supremo es \"la defensa de la persona humana y el respeto a su dignidad\" (p. 160), con lo que ya no ocupa ese lugar la persona sino el instrumento del que nos valemos: el fin pasa a ser una actividad —defender, respetar— y la persona queda como su objeto. Conviene notar que el autor no argumenta la consecuencia práctica de esa diferencia; la califica de \"notoria\" y sigue. Cierra recorriendo el Preámbulo de 1979, que reconoce \"la primacía de la persona humana\" y derechos de validez universal \"anteriores y superiores al Estado\" —fórmula de raíz iusnaturalista que encaja con el crédito que el autor le dio a esa escuela—, junto con sus declaraciones sobre la familia, el trabajo, la justicia y el bien común, que conviene leer en el original (pp. 160-161)."
-      ],
-      "mapa": "flowchart TD\n    C[\"Constitución de 1979, después del proyecto del código\"]\n    A1[\"Art. 1: la persona es el fin supremo\"]:::critico\n    A4[\"Art. 4: analogía para proteger derechos no positivizados\"]\n    P[\"Preámbulo: primacía de la persona, derechos anteriores al Estado\"]\n    N[\"Constitución de 1993: el fin supremo es su defensa\"]\n    D[\"Diferencia: el fin pasa a ser una actividad, no la persona\"]\n    C --> A1\n    C --> A4\n    C --> P\n    A1 -->|\"contraste\"| N\n    N --> D\n    classDef critico stroke-width:3px"
-    },
-    {
-      "numero": "13",
-      "ancla": "s13",
-      "titulo": "§ 66. Los significativos aportes del código civil peruano de 1984 + § 67. El personalismo del código civil 1984",
-      "pendiente": false,
-      "idea": {
-        "resumen": "El aporte más duradero del Código Civil peruano de 1984 no son sus figuras nuevas sino su personalismo: pone a la persona donde los códigos del siglo XIX ponían el patrimonio.",
-        "contexto": "Estos dos capítulos contestan qué cambió ese código y por qué al autor le importa tanto. Es el momento en que la teoría de los capítulos anteriores deja de ser filosofía y se vuelve articulado."
-      },
-      "esencial": [
-        "El § 66 es un inventario y un anuncio: enumera los aportes del código de 1984 y avisa que los parágrafos siguientes los desarrollan (pp. 161-162). Los nombra sin explicarlos —el daño a la persona, con su especie más original, el daño al proyecto de vida; la nueva categorización del sujeto de derecho, con el concebido y la organización de personas no inscripta; el comité como persona jurídica—, y la lista completa conviene leerla en el original. Ahí se mezclan, sin que el texto lo marque, dos tipos de aporte distintos: figuras que antes no existían en el código, como el comité, y cambios de categoría, o sea reclasificar algo que ya existía en la realidad pero que el derecho no reconocía como sujeto, que es el caso de la organización de personas no inscripta, antes llamada irregular o de hecho (p. 162). El segundo tipo es el que muestra la influencia de la teoría: cambiar quién cuenta como sujeto es una decisión filosófica antes que técnica.",
-        "El § 67 reconoce esos aportes y enseguida los pone en segundo plano: \"más allá de dichos aportes, lo más trascendente y valioso [...] es su inédita inspiración personalista\" (pp. 162-163). Ese personalismo se define por contraste con lo que reemplaza: el intento de revertir la tendencia histórica que hacía de la tutela del individuo aisladamente considerado y del patrimonio la finalidad primordial del código. La diferencia entre \"individuo aislado\" y \"persona\" es toda la apuesta del libro. El autor participó de la redacción de ese código, dato que consigna en nota.",
-        "La afirmación más fácil de invertir al estudiarla es la que sigue: la concepción personalista \"ha sido la base teórica indispensable\" para concebir que el objeto de estudio del derecho es la interacción de vida humana social, valores y normas (p. 163). No es que el tridimensionalismo llevara al personalismo, sino al revés: la premisa del edificio es una idea sobre el ser humano, no un método. El cierre predice que los historiadores verán al código como producto de una transición entre una época individualista y otra personalista (p. 164), y admite que \"mantiene aún algunos rezagos de una concepción extremadamente individualista y patrimonialista\". Son predicciones sobre lo que dirán otros, apoyadas en \"varias autorizadas voces\" que no identifica."
-      ],
-      "mapa": "flowchart TD\n    I[\"Inventario de aportes del código de 1984\"]\n    D[\"Dos planos: figuras nuevas y cambios de categoría\"]\n    P[\"Lo más valioso no es lo técnico sino el personalismo\"]:::critico\n    B[\"El personalismo es la base de la teoría tridimensional\"]\n    T[\"Pronóstico: transición entre dos épocas\"]\n    R[\"Pero admite rezagos individualistas en el propio código\"]\n    I --> D\n    D -->|\"revela una decisión de fondo\"| P\n    P -->|\"se apoya en\"| B\n    P --> T\n    T -->|\"con la salvedad\"| R\n    classDef critico stroke-width:3px"
-    },
-    {
-      "numero": "14",
-      "ancla": "s14",
-      "titulo": "§ 68. Apreciaciones de juristas extranjeros sobre el código civil de 1984",
-      "pendiente": false,
-      "idea": {
-        "resumen": "Cinco civilistas de Italia, Chile, Argentina y Costa Rica reconocen los aportes del Código de 1984, y el argentino los incorporó a un proyecto que terminó en el código de su país.",
-        "contexto": "Contesta si el elogio al código es solo del autor o tiene respaldo externo. Es el capítulo más citacional del libro y el que aporta la evidencia que otros capítulos dan por sentada."
-      },
-      "esencial": [
-        "El autor dice haber escogido \"al azar\" a algunos civilistas destacados, y conviene notar la advertencia: son opiniones favorables seleccionadas, no un balance de la recepción, así que el capítulo muestra que hubo reconocimiento pero no cuánto ni con qué objeciones. El testimonio más desarrollado es el del italiano Pietro Rescigno, de La Sapienza, que elogia la modernidad del código por haber superado formas arcaicas de encuadrar y presentar la materia y sostiene que una lectura atenta sirve para responder preguntas de la propia doctrina italiana (pp. 165-166). Señala como novedades más importantes del Libro del Derecho de las Personas haber extendido las fronteras de la subjetividad —sumando a las personas físicas y jurídicas el concebido y los entes de hecho— y el tratamiento de los derechos de la persona; y respalda la decisión terminológica de preferir la noción de sujeto de derecho a las viejas fórmulas de personalidad y capacidad jurídica. El chileno Fernando Fueyo Laneri lo considera un cambio \"notable\" y un magnífico precedente para futuras reformas, que por su inspiración personalista supera a los códigos latinoamericanos en esta materia (pp. 166-167).",
-        "El caso más fuerte no es una opinión sino un efecto verificable. El argentino Atilio Alterini integró la comisión que en 1998 preparó un proyecto de código para reemplazar al de Vélez Sarsfield, y ahí se acogió el aporte del art. 1985 peruano en la protección de la libertad fenoménica o proyecto de vida; el proyecto no se promulgó, pero la línea siguió hasta el Código Civil y Comercial de la Nación, promulgado en 2014, cuyo art. 1738 dispone que es indemnizable el daño que \"resulte de la interferencia de su proyecto de vida\" (p. 167). O sea que la figura pasó de un código a otro. Cierran el costarricense Víctor Pérez Vargas, para quien el gran valor del código es su contribución a la integración de los pueblos \"sobre una base axiológica personalista\", y el italiano Sandro Schipani, que en un congreso en Lima en 1988 destacó su aporte a plasmar en disposiciones precisas la centralidad de la persona (p. 168)."
-      ],
-      "mapa": "flowchart TD\n    S[\"El autor selecciona opiniones favorables\"]\n    R[\"Rescigno: modernidad y fronteras de la subjetividad ampliadas\"]\n    F[\"Fueyo Laneri: precedente notable, supera a los códigos de la región\"]\n    A[\"Alterini: lo incorpora al proyecto argentino de 1998\"]:::critico\n    C[\"Código argentino de 2014, art. 1738: daño al proyecto de vida\"]\n    P[\"Pérez Vargas y Schipani: base personalista y centralidad de la persona\"]\n    S --> R\n    S --> F\n    S --> A\n    A -->|\"deriva en\"| C\n    S --> P\n    classDef critico stroke-width:3px"
-    },
-    {
-      "numero": "15",
-      "ancla": "s15",
-      "titulo": "§ 69. La incorporación del daño a la persona",
-      "pendiente": false,
-      "idea": {
-        "resumen": "El art. 1985 del Código de 1984 fue el primero en obligar a reparar sin límite cualquier daño al ser humano, donde antes solo se indemnizaba lo que podía valuarse en dinero.",
-        "contexto": "Contesta cómo el personalismo pasó de idea a artículo. Es el capítulo más concreto del libro y el único contado en primera persona, porque el autor fue quien impulsó esa incorporación."
-      },
-      "esencial": [
-        "El Código de 1936 privilegiaba la responsabilidad civil por daños al patrimonio, o sea los perjuicios valuables en dinero (p. 172); el daño a la persona era irrelevante para el derecho. A lo más se tenía en cuenta el \"daño moral\" o *pretium doloris* —el dolor, el sufrimiento—, designación que el autor llama jurídicamente exótica y que en rigor cubre un daño psíquico, un solo aspecto del ser humano. Bajo esa concepción solo se resarcía lo que derivaba en daño emergente o lucro cesante, y quedaban sin reparación los daños a la vida, la libertad o el honor. La fórmula con que lo resume es la más filosa: se privilegiaba \"el haber sobre el ser\".",
-        "El relato es en primera persona: el autor vivió e investigó en Italia entre 1977 y 1983, donde vio nacer el daño a la persona y leyó a Alpa y Busnelli, y al volver convenció a la Comisión Revisora de incorporarlo, sin antecedentes legislativos en la región. Lo llama \"un acto de fe\". En el Congreso Internacional de Lima de 1985 usó por primera vez la expresión \"daño al proyecto de vida\", definido como el daño cuya consecuencia es la frustración del proyecto de vida de la persona (p. 171).",
-        "El aporte se mide por comparación, y ahí está el argumento más verificable. Los códigos alemán de 1900 e italiano de 1942 ya establecían el deber de resarcir consecuencias extrapatrimoniales, pero con límites estrictos —una lista taxativa de casos indemnizables en el alemán, la exigencia de un delito previo en el italiano—, y el portugués de 1967 la restringía a los casos \"graves\". El art. 1985 peruano, en cambio, obliga a reparar **sin limitación alguna** las consecuencias patrimoniales y extrapatrimoniales de un daño a la persona, entendida como unidad psicosomática sustentada en su libertad (pp. 172-173). Esa noción cubre tanto los daños a la libertad fenoménica, o sea al proyecto de vida, como los daños biológicos a la estructura psicosomática."
-      ],
-      "mapa": "flowchart TD\n    A[\"Código de 1936: solo se repara lo valuable en dinero\"]\n    M[\"A lo más el daño moral, o pretium doloris\"]\n    I[\"El autor ve nacer la figura en Italia entre 1977 y 1983\"]\n    C[\"Convence a la Comisión Revisora: un acto de fe\"]\n    N[\"Art. 1985: reparación SIN limitación alguna\"]:::critico\n    O[\"Los códigos alemán, italiano y portugués sí ponían límites\"]\n    D[\"Cubre el proyecto de vida y la estructura psicosomática\"]\n    A --> M\n    I --> C\n    C --> N\n    O -->|\"contraste\"| N\n    N --> D\n    M -->|\"insuficiente\"| N\n    classDef critico stroke-width:3px"
-    },
-    {
-      "numero": "16",
-      "ancla": "s16",
-      "titulo": "§ 70. La nueva categorización del sujeto de derecho",
-      "pendiente": false,
-      "idea": {
-        "resumen": "Distinguir \"sujeto de derecho\" de \"persona\" permitió pasar de dos a cuatro sujetos, sumando al concebido y a la organización de personas no inscripta.",
-        "contexto": "Contesta cómo una distinción técnica abre la puerta a proteger a quienes el derecho antes no veía. Es el capítulo más corto del libro y el que hace de gozne entre los dos que lo rodean."
-      },
-      "esencial": [
-        "El aporte que el capítulo destaca es haber puesto el énfasis en la noción de sujeto de derecho, distinguiéndola del concepto de persona, y el autor califica esa diferencia de manera precisa: es \"de carácter eminentemente técnico\" (p. 175). No es una tesis filosófica sino una herramienta, y su función es facilitar que en el código se incorpore y se regule una categorización nueva. Lo que habilita es concreto: junto a las tradicionales personas naturales y jurídicas —siendo la persona jurídica una organización de personas inscripta— entran como sujetos de derecho dos entes más, el concebido, o persona por nacer, y la organización de personas **no** inscripta. El criterio que agrupa a los cuatro es el mismo: son entes a los que se imputan derechos y deberes, es decir situaciones jurídicas subjetivas.",
-        "El argumento que justifica incluir a los dos nuevos es de correspondencia con la realidad, y es breve: los dos actúan efectivamente, directamente o por medio de sus representantes, aunque no hayan recibido inscripción, de modo que el derecho venía ignorando a entes que ya operaban y la solución \"se ajusta a la realidad de la vida\" (p. 176). El paso decisivo está en separar la titularidad del reconocimiento formal: sujeto de derecho se es por actuar y por serle imputables derechos, no por estar registrado ni por haber nacido. El resultado se enuncia como un número: donde antes se reconocían dos sujetos de derecho, ahora se reconocen cuatro. Ninguno de los dos nuevos se desarrolla acá; eso lo hacen los parágrafos que siguen."
-      ],
-      "mapa": "flowchart TD\n    D[\"Distinguir sujeto de derecho de persona\"]:::critico\n    C[\"Criterio: ente al que se imputan derechos y deberes\"]\n    P1[\"Persona natural\"]\n    P2[\"Persona jurídica: organización inscripta\"]\n    N1[\"Concebido, o persona por nacer\"]\n    N2[\"Organización de personas no inscripta\"]\n    R[\"De dos sujetos de derecho se pasa a cuatro\"]\n    D --> C\n    C --> P1\n    C --> P2\n    C --> N1\n    C --> N2\n    N1 --> R\n    N2 --> R\n    classDef critico stroke-width:3px"
-    },
-    {
-      "numero": "17",
-      "ancla": "s17",
-      "titulo": "§ 71. El concebido como sujeto de derecho",
-      "pendiente": false,
-      "idea": {
-        "resumen": "El Código de 1984 fue el primero en decir que la vida humana empieza con la concepción y que el concebido es sujeto de derecho, y no una ficción cuyos derechos esperan el nacimiento.",
-        "contexto": "Contesta qué es jurídicamente el ser ya concebido y no nacido. Es el capítulo donde el autor discute más directamente con sus críticos, porque de una palabra del artículo depende toda la construcción."
-      },
-      "esencial": [
-        "Cuando en 1965 empezó el proyecto del código había dos concepciones. La primera, de raíz romana, tenía al concebido por una parte del cuerpo de la mujer, \"como el páncreas o la vesícula\", sin autonomía (p. 177), y el autor la descarta con el estado actual del conocimiento: es un nuevo ser humano en su primera etapa, independiente de la madre. La segunda es la teoría de la ficción, que ocupa casi todo el capítulo: el concebido es una nada jurídica, la vida empieza con el nacimiento y sus derechos quedan en suspenso hasta que nazca vivo. La acogieron la Constitución de 1979 y el Código de 1936.",
-        "Contra ella van dos objeciones. Una paradoja: \"el concebido no es cuando es y, cuando se considera que es, ya no es\" (p. 178). Y una incoherencia: los ordenamientos que lo tienen por inexistente regulan su representación y sancionan el aborto, con lo que quedan derechos sin sujeto. El Código de 1984 se aparta en solitario: su artículo primero, sin antecedentes en la codificación comparada, dice que la vida humana comienza con la concepción y que el concebido es sujeto de derecho, con fundamento biológico en la singamia (p. 181).",
-        "El tramo decisivo es de técnica jurídica. El artículo condiciona los derechos patrimoniales a que nazca vivo, y ahí está la discusión: **esa condición es resolutoria, no suspensiva**. Sujeto de derecho es, por definición, aquel a quien se atribuyen derechos y deberes, y si los suyos estuvieran en suspenso no tendría ninguno, dejaría de ser sujeto y volvería a ser una ficción. El autor aclara que al redactar pensó en la resolutoria \"y no en la suspensiva, como algunos autores equivocadamente suponen\" (pp. 183-184), y desde 1991 propone quitar del texto \"en todo lo que le favorece\" y la palabra \"condición\", que genera la confusión."
-      ],
-      "mapa": "flowchart TD\n    R[\"Tesis romana: es parte del cuerpo de la madre\"]\n    F[\"Teoría de la ficción: es una nada jurídica\"]\n    P[\"Paradoja: no es cuando es, y cuando es, ya no es\"]\n    I[\"Incoherencia: se regulan derechos sin sujeto\"]\n    C[\"Código de 1984: la vida empieza con la concepción\"]:::critico\n    S[\"Fundamento: la singamia y un código genético único\"]\n    T[\"Por eso la condición es resolutoria, no suspensiva\"]\n    R -->|\"descartada\"| C\n    F --> P\n    F --> I\n    P --> C\n    I --> C\n    S --> C\n    C --> T\n    classDef critico stroke-width:3px"
-    },
-    {
-      "numero": "18",
-      "ancla": "s18",
-      "titulo": "§ 72. Visión tridimensional de la persona jurídica",
-      "pendiente": false,
-      "idea": {
-        "resumen": "El propio articulado del código muestra las tres dimensiones de la persona jurídica, y su \"existencia distinta\" de los miembros es puramente formal: sin personas humanas no hay sujeto de derecho.",
-        "contexto": "Contesta si el tridimensionalismo es filosofía o se puede leer en la ley. Y es donde el autor critica una redacción del código que él mismo ayudó a preparar."
-      },
-      "esencial": [
-        "El argumento es de lectura del articulado, y por eso es el más verificable del libro. El art. 80 describe a la asociación como una \"organización estable de personas [...] que persigue un fin no lucrativo\" (p. 184): ahí están dos dimensiones a la vista, la sociológico-existencial en \"organización de personas\" y la axiológica en el fin no lucrativo que esos seres humanos determinan como valioso. Lo mismo ocurre con la fundación, el comité y las comunidades campesinas y nativas, en los arts. 99, 111 y 134. La tercera dimensión, la formal, está en los arts. 77 y 78: se adquiere al inscribirse en el registro, y en ese instante la pluralidad de seres humanos que vivencian valores se reduce a un centro ideal y unitario, inexistente en la realidad, al que se atribuyen los derechos y deberes que contraen los representantes. Como ese ente se conoce por el nombre registrado, \"la persona jurídica termina siendo una simple expresión lingüística\" (p. 185).",
-        "De ahí sale la crítica. El art. 78 dice que \"la persona jurídica tiene existencia distinta de sus miembros\", y por eso ninguno tiene derecho a su patrimonio ni responde por sus deudas. El autor sostiene que esa existencia es **puramente formal** —un centro unitario e ideal de imputación, \"un extraño sujeto de derecho sin personas humanas\"— y que el artículo debió decirlo expresamente; lo propuso cuando se elaboraba el código y no prosperó. Su razón no es estética: si no se aclara, se puede creer que existe un sujeto sin las personas que lo constituyen, cuando \"sin personas humanas no existen sujetos de derecho\" (p. 186).",
-        "La segunda corrección es sobre el efecto práctico de la inscripción: el ordenamiento debería decir expresamente que, por el simple hecho de inscribirse, a los miembros se les atribuye **de manera excepcional** el derecho a no responder personalmente por las obligaciones que asumen. Conviene notar el adverbio: presentarla como excepción, y no como consecuencia natural de la personalidad jurídica, es una toma de posición sobre a quién protege el registro (pp. 185-186)."
-      ],
-      "mapa": "flowchart TD\n    A[\"Art. 80: organización de personas y fin no lucrativo\"]\n    E[\"Dimensión existencial y axiológica, a la vista en el texto\"]\n    F[\"Arts. 77 y 78: la inscripción da la dimensión formal\"]\n    C[\"La pluralidad se reduce a un centro ideal e inexistente\"]:::critico\n    X[\"El art. 78 dice existencia distinta, sin aclarar que es formal\"]\n    P[\"Propuesta: decir formal, y decir que la no responsabilidad es excepcional\"]\n    A --> E\n    F --> C\n    C --> X\n    X --> P\n    E --> P\n    classDef critico stroke-width:3px"
-    },
-    {
-      "numero": "19",
-      "ancla": "s19",
-      "titulo": "§ 73. El comité como persona jurídica + § 74. Regulación jurídica de la organización de personas no inscripta",
-      "pendiente": false,
-      "idea": {
-        "resumen": "Entre una organización inscripta y una no inscripta lo único que cambia es el registro, y de ese único hecho depende si responde un ente ideal o responden proporcionalmente sus miembros.",
-        "contexto": "Cierra el libro con los dos últimos aportes del código. Es el capítulo donde la construcción teórica se vuelve una consecuencia práctica muy concreta: quién paga."
-      },
-      "esencial": [
-        "El primer aporte es haberle dado al comité la calidad de persona jurídica, siempre que se inscriba. Ni el Código de 1936 lo regulaba ni lo hace con esa categoría ningún otro código vigente (p. 187). El art. 111 lo define como una organización de personas, naturales o jurídicas, dedicada a la recaudación pública de aportes destinados a una finalidad valiosamente altruista, y sus normas se aproximan en parte a las de la asociación y en parte a las de la fundación. La fuente declarada es el art. 122 del Código Civil griego de 1944. La comparación con Italia muestra bien la magnitud del paso: el Código italiano de 1942 regula el comité como organización de personas **no** inscripta, o sea sin reconocerle personalidad jurídica.",
-        "El segundo aporte es haber regulado la organización de personas no inscripta, conocida hasta entonces como \"irregular\" o \"de hecho\". El argumento es de reparación de un olvido: esas organizaciones venían actuando en la vida comunitaria \"por siglos\", su presencia es inmemorial, y el Código de 1936 y la codificación comparada las ignoraban. No podía seguir desconociéndose su calidad de sujeto de derecho, o sea de entidad a la que se imputan derechos y deberes.",
-        "El tramo decisivo es la comparación entre las dos, y conviene leerlo despacio porque de ahí sale todo. En sus versiones de asociación, fundación, comité o sociedad, la organización no inscripta está formada por un grupo de seres humanos que realiza actos jurídicos de todo tipo, igual que la inscripta, y la única diferencia entre las dos es que una está en un registro público y la otra no (p. 188). De esa única diferencia se sigue una consecuencia grande: en la no inscripta, por acción de un dispositivo legal, las situaciones jurídicas subjetivas se atribuyen **a cada uno de sus miembros, proporcionalmente**; en la inscripta se imputan a un ente ideal, inexistente en la realidad, conocido por su expresión lingüística. Si lo único que separa a la persona jurídica de la organización de hecho es un trámite, la limitación de responsabilidad no es un atributo natural de la personalidad sino un privilegio que el ordenamiento concede, y por eso el autor insiste en llamarlo excepcional. El texto se corta justo cuando iba a desarrollarlo, así que ese cierre conviene leerlo en el original."
-      ],
-      "mapa": "flowchart TD\n    C[\"Art. 111: el comité es persona jurídica si se inscribe\"]\n    G[\"Fuente: art. 122 del Código griego de 1944\"]\n    I[\"Italia 1942 lo trata como organización NO inscripta\"]\n    N[\"Se regula la organización no inscripta, antes irregular o de hecho\"]\n    U[\"Única diferencia entre las dos: el registro\"]:::critico\n    R1[\"No inscripta: responden los miembros, proporcionalmente\"]\n    R2[\"Inscripta: responde un ente ideal\"]\n    G --> C\n    C -->|\"contraste\"| I\n    N --> U\n    C --> U\n    U --> R1\n    U --> R2\n    classDef critico stroke-width:3px"
     }
   ],
   "glosario": [
-    {
-      "termino": "Analogía",
-      "definicion": "aplicar a un caso no previsto la solución de uno semejante; el art. 4 la autoriza para proteger derechos de la persona.",
-      "caps": [
-        "12"
-      ]
-    },
     {
       "termino": "Antinomia",
       "definicion": "oposición entre dos principios que parecen ambos válidos; acá, entre el valor ahistórico y el hecho contingente.",
@@ -337,115 +184,10 @@
       ]
     },
     {
-      "termino": "Asociación",
-      "definicion": "organización estable de personas que mediante una actividad común persigue un fin no lucrativo (art. 80).",
-      "caps": [
-        "18"
-      ]
-    },
-    {
-      "termino": "Capacidad jurídica",
-      "definicion": "la vieja fórmula que el código reemplaza por la noción de sujeto de derecho.",
-      "caps": [
-        "14"
-      ]
-    },
-    {
-      "termino": "Centro ideal y unitario de imputación",
-      "definicion": "el punto al que se atribuyen los derechos y deberes de la organización; no existe en la realidad, solo en el registro.",
-      "caps": [
-        "18"
-      ]
-    },
-    {
-      "termino": "Cigoto",
-      "definicion": "la primera célula que resulta de esa fusión, con la que empieza el proceso de vida.",
-      "caps": [
-        "17"
-      ]
-    },
-    {
-      "termino": "Codificación civil comparada",
-      "definicion": "el conjunto de los códigos civiles de distintos países tomados como término de comparación.",
-      "caps": [
-        "14"
-      ]
-    },
-    {
-      "termino": "Coexistencialidad",
-      "definicion": "que la existencia humana solo es concebible con otros; por eso el derecho regula conductas intersubjetivas.",
-      "caps": [
-        "11"
-      ]
-    },
-    {
-      "termino": "Comité",
-      "definicion": "organización de personas dedicada a la recaudación pública de aportes para una finalidad altruista (art. 111).",
-      "caps": [
-        "19"
-      ]
-    },
-    {
-      "termino": "Concebido",
-      "definicion": "el ser humano ya concebido y aún no nacido, al que el código reconoce como sujeto de derecho.",
-      "caps": [
-        "13"
-      ]
-    },
-    {
-      "termino": "Condición resolutoria",
-      "definicion": "la que hace cesar un derecho que ya se tiene si ocurre el hecho previsto.",
-      "caps": [
-        "17"
-      ]
-    },
-    {
-      "termino": "Condición suspensiva",
-      "definicion": "la que impide que el derecho nazca hasta que ocurra el hecho previsto.",
-      "caps": [
-        "17"
-      ]
-    },
-    {
       "termino": "Conducta intersubjetiva",
       "definicion": "conducta de unas personas frente a otras, no la de alguien aislado.",
       "caps": [
         "01"
-      ]
-    },
-    {
-      "termino": "Daño a la persona",
-      "definicion": "la categoría genérica del art. 1985: cualquier daño al ser humano, en su estructura psicosomática o en su libertad.",
-      "caps": [
-        "15"
-      ]
-    },
-    {
-      "termino": "Daño al proyecto de vida",
-      "definicion": "el daño que frustra el plan de vida de alguien; el autor lo destaca \"por su originalidad\" (p. 162).",
-      "caps": [
-        "13"
-      ]
-    },
-    {
-      "termino": "Daño emergente",
-      "definicion": "la pérdida efectivamente sufrida, lo que salió del patrimonio.",
-      "caps": [
-        "15"
-      ]
-    },
-    {
-      "termino": "Daño moral o pretium doloris",
-      "definicion": "el dolor o sufrimiento; para el autor es solo un daño psíquico-emocional, una parte pequeña del daño a la persona.",
-      "caps": [
-        "15"
-      ]
-    },
-    {
-      "termino": "Deber genérico de no dañar",
-      "definicion": "la obligación que se sigue de ser libre entre otros libres: no lesionar el proyecto de vida ajeno.",
-      "caps": [
-        "11"
       ]
     },
     {
@@ -467,13 +209,6 @@
       "definicion": "la distinción entre lo que regula relaciones entre particulares y lo que regula las relaciones con el poder; el autor la cuenta como aporte iusnaturalista.",
       "caps": [
         "03"
-      ]
-    },
-    {
-      "termino": "Derechos anteriores y superiores al Estado",
-      "definicion": "la fórmula del Preámbulo: derechos que el Estado reconoce, no que crea.",
-      "caps": [
-        "12"
       ]
     },
     {
@@ -505,13 +240,6 @@
       ]
     },
     {
-      "termino": "Entes de hecho",
-      "definicion": "el nombre que Rescigno le da a la organización de personas no inscripta: la que actúa sin registro.",
-      "caps": [
-        "14"
-      ]
-    },
-    {
       "termino": "Escuela de la exégesis",
       "definicion": "la que sostenía que todo el derecho está en el texto de la ley, y que asimiló el derecho civil al Código Napoleón.",
       "caps": [
@@ -523,13 +251,6 @@
       "definicion": "la otra formulación latinoamericana que el autor menciona; acá solo la nombra y remite a Cossio.",
       "caps": [
         "07"
-      ]
-    },
-    {
-      "termino": "Existencia formal",
-      "definicion": "la que la persona jurídica adquiere al inscribirse, distinta de la existencia real de sus miembros.",
-      "caps": [
-        "18"
       ]
     },
     {
@@ -568,24 +289,10 @@
       ]
     },
     {
-      "termino": "Fin supremo de la sociedad y del Estado",
-      "definicion": "la fórmula del art. 1 de 1979: aquello a cuyo servicio están las instituciones.",
-      "caps": [
-        "12"
-      ]
-    },
-    {
       "termino": "Formalismo jurídico",
       "definicion": "la corriente que identifica el derecho con su forma normativa y deja afuera conducta y valores.",
       "caps": [
         "05"
-      ]
-    },
-    {
-      "termino": "Fundación",
-      "definicion": "la persona jurídica regulada en el art. 99, junto al comité y las comunidades campesinas y nativas.",
-      "caps": [
-        "18"
       ]
     },
     {
@@ -617,24 +324,10 @@
       ]
     },
     {
-      "termino": "Libertad fenoménica",
-      "definicion": "la libertad hecha actos concretos en el mundo; es lo que el proyecto de vida realiza y lo que su frustración daña.",
-      "caps": [
-        "15"
-      ]
-    },
-    {
       "termino": "Lógica jurídica",
       "definicion": "la disciplina que estudia la norma como pensamiento; el autor le deja ese trabajo.",
       "caps": [
         "05"
-      ]
-    },
-    {
-      "termino": "Lucro cesante",
-      "definicion": "la ganancia que se dejó de obtener por causa del daño.",
-      "caps": [
-        "15"
       ]
     },
     {
@@ -645,52 +338,10 @@
       ]
     },
     {
-      "termino": "Nasciturus",
-      "definicion": "el ya concebido y todavía no nacido; el código lo llama también persona por nacer.",
-      "caps": [
-        "16"
-      ]
-    },
-    {
-      "termino": "Organización de personas no inscripta",
-      "definicion": "la agrupación que actúa sin estar registrada; antes se la llamaba irregular o de hecho.",
-      "caps": [
-        "13"
-      ]
-    },
-    {
-      "termino": "Organización irregular o de hecho",
-      "definicion": "el nombre que recibía antes de 1984 la organización de personas no inscripta.",
-      "caps": [
-        "19"
-      ]
-    },
-    {
-      "termino": "Patrimonialismo",
-      "definicion": "la orientación que hace del patrimonio el centro de la protección jurídica.",
-      "caps": [
-        "13"
-      ]
-    },
-    {
       "termino": "Persona colectiva",
       "definicion": "el nombre que el autor prefiere para la persona jurídica, y su ejemplo de institución tridimensional.",
       "caps": [
         "10"
-      ]
-    },
-    {
-      "termino": "Persona natural",
-      "definicion": "el ser humano ya nacido, uno de los cuatro sujetos de derecho del código.",
-      "caps": [
-        "16"
-      ]
-    },
-    {
-      "termino": "Personalismo humanista",
-      "definicion": "la concepción que pone a la persona, y no al individuo aislado ni al patrimonio, como finalidad del derecho.",
-      "caps": [
-        "13"
       ]
     },
     {
@@ -708,13 +359,6 @@
       ]
     },
     {
-      "termino": "Preámbulo",
-      "definicion": "la declaración inicial de una constitución, que fija sus principios sin ser articulado exigible.",
-      "caps": [
-        "12"
-      ]
-    },
-    {
       "termino": "Proyecto de vida",
       "definicion": "el plan que cada uno traza libremente para su vida y que el derecho debe hacer posible.",
       "caps": [
@@ -726,13 +370,6 @@
       "definicion": "el nombre que la misma posición recibe en los países del norte de Europa.",
       "caps": [
         "06"
-      ]
-    },
-    {
-      "termino": "Recaudación pública de aportes",
-      "definicion": "la actividad que caracteriza al comité y lo distingue de la asociación y de la fundación.",
-      "caps": [
-        "19"
       ]
     },
     {
@@ -757,38 +394,10 @@
       ]
     },
     {
-      "termino": "Ser libertad",
-      "definicion": "la definición del ser humano que usa el autor: no un animal racional sino un ente constituido por su libertad.",
-      "caps": [
-        "11"
-      ]
-    },
-    {
-      "termino": "Singamia",
-      "definicion": "el instante en que culmina la fusión de los núcleos del óvulo y el espermatozoide; para el autor, el comienzo de la vida.",
-      "caps": [
-        "17"
-      ]
-    },
-    {
-      "termino": "Situaciones jurídicas subjetivas",
-      "definicion": "los derechos y deberes que se imputan a un ente; tenerlos atribuibles es lo que lo vuelve sujeto de derecho.",
-      "caps": [
-        "16"
-      ]
-    },
-    {
       "termino": "Sociologismo jurídico",
       "definicion": "la corriente, de origen estadounidense, que toma la dimensión social como objeto de estudio del derecho.",
       "caps": [
         "06"
-      ]
-    },
-    {
-      "termino": "Subjetividad jurídica",
-      "definicion": "la aptitud de ser sujeto de derecho; el código la extiende más allá de las personas físicas y jurídicas.",
-      "caps": [
-        "14"
       ]
     },
     {
@@ -799,31 +408,10 @@
       ]
     },
     {
-      "termino": "Temporalidad",
-      "definicion": "que la vida transcurre en un tiempo limitado, dentro del cual la persona realiza su proyecto.",
-      "caps": [
-        "11"
-      ]
-    },
-    {
-      "termino": "Teoría de la ficción",
-      "definicion": "la que sostiene que el concebido es una nada jurídica y que sus derechos quedan en suspenso hasta el nacimiento.",
-      "caps": [
-        "17"
-      ]
-    },
-    {
       "termino": "Teoría pura del derecho",
       "definicion": "la construcción de Kelsen: el objeto de la ciencia jurídica se contrae al ordenamiento normativo.",
       "caps": [
         "05"
-      ]
-    },
-    {
-      "termino": "Tiempo existencial",
-      "definicion": "el tiempo vivido por la persona, en el que le da sentido a su vida, frente al tiempo medido del reloj.",
-      "caps": [
-        "11"
       ]
     },
     {
@@ -1100,195 +688,6 @@
         }
       ],
       "raw": "- **Tridimensionalismo genérico vs. específico y concreto** — el primero enumera tres elementos separables; el segundo afirma que se exigen entre sí en un proceso.\n  - Se confunden porque: los dos se llaman tridimensionalismo y nombran los mismos tres elementos.\n  - Criterio para decidir: ¿los elementos podrían estudiarse aislados sin perder nada? Si sí, es genérico; el específico dice que ninguno es derecho por sí solo.\n  - Dónde se cae: se presenta la tesis del autor como \"el derecho tiene tres dimensiones\", que es la versión que él rechaza.\n\n- **La articulación de Reale vs. la del autor** — en Reale la norma surge de la tensión hecho-valor; en el autor se parte de la conducta, que ya lleva norma y valor.\n  - Se confunden porque: los dos son tridimensionalistas dinámicos y coinciden en casi todo.\n  - Criterio para decidir: ¿qué dimensión queda privilegiada? En Reale la normativa; en el autor, la conducta como punto de partida.\n  - Dónde se cae: se los cita como si sostuvieran lo mismo, y se pierde la única discusión interna del libro."
-    },
-    {
-      "cap": "11",
-      "titulo_cap": "§ 64. Sustento jusfilosófico de los mensajes principistas y doctrinales aportados a la codificación civil comparada por el código civil peruano de 1984",
-      "items": [
-        {
-          "par": "Animal racional vs. ser libertad",
-          "texto": "la definición clásica acierta en la unidad y omite la libertad, que es lo constitutivo.",
-          "se_confunden": "las dos pretenden decir qué es el ser humano y las dos lo distinguen de los demás animales.",
-          "criterio": "¿lo que define al hombre es pensar, o poder elegir? Para el autor la razón sin libertad no explica que se le pueda mandar algo.",
-          "error": "se resume la posición del autor como \"el hombre es un ser racional y social\", que es la definición que viene a corregir."
-        },
-        {
-          "par": "Individualismo vs. personalismo",
-          "texto": "el primero protege la esfera y el patrimonio del individuo aislado; el segundo, la realización de la persona con otros.",
-          "se_confunden": "los dos hablan de proteger al sujeto frente al poder y a los demás.",
-          "criterio": "¿el otro aparece como límite o como condición? En el personalismo la coexistencia es parte de lo que se protege.",
-          "error": "se dice que el Código de 1984 es personalista porque refuerza los derechos individuales, cuando eso describe al de 1936."
-        }
-      ],
-      "raw": "- **Animal racional vs. ser libertad** — la definición clásica acierta en la unidad y omite la libertad, que es lo constitutivo.\n  - Se confunden porque: las dos pretenden decir qué es el ser humano y las dos lo distinguen de los demás animales.\n  - Criterio para decidir: ¿lo que define al hombre es pensar, o poder elegir? Para el autor la razón sin libertad no explica que se le pueda mandar algo.\n  - Dónde se cae: se resume la posición del autor como \"el hombre es un ser racional y social\", que es la definición que viene a corregir.\n\n- **Individualismo vs. personalismo** — el primero protege la esfera y el patrimonio del individuo aislado; el segundo, la realización de la persona con otros.\n  - Se confunden porque: los dos hablan de proteger al sujeto frente al poder y a los demás.\n  - Criterio para decidir: ¿el otro aparece como límite o como condición? En el personalismo la coexistencia es parte de lo que se protege.\n  - Dónde se cae: se dice que el Código de 1984 es personalista porque refuerza los derechos individuales, cuando eso describe al de 1936."
-    },
-    {
-      "cap": "12",
-      "titulo_cap": "§ 65. El preámbulo personalista de la derogada constitución peruana de 1979",
-      "items": [
-        {
-          "par": "La persona como fin vs. su defensa como fin",
-          "texto": "es la diferencia entre las dos constituciones y no es una sutileza de redacción.",
-          "se_confunden": "las dos fórmulas suenan protectoras y las dos nombran a la persona.",
-          "criterio": "¿qué ocupa el lugar del fin, la persona o una actividad sobre ella? Si es la defensa, la persona pasa a ser su objeto.",
-          "error": "se citan las dos constituciones como igualmente personalistas, cuando el autor sostiene que la de 1993 desplazó el centro."
-        },
-        {
-          "par": "Enumerar derechos vs. habilitar la analogía",
-          "texto": "lo primero cierra una lista; lo segundo permite proteger lo no previsto.",
-          "se_confunden": "las dos técnicas buscan ampliar la protección de la persona.",
-          "criterio": "¿el derecho invocado tiene que estar en el texto? Con la analogía no hace falta.",
-          "error": "se lee el art. 4 como una declaración de principios, cuando es una regla operativa de interpretación."
-        }
-      ],
-      "raw": "- **La persona como fin vs. su defensa como fin** — es la diferencia entre las dos constituciones y no es una sutileza de redacción.\n  - Se confunden porque: las dos fórmulas suenan protectoras y las dos nombran a la persona.\n  - Criterio para decidir: ¿qué ocupa el lugar del fin, la persona o una actividad sobre ella? Si es la defensa, la persona pasa a ser su objeto.\n  - Dónde se cae: se citan las dos constituciones como igualmente personalistas, cuando el autor sostiene que la de 1993 desplazó el centro.\n\n- **Enumerar derechos vs. habilitar la analogía** — lo primero cierra una lista; lo segundo permite proteger lo no previsto.\n  - Se confunden porque: las dos técnicas buscan ampliar la protección de la persona.\n  - Criterio para decidir: ¿el derecho invocado tiene que estar en el texto? Con la analogía no hace falta.\n  - Dónde se cae: se lee el art. 4 como una declaración de principios, cuando es una regla operativa de interpretación."
-    },
-    {
-      "cap": "13",
-      "titulo_cap": "§ 66. Los significativos aportes del código civil peruano de 1984 + § 67. El personalismo del código civil 1984",
-      "items": [
-        {
-          "par": "Persona vs. individuo aislado",
-          "texto": "el personalismo protege a la persona en su vida concreta; el individualismo protege a un sujeto abstracto y a sus bienes.",
-          "se_confunden": "en el lenguaje corriente son sinónimos, y las dos posturas dicen defender al ser humano.",
-          "criterio": "¿se protege la realización de la persona, o su esfera y su patrimonio frente a los demás? Si es lo segundo, es individualismo.",
-          "error": "se dice que el código es personalista porque protege derechos individuales, que es la tendencia que vino a revertir."
-        },
-        {
-          "par": "El personalismo funda la teoría vs. la teoría funda el personalismo",
-          "texto": "el autor sostiene lo primero.",
-          "se_confunden": "los dos aparecen juntos en todo el libro y se refuerzan, así que el orden parece indistinto.",
-          "criterio": "¿cuál se presenta como \"base teórica indispensable\"? En la p. 163 es el personalismo.",
-          "error": "se explica que deduce el personalismo del tridimensionalismo, invirtiendo la fundamentación que el texto afirma."
-        }
-      ],
-      "raw": "- **Persona vs. individuo aislado** — el personalismo protege a la persona en su vida concreta; el individualismo protege a un sujeto abstracto y a sus bienes.\n  - Se confunden porque: en el lenguaje corriente son sinónimos, y las dos posturas dicen defender al ser humano.\n  - Criterio para decidir: ¿se protege la realización de la persona, o su esfera y su patrimonio frente a los demás? Si es lo segundo, es individualismo.\n  - Dónde se cae: se dice que el código es personalista porque protege derechos individuales, que es la tendencia que vino a revertir.\n\n- **El personalismo funda la teoría vs. la teoría funda el personalismo** — el autor sostiene lo primero.\n  - Se confunden porque: los dos aparecen juntos en todo el libro y se refuerzan, así que el orden parece indistinto.\n  - Criterio para decidir: ¿cuál se presenta como \"base teórica indispensable\"? En la p. 163 es el personalismo.\n  - Dónde se cae: se explica que deduce el personalismo del tridimensionalismo, invirtiendo la fundamentación que el texto afirma."
-    },
-    {
-      "cap": "14",
-      "titulo_cap": "§ 68. Apreciaciones de juristas extranjeros sobre el código civil de 1984",
-      "items": [
-        {
-          "par": "Elogio doctrinal vs. recepción normativa",
-          "texto": "cuatro de los cinco testimonios son opiniones; el argentino es un artículo vigente.",
-          "se_confunden": "el capítulo los presenta seguidos y con el mismo tono celebratorio.",
-          "criterio": "¿la influencia quedó en un texto de doctrina o en el articulado de un código? El art. 1738 argentino es lo segundo.",
-          "error": "se usa la lista completa como prueba de influencia, cuando solo un caso muestra un efecto verificable."
-        },
-        {
-          "par": "Sujeto de derecho vs. capacidad jurídica",
-          "texto": "Rescigno celebra que el código haya preferido la primera noción a la segunda.",
-          "se_confunden": "las dos sirven para decir quién cuenta en el derecho.",
-          "criterio": "¿se pregunta quién es titular, o cuánto puede actuar? La capacidad gradúa; la subjetividad admite o no.",
-          "error": "se dice que el código amplió la capacidad jurídica, cuando amplió quiénes son sujetos."
-        }
-      ],
-      "raw": "- **Elogio doctrinal vs. recepción normativa** — cuatro de los cinco testimonios son opiniones; el argentino es un artículo vigente.\n  - Se confunden porque: el capítulo los presenta seguidos y con el mismo tono celebratorio.\n  - Criterio para decidir: ¿la influencia quedó en un texto de doctrina o en el articulado de un código? El art. 1738 argentino es lo segundo.\n  - Dónde se cae: se usa la lista completa como prueba de influencia, cuando solo un caso muestra un efecto verificable.\n\n- **Sujeto de derecho vs. capacidad jurídica** — Rescigno celebra que el código haya preferido la primera noción a la segunda.\n  - Se confunden porque: las dos sirven para decir quién cuenta en el derecho.\n  - Criterio para decidir: ¿se pregunta quién es titular, o cuánto puede actuar? La capacidad gradúa; la subjetividad admite o no.\n  - Dónde se cae: se dice que el código amplió la capacidad jurídica, cuando amplió quiénes son sujetos."
-    },
-    {
-      "cap": "15",
-      "titulo_cap": "§ 69. La incorporación del daño a la persona",
-      "items": [
-        {
-          "par": "Daño moral vs. daño a la persona",
-          "texto": "el moral es una especie mínima; el daño a la persona es el género que cubre cuerpo, psique y libertad.",
-          "se_confunden": "por décadas el daño moral fue el único rótulo disponible para lo no patrimonial, así que quedó como sinónimo.",
-          "criterio": "¿lo lesionado es el sufrimiento de la víctima, o alguna otra dimensión de su persona? Si es solo dolor, es daño moral.",
-          "error": "se contesta que el art. 1985 amplió el daño moral, cuando creó una categoría más amplia que lo contiene."
-        },
-        {
-          "par": "Reconocer el daño extrapatrimonial vs. repararlo sin límite",
-          "texto": "los códigos alemán, italiano y portugués hicieron lo primero; la novedad peruana es lo segundo.",
-          "se_confunden": "los cuatro códigos mencionan consecuencias no patrimoniales, así que parecen equivalentes.",
-          "criterio": "¿la reparación está condicionada a una lista, a un delito previo o a la gravedad? Si sí, hay límite.",
-          "error": "se dice que el Código de 1984 fue el primero en admitir el daño extrapatrimonial, cuando fue el primero en no restringirlo."
-        }
-      ],
-      "raw": "- **Daño moral vs. daño a la persona** — el moral es una especie mínima; el daño a la persona es el género que cubre cuerpo, psique y libertad.\n  - Se confunden porque: por décadas el daño moral fue el único rótulo disponible para lo no patrimonial, así que quedó como sinónimo.\n  - Criterio para decidir: ¿lo lesionado es el sufrimiento de la víctima, o alguna otra dimensión de su persona? Si es solo dolor, es daño moral.\n  - Dónde se cae: se contesta que el art. 1985 amplió el daño moral, cuando creó una categoría más amplia que lo contiene.\n\n- **Reconocer el daño extrapatrimonial vs. repararlo sin límite** — los códigos alemán, italiano y portugués hicieron lo primero; la novedad peruana es lo segundo.\n  - Se confunden porque: los cuatro códigos mencionan consecuencias no patrimoniales, así que parecen equivalentes.\n  - Criterio para decidir: ¿la reparación está condicionada a una lista, a un delito previo o a la gravedad? Si sí, hay límite.\n  - Dónde se cae: se dice que el Código de 1984 fue el primero en admitir el daño extrapatrimonial, cuando fue el primero en no restringirlo."
-    },
-    {
-      "cap": "16",
-      "titulo_cap": "§ 70. La nueva categorización del sujeto de derecho",
-      "items": [
-        {
-          "par": "Sujeto de derecho vs. persona",
-          "texto": "el primero es el género y el segundo una de sus especies; sin separarlos no entran el concebido ni la organización no inscripta.",
-          "se_confunden": "en el uso corriente y en los códigos anteriores eran lo mismo, y todavía se usan como sinónimos.",
-          "criterio": "¿se le pueden imputar derechos y deberes? Con eso alcanza para ser sujeto; ser persona exige además haber nacido o estar inscripto.",
-          "error": "se dice que el código reconoció al concebido como persona, cuando lo reconoció como sujeto de derecho, que es la categoría más amplia."
-        },
-        {
-          "par": "Organización inscripta vs. no inscripta",
-          "texto": "la primera es la persona jurídica clásica; la segunda actúa igual sin registro y ahora también es sujeto.",
-          "se_confunden": "las dos son agrupaciones de personas con un fin común y las dos actúan en la realidad.",
-          "criterio": "¿completó la inscripción? Solo eso las separa, y ya no decide si es sujeto de derecho.",
-          "error": "se responde que sin inscripción no hay sujeto de derecho, que es exactamente lo que este capítulo vino a corregir."
-        }
-      ],
-      "raw": "- **Sujeto de derecho vs. persona** — el primero es el género y el segundo una de sus especies; sin separarlos no entran el concebido ni la organización no inscripta.\n  - Se confunden porque: en el uso corriente y en los códigos anteriores eran lo mismo, y todavía se usan como sinónimos.\n  - Criterio para decidir: ¿se le pueden imputar derechos y deberes? Con eso alcanza para ser sujeto; ser persona exige además haber nacido o estar inscripto.\n  - Dónde se cae: se dice que el código reconoció al concebido como persona, cuando lo reconoció como sujeto de derecho, que es la categoría más amplia.\n\n- **Organización inscripta vs. no inscripta** — la primera es la persona jurídica clásica; la segunda actúa igual sin registro y ahora también es sujeto.\n  - Se confunden porque: las dos son agrupaciones de personas con un fin común y las dos actúan en la realidad.\n  - Criterio para decidir: ¿completó la inscripción? Solo eso las separa, y ya no decide si es sujeto de derecho.\n  - Dónde se cae: se responde que sin inscripción no hay sujeto de derecho, que es exactamente lo que este capítulo vino a corregir."
-    },
-    {
-      "cap": "17",
-      "titulo_cap": "§ 71. El concebido como sujeto de derecho",
-      "items": [
-        {
-          "par": "Condición resolutoria vs. suspensiva",
-          "texto": "la resolutoria extingue un derecho actual; la suspensiva impide que nazca hasta que ocurra el hecho.",
-          "se_confunden": "las dos aparecen en el mismo artículo atadas a \"que nazca vivo\", y el texto no dice cuál es.",
-          "criterio": "¿el titular tiene el derecho ahora? Si lo tiene y puede perderlo, es resolutoria; si no lo tiene todavía, es suspensiva.",
-          "error": "se explica que los derechos del concebido están en suspenso hasta el nacimiento, que es la lectura que el autor califica de equivocada y que reintroduce la ficción."
-        },
-        {
-          "par": "Ser considerado nacido vs. ser sujeto de derecho",
-          "texto": "la Constitución de 1979 hacía lo primero; el Código de 1984 hace lo segundo.",
-          "se_confunden": "las dos fórmulas parecen proteger al concebido y las dos suenan generosas.",
-          "criterio": "¿se le atribuye titularidad actual, o se lo trata *como si* fuera otra cosa? \"Considerado nacido\" es una ficción que sigue negando su existencia.",
-          "error": "se cita la Constitución de 1979 como antecedente del artículo primero, cuando el autor la pone del lado de la teoría de la ficción."
-        }
-      ],
-      "raw": "- **Condición resolutoria vs. suspensiva** — la resolutoria extingue un derecho actual; la suspensiva impide que nazca hasta que ocurra el hecho.\n  - Se confunden porque: las dos aparecen en el mismo artículo atadas a \"que nazca vivo\", y el texto no dice cuál es.\n  - Criterio para decidir: ¿el titular tiene el derecho ahora? Si lo tiene y puede perderlo, es resolutoria; si no lo tiene todavía, es suspensiva.\n  - Dónde se cae: se explica que los derechos del concebido están en suspenso hasta el nacimiento, que es la lectura que el autor califica de equivocada y que reintroduce la ficción.\n\n- **Ser considerado nacido vs. ser sujeto de derecho** — la Constitución de 1979 hacía lo primero; el Código de 1984 hace lo segundo.\n  - Se confunden porque: las dos fórmulas parecen proteger al concebido y las dos suenan generosas.\n  - Criterio para decidir: ¿se le atribuye titularidad actual, o se lo trata *como si* fuera otra cosa? \"Considerado nacido\" es una ficción que sigue negando su existencia.\n  - Dónde se cae: se cita la Constitución de 1979 como antecedente del artículo primero, cuando el autor la pone del lado de la teoría de la ficción."
-    },
-    {
-      "cap": "18",
-      "titulo_cap": "§ 72. Visión tridimensional de la persona jurídica",
-      "items": [
-        {
-          "par": "Existencia distinta vs. existencia real",
-          "texto": "la persona jurídica existe formalmente, no como un ente separado de las personas que la componen.",
-          "se_confunden": "el art. 78 dice \"existencia distinta\" sin agregar de qué tipo, que es justamente lo que el autor le reprocha.",
-          "criterio": "¿hay alguien actuando y decidiendo? Siempre son personas humanas; el ente ideal solo recibe la imputación.",
-          "error": "se concibe a la persona jurídica como un sujeto que existe por sí mismo, y el autor lo llama un absurdo: sin personas humanas no hay sujeto de derecho."
-        },
-        {
-          "par": "La inscripción crea el sujeto vs. le da la dimensión formal",
-          "texto": "antes de inscribirse la organización ya existe y actúa.",
-          "se_confunden": "el art. 77 ata la personalidad al registro, así que parece que ahí nace todo.",
-          "criterio": "¿qué había antes del registro? Una organización de personas con fines valiosos, o sea dos de las tres dimensiones.",
-          "error": "se contesta que sin inscripción no hay nada jurídicamente relevante, cuando el propio código reconoce a la organización no inscripta."
-        }
-      ],
-      "raw": "- **Existencia distinta vs. existencia real** — la persona jurídica existe formalmente, no como un ente separado de las personas que la componen.\n  - Se confunden porque: el art. 78 dice \"existencia distinta\" sin agregar de qué tipo, que es justamente lo que el autor le reprocha.\n  - Criterio para decidir: ¿hay alguien actuando y decidiendo? Siempre son personas humanas; el ente ideal solo recibe la imputación.\n  - Dónde se cae: se concibe a la persona jurídica como un sujeto que existe por sí mismo, y el autor lo llama un absurdo: sin personas humanas no hay sujeto de derecho.\n\n- **La inscripción crea el sujeto vs. le da la dimensión formal** — antes de inscribirse la organización ya existe y actúa.\n  - Se confunden porque: el art. 77 ata la personalidad al registro, así que parece que ahí nace todo.\n  - Criterio para decidir: ¿qué había antes del registro? Una organización de personas con fines valiosos, o sea dos de las tres dimensiones.\n  - Dónde se cae: se contesta que sin inscripción no hay nada jurídicamente relevante, cuando el propio código reconoce a la organización no inscripta."
-    },
-    {
-      "cap": "19",
-      "titulo_cap": "§ 73. El comité como persona jurídica + § 74. Regulación jurídica de la organización de personas no inscripta",
-      "items": [
-        {
-          "par": "Organización inscripta vs. no inscripta",
-          "texto": "la diferencia es solo el registro, pero cambia quién responde.",
-          "se_confunden": "las dos son grupos de personas que realizan actos jurídicos de todo tipo, y desde afuera se comportan igual.",
-          "criterio": "¿a quién se imputan los derechos y deberes? En la no inscripta a cada miembro en proporción; en la inscripta a un ente ideal.",
-          "error": "se contesta que la organización de hecho no puede obligarse, cuando sí puede: lo que cambia es quién responde."
-        },
-        {
-          "par": "El comité en Perú vs. en Italia",
-          "texto": "el código peruano lo eleva a persona jurídica; el italiano de 1942 lo deja como organización no inscripta.",
-          "se_confunden": "los dos códigos lo regulan y lo definen de modo parecido.",
-          "criterio": "¿se le reconoce personalidad jurídica al inscribirse? Solo el peruano lo hace.",
-          "error": "se presenta la regulación del comité como el aporte, cuando el aporte es la categoría que se le asigna."
-        }
-      ],
-      "raw": "- **Organización inscripta vs. no inscripta** — la diferencia es solo el registro, pero cambia quién responde.\n  - Se confunden porque: las dos son grupos de personas que realizan actos jurídicos de todo tipo, y desde afuera se comportan igual.\n  - Criterio para decidir: ¿a quién se imputan los derechos y deberes? En la no inscripta a cada miembro en proporción; en la inscripta a un ente ideal.\n  - Dónde se cae: se contesta que la organización de hecho no puede obligarse, cuando sí puede: lo que cambia es quién responde.\n\n- **El comité en Perú vs. en Italia** — el código peruano lo eleva a persona jurídica; el italiano de 1942 lo deja como organización no inscripta.\n  - Se confunden porque: los dos códigos lo regulan y lo definen de modo parecido.\n  - Criterio para decidir: ¿se le reconoce personalidad jurídica al inscribirse? Solo el peruano lo hace.\n  - Dónde se cae: se presenta la regulación del comité como el aporte, cuando el aporte es la categoría que se le asigna."
     }
   ],
   "autoevaluacion": [
@@ -1429,132 +828,6 @@
         {
           "pregunta": "Un manual explica la persona jurídica solo como un centro de imputación creado por la ley. ¿Qué está haciendo y qué se pierde?",
           "respuesta": "Está tomando una sola de las tres dimensiones, la formal-normativa. Se pierden la organización actuante de personas y la finalidad valiosa común que persiguen, sin las cuales el fenómeno no es comprensible; el autor lo llama una mutilación (p. 147). De reducciones así salió la polémica de siglos sobre si la persona jurídica es ficción, realidad o creación normativa: cada tesis captaba una dimensión distinta del mismo fenómeno."
-        }
-      ]
-    },
-    {
-      "cap": "11",
-      "titulo_cap": "§ 64. Sustento jusfilosófico de los mensajes principistas y doctrinales aportados a la codificación civil comparada por el código civil peruano de 1984",
-      "preguntas": [
-        {
-          "pregunta": "Explique por qué el derecho carecería de sentido si la persona no fuera libre y coexistencial, y qué implicaciones tiene eso para lo que un código debe proteger.",
-          "respuesta": "Porque la estructura misma del derecho —mandar, prohibir, permitir— presupone un destinatario capaz de decidir: solo a quien puede elegir se le propone cumplir o incumplir un deber, y a un robot no se le plantea esa dicotomía. Pero la libertad sola no alcanza: el derecho no se hizo para un hombre aislado y solo le interesan las conductas intersubjetivas, así que hace falta también la coexistencialidad. De las dos juntas sale su doble papel: proteger a la persona como ser libre e impedir que al ejercer esa libertad dañe \"el proyecto existencial del otro\" (pp. 152-153). La implicación para un código es que la institución central deja de ser la propiedad y pasa a ser la persona, con el deber genérico de no dañar, la solidaridad y el bien común."
-        },
-        {
-          "pregunta": "Un legislador sostiene que basta con proteger bien la propiedad para que las personas puedan realizarse. ¿Qué concepción del ser humano está suponiendo?",
-          "respuesta": "Una individualista y patrimonialista: la del siglo XIX que el autor atribuye al Código de 1936 y a la Constitución de 1933, donde la institución central era la inviolable propiedad y no la persona humana (p. 152). Omite que la realización requiere coexistencia, y que por eso el derecho protege también el proyecto de vida del otro."
-        }
-      ]
-    },
-    {
-      "cap": "12",
-      "titulo_cap": "§ 65. El preámbulo personalista de la derogada constitución peruana de 1979",
-      "preguntas": [
-        {
-          "pregunta": "¿Qué se entiende por el personalismo de la Constitución peruana de 1979? Explique cómo lo formula su articulado y cuáles son sus implicaciones frente a la fórmula de 1993.",
-          "respuesta": "El personalismo constitucional consiste en poner a la persona, y no al Estado ni al patrimonio, como aquello a cuyo servicio están las instituciones. La Constitución de 1979 lo formula en su artículo 1: la persona es el fin supremo de la sociedad y del Estado, de donde deriva la obligación de todos de respetarla y protegerla (p. 159). Lo completan el artículo 4, que impone tutelar cualquier interés sustentado en la dignidad y autoriza la analogía para proteger derechos que el ordenamiento positivo no recoge, y el Preámbulo, que reconoce la primacía de la persona humana y derechos \"anteriores y superiores al Estado\". La implicación se ve en el contraste con la Constitución de 1993, que pone como fin supremo \"la defensa de la persona humana y el respeto a su dignidad\" (p. 160): ahí el fin es una actividad y la persona queda como su objeto, o sea como el medio del que nos valemos. El autor califica la diferencia de \"notoria\" sin mostrar una consecuencia práctica."
-        },
-        {
-          "pregunta": "Alguien reclama la protección de un interés que ninguna norma menciona, pero que se apoya en la dignidad. Bajo la Constitución de 1979, ¿qué herramienta tiene el juez?",
-          "respuesta": "La analogía: el art. 4 autoriza explícitamente a usarla para proteger derechos de la persona no recogidos en el ordenamiento positivo, junto con el deber de tutelar todo interés sustentado en la dignidad (p. 159). No hace falta que el derecho invocado esté enumerado en el texto, que es la diferencia entre cerrar una lista y habilitar la extensión a lo no previsto."
-        }
-      ]
-    },
-    {
-      "cap": "13",
-      "titulo_cap": "§ 66. Los significativos aportes del código civil peruano de 1984 + § 67. El personalismo del código civil 1984",
-      "preguntas": [
-        {
-          "pregunta": "¿Qué se entiende por el personalismo del Código Civil peruano de 1984? Explique a qué orientación se opone y qué relación guarda con la teoría tridimensional.",
-          "respuesta": "El personalismo del código de 1984 es la concepción que pone a la persona, en su vida concreta, como finalidad del ordenamiento, y no al individuo aisladamente considerado ni a su patrimonio. El autor lo considera lo más valioso del código, por encima de sus aportes técnicos: \"más allá de dichos aportes, lo más trascendente y valioso [...] es su inédita inspiración personalista\" (pp. 162-163). Se opone a la tendencia histórica de los códigos del siglo XIX, que hacían de la tutela del individuo aislado y del patrimonio su finalidad primordial. Con la teoría tridimensional guarda una relación de fundamento y no de consecuencia: la concepción personalista \"ha sido la base teórica indispensable\" para concebir el derecho como interacción de vida humana social, valores y normas (p. 163), y no al revés. El propio autor admite que el código conserva rezagos individualistas y patrimonialistas."
-        },
-        {
-          "pregunta": "El autor sostiene que el código es personalista y a la vez admite que mantiene rezagos individualistas. ¿Se contradice?",
-          "respuesta": "No: sostiene que la inspiración dominante es personalista y que la transición entre una época y otra está en curso, no consumada (p. 164). Discutible: sin decir cuáles son esos rezagos ni cuánto pesan, la tesis se vuelve difícil de refutar, y el pronóstico sobre lo que dirán los historiadores se apoya en \"varias autorizadas voces\" que no identifica."
-        }
-      ]
-    },
-    {
-      "cap": "14",
-      "titulo_cap": "§ 68. Apreciaciones de juristas extranjeros sobre el código civil de 1984",
-      "preguntas": [
-        {
-          "pregunta": "Ubique al Código Civil peruano de 1984 en la codificación comparada: ¿qué le reconocen los juristas extranjeros que cita el capítulo y hasta dónde llega su influencia?",
-          "respuesta": "Los juristas extranjeros que el autor reúne le reconocen al código de 1984 su modernidad y, sobre todo, su inspiración personalista. Rescigno destaca dos novedades del Libro del Derecho de las Personas —haber extendido las fronteras de la subjetividad, incluyendo al concebido y a los entes de hecho, y el tratamiento de los derechos de la persona— y celebra que prefiera la noción de sujeto de derecho a las de personalidad y capacidad jurídica (pp. 165-166). Fueyo Laneri lo considera un magnífico precedente que supera a los códigos latinoamericanos en esta materia, y Pérez Vargas y Schipani subrayan su base axiológica personalista y la centralidad de la persona (pp. 166-168). La influencia con efecto verificable, en cambio, es una sola: Alterini incorporó el aporte del art. 1985 al proyecto argentino de 1998, y esa línea llegó al art. 1738 del Código Civil y Comercial de 2014, que declara indemnizable el daño a la interferencia del proyecto de vida (p. 167). Los demás testimonios son elogio doctrinal, no recepción normativa."
-        },
-        {
-          "pregunta": "El autor dice haber escogido a los juristas \"al azar\". ¿Qué problema tiene esa afirmación y cómo afecta a lo que el capítulo puede probar?",
-          "respuesta": "Que no puede ser al azar si todos los seleccionados son elogiosos: es una muestra sesgada por construcción. El capítulo prueba que hubo reconocimiento de juristas de peso, no que la recepción haya sido mayoritariamente favorable ni cuáles fueron las objeciones."
-        }
-      ]
-    },
-    {
-      "cap": "15",
-      "titulo_cap": "§ 69. La incorporación del daño a la persona",
-      "preguntas": [
-        {
-          "pregunta": "¿Qué se entiende por daño a la persona? Explique en qué se distingue del daño moral y cuáles son las implicaciones de repararlo sin limitación alguna.",
-          "respuesta": "El daño a la persona es la categoría genérica que incorpora el art. 1985 del Código Civil peruano de 1984: cualquier daño al ser humano entendido como unidad psicosomática sustentada en su libertad, tanto en su estructura psicosomática —cuerpo, psique, salud— como en su libertad fenoménica, o sea su proyecto de vida (pp. 172-173). Se distingue del daño moral o *pretium doloris* porque este es solo el dolor o sufrimiento, un daño psíquico referido a un aspecto del ser humano, y era el único rótulo no patrimonial disponible bajo el Código de 1936, que privilegiaba \"el haber sobre el ser\" (p. 172). La implicación central es que la reparación no queda condicionada: donde el código alemán de 1900 enumeraba taxativamente los casos, el italiano de 1942 exigía un delito previo y el portugués de 1967 pedía gravedad, el art. 1985 obliga a reparar sin limitación alguna las consecuencias patrimoniales y extrapatrimoniales. La contrapartida es que deja al juez sin criterio de cuantificación, cosa que el capítulo no discute."
-        },
-        {
-          "pregunta": "Una persona pierde la posibilidad de ejercer su oficio por una lesión, pero conserva su patrimonio y no sufre dolor físico. ¿Habría tenido reparación bajo el Código de 1936? ¿Y bajo el art. 1985?",
-          "respuesta": "Bajo el de 1936 muy probablemente no: no hay perjuicio valuable directamente en dinero ni dolor, y solo se resarcía daño emergente o lucro cesante, más excepcionalmente el daño moral. Bajo el art. 1985 sí: es un daño a la libertad fenoménica, o sea al proyecto de vida, y se repara sin limitación alguna (pp. 172-174)."
-        }
-      ]
-    },
-    {
-      "cap": "16",
-      "titulo_cap": "§ 70. La nueva categorización del sujeto de derecho",
-      "preguntas": [
-        {
-          "pregunta": "¿Qué se entiende por sujeto de derecho y en qué se distingue de la persona? Ubique dentro de esa categoría a los cuatro sujetos que reconoce el Código Civil peruano de 1984.",
-          "respuesta": "Sujeto de derecho es el ente al que se imputan derechos y deberes, es decir situaciones jurídicas subjetivas. Se distingue de la persona en que esta es solo una de sus especies: para ser persona hay que además haber nacido o estar inscripto, y el autor califica la diferencia de \"carácter eminentemente técnico\", una herramienta que sirve para incorporar al código una categorización nueva (p. 175). Dentro de la categoría entran cuatro sujetos: la persona natural, la persona jurídica —organización de personas inscripta—, el concebido o persona por nacer, y la organización de personas no inscripta. Los dos últimos se incorporan porque actúan efectivamente en la realidad, directamente o por medio de representantes, aunque no hayan recibido inscripción, y así se pasa de dos sujetos de derecho a cuatro (p. 176)."
-        },
-        {
-          "pregunta": "Un grupo de vecinos recauda fondos y contrata servicios sin haberse inscripto nunca. Bajo la categorización del código, ¿qué es y por qué?",
-          "respuesta": "Es una organización de personas no inscripta, y por lo tanto sujeto de derecho: se le imputan derechos y deberes y actúa en la realidad, directamente o por representantes, aunque no tenga registro (pp. 175-176). No es persona jurídica, porque esa calidad exige la inscripción."
-        }
-      ]
-    },
-    {
-      "cap": "17",
-      "titulo_cap": "§ 71. El concebido como sujeto de derecho",
-      "preguntas": [
-        {
-          "pregunta": "¿Qué se entiende por el concebido como sujeto de derecho? Explique la posición del Código Civil peruano de 1984 y sus implicaciones frente a la teoría de la ficción.",
-          "respuesta": "El concebido es sujeto de derecho: el artículo primero del Código peruano de 1984, sin antecedentes en la codificación comparada, declara que la vida humana comienza con la concepción y que el concebido es sujeto de derecho, con fundamento biológico en la singamia y en el código genético propio, único e irrepetible, que existe desde ese instante (p. 181). Se opone a la teoría de la ficción, que lo tiene por una nada jurídica y deja sus derechos en suspenso hasta el nacimiento, y que el autor rechaza por una paradoja —\"el concebido no es cuando es y, cuando se considera que es, ya no es\"— y por una incoherencia, porque los ordenamientos que lo declaran inexistente regulan su representación y sancionan el aborto, dejando derechos sin sujeto (p. 178). La implicación técnica decisiva es que la condición de nacer vivo que el artículo pone a los derechos patrimoniales es resolutoria y no suspensiva: si estuvieran en suspenso el concebido no tendría ningún derecho y dejaría de ser sujeto (pp. 183-184). Por eso el propio autor propone desde 1991 quitar del artículo la palabra \"condición\" y la expresión \"en todo lo que le favorece\"."
-        },
-        {
-          "pregunta": "El fundamento del inicio de la vida es la singamia, un hecho biológico. ¿Alcanza un dato biológico para resolver una cuestión jurídica?",
-          "respuesta": "No por sí solo: la singamia dice cuándo empieza un proceso biológico continuo con código genético propio, pero decidir que desde ahí hay un sujeto de derecho es una valoración, y el capítulo trata el dato como si zanjara la cuestión. Discutible: el autor podría responder que la valoración ya está en el personalismo, y que el dato solo fija la fecha."
-        }
-      ]
-    },
-    {
-      "cap": "18",
-      "titulo_cap": "§ 72. Visión tridimensional de la persona jurídica",
-      "preguntas": [
-        {
-          "pregunta": "¿Qué se entiende por la visión tridimensional de la persona jurídica? Ubique las tres dimensiones en el articulado del Código Civil peruano y explique qué significa que su \"existencia distinta\" sea formal.",
-          "respuesta": "La persona jurídica es tridimensional: una organización actuante de personas, una finalidad valiosa común y una calificación formal-normativa, y las tres se leen en el propio código. Las dos primeras están a la vista en el art. 80, que define a la asociación como \"organización estable de personas [...] que a través de una actividad común persigue un fin no lucrativo\", y se repiten en los arts. 99, 111 y 134 para la fundación, el comité y las comunidades campesinas y nativas (p. 184). La tercera está en los arts. 77 y 78: se adquiere con la inscripción en el registro, que reduce la pluralidad de seres humanos a un centro ideal y unitario de imputación, inexistente en la realidad y conocido por su nombre registrado, al punto de que \"la persona jurídica termina siendo una simple expresión lingüística\" (p. 185). Que su existencia distinta sea formal significa que no es un ente separado que actúe por sí mismo: quienes actúan y deciden son siempre personas humanas, y \"sin personas humanas no existen sujetos de derecho\". El autor le reprocha al art. 78 no haberlo dicho expresamente, corrección que propuso al elaborarse el código y que no prosperó."
-        },
-        {
-          "pregunta": "Un acreedor no puede cobrarle a los socios de una asociación inscripta. Según el capítulo, ¿de qué depende esa protección y cómo debería presentarla el código?",
-          "respuesta": "Depende del simple hecho de la inscripción en el registro, que constituye un centro ideal al que se imputan las obligaciones. El autor sostiene que el código debería decir expresamente que esa no responsabilidad personal de los miembros es **excepcional**, y no una consecuencia natural de la personalidad jurídica (pp. 185-186)."
-        }
-      ]
-    },
-    {
-      "cap": "19",
-      "titulo_cap": "§ 73. El comité como persona jurídica + § 74. Regulación jurídica de la organización de personas no inscripta",
-      "preguntas": [
-        {
-          "pregunta": "Ubique al comité y a la organización de personas no inscripta dentro de los sujetos de derecho del Código Civil peruano de 1984: ¿qué los distingue y qué consecuencia trae esa diferencia?",
-          "respuesta": "El comité es una organización de personas dedicada a la recaudación pública de aportes destinados a una finalidad valiosamente altruista (art. 111), y el código de 1984 le reconoce la calidad de persona jurídica siempre que se inscriba, cosa que ningún otro código vigente hace: el italiano de 1942 lo regula como organización no inscripta (p. 187). La organización de personas no inscripta —antes llamada irregular o de hecho— es también sujeto de derecho aunque no figure en registro alguno, porque actúa y se le imputan derechos y deberes. Lo único que las distingue es el registro: en sus versiones de asociación, fundación, comité o sociedad, ambas están formadas por seres humanos que realizan actos jurídicos de todo tipo (p. 188). La consecuencia sí es grande: en la no inscripta las situaciones jurídicas subjetivas se atribuyen a cada uno de sus miembros proporcionalmente, y en la inscripta se imputan a un ente ideal, inexistente en la realidad. Por eso la limitación de responsabilidad que trae la inscripción es un privilegio concedido y no un atributo natural de la personalidad."
-        },
-        {
-          "pregunta": "Un grupo recauda fondos para una escuela y contrae una deuda, sin haberse inscripto. Si no alcanza lo recaudado, ¿quién responde y por qué?",
-          "respuesta": "Responden los miembros, proporcionalmente. Al no estar inscripta, un dispositivo legal atribuye a cada uno las situaciones jurídicas subjetivas, en vez de imputarlas a un ente ideal (p. 188)."
         }
       ]
     }
@@ -1714,155 +987,10 @@
       "pregunta": "Cuáles son las tres dimensiones de la persona jurídica",
       "respuesta": "Organización de personas, finalidad valiosa y calificación formal-normativa",
       "cap": "10"
-    },
-    {
-      "pregunta": "Cómo define al ser humano la filosofía de la existencia según este capítulo",
-      "respuesta": "Como una unidad psicosomática sustentada en su libertad, coexistencial y temporal",
-      "cap": "11"
-    },
-    {
-      "pregunta": "Por qué carecería de sentido el derecho si el hombre no fuera libre",
-      "respuesta": "Porque solo a quien puede elegir se le propone cumplir o incumplir un deber",
-      "cap": "11"
-    },
-    {
-      "pregunta": "Qué institución protegía sobre todo el Código Civil peruano de 1936",
-      "respuesta": "La inviolable propiedad, no la persona humana",
-      "cap": "11"
-    },
-    {
-      "pregunta": "Qué declara el art. 1 de la Constitución peruana de 1979",
-      "respuesta": "Que la persona es el fin supremo de la sociedad y del Estado",
-      "cap": "12"
-    },
-    {
-      "pregunta": "Cómo formula el fin supremo la Constitución de 1993",
-      "respuesta": "Como la defensa de la persona humana y el respeto a su dignidad",
-      "cap": "12"
-    },
-    {
-      "pregunta": "Qué autoriza el art. 4 de la Constitución de 1979",
-      "respuesta": "Usar la analogía para proteger derechos de la persona no recogidos en el ordenamiento",
-      "cap": "12"
-    },
-    {
-      "pregunta": "Qué es el personalismo humanista en el derecho",
-      "respuesta": "La concepción que pone a la persona, no al individuo aislado ni al patrimonio, como finalidad",
-      "cap": "13"
-    },
-    {
-      "pregunta": "Cuál es lo más valioso del Código Civil peruano de 1984 según el autor",
-      "respuesta": "Su inédita inspiración personalista, más allá de sus aportes técnicos",
-      "cap": "13"
-    },
-    {
-      "pregunta": "Qué aportes enumera el § 66 del Código de 1984",
-      "respuesta": "El daño a la persona, dos nuevos sujetos de derecho y el comité como persona jurídica",
-      "cap": "13"
-    },
-    {
-      "pregunta": "Qué relación afirma entre personalismo y tridimensionalismo",
-      "respuesta": "El personalismo es la base teórica indispensable de la teoría tridimensional",
-      "cap": "13"
-    },
-    {
-      "pregunta": "Cómo distingo un elogio doctrinal de una recepción normativa",
-      "respuesta": "El elogio queda en doctrina; la recepción llega al articulado de un código",
-      "cap": "14"
-    },
-    {
-      "pregunta": "Qué es el daño a la persona en el art. 1985 del Código peruano de 1984",
-      "respuesta": "Cualquier daño al ser humano, en su estructura psicosomática o en su libertad",
-      "cap": "15"
-    },
-    {
-      "pregunta": "Qué es el daño al proyecto de vida",
-      "respuesta": "El daño cuya consecuencia es la frustración del proyecto de vida de la persona",
-      "cap": "15"
-    },
-    {
-      "pregunta": "Por qué el art. 1985 es distinto de los códigos alemán, italiano y portugués",
-      "respuesta": "Porque repara sin limitación alguna, sin lista taxativa, delito previo ni requisito de gravedad",
-      "cap": "15"
-    },
-    {
-      "pregunta": "Cómo distingo el daño moral del daño a la persona",
-      "respuesta": "El moral es solo el dolor o sufrimiento; el daño a la persona es el género que cubre cuerpo, psique y libertad",
-      "cap": "15"
-    },
-    {
-      "pregunta": "Qué es un sujeto de derecho",
-      "respuesta": "El ente al que se imputan derechos y deberes, es decir situaciones jurídicas subjetivas",
-      "cap": "16"
-    },
-    {
-      "pregunta": "Cuáles son los cuatro sujetos de derecho del Código peruano de 1984",
-      "respuesta": "Persona natural, persona jurídica, concebido y organización de personas no inscripta",
-      "cap": "16"
-    },
-    {
-      "pregunta": "Cómo distingo sujeto de derecho de persona",
-      "respuesta": "Sujeto es el género: basta que se le imputen derechos y deberes; ser persona exige haber nacido o estar inscripto",
-      "cap": "16"
-    },
-    {
-      "pregunta": "Qué dice el artículo primero del Código Civil peruano de 1984",
-      "respuesta": "Que la vida humana comienza con la concepción y que el concebido es sujeto de derecho",
-      "cap": "17"
-    },
-    {
-      "pregunta": "Qué sostiene la teoría de la ficción sobre el concebido",
-      "respuesta": "Que es una nada jurídica y que sus derechos quedan en suspenso hasta el nacimiento",
-      "cap": "17"
-    },
-    {
-      "pregunta": "Por qué la condición del artículo primero es resolutoria y no suspensiva",
-      "respuesta": "Porque si los derechos estuvieran en suspenso el concebido no tendría ninguno y no sería sujeto de derecho",
-      "cap": "17"
-    },
-    {
-      "pregunta": "Cómo distingo condición resolutoria de suspensiva",
-      "respuesta": "La resolutoria extingue un derecho que ya se tiene; la suspensiva impide que nazca",
-      "cap": "17"
-    },
-    {
-      "pregunta": "Qué dos dimensiones aparecen en el art. 80 del Código Civil peruano",
-      "respuesta": "La sociológico-existencial en organización de personas, y la axiológica en el fin no lucrativo",
-      "cap": "18"
-    },
-    {
-      "pregunta": "Por qué la existencia distinta del art. 78 es solo formal",
-      "respuesta": "Porque quienes actúan y deciden son siempre personas humanas: sin ellas no hay sujeto de derecho",
-      "cap": "18"
-    },
-    {
-      "pregunta": "Qué propone el autor sobre la no responsabilidad de los miembros",
-      "respuesta": "Que el código diga expresamente que es excepcional, y no una consecuencia natural",
-      "cap": "18"
-    },
-    {
-      "pregunta": "Cómo define el art. 111 al comité",
-      "respuesta": "Organización de personas dedicada a la recaudación pública de aportes con fin altruista",
-      "cap": "19"
-    },
-    {
-      "pregunta": "Qué categoría le dio el Código de 1984 al comité",
-      "respuesta": "La de persona jurídica, siempre que se inscriba en el registro",
-      "cap": "19"
-    },
-    {
-      "pregunta": "Cuál es la única diferencia entre una organización inscripta y una no inscripta",
-      "respuesta": "Que una está inscripta en un registro público y la otra no",
-      "cap": "19"
-    },
-    {
-      "pregunta": "A quién se imputan los derechos y deberes en cada una",
-      "respuesta": "En la no inscripta a cada miembro proporcionalmente; en la inscripta a un ente ideal",
-      "cap": "19"
     }
   ],
   "estadisticas": {
-    "capitulos_totales": 19,
-    "capitulos_con_documento": 19
+    "capitulos_totales": 10,
+    "capitulos_con_documento": 10
   }
 }

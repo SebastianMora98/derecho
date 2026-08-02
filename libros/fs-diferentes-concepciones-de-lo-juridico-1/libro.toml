@@ -18,6 +18,16 @@ tiempo = "90 minutos"
 # paginas / capitulos / subtitulos / parrafos — ver la nota en prompts/estudio.md
 formato_citas = "paginas"
 
+# Encabezados que `dividir` descarta. Son expresiones regulares, sin distinguir
+# mayúsculas.
+#
+# Se saca el apartado C entero —«Personalismo, tridimensionalismo y otros
+# aportes del código civil peruano de 1984 a la codificación civil
+# comparada»—, que son los parágrafos § 64 a § 74: material sobre el código
+# civil peruano que no entra en la materia. El libro queda en los apartados
+# A y B, § 53 a § 63.
+omitir = ['^§\s*(6[4-9]|7[0-4])\.']
+
 # Variantes de la plantilla a activar. Ver prompts/variantes.md
 # Opciones: examen, investigacion, tecnico, narrativo
 #
@@ -43,8 +53,3 @@ hasta = 6
 titulo = "B) La concepción tridimensional de lo jurídico"
 desde = 7
 hasta = 10
-
-[[partes]]
-titulo = "C) Personalismo, tridimensionalismo y otros aportes del código civil peruano de 1984 a la codificación civil comparada"
-desde = 11
-hasta = 19
