@@ -7,7 +7,15 @@
   "nivel": "intermedio",
   "formato_citas": "capitulos",
   "contenedor": "",
-  "resumen": [],
+  "resumen": [
+    "El texto contesta con qué derecho se castiga y, sobre todo, hasta dónde. La respuesta de Beccaria es una sola medida. Al unirse en sociedad, cada uno cedió la porción mínima de libertad necesaria para vivir seguro, y esa suma forma un **depósito** que el soberano administra sin ser su dueño. La pena solo se justifica por la **absoluta necesidad** de defender ese depósito; lo que la excede no es justicia sino **tiranía**. Y mira hacia adelante: sirve para impedir daños nuevos, no para afligir al reo ni deshacer lo hecho.",
+    "La primera parte deduce en cascada. Si la pena nace del pacto, solo el legislador puede fijarla, y el juez que agrega algo por su cuenta no impone una pena más dura sino una pena sin ley: su oficio se reduce a un **silogismo**, comparar el hecho probado con la norma escrita. Consultar el espíritu de la ley entregaría la suerte del acusado al humor del que juzga; de ahí que deba ser escrita, clara y en la lengua del pueblo. Los delitos forman una **escala** según el daño que hacen a la sociedad, y las penas la siguen sin atender a la intención del autor ni a la gravedad del pecado.",
+    "La segunda parte aplica esa vara. Cae el **tormento**, que no mide la verdad sino la resistencia del cuerpo; caen la acusación secreta y la demora, porque la pena enseña por su cercanía en el tiempo. Y aparece la fórmula que ordena el resto: lo que frena el delito no es la crueldad sino la **infalibilidad**, la certeza de que llegará. Sobre eso monta su alegato contra la pena de muerte, que no es de pura piedad: nadie pudo ceder un derecho sobre su vida, y el ejemplo prolongado impresiona más que el espectáculo momentáneo. Tampoco es abolicionista puro: admite casos de necesidad y propone la esclavitud perpetua. Termina en que prevenir vale más que castigar, y en el teorema: la pena debe ser **pública, pronta, necesaria, la mínima posible, proporcionada y dictada por la ley**."
+  ],
+  "resumen_corto": [
+    "Para Beccaria un delito es un hecho que perjudica a la sociedad, y nada más: ni una falta religiosa ni una maldad interior. Ese **daño social** es lo único que decide cuánto se castiga, y de ahí la **proporción** entre delito y pena. Un castigo que no previene nada es injusto por inútil.",
+    "Delitos y penas solo existen si una ley escrita los fijó antes —el **principio de legalidad**—, y el juez no puede ir más allá de ella. Un castigo moderado pero seguro disuade más que uno terrible del que se espera escapar: lo decisivo es la **certeza**, y de ahí sus ataques a la tortura y a la pena de muerte."
+  ],
   "fuente_url": "",
   "grupo": "Clase A",
   "partes": [],

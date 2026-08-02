@@ -20,6 +20,21 @@ nivel = "principiante"
 # examen / investigacion / cultura-general / aplicacion-practica
 proposito = "examen"
 
+# Entrada destacada: lo que hay que saber del texto para una prueba. Se
+# muestra arriba del resumen, en cuerpo mayor.
+resumen_corto = """
+Toda ciencia tiene un objeto de estudio propio; el derecho arrastra tres
+respuestas rivales sobre el suyo: la **norma jurídica** —la de Kelsen—, la
+justicia, o la vida humana y las relaciones entre personas. Cada una toma una
+parte y la hace pasar por el todo. La norma, por ejemplo, es pura forma vacía
+de contenido: alcanza como objeto de la lógica jurídica, no de toda la
+disciplina.
+
+La respuesta de Fernández Sessarego es que el objeto es la interacción de los
+tres: **vida humana, valores y normas**. Ninguno es derecho por sí solo y
+ninguno puede faltar. Eso es la **teoría tridimensional del derecho**.
+"""
+
 # Resumen general. Es lo único que se publica de esta entrada: sin vocabulario,
 # sin distinciones, sin test y sin flashcards, a pedido. Prosa a mano, párrafos
 # separados por una línea en blanco, markdown inline permitido.
@@ -46,7 +61,7 @@ también el clima de época que lo empujó hacia la filosofía de la existencia:
 la posguerra, y una tecnología que avanzaba más rápido de lo que el derecho
 podía regularla.
 
-La salida le llevó años, y la explica con tres analogías cotidianas: un motor,
+La salida le llevó años, y la explica con analogías cotidianas: un motor,
 donde ninguna pieza es el motor pero si se saca una el motor se detiene; y un
 pisco sour, donde ni el pisco, ni el limón, ni el azúcar son la bebida, pero
 ninguno puede faltar. La conclusión, que fue su tesis de bachiller en 1950, es

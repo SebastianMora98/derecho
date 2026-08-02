@@ -14,6 +14,23 @@ nivel = "principiante"
 # examen / investigacion / cultura-general / aplicacion-practica
 proposito = "examen"
 
+# Entrada destacada: lo que hay que saber del texto para una prueba. Se
+# muestra arriba del resumen, en cuerpo mayor.
+resumen_corto = """
+Fernández Sessarego sostiene que el Derecho no existe para realizar la
+justicia, como suele enseñarse, sino para **proteger la libertad**. Para él la
+persona es libertad antes que razón, y se hace a sí misma eligiendo un
+**proyecto de vida** que el Derecho debe permitirle cumplir. La justicia, la
+igualdad y la solidaridad siguen importando, pero como medios de esa libertad
+y no como fin último.
+
+Mantiene su tesis sobre el objeto de estudio y la lleva a instituciones
+concretas: toda persona tiene por igual **capacidad de goce**, la aptitud para
+ser titular de derechos, que ninguna ley concede ni quita; otra cosa es la
+**capacidad de ejercicio**, la de actuarlos por sí misma, que la ley sí puede
+limitar.
+"""
+
 # Resumen general. Es lo único que se publica de esta entrada: sin vocabulario,
 # sin distinciones, sin test y sin flashcards, a pedido.
 resumen = """

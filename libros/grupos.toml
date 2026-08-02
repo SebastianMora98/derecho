@@ -19,3 +19,9 @@ resena = "clase-a.md"
 [[grupos]]
 nombre = "Clase B"
 orden = 2
+# Acá el documento de la sección no es una reseña sino el taller resuelto, así
+# que se renombra el título de la hoja, su bajada y el enlace del índice.
+resena = "clase-b.md"
+resena_titulo = "Respuestas del taller"
+resena_bajada = "Las seis preguntas del taller contestadas con las lecturas de esta clase."
+resena_enlace = "Respuestas del taller de Clase B"

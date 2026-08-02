@@ -29,10 +29,10 @@ web/                  sitio Astro: lee el JSON, arma el HTML (`npm run build`)
   src/lib/            md.ts (markdown-it, único renderizador) y consolidados.ts
 sitio/                HTML que arma Astro — fuera de git, lo reconstruye Vercel
 libros/
-  grupos.toml         secciones del índice (las clases) y su reseña conjunta
-  resenas/            markdown de las reseñas conjuntas — en git
+  grupos.toml         secciones del índice (las clases) y su documento propio
+  resenas/            markdown del documento de cada sección — en git
 libros/<slug>/
-  libro.toml          ficha editable: autor, nivel, propósito, variantes, resumen, grupo
+  libro.toml          ficha editable: autor, nivel, propósito, variantes, resumen(+corto), grupo
   libro.md            conversión completa a Markdown (fuera de git)
   libro.json          el mismo JSON de web/src/data/, al lado del contenido que describe — en git
   original/           copia del archivo fuente (fuera de git)
@@ -366,6 +366,56 @@ párrafos separados por una línea en blanco y markdown inline permitido
 bloque 2 de un capítulo, así que el JSON sigue sin llevar HTML. Un libro sin
 esa clave simplemente no muestra el bloque.
 
+**Los seis lo tienen.** El molde, fijado por el de *Derecho y persona* y
+respetado por los demás: **3 párrafos, entre 280 y 340 palabras**, con el
+primero planteando la pregunta que el texto contesta y su tesis, el segundo el
+primer gran movimiento y el tercero adónde llega. Negrita en 2 a 4 términos por
+párrafo, y se habla del texto, no del lector. Las dos entradas «solo resumen»
+se salen del molde a propósito —4 párrafos— porque ahí el resumen *es* todo el
+contenido, no la puerta de entrada a unos capítulos.
+
+Los tres que faltaban (Beccaria, Foucault, Marina) se escribieron con **un
+agente por libro, los tres en paralelo**. El reparto es seguro porque cada uno
+toca un `libro.toml` distinto y —a diferencia de los documentos de estudio— el
+resumen no depende de `contexto_previo` ni del glosario, así que no hay que
+respetar ningún orden. Lo que mantuvo el resultado parejo fue una
+**especificación compartida** con el molde, el contrato técnico y **el resumen
+ya publicado pegado entero como referencia de voz**. Aun así hubo que revisar a
+mano: tres de los cuatro habían abierto con la misma fórmula («El texto
+contesta…»), que no se nota en uso normal pero suena a plantilla si alguien
+recorre las hojas seguidas. **La revisión de conjunto no se delega**, porque es
+justo lo que ningún agente puede ver desde adentro de su propio encargo.
+
+### La entrada destacada, arriba del resumen
+
+Adentro del mismo bloque, antes del resumen, va la clave **`resumen_corto`**:
+**uno o dos párrafos, de 60 a 120 palabras**, en cuerpo mayor y separados del
+resto por una línea fina. La tienen las seis entradas.
+
+No es «el resumen pero más corto»: es **lo que hay que haber entendido del
+texto para rendir**. La prueba que pasa cada oración es *si en el examen le
+preguntan por este texto y solo se acuerda de esto, ¿le alcanza para escribir
+una respuesta que apruebe?* De ahí que en los dos textos que no son de Derecho
+—la entrevista a Foucault y el libro de Marina— la entrada diga qué le aportan
+al Derecho y no de qué tratan en abstracto. El tope corto es lo que fuerza esa
+elección: si se estira, deja de ser una entrada y compite con el desarrollo que
+va debajo.
+
+En el CSS, la línea que separa los dos niveles va **sobre el primer párrafo del
+desarrollo** (`.destacado + p:not(.destacado)`) y no debajo del último
+destacado: `:last-of-type` mira la etiqueta y no la clase, así que con varios
+`<p>` seguidos nunca acertaría.
+
+Se escribieron con **seis agentes en paralelo, uno por lectura**, con su propia
+especificación. Lo que apareció en la revisión, y conviene buscar la próxima
+vez: **tres de las seis repetían frases enteras del resumen que iba justo
+debajo**. Un agente lo detectó solo y reescribió; los otros dos los corregí a
+mano. La causa es entendible —les pedí que no repitieran el resumen y varios
+compararon solo contra su arranque, no contra los párrafos 2 y 3—. Se detecta
+rápido midiendo secuencias de 6 palabras compartidas entre `resumen_corto` y
+`resumen`: el solapamiento que queda es solo terminología fija («vida humana,
+valores y normas», «uso público de la inteligencia»), que sí puede repetirse.
+
 **Una entrada puede ser solo el resumen, sin ningún capítulo.** Es el caso de
 una charla o un video: la carpeta lleva únicamente `libro.toml` con `resumen`,
 sin `estudio/`, sin `capitulos.toml` y sin `libro.md`. `contenido.py:
@@ -396,14 +446,28 @@ El archivo suelto dentro de `libros/` no molesta porque `recolectar` recorre
 **solo carpetas**. Si el nombre del grupo coincide con el del autor, la tarjeta
 no repite el autor: ya lo dice el encabezado.
 
-**La reseña conjunta** es un texto que cubre *todas* las lecturas de una
-sección a la vez, no una por una: sale de un markdown en `libros/resenas/` y se
-publica en su propia hoja, `/resena/<slug-del-grupo>/`, con la lista de las
-lecturas que abarca arriba. El índice la enlaza debajo de las tarjetas de esa
-sección. La de «Clase A» cruza a Beccaria con Foucault —el programa de reforma
-penal y su diagnóstico como cambio en la tecnología del poder— y mide unas
-1.000 palabras, dos páginas de Word en Arial 12. El JSON guarda el markdown
-crudo; el HTML lo arma `md.ts`, igual que todo lo demás.
+**El documento de sección** cubre *todas* las lecturas de una clase a la vez,
+no una por una: sale de un markdown en `libros/resenas/` y se publica en su
+propia hoja, `/resena/<slug-del-grupo>/`, con la lista de las lecturas que
+abarca arriba. El índice lo enlaza debajo de las tarjetas de esa sección. El
+JSON guarda el markdown crudo; el HTML lo arma `md.ts`, igual que todo lo
+demás.
+
+No siempre es una reseña, así que los textos son configurables desde
+`grupos.toml` —`resena_titulo`, `resena_bajada` y `resena_enlace`—; sin esas
+claves se usan los de reseña. Hoy hay uno de cada tipo:
+
+- **Clase A** — una **reseña conjunta** que cruza a Beccaria con Foucault: el
+  programa de reforma penal y su diagnóstico como cambio en la tecnología del
+  poder. Unas 1.000 palabras, dos páginas de Word en Arial 12.
+- **Clase B** — el **taller resuelto**: las seis preguntas de la consigna, una
+  respuesta por pregunta al nivel del primer semestre. La consigna manda leer
+  solo las pp. 119-151, que es exactamente lo que quedó del libro después de
+  sacar el apartado C. **Dos de las seis preguntas no se contestan con esas
+  páginas** —dónde se ubica el derecho civil, y cómo se ejercen los derechos
+  subjetivos—, así que esas usan además el artículo de THEMIS y nociones
+  generales de la materia, y el propio documento lo dice donde ocurre en vez de
+  disimularlo.
 
 Las tarjetas del índice son **compactas a propósito**: título y una sola línea
 de pie con el autor y el estado. Con varias clases y varios textos por clase,

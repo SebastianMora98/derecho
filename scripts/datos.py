@@ -222,6 +222,9 @@ def datos_de_libro(libro: dict) -> dict:
         # guarda partido en párrafos, igual que el bloque 2 de un capítulo: el
         # JSON no lleva HTML, y el sitio decide cómo mostrarlo.
         "resumen": parrafos_de(cfg.get("resumen", "")),
+        # La entrada destacada que va arriba del resumen: lo que hay que saber
+        # del texto para una prueba, no una descripción del libro.
+        "resumen_corto": parrafos_de(cfg.get("resumen_corto", "")),
         # Enlace a la fuente cuando está en línea (un video, una charla). Los
         # libros no lo llevan: su fuente es el PDF, que no se publica.
         "fuente_url": cfg.get("fuente_url", ""),
@@ -278,6 +281,13 @@ def grupos_de(libros_dir: Path) -> list[dict]:
                 "slug": slug_de_grupo(nombre),
                 "orden": g.get("orden"),
                 "resena": resena,
+                # El documento de una sección no siempre es una reseña: puede
+                # ser el taller resuelto, por ejemplo. Estas tres claves dejan
+                # renombrar el título de la hoja, su bajada y el enlace del
+                # índice; sin ellas se usan los textos por defecto de reseña.
+                "resena_titulo": g.get("resena_titulo", ""),
+                "resena_bajada": g.get("resena_bajada", ""),
+                "resena_enlace": g.get("resena_enlace", ""),
             }
         )
     return grupos

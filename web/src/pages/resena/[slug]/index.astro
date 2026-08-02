@@ -28,14 +28,20 @@ export async function getStaticPaths() {
 }
 
 const { grupo, libros } = Astro.props;
+// El documento de una sección no siempre es una reseña —puede ser el taller
+// resuelto—, así que el título, la bajada y las migas salen de `grupos.toml`
+// cuando están declarados.
+const titulo = grupo.resena_titulo || `Reseña de ${grupo.nombre}`;
+const bajada = grupo.resena_bajada
+  || `Un solo texto sobre las ${libros.length} lecturas de esta clase, leídas juntas.`;
 // La barra ya trae el enlace a la portada en `.marca`; repetirlo acá lo
 // mostraría dos veces seguidas.
-const migas = `<span>Reseña · ${grupo.nombre}</span>`;
+const migas = `<span>${grupo.nombre} · ${titulo}</span>`;
 ---
-<Base titulo={`Reseña · ${grupo.nombre}`} migas={migas}>
+<Base titulo={`${titulo} · ${grupo.nombre}`} migas={migas}>
   <div class="hoja">
-    <h1>Reseña de {grupo.nombre}</h1>
-    <p class="ficha">Un solo texto sobre las {libros.length} lecturas de esta clase, leídas juntas.</p>
+    <h1>{titulo}</h1>
+    <p class="ficha">{bajada}</p>
     <ul class="lecturas-resena">
       {libros.map((l: any) => (
         <li>

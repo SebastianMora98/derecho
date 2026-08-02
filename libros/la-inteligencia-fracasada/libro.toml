@@ -17,6 +17,24 @@ autor = "José Antonio Marina"
 edicion = "Editorial Anagrama, Barcelona, 6ª ed., 2005"
 fuente = "LA_INTELIGENCIA_FRACASADA_JOSE A MARINA.pdf"
 
+# Entrada destacada: lo que hay que saber del texto para una prueba. Se
+# muestra arriba del resumen, en cuerpo mayor.
+resumen_corto = """
+Ser inteligente y comportarse inteligentemente son dos cosas distintas. El libro estudia los casos en que falla lo segundo sin que falte lo primero: un automatismo se adueña de la conducta y la **inteligencia ejecutiva**, la que debía dirigirlo, no lo somete.
+
+Lo que ata el libro al derecho es el **uso público de la inteligencia**: razonar con criterios que cualquier afectado podría aceptar, no solo con los propios. Ahí nace todo lo que exige acuerdo entre personas, el derecho incluido. De ahí también que un grupo pueda ser más torpe que cualquiera de sus miembros: la **inteligencia social** depende de cómo interactúan, no de cuánto valga cada uno. El libro cierra llamando **justicia** a la mayor creación de la inteligencia.
+"""
+
+# De qué trata el texto: la prosa que abre la hoja del libro, antes de la
+# lista de capítulos. Se escribe a mano; solo markdown en línea.
+resumen = """
+La pregunta del libro es incómoda: **por qué fracasa una inteligencia que no es corta**. La respuesta de Marina es que la estupidez no es falta de capacidad —la que miden los tests— sino un **fallo de dirección**. Un módulo inadecuado toma el mando de la conducta porque la **inteligencia ejecutiva**, la que inicia, dirige y controla los automatismos de la mente, no consigue someterlo, o porque lo deja actuar dentro de un marco equivocado. El mismo mecanismo se repite a escala colectiva: una sociedad puede ser estúpida aunque la formen individuos brillantes.
+
+El primer gran movimiento arma la maquinaria y la pone a prueba. Marina separa la **inteligencia estructural**, la capacidad de base, automática e inconsciente, del uso que se hace de ella, y agrega el **principio de la jerarquía de los marcos**: un pensamiento correcto puede ser estúpido si el marco donde actúa lo es, y el marco superior de cualquiera es su felicidad. Con ese esquema recorre cuatro materiales: las creencias blindadas contra la evidencia, los afectos que se congelan en un estilo como el resentimiento, el lenguaje interior y la conversación, y la voluntad, cuatro habilidades aprendidas y no una facultad innata. Que sean aprendidas importa: sobre la personalidad recibida y la aprendida hay una **personalidad elegida**, y ahí está el margen de cambio.
+
+El giro llega con la elección de las metas. Mientras la meta es propia bastan los criterios propios; coordinarla con otros obliga a distinguir el **uso privado y el uso público de la inteligencia**, el que acepta criterios que cualquier afectado podría compartir y del que nacen la ciencia, la ética y el derecho. De ahí sale la **inteligencia social**, que no es la suma de las inteligencias de un grupo sino algo que emerge de su interacción, y con ella el criterio para llamar estúpida a una sociedad. El libro es declaradamente optimista y cierra nombrando el triunfo: la **sabiduría**, capaz de sostener a la vez bienestar y creación, y la justicia como la gran creación de la inteligencia.
+"""
+
 # principiante / intermedio / avanzado
 nivel = "principiante"
 # examen / investigacion / cultura-general / aplicacion-practica

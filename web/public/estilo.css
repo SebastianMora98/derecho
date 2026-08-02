@@ -172,6 +172,18 @@ blockquote {
 .resumen p { margin: 0 0 0.85rem; }
 .resumen p:last-child { margin-bottom: 0; }
 
+/* La entrada destacada: lo que hay que saber del texto para una prueba. Va
+   arriba del desarrollo, en cuerpo mayor y sin rótulo propio. */
+.resumen .destacado { font-size: 1.1rem; line-height: 1.6; }
+/* La línea separa los dos niveles de detalle. Va sobre el primer párrafo del
+   desarrollo y no debajo del último destacado, porque `:last-of-type` mira la
+   etiqueta y no la clase: con varios `<p>` seguidos nunca acertaría. */
+.resumen .destacado + p:not(.destacado) {
+  margin-top: 1.15rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--borde);
+}
+
 .fuente-enlace {
   margin: 0.4rem 0 0;
   font-family: ui-sans-serif, system-ui, sans-serif;

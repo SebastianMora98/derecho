@@ -72,7 +72,8 @@ function meta(libro: any) {
       </div>
       {bloque.grupo?.resena && (
         <a class="enlace-resena" href={`/resena/${bloque.grupo.slug}/index.html`}>
-          Reseña conjunta de {bloque.libros.length === 2 ? "las dos lecturas" : `las ${bloque.libros.length} lecturas`} de {bloque.grupo.nombre}
+          {bloque.grupo.resena_enlace
+            || `Reseña conjunta de ${bloque.libros.length === 2 ? "las dos lecturas" : `las ${bloque.libros.length} lecturas`} de ${bloque.grupo.nombre}`}
         </a>
       )}
     </>

@@ -13,6 +13,20 @@ contenedor = "Capítulo V — Diferentes concepciones de lo jurídico"
 edicion = "5ª ed. actualizada y ampliada, Astrea, Buenos Aires - Bogotá, 2015. Prólogo de Ricardo D. Rabinovich-Berkman"
 fuente = "FS-Diferentes concepciones de lo juridico-1.pdf"
 
+# Entrada destacada: lo que hay que saber del texto para una prueba. Se
+# muestra arriba del resumen, en cuerpo mayor.
+resumen_corto = """
+Para Fernández Sessarego el derecho es un proceso en el que tres elementos se
+exigen entre sí: la conducta de unas personas frente a otras, la norma que la
+regula y el valor que esa conducta realiza. No se suman: ninguno, por sí solo,
+es derecho, y ninguno puede faltar. Esa es la **teoría tridimensional**.
+
+Las tres escuelas que eligieron un solo elemento —el **iusnaturalismo**, el
+**formalismo** y el **sociologismo** o realismo jurídico— no se equivocan en lo
+que dicen; fallan por lo que dejan afuera. De ahí que quedarse en el texto de la
+ley sea hacer lógica jurídica, no derecho.
+"""
+
 # Resumen general del texto entero. Se muestra arriba de todo en la hoja del
 # libro, antes de la lista de capítulos, para ubicarse antes de entrar a
 # cualquiera. Es prosa a mano, no se genera: párrafos separados por una línea

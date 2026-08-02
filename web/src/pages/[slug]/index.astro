@@ -68,10 +68,13 @@ const soloResumen = !libro.capitulos.length;
         <a href={libro.fuente_url} target="_blank" rel="noopener">Ver la fuente original</a>
       </p>
     )}
-    {libro.resumen && libro.resumen.length > 0 && (
+    {(libro.resumen_corto?.length || libro.resumen?.length) && (
       <section class="resumen" id="resumen">
         <h2>De qué trata el texto</h2>
-        {libro.resumen.map((p: string) => <p set:html={inline(p)} />)}
+        {/* La entrada destacada primero, y el desarrollo debajo: dos niveles de
+            detalle en el mismo bloque, sin rótulo que los separe. */}
+        {libro.resumen_corto?.map((p: string) => <p class="destacado" set:html={inline(p)} />)}
+        {libro.resumen?.map((p: string) => <p set:html={inline(p)} />)}
       </section>
     )}
     {!soloResumen && (

@@ -13,6 +13,57 @@ grupo = "Clase A"
 edicion = "Ed. La Piqueta, Barcelona, 1980"
 fuente = "El ojo del poder.pdf"
 
+# Entrada destacada: lo que hay que saber del texto para una prueba. Se
+# muestra arriba del resumen, en cuerpo mayor.
+resumen_corto = """
+El **panóptico** —un edificio donde cada vigilado puede ser visto en cualquier
+momento y nunca sabe si lo miran— consigue obediencia sin castigar: la mirada
+se interioriza y cada uno termina vigilándose solo. Frente al
+**poder monárquico**, que castiga a pocos y de forma espectacular porque no
+alcanza a todos, el **poder disciplinario** vigila a todos de manera continua
+y barata.
+
+Con ese giro, el poder punitivo cambia de centro: lo que disuade ya no es la
+pena sino la mirada. Y nadie es dueño de ese poder; quien vigila queda tan
+preso de él como el vigilado.
+"""
+
+# Resumen general del texto entero. Se muestra arriba de todo en la hoja del
+# libro, antes de la lista de capítulos, para ubicarse antes de entrar. Es
+# prosa a mano, no se genera: párrafos separados por una línea en blanco,
+# markdown inline (negrita, cursiva) permitido.
+resumen = """
+No es un tratado ni un capítulo de libro: es una **entrevista de 1977**,
+publicada como prólogo a una edición de *El Panóptico* de Jeremías Bentham.
+Jean-Pierre Barou y Michelle Perrot preguntan, Foucault contesta, y el texto
+avanza así: hay digresiones, y las tesis aparecen contestando, no expuestas en
+orden. La pregunta de fondo es histórica: **cómo cambió la manera de ejercer el
+poder** entre el Antiguo Régimen y las sociedades industriales, y por qué un
+plano de arquitectura del siglo XVIII sirve para contarlo.
+
+El primer movimiento reconstruye de dónde sale el panóptico —la prisión
+circular con una torre central desde la que un vigilante ve todas las celdas
+sin ser visto—. Foucault no llegó a él por la cárcel, sino investigando la
+**arquitectura hospitalaria** del siglo XVIII: quería entender cómo se organiza
+un edificio para sostener una mirada que lo vea todo a la vez. La idea ya
+circulaba antes de Bentham, en los dormitorios de una escuela militar y en las
+salinas de Ledoux; el mérito de Bentham fue bautizarla y volverla **fórmula
+general**, aplicable igual a cárceles, escuelas y hospitales. De ahí una tesis
+lateral: la arquitectura pasa a ser un **instrumento político** y deja de
+servir sobre todo para exhibir la fuerza del soberano.
+
+A partir de ahí el interés se desplaza del edificio al tipo de poder que ese
+edificio hace posible. Foucault no juzga el invento ni discute si es bueno o
+malo: lo trata como una **tecnología**, es decir, procedimientos para lograr un
+efecto con el menor gasto. Su consecuencia más incómoda es que un poder así no
+tiene dueño; es una **máquina que atrapa también a los que vigilan**, empezando
+por el inspector, que desconfía de sus subalternos. Lo que queda en pie es el
+límite que el propio autor le pone: el panóptico fue una **utopía-programa**,
+un proyecto y no la crónica de lo que pasó. Hubo resistencias reales, y los
+mecanismos del poder moderno son más numerosos y sutiles que la sola vigilancia
+por la mirada.
+"""
+
 # principiante / intermedio / avanzado
 nivel = "principiante"
 # examen / investigacion / cultura-general / aplicacion-practica
