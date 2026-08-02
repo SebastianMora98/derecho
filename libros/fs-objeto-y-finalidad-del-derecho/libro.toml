@@ -1,0 +1,56 @@
+# Ficha de la entrada. Igual que la charla en video: no tiene documentos de
+# estudio, solo el resumen. Ver "Sitio y despliegue" en CLAUDE.md.
+
+titulo = "Breves reflexiones sobre el objeto de estudio y la finalidad del Derecho"
+autor = "Carlos Fernández Sessarego"
+# Las entradas con el mismo `grupo` salen juntas, bajo ese título, en el
+# índice de libros. Sin `grupo`, la entrada va suelta.
+grupo = "Carlos Fernández Sessarego"
+edicion = "Artículo en la revista THEMIS, pp. 285-292 (9 pp.)"
+fuente = "Dialnet-ReflexionesSobreElObjetoDeEstudioYLaFinalidadDelDe-5110607 (5).pdf"
+
+# principiante / intermedio / avanzado
+nivel = "principiante"
+# examen / investigacion / cultura-general / aplicacion-practica
+proposito = "examen"
+
+# Resumen general. Es lo único que se publica de esta entrada: sin vocabulario,
+# sin distinciones, sin test y sin flashcards, a pedido.
+resumen = """
+Artículo breve del propio Fernández Sessarego que contesta **dos** preguntas,
+no una: qué estudia el derecho y **para qué sirve**. La primera ya está en
+*Derecho y persona* y en la charla en video; **la segunda no**, y es lo que
+hace que valga la pena leerlo aparte. Él mismo dice que la mayoría sigue
+contestando que el objeto es la norma y que la finalidad es la justicia, y que
+las dos respuestas le parecen equivocadas.
+
+Sobre el objeto repite el recorrido conocido: la clase de 1945 donde le
+enseñaron, siguiendo a Kelsen, que el objeto eran las normas y que la vida
+humana y los valores quedaban fuera del derecho; su formación filosófica
+previa, que le hacía imposible aceptar eso; y los cuatro años de lectura que
+terminaron en su tesis de bachiller de 1950. La conclusión es la misma:
+el objeto es la **interacción** —no la yuxtaposición— de vida humana social,
+valores y normas. Acá agrega detalles que en los otros dos textos no están:
+que el jurado de su tesis lo felicitó pero no le dio la razón, salvo su maestro
+León Barandiarán; que Reale llegó a lo mismo en 1953 sin conocerlo y le puso el
+nombre de teoría tridimensional; y **en qué se diferencian**, porque Reale
+privilegia la norma y él la conducta humana intersubjetiva.
+
+Después muestra la teoría trabajando sobre instituciones concretas, y esta
+parte es la más aprovechable para un examen: explica la persona jurídica como
+una organización de personas que persigue valores y está regulada por normas, y
+sobre todo distingue la **capacidad de goce** —inherente a todo ser humano, no
+la regula la ley— de la **capacidad de ejercicio**, cuyos alcances y límites sí
+fija la ley. Lo ilustra con el caso peruano de los extranjeros que no pueden
+adquirir tierras cerca de la frontera: se les limita el ejercicio, no el goce.
+
+La última parte es la que no está en los otros dos textos. Contra lo que le
+enseñaron, sostiene que la finalidad del derecho no es la justicia sino
+**proteger la libertad**, porque para él el ser humano no es un animal racional
+sino un «ser libertad» que se hace a sí mismo mediante un proyecto de vida. La
+justicia, la igualdad, la solidaridad y la seguridad no dejan de importar, pero
+pasan a ser **instrumentos** al servicio de esa libertad y no el fin último. De
+ahí que hable de un derecho de la liberación, cuya tarea es remover los
+obstáculos que impiden a cada persona cumplir su proyecto de vida —idea que
+apoya en el artículo tercero de la Constitución italiana de 1947.
+"""
