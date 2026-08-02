@@ -456,7 +456,8 @@ demás.
 
 No siempre es una reseña, así que los textos son configurables desde
 `grupos.toml` —`resena_titulo`, `resena_bajada` y `resena_enlace`—; sin esas
-claves se usan los de reseña. Hoy hay uno de cada tipo:
+claves se usan los de reseña. Hoy hay uno de cada tipo, y esa clave es lo que
+convierte el mismo mecanismo en tres géneros distintos:
 
 - **Clase A** — una **reseña conjunta** que cruza a Beccaria con Foucault: el
   programa de reforma penal y su diagnóstico como cambio en la tecnología del
@@ -484,6 +485,20 @@ claves se usan los de reseña. Hoy hay uno de cada tipo:
   subjetivos—, así que esas usan además el artículo de THEMIS y nociones
   generales de la materia, y el propio documento lo dice donde ocurre en vez de
   disimularlo.
+- **Preseminario** — la **guía para el debate** de *La inteligencia fracasada*.
+  Cubre **solo la Introducción y el capítulo I**, que es lo asignado, y lo dice
+  en la primera línea: el resto del libro tiene sus documentos de estudio, pero
+  no entra acá. No es un resumen sino material de preparación, así que está
+  armado por lo que hace falta *en* un debate y no por el orden del texto: la
+  tesis en una frase, los seis conceptos que no se pueden confundir, y cuatro
+  tesis discutibles con el mismo molde de cuatro campos —qué se afirma, con qué
+  se sostiene, qué te van a objetar, cómo respondés—. Ese cuarto campo es lo
+  que lo separa de un resumen: sin la objeción anticipada no sirve para
+  debatir. Cierra con dos secciones que también son de uso y no de contenido:
+  **por qué le importa a un jurista** —el principio de los marcos como el
+  problema de la ley injusta, dañada/fracasada como la pregunta por la
+  culpabilidad, y el cruce con Beccaria y Foucault— y los cuatro errores que
+  cuestan el debate. Unas 1.450 palabras.
 
 Las tarjetas del índice son **compactas a propósito**: título y una sola línea
 de pie con el autor y el estado. Con varias clases y varios textos por clase,

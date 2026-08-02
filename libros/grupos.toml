@@ -29,3 +29,9 @@ resena_enlace = "Respuestas del taller de Clase B"
 [[grupos]]
 nombre = "Preseminario"
 orden = 3
+# Tampoco es una reseña: es la hoja de preparación para el debate, y cubre
+# solo la Introducción y el capítulo I, que es lo asignado.
+resena = "preseminario.md"
+resena_titulo = "Guía para el debate"
+resena_bajada = "Lo que hay que tener firme de la Introducción y el capítulo I para debatir."
+resena_enlace = "Guía para el debate del Preseminario"
