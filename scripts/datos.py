@@ -288,6 +288,12 @@ def grupos_de(libros_dir: Path) -> list[dict]:
                 "resena_titulo": g.get("resena_titulo", ""),
                 "resena_bajada": g.get("resena_bajada", ""),
                 "resena_enlace": g.get("resena_enlace", ""),
+                # Con `resena_oculta = true` la hoja se construye igual, pero
+                # el índice no muestra su enlace: se llega haciendo diez clics
+                # sobre el título de la sección. Sirve para dejar publicado
+                # algo que todavía no se quiere anunciar. Distinto de sacar la
+                # clave `resena`, que directamente no genera la hoja.
+                "resena_oculta": bool(g.get("resena_oculta", False)),
             }
         )
     return grupos

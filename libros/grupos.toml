@@ -15,6 +15,10 @@
 nombre = "Clase A"
 orden = 1
 resena = "clase-a.md"
+# Publicada pero sin anunciar: la hoja /resena/clase-a/ se construye igual, y
+# el índice no muestra su enlace. Se llega haciendo diez clics sobre el título
+# «Clase A». Para anunciarla de nuevo, borrar esta línea.
+resena_oculta = true
 
 [[grupos]]
 nombre = "Clase B"

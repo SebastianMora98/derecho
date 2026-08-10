@@ -220,6 +220,16 @@ h2.grupo {
 }
 h2.grupo + .libros { margin-top: 0.75rem; }
 
+/* Sección con la reseña oculta: se llega por diez clics sobre este título
+   (`tarjetas.js`). Sin `user-select` cada clic iría seleccionando el texto y
+   al quinto quedaría todo el título pintado. La transición es la que hace
+   visible el parpadeo con que el contador avisa que va sumando. */
+h2.grupo[data-resena-oculta] {
+  user-select: none;
+  -webkit-user-select: none;
+  transition: opacity 0.12s ease-out;
+}
+
 /* Tarjeta compacta: dos renglones, título y una línea de pie con el autor y el
    estado. Antes ocupaba tres renglones con más aire; con varias clases y
    varios libros por clase, la lista dejaba de verse de una pasada. */

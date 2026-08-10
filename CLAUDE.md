@@ -442,6 +442,15 @@ son provisorios, a la espera de los reales de cada clase.
 - `orden` — opcional. Las secciones con `orden` van primero, en ese orden; el
   resto queda donde caía por el orden de slug.
 - `resena` — opcional, el nombre de un archivo dentro de `libros/resenas/`.
+- `resena_oculta` — opcional. La hoja se construye igual, pero el índice **no
+  muestra su enlace**: se llega haciendo **diez clics sobre el título de la
+  sección**. Sirve para dejar algo publicado sin anunciarlo todavía. Es
+  distinto de sacar la clave `resena`, que directamente no genera la hoja —y
+  entonces no hay adónde navegar—. El encargado del atajo es
+  `tarjetas.js`, que engancha los `h2.grupo[data-resena-oculta]` del índice;
+  el `data-` lo pone `index.astro` con el slug del grupo. El contador se
+  reinicia si pasan más de dos segundos entre dos clics, y a partir del quinto
+  el título parpadea para avisar que va contando.
 
 El archivo suelto dentro de `libros/` no molesta porque `recolectar` recorre
 **solo carpetas**. Si el nombre del grupo coincide con el del autor, la tarjeta
@@ -475,8 +484,35 @@ convierte el mismo mecanismo en tres géneros distintos:
   hace posible*. Tres evidencias lo sostienen —el cálculo de eficacia dentro
   del propio Beccaria, la economía del poder de Foucault, y el desacuerdo
   sobre la opinión pública— y la conclusión declara los límites de la
-  valoración, como pide la guía. Unas 1.300 palabras; era de 1.000 antes de
-  sumarle intro, conclusión y referencias.
+  valoración, como pide la guía. Unas 1.500 palabras.
+
+  Está **oculta** (`resena_oculta`): se llega con diez clics en «Clase A».
+
+  Se reescribió una segunda vez después de **releer los dos originales para
+  auditar el vocabulario**, porque el encargo era que no usara palabras más
+  rebuscadas que las de los textos que reseña. Lo que salió de esa relectura, y
+  conviene tener a mano para cualquier documento sobre estos libros:
+  **«reforma» no aparece ni una vez en Beccaria** —dice «buenas leyes»,
+  «legislación suave», «perfecta legislación»—, y en Foucault solo aparece en
+  «reforma de las instituciones médicas», nunca «reforma penal». Tampoco están
+  «disuasión» (Beccaria dice «freno», «estorbo», «contener»), «contractualismo»
+  (dice «contrato social», «pacto»), «arbitrariedad» (dice «arbitrio»),
+  «economía del poder» (Foucault dice «el precio del poder», «coste»), ni
+  «vigencia», «pertinente», «instalar», «premisa» o «deductivo», que no están
+  en ninguno de los dos. Sí son de Foucault, literales, «tecnología de poder» y
+  «utopía-programa». Y ojo con **«certeza»**: en Beccaria es la *certeza moral*
+  de las pruebas; lo que se predica de la pena es su **certidumbre** y su
+  **infalibilidad**.
+
+  Tres errores de contenido que la relectura desarmó, y que son fáciles de
+  cometer: **Beccaria no rechaza la pena de muerte sin excepción** —admite dos
+  casos de necesidad en el cap. 28—; **Foucault no sostiene que la mirada sea
+  el instrumento principal del poder moderno**, dice lo contrario y llama
+  «arcaizante» a Bentham por sobrevalorarla; y **Foucault no nombra a Beccaria
+  ni habla de reforma penal**, así que el cruce entre los dos lo hace la reseña
+  y no él, cosa que el texto ahora declara. Sumado a eso, buena parte de las
+  respuestas largas de la entrevista son de Michelle Perrot, no de Foucault:
+  atribuírselas a él es un error de lectura fácil de cometer al citar.
 - **Clase B** — el **taller resuelto**: las seis preguntas de la consigna, una
   respuesta por pregunta al nivel del primer semestre. La consigna manda leer
   solo las pp. 119-151, que es exactamente lo que quedó del libro después de

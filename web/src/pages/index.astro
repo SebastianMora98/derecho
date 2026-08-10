@@ -56,7 +56,15 @@ function meta(libro: any) {
   </p>
   {bloques.map((bloque) => (
     <>
-      {bloque.grupo && <h2 class="grupo">{bloque.grupo.nombre}</h2>}
+      {/* Una sección con la reseña oculta lleva su slug en el encabezado:
+          `tarjetas.js` lo usa para el acceso por diez clics, que es la única
+          manera de llegar a esa hoja desde el sitio. */}
+      {bloque.grupo && (
+        <h2
+          class="grupo"
+          data-resena-oculta={bloque.grupo.resena && bloque.grupo.resena_oculta ? bloque.grupo.slug : undefined}
+        >{bloque.grupo.nombre}</h2>
+      )}
       <div class="libros">
         {bloque.libros.map((libro: any) => (
           <a class="libro" href={`/${libro.slug}/index.html`}>
@@ -74,7 +82,7 @@ function meta(libro: any) {
           </a>
         ))}
       </div>
-      {bloque.grupo?.resena && (
+      {bloque.grupo?.resena && !bloque.grupo.resena_oculta && (
         <a class="enlace-resena" href={`/resena/${bloque.grupo.slug}/index.html`}>
           {bloque.grupo.resena_enlace
             || `Reseña conjunta de ${bloque.libros.length === 2 ? "las dos lecturas" : `las ${bloque.libros.length} lecturas`} de ${bloque.grupo.nombre}`}

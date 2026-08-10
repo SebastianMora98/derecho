@@ -254,3 +254,33 @@ document.addEventListener(
 restaurarAbiertos();
 irAlAncla();
 marcarTodos();
+
+/* ---------- acceso por diez clics a una reseña oculta ----------
+
+   Una sección del índice puede tener su documento publicado pero sin enlace
+   (`resena_oculta = true` en grupos.toml). La hoja existe y se puede abrir por
+   su URL; desde el sitio se llega haciendo diez clics sobre el título de la
+   sección, que es lo único que la delata.
+
+   El contador se reinicia si pasan más de dos segundos entre dos clics, para
+   que un clic suelto al pasar no vaya sumando durante toda la visita. */
+document.querySelectorAll("h2.grupo[data-resena-oculta]").forEach((titulo) => {
+  const destino = `/resena/${titulo.dataset.resenaOculta}/index.html`;
+  let clics = 0;
+  let reloj = null;
+  titulo.addEventListener("click", () => {
+    clearTimeout(reloj);
+    clics += 1;
+    if (clics >= 10) {
+      location.href = destino;
+      return;
+    }
+    // A partir de la mitad se avisa con un parpadeo, para que quien ya sabe
+    // del atajo note que va contando y no lo dé por roto.
+    if (clics >= 5) {
+      titulo.style.opacity = "0.45";
+      setTimeout(() => (titulo.style.opacity = ""), 120);
+    }
+    reloj = setTimeout(() => (clics = 0), 2000);
+  });
+});
