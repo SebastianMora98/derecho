@@ -12,23 +12,23 @@
 #             publica en su propia hoja y el índice la enlaza bajo la sección.
 
 [[grupos]]
-nombre = "Clase A"
+nombre = "Teoría general del delito"
 orden = 1
 resena = "clase-a.md"
-# Publicada pero sin anunciar: la hoja /resena/clase-a/ se construye igual, y
-# el índice no muestra su enlace. Se llega haciendo diez clics sobre el título
-# «Clase A». Para anunciarla de nuevo, borrar esta línea.
+# Publicada pero sin anunciar: la hoja de su reseña se construye igual, y el
+# índice no muestra su enlace. Se llega haciendo diez clics sobre el título de
+# esta sección. Para anunciarla de nuevo, borrar esta línea.
 resena_oculta = true
 
 [[grupos]]
-nombre = "Clase B"
+nombre = "Civil personas"
 orden = 2
 # Acá el documento de la sección no es una reseña sino el taller resuelto, así
 # que se renombra el título de la hoja, su bajada y el enlace del índice.
 resena = "clase-b.md"
 resena_titulo = "Respuestas del taller"
 resena_bajada = "Las seis preguntas del taller contestadas con las lecturas de esta clase."
-resena_enlace = "Respuestas del taller de Clase B"
+resena_enlace = "Respuestas del taller de Civil personas"
 
 [[grupos]]
 nombre = "Preseminario"

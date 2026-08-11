@@ -3,7 +3,7 @@
     "slug": "beccaria-delitos-y-penas",
     "titulo": "Tratado de los delitos y de las penas",
     "autor": "Cesare Beccaria",
-    "grupo": "Clase A",
+    "grupo": "Teoría general del delito",
     "capitulos_totales": 39,
     "capitulos_con_documento": 39
   },
@@ -11,7 +11,7 @@
     "slug": "el-ojo-del-poder",
     "titulo": "El ojo del poder",
     "autor": "Michel Foucault",
-    "grupo": "Clase A",
+    "grupo": "Teoría general del delito",
     "capitulos_totales": 1,
     "capitulos_con_documento": 1
   },
@@ -19,7 +19,7 @@
     "slug": "fs-diferentes-concepciones-de-lo-juridico-1",
     "titulo": "Derecho y persona",
     "autor": "Carlos Fernández Sessarego",
-    "grupo": "Clase B",
+    "grupo": "Civil personas",
     "capitulos_totales": 10,
     "capitulos_con_documento": 10
   },
@@ -27,7 +27,7 @@
     "slug": "fs-objeto-de-estudio-del-derecho",
     "titulo": "¿Cuál es el objeto de estudio del Derecho?",
     "autor": "Carlos Fernández Sessarego",
-    "grupo": "Clase B",
+    "grupo": "Civil personas",
     "capitulos_totales": 0,
     "capitulos_con_documento": 0
   },
@@ -35,7 +35,7 @@
     "slug": "fs-objeto-y-finalidad-del-derecho",
     "titulo": "Breves reflexiones sobre el objeto de estudio y la finalidad del Derecho",
     "autor": "Carlos Fernández Sessarego",
-    "grupo": "Clase B",
+    "grupo": "Civil personas",
     "capitulos_totales": 0,
     "capitulos_con_documento": 0
   },

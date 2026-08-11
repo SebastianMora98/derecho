@@ -4,7 +4,7 @@
 titulo = "Tratado de los delitos y de las penas"
 autor = "Cesare Beccaria"
 # Sección del índice. Se declara en libros/grupos.toml.
-grupo = "Clase A"
+grupo = "Teoría general del delito"
 edicion = "Universidad Carlos III de Madrid, 2015 (Historia del derecho, 32)"
 fuente = "content.pdf"
 

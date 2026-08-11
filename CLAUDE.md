@@ -429,10 +429,10 @@ su fuente es un PDF que no se publica).
 
 **El índice de libros agrupa en secciones.** Cada entrada declara a cuál
 pertenece con `grupo = "<nombre>"` en su `libro.toml`, y la sección en sí se
-declara en **`libros/grupos.toml`**. Hoy son las clases de la materia: «Clase
-A» (Beccaria y Foucault) y «Clase B» (los tres de Fernández Sessarego); lo que
-no declara `grupo` queda suelto, como *La inteligencia fracasada*. Los nombres
-son provisorios, a la espera de los reales de cada clase.
+declara en **`libros/grupos.toml`**. Hoy son las clases de la materia:
+«Teoría general del delito» (Beccaria y Foucault) y «Civil personas» (los tres
+de Fernández Sessarego); lo que no declara `grupo` queda suelto, como *La
+inteligencia fracasada*.
 
 `grupos.toml` acepta por sección:
 
@@ -468,7 +468,7 @@ No siempre es una reseña, así que los textos son configurables desde
 claves se usan los de reseña. Hoy hay uno de cada tipo, y esa clave es lo que
 convierte el mismo mecanismo en tres géneros distintos:
 
-- **Clase A** — una **reseña conjunta** que cruza a Beccaria con Foucault: el
+- **Teoría general del delito** — una **reseña conjunta** que cruza a Beccaria con Foucault: el
   programa de reforma penal y su diagnóstico como cambio en la tecnología del
   poder. Está escrita siguiendo la [guía de reseña de LEO
   (Uniandes)](https://leo.uniandes.edu.co/guia-para-la-elaboracion-de-una-resena/)
@@ -486,7 +486,8 @@ convierte el mismo mecanismo en tres géneros distintos:
   sobre la opinión pública— y la conclusión declara los límites de la
   valoración, como pide la guía. Unas 1.500 palabras.
 
-  Está **oculta** (`resena_oculta`): se llega con diez clics en «Clase A».
+  Está **oculta** (`resena_oculta`): se llega con diez clics en «Teoría
+  general del delito».
 
   Se reescribió una segunda vez después de **releer los dos originales para
   auditar el vocabulario**, porque el encargo era que no usara palabras más
@@ -513,7 +514,7 @@ convierte el mismo mecanismo en tres géneros distintos:
   y no él, cosa que el texto ahora declara. Sumado a eso, buena parte de las
   respuestas largas de la entrevista son de Michelle Perrot, no de Foucault:
   atribuírselas a él es un error de lectura fácil de cometer al citar.
-- **Clase B** — el **taller resuelto**: las seis preguntas de la consigna, una
+- **Civil personas** — el **taller resuelto**: las seis preguntas de la consigna, una
   respuesta por pregunta al nivel del primer semestre. La consigna manda leer
   solo las pp. 119-151, que es exactamente lo que quedó del libro después de
   sacar el apartado C. **Dos de las seis preguntas no se contestan con esas
