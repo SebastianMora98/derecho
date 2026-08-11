@@ -3,6 +3,7 @@
 import Base from "../layouts/Base.astro";
 import grupos from "../data/grupos.json";
 import { inline } from "../lib/md";
+import { ruta, enlace as enlaceDe, hayOcultos, anunciados } from "../lib/grupos";
 
 const modulos = import.meta.glob("../data/*.json", { eager: true }) as Record<string, any>;
 const libros = Object.entries(modulos)
@@ -28,7 +29,7 @@ function bloquesDelIndice(entradas: any[]) {
     if (vistos.has(nombre)) return;
     vistos.add(nombre);
     bloques.push({
-      grupo: porNombre.get(nombre) ?? { nombre, slug: "", resena: "", orden: null },
+      grupo: porNombre.get(nombre) ?? { nombre, slug: "", documentos: [], orden: null },
       libros: entradas.filter((l) => (l.grupo || "").trim() === nombre),
       pos,
     });
@@ -56,13 +57,13 @@ function meta(libro: any) {
   </p>
   {bloques.map((bloque) => (
     <>
-      {/* Una sección con la reseña oculta lleva su slug en el encabezado:
+      {/* Una sección con algún documento oculto lleva su slug en el encabezado:
           `tarjetas.js` lo usa para el acceso por diez clics, que es la única
-          manera de llegar a esa hoja desde el sitio. */}
+          manera de llegar a esas hojas desde el sitio. */}
       {bloque.grupo && (
         <h2
           class="grupo"
-          data-resena-oculta={bloque.grupo.resena && bloque.grupo.resena_oculta ? bloque.grupo.slug : undefined}
+          data-resena-oculta={hayOcultos(bloque.grupo) ? bloque.grupo.slug : undefined}
         >{bloque.grupo.nombre}</h2>
       )}
       <div class="libros">
@@ -82,12 +83,13 @@ function meta(libro: any) {
           </a>
         ))}
       </div>
-      {bloque.grupo?.resena && !bloque.grupo.resena_oculta && (
-        <a class="enlace-resena" href={`/resena/${bloque.grupo.slug}/index.html`}>
-          {bloque.grupo.resena_enlace
-            || `Reseña conjunta de ${bloque.libros.length === 2 ? "las dos lecturas" : `las ${bloque.libros.length} lecturas`} de ${bloque.grupo.nombre}`}
+      {/* Un enlace por documento anunciado. No se enlaza la hoja de la sección:
+          cuando es la de elección, listaría también los ocultos. */}
+      {anunciados(bloque.grupo).map((d) => (
+        <a class="enlace-resena" href={ruta(bloque.grupo, d)}>
+          {enlaceDe(bloque.grupo, d, bloque.libros.length)}
         </a>
-      )}
+      ))}
     </>
   ))}
 </Base>

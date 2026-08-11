@@ -28,7 +28,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from comun import bloques_h2, idea_principal, normalizar_titulo, primer_parrafo  # noqa: E402
+from comun import (  # noqa: E402
+    bloques_h2,
+    idea_principal,
+    normalizar_titulo,
+    primer_parrafo,
+    slugify,
+)
 import contenido  # noqa: E402
 
 
@@ -245,55 +251,122 @@ def datos_de_libro(libro: dict) -> dict:
     }
 
 
+# Las claves de `grupos.toml` de cuando una sección tenía a lo sumo un
+# documento y sus datos colgaban del grupo. Se siguen aceptando: se traducen a
+# un documento, que va primero. No es solo cortesía — deja migrar el TOML en un
+# commit aparte del código, con el sitio funcionando en los dos.
+LEGADO = {
+    "resena": "archivo",
+    "resena_titulo": "titulo",
+    "resena_bajada": "bajada",
+    "resena_enlace": "enlace",
+    "resena_oculta": "oculto",
+}
+
+
 def slug_de_grupo(nombre: str) -> str:
-    """`Clase A` → `clase-a`. Es la ruta de la hoja de su reseña."""
+    """`Clase A` → `clase-a`. Es la ruta de la hoja de la sección.
+
+    Conserva los acentos a propósito: `/resena/teoría-general-del-delito/` es
+    una URL ya publicada, y pasarla por `slugify` —que los saca— la movería sin
+    necesidad.
+    """
     limpio = re.sub(r"[^\w\s-]", "", nombre, flags=re.UNICODE).strip().lower()
     return re.sub(r"[\s_]+", "-", limpio)
+
+
+def documento_de(d: dict, resenas: Path, grupo: str) -> dict | None:
+    """Un documento de sección leído a JSON, o `None` si su markdown no está.
+
+    Devolver `None` en vez de un documento con el texto vacío es lo que mantiene
+    honesto el `len(documentos)`: de ese número dependen la ruta del documento
+    —la raíz de la sección con uno solo, un nivel más abajo con varios— y si la
+    sección publica o no una hoja de elección. Un documento fantasma la partiría
+    en dos por un archivo que todavía no se escribió.
+    """
+    archivo = str(d.get("archivo", "")).strip()
+    if not archivo:
+        print(f"aviso: el grupo {grupo!r} declara un documento sin `archivo`")
+        return None
+    md = resenas / archivo
+    if not md.exists():
+        print(f"aviso: el grupo {grupo!r} apunta al documento {archivo}, que no existe")
+        return None
+    texto = md.read_text(encoding="utf-8").strip()
+    return {
+        # Sin `slug` propio se usa el nombre del archivo. Este sí pasa por
+        # `slugify`, que saca los acentos: son rutas nuevas, no hay nada
+        # publicado que conservar, y así el tramo del documento queda en ASCII.
+        "slug": str(d.get("slug", "")).strip() or slugify(Path(archivo).stem),
+        "archivo": archivo,
+        # El documento de una sección no siempre es una reseña: puede ser el
+        # taller resuelto o una guía para un debate. Estos tres renombran el
+        # título de la hoja, su bajada y el enlace del índice; sin ellos se usan
+        # los textos por defecto de reseña, que arma el sitio.
+        "titulo": str(d.get("titulo", "")).strip(),
+        "bajada": str(d.get("bajada", "")).strip(),
+        "enlace": str(d.get("enlace", "")).strip(),
+        # Con `oculto = true` la hoja se construye igual, pero el índice no
+        # muestra su enlace: se llega haciendo diez clics sobre el título de la
+        # sección. Distinto de no declarar el documento, que no genera hoja.
+        "oculto": bool(d.get("oculto", False)),
+        # Para la hoja de elección: da idea del tamaño antes de abrir.
+        "palabras": len(texto.split()),
+        "texto": texto,
+    }
 
 
 def grupos_de(libros_dir: Path) -> list[dict]:
     """Las secciones del índice declaradas en `libros/grupos.toml`.
 
-    El markdown de la reseña se guarda crudo: igual que el resto del JSON, acá
-    no se arma HTML — eso lo hace el sitio con `md.ts`.
+    Cada sección lleva su lista de documentos propios —una reseña conjunta, un
+    taller resuelto, una guía de debate—, cada uno con su markdown crudo: igual
+    que el resto del JSON, acá no se arma HTML — eso lo hace el sitio con
+    `md.ts`.
     """
     ruta = libros_dir / "grupos.toml"
     if not ruta.exists():
         return []
     with ruta.open("rb") as fh:
         declarados = tomllib.load(fh).get("grupos", [])
-    grupos = []
+    resenas = libros_dir / "resenas"
+    grupos: list[dict] = []
+    por_slug: dict[str, str] = {}
     for g in declarados:
         nombre = str(g.get("nombre", "")).strip()
         if not nombre:
             continue
-        resena = ""
-        archivo = str(g.get("resena", "")).strip()
-        if archivo:
-            md = libros_dir / "resenas" / archivo
-            if md.exists():
-                resena = md.read_text(encoding="utf-8").strip()
-            else:
-                print(f"aviso: el grupo {nombre} apunta a la reseña {archivo}, que no existe")
+        crudos = list(g.get("documentos", []))
+        if g.get("resena"):
+            if crudos:
+                print(
+                    f"aviso: el grupo {nombre!r} mezcla la clave vieja `resena` "
+                    f"con `documentos`; la vieja queda primera"
+                )
+            crudos.insert(0, {nuevo: g[viejo] for viejo, nuevo in LEGADO.items() if viejo in g})
+        documentos: list[dict] = []
+        vistos: set[str] = set()
+        for d in crudos:
+            doc = documento_de(d, resenas, nombre)
+            if doc is None:
+                continue
+            # Dos documentos con el mismo slug serían la misma URL: el segundo
+            # pisaría al primero en silencio al construir el sitio.
+            if doc["slug"] in vistos:
+                print(f"aviso: el grupo {nombre!r} repite el slug de documento {doc['slug']!r}")
+                continue
+            vistos.add(doc["slug"])
+            documentos.append(doc)
+        slug = slug_de_grupo(nombre)
+        if slug in por_slug:
+            print(f"aviso: los grupos {por_slug[slug]!r} y {nombre!r} comparten el slug {slug!r}")
+        por_slug.setdefault(slug, nombre)
         grupos.append(
             {
                 "nombre": nombre,
-                "slug": slug_de_grupo(nombre),
+                "slug": slug,
                 "orden": g.get("orden"),
-                "resena": resena,
-                # El documento de una sección no siempre es una reseña: puede
-                # ser el taller resuelto, por ejemplo. Estas tres claves dejan
-                # renombrar el título de la hoja, su bajada y el enlace del
-                # índice; sin ellas se usan los textos por defecto de reseña.
-                "resena_titulo": g.get("resena_titulo", ""),
-                "resena_bajada": g.get("resena_bajada", ""),
-                "resena_enlace": g.get("resena_enlace", ""),
-                # Con `resena_oculta = true` la hoja se construye igual, pero
-                # el índice no muestra su enlace: se llega haciendo diez clics
-                # sobre el título de la sección. Sirve para dejar publicado
-                # algo que todavía no se quiere anunciar. Distinto de sacar la
-                # clave `resena`, que directamente no genera la hoja.
-                "resena_oculta": bool(g.get("resena_oculta", False)),
+                "documentos": documentos,
             }
         )
     return grupos

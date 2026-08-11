@@ -255,12 +255,17 @@ restaurarAbiertos();
 irAlAncla();
 marcarTodos();
 
-/* ---------- acceso por diez clics a una reseña oculta ----------
+/* ---------- acceso por diez clics a un documento oculto ----------
 
-   Una sección del índice puede tener su documento publicado pero sin enlace
-   (`resena_oculta = true` en grupos.toml). La hoja existe y se puede abrir por
-   su URL; desde el sitio se llega haciendo diez clics sobre el título de la
-   sección, que es lo único que la delata.
+   Una sección del índice puede tener documentos publicados pero sin enlace
+   (`oculto = true` en su `[[grupos.documentos]]`). Las hojas existen y se
+   pueden abrir por su URL; desde el sitio se llega haciendo diez clics sobre el
+   título de la sección, que es lo único que las delata.
+
+   El destino es siempre `/resena/<slug-del-grupo>/`, sin importar cuántos
+   documentos tenga: con uno solo esa URL es la hoja del documento, y con varios
+   es la hoja donde se elige. El build resuelve cuál de las dos, así que acá no
+   hay nada que decidir.
 
    El contador se reinicia si pasan más de dos segundos entre dos clics, para
    que un clic suelto al pasar no vaya sumando durante toda la visita. */

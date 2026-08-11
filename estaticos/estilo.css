@@ -278,6 +278,10 @@ h2.grupo[data-resena-oculta] {
   font-size: 0.82rem;
 }
 
+/* Una sección puede anunciar más de un documento. Sin esto quedarían pegados
+   en el mismo renglón, porque `.enlace-resena` es inline-block. */
+.enlace-resena + .enlace-resena { margin-left: 1rem; }
+
 /* ---------- capítulos plegables ---------- */
 
 .capitulos { display: grid; gap: 0.5rem; margin-top: 0.75rem; }

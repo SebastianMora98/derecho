@@ -441,16 +441,47 @@ inteligencia fracasada*.
   declarado que no usa nadie.
 - `orden` — opcional. Las secciones con `orden` van primero, en ese orden; el
   resto queda donde caía por el orden de slug.
-- `resena` — opcional, el nombre de un archivo dentro de `libros/resenas/`.
-- `resena_oculta` — opcional. La hoja se construye igual, pero el índice **no
-  muestra su enlace**: se llega haciendo **diez clics sobre el título de la
-  sección**. Sirve para dejar algo publicado sin anunciarlo todavía. Es
-  distinto de sacar la clave `resena`, que directamente no genera la hoja —y
-  entonces no hay adónde navegar—. El encargado del atajo es
-  `tarjetas.js`, que engancha los `h2.grupo[data-resena-oculta]` del índice;
-  el `data-` lo pone `index.astro` con el slug del grupo. El contador se
-  reinicia si pasan más de dos segundos entre dos clics, y a partir del quinto
-  el título parpadea para avisar que va contando.
+- `[[grupos.documentos]]` — **una sección puede tener uno o varios documentos
+  propios**, cada uno con `archivo` (markdown dentro de `libros/resenas/`),
+  y opcionalmente `slug`, `titulo`, `bajada`, `enlace` y `oculto`.
+
+**La regla de ruteo es lo que evita mover URLs ya publicadas:**
+
+| documentos | `/resena/<grupo>/` | cada documento |
+|---|---|---|
+| 1 | *es* la hoja del documento | — |
+| 2 o más | hoja de elección, con tarjetas | `/resena/<grupo>/<doc>/` |
+
+Así una sección de un solo documento conserva su URL cuando otra suma el
+segundo, y **`tarjetas.js` no hubo que tocarlo**: los diez clics siempre
+apuntan a `/resena/<slug-del-grupo>/`, que ahora resuelve solo a la hoja
+correcta. La indirección la hace el build, no el cliente — por eso la hoja de
+elección vive en la raíz de la sección y no en una ruta aparte.
+
+- `oculto` — el documento se publica pero el índice **no muestra su enlace**: se
+  llega haciendo **diez clics sobre el título de la sección**. Sirve para dejar
+  algo publicado sin anunciarlo. Es distinto de no declarar el documento, que
+  directamente no genera la hoja —y entonces no hay adónde navegar—. El
+  encargado del atajo es `tarjetas.js`, que engancha los
+  `h2.grupo[data-resena-oculta]` del índice; el `data-` lo pone `index.astro`
+  con el slug del grupo, y ahora se emite si **algún** documento de la sección
+  está oculto. El contador se reinicia si pasan más de dos segundos entre dos
+  clics, y a partir del quinto el título parpadea para avisar que va contando.
+
+Las claves viejas —`resena`, `resena_titulo`, `resena_bajada`, `resena_enlace`,
+`resena_oculta`— **se siguen aceptando**: `datos.py: LEGADO` las traduce a un
+documento. Eso permitió migrar el TOML en un commit separado del código, con el
+sitio funcionando en los dos. El build avisa si una sección mezcla las dos
+formas, si dos documentos comparten slug, si dos secciones comparten slug de
+grupo, y si un `archivo` declarado no existe.
+
+El acuerdo sobre rutas y textos por defecto vive en **`web/src/lib/grupos.ts`**
+(`ruta`, `titulo`, `bajada`, `enlace`, `hayOcultos`, `anunciados`) y no copiado
+en cada `.astro`: si las tres páginas que lo necesitan —el índice, la hoja de la
+sección y la del documento— se separan, las URLs dejan de cerrar entre sí. El
+cuerpo de la hoja está en **`web/src/components/HojaDocumento.astro`**, porque
+hay dos rutas que lo sirven. La bajada pasa por `inline()`: admite cursiva y
+negrita, y sin eso los títulos de obra salían con los asteriscos crudos.
 
 El archivo suelto dentro de `libros/` no molesta porque `recolectar` recorre
 **solo carpetas**. Si el nombre del grupo coincide con el del autor, la tarjeta
@@ -464,9 +495,9 @@ JSON guarda el markdown crudo; el HTML lo arma `md.ts`, igual que todo lo
 demás.
 
 No siempre es una reseña, así que los textos son configurables desde
-`grupos.toml` —`resena_titulo`, `resena_bajada` y `resena_enlace`—; sin esas
-claves se usan los de reseña. Hoy hay uno de cada tipo, y esa clave es lo que
-convierte el mismo mecanismo en tres géneros distintos:
+`grupos.toml` —`titulo`, `bajada` y `enlace`—; sin esas claves se usan los de
+reseña. Hoy hay cuatro documentos en tres secciones, y esa clave es lo que
+convierte el mismo mecanismo en géneros distintos:
 
 - **Teoría general del delito** — una **reseña conjunta** que cruza a Beccaria con Foucault: el
   programa de reforma penal y su diagnóstico como cambio en la tecnología del
@@ -486,8 +517,11 @@ convierte el mismo mecanismo en tres géneros distintos:
   sobre la opinión pública— y la conclusión declara los límites de la
   valoración, como pide la guía. Unas 1.500 palabras.
 
-  Está **oculta** (`resena_oculta`): se llega con diez clics en «Teoría
-  general del delito».
+  Está **oculta** (`oculto`), igual que el taller de cine de la misma sección:
+  los diez clics en «Teoría general del delito» abren la hoja de elección con
+  las dos tarjetas. Son entregas distintas —una reseña académica y un taller de
+  otra materia, con rúbricas distintas— y por eso van en dos hojas y no en una;
+  lo único que comparten es Beccaria como fuente.
 
   Se reescribió una segunda vez después de **releer los dos originales para
   auditar el vocabulario**, porque el encargo era que no usara palabras más
@@ -514,6 +548,34 @@ convierte el mismo mecanismo en tres géneros distintos:
   y no él, cosa que el texto ahora declara. Sumado a eso, buena parte de las
   respuestas largas de la entrevista son de Michelle Perrot, no de Foucault:
   atribuírselas a él es un error de lectura fácil de cometer al citar.
+- **Teoría general del delito**, segundo documento — el **taller de cine
+  resuelto**, de otra materia: «De los delitos y de las penas: Beccaria frente
+  a la pantalla», de Teoría del delito I. Es un género nuevo acá: no resume un
+  texto, **contesta una consigna evaluada con rúbrica**. Cubre el **Eje 1**,
+  *Del amor y otros demonios* (Hilda Hidalgo, 2009), y resuelve los tres
+  entregables —ficha de visionado, guía de preguntas del eje y un ensayo de
+  1.363 palabras—, con los encabezados numerados como la consigna (`6.1.1`,
+  `6.2.3`) para que el docente mapee cada respuesta.
+
+  Lo que hizo la diferencia fue **el archivo de subtítulos de la película**, que
+  aportó el usuario. La rúbrica premia citar escenas «con referencia al minuto»,
+  y sin esa fuente los minutos habrían sido estimaciones. Con el `.srt` se
+  fechan contra diálogo real, y **corrigió dos estimaciones muy erradas**: el
+  corte del cabello no ocurre hacia el minuto 70, se **ordena en el 26:26**; y
+  el caso no nace en el 33 sino en el **10:54**, cuando al obispo le informan de
+  la mordedura y contesta que la rabia es una astucia del demonio. Ojo con el
+  límite de la fuente: los subtítulos capturan **diálogo, no imagen**, así que
+  no sirven para afirmar nada de fotografía ni de encuadre, y hay silencios de
+  hasta tres minutos donde no dicen nada. Además terminan en 89:37 y la ficha
+  del taller da 99 minutos, cosa que el documento declara.
+
+  Dos decisiones de contenido que conviene no deshacer. Las leyes colombianas se
+  citan **por número y año, nunca por artículo**: un trabajo sobre el principio
+  de legalidad no puede citar mal un artículo, y el documento lo dice en una
+  nota. Y la comparación entre las medidas de seguridad para inimputables y el
+  exorcismo es de **estructura compartida** —privar invocando el bien del
+  privado—, no de identidad; afirmarlas equivalentes hundiría el criterio de
+  conexión conceptual de la rúbrica.
 - **Civil personas** — el **taller resuelto**: las seis preguntas de la consigna, una
   respuesta por pregunta al nivel del primer semestre. La consigna manda leer
   solo las pp. 119-151, que es exactamente lo que quedó del libro después de

@@ -7,35 +7,74 @@
 # - `nombre`  tiene que coincidir exacto con el `grupo` de cada libro.
 # - `orden`   opcional: las secciones con `orden` van primero, en ese orden.
 #             Lo que no lo declara queda después, en el orden de siempre.
-# - `resena`  opcional: archivo markdown dentro de `libros/resenas/` con una
-#             reseña que cubre TODAS las lecturas de la sección a la vez. Se
-#             publica en su propia hoja y el índice la enlaza bajo la sección.
+#
+# Cada sección puede tener uno o varios documentos propios, declarados con
+# `[[grupos.documentos]]`. Un documento cubre TODAS las lecturas de la sección a
+# la vez y se publica en su propia hoja:
+#
+# - con un solo documento, esa hoja es `/resena/<slug-del-grupo>/`;
+# - con dos o más, esa URL pasa a ser la hoja donde se elige cuál abrir, y cada
+#   documento vive en `/resena/<slug-del-grupo>/<slug-del-documento>/`.
+#
+# Es lo que deja intactas las URLs de las secciones de un solo documento cuando
+# alguna otra pasa a tener varios.
+#
+# Claves de `[[grupos.documentos]]`:
+#
+# - `archivo` markdown dentro de `libros/resenas/`. Si no existe, el documento no
+#             se publica y el build avisa.
+# - `slug`    opcional: el tramo propio de la URL. Por defecto, el nombre del
+#             archivo sin extensión. Solo se usa con dos o más documentos.
+# - `titulo`  opcional: encabezado de la hoja. Por defecto «Reseña de <sección>».
+# - `bajada`  opcional: la línea bajo el título, y el texto de la tarjeta en la
+#             hoja de elección.
+# - `enlace`  opcional: el texto del enlace en el índice.
+# - `oculto`  opcional: el documento se publica pero el índice no lo enlaza. Se
+#             llega con diez clics sobre el título de la sección, que abren
+#             `/resena/<slug-del-grupo>/`. Para anunciarlo, borrar la línea.
 
 [[grupos]]
 nombre = "Teoría general del delito"
 orden = 1
-resena = "clase-a.md"
-# Publicada pero sin anunciar: la hoja de su reseña se construye igual, y el
-# índice no muestra su enlace. Se llega haciendo diez clics sobre el título de
-# esta sección. Para anunciarla de nuevo, borrar esta línea.
-resena_oculta = true
+
+  # Los dos van ocultos: la sección no muestra ningún enlace en el índice, y los
+  # diez clics sobre su título abren la hoja donde se elige entre ellos. Son
+  # entregas distintas —una reseña académica y un taller de otra materia—, por
+  # eso van en dos hojas y no en una.
+  [[grupos.documentos]]
+  archivo = "clase-a.md"
+  slug = "resena-conjunta"
+  titulo = "Reseña conjunta"
+  bajada = "Beccaria y Foucault leídos juntos, siguiendo la guía de reseña de LEO."
+  oculto = true
+
+  [[grupos.documentos]]
+  archivo = "taller-beccaria-cine.md"
+  slug = "taller-beccaria-cine"
+  titulo = "Taller de Beccaria y cine"
+  bajada = "El taller resuelto del Eje 1: *Del amor y otros demonios* leída con el *Tratado*."
+  oculto = true
 
 [[grupos]]
 nombre = "Civil personas"
 orden = 2
-# Acá el documento de la sección no es una reseña sino el taller resuelto, así
-# que se renombra el título de la hoja, su bajada y el enlace del índice.
-resena = "clase-b.md"
-resena_titulo = "Respuestas del taller"
-resena_bajada = "Las seis preguntas del taller contestadas con las lecturas de esta clase."
-resena_enlace = "Respuestas del taller de Civil personas"
+
+  # Acá el documento de la sección no es una reseña sino el taller resuelto, así
+  # que se renombra el título de la hoja, su bajada y el enlace del índice.
+  [[grupos.documentos]]
+  archivo = "clase-b.md"
+  titulo = "Respuestas del taller"
+  bajada = "Las seis preguntas del taller contestadas con las lecturas de esta clase."
+  enlace = "Respuestas del taller de Civil personas"
 
 [[grupos]]
 nombre = "Preseminario"
 orden = 3
-# Tampoco es una reseña: es la hoja de preparación para el debate, y cubre
-# solo la Introducción y el capítulo I, que es lo asignado.
-resena = "preseminario.md"
-resena_titulo = "Guía para el debate"
-resena_bajada = "Lo que hay que tener firme de la Introducción y el capítulo I para debatir."
-resena_enlace = "Guía para el debate del Preseminario"
+
+  # Tampoco es una reseña: es la hoja de preparación para el debate, y cubre
+  # solo la Introducción y el capítulo I, que es lo asignado.
+  [[grupos.documentos]]
+  archivo = "preseminario.md"
+  titulo = "Guía para el debate"
+  bajada = "Lo que hay que tener firme de la Introducción y el capítulo I para debatir."
+  enlace = "Guía para el debate del Preseminario"

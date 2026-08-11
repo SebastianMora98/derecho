@@ -1,11 +1,18 @@
 ---
-// La reseña conjunta de un grupo: un solo texto que cubre todas las lecturas
-// de esa clase. Sale de `libros/resenas/<archivo>.md`, declarado en
-// `libros/grupos.toml`; acá se renderiza el markdown con el mismo `md.ts` que
-// usa el resto del sitio.
+// La hoja de una sección del índice. Con un solo documento —el caso de casi
+// todas— esta URL *es* la del documento; con dos o más pasa a ser la hoja donde
+// se elige cuál abrir, y cada documento se publica un nivel más abajo.
+//
+// El desdoble está acá, en una ruta sola, por dos motivos. Uno: las secciones
+// que ya tenían su documento en `/resena/<slug>/` no se mueven cuando alguna
+// otra suma un segundo. Dos: `/resena/<slug-del-grupo>/` sigue siendo la única
+// dirección que hay que saber, que es adonde llevan los diez clics de
+// `tarjetas.js` — por eso ese archivo no se toca.
 import Base from "../../../layouts/Base.astro";
-import { bloque } from "../../../lib/md";
-import grupos from "../../../data/grupos.json";
+import HojaDocumento from "../../../components/HojaDocumento.astro";
+import { inline } from "../../../lib/md";
+import { ruta, titulo as tituloDe, librosDe } from "../../../lib/grupos";
+import type { Grupo } from "../../../lib/grupos";
 
 export async function getStaticPaths() {
   const modulos = import.meta.glob("../../../data/*.json", { eager: true }) as Record<string, any>;
@@ -13,43 +20,44 @@ export async function getStaticPaths() {
     .filter(([ruta]) => !ruta.endsWith("indice.json") && !ruta.endsWith("grupos.json"))
     .map(([, mod]) => mod.default ?? mod);
   const declarados = (await import("../../../data/grupos.json")).default as any[];
-  // Solo los grupos que de verdad tienen reseña: uno sin ella no necesita hoja.
+  // Solo las secciones que de verdad tienen algún documento: una sin ellos no
+  // necesita hoja, y no habría adónde navegar.
   return declarados
-    .filter((g) => g.resena)
+    .filter((g) => g.documentos.length > 0)
     .map((g) => ({
       params: { slug: g.slug },
-      props: {
-        grupo: g,
-        libros: libros
-          .filter((l: any) => (l.grupo || "").trim() === g.nombre)
-          .sort((a: any, b: any) => a.slug.localeCompare(b.slug)),
-      },
+      props: { grupo: g, libros: librosDe(libros, g) },
     }));
 }
 
-const { grupo, libros } = Astro.props;
-// El documento de una sección no siempre es una reseña —puede ser el taller
-// resuelto—, así que el título, la bajada y las migas salen de `grupos.toml`
-// cuando están declarados.
-const titulo = grupo.resena_titulo || `Reseña de ${grupo.nombre}`;
-const bajada = grupo.resena_bajada
-  || `Un solo texto sobre las ${libros.length} lecturas de esta clase, leídas juntas.`;
-// La barra ya trae el enlace a la portada en `.marca`; repetirlo acá lo
-// mostraría dos veces seguidas.
-const migas = `<span>${grupo.nombre} · ${titulo}</span>`;
+const { grupo, libros } = Astro.props as { grupo: Grupo; libros: any[] };
+const uno = grupo.documentos.length === 1 ? grupo.documentos[0] : null;
+const migas = `<span>${grupo.nombre}</span>`;
 ---
-<Base titulo={`${titulo} · ${grupo.nombre}`} migas={migas}>
-  <div class="hoja">
-    <h1>{titulo}</h1>
-    <p class="ficha">{bajada}</p>
-    <ul class="lecturas-resena">
-      {libros.map((l: any) => (
-        <li>
-          <a href={`/${l.slug}/index.html`}>{l.titulo}</a>
-          {l.autor && <span class="autor"> · {l.autor}</span>}
-        </li>
-      ))}
-    </ul>
-    <article class="resena-texto" set:html={bloque(grupo.resena)} />
-  </div>
-</Base>
+{uno ? (
+  <HojaDocumento grupo={grupo} documento={uno} libros={libros} />
+) : (
+  <Base titulo={`Documentos de ${grupo.nombre}`} migas={migas}>
+    <div class="hoja">
+      <h1>{grupo.nombre}</h1>
+      <p class="ficha">
+        Esta clase tiene {grupo.documentos.length} documentos propios. Elegí cuál abrir.
+      </p>
+      {/* Las mismas tarjetas del índice de libros (`.libros` > `.libro`): acá
+          cada una es un documento de la clase en vez de una lectura. */}
+      <div class="libros">
+        {grupo.documentos.map((d) => (
+          <a class="libro" href={ruta(grupo, d)}>
+            <span class="titulo">{tituloDe(grupo, d)}</span>
+            {d.bajada && <p class="extracto" set:html={inline(d.bajada)} />}
+            <span class="pie">
+              {/* Sin `.autor` delante, así que el `· ` de `.autor + .meta` no
+                  aparece: la línea de pie queda con el tamaño solo. */}
+              <span class="meta">{d.palabras} palabras</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </Base>
+)}

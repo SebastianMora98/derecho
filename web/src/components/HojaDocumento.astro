@@ -1,0 +1,46 @@
+---
+// La hoja de un documento de sección: un solo texto que cubre todas las
+// lecturas de esa clase. Sale de `libros/resenas/<archivo>.md`, declarado en
+// `libros/grupos.toml`; acá se renderiza el markdown con el mismo `md.ts` que
+// usa el resto del sitio.
+//
+// Es un componente y no una página porque hay dos rutas que lo sirven:
+// `/resena/<grupo>/` cuando la sección tiene un solo documento, y
+// `/resena/<grupo>/<documento>/` cuando tiene varios.
+import Base from "../layouts/Base.astro";
+import { bloque, inline } from "../lib/md";
+import { titulo as tituloDe, bajada as bajadaDe } from "../lib/grupos";
+import type { Documento, Grupo } from "../lib/grupos";
+
+interface Props {
+  grupo: Grupo;
+  documento: Documento;
+  libros: any[];
+}
+const { grupo, documento, libros } = Astro.props;
+
+const titulo = tituloDe(grupo, documento);
+const bajada = bajadaDe(grupo, documento, libros.length);
+// La barra ya trae el enlace a la portada en `.marca`; repetirlo acá lo
+// mostraría dos veces seguidas. Tampoco se enlaza hacia arriba, a la hoja de
+// elección de la sección: puede listar documentos ocultos, y ese enlace sería
+// exactamente la puerta que `oculto` cierra.
+const migas = `<span>${grupo.nombre} · ${titulo}</span>`;
+---
+<Base titulo={`${titulo} · ${grupo.nombre}`} migas={migas}>
+  <div class="hoja">
+    <h1>{titulo}</h1>
+    {/* La bajada admite markdown inline —los títulos de obra van en cursiva—,
+        igual que las tarjetas de la hoja de elección. */}
+    <p class="ficha" set:html={inline(bajada)} />
+    <ul class="lecturas-resena">
+      {libros.map((l: any) => (
+        <li>
+          <a href={`/${l.slug}/index.html`}>{l.titulo}</a>
+          {l.autor && <span class="autor"> · {l.autor}</span>}
+        </li>
+      ))}
+    </ul>
+    <article class="resena-texto" set:html={bloque(documento.texto)} />
+  </div>
+</Base>

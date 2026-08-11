@@ -1,0 +1,26 @@
+---
+// Un documento de una sección que tiene varios. Con uno solo esta ruta no se
+// emite: ese caso lo sirve `/resena/<slug-del-grupo>/` directamente, que es la
+// URL que esas hojas ya tenían publicada.
+import HojaDocumento from "../../../../components/HojaDocumento.astro";
+import { librosDe } from "../../../../lib/grupos";
+
+export async function getStaticPaths() {
+  const modulos = import.meta.glob("../../../../data/*.json", { eager: true }) as Record<string, any>;
+  const libros = Object.entries(modulos)
+    .filter(([ruta]) => !ruta.endsWith("indice.json") && !ruta.endsWith("grupos.json"))
+    .map(([, mod]) => mod.default ?? mod);
+  const declarados = (await import("../../../../data/grupos.json")).default as any[];
+  return declarados
+    .filter((g) => g.documentos.length > 1)
+    .flatMap((g) =>
+      g.documentos.map((d: any) => ({
+        params: { slug: g.slug, documento: d.slug },
+        props: { grupo: g, documento: d, libros: librosDe(libros, g) },
+      })),
+    );
+}
+
+const { grupo, documento, libros } = Astro.props;
+---
+<HojaDocumento grupo={grupo} documento={documento} libros={libros} />
