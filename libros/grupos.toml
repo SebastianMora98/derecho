@@ -37,10 +37,10 @@
 nombre = "Teoría general del delito"
 orden = 1
 
-  # Los dos van ocultos: la sección no muestra ningún enlace en el índice, y los
-  # diez clics sobre su título abren la hoja donde se elige entre ellos. Son
-  # entregas distintas —una reseña académica y un taller de otra materia—, por
-  # eso van en dos hojas y no en una.
+  # Los tres van ocultos: la sección no muestra ningún enlace en el índice, y
+  # los diez clics sobre su título abren la hoja donde se elige entre ellos.
+  # Son entregas distintas —una reseña académica y dos versiones del mismo
+  # taller—, por eso van en hojas separadas y no en una sola.
   [[grupos.documentos]]
   archivo = "clase-a.md"
   slug = "resena-conjunta"
@@ -53,6 +53,15 @@ orden = 1
   slug = "taller-beccaria-cine"
   titulo = "Taller de Beccaria y cine"
   bajada = "El taller resuelto del Eje 1: *Del amor y otros demonios* leída con el *Tratado*."
+  oculto = true
+
+  # Misma resolución del taller, con respuestas más cortas y menos citas: para
+  # cuando la versión larga suena a más de un primer semestre.
+  [[grupos.documentos]]
+  archivo = "taller-beccaria-cine-simplificado.md"
+  slug = "taller-beccaria-cine-simplificado"
+  titulo = "Taller de Beccaria y cine (simple)"
+  bajada = "La misma resolución del Eje 1, con respuestas más cortas y directas."
   oculto = true
 
 [[grupos]]
