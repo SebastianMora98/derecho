@@ -41,6 +41,11 @@ const migas = `<span>${grupo.nombre} · ${titulo}</span>`;
         </li>
       ))}
     </ul>
+    {documento.word && (
+      <p class="descarga-word">
+        <a href={`/descargas/${documento.word}`} download>Descargar en Word (.docx)</a>
+      </p>
+    )}
     <article class="resena-texto" set:html={bloque(documento.texto)} />
   </div>
 </Base>

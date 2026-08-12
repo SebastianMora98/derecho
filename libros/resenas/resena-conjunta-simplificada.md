@@ -53,13 +53,13 @@ barato que castigar con violencia.
 
 Foucault agrega dos ideas importantes. La primera es que ese poder no le
 pertenece a nadie en particular: es "una maquinaria de la que nadie es
-titular" (párr. 41). La segunda es que nadie lo planeó desde el principio: cada
-parte se inventó por separado, para resolver problemas distintos, y después se
-juntó todo.
+titular" (Foucault, 1980, párr. 41). La segunda es que nadie lo planeó desde el
+principio: cada parte se inventó por separado, para resolver problemas
+distintos, y después se juntó todo.
 
 Él mismo pone un límite a su idea. Dice que el panóptico fue una
-"utopía-programa" (párr. 53), es decir, algo que no se construyó tal cual, pero
-cuya forma de funcionar sí se copió en otros lugares.
+"utopía-programa" (Foucault, 1980, párr. 53), es decir, algo que no se
+construyó tal cual, pero cuya forma de funcionar sí se copió en otros lugares.
 
 ## Evaluación crítica
 

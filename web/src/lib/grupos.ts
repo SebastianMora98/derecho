@@ -12,6 +12,9 @@ export interface Documento {
   oculto: boolean;
   palabras: number;
   texto: string;
+  /** Nombre de archivo dentro de `web/public/descargas/`, o cadena vacía si
+   *  el documento no tiene versión para descargar. */
+  word: string;
 }
 
 export interface Grupo {

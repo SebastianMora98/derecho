@@ -49,13 +49,16 @@ orden = 1
   oculto = true
 
   # Misma reseña, con oraciones más cortas y menos citas: para cuando la
-  # versión larga suena a más de un primer semestre.
+  # versión larga suena a más de un primer semestre. Es la que se entrega, así
+  # que además de la hoja web tiene su .docx para descargar (generado a mano
+  # con `scripts/exportar_word.py`, no en cada build).
   [[grupos.documentos]]
   archivo = "resena-conjunta-simplificada.md"
   slug = "resena-conjunta-simplificada"
   titulo = "Reseña conjunta (simple)"
   bajada = "La misma reseña de Beccaria y Foucault, con oraciones más cortas y directas."
   oculto = true
+  word = "resena-conjunta-simplificada.docx"
 
   [[grupos.documentos]]
   archivo = "taller-beccaria-cine.md"

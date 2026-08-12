@@ -467,6 +467,17 @@ elección vive en la raíz de la sección y no en una ruta aparte.
   con el slug del grupo, y ahora se emite si **algún** documento de la sección
   está oculto. El contador se reinicia si pasan más de dos segundos entre dos
   clics, y a partir del quinto el título parpadea para avisar que va contando.
+- `word` — opcional: el nombre de un archivo dentro de `web/public/descargas/`.
+  Si está, la hoja del documento muestra un enlace «Descargar en Word». El
+  `.docx` no lo genera `ema.py web`: se arma a mano, una vez, con
+  `uv run --with python-docx scripts/exportar_word.py <entrada.md> <salida.docx>
+  --titulo "<título>"`. Ese script entiende el mismo subconjunto de markdown que
+  `md.ts` —párrafos, `## título`, `**negrita**`, `*cursiva*`, listas `- ` para
+  las referencias— y arma un documento **deliberadamente sin nada decorativo**:
+  Times New Roman 12, doble espacio, márgenes de 2,54 cm, sangría de primera
+  línea, sangría francesa en las referencias, sin colores. Las comillas rectas
+  del markdown se curvan (`"cita"` → `“cita”`) para que se vea como un Word
+  tipeado a mano y no como un volcado de texto.
 
 Las claves viejas —`resena`, `resena_titulo`, `resena_bajada`, `resena_enlace`,
 `resena_oculta`— **se siguen aceptando**: `datos.py: LEGADO` las traduce a un
@@ -548,6 +559,14 @@ convierte el mismo mecanismo en géneros distintos:
   y no él, cosa que el texto ahora declara. Sumado a eso, buena parte de las
   respuestas largas de la entrevista son de Michelle Perrot, no de Foucault:
   atribuírselas a él es un error de lectura fácil de cometer al citar.
+
+  Tiene una versión hermana, **«Reseña conjunta (simple)»**, con la misma
+  estructura de la guía de LEO y las mismas citas, pero reescrita en oraciones
+  cortas y sin las transiciones de crítico («vale la pena detenerse en...»):
+  la versión larga se entendía demasiado elaborada para un primer semestre. Es
+  la que se entrega de verdad, así que tiene además su `.docx` para descargar
+  —ver la clave `word` más arriba—, generado con Times New Roman 12 y doble
+  espacio para llegar cómodo a las dos páginas mínimas que pidió el profesor.
 - **Teoría general del delito**, segundo documento — el **taller de cine
   resuelto**, de otra materia: «De los delitos y de las penas: Beccaria frente
   a la pantalla», de Teoría del delito I. Es un género nuevo acá: no resume un
@@ -576,6 +595,10 @@ convierte el mismo mecanismo en géneros distintos:
   exorcismo es de **estructura compartida** —privar invocando el bien del
   privado—, no de identidad; afirmarlas equivalentes hundiría el criterio de
   conexión conceptual de la rúbrica.
+
+  También tiene su versión **«(simple)»**, con los mismos hechos y los mismos
+  minutos del `.srt` —incluida la corrección sobre Delaura—, pero en oraciones
+  más cortas y con menos citas por respuesta.
 - **Civil personas** — el **taller resuelto**: las seis preguntas de la consigna, una
   respuesta por pregunta al nivel del primer semestre. La consigna manda leer
   solo las pp. 119-151, que es exactamente lo que quedó del libro después de

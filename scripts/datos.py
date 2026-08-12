@@ -313,6 +313,11 @@ def documento_de(d: dict, resenas: Path, grupo: str) -> dict | None:
         # Para la hoja de elección: da idea del tamaño antes de abrir.
         "palabras": len(texto.split()),
         "texto": texto,
+        # Opcional: nombre de archivo dentro de `web/public/descargas/`, para
+        # cuando el documento se piensa entregar y conviene tenerlo también en
+        # Word. Lo genera `exportar_word.py` a mano, no este script — acá solo
+        # se pasa el nombre para que el sitio muestre el enlace de descarga.
+        "word": str(d.get("word", "")).strip(),
     }
 
 
