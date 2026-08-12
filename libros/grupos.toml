@@ -37,15 +37,24 @@
 nombre = "Teoría general del delito"
 orden = 1
 
-  # Los tres van ocultos: la sección no muestra ningún enlace en el índice, y
+  # Los cuatro van ocultos: la sección no muestra ningún enlace en el índice, y
   # los diez clics sobre su título abren la hoja donde se elige entre ellos.
-  # Son entregas distintas —una reseña académica y dos versiones del mismo
-  # taller—, por eso van en hojas separadas y no en una sola.
+  # Son entregas distintas —una reseña académica, en dos versiones, y un taller
+  # de otra materia, también en dos versiones—, por eso van en hojas separadas.
   [[grupos.documentos]]
   archivo = "clase-a.md"
   slug = "resena-conjunta"
   titulo = "Reseña conjunta"
   bajada = "Beccaria y Foucault leídos juntos, siguiendo la guía de reseña de LEO."
+  oculto = true
+
+  # Misma reseña, con oraciones más cortas y menos citas: para cuando la
+  # versión larga suena a más de un primer semestre.
+  [[grupos.documentos]]
+  archivo = "resena-conjunta-simplificada.md"
+  slug = "resena-conjunta-simplificada"
+  titulo = "Reseña conjunta (simple)"
+  bajada = "La misma reseña de Beccaria y Foucault, con oraciones más cortas y directas."
   oculto = true
 
   [[grupos.documentos]]
