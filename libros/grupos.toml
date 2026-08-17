@@ -80,13 +80,24 @@ orden = 1
 nombre = "Civil personas"
 orden = 2
 
-  # Acá el documento de la sección no es una reseña sino el taller resuelto, así
-  # que se renombra el título de la hoja, su bajada y el enlace del índice.
+  # Acá los documentos de la sección no son reseñas sino trabajos del curso, así
+  # que se renombran el título de la hoja, su bajada y el enlace del índice. Con
+  # dos documentos la raíz de la sección pasa a ser la hoja de elección, y cada
+  # uno vive un nivel más abajo: por eso se les da un `slug` legible en vez de
+  # dejar que salga del nombre del archivo.
   [[grupos.documentos]]
   archivo = "clase-b.md"
+  slug = "taller-resuelto"
   titulo = "Respuestas del taller"
   bajada = "Las seis preguntas del taller contestadas con las lecturas de esta clase."
   enlace = "Respuestas del taller de Civil personas"
+
+  [[grupos.documentos]]
+  archivo = "civil-analisis-sentencias.md"
+  slug = "analisis-sentencias"
+  titulo = "Análisis de dos sentencias"
+  bajada = "La SU-016 de 2020, el caso del oso Chucho, y la C-343 de 2007."
+  enlace = "Análisis de sentencias de Civil personas"
 
 [[grupos]]
 nombre = "Preseminario"
