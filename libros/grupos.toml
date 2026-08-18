@@ -76,6 +76,18 @@ orden = 1
   bajada = "La misma resolución del Eje 1, con respuestas más cortas y directas."
   oculto = true
 
+  # No es una entrega sino apuntes: el resumen de las diapositivas que se
+  # alcanzaron a fotografiar de una ponencia de congreso. No sale de ninguna de
+  # las lecturas de la sección, y el propio documento declara lo que le falta
+  # (no hay diapositiva de título ni de autor, y la última foto es de otra
+  # presentación).
+  [[grupos.documentos]]
+  archivo = "congreso-fragmentacion.md"
+  slug = "congreso-fragmentacion"
+  titulo = "Ponencia: fragmentación del Derecho Internacional"
+  bajada = "Resumen de las diapositivas fotografiadas en el congreso."
+  oculto = true
+
 [[grupos]]
 nombre = "Civil personas"
 orden = 2
