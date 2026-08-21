@@ -12,8 +12,8 @@ Actos económicos son todos aquellos con los que tratamos de satisfacer
 necesidades. El problema es que las necesidades son ilimitadas y los bienes
 limitados. Cuando alguien toma algo que le sirve, quiere retenerlo: esa relación
 entre el hombre y la cosa es el **dominio**, y alrededor de cada uno se forma
-una especie de recinto —la *domus*, la casa— que no es solo el techo sino todo
-lo que le sirve para vivir.
+una especie de recinto, la *domus* o casa, que no es solo el techo sino todo lo
+que le sirve para vivir.
 
 De ahí sale su definición de **guerra**, más amplia de la que uno espera: guerra
 es **invadir el dominio ajeno**. No pasa solo entre pueblos ni solo con armas;
@@ -38,7 +38,7 @@ trabajo de toda una vida, y la necesidad de terminar la guerra es
 Entonces aparece el derecho, y esta es la frase central del libro: el derecho es
 un **sustituto de la moral**, algo inventado para conseguir en la economía
 efectos parecidos a los que conseguiría la moral. Si el que tiene no da por su
-cuenta, hay que obligarlo, y para eso hace falta un **jefe** que mande — de
+cuenta, hay que obligarlo, y para eso hace falta un **jefe** que mande. De
 hecho la palabra latina para derecho, *ius*, viene de mandar. Su mandato tiene
 dos piezas que conviene tener separadas: el **precepto**, que indica una
 conducta, y la **sanción**, que amenaza con un castigo si no se obedece. La
@@ -46,8 +46,8 @@ sanción es lo que mete la **fuerza** dentro del derecho, y ahí está para él 
 verdadera diferencia con la moral.
 
 De paso deja una observación que suele quedar grabada: el derecho nace *bajo el
-signo de la contradicción*, porque usa la guerra para combatir la guerra —el
-carabinero ataca al bandido para que el bandido no ataque al caminante—. Los dos
+signo de la contradicción*, porque usa la guerra para combatir la guerra: el
+carabinero ataca al bandido para que el bandido no ataque al caminante. Los dos
 usan la fuerza; lo que los separa no es el medio sino el fin, porque uno pelea
 para sí y el otro para los demás. Por eso el derecho combina fuerza y justicia,
 y en su emblema están la espada y la balanza.
@@ -56,8 +56,8 @@ Con esa cadena armada, el resto del libro la recorre hacia adelante y cada
 institución es un paso más. La guerra pasa a llamarse **delito**: el mismo hecho
 cambia de nombre y de valor social, porque lo que antes se permitía ahora se
 prohíbe. La **propiedad** y el **contrato** eran económicos y se vuelven
-jurídicos —castigar el hurto implica reconocer la propiedad, así que el derecho
-penal y el civil nacieron juntos, como dos caras de una moneda—. Los mandatos
+jurídicos: castigar el hurto implica reconocer la propiedad, así que el derecho
+penal y el civil nacieron juntos, como dos caras de una moneda. Los mandatos
 que tienen que estar listos antes de que la guerra aparezca son las **leyes**,
 que por eso son generales e hipotéticas. El **juicio** las completa. Y la
 sociedad jurídicamente ordenada se llama **Estado**.
@@ -85,7 +85,7 @@ excepción.
 - En el plano económico el contrato solo consigue una **tregua**, no la paz,
   porque el más fuerte lo rompe cuando le conviene. Conclusión: la economía sola
   no pone orden.
-- La **moral** sería la solución —el reino del *tú* frente al reino del *yo*— y
+- La **moral** sería la solución, el reino del *tú* frente al reino del *yo*, y
   además sería el reino de la libertad, porque el amor no necesita obligar. Pero
   llega demasiado tarde: la necesidad de terminar la guerra es inmediata.
 - El **jefe** manda porque los hombres son desiguales y toda sociedad tiene
