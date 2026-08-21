@@ -115,22 +115,24 @@ orden = 2
 nombre = "Introducción al derecho"
 orden = 3
 
-  # Los dos documentos cubren las dos lecturas juntas, en dos niveles de
-  # detalle: uno para anotar y otro para entender. Van anunciados en el índice
-  # —no `oculto`—, así que la sección muestra los dos enlaces.
+  # Acá los documentos no cubren todas las lecturas de la clase a la vez, como
+  # en las otras secciones: hay uno por texto, y cada uno lleva su resumen y sus
+  # ideas principales. Ojo con eso al leer `HojaDocumento.astro`: el riel de
+  # arriba lista igual las dos lecturas de la sección, porque es de la sección y
+  # no del documento.
   [[grupos.documentos]]
-  archivo = "introduccion-ideas-principales.md"
-  slug = "ideas-principales"
-  titulo = "Ideas principales"
-  bajada = "Lo mínimo de Carnelutti y Hervada, para anotar en el cuaderno."
-  enlace = "Ideas principales de Introducción al derecho"
+  archivo = "introduccion-carnelutti.md"
+  slug = "como-nace-el-derecho"
+  titulo = "Cómo nace el derecho"
+  bajada = "Resumen e ideas principales del texto de *Carnelutti*."
+  enlace = "Cómo nace el derecho: resumen e ideas principales"
 
   [[grupos.documentos]]
-  archivo = "introduccion-resumen-explicativo.md"
-  slug = "resumen-explicativo"
-  titulo = "Resumen explicativo"
-  bajada = "Las mismas dos lecturas explicadas con calma, y dónde no coinciden."
-  enlace = "Resumen explicativo de Introducción al derecho"
+  archivo = "introduccion-hervada.md"
+  slug = "que-es-el-derecho"
+  titulo = "¿Qué es el derecho?"
+  bajada = "Resumen e ideas principales del texto de *Hervada*."
+  enlace = "¿Qué es el derecho?: resumen e ideas principales"
 
 [[grupos]]
 nombre = "Preseminario"
