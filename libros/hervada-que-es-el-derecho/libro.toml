@@ -1,0 +1,57 @@
+# Ficha de la entrada. Igual que la de Carnelutti, no tiene documentos de
+# estudio: lo único que se publica es el resumen, y los dos documentos de la
+# sección cubren las dos lecturas juntas.
+# `contenido.py: recolectar` acepta una carpeta sin `estudio/` siempre que
+# tenga `resumen`, y la hoja se arma sin riel, sin botón y sin consolidados.
+
+titulo = "¿Qué es el derecho?"
+autor = "Javier Hervada"
+grupo = "Introducción al derecho"
+edicion = "«La moderna respuesta del realismo jurídico. Una introducción al derecho». 3ª ed., EUNSA, Pamplona, 2011. Diez capítulos"
+
+# principiante / intermedio / avanzado
+nivel = "principiante"
+# examen / investigacion / cultura-general / aplicacion-practica
+proposito = "examen"
+
+# Entrada destacada: lo que hay que saber del texto para una prueba.
+resumen_corto = """
+Lo que hay que tener firme es una identificación: para Hervada el derecho **es
+lo justo**, la cosa misma que le corresponde a alguien — no la ley, ni la
+facultad de exigirla. Nace de que **las cosas están repartidas**, y no de la
+escasez, que él descarta a propósito. De ahí salen las dos consecuencias que más
+rinden: la **justicia sigue al derecho**, así que donde no hay un derecho solo
+hay una **aspiración**, que es asunto de política; y para saber si algo es
+derecho hay que pedirle su **título** y su **medida**.
+"""
+
+# Resumen general. Prosa a mano, párrafos separados por una línea en blanco,
+# markdown inline permitido.
+resumen = """
+Una introducción escrita desde el **realismo jurídico clásico**, que es la
+manera en que entendían el derecho los juristas romanos, y su tesis se juega en
+una identificación que el libro repite hasta el final: el derecho **es** lo
+justo. No son dos cosas parecidas sino la misma, de modo que **lo suyo, lo justo
+y derecho** resultan tres nombres de lo mismo. Decir que el inquilino tiene
+derecho a ocupar el piso alquilado es decir que eso es lo justo; y lo injusto no
+es otra cosa que la lesión de un derecho.
+
+De ahí sale la respuesta sobre el origen. Saber derecho es un **arte**, una
+ciencia práctica —se puede conocer todo sobre unos cuadros y no saber pintar—, y
+todo arte responde a una necesidad. La que responde el derecho es que **las
+cosas están repartidas**, que no todo es de todos. El libro descarta
+expresamente que ese reparto venga de la **escasez**: con bienes de sobra habría
+reparto igual, y su ejemplo de los autos que cualquiera puede tomar termina en un
+manicomio antes que en un paraíso. Lo funda en que el hombre es finito y la vida
+en común exige atribuir cosas, funciones y cargas a alguien.
+
+El resto precisa el instrumental. La **justicia** es dar a cada uno lo suyo, y
+por eso **sigue** al derecho en vez de precederlo: donde no existe un derecho no
+se la puede invocar, que es la diferencia entre lo debido y una **aspiración**
+—asunto de política, no de justicia—. Para saber si algo es derecho hay que
+buscar su **título** y su **medida**, y los títulos se resumen en cuatro: la
+naturaleza humana, la ley, la costumbre y los contratos. La vieja división entre
+derecho **positivo** y **natural** se ordena con una sola palabra, **lo
+indiferente**: el positivo decide por dónde se maneja, mientras el natural cubre
+lo que es justo o injusto de por sí.
+"""

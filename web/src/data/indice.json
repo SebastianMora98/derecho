@@ -8,6 +8,14 @@
     "capitulos_con_documento": 39
   },
   {
+    "slug": "carnelutti-como-nace-el-derecho",
+    "titulo": "Cómo nace el derecho",
+    "autor": "Francesco Carnelutti",
+    "grupo": "Introducción al derecho",
+    "capitulos_totales": 0,
+    "capitulos_con_documento": 0
+  },
+  {
     "slug": "el-ojo-del-poder",
     "titulo": "El ojo del poder",
     "autor": "Michel Foucault",
@@ -36,6 +44,14 @@
     "titulo": "Breves reflexiones sobre el objeto de estudio y la finalidad del Derecho",
     "autor": "Carlos Fernández Sessarego",
     "grupo": "Civil personas",
+    "capitulos_totales": 0,
+    "capitulos_con_documento": 0
+  },
+  {
+    "slug": "hervada-que-es-el-derecho",
+    "titulo": "¿Qué es el derecho?",
+    "autor": "Javier Hervada",
+    "grupo": "Introducción al derecho",
     "capitulos_totales": 0,
     "capitulos_con_documento": 0
   },

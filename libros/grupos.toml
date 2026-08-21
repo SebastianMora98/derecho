@@ -112,8 +112,29 @@ orden = 2
   enlace = "Análisis de sentencias de Civil personas"
 
 [[grupos]]
-nombre = "Preseminario"
+nombre = "Introducción al derecho"
 orden = 3
+
+  # Los dos documentos cubren las dos lecturas juntas, en dos niveles de
+  # detalle: uno para anotar y otro para entender. Van anunciados en el índice
+  # —no `oculto`—, así que la sección muestra los dos enlaces.
+  [[grupos.documentos]]
+  archivo = "introduccion-ideas-principales.md"
+  slug = "ideas-principales"
+  titulo = "Ideas principales"
+  bajada = "Lo mínimo de Carnelutti y Hervada, para anotar en el cuaderno."
+  enlace = "Ideas principales de Introducción al derecho"
+
+  [[grupos.documentos]]
+  archivo = "introduccion-resumen-explicativo.md"
+  slug = "resumen-explicativo"
+  titulo = "Resumen explicativo"
+  bajada = "Las mismas dos lecturas explicadas con calma, y dónde no coinciden."
+  enlace = "Resumen explicativo de Introducción al derecho"
+
+[[grupos]]
+nombre = "Preseminario"
+orden = 4
 
   # Tampoco es una reseña: es la hoja de preparación para el debate, y cubre
   # solo la Introducción y el capítulo I, que es lo asignado.
